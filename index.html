@@ -77,13 +77,40 @@
     ];
 
     const NETWORKS = [
-      { name: "Absolome", association: "Affiant detailing fate/lineage of Anashuecot.", frequency: "High" },
-      { name: "Tocomminon", association: "Sachem, father of Anashuecot. Left Browne as guardian.", frequency: "High" },
-      { name: "Tibbetts", association: "Overlapping land records and marriages in Quidnessett/Narragansett.", frequency: "Medium" },
-      { name: "Smith", association: "Richard Smith of Cocumscussoc; co-settler with John Greene.", frequency: "High" },
-      { name: "Williams", association: "Roger Williams; native trade agreements & translation.", frequency: "Medium" },
-      { name: "Stonewall John", association: "'Mr R. Smiths John Wall Maker' in trading post orbit.", frequency: "High" },
-      { name: "Hough", association: "Transcriber of 1676 court-martial records, Anaftiawin links.", frequency: "Medium" }
+      // 1672 Fones Purchase deed group
+      { name: "Anashuecot", association: "Named 'chiefe Sachem and heire properly' — grantor of the Quidnessett tract.", frequency: "High", deedGroup: "1672 Fones Purchase" },
+      { name: "Wampkegge", association: "Brother of Anashuecot; co-grantor on the 1672 deed.", frequency: "Medium", deedGroup: "1672 Fones Purchase" },
+      { name: "Ompamiatt", association: "Brother of Anashuecot; co-grantor on the 1672 deed.", frequency: "Medium", deedGroup: "1672 Fones Purchase" },
+      { name: "Nammeash", association: "Son of Anashuecot; confirmed eldest via scribal correction in the deed.", frequency: "Medium", deedGroup: "1672 Fones Purchase" },
+      { name: "Seecomp", association: "Son of Anashuecot named in the 1672 deed.", frequency: "Low", deedGroup: "1672 Fones Purchase" },
+      { name: "Tyecuesha", association: "Son of Anashuecot named in the 1672 deed.", frequency: "Low", deedGroup: "1672 Fones Purchase" },
+      { name: "Absolome Counsellor", association: "Anomalous figure in the 1672 deed's signature block; later gives the 1677/8 affidavit.", frequency: "High", deedGroup: "1672 Fones Purchase" },
+      { name: "Henry Greene", association: "Son of John Greene (age 19); witnesses the 1672 deed by mark.", frequency: "Medium", deedGroup: "1672 Fones Purchase" },
+      { name: "Indian Peter", association: "Witness to the 1672 deed.", frequency: "Low", deedGroup: "1672 Fones Purchase" },
+      { name: "George Wightman", association: "Witness to the 1672 deed.", frequency: "Low", deedGroup: "1672 Fones Purchase" },
+      { name: "John Fones", association: "Co-purchaser named in the 1672 deed; the deed itself is his namesake record.", frequency: "Medium", deedGroup: "1672 Fones Purchase" },
+
+      // 1682 Home-Place deed group
+      { name: "John Greene Sr.", association: "Grantor of the 1682 home-place deed; first-named purchaser in the 1672 deed a decade earlier.", frequency: "High", deedGroup: "1682 Home-Place Deed" },
+      { name: "Joan", association: "Named as living wife/mother in the 1682 home-place deed's life-estate clause. The subject of this whole archive.", frequency: "High", deedGroup: "1682 Home-Place Deed" },
+      { name: "Daniel Greene", association: "Son; receives 120 acres in the 1682 home-place deed.", frequency: "Medium", deedGroup: "1682 Home-Place Deed" },
+      { name: "James Greene", association: "Son; receives 60 acres in the 1682 home-place deed.", frequency: "Medium", deedGroup: "1682 Home-Place Deed" },
+      { name: "Henry X Tibbitts", association: "Witness to the 1682 home-place deed, signs by mark.", frequency: "Low", deedGroup: "1682 Home-Place Deed" },
+      { name: "Arthur Aylworth", association: "Witness to the 1682 home-place deed.", frequency: "Low", deedGroup: "1682 Home-Place Deed" },
+      { name: "John Foanes (Warden)", association: "Acknowledges the 1682 home-place deed in his capacity as Warden.", frequency: "Low", deedGroup: "1682 Home-Place Deed" },
+
+      // 1682 Pawtuxet Sale group
+      { name: "William Carpenter", association: "Buyer in the May 1682 Pawtuxet sale; John and Joan convey land to him for £10.", frequency: "Medium", deedGroup: "1682 Pawtuxet Sale" },
+      { name: "John Wickes", association: "Witness to the 1682 Pawtuxet sale.", frequency: "Low", deedGroup: "1682 Pawtuxet Sale" },
+      { name: "Samuel Gorton", association: "Witness to the 1682 Pawtuxet sale.", frequency: "Low", deedGroup: "1682 Pawtuxet Sale" },
+
+      // Broader orbit — not tied to one specific deed
+      { name: "Tocomminon", association: "Sachem; per the 1677/8 Absolom affidavit, named as Anashuecot's father.", frequency: "High", deedGroup: "Broader Orbit" },
+      { name: "Tibbetts", association: "Overlapping land records and marriages in Quidnessett/Narragansett.", frequency: "Medium", deedGroup: "Broader Orbit" },
+      { name: "Smith", association: "Richard Smith of Cocumscussoc; co-settler with John Greene.", frequency: "High", deedGroup: "Broader Orbit" },
+      { name: "Williams", association: "Roger Williams; native trade agreements & translation.", frequency: "Medium", deedGroup: "Broader Orbit" },
+      { name: "Stonewall John", association: "'Mr R. Smiths John Wall Maker' in trading post orbit.", frequency: "High", deedGroup: "Broader Orbit" },
+      { name: "Hough", association: "Transcriber of 1676 court-martial records, Anaftiawin links.", frequency: "Medium", deedGroup: "Broader Orbit" }
     ];
 
     const CONTAMINATIONS = [
@@ -165,7 +192,30 @@
       "images/1674-cakochawhunt1674_awawsunks_her_marke_cakochawhunt_simon_eldist_RI_land_evidences_v1_p52-53.jpg.JPG"
     ];
 
-    // ===== HELPER FUNCTIONS =====
+    // ===== CHILDREN & ABSENCE =====
+    // Only Daniel and James are directly named as children of John and Joan in a
+    // primary document (the 1682 home-place deed). Everyone else sometimes listed
+    // as a Greene "sibling" in secondary genealogies is kept separate and marked
+    // UNVERIFIED — theory/greene_sibling_map.md itself flags this list as unresolved
+    // and possibly conflating a different generation entirely.
+    const CHILDREN = [
+      { name: "Daniel Greene", status: "PROVEN", basis: "Named directly in the 1682 home-place deed — receives 120 acres.", note: "Confirmed son of John and Joan by the deed itself." },
+      { name: "James Greene", status: "PROVEN", basis: "Named directly in the 1682 home-place deed — receives 60 acres.", note: "Confirmed son of John and Joan by the deed itself." },
+      { name: "John Greene Jr., Henry, Benjamin, Sarah, Edward", status: "UNVERIFIED", basis: "Appear in some Greene genealogies as siblings/children, but not tied to Joan specifically in any primary document found so far.", note: "theory/greene_sibling_map.md flags this whole set as needing cross-checked refinement — possibly a different John Greene generation entirely. Not treated as Joan's children here." }
+    ];
+
+    // Framed as an open question, not a conclusion: these are places a woman of John
+    // Greene's household would ordinarily be expected to appear, listed alongside
+    // whether Joan does. The gap is the invitation, not the proof.
+    const ABSENCE_LOG = [
+      { record: "Marriage record", expected: "English colonial marriages were routinely recorded in this period and region.", found: "None located for John Greene and Joan." },
+      { record: "Baptism / birth record", expected: "Would establish Joan's origin, age, or parentage.", found: "None located." },
+      { record: "Church membership record", expected: "Common for settler wives of a landholder's standing.", found: "None located." },
+      { record: "Probate / will", expected: "F.L. Greene (1894) explicitly states 'nothing further is known' about Joan.", found: "No probate record naming her found." },
+      { record: "Additional land record", expected: "Comparable Quidnessett-area women (e.g. contemporaries in the Tibbetts and Wickes families) appear across multiple land, court, or probate records.", found: "Joan appears in exactly two documents, both dated 1682 — the home-place deed and the Pawtuxet sale consent, five weeks apart." },
+      { record: "Death / burial record", expected: "Would establish when and where Joan died.", found: "None located." },
+      { record: "A surname", expected: "Every other named party in both 1682 deeds has one.", found: "Joan is named with no surname in either 1682 document." }
+    ];
     function getStatusStyles(status) {
       switch(status) {
         case 'PROVEN': return 'status-proven';
@@ -285,6 +335,7 @@
         { key: 'spine', label: 'Source Spine', icon: ShieldIcon },
         { key: 'primary', label: 'Primary Sources', icon: BookIcon },
         { key: 'gallery', label: 'Visual Timeline', icon: ImageIcon },
+        { key: 'family', label: "Children & Where Joan Isn't", icon: EyeIcon },
         { key: 'fragments', label: 'Name Fragments', icon: DnaIcon },
         { key: 'firewalls', label: 'Identity Firewalls', icon: FireIcon },
         { key: 'network', label: 'Orbit Convergence', icon: NetworkIcon },
@@ -947,20 +998,27 @@
                 ' Orbit Convergence Map'
               ),
               React.createElement('p', { className: 'text-xs text-slate-400 leading-relaxed mb-6 font-mono-tech' },
-                'Distinct ancestral identities cross-pollinate across deeds (1672), court records (1676), affidavits (1677/8, 1679), and legacy deeds (1682).'
+                'Distinct ancestral identities cross-pollinate across deeds (1672), court records (1676), affidavits (1677/8, 1679), and legacy deeds (1682). Grouped below by the actual document each person signed or was named in.'
               ),
 
-              React.createElement('div', { className: 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4' },
-                NETWORKS.map(function(node, idx) {
-                  return React.createElement('div', { key: idx, className: 'bg-[#0B101E] border border-slate-800 p-4 rounded-lg hover:border-slate-700 transition-all card-hover' },
-                    React.createElement('div', { className: 'flex justify-between items-start' },
-                      React.createElement('span', { className: 'text-sm font-bold font-serif-display text-indigo-400' }, node.name),
-                      React.createElement('span', { className: 'text-[9px] font-mono-tech px-2 py-0.5 rounded border ' + (node.frequency === 'High' ? 'bg-indigo-950 border-indigo-500/20 text-indigo-300' : 'bg-slate-900 border-slate-800 text-slate-400') }, 'FREQ: ' + node.frequency)
-                    ),
-                    React.createElement('p', { className: 'text-xs text-slate-400 mt-2 font-mono-tech leading-relaxed' }, node.association)
-                  );
-                })
-              )
+              ["1672 Fones Purchase", "1682 Home-Place Deed", "1682 Pawtuxet Sale", "Broader Orbit"].map(function(groupName) {
+                var groupMembers = NETWORKS.filter(function(n) { return n.deedGroup === groupName; });
+                if (groupMembers.length === 0) return null;
+                return React.createElement('div', { key: groupName, className: 'mb-6' },
+                  React.createElement('h3', { className: 'text-xs uppercase tracking-widest font-mono-tech text-indigo-400 font-bold mb-3 border-b border-slate-800 pb-2' }, groupName + ' (' + groupMembers.length + ')'),
+                  React.createElement('div', { className: 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4' },
+                    groupMembers.map(function(node, idx) {
+                      return React.createElement('div', { key: idx, className: 'bg-[#0B101E] border border-slate-800 p-4 rounded-lg hover:border-slate-700 transition-all card-hover' },
+                        React.createElement('div', { className: 'flex justify-between items-start' },
+                          React.createElement('span', { className: 'text-sm font-bold font-serif-display text-indigo-400' }, node.name),
+                          React.createElement('span', { className: 'text-[9px] font-mono-tech px-2 py-0.5 rounded border ' + (node.frequency === 'High' ? 'bg-indigo-950 border-indigo-500/20 text-indigo-300' : 'bg-slate-900 border-slate-800 text-slate-400') }, 'FREQ: ' + node.frequency)
+                        ),
+                        React.createElement('p', { className: 'text-xs text-slate-400 mt-2 font-mono-tech leading-relaxed' }, node.association)
+                      );
+                    })
+                  )
+                );
+              })
             ),
 
             React.createElement('div', { className: 'bg-[#0B101E] border border-slate-800 rounded-lg p-5' },
