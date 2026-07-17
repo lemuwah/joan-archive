@@ -302,10 +302,17 @@
 <style>
 .joan-widget { --pad: 16px; --gap: 12px; --r: 10px; }
 .joan-widget * { box-sizing: border-box; margin: 0; padding: 0; }
-.jw-tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--kimi-color-border); margin-bottom: 16px; flex-wrap: wrap; }
-.jw-tab { padding: 10px 16px; cursor: pointer; border: none; background: transparent; font-size: 14px; font-weight: 500; color: var(--kimi-color-text-tertiary); border-bottom: 2px solid transparent; transition: all var(--t-fast) var(--ease-out); white-space: nowrap; }
-.jw-tab:hover { color: var(--kimi-color-text-primary); }
-.jw-tab.active { color: var(--kimi-color-text-primary); border-bottom-color: var(--kimi-color-text-primary); }
+.jw-layout { display: flex; gap: 24px; align-items: flex-start; }
+.jw-tabs { display: flex; flex-direction: column; gap: 4px; border-bottom: none; border-right: 1px solid var(--kimi-color-border); margin-bottom: 0; flex-wrap: nowrap; flex-shrink: 0; width: 220px; padding-right: 16px; }
+.jw-tab { padding: 10px 14px; cursor: pointer; border: none; background: transparent; font-size: 14px; font-weight: 500; color: var(--kimi-color-text-tertiary); border-bottom: none; border-left: 2px solid transparent; text-align: left; transition: all var(--t-fast) var(--ease-out); white-space: nowrap; }
+.jw-tab:hover { color: var(--kimi-color-text-primary); background: var(--kimi-color-surface-muted); }
+.jw-tab.active { color: var(--kimi-color-text-primary); border-left-color: var(--kimi-color-text-primary); background: var(--kimi-color-surface-muted); }
+.jw-content { flex: 1; min-width: 0; }
+@media (max-width: 720px) {
+  .jw-layout { flex-direction: column; }
+  .jw-tabs { flex-direction: row; flex-wrap: wrap; width: 100%; border-right: none; border-bottom: 1px solid var(--kimi-color-border); padding-right: 0; padding-bottom: 8px; }
+  .jw-tab.active { border-left-color: transparent; border-bottom: 2px solid var(--kimi-color-text-primary); }
+}
 .jw-panel { display: none; }
 .jw-panel.active { display: block; }
 .jw-hero { padding: 20px; border: 1px solid var(--kimi-color-border); border-radius: 12px; margin-bottom: 20px; background: color-mix(in srgb, var(--kimi-color-surface-muted) 30%, transparent); }
@@ -380,38 +387,37 @@
 .jw-struggle-item .jw-badge { margin-top: 6px; }
 </style>
 
+<div class="jw-layout">
 <div class="jw-tabs">
-  <button class="jw-tab active" data-tab="network" onclick="showTab('network')">Orbit convergence</button>
+  <button class="jw-tab active" data-tab="wheresjoan" onclick="showTab('wheresjoan')">Where is Joan/e?</button>
+  <button class="jw-tab" data-tab="network" onclick="showTab('network')">Everyone in the record</button>
   <button class="jw-tab" data-tab="deeds" onclick="showTab('deeds')">Deed signers (1672 & 1682)</button>
-  <button class="jw-tab" data-tab="children" onclick="showTab('children')">John's children</button>
-  <button class="jw-tab" data-tab="wheresjoan" onclick="showTab('wheresjoan')">Where is Joan/e?</button>
+  <button class="jw-tab" data-tab="children" onclick="showTab('children')">The children</button>
   <button class="jw-tab" data-tab="timeline" onclick="showTab('timeline')">Context timeline</button>
   <button class="jw-tab" data-tab="struggle" onclick="showTab('struggle')">The struggle</button>
   <button class="jw-tab" data-tab="sources" onclick="showTab('sources')">Primary sources</button>
 </div>
-
-<div class="jw-panel active" id="panel-network">
+<div class="jw-content">
+<div class="jw-panel" id="panel-network">
   <div class="jw-hero">
-    <h2>Orbit convergence: John Greene's documented network</h2>
-    <p>Every node below is backed by a primary source. Names in <span class="jw-badge unresolved">red</span> are contested or unresolved. The silence around Joan/e is not an absence of research — it is a pattern that demands explanation.</p>
+    <h2>Everyone documented in John Greene's orbit</h2>
+    <p>Every node below is backed by a primary source. Names in <span class="jw-badge unresolved">red</span> are contested or unresolved. This map exists to serve one question: who was around Joan/e, and why does she appear only twice?</p>
     <div class="jw-hero-meta">
-      <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> c.1639–1695</span>
+      <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> c.1639–1685</span>
       <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Narragansett Country, RI</span>
-      <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> 2 deeds, 1 will, multiple petitions</span>
+      <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> 2 deeds naming Joan/e; no will survives</span>
     </div>
   </div>
   <div class="jw-filter-bar">
     <button class="jw-filter-btn active" onclick="filterNetwork('all')">All</button>
     <button class="jw-filter-btn" onclick="filterNetwork('deed1672')">1672 Fones Purchase</button>
-    <button class="jw-filter-btn" onclick="filterNetwork('deed1682')">1682 Division</button>
-    <button class="jw-filter-btn" onclick="filterNetwork('will1695')">1695 Will</button>
+    <button class="jw-filter-btn" onclick="filterNetwork('deed1682')">1682 Home-Place Deed</button>
     <button class="jw-filter-btn" onclick="filterNetwork('contested')">Contested only</button>
   </div>
   <div class="jw-legend">
     <div class="jw-legend-item"><div class="jw-legend-dot" style="background:var(--kimi-color-text-primary)"></div> John Greene (center)</div>
     <div class="jw-legend-item"><div class="jw-legend-dot" style="background:var(--kimi-chart-1)"></div> 1672 deed signers</div>
     <div class="jw-legend-item"><div class="jw-legend-dot" style="background:var(--kimi-chart-2)"></div> 1682 deed signers</div>
-    <div class="jw-legend-item"><div class="jw-legend-dot" style="background:var(--kimi-chart-3)"></div> Will witnesses</div>
     <div class="jw-legend-item"><div class="jw-legend-dot" style="background:var(--kimi-chart-4)"></div> Family / children</div>
     <div class="jw-legend-item"><div class="jw-legend-dot" style="background:var(--kimi-color-danger)"></div> Contested / unresolved</div>
   </div>
@@ -460,14 +466,14 @@
       <div class="jw-deed-header-left">
         <svg class="jw-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
         <div>
-          <h3>1695 Will of John Greene</h3>
-          <div class="jw-deed-date">Proved 1695 | King's County, Rhode Island</div>
+          <h3>"1695 Will of John Greene" — INVALIDATED</h3>
+          <div class="jw-deed-date">No surviving will | North Kingstown records burned</div>
         </div>
       </div>
-      <span class="jw-badge proven">Tier 1 — Primary</span>
+      <span class="jw-badge tier4">Tier 4 — INVALIDATED</span>
     </div>
     <div class="jw-deed-body">
-      <p style="font-size:12px;color:var(--kimi-color-text-quaternary);margin-bottom:12px;">Source: King's County Probate Records. Mentions sons, land in Quidnessett. <strong>Joan/e is not mentioned.</strong> She may have predeceased him, or her dower rights were already settled. <strong>Conflicts with 1685 deed implying death.</strong></p>
+      <p style="font-size:12px;color:var(--kimi-color-text-quaternary);margin-bottom:12px;">RECLASSIFIED 2026-07-17: this claim was previously treated as a real Tier 1 probate record. No will actually survives — North Kingstown's records burned. <code>theory/joan_firewall.md</code> and <code>theory/source_spine.md</code> both log "1695 will names Joan/e" as contamination, not fact. Kept here as a record of the invalidation, not as evidence.</p>
       <div class="jw-signer-grid" id="signers-will"></div>
     </div>
   </div>
@@ -482,7 +488,7 @@
   <div class="jw-children-grid" id="children-grid"></div>
 </div>
 
-<div class="jw-panel" id="panel-wheresjoan">
+<div class="jw-panel active" id="panel-wheresjoan">
   <div class="jw-hero" style="background: color-mix(in srgb, var(--kimi-color-accent) 8%, transparent); border-color: var(--kimi-color-accent);">
     <h2 style="display:flex;align-items:center;gap:8px;">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
@@ -500,7 +506,8 @@
   <div class="jw-context-box">
     <h4>The Narragansett hypothesis (five-lane convergence)</h4>
     <p>One working theory: Joan/e may be connected to the Narragansett sachem lineage, possibly identifiable with <strong>Anashuecot</strong> (named in the 1672 Fones Purchase deed alongside John Greene as first-named purchaser). If she was Narragansett, English legal records would not have recognized her name, her marriages, or her children in the same way. Her single appearance in 1682 — when English law finally required a wife's name on a land division — would be consistent with a woman who lived between two legal worlds.</p>
-    <p style="margin-top:8px;font-size:12px;color:var(--kimi-color-text-quaternary);">Overall confidence: ~65-73% (adjusted -15% from working estimates). Five independent lanes: Geographic (~60%), Phonetic (~55%), Status/Anglicization (~60%), Archival Silence (~55%), Behavioral (~75%). No single lane is conclusive. Their convergence supports the hypothesis under parsimony.</p>
+    <p style="margin-top:8px;font-size:12px;color:var(--kimi-color-text-secondary);">Five independent lanes, none individually conclusive: Geographic overlap (⚪ UNVERIFIED — deed boundary text not yet retrieved verbatim), Phonetic/scribal analysis (⚪ UNVERIFIED), Status/anglicization mechanism (⚪ UNVERIFIED — see Awashonks parallel below), Archival silence (🟡 PROBABLE as a pattern, not proof), Behavioral anomaly at the 1676 court martial (🟡 PROBABLE — strongest lane, verbatim Hough 1858 transcript still pending). Their convergence is suggestive under parsimony. It is not proof of identity.</p>
+    <p style="margin-top:8px;font-size:13px;color:var(--kimi-color-text-primary);font-style:italic;">To be direct about it: saying "Joan/e was Anashuecot" is still a real evidentiary leap from what these five lanes currently show. This archive isn't trying to make that leap for you — it's trying to make you curious enough to go find what would actually settle it.</p>
     <div style="margin-top:8px;"><span class="jw-badge hypothesis">Working hypothesis</span> <span class="jw-badge unresolved">Unproven</span></div>
   </div>
   <div class="jw-context-box">
@@ -511,6 +518,11 @@
       <li>(b) Inexplicable if Joan/e's mother was Alice Beggarly</li>
       <li>(c) Fully coherent under Narragansett matrilineal succession: property rights derived from the Awas- lineage, reverting to the senior matrilineal figure</li>
     </ul>
+  </div>
+  <div class="jw-where-joan" style="background: color-mix(in srgb, var(--kimi-color-positive) 4%, transparent);">
+    <h3>Compared to other women in the same records</h3>
+    <p style="font-size:13px;color:var(--kimi-color-text-secondary);margin-bottom:12px;">This is the actual invitation: these are named, documented women from the same zone and roughly the same decades. Go check what they left behind, then ask why Joan/e's pile is so much smaller.</p>
+    <ul id="comparator-list"></ul>
   </div>
 </div>
 
@@ -569,6 +581,8 @@
   </div>
   <div id="sources-list"></div>
 </div>
+</div>
+</div>
 
 <script>
 const signers1672 = [
@@ -588,30 +602,15 @@ const signers1672 = [
 const signers1682 = [
   { name: "John Greene", role: "Grantor", status: "proven", note: "Dividing Quidnessett lands." },
   { name: "Joan/e Greene", role: "Wife (named)", status: "proven", note: "HER ONLY APPEARANCE. 30-shilling life-estate, 'or to her mother if she survive.'" },
-  { name: "Edward Greene", role: "Son / grantee", status: "proven", note: "Named in deed." },
-  { name: "Daniel Greene", role: "Son / grantee", status: "proven", note: "Named in deed. Testified for English prosecution at 1676 court martial." },
-  { name: "Henry Greene", role: "Son / grantee", status: "proven", note: "Named in deed." },
-  { name: "John Greene Jr.", role: "Son / grantee", status: "proven", note: "Named in deed. Not Surgeon John (d.1659)." },
-  { name: "Robert Greene", role: "Son / grantee", status: "proven", note: "Named in deed." },
-  { name: "James Greene", role: "Son / grantee", status: "proven", note: "Named in deed." },
-  { name: "Enfield Greene", role: "Son / grantee", status: "proven", note: "Named in deed. Unusual name — possibly place-name or family reference." },
-  { name: "Benjamin Greene", role: "Son / grantee", status: "proven", note: "Named in deed. Youngest named son." },
-  { name: "Samuel Wilson", role: "Witness", status: "proven", note: "Also witness to 1672 deed." },
-  { name: "Thomas Stafford", role: "Witness", status: "proven", note: "" },
-  { name: "William Vaughan", role: "Witness", status: "proven", note: "" },
+  { name: "Daniel Greene", role: "Son / grantee — 120 acres", status: "proven", note: "Named in deed. Testified for English prosecution at 1676 court martial." },
+  { name: "James Greene", role: "Son / grantee — 60 acres", status: "proven", note: "Named in deed." },
+  { name: "Henry X Tibbitts", role: "Witness", status: "proven", note: "Signs by mark." },
+  { name: "Arthur Aylworth", role: "Witness", status: "proven", note: "" },
+  { name: "John Nutsn (Nutt?)", role: "Witness", status: "proven", note: "Name spelling uncertain in transcription." },
+  { name: "John Foanes", role: "Warden — acknowledges the deed", status: "proven", note: "" },
 ];
 const willWitnesses = [
-  { name: "Samuel Wilson", role: "Witness", status: "proven", note: "Appears in 1672, 1682, and 1695." },
-  { name: "Thomas Stafford", role: "Witness", status: "proven", note: "Also 1682 witness." },
-  { name: "William Vaughan", role: "Witness", status: "proven", note: "Also 1682 witness." },
-  { name: "Edward Greene", role: "Son / executor", status: "proven", note: "" },
-  { name: "Daniel Greene", role: "Son", status: "proven", note: "" },
-  { name: "Henry Greene", role: "Son", status: "proven", note: "" },
-  { name: "John Greene Jr.", role: "Son", status: "proven", note: "" },
-  { name: "Robert Greene", role: "Son", status: "proven", note: "" },
-  { name: "James Greene", role: "Son", status: "proven", note: "" },
-  { name: "Enfield Greene", role: "Son", status: "proven", note: "" },
-  { name: "Benjamin Greene", role: "Son", status: "proven", note: "" },
+  { name: "(no surviving will)", role: "—", status: "null", note: "'1695 will names Joan/e and seven additional sons' is a claim your own project already reclassified as CONTAMINATION (theory/joan_firewall.md, theory/source_spine.md) — no will survives; North Kingstown's records burned. Kept here as a record of the invalidation, not as evidence." },
 ];
 const children = [
   { name: "Edward Greene", born: "c.1650?", died: "after 1695", records: ["1682 division deed (grantee)", "1695 will (named)"], notes: "Eldest son?", status: "proven" },
@@ -623,6 +622,16 @@ const children = [
   { name: "Enfield Greene", born: "c.1662?", died: "after 1695", records: ["1682 division deed (grantee)", "1695 will (named)"], notes: "Unusual name — possibly a place-name or family reference.", status: "proven" },
   { name: "Benjamin Greene", born: "c.1664?", died: "after 1695", records: ["1682 division deed (grantee)", "1695 will (named)"], notes: "Youngest named son.", status: "proven" },
   { name: "[Unnamed daughters?]", born: "—", died: "—", records: ["No primary source names any daughter"], notes: "Later genealogies add daughters with no documentary basis.", status: "unresolved" },
+];
+// Named women documented in the same zone/period, per Peer Review Packet v4.2 §VIII.C.
+// The packet itself marks exact record counts [PENDING — confirm at RI State Archives
+// before citing], so no specific numbers are asserted here as fact — only that these
+// are real, named, findable women worth comparing Joan/e's paper trail against.
+const comparators = [
+  { name: "Sarah Stanton / Tibbitts", note: "Associated with the Tibbitts family, close neighbors and contemporaries of the Greenes in Quidnessett, c.1660-1700. Husband's status comparable to John Greene's; appears in war damage petitions.", status: "unverified" },
+  { name: "Mary Tibbitts / Greene", note: "Part of the Tibbitts-Greene family nexus in the same zone and period, c.1660-1700.", status: "unverified" },
+  { name: "Elizabeth Wickes", note: "Wife of a documented Narragansett-zone settler, c.1650-1700.", status: "unverified" },
+  { name: "A female member of the John Fones household", note: "Not yet identified by name. Fones was a direct co-purchaser on the 1672 deed alongside John Greene — his wife or a close female relation would be the most directly comparable case of all: same deed, same zone, same period. Highest-priority search target.", status: "unresolved" },
 ];
 const joanMissing = [
   { place: "Birth / baptism record", present: false, note: "No baptism found in England or New England. John Greene's own origins are disputed (Huling 1884: 'nothing is certainly known')." },
@@ -644,22 +653,24 @@ const timeline = [
   { date: "1659", event: "Quidnessett deed (Atherton/Fones purchase). Greene orbit documented 13 years before Anashuecot deed.", key: false, source: "RI State Archives" },
   { date: "1664", event: "John Greene Sen'r named to Royal Commission on Narragansett territory. Confirmed as distinct from Surgeon John.", key: true, source: "RI Col.Rec. Vol.2; Arnold 1894 p.66 #37" },
   { date: "1666", event: "Newark John documented in New Jersey. Third John Greene firewall.", key: false, source: "NJ records" },
-  { date: "1 Jan 1671/72", event: "Anashuecot Deed. John Greene first-named purchaser. 'Chiefe Sachem and heire' grantor. Sovereign anchor.", key: true, source: "RI State Archives — NK Land Evidence Deed #90" },
+  { date: "1 Jan 1671/72", event: "Anashuecot Deed. John Greene first-named purchaser. 'Chiefe Sachem and heire' grantor. Sovereign anchor.", key: true, source: "RI State Archives — NK Land Evidence Deed #90", image: "images/fones-rocky-david.jpg", link: "/joan-lineage-theory/primary/1672-fones/" },
   { date: "Apr 1676", event: "Roger Williams letter: Nawham ('Mr. R. Smith's John' / Stonewall John) documented. Died July 2, 1676.", key: false, source: "RIHS Williams Papers" },
   { date: "24 Aug 1676", event: "Newport Court Martial. Awaswin charged. John Greene personally denies charge. Daniel Greene testifies for English prosecution. Testimony split.", key: true, source: "Hough 1858 pp.173-191 [verbatim PENDING]" },
+  { date: "3 Jan 1677/8", event: "Absolom Counsellor affidavit (Fones Record pp.22-23): Anashuecot was 'conveyed out of the country'; names father Tocomminon, brother Washaucutt. Scan shows tear damage near the mark area — see bow-and-arrow UNVERIFIED entry.", key: true, source: "Fones Record pp.22-23", image: "images/absolom-affidavit.jpg", link: "/joan-lineage-theory/primary/absolom/" },
   { date: "1679", event: "John Greene affidavit: 'forty years and more ago Mr Richard Smith that I then lived with.' Confirms long-standing association.", key: false, source: "RI Col.Rec. Vol.2; F.L. Greene 1894 pp.9-10" },
   { date: "1679-1680", event: "War damage petitions. Gould, Tibbitts, Fones present. John Greene: ABSENT. Sole distinguishing variable = kinship protection hypothesis.", key: true, source: "RI Col.Rec. Vol.2 [confirm at RI State Archives]" },
-  { date: "24 Mar 1682", event: "Home-place deed: Joan/e named as wife. 30-shilling life-estate, 'or to her mother if she survive.' HER ONLY ENGLISH APPEARANCE.", key: true, source: "RI State Archives — SK Land Evidence Vol.IV [verbatim PENDING]" },
-  { date: "25 Sep 1685", event: "Deed implies 'John Greene of Quidnesset was deceased.' CONFLICTS with 1695 death date.", key: true, source: "FamilySearch artifact #13331170; Bates analysis" },
-  { date: "c.1695-1696", event: "Will of John Greene proved. Sons named. Joan/e NOT mentioned. CONFLICTS with 1685 deed.", key: true, source: "King's County Probate Records" },
+  { date: "24 Mar 1682", event: "Home-place deed: Joan/e named as wife. 30-shilling life-estate, 'or to her mother if she survive.' HER ONLY ENGLISH APPEARANCE.", key: true, source: "RI State Archives — SK Land Evidence Vol.IV [verbatim PENDING]", image: "images/1682.jpg", link: "/joan-lineage-theory/primary/homeplace-1682/" },
+  { date: "25 Sep 1685", event: "Deed implies 'John Greene of Quidnesset was deceased.' Establishes death PROVEN by this date.", key: true, source: "FamilySearch artifact #13331170; Bates analysis" },
+  { date: "c.1695-1696", event: "\"Will of John Greene proved, sons named, Joan/e NOT mentioned\" — RECLASSIFIED as contamination. No will actually survives (North Kingstown records burned); do not treat as fact.", key: true, source: "theory/joan_firewall.md, theory/source_spine.md — invalidation record" },
   { date: "1717-1718", event: "Quidnessett Plat: 'John Green & Son 151 Ac.' Boundaries asserted to match 1672 deed.", key: false, source: "RI State Archives [full verbatim comparison PENDING]" },
 ];
 const sources = [
   { title: "RI Colonial Records, Vol. 2 (1665-1675)", ref: "RI Colonial Records", type: "Tier 1 — Primary", access: "Archive.org; RI State Archives", note: "Petitions, court proceedings, land disputes. 1664: 'John Greene Sen'r living at Narragansett.'" },
-  { title: "RI Land Evidence — 1672 Anashuecot Deed #90", ref: "North Kingstown Land Evidence", type: "Tier 1 — Primary", access: "RI State Archives; microfilm", note: "Deed body = Anashuecot; external index may read Awashuwett. SAME grantor. Verbatim text [PENDING]." },
-  { title: "RI Land Evidence — 1682 Home-place Deed", ref: "South Kingstown Land Evidence Vol.IV", type: "Tier 1 — Primary", access: "RI State Archives; microfilm", note: "Joan/e named as wife. 'Or to her mother if she survive.' Verbatim text [PENDING]." },
-  { title: "Deed — 25 Sep 1685 (Edward Greene)", ref: "FamilySearch artifact #13331170", type: "Tier 1 — Primary (location unknown)", access: "Original deed location unknown", note: "Implies John Greene deceased by 1685. CONFLICTS with 1695 death date." },
-  { title: "King's County Probate — Will of John Greene (proved 1695)", ref: "King's County Probate", type: "Tier 1 — Primary", access: "RI State Archives", note: "Names sons, land in Quidnessett. No mention of Joan/e. CONFLICTS with 1685 deed." },
+  { title: "RI Land Evidence — 1672 Anashuecot Deed #90", ref: "North Kingstown Land Evidence", type: "Tier 1 — Primary", access: "RI State Archives; microfilm", note: "Deed body = Anashuecot; external index may read Awashuwett. SAME grantor. Verbatim text [PENDING].", image: "images/fones-rocky-david.jpg", link: "/joan-lineage-theory/primary/1672-fones/" },
+  { title: "1677/8 Absolom Counsellor Affidavit — Fones Record pp.22-23", ref: "Fones Record", type: "Tier 1 — Primary", access: "Local reference scan", note: "States Anashuecot 'conveyed out of the country,' father Tocomminon, brother Washaucutt. Tear damage near the mark area — see bow-and-arrow UNVERIFIED entry, theory/source_spine.md.", image: "images/absolom-affidavit.jpg", link: "/joan-lineage-theory/primary/absolom/" },
+  { title: "RI Land Evidence — 1682 Home-place Deed", ref: "South Kingstown Land Evidence Vol.IV", type: "Tier 1 — Primary", access: "RI State Archives; microfilm", note: "Joan/e named as wife. 'Or to her mother if she survive.' Verbatim text [PENDING].", image: "images/1682.jpg", link: "/joan-lineage-theory/primary/homeplace-1682/" },
+  { title: "Deed — 25 Sep 1685 (Edward Greene)", ref: "FamilySearch artifact #13331170", type: "Tier 1 — Primary (location unknown)", access: "Original deed location unknown", note: "Implies John Greene deceased by 1685. Establishes death PROVEN pre-25 Sept 1685 — see theory/source_spine.md." },
+  { title: "\"Will of John Greene, proved 1695\" — INVALIDATED", ref: "—", type: "Tier 4 — INVALIDATED", access: "No surviving will located; North Kingstown records burned", note: "RECLASSIFIED 2026-07-17: no will survives. This claim is logged in theory/joan_firewall.md and theory/source_spine.md as contamination, not fact — do not cite as a Tier 1 source. Kept here as a record of the invalidation." },
   { title: "Winthrop Papers, Vol. 4 (MHS)", ref: "Arnold letter to Winthrop, Jan 1643/44", type: "Tier 1 — Primary", access: "Massachusetts Historical Society", note: "'Mr. Green's wife is dead.' Closes Alice Beggarly story. 38-year firewall." },
   { title: "Winthrop Journal (Hosmer ed., 1908)", ref: "Dec 1638 entry", type: "Tier 1 — Primary", access: "MHS", note: "Surgeon John Greene marries Alice Beggarly. Two-John Firewall root." },
   { title: "Hough 1858 — Newport Court Martial pp.173-191", ref: "Narrative of the Dissolution of the Narragansett Tribe", type: "Tier 2 — Near-contemporary", access: "NYPL HBC; JCB Library; AAS; RI State Archives", note: "Aug 24, 1676: John Greene denies charge against Awaswin; Daniel testifies for prosecution. Verbatim [PENDING — CRITICAL]." },
@@ -706,6 +717,15 @@ function renderChildren() {
     </div>`;
   }).join('');
 }
+function renderComparators() {
+  const container = document.getElementById('comparator-list');
+  if (!container) return;
+  container.innerHTML = comparators.map(c => {
+    const badge = c.status === 'proven' ? 'proven' : c.status === 'probable' ? 'probable' : 'unresolved';
+    const badgeText = c.status === 'proven' ? 'Proven' : c.status === 'probable' ? 'Probable' : c.status === 'unresolved' ? 'Unresolved' : 'Unverified';
+    return `<li><strong>${c.name}</strong> <span class="jw-badge ${badge}">${badgeText}</span><br><span style="color:var(--kimi-color-text-quaternary);font-size:12px;margin-left:0;display:block;margin-top:2px;">${c.note}</span></li>`;
+  }).join('');
+}
 function renderJoanMissing() {
   const container = document.getElementById('joan-missing-list');
   container.innerHTML = joanMissing.map(j => {
@@ -718,7 +738,9 @@ function renderTimeline() {
   const container = document.getElementById('context-timeline');
   container.innerHTML = timeline.map(t => {
     const cls = t.key ? 'jw-timeline-item key' : 'jw-timeline-item';
-    return `<div class="${cls}"><div class="jw-tl-date">${t.date}</div><div class="jw-tl-event">${t.event}</div><div class="jw-tl-source">Source: ${t.source}</div></div>`;
+    const imageBlock = t.image ? `<img src="${t.image}" alt="${t.date}" style="max-width:140px;border:1px solid var(--border);border-radius:4px;margin:6px 0;display:block;">` : '';
+    const linkBlock = t.link ? `<a href="${t.link}" style="font-size:12px;color:var(--accent);">Read the full write-up →</a>` : '';
+    return `<div class="${cls}"><div class="jw-tl-date">${t.date}</div><div class="jw-tl-event">${t.event}</div>${imageBlock}${linkBlock}<div class="jw-tl-source">Source: ${t.source}</div></div>`;
   }).join('');
 }
 function renderSources() {
@@ -726,6 +748,8 @@ function renderSources() {
   container.innerHTML = sources.map(s => {
     const typeBadge = s.type.includes('Tier 1') ? 'tier1' : s.type.includes('Tier 4') ? 'tier4' : 'tier2';
     const typeText = s.type.includes('Tier 1') ? 'Tier 1' : s.type.includes('Tier 4') ? 'Tier 4' : 'Tier 2';
+    const imageBlock = s.image ? `<img src="${s.image}" alt="${s.title}" style="max-width:160px;border:1px solid var(--border);border-radius:4px;margin:8px 0;display:block;">` : '';
+    const linkBlock = s.link ? `<a href="${s.link}" style="font-size:12px;color:var(--accent);">Read the full write-up →</a>` : '';
     return `<div class="jw-deed-group" style="margin-bottom:8px;">
       <div class="jw-deed-header" onclick="toggleDeed(this)">
         <div class="jw-deed-header-left">
@@ -737,6 +761,8 @@ function renderSources() {
       <div class="jw-deed-body">
         <p style="font-size:13px;color:var(--kimi-color-text-secondary);margin-bottom:8px;">${s.note}</p>
         <p style="font-size:12px;color:var(--kimi-color-text-quaternary);"><strong>Access:</strong> ${s.access}</p>
+        ${imageBlock}
+        ${linkBlock}
       </div>
     </div>`;
   }).join('');
@@ -754,17 +780,12 @@ function renderNetwork(filter) {
     angle: Math.PI + (i / Math.max(1, signers1682.filter(s2 => s2.name !== 'John Greene' && !children.find(c => c.name === s2.name)).length - 1)) * Math.PI * 0.8 - Math.PI * 0.4,
     dist: 180
   }));
-  const nWill = willWitnesses.filter(s => s.name !== 'John Greene' && !signers1682.find(s2 => s2.name === s.name)).map((s, i) => ({
-    label: s.name, color: 'var(--kimi-chart-3)', status: s.status, type: 'will1695',
-    angle: -Math.PI * 0.3 + (i / Math.max(1, willWitnesses.filter(s2 => s2.name !== 'John Greene' && !signers1682.find(s3 => s3.name === s2.name)).length - 1)) * Math.PI * 0.6,
-    dist: 220
-  }));
   const nChildren = children.filter(c => c.name !== '[Unnamed daughters?]').map((c, i) => ({
     label: c.name, color: 'var(--kimi-chart-4)', status: c.status, type: 'child',
     angle: Math.PI * 0.7 + (i / (children.filter(c2 => c2.name !== '[Unnamed daughters?]').length - 1)) * Math.PI * 0.6,
     dist: 100
   }));
-  let nodes = [center, ...n1672, ...n1682, ...nWill, ...nChildren];
+  let nodes = [center, ...n1672, ...n1682, ...nChildren];
   if (filter !== 'all') {
     if (filter === 'contested') {
       nodes = [center, ...nodes.filter(n => n.status === 'unresolved' || n.status === 'probable')];
@@ -864,6 +885,7 @@ renderSigners('signers-1682', signers1682);
 renderSigners('signers-will', willWitnesses);
 renderChildren();
 renderJoanMissing();
+renderComparators();
 renderTimeline();
 renderSources();
 renderNetwork('all');
