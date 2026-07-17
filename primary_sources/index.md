@@ -23,7 +23,7 @@ Choose a document below to begin.
 **Status:** PROBABLE  
 **never any legall purchase had been made thereof from the Indians by the Massachusetts or any others ; and there being likewise produced an Act of the voluntary submission of the Chief Sachim and the rest of the Princes with the whole people of the Narragansetts unto the government of our late Royall Father of blessed memory,"**
 
-[![1664 Act of Submission]({{ site.baseurl }}/images/actofsubmission.JPG)]([https://sosri.access.preservica.com/](https://archive.org/details/recordscolonyrh02bartgoog/page/40/mode/2up))
+[![1664 Act of Submission]({{ site.baseurl }}/images/actofvoluntarysubmission.JPG)]([https://sosri.access.preservica.com/](https://archive.org/details/recordscolonyrh02bartgoog/page/40/mode/2up))
 
 [Read document →]({{ site.baseurl }}/primary/1672-fones/)
 
