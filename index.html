@@ -125,6 +125,46 @@
       { name: "'her marke'", context: "Scribal acknowledgment", year: "1682", source: "Pawtuxet Sale", type: "Colonial Recognition", desc: "Joan signs with 'her marke' — now acknowledged as woman, but only as spousal consent-giver, not sachem." }
     ];
 
+    // ===== IMAGE GALLERY =====
+    // Only images with an existing, vetted write-up (a primary_sources/*.md file or
+    // a PRIMARY_SOURCES entry) get a date and status here. Everything else goes in
+    // IMAGES_NEEDING_CONTEXT below rather than being captioned from the filename alone.
+    const IMAGE_GALLERY = [
+      { file: "images/rockydavid.JPG", date: "1672", title: "1672 Fones Purchase Deed", status: "PROVEN", link: "/joan-lineage-theory/primary/1672-fones/" },
+      { file: "images/awawamicks.JPG", date: "1670", title: "1670 Awawsunks Sachem Deed", status: "PROVEN", link: "/joan-lineage-theory/primary/awawamicks/" },
+      { file: "images/cakochawhunt.JPG", date: "1674", title: "1674 Cakochawhunt Confirmation Deed", status: "PROVEN", link: "/joan-lineage-theory/primary/cakochawhunt/" },
+      { file: "images/1674_awawsunks_her_marke_cakochawhunt_simon_eldist_RI_land_evidences_v1_p52-53.jpg", date: "1674", title: "Awawsunck 'her marke' / Cakochawhunt, RI Land Evidences Vol.1 pp.52-53", status: "PROVEN", link: "/joan-lineage-theory/primary/cakochawhunt/" },
+      { file: "images/council-order-1678.JPG", date: "1678", title: "1678 Colony Council Order — Narragansett Country", status: "PROVEN", link: "/joan-lineage-theory/primary/council-order-1678/" },
+      { file: "images/greenesworn.JPG", date: "1679", title: "1679 John Greene Certificate — Narragansett Country", status: "PROVEN", link: "/joan-lineage-theory/primary/greene-certificate-1679/" },
+      { file: "images/captgreene1679.JPG", date: "1679", title: "1679 Capt. John Greene assembly payment record", status: "PROVEN", link: "/joan-lineage-theory/primary/greene-certificate-1679/" },
+      { file: "images/1679_petition_narragansett_inhabitants_RI_records_58-59_forty-two-years.jpg", date: "1679", title: "1679 Petition of Narragansett Inhabitants ('forty-two years')", status: "UNVERIFIED", link: null },
+      { file: "images/absolom.jpg", date: "1677/8", title: "Absolom Affidavit — Fones Record pp.22-23", status: "PROBABLE", link: "/joan-lineage-theory/primary/absolom/" },
+      { file: "images/1682.JPG", date: "Mar 24, 1682", title: "Home-Place Deed, Page 1", status: "PROVEN", link: "/joan-lineage-theory/primary/homeplace-1682/" },
+      { file: "images/1682-2.JPG", date: "Mar 24, 1682", title: "Home-Place Deed, Page 2", status: "PROVEN", link: "/joan-lineage-theory/primary/homeplace-1682/" },
+      { file: "images/actofvoluntarysubmission.JPG", date: "1664", title: "1664 Act of Voluntary Submission", status: "PROBABLE", link: "/joan-lineage-theory/primary/" }
+    ];
+
+    // Images sitting in the repo with no write-up yet. Listed honestly as unprocessed —
+    // filenames alone are not treated as evidence of what a document says.
+    const IMAGES_NEEDING_CONTEXT = [
+      "images/1687.jpg", "images/1688-devilspurchase.JPG", "images/Plat_of_Quidnesett.jpg",
+      "images/SignaturesFones20.jfif", "images/absolom-affidavit.jpg", "images/absolom-right-beneath-greene-deed",
+      "images/absolom an indian bottom line.jfif", "images/absolom his mark note.JPG", "images/absolom.jfif",
+      "images/fullabsolom.jpg", "images/1677_absolom_counsellor_testimony_duplicate_pages22-23.jpg",
+      "images/1677_anashuecot_Heire_Proper", "images/bad-copy-smith-cluster.jpg", "images/badquality-colony-of-ri",
+      "images/bay_map", "images/bristol_death_absolom_unknown", "images/colony_of_rhode_island_map",
+      "images/daniel-and-john-green-land-kingstown.JPG", "images/devils foot.JPG", "images/fones rocky david.jfif",
+      "images/generalalfredgibbsmapacquidnesset.jfif", "images/green land kingstown.JPG",
+      "images/greene-mark-awawsuncks-1674.JPG", "images/greene-witness-1674-awawsucks-her-mark.JPG",
+      "images/greenedeputy.JPG", "images/james-1695.jfif", "images/jobgreen.jfif", "images/john-40-years.JPG",
+      "images/john and deborah.jfif", "images/john-and-joane.jpg", "images/johngreenedeputy.JPG",
+      "images/johntodaniel.jpg", "images/leManceLaw", "images/magnus", "images/map-mass-bay.jpg", "images/map.jpeg",
+      "images/negro man peleg.jfif", "images/new-york-mass-map", "images/original-transcription-1682-johnandjoan",
+      "images/petition-1679-narragansett.JPG", "images/records_of_proprietors_badcopy", "images/richard green.jfif",
+      "images/rocky-davis-transcript-1672.jpg", "images/slide_1_the_problem.png", "images/source-reminder-aboriginals.jpg",
+      "images/1674-cakochawhunt1674_awawsunks_her_marke_cakochawhunt_simon_eldist_RI_land_evidences_v1_p52-53.jpg.JPG"
+    ];
+
     // ===== HELPER FUNCTIONS =====
     function getStatusStyles(status) {
       switch(status) {
@@ -199,6 +239,12 @@
         React.createElement('path', { strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: '2', d: 'M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z' })
       );
     }
+    function ImageIcon() {
+      return React.createElement('svg', { className: 'w-4 h-4 mr-2 shrink-0', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' },
+        React.createElement('path', { strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: '2', d: 'M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14M4 6h16a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2z' }),
+        React.createElement('path', { strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: '2', d: 'M11 9a1 1 0 11-2 0 1 1 0 012 0z' })
+      );
+    }
 
     function App() {
       const [activeTab, setActiveTab] = React.useState('archive');
@@ -238,6 +284,7 @@
         { key: 'archive', label: 'The Archive', icon: ArchiveIcon },
         { key: 'spine', label: 'Source Spine', icon: ShieldIcon },
         { key: 'primary', label: 'Primary Sources', icon: BookIcon },
+        { key: 'gallery', label: 'Visual Timeline', icon: ImageIcon },
         { key: 'fragments', label: 'Name Fragments', icon: DnaIcon },
         { key: 'firewalls', label: 'Identity Firewalls', icon: FireIcon },
         { key: 'network', label: 'Orbit Convergence', icon: NetworkIcon },
@@ -695,6 +742,44 @@
                 ' "Joan Greene (1610–1682) is the child of Alice Daniels."',
                 React.createElement('br', null),
                 React.createElement('span', { className: 'text-rose-400/60' }, 'Zero citations. Zero primary sources. Algorithmic auto-fill fiction.')
+              )
+            )
+          );
+        }
+
+        // VISUAL TIMELINE / IMAGE GALLERY
+        if (activeTab === 'gallery') {
+          var sortedGallery = IMAGE_GALLERY.slice();
+          return React.createElement('div', { className: 'space-y-6 fade-in' },
+            React.createElement('div', { className: 'text-center py-8 border-b border-slate-800 mb-6' },
+              React.createElement('h1', { className: 'text-3xl font-serif-display font-black text-slate-100 mb-2' }, 'Visual Timeline'),
+              React.createElement('p', { className: 'text-sm text-slate-400 font-mono-tech' }, 'Scans linked directly to the write-up for that document. No caption here goes beyond what that page already establishes.')
+            ),
+
+            React.createElement('div', { className: 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5' },
+              sortedGallery.map(function(img, idx) {
+                return React.createElement('div', { key: idx, className: 'bg-[#0B101E] border border-slate-800 rounded-lg overflow-hidden hover:border-slate-600 transition-all card-hover' },
+                  React.createElement('img', { src: img.file, alt: img.title, className: 'w-full h-44 object-cover bg-slate-950', loading: 'lazy' }),
+                  React.createElement('div', { className: 'p-4' },
+                    React.createElement('div', { className: 'flex justify-between items-start mb-2' },
+                      React.createElement('span', { className: 'text-xs font-mono-tech text-amber-500 font-bold' }, img.date),
+                      React.createElement('span', { className: 'text-[10px] font-mono-tech border rounded px-2 py-0.5 ' + getStatusStyles(img.status) }, img.status)
+                    ),
+                    React.createElement('h3', { className: 'text-sm font-bold font-serif-display text-slate-200 mb-2' }, img.title),
+                    img.link ? React.createElement('a', { href: img.link, className: 'text-xs font-mono-tech text-emerald-400 hover:text-emerald-300 underline' }, 'Read the full write-up →') :
+                      React.createElement('span', { className: 'text-xs font-mono-tech text-slate-500' }, 'No dedicated page yet')
+                  )
+                );
+              })
+            ),
+
+            React.createElement('div', { className: 'bg-amber-950/10 border border-amber-900/30 rounded-lg p-6 mt-8' },
+              React.createElement('h2', { className: 'text-lg font-bold font-serif-display text-amber-400 mb-3' }, '📦 Awaiting Context'),
+              React.createElement('p', { className: 'text-sm text-slate-300 leading-relaxed mb-4' }, "These scans are in the archive but don't have a write-up yet — meaning nobody has pinned down their date, source, or what they actually say closely enough to caption them honestly. Filenames alone aren't treated as evidence here. If you recognize one of these or can help transcribe it, that's exactly the kind of help this project needs most."),
+              React.createElement('div', { className: 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2' },
+                IMAGES_NEEDING_CONTEXT.map(function(file, idx) {
+                  return React.createElement('div', { key: idx, className: 'text-xs font-mono-tech text-slate-400 bg-slate-900/40 border border-slate-800 rounded px-2 py-1.5 truncate' }, file.replace('images/', ''));
+                })
               )
             )
           );
