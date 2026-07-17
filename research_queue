@@ -1,0 +1,69 @@
+# Research Queue
+
+The research queue is the heartbeat of the Joan / Anashuecot lineage project.  
+This folder holds prompts, questions, continuation requests, and tasks for any agent to pick up and work on.
+
+You (the researcher) place files here.  
+Agents respond by creating output files in their own folders.
+
+---
+
+## 1. How to use the queue
+
+Whenever you want work done, create a file in this folder:
+
+Examples:
+- `2026-07-11_continue.md`
+- `2026-07-11_question_about_greene.md`
+- `2026-07-11_find_hidden_evidence.md`
+- `2026-07-11_explore_name_variants.md`
+
+Inside each file, write a simple instruction, such as:
+- “Continue the Anashuecot reconstruction from the last checkpoint.”
+- “Identify where hidden evidence might live for H2.”
+- “Run hostile review on the Greene sibling map.”
+- “Generate wild hypotheses about Joan’s name variants.”
+- “Synthesize the new land record into the spine.”
+
+---
+
+## 2. What agents do with queue files
+
+**Synthesizer:**  
+Reads the prompt → integrates new info → updates theory → writes output in `agents/synthesizer/`.
+
+**Explorer:**  
+Reads the prompt → generates wild hypotheses → writes output in `agents/explorer/`.
+
+**Hostile Reviewer:**  
+Reads the prompt → attacks assumptions → writes output in `agents/hostile_reviewer/`.
+
+**Archivist:**  
+Reads the prompt → maps evidence → writes output in `agents/archivist/`.
+
+---
+
+## 3. File format
+
+Each queue file should include:
+
+- **Task description**  
+- **Which agent you want (optional)**  
+- **Relevant links or file names**  
+- **Any constraints or focus areas**
+
+Example:
+Task: Explore alternative identity configurations for Joan.
+Agent: Explorer
+Focus: Name fragmentation and kinship anomalies.
+
+---
+
+## 4. Purpose
+
+The research queue keeps the project moving forward without confusion.  
+It ensures every idea, question, or thread has a place to live and be picked up later.
+
+It is the project’s heartbeat.
+
+_Last updated: 2026-07-11_
