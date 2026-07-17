@@ -1,0 +1,119 @@
+# Expand Search: King Philip’s War Documentation
+
+**Date:** 2026-07-11  
+**Purpose:** Expand the evidence search into King Philip’s War records, focusing on Greene-adjacent Indigenous women who may appear under fragmented, partial, or unnamed identities.
+
+---
+
+## 1. Task Summary
+
+Search and analyze written documents from the King Philip’s War period (1675–1678), with special attention to:
+
+- Greene family involvement  
+- Warwick / Cowesett / Pawtuxet region  
+- Narragansett and Niantic kinship spheres  
+- unnamed or partially named Indigenous women  
+- English-name overlays (Joan / Joane / Joane Greene)  
+- relational naming (“wife of ___”, “Indian woman in ___ household”)  
+
+This conflict zone is a high-probability evidence field for Anashuecot’s fragmented identity.
+
+---
+
+## 2. Requested Agents
+
+### **Explorer**
+Generate hypotheses about:
+- where Joan/Anashuecot might appear in war records  
+- how name fragmentation might intensify during conflict  
+- how Greene militia involvement might create indirect documentation  
+- what “boring” documents might hide her presence  
+
+### **Archivist**
+Map:
+- document types from the war era  
+- which ones contain unnamed or partially named Indigenous women  
+- any Greene-adjacent references  
+- evidence gaps needing deeper search  
+
+### **Hostile Reviewer**
+Attack:
+- assumptions about name fragmentation  
+- assumptions about Greene involvement  
+- assumptions about Indigenous women’s documentation  
+- contradictions between colonial and Indigenous kinship logic  
+
+---
+
+## 3. Focus Areas
+
+### **A. Captivity Records**
+Look for:
+- unnamed women  
+- English-named Indigenous women  
+- “Indian girl taken at Warwick”  
+- “Indian woman in Greene’s household”  
+
+### **B. Refugee & Relief Lists**
+Check:
+- town meeting minutes  
+- church charity logs  
+- lists of displaced families  
+
+### **C. Militia Rolls & Correspondence**
+Women appear indirectly through:
+- dependents  
+- household affiliations  
+- wartime letters mentioning unnamed Indigenous women  
+
+### **D. Land Reallocation After the War**
+High-probability zone for:
+- unnamed heirs  
+- unnamed widows  
+- unnamed daughters  
+- Indigenous women living on contested land  
+
+### **E. Court Records**
+Look for:
+- petitions  
+- guardianship cases  
+- disputes involving Indigenous women  
+- household assignments  
+
+---
+
+## 4. Output Requirements
+
+Each agent should produce a file in their folder:
+
+### Explorer:
+
+agents/explorer/2026-07-11_kpw_hypotheses.md
+
+
+### Archivist:
+
+agents/archivist/2026-07-11_kpw_source_map.md
+
+
+### Hostile Reviewer:
+
+agents/hostile_reviewer/2026-07-11_kpw_attack.md
+
+
+---
+
+## 5. Next Steps After Completion
+
+Once all three agents respond:
+
+1. **Synthesizer** integrates their findings into the theory.  
+2. Update:
+   - `theory/source_spine.md`
+   - `theory/greene_sibling_map.md`
+   - `theory/anashuecot_kin_map.md`
+3. Add new tasks to the research queue based on contradictions, gaps, or new leads.
+
+This expansion opens a major evidence field.
+
+_Last updated: 2026-07-11_
