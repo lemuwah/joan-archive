@@ -1,1329 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Joan Archive — No Narrative Smoothing</title>
-  <meta name="description" content="An open-access research library dedicated to 17th-century Rhode Island, the Narragansett people, and the documentary record that survives today.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Joan/e Archive — No Narrative Smoothing</title>
+<style>
+  :root {
+    --bg: #0d0d0d; --surface: #141414; --surface-raised: #1a1a1a; --border: #2a2a2a;
+    --text-primary: #e8e8e8; --text-secondary: #a0a0a0; --text-tertiary: #666; --text-quaternary: #444;
+    --accent: #c9a96e; --accent-dim: #c9a96e33; --danger: #c45c5c; --danger-dim: #c45c5c22;
+    --positive: #5c9e6e; --positive-dim: #5c9e6e22; --warning: #c9a44c; --warning-dim: #c9a44c22;
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-mono: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--font-sans); background: var(--bg); color: var(--text-primary); line-height: 1.6; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
 
-  <style>
-    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #070A13; color: #E2E8F0; }
-    .font-serif-display { font-family: 'Cinzel', serif; }
-    .font-mono-tech { font-family: 'JetBrains Mono', monospace; }
-    ::-webkit-scrollbar { width: 6px; height: 6px; }
-    ::-webkit-scrollbar-track { background: #0B0F19; }
-    ::-webkit-scrollbar-thumb { background: #1E293B; border-radius: 4px; }
-    ::-webkit-scrollbar-thumb:hover { background: #334155; }
-    .timeline-line { background: linear-gradient(to bottom, #1E293B 0%, #334155 50%, #1E293B 100%); }
-    .name-fragment-glow { text-shadow: 0 0 20px rgba(212, 175, 55, 0.3); }
-    @keyframes pulse-border { 0%, 100% { border-color: rgba(239, 68, 68, 0.3); } 50% { border-color: rgba(239, 68, 68, 0.6); } }
-    .contamination-pulse { animation: pulse-border 2s infinite; }
-    @keyframes fadeIn { from { opacity:0; transform: translateY(8px); } to { opacity:1; transform: translateY(0); } }
-    .fade-in { animation: fadeIn 0.4s ease-out forwards; }
-    .nav-active { background: rgba(245,158,11,0.08); color: #F59E0B; border-left: 2px solid #F59E0B; }
-    .nav-item { transition: all 0.2s ease; }
-    .nav-item:hover { background: rgba(30,41,59,0.5); color: #E2E8F0; }
-    .card-hover { transition: all 0.25s ease; }
-    .card-hover:hover { border-color: rgba(245,158,11,0.25); transform: translateY(-1px); }
-    .status-proven { border-color: #10B981; color: #34D399; background: rgba(16,185,129,0.06); }
-    .status-probable { border-color: #3B82F6; color: #60A5FA; background: rgba(59,130,246,0.06); }
-    .status-unverified { border-color: #F59E0B; color: #FBBF24; background: rgba(245,158,11,0.06); }
-    .status-null { border-color: #EF4444; color: #F87171; background: rgba(239,68,68,0.06); }
-    .dot-proven { background: #10B981; box-shadow: 0 0 0 4px rgba(16,185,129,0.15); }
-    .dot-probable { background: #3B82F6; box-shadow: 0 0 0 4px rgba(59,130,246,0.15); }
-    .dot-unverified { background: #F59E0B; box-shadow: 0 0 0 4px rgba(245,158,11,0.15); }
-    .dot-null { background: #EF4444; box-shadow: 0 0 0 4px rgba(239,68,68,0.15); }
-  </style>
+  .site-header { border-bottom: 1px solid var(--border); padding: 20px 0; position: sticky; top: 0; background: color-mix(in srgb, var(--bg) 95%, transparent); backdrop-filter: blur(12px); z-index: 100; }
+  .site-header .container { display: flex; align-items: center; justify-content: space-between; }
+  .logo { font-size: 18px; font-weight: 500; letter-spacing: 0.5px; }
+  .logo span { color: var(--accent); }
+  .nav { display: flex; gap: 20px; }
+  .nav a { font-size: 13px; color: var(--text-secondary); transition: color 0.2s; }
+  .nav a:hover { color: var(--text-primary); text-decoration: none; }
+
+  .hero { padding: 64px 0 48px; text-align: center; border-bottom: 1px solid var(--border); }
+  .hero h1 { font-size: 42px; font-weight: 500; line-height: 1.15; margin-bottom: 16px; }
+  .hero h1 em { color: var(--accent); font-style: normal; }
+  .hero p { font-size: 17px; color: var(--text-secondary); max-width: 640px; margin: 0 auto 24px; }
+  .hero .laws { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 24px; }
+  .law-pill { padding: 6px 14px; border: 1px solid var(--border); border-radius: 6px; font-size: 12px; color: var(--text-tertiary); background: var(--surface); }
+  .law-pill strong { color: var(--text-secondary); }
+
+  .section { padding: 48px 0; border-bottom: 1px solid var(--border); }
+  .section-title { font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-quaternary); margin-bottom: 24px; font-weight: 500; }
+
+  .alert-box { padding: 16px 20px; border-radius: 10px; background: var(--danger-dim); border: 1px solid color-mix(in srgb, var(--danger) 30%, transparent); margin-bottom: 32px; display: flex; align-items: flex-start; gap: 12px; }
+  .alert-box .alert-icon { width: 20px; height: 20px; border-radius: 50%; background: var(--danger); color: var(--bg); display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; margin-top: 2px; }
+  .alert-box p { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+  .alert-box strong { color: var(--text-primary); }
+
+  .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+  .why-card { padding: 20px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
+  .why-card h3 { font-size: 15px; font-weight: 500; margin-bottom: 8px; }
+  .why-card p { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+
+  .cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
+  .cta-btn { padding: 10px 20px; border-radius: 8px; font-size: 14px; font-weight: 500; cursor: pointer; transition: all 0.2s; border: none; font-family: inherit; }
+  .cta-btn.primary { background: var(--text-primary); color: var(--bg); }
+  .cta-btn.primary:hover { background: var(--accent); }
+  .cta-btn.secondary { background: transparent; color: var(--text-secondary); border: 1px solid var(--border); }
+  .cta-btn.secondary:hover { border-color: var(--text-tertiary); color: var(--text-primary); }
+
+  .widget-embed { border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin: 24px 0; }
+
+  .source-card { border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 12px; background: var(--surface); }
+  .source-card .source-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+  .source-card h3 { font-size: 14px; font-weight: 500; }
+  .source-card p { font-size: 12px; color: var(--text-secondary); line-height: 1.5; }
+  .badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; border-radius: 6px; font-size: 11px; font-weight: 500; }
+  .badge.proven { background: var(--positive-dim); color: var(--positive); }
+  .badge.caution { background: var(--warning-dim); color: var(--warning); }
+  .badge.rejected { background: var(--danger-dim); color: var(--danger); }
+  .badge.conflict { background: color-mix(in srgb, var(--accent) 15%, transparent); color: var(--accent); }
+  .badge.hypothesis { background: color-mix(in srgb, var(--accent) 12%, transparent); color: var(--accent); }
+
+  .conflict-box { padding: 16px 20px; border-radius: 10px; background: color-mix(in srgb, var(--accent) 6%, transparent); border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent); margin: 16px 0; }
+  .conflict-box h4 { font-size: 14px; font-weight: 500; margin-bottom: 8px; color: var(--accent); }
+  .conflict-box p { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+
+  .firewall-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 16px 0; }
+  .firewall-table th { text-align: left; padding: 10px 12px; border-bottom: 2px solid var(--border); color: var(--text-tertiary); font-weight: 500; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .firewall-table td { padding: 10px 12px; border-bottom: 1px solid var(--border); color: var(--text-secondary); vertical-align: top; }
+  .firewall-table td:first-child { color: var(--text-primary); font-weight: 500; }
+  .firewall-table tr:hover td { background: var(--surface-raised); }
+
+  .joan-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 16px 0; }
+  .joan-table th { text-align: left; padding: 10px 12px; border-bottom: 2px solid var(--border); color: var(--text-tertiary); font-weight: 500; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .joan-table td { padding: 10px 12px; border-bottom: 1px solid var(--border); color: var(--text-secondary); vertical-align: top; }
+  .joan-table td:first-child { color: var(--text-primary); font-weight: 500; }
+  .joan-table tr:hover td { background: var(--surface-raised); }
+  .joan-table .fits { color: var(--positive); }
+  .joan-table .no-fit { color: var(--danger); }
+
+  .site-footer { padding: 32px 0; text-align: center; font-size: 12px; color: var(--text-quaternary); }
+
+  @media (max-width: 640px) {
+    .why-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 28px; }
+    .hero p { font-size: 15px; }
+    .nav { display: none; }
+    .firewall-table, .joan-table { font-size: 11px; }
+    .firewall-table th, .firewall-table td, .joan-table th, .joan-table td { padding: 6px 8px; }
+  }
+</style>
 <base target="_blank">
 </head>
-<body class="overflow-x-hidden">
-  <div id="root"></div>
-  <script>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="logo">The <span>Joan/e</span> Archive</div>
+    <nav class="nav">
+      <a href="#network">Network</a>
+      <a href="#firewall">4-John Firewall</a>
+      <a href="#4joans">4 Joan/e</a>
+      <a href="#deeds">Deeds</a>
+      <a href="#children">Children</a>
+      <a href="#wheresjoan">Where is Joan/e?</a>
+      <a href="#sources">Sources</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1>No narrative smoothing.<br>No algorithmic contamination.<br>Just the <em>documents</em>.</h1>
+      <p>A research archive for John Greene of Quidnessett, his documented network, and the woman who appears exactly once in the surviving paper — <strong>Joan/e</strong>. We do not know who she is. We know who she is not.</p>
+      <div class="laws">
+        <span class="law-pill"><strong>Law 1</strong> — No smoothing</span>
+        <span class="law-pill"><strong>Law 2</strong> — La Mance sieve</span>
+        <span class="law-pill"><strong>Law 3</strong> — No early exclusion</span>
+        <span class="law-pill"><strong>Law 4</strong> — No algorithmic contamination</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTAMINATION INDEX -->
+  <section class="section">
+    <div class="container">
+      <div class="alert-box">
+        <div class="alert-icon">!</div>
+        <p><strong>Algorithmic contamination warning.</strong> If you arrived from Ancestry, YourRoots, MyHeritage, or FamilySearch — your tree may be poisoned by La Mance and circular citations. Every claim here points to a primary source you can verify yourself. <strong>Question everything. Especially this archive.</strong></p>
+      </div>
+
+      <div class="conflict-box">
+        <h4>Open conflict: When did John Greene die?</h4>
+        <p><strong>Source A:</strong> A deed dated 25 Sep 1685 indicates "John Greene of Quidnesset was deceased by that time" (Bates analysis, via FamilySearch artifact).<br><br>
+        <strong>Source B:</strong> Austin 1887, Huling 1884, and Cutter 1915 all state John Greene died c.1695–1696, with a will proved in that period.<br><br>
+        <strong>Status:</strong> UNRESOLVED. Two primary-source traditions exist. This archive does not pick a winner. If you have access to the original 1685 deed or the 1695 probate file, please reach out.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY JOAN/E -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">Why Joan/e?</div>
+      <div class="why-grid">
+        <div class="why-card">
+          <h3>Who was she?</h3>
+          <p>We know her name appears once: the 1682 division deed. Every other record — baptisms, marriages, church rolls, court testimony, dower claims, gravestones — is silent. For roughly thirty years, a documented man's wife is a ghost. That is not a research failure. That is a pattern.</p>
+        </div>
+        <div class="why-card">
+          <h3>Why the silence?</h3>
+          <p>Printing presses operated in Boston by the 1630s. Rhode Island courts recorded by the 1640s. John Greene fought for his land at every turn — petitions, boundary disputes, colonial authority. He only submitted to the Crown after they guaranteed his land. A man this litigious, this papered, had a wife invisible to English law. The quiet is extra loud.</p>
+        </div>
+        <div class="why-card">
+          <h3>What if she wasn't English?</h3>
+          <p>The Narragansett hypothesis: Joan/e may be connected to the sachem lineage, possibly identifiable with <strong>Anashuecot</strong> named in the 1672 Fones Purchase deed. If she lived between two legal worlds, English records would not recognize her name, her marriages, or her children. Her single appearance in 1682 — when English law required a wife's name — would be the exception that proves the rule.</p>
+        </div>
+        <div class="why-card">
+          <h3>Can you help find her?</h3>
+          <p>This archive is open access because the evidence is scattered, unpublished, or known only through copies made before fires and war destroyed originals. If you have access to archives, family papers, or local records not listed here, <a href="mailto:research@joanarchive.org">reach out</a>. The box waiting to be found might be in your attic.</p>
+        </div>
+      </div>
+      <div class="cta-row">
+        <button class="cta-btn primary" onclick="document.getElementById('orbit-widget').scrollIntoView({behavior:'smooth'})">Explore the network map</button>
+        <a href="#sources" class="cta-btn secondary">Browse primary sources</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4-JOHN FIREWALL -->
+  <section class="section" id="firewall">
+    <div class="container">
+      <div class="section-title">The 4-John Firewall</div>
+      <p style="font-size:14px;color:var(--text-secondary);margin-bottom:20px;">The genealogical conflation of multiple men named John Greene is the primary structural error propagated by La Mance (1904) and repeated in subsequent literature. These four men are <strong>distinct individuals</strong> with no documented connection. The firewall is established by multiple independent primary sources.</p>
+
+      <table class="firewall-table">
+        <thead>
+          <tr>
+            <th>Attribute</th>
+            <th>Quidnessett John (OUR subject)</th>
+            <th>Surgeon John (Warwick)</th>
+            <th>Newark John (New Jersey)</th>
+            <th>Stonewall John (Narragansett)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Geographic sphere</td>
+            <td>Quidnessett / Narragansett Country throughout documented career</td>
+            <td>Shawomet / Warwick. No documented presence in Narragansett Country.</td>
+            <td>Newark, New Jersey</td>
+            <td>Narragansett Country (died at Cocumscussoc, July 1676)</td>
+          </tr>
+          <tr>
+            <td>Wife / family</td>
+            <td>Joan/e — sole appearance 1682, living mother documented</td>
+            <td>Alice Beggarly — died January 1643/44 (Arnold letter to Winthrop)</td>
+            <td>Documented in NJ records</td>
+            <td>Nawham — died July 2, 1676 (Roger Williams letter)</td>
+          </tr>
+          <tr>
+            <td>Key document</td>
+            <td>1672 Anashuecot deed — first-named purchaser. 1682 home-place deed.</td>
+            <td>Winthrop Journal Dec 1638: marries Alice Beggarly.</td>
+            <td>1666 NJ records</td>
+            <td>Apr 1676: Roger Williams letter documents death.</td>
+          </tr>
+          <tr>
+            <td>La Mance error</td>
+            <td>La Mance incorrectly assigns "Joan Beggarly" to this man. Chronologically impossible.</td>
+            <td>Correctly identified as Surgeon John, but La Mance conflates his wife with OUR Joan.</td>
+            <td>Sometimes merged into Quidnessett John by algorithmic trees.</td>
+            <td>Sometimes merged into Quidnessett John by algorithmic trees.</td>
+          </tr>
+          <tr>
+            <td>Status</td>
+            <td><span class="badge proven">VERIFIED — distinct individual</span></td>
+            <td><span class="badge proven">VERIFIED — distinct individual</span></td>
+            <td><span class="badge proven">VERIFIED — distinct individual</span></td>
+            <td><span class="badge proven">VERIFIED — distinct individual</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="conflict-box" style="margin-top:20px;">
+        <h4>Why the firewall matters</h4>
+        <p>La Mance (1904) assigned Joan/e the surname "Beggarly" and identified her as the wife of Surgeon John Greene of Warwick. This is chronologically impossible on two independent grounds: (1) Alice Beggarly, Surgeon John's documented wife, died in January 1643/44 — 38 years before Joan/e's 1682 appearance; (2) Surgeon John's documented geographic sphere was Shawomet/Warwick, not Quidnessett/Narragansett, while Joan/e appears exclusively in Quidnessett documentation. La Mance provides no citations, manuscript references, or archival basis for the "Joan Beggarly" claim. <strong>Status: [INVALIDATED]</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 JOAN/E OF THE REGION -->
+  <section class="section" id="4joans">
+    <div class="container">
+      <div class="section-title">The 4 Joan/e of the Region — None Fit the Mold</div>
+      <p style="font-size:14px;color:var(--text-secondary);margin-bottom:20px;">We have identified four women named Joan (or Joan/e) operating in southern New England during the relevant period. Each has been proposed or considered as a candidate for John Greene's wife. <strong>None fit.</strong> The exercise of elimination is as important as the exercise of identification.</p>
+
+      <table class="joan-table">
+        <thead>
+          <tr>
+            <th>Name / Source</th>
+            <th>Documented husband</th>
+            <th>Documented death</th>
+            <th>Geographic sphere</th>
+            <th>Fits Quidnessett Joan/e?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Joan Beggarly<br><span style="font-size:11px;color:var(--text-quaternary);">La Mance 1904; Ancestry trees</span></td>
+            <td>Surgeon John Greene of Warwick (Winthrop Journal, Dec 1638)</td>
+            <td>Not documented. Alice Beggarly (his wife) died Jan 1643/44 per Arnold-to-Winthrop letter.</td>
+            <td>Shawomet / Warwick</td>
+            <td class="no-fit"><strong>NO</strong> — Chronologically impossible. 38-year gap. No primary source for "Joan Beggarly."</td>
+          </tr>
+          <tr>
+            <td>Joan, wife of John Greene of Quidnessett<br><span style="font-size:11px;color:var(--text-quaternary);">1682 home-place deed</span></td>
+            <td>John Greene of Quidnessett (named in deed)</td>
+            <td>Not documented. Not mentioned in 1695 will.</td>
+            <td>Quidnessett / Narragansett Country</td>
+            <td class="fits"><strong>YES — THIS IS HER</strong> — But we know nothing beyond her name and the 1682 deed clause.</td>
+          </tr>
+          <tr>
+            <td>Joan (anglicized Awashonks)<br><span style="font-size:11px;color:var(--text-quaternary);">Plymouth Colony Records; Drake p.249</span></td>
+            <td>Wampanoag sunksquaw of Saconet. No English husband documented.</td>
+            <td>Not documented in English records.</td>
+            <td>Saconet / Plymouth Colony</td>
+            <td class="no-fit"><strong>NO — PARALLEL CASE</strong> — Demonstrates the anglicization practice ("Joan" for indigenous female leaders), but distinct individual.</td>
+          </tr>
+          <tr>
+            <td>Anashuecot / Awashuwett<br><span style="font-size:11px;color:var(--text-quaternary);">1672 Fones Purchase deed</span></td>
+            <td>"Chiefe Sachem and heire" — no husband named in deed.</td>
+            <td>Not documented after 1682.</td>
+            <td>Quidnessett / Narragansett Country</td>
+            <td><span class="badge hypothesis">WORKING HYPOTHESIS</span> — Possibly the same individual as Joan/e. Five-lane convergence analysis in progress. Not proven.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="margin-top:20px;padding:16px;border:1px solid var(--border);border-radius:10px;background:var(--surface);">
+        <p style="font-size:13px;color:var(--text-secondary);line-height:1.6;"><strong>The bottom line:</strong> Of the four Joan/e candidates in the region, one is chronologically impossible (Beggarly), one is a parallel case demonstrating colonial naming practice (Awashonks), one is our actual subject but tells us almost nothing (Quidnessett Joan/e), and one is a working hypothesis that may or may not resolve into our subject (Anashuecot). We remain at <strong>Joan/e Unknown</strong> until primary source evidence closes the gap.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORBIT WIDGET -->
+  <section class="section" id="orbit-widget">
+    <div class="container">
+      <div class="section-title">Orbit convergence map</div>
+      <p style="font-size:14px;color:var(--text-secondary);margin-bottom:16px;">Every node is backed by a primary source. Click tabs to explore deed signers, John's children, and the places Joan/e should be — but isn't. Filter by document. Question everything.</p>
+      <div class="widget-embed">
+        <div id="widget-mount" style="padding:20px;color:var(--text-tertiary);text-align:center;">
+          [Widget loads here — paste contents of widget.html into this div, or load via iframe]
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIMARY SOURCES -->
+  <section class="section" id="sources">
+    <div class="container">
+      <div class="section-title">Primary source index</div>
+      <p style="font-size:14px;color:var(--text-secondary);margin-bottom:20px;">Every claim points back to one of these documents. Conflicts are flagged, not hidden. Tier system from Peer Review Packet v4.2.</p>
+
+      <div class="source-card">
+        <div class="source-header">
+          <h3>RI Land Evidence — 1672 Fones Purchase deed (Deed #90)</h3>
+          <span class="badge proven">Tier 1 — Primary</span>
+        </div>
+        <p>East Greenwich records. Names Anashuecot (deed body) / Awashuwett (external index) as "Chiefe Sachem and heire" grantor. John Greene first-named purchaser. <strong>Same grantor, two spellings.</strong> Access: RI State Archives; microfilm.</p>
+      </div>
+
+      <div class="source-card">
+        <div class="source-header">
+          <h3>RI Land Evidence — 1682 Home-place deed (John Greene to sons)</h3>
+          <span class="badge proven">Tier 1 — Primary</span>
+        </div>
+        <p>Quidnessett, King's County. John divides land among sons. <strong>Joan/e named as wife — her only appearance in any known primary source.</strong> Contains "or to her mother if she survive" clause. Access: RI State Archives; microfilm.</p>
+      </div>
+
+      <div class="source-card">
+        <div class="source-header">
+          <h3>Deed — 25 Sep 1685 (Edward Greene)</h3>
+          <span class="badge conflict">Source conflict</span>
+        </div>
+        <p>Deed indicates "John Greene of Quidnesset was deceased by that time" (Bates analysis, via FamilySearch artifact #13331170). <strong>CONFLICTS with 1695 death date.</strong> Access: Original deed location unknown.</p>
+      </div>
+
+      <div class="source-card">
+        <div class="source-header">
+          <h3>King's County Probate — Will of John Greene (proved 1695)</h3>
+          <span class="badge conflict">Source conflict</span>
+        </div>
+        <p>Names sons, land in Quidnessett. No mention of Joan/e. <strong>CONFLICTS with 1685 deed implying death.</strong> Access: RI State Archives.</p>
+      </div>
+
+      <div class="source-card">
+        <div class="source-header">
+          <h3>RI Colonial Records, Vol. 2 (1665–1675)</h3>
+          <span class="badge proven">Tier 1 — Primary</span>
+        </div>
+        <p>Petitions, court proceedings, land disputes. Documents John Greene's resistance to RI authority until land rights guaranteed. 1664: "John Greene Sen'r living at Narragansett." Access: Archive.org; RI State Archives.</p>
+      </div>
+
+      <div class="source-card">
+        <div class="source-header">
+          <h3>Winthrop Papers, Vol. 4 (MHS)</h3>
+          <span class="badge proven">Tier 1 — Primary</span>
+        </div>
+        <p>Arnold letter to Winthrop, January 1643/44: "Mr. Green's wife is dead." <strong>Closes Alice Beggarly story permanently.</strong> 38-year temporal firewall established. Access: Massachusetts Historical Society.</p>
+      </div>
+
+      <div class="source-card">
+        <div class="source-header">
+          <h3>Winthrop Journal (Hosmer ed., 1908, 2 vols.)</h3>
+          <span class="badge proven">Tier 1 — Primary</span>
+        </div>
+        <p>Dec 1638: Surgeon John Greene marries Alice Beggarly. <strong>NOT Joan/e. NOT Quidnessett John.</strong> Two-John Firewall root. Access: MHS.</p>
+      </div>
+
+      <div class="source-card">
+        <div class="source-header">
+          <h3>Hough 1858 — Newport Court Martial (pp.173–191)</h3>
+          <span class="badge caution">Tier 2 — Near-contemporary (verbatim PENDING)</span>
+        </div>
+        <p>Aug 24, 1676: John Greene personally denies charge against Awaswin; Daniel Greene testifies for English prosecution. <strong>Behavioral anchor.</strong> Verbatim transcript not yet accessed. Access: NYPL HBC; JCB Library; AAS; RI State Archives.</p>
+      </div>
+
+      <div class="source-card">
+        <div class="source-header">
+          <h3>F.L. Greene, "Greene Family Records" (1894, pp.9–10)</h3>
+          <span class="badge caution">Tier 2 — Near-contemporary compilation</span>
+        </div>
+        <p>States: "His wife, in 1682, was named Joan, but nothing further is known about her." Also cites 1679 affidavit. Access: Archive.org; NEHGS.</p>
+      </div>
+
+      <div class="source-card">
+        <div class="source-header">
+          <h3>Ray Greene Huling, "The Greenes of Quidnesset" (1884)</h3>
+          <span class="badge caution">Tier 2 — Near-contemporary</span>
+        </div>
+        <p><em>Narragansett Historical Register</em>, Vol. II, p. 137. States: "nothing is certainly known" of John Greene's origins. <strong>Does NOT connect him to 1635 passenger list.</strong> Access: Archive.org.</p>
+      </div>
+
+      <div class="source-card">
+        <div class="source-header">
+          <h3>J.O. Austin, Genealogical Dictionary of RI (1887)</h3>
+          <span class="badge caution">Tier 2 — Near-contemporary</span>
+        </div>
+        <p>Lists John Greene of Quidnessett. Does NOT connect him to 1635 passenger list. Favors 1695 death date. Access: Archive.org; NEHGS.</p>
+      </div>
+
+      <div class="source-card">
+        <div class="source-header">
+          <h3>La Mance, "The Greene Family and Its Branches" (1904)</h3>
+          <span class="badge rejected">Tier 4 — INVALIDATED</span>
+        </div>
+        <p>Adds speculative connections (1635 passenger list, "Joan Beggarly" marriage, English pedigree) with <strong>NO cited primary sources</strong>. Chronologically impossible (Alice Beggarly d.1643/44; Joan/e appears 1682). Treat as fiction. Access: Archive.org — for error-tracing only.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>The Joan/e Archive — Open access research library. History belongs to everyone. Access to the evidence should too.</p>
+    <p style="margin-top:8px;">Peer Review Packet v4.2 — March 2026. Built with rigor. No narrative smoothing. <a href="https://github.com/lemuwah/joan-lineage-theory">GitHub</a></p>
+  </div>
+</footer>
 
-    // ===== DATA =====
-    const TIMELINE_DATA = [
-      { id: "evt-1642", date: "c.1642", event: "John Greene Sr. arrives and settles with Richard Smith.", who: "John Greene Sr.", where: "Cocumscussoc", source: "1679 affidavit", status: "PROVEN", contradictionNotes: "Secure timeline anchor. Does not name a wife.", lawsTriggered: [] },
-      { id: "evt-1654-tocomminon", date: "1654", event: "RIHS MSS 461 finding aid confirms an agreement for land between Toccommenan and Randall Howlden & Ezekiell Holliman, filed in the Greene family papers — 18 years before the Fones Purchase.", who: "Toccommenan, Randall Howlden, Ezekiell Holliman", where: "Greene family papers (RIHS MSS 461, Folder 1)", source: "RIHS MSS 461 finding aid", status: "PROBABLE", contradictionNotes: "The agreement itself is archivally confirmed to exist. Its later use to name Toccommenan as Anashuecot's father is most likely a 19th-century interpretive gloss, not a separate primary affidavit. Direct examination of RIHS MSS 461, Folder 1, Page 22 still pending.", lawsTriggered: ["Law 3: No Premature Disqualification"] },
-      { id: "evt-1664", date: "1664", event: "Court record locates John Greene Sr. at Narragansett/Aquidnesitt.", who: "John Greene Sr.", where: "Newport court", source: "Newport court record", status: "PROVEN", contradictionNotes: "Solidifies residence prior to King Philip's War.", lawsTriggered: [] },
-      { id: "evt-1672", date: "1672", event: "Fones Purchase Deed: Anashuecot named 'chiefe Sachem and heire properly'. Henry Greene witnesses by mark.", who: "Anashuecot, Wampkegge, Ompamiatt, Henry Greene (mark), George Wightman", where: "Narragansett country", source: "Fones Record (Arnold transcription)", status: "UNVERIFIED", contradictionNotes: "Critical Tier 2 link. All 7 signers marked 'his marke' — scribal construct with no grammatical gender in Narragansett.", lawsTriggered: ["Law 1: Contradictions Held", "Law 3: No Premature Disqualification"] },
-      { id: "evt-1670s-awashonks", date: "1670s", event: "External comparator: Awashonks, a Wampanoag sunksquaw of Saconet, is documented under the anglicized name 'Joan' in the same period and region.", who: "Awashonks", where: "Plymouth Colony / Saconet", source: "Drake, Book of Indians (1833), p.249", status: "UNVERIFIED", contradictionNotes: "The Drake citation itself is confirmed. The underlying Plymouth Colony manuscript has not yet been retrieved and checked verbatim. This shows English scribes used 'Joan' for other high-status Native women in the region — it is offered as context, not as direct evidence about Joan Greene.", lawsTriggered: ["Law 3: No Premature Disqualification"] },
-      { id: "evt-1675-swamp", date: "Dec 19, 1675", event: "Great Swamp Massacre. Bull's garrison (Southern Node, Pettaquamscutt) destroyed Dec 16, 1675 — 17 killed, never rebuilt. Smith's Castle (Northern Node, Cocumscussoc) burns the following spring but is rebuilt by 1678.", who: "Richard Smith Jr., Jireh Bull", where: "Cocumscussoc (North) / Pettaquamscutt (South)", source: "RI Colonial Records", status: "PROVEN", contradictionNotes: "Establishes an asymmetric recovery between the two nodes. This is the structural reason a 1682 Quidnessett deed involving Joan is possible at all, following a seven-year documentary silence.", lawsTriggered: [] },
-      { id: "evt-1676-stonewall", date: "Apr 1, 1676", event: "Roger Williams letter tracks specialized, liminal Indigenous/English figures in trading post orbit.", who: "Stonewall John ('Mr R. Smiths John Wall Maker')", where: "Cocumscussoc trading post orbit", source: "Williams Correspondence (1676)", status: "PROVEN", contradictionNotes: "Confirms systematic cultivation of bilingual/liminal Indigenous figures within Smith's domain.", lawsTriggered: [] },
-      { id: "evt-1676-quaiapen", date: "July 2, 1676", event: "Major John Talcott's dispatch: Second Battle of Nipsachuck. Quaiapen slain.", who: "Quaiapen (alias Magnus, Sunck Squaw, Old Queen)", where: "Nipsachuck / Queen's Fort", source: "Talcott Correspondence / RI Colonial Records", status: "PROVEN", contradictionNotes: "Hard chronological firewall. Quaiapen slain 1676; Anashuecot survives to 1678. Absolute decoupling.", lawsTriggered: [] },
-      { id: "evt-1676-court", date: "1676", event: "Court-martial: Witness 'Daniel Green' in 'Anaftiawin' context.", who: "'Daniel Green'", where: "Newport / Court-martial", source: "Hough 1858, pp. 173-191", status: "UNVERIFIED", contradictionNotes: "Anaftiawin = 8th phonetic variant of Anashuecot. Daniel Green identity needs 100% verification.", lawsTriggered: ["Law 3: No Premature Disqualification"] },
-      { id: "evt-1676-fire", date: "1676", event: "Providence town records burn during King Philip's War.", who: "Providence Administration", where: "Providence", source: "Historical Consensus", status: "PROVEN", contradictionNotes: "Structural gap for all active records. Land transactions, tribal integrations destroyed.", lawsTriggered: [] },
-      { id: "evt-1677-abs", date: "1677/8", event: "Absolom affidavit: Anashuecot 'conveyed out of the country'. Father Tocomminon.", who: "Absolom, Anashuecot, Tocomminon, 'Washaucutt' (brother)", where: "Fones Record, p.6", source: "Fones Record, p. 6", status: "PROBABLE", contradictionNotes: "Departure or capture. Washaucutt as brother — unresolved if alternate spelling or separate entity.", lawsTriggered: ["Law 1: Contradictions Held"] },
-      { id: "evt-1677-guard", date: "1677/8", event: "Mr. Browne left as guardian by Tocomminon.", who: "Tocomminon, Mr. Browne", where: "Fones Record, p.6", source: "Fones Record, p. 6", status: "PROBABLE", contradictionNotes: "Close administrative, legal, protective interactions between Narragansett leadership and English settlers.", lawsTriggered: [] },
-      { id: "evt-1679-aff", date: "1679", event: "John Greene's affidavit: 40+ years occupation at Cocumscussoc.", who: "John Greene Sr.", where: "Cocumscussoc", source: "Primary Affidavit Document", status: "PROVEN", contradictionNotes: "Definite baseline. Overlaps with Smith land claims.", lawsTriggered: [] },
-      { id: "evt-1682-home", date: "Mar 24, 1682", event: "Home-place deed: 180 acres to sons Daniel (120ac) and James (60ac). Life-estate clause.", who: "John Greene Sr., Joan (as living mother), Daniel, James", where: "Quidnessett", source: "F.L. Greene 1894, p.10 (archive.org)", status: "PROVEN", contradictionNotes: "'...as long as their father or mother should live'. Confirms Joan alive. NOTE: F.L. Greene states NOTHING further known about Joan. Previously-claimed 'Bow & Arrow' mark checked against source and REMOVED as unsupported.", lawsTriggered: ["Law 1: Contradictions Held", "Law 2: La Mance Sieve"] },
-      { id: "evt-1682-pawt", date: "May 19, 1682", event: "Joan consents to Pawtuxet land sale to William Carpenter for £10. Signs 'her marke'.", who: "John Greene Sr., Joan, William Carpenter, John Wickes, Samuel Gorton", where: "Pawtuxet", source: "Records of RI & Providence Plantations, Vol. VII, pp. 177-178", status: "PROVEN", contradictionNotes: "First direct physical record of Joan's active legal agency via signature mark.", lawsTriggered: [] },
-      { id: "evt-1685-death", date: "1685 (bef. 25 Sept)", event: "John Greene Sr.'s death proven before this date.", who: "John Greene Sr.", where: "Quidnessett", source: "Bates, RIHS Collections XI (1918), read directly", status: "PROVEN", contradictionNotes: "Nullifies ALL theories dependent on 1695 date. Critical correction.", lawsTriggered: [] },
-      { id: "evt-1685-will", date: "1685-86", event: "John Sr.'s will lost in North Kingstown town fire.", who: "John Greene Sr.", where: "North Kingstown", source: "F.L. Greene 1894 / Bates", status: "PROVEN", contradictionNotes: "Explains severe lack of explicit probate lists detailing Joan's background.", lawsTriggered: [] },
-      { id: "evt-1695-myth", date: "'1695'", event: "Widely repeated claim: '1695 will names Joan'.", who: "Joan / John Greene (claimed)", where: "Secondary/tertiary sources", source: "No primary source", status: "NULL", contradictionNotes: "Known fabrication. John Sr. proven dead by 1685. AI-propagated or genealogy-forum phantom.", lawsTriggered: ["Law 2: La Mance Sieve", "Law 3: No Premature Disqualification"] },
-      { id: "evt-1703-fones", date: "1703, 24 Jul", event: "Clerk Fones enters 1672 deed AND 1677/8 affidavit into official record.", who: "Fones (clerk)", where: "Fones Record", source: "Fones Record", status: "PROVEN", contradictionNotes: "31 years post-execution. Isolated act separate from main 1686 campaign. Open chronological vulnerability.", lawsTriggered: ["Law 1: Contradictions Held"] },
-      { id: "evt-1858-hough", date: "1858", event: "Hough publishes court-martial records: 'Anaftiawin of Narraganfett'.", who: "Hough (author)", where: "New York Archives", source: "Hough 1858, p. 181 (archive.org)", status: "PROVEN", contradictionNotes: "Secures phonetic variant chain Anashuecot/Anaftiawin.", lawsTriggered: [] },
-      { id: "evt-1894-flg", date: "1894", event: "F.L. Greene: 'His wife, in 1682, was named Joan, but nothing further is known...'", who: "F.L. Greene", where: "Published Genealogy", source: "F.L. Greene 1894", status: "PROVEN", contradictionNotes: "Historical boundary of traditional print research. Explicitly states NO further information.", lawsTriggered: [] },
-      { id: "evt-1904-lamance", date: "1904", event: "La Mance publishes origin point of multiple unverifiable claims.", who: "La Mance", where: "Genealogical Book", source: "La Mance 1904", status: "NULL", contradictionNotes: "Subject to strict La Mance Law. Unverified circular genealogy explicitly invalidated.", lawsTriggered: ["Law 2: La Mance Sieve"] },
-      { id: "evt-1918-bates", date: "1918-19", event: "Bates publishes 'John Greene of Newport and Narragansett' in RIHS Collections XI-XII.", who: "Louise Prosser Bates", where: "RI Historical Society", source: "RIHS Collections XI-XII (read directly)", status: "PROVEN", contradictionNotes: "Highly rigorous. Structural core of Five-John Firewall.", lawsTriggered: [] },
-      { id: "evt-1931-chapin", date: "1931", event: "Howard M. Chapin's Sachems of the Narragansetts fully processed. Chapin's 'Cojonoquant' converges with Brooks's 'Cononjonant' across four independent data points.", who: "Howard M. Chapin", where: "Published monograph", source: "Chapin, Sachems of the Narragansetts (1931)", status: "PROBABLE", contradictionNotes: "Upgraded from unresolved to Probable-same-individual on these two names specifically. Does NOT resolve the wider Coginiquant/Cogineaquon/Cononjonant/Cojonoquond name-cluster question — that stays explicitly held open pending Potter's Atherton Purchase narrative or Arnold 1894.", lawsTriggered: ["Law 1: Contradictions Held"] },
-      { id: "evt-1941-hild", date: "1941", event: "Hildenbrand corroborates son Edward.", who: "Hildenbrand, Edward Greene", where: "Genealogical Files", source: "Hildenbrand 1941", status: "PROBABLE", contradictionNotes: "Traces Dutchess Co., NY lines.", lawsTriggered: [] },
-      { id: "evt-1881-tribal", date: "1881", event: "Narragansett Tribal List includes 'Green' surname.", who: "Narragansett Tribe", where: "Rhode Island", source: "Narragansett Dawn / Tribal List", status: "PROVEN", contradictionNotes: "Confirms historic convergence of surname within tribal sovereign structure.", lawsTriggered: [] }
-    ];
-
-    const NETWORKS = [
-      // 1672 Fones Purchase deed group
-      { name: "Anashuecot", association: "Named 'chiefe Sachem and heire properly' — grantor of the Quidnessett tract.", frequency: "High", deedGroup: "1672 Fones Purchase" },
-      { name: "Wampkegge", association: "Brother of Anashuecot; co-grantor on the 1672 deed.", frequency: "Medium", deedGroup: "1672 Fones Purchase" },
-      { name: "Ompamiatt", association: "Brother of Anashuecot; co-grantor on the 1672 deed.", frequency: "Medium", deedGroup: "1672 Fones Purchase" },
-      { name: "Nammeash", association: "Son of Anashuecot; confirmed eldest via scribal correction in the deed.", frequency: "Medium", deedGroup: "1672 Fones Purchase" },
-      { name: "Seecomp", association: "Son of Anashuecot named in the 1672 deed.", frequency: "Low", deedGroup: "1672 Fones Purchase" },
-      { name: "Tyecuesha", association: "Son of Anashuecot named in the 1672 deed.", frequency: "Low", deedGroup: "1672 Fones Purchase" },
-      { name: "Absolome Counsellor", association: "Anomalous figure in the 1672 deed's signature block; later gives the 1677/8 affidavit.", frequency: "High", deedGroup: "1672 Fones Purchase" },
-      { name: "Henry Greene", association: "Son of John Greene (age 19); witnesses the 1672 deed by mark.", frequency: "Medium", deedGroup: "1672 Fones Purchase" },
-      { name: "Indian Peter", association: "Witness to the 1672 deed.", frequency: "Low", deedGroup: "1672 Fones Purchase" },
-      { name: "George Wightman", association: "Witness to the 1672 deed.", frequency: "Low", deedGroup: "1672 Fones Purchase" },
-      { name: "John Fones", association: "Co-purchaser named in the 1672 deed; the deed itself is his namesake record.", frequency: "Medium", deedGroup: "1672 Fones Purchase" },
-
-      // 1682 Home-Place deed group
-      { name: "John Greene Sr.", association: "Grantor of the 1682 home-place deed; first-named purchaser in the 1672 deed a decade earlier.", frequency: "High", deedGroup: "1682 Home-Place Deed" },
-      { name: "Joan", association: "Named as living wife/mother in the 1682 home-place deed's life-estate clause. The subject of this whole archive.", frequency: "High", deedGroup: "1682 Home-Place Deed" },
-      { name: "Daniel Greene", association: "Son; receives 120 acres in the 1682 home-place deed.", frequency: "Medium", deedGroup: "1682 Home-Place Deed" },
-      { name: "James Greene", association: "Son; receives 60 acres in the 1682 home-place deed.", frequency: "Medium", deedGroup: "1682 Home-Place Deed" },
-      { name: "Henry X Tibbitts", association: "Witness to the 1682 home-place deed, signs by mark.", frequency: "Low", deedGroup: "1682 Home-Place Deed" },
-      { name: "Arthur Aylworth", association: "Witness to the 1682 home-place deed.", frequency: "Low", deedGroup: "1682 Home-Place Deed" },
-      { name: "John Foanes (Warden)", association: "Acknowledges the 1682 home-place deed in his capacity as Warden.", frequency: "Low", deedGroup: "1682 Home-Place Deed" },
-
-      // 1682 Pawtuxet Sale group
-      { name: "William Carpenter", association: "Buyer in the May 1682 Pawtuxet sale; John and Joan convey land to him for £10.", frequency: "Medium", deedGroup: "1682 Pawtuxet Sale" },
-      { name: "John Wickes", association: "Witness to the 1682 Pawtuxet sale.", frequency: "Low", deedGroup: "1682 Pawtuxet Sale" },
-      { name: "Samuel Gorton", association: "Witness to the 1682 Pawtuxet sale.", frequency: "Low", deedGroup: "1682 Pawtuxet Sale" },
-
-      // Broader orbit — not tied to one specific deed
-      { name: "Tocomminon", association: "Sachem; per the 1677/8 Absolom affidavit, named as Anashuecot's father.", frequency: "High", deedGroup: "Broader Orbit" },
-      { name: "Tibbetts", association: "Overlapping land records and marriages in Quidnessett/Narragansett.", frequency: "Medium", deedGroup: "Broader Orbit" },
-      { name: "Smith", association: "Richard Smith of Cocumscussoc; co-settler with John Greene.", frequency: "High", deedGroup: "Broader Orbit" },
-      { name: "Williams", association: "Roger Williams; native trade agreements & translation.", frequency: "Medium", deedGroup: "Broader Orbit" },
-      { name: "Stonewall John", association: "'Mr R. Smiths John Wall Maker' in trading post orbit.", frequency: "High", deedGroup: "Broader Orbit" },
-      { name: "Hough", association: "Transcriber of 1676 court-martial records, Anaftiawin links.", frequency: "Medium", deedGroup: "Broader Orbit" }
-    ];
-
-    const CONTAMINATIONS = [
-      { item: "Joan Greene = child of Alice Daniels", nature: "YourRoots auto-assigned parentage with zero citations. Joan is documented adult sachem-line heir (1672), legal actor (1682), mother (1682).", status: "EXPOSED & QUARANTINED", vector: "Algorithmic Genealogy Contamination (YourRoots)" },
-      { item: "Fabricated composite sachem 'Cojonoquond'", nature: "Merged Coginiquant + Cononjonant into one fake name.", status: "EXPOSED & QUARANTINED", vector: "AI Hallucination / Forum Echo" },
-      { item: "Fabricated 1743 'Absalom Jennings' runaway ad", nature: "Invented to bridge Absolom/Greene identities.", status: "EXPOSED & QUARANTINED", vector: "AI Contamination Vector" },
-      { item: "Lora La Mance Circular Pedigrees (1903/04)", nature: "Unverified upstream echo chamber anchoring 'Joan Beggarly' legends.", status: "EXPOSED & QUARANTINED", vector: "Secondary Compilation Error / Echo Chamber" },
-      { item: "'Bow-and-arrow' pictograph mark on Anashuecot", nature: "No primary support in Fones Record. Checked directly against cited source and removed.", status: "EXPOSED & QUARANTINED", vector: "AI Hallucination → Cross-entity drift" }
-    ];
-
-    const OPEN_THREADS = [
-      { id: 1, text: "Pull Bates's 1918-19 primary citation for 25 Sept 1685 'John Greene Sr. deceased' deed.", done: false, priority: "CRITICAL" },
-      { id: 2, text: "Verify if 1676 court-martial 'Daniel Green' = Daniel Greene of Quidnessett.", done: false, priority: "HIGH" },
-      { id: 3, text: "Resolve Mosenpp / Moseupp sachem identity against Absolom affidavit network.", done: false, priority: "HIGH" },
-      { id: 4, text: "Audit Fones copyist 'her marke' convention (5 found) for gender-accuracy rate.", done: true, priority: "MEDIUM" },
-      { id: 5, text: "Complete Hough 1858 pp. 173-191 transcription for Anaftiawin & Daniel Green.", done: false, priority: "HIGH" },
-      { id: 6, text: "Examine Bartlett Vols. 2-3 for undocumented native captive/Greene entries.", done: false, priority: "MEDIUM" },
-      { id: 7, text: "Investigate IG merchant seal & IG gravestone (RIHS Mss 117) under 3-Scenario Framework.", done: false, priority: "LOW" },
-      { id: 8, text: "Audit Family TreeDNA Green/e Surname Project (Code H10429) against Kit B2778 / Haplogroup R-FTB79899.", done: false, priority: "HIGH" },
-      { id: 9, text: "Coginiquant/Cogineaquon/Cononjonant name-cluster: read Potter's Atherton Purchase (~pp. 58-60) or Arnold 1894. HELD OPEN.", done: false, priority: "CRITICAL" }
-    ];
-
-    const PRIMARY_SOURCES = [
-      { id: "src-1672", year: "1672", title: "Fones Purchase Deed", description: "Names Anashuecot 'chiefe Sachem and heire properly'. All 7 signers marked 'his marke' — scribal construct, not grammatical gender.", status: "PROVEN", location: "Fones Record (Arnold transcription/PDF)", type: "Land Deed" },
-      { id: "src-1677", year: "1677/8", title: "Absolom Affidavit", description: "Anashuecot 'conveyed out of the country'. Father Tocomminon. Brother 'Washaucutt'. Mr. Browne left as guardian.", status: "PROBABLE", location: "Fones Record, p. 6", type: "Affidavit" },
-      { id: "src-1682-home", year: "1682 (Mar 24)", title: "Home-Place Deed", description: "180 acres to Daniel (120ac) and James (60ac). Life-estate clause: '...as long as their father or mother should live'. Confirms Joan alive.", status: "PROVEN", location: "F.L. Greene 1894, p.10 (archive.org)", type: "Land Deed" },
-      { id: "src-1682-pawt", year: "1682 (May 19)", title: "Pawtuxet Sale Consent", description: "Joan's 'free & voluntary consent' to £10 sale to William Carpenter. Signs 'her marke'. First direct legal agency record.", status: "PROVEN", location: "Records of RI & Providence Plantations, Vol. VII, pp. 177-178", type: "Consent Document" },
-      { id: "src-1685", year: "1685", title: "Bates Death Record", description: "John Greene Sr. proven dead before 25 September 1685. Nullifies all 1695-dependent theories.", status: "PROVEN", location: "Bates, RIHS Collections XI (1918), read directly", type: "Death Record" },
-      { id: "src-1703", year: "1703", title: "Fones Isolated Entry", description: "Clerk Fones enters 1672 deed AND 1677/8 affidavit 31 years post-execution. Isolated from main 1686 campaign.", status: "PROVEN", location: "Fones Record", type: "Clerk Entry" },
-      { id: "src-1858", year: "1858", title: "Hough Court-Martial Records", description: "'Anaftiawin of Narraganfett' — 8th phonetic variant of Anashuecot. 'Daniel Green' witness.", status: "PROVEN", location: "Hough 1858, p. 181 (archive.org)", type: "Court-Martial Transcription" }
-    ];
-
-    const NAME_FRAGMENTS = [
-      { name: "Anashuecot", context: "Formal / Sachem-line", year: "1672", source: "Fones Purchase Deed", type: "Political Office", desc: "'chiefe Sachem and heire properly' — land-holding authority, not private individual." },
-      { name: "Anaftiawin", context: "Conflict / Court-martial", year: "1676", source: "Hough 1858, p.181", type: "Phonetic Variant (8th)", desc: "Witnessed by 'Daniel Green'. May be deliberate wartime alias or scribal distortion." },
-      { name: "Joan / Joane", context: "Domestic / English legal", year: "1682", source: "Pawtuxet Sale + Home-Place Deed", type: "English Overlay", desc: "'Free & voluntary consent' — legal actor requiring independent title release, not passive spouse." },
-      { name: "[no name]", context: "Pre-colonial / Indigenous kinship", year: "pre-1664", source: "Implied", type: "Absence", desc: "No English record names her before 1682. Indigenous kinship system had no need for English naming." },
-      { name: "'his marke'", context: "Scribal erasure", year: "1672", source: "Fones Purchase Deed", type: "Colonial Suppression", desc: "All 7 signers including Anashuecot marked 'his'. Narragansett has no grammatical gender. Scribe re-gendered." },
-      { name: "'her marke'", context: "Scribal acknowledgment", year: "1682", source: "Pawtuxet Sale", type: "Colonial Recognition", desc: "Joan signs with 'her marke' — now acknowledged as woman, but only as spousal consent-giver, not sachem." }
-    ];
-
-    // ===== IMAGE GALLERY =====
-    // Only images with an existing, vetted write-up (a primary_sources/*.md file or
-    // a PRIMARY_SOURCES entry) get a date and status here. Everything else goes in
-    // IMAGES_NEEDING_CONTEXT below rather than being captioned from the filename alone.
-    const IMAGE_GALLERY = [
-      { file: "images/rockydavid.JPG", date: "1672", title: "1672 Fones Purchase Deed", status: "PROVEN", link: "/joan-lineage-theory/primary/1672-fones/" },
-      { file: "images/awawamicks.JPG", date: "1670", title: "1670 Awawsunks Sachem Deed", status: "PROVEN", link: "/joan-lineage-theory/primary/awawamicks/" },
-      { file: "images/cakochawhunt.JPG", date: "1674", title: "1674 Cakochawhunt Confirmation Deed", status: "PROVEN", link: "/joan-lineage-theory/primary/cakochawhunt/" },
-      { file: "images/1674_awawsunks_her_marke_cakochawhunt_simon_eldist_RI_land_evidences_v1_p52-53.jpg", date: "1674", title: "Awawsunck 'her marke' / Cakochawhunt, RI Land Evidences Vol.1 pp.52-53", status: "PROVEN", link: "/joan-lineage-theory/primary/cakochawhunt/" },
-      { file: "images/council-order-1678.JPG", date: "1678", title: "1678 Colony Council Order — Narragansett Country", status: "PROVEN", link: "/joan-lineage-theory/primary/council-order-1678/" },
-      { file: "images/greenesworn.JPG", date: "1679", title: "1679 John Greene Certificate — Narragansett Country", status: "PROVEN", link: "/joan-lineage-theory/primary/greene-certificate-1679/" },
-      { file: "images/captgreene1679.JPG", date: "1679", title: "1679 Capt. John Greene assembly payment record", status: "PROVEN", link: "/joan-lineage-theory/primary/greene-certificate-1679/" },
-      { file: "images/1679_petition_narragansett_inhabitants_RI_records_58-59_forty-two-years.jpg", date: "1679", title: "1679 Petition of Narragansett Inhabitants ('forty-two years')", status: "UNVERIFIED", link: null },
-      { file: "images/absolom.jpg", date: "1677/8", title: "Absolom Affidavit — Fones Record pp.22-23", status: "PROBABLE", link: "/joan-lineage-theory/primary/absolom/" },
-      { file: "images/1682.JPG", date: "Mar 24, 1682", title: "Home-Place Deed, Page 1", status: "PROVEN", link: "/joan-lineage-theory/primary/homeplace-1682/" },
-      { file: "images/1682-2.JPG", date: "Mar 24, 1682", title: "Home-Place Deed, Page 2", status: "PROVEN", link: "/joan-lineage-theory/primary/homeplace-1682/" },
-      { file: "images/actofvoluntarysubmission.JPG", date: "1664", title: "1664 Act of Voluntary Submission", status: "PROBABLE", link: "/joan-lineage-theory/primary/" }
-    ];
-
-    // Images sitting in the repo with no write-up yet. Listed honestly as unprocessed —
-    // filenames alone are not treated as evidence of what a document says.
-    const IMAGES_NEEDING_CONTEXT = [
-      "images/1687.jpg", "images/1688-devilspurchase.JPG", "images/Plat_of_Quidnesett.jpg",
-      "images/SignaturesFones20.jfif", "images/absolom-affidavit.jpg", "images/absolom-right-beneath-greene-deed",
-      "images/absolom an indian bottom line.jfif", "images/absolom his mark note.JPG", "images/absolom.jfif",
-      "images/fullabsolom.jpg", "images/1677_absolom_counsellor_testimony_duplicate_pages22-23.jpg",
-      "images/1677_anashuecot_Heire_Proper", "images/bad-copy-smith-cluster.jpg", "images/badquality-colony-of-ri",
-      "images/bay_map", "images/bristol_death_absolom_unknown", "images/colony_of_rhode_island_map",
-      "images/daniel-and-john-green-land-kingstown.JPG", "images/devils foot.JPG", "images/fones rocky david.jfif",
-      "images/generalalfredgibbsmapacquidnesset.jfif", "images/green land kingstown.JPG",
-      "images/greene-mark-awawsuncks-1674.JPG", "images/greene-witness-1674-awawsucks-her-mark.JPG",
-      "images/greenedeputy.JPG", "images/james-1695.jfif", "images/jobgreen.jfif", "images/john-40-years.JPG",
-      "images/john and deborah.jfif", "images/john-and-joane.jpg", "images/johngreenedeputy.JPG",
-      "images/johntodaniel.jpg", "images/leManceLaw", "images/magnus", "images/map-mass-bay.jpg", "images/map.jpeg",
-      "images/negro man peleg.jfif", "images/new-york-mass-map", "images/original-transcription-1682-johnandjoan",
-      "images/petition-1679-narragansett.JPG", "images/records_of_proprietors_badcopy", "images/richard green.jfif",
-      "images/rocky-davis-transcript-1672.jpg", "images/slide_1_the_problem.png", "images/source-reminder-aboriginals.jpg",
-      "images/1674-cakochawhunt1674_awawsunks_her_marke_cakochawhunt_simon_eldist_RI_land_evidences_v1_p52-53.jpg.JPG"
-    ];
-
-    // ===== CHILDREN & ABSENCE =====
-    // Only Daniel and James are directly named as children of John and Joan in a
-    // primary document (the 1682 home-place deed). Everyone else sometimes listed
-    // as a Greene "sibling" in secondary genealogies is kept separate and marked
-    // UNVERIFIED — theory/greene_sibling_map.md itself flags this list as unresolved
-    // and possibly conflating a different generation entirely.
-    const CHILDREN = [
-      { name: "Daniel Greene", status: "PROVEN", basis: "Named directly in the 1682 home-place deed — receives 120 acres.", note: "Confirmed son of John and Joan by the deed itself." },
-      { name: "James Greene", status: "PROVEN", basis: "Named directly in the 1682 home-place deed — receives 60 acres.", note: "Confirmed son of John and Joan by the deed itself." },
-      { name: "John Greene Jr., Henry, Benjamin, Sarah, Edward", status: "UNVERIFIED", basis: "Appear in some Greene genealogies as siblings/children, but not tied to Joan specifically in any primary document found so far.", note: "theory/greene_sibling_map.md flags this whole set as needing cross-checked refinement — possibly a different John Greene generation entirely. Not treated as Joan's children here." }
-    ];
-
-    // Framed as an open question, not a conclusion: these are places a woman of John
-    // Greene's household would ordinarily be expected to appear, listed alongside
-    // whether Joan does. The gap is the invitation, not the proof.
-    const ABSENCE_LOG = [
-      { record: "Marriage record", expected: "English colonial marriages were routinely recorded in this period and region.", found: "None located for John Greene and Joan." },
-      { record: "Baptism / birth record", expected: "Would establish Joan's origin, age, or parentage.", found: "None located." },
-      { record: "Church membership record", expected: "Common for settler wives of a landholder's standing.", found: "None located." },
-      { record: "Probate / will", expected: "F.L. Greene (1894) explicitly states 'nothing further is known' about Joan.", found: "No probate record naming her found." },
-      { record: "Additional land record", expected: "Comparable Quidnessett-area women (e.g. contemporaries in the Tibbetts and Wickes families) appear across multiple land, court, or probate records.", found: "Joan appears in exactly two documents, both dated 1682 — the home-place deed and the Pawtuxet sale consent, five weeks apart." },
-      { record: "Death / burial record", expected: "Would establish when and where Joan died.", found: "None located." },
-      { record: "A surname", expected: "Every other named party in both 1682 deeds has one.", found: "Joan is named with no surname in either 1682 document." }
-    ];
-    function getStatusStyles(status) {
-      switch(status) {
-        case 'PROVEN': return 'status-proven';
-        case 'PROBABLE': return 'status-probable';
-        case 'UNVERIFIED': return 'status-unverified';
-        case 'NULL': return 'status-null';
-        default: return 'border-slate-500 text-slate-300 bg-slate-900';
-      }
-    }
-
-    function getDotStyle(status) {
-      switch(status) {
-        case 'PROVEN': return 'dot-proven';
-        case 'PROBABLE': return 'dot-probable';
-        case 'UNVERIFIED': return 'dot-unverified';
-        case 'NULL': return 'dot-null';
-        default: return 'bg-slate-500';
-      }
-    }
-
-    // ===== ICON COMPONENTS (as plain functions returning React.createElement) =====
-    function ShieldIcon() {
-      return React.createElement('svg', { className: 'w-4 h-4 mr-2 shrink-0', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' },
-        React.createElement('path', { strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: '2', d: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z' })
-      );
-    }
-    function FireIcon() {
-      return React.createElement('svg', { className: 'w-4 h-4 mr-2 shrink-0', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' },
-        React.createElement('path', { strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: '2', d: 'M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z' }),
-        React.createElement('path', { strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: '2', d: 'M15 11a3 3 0 11-6 0 3 3 0 016 0z' })
-      );
-    }
-    function NetworkIcon() {
-      return React.createElement('svg', { className: 'w-4 h-4 mr-2 shrink-0', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' },
-        React.createElement('path', { strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: '2', d: 'M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z' })
-      );
-    }
-    function CodeIcon() {
-      return React.createElement('svg', { className: 'w-4 h-4 mr-2 shrink-0', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' },
-        React.createElement('path', { strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: '2', d: 'M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4' })
-      );
-    }
-    function BookIcon() {
-      return React.createElement('svg', { className: 'w-4 h-4 mr-2 shrink-0', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' },
-        React.createElement('path', { strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: '2', d: 'M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253' })
-      );
-    }
-    function EyeIcon() {
-      return React.createElement('svg', { className: 'w-4 h-4 mr-2 shrink-0', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' },
-        React.createElement('path', { strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: '2', d: 'M15 12a3 3 0 11-6 0 3 3 0 016 0z' }),
-        React.createElement('path', { strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: '2', d: 'M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z' })
-      );
-    }
-    function DnaIcon() {
-      return React.createElement('svg', { className: 'w-4 h-4 mr-2 shrink-0', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' },
-        React.createElement('path', { strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: '2', d: 'M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z' })
-      );
-    }
-    function ArchiveIcon() {
-      return React.createElement('svg', { className: 'w-4 h-4 mr-2 shrink-0', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' },
-        React.createElement('path', { strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: '2', d: 'M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10' })
-      );
-    }
-    function HelpIcon() {
-      return React.createElement('svg', { className: 'w-4 h-4 mr-2 shrink-0', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' },
-        React.createElement('path', { strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: '2', d: 'M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z' })
-      );
-    }
-    function SearchIcon() {
-      return React.createElement('svg', { className: 'w-4 h-4 text-slate-400', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' },
-        React.createElement('path', { strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: '2', d: 'M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z' })
-      );
-    }
-    function ImageIcon() {
-      return React.createElement('svg', { className: 'w-4 h-4 mr-2 shrink-0', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' },
-        React.createElement('path', { strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: '2', d: 'M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14M4 6h16a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2z' }),
-        React.createElement('path', { strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: '2', d: 'M11 9a1 1 0 11-2 0 1 1 0 012 0z' })
-      );
-    }
-
-    function App() {
-      const [activeTab, setActiveTab] = React.useState('archive');
-      const [filterStatus, setFilterStatus] = React.useState('ALL');
-      const [lawFilter, setLawFilter] = React.useState(false);
-      const [searchQuery, setSearchQuery] = React.useState('');
-      const [selectedEvent, setSelectedEvent] = React.useState(null);
-      const [threads, setThreads] = React.useState(OPEN_THREADS);
-      const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
-
-      const toggleThread = function(id) {
-        setThreads(threads.map(function(t) { return t.id === id ? Object.assign({}, t, { done: !t.done }) : t; }));
-      };
-
-      const filteredEvents = React.useMemo(function() {
-        return TIMELINE_DATA.filter(function(evt) {
-          var matchesStatus = filterStatus === 'ALL' || evt.status === filterStatus;
-          var matchesLaw = !lawFilter || evt.lawsTriggered.length > 0;
-          var q = searchQuery.toLowerCase();
-          var matchesSearch = searchQuery === '' ||
-            evt.event.toLowerCase().includes(q) ||
-            evt.who.toLowerCase().includes(q) ||
-            evt.where.toLowerCase().includes(q) ||
-            evt.source.toLowerCase().includes(q);
-          return matchesStatus && matchesLaw && matchesSearch;
-        });
-      }, [filterStatus, lawFilter, searchQuery]);
-
-      const statusCounts = React.useMemo(function() {
-        return TIMELINE_DATA.reduce(function(acc, evt) {
-          acc[evt.status] = (acc[evt.status] || 0) + 1;
-          return acc;
-        }, { PROVEN: 0, PROBABLE: 0, UNVERIFIED: 0, NULL: 0 });
-      }, []);
-
-      var navItems = [
-        { key: 'archive', label: 'The Archive', icon: ArchiveIcon },
-        { key: 'spine', label: 'Source Spine', icon: ShieldIcon },
-        { key: 'primary', label: 'Primary Sources', icon: BookIcon },
-        { key: 'gallery', label: 'Visual Timeline', icon: ImageIcon },
-        { key: 'family', label: "Children & Where Joan Isn't", icon: EyeIcon },
-        { key: 'fragments', label: 'Name Fragments', icon: DnaIcon },
-        { key: 'firewalls', label: 'Identity Firewalls', icon: FireIcon },
-        { key: 'network', label: 'Orbit Convergence', icon: NetworkIcon },
-        { key: 'contamination', label: 'Contamination Index', icon: CodeIcon },
-        { key: 'gaps', label: "What We Don't Know", icon: EyeIcon },
-        { key: 'help', label: 'How to Help', icon: HelpIcon },
-      ];
-
-      // ===== RENDER THE APP =====
-      return React.createElement('div', { className: 'min-h-screen bg-[#070A13] text-slate-100 flex flex-col selection:bg-amber-500 selection:text-black' },
-
-        // CONTAMINATION BANNER
-        React.createElement('div', { className: 'contamination-pulse bg-red-950/30 border-y border-red-900/40 px-4 py-3' },
-          React.createElement('div', { className: 'max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3' },
-            React.createElement('div', { className: 'flex items-center' },
-              React.createElement('span', { className: 'text-rose-400 text-xl mr-3' }, '⚠️'),
-              React.createElement('div', null,
-                React.createElement('p', { className: 'text-sm font-bold text-rose-300 font-mono-tech' }, 'CONTAMINATION ALERT'),
-                React.createElement('p', { className: 'text-xs text-rose-400/80' }, 'If you arrived from Ancestry, YourRoots, MyHeritage, or FamilySearch — your tree may be algorithmically poisoned.')
-              )
-            ),
-            React.createElement('button', {
-              onClick: function() { setActiveTab('contamination'); setMobileMenuOpen(false); },
-              className: 'text-xs font-mono-tech bg-rose-950/50 hover:bg-rose-900/50 text-rose-300 border border-rose-700/30 px-4 py-2 rounded transition-colors'
-            }, 'View Contamination Index →')
-          )
-        ),
-
-        // HEADER
-        React.createElement('header', { className: 'border-b border-slate-800 bg-[#0B0F19]/90 backdrop-blur-md sticky top-0 z-50 px-6 py-4' },
-          React.createElement('div', { className: 'max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4' },
-            React.createElement('div', { className: 'flex items-center space-x-3' },
-              React.createElement('div', { className: 'w-10 h-10 rounded bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center font-serif-display text-xl text-black font-extrabold shadow-lg shadow-amber-900/20' }, 'JA'),
-              React.createElement('div', null,
-                React.createElement('h1', { className: 'text-xl font-bold tracking-wider font-serif-display text-slate-100 flex items-center' },
-                  'THE JOAN ARCHIVE ',
-                  React.createElement('span', { className: 'text-amber-500 ml-2 text-xs font-mono-tech border border-amber-500/40 px-2 py-0.5 rounded' }, '4 LAWS IN FORCE')
-                ),
-                React.createElement('p', { className: 'text-xs text-slate-400 font-mono-tech' }, 'NO NARRATIVE SMOOTHING | 11 JULY 2026')
-              )
-            ),
-
-            React.createElement('div', { className: 'hidden lg:flex flex-wrap gap-2 text-xs' },
-              React.createElement('div', { className: 'bg-slate-900/90 border border-amber-500/30 rounded px-3 py-1.5 flex items-center' },
-                React.createElement('span', { className: 'w-2 h-2 rounded-full bg-amber-500 mr-2 animate-pulse' }),
-                React.createElement('span', { className: 'text-slate-300 font-mono-tech' }, 'Law 1: No Smoothing')
-              ),
-              React.createElement('div', { className: 'bg-slate-900/90 border border-rose-500/30 rounded px-3 py-1.5 flex items-center' },
-                React.createElement('span', { className: 'w-2 h-2 rounded-full bg-rose-500 mr-2 animate-pulse' }),
-                React.createElement('span', { className: 'text-slate-300 font-mono-tech' }, 'Law 2: La Mance Sieve')
-              ),
-              React.createElement('div', { className: 'bg-slate-900/90 border border-blue-500/30 rounded px-3 py-1.5 flex items-center' },
-                React.createElement('span', { className: 'w-2 h-2 rounded-full bg-blue-500 mr-2 animate-pulse' }),
-                React.createElement('span', { className: 'text-slate-300 font-mono-tech' }, 'Law 3: No Early Exclusion')
-              ),
-              React.createElement('div', { className: 'bg-slate-900/90 border border-purple-500/30 rounded px-3 py-1.5 flex items-center' },
-                React.createElement('span', { className: 'w-2 h-2 rounded-full bg-purple-500 mr-2 animate-pulse' }),
-                React.createElement('span', { className: 'text-slate-300 font-mono-tech' }, 'Law 4: No Algorithmic Contamination')
-              )
-            ),
-
-            React.createElement('button', {
-              className: 'lg:hidden text-slate-300 p-2 border border-slate-700 rounded',
-              onClick: function() { setMobileMenuOpen(!mobileMenuOpen); }
-            },
-              React.createElement('svg', { className: 'w-5 h-5', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' },
-                React.createElement('path', { strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: '2', d: 'M4 6h16M4 12h16M4 18h16' })
-              )
-            )
-          )
-        ),
-
-        // MAIN LAYOUT
-        React.createElement('div', { className: 'flex-1 flex flex-col lg:flex-row max-w-7xl mx-auto w-full' },
-
-          // SIDEBAR
-          React.createElement('aside', {
-            className: (mobileMenuOpen ? 'block ' : 'hidden ') + 'lg:block w-full lg:w-72 bg-[#0A0D1A] border-r border-slate-800 p-5 space-y-6 shrink-0 lg:sticky lg:top-[73px] lg:h-[calc(100vh-73px)] overflow-y-auto'
-          },
-            React.createElement('div', { className: 'space-y-1' },
-              React.createElement('h2', { className: 'text-xs uppercase tracking-widest font-mono-tech text-amber-500 font-bold mb-2' }, 'Archive Desks'),
-              React.createElement('nav', { className: 'space-y-0.5' },
-                navItems.map(function(item) {
-                  return React.createElement('button', {
-                    key: item.key,
-                    onClick: function() { setActiveTab(item.key); setMobileMenuOpen(false); },
-                    className: 'w-full flex items-center px-3 py-2 text-sm rounded transition-all nav-item ' + (activeTab === item.key ? 'nav-active font-medium' : 'text-slate-400')
-                  },
-                    React.createElement(item.icon),
-                    item.label
-                  );
-                })
-              )
-            ),
-
-            React.createElement('div', { className: 'space-y-3' },
-              React.createElement('h2', { className: 'text-xs uppercase tracking-widest font-mono-tech text-amber-500 font-bold' }, 'Research Core Tiers'),
-              React.createElement('div', { className: 'bg-slate-900/60 border border-slate-800 rounded p-4 relative overflow-hidden card-hover' },
-                React.createElement('div', { className: 'absolute top-0 right-0 bg-blue-900/40 text-blue-300 font-mono-tech text-[10px] px-2 py-0.5 rounded-bl' }, 'PROBABLE'),
-                React.createElement('h3', { className: 'text-sm font-bold font-serif-display mb-1 text-slate-200' }, 'Tier 1 Thesis'),
-                React.createElement('p', { className: 'text-xs text-slate-400 leading-relaxed' }, 'Joan (wife of John Greene of Quidnessett) was a Narragansett sachem-line woman.')
-              ),
-              React.createElement('div', { className: 'bg-slate-900/60 border border-slate-800 rounded p-4 relative overflow-hidden card-hover' },
-                React.createElement('div', { className: 'absolute top-0 right-0 bg-amber-900/40 text-amber-300 font-mono-tech text-[10px] px-2 py-0.5 rounded-bl' }, 'UNVERIFIED'),
-                React.createElement('h3', { className: 'text-sm font-bold font-serif-display mb-1 text-slate-200' }, 'Tier 2 Thesis'),
-                React.createElement('p', { className: 'text-xs text-slate-400 leading-relaxed' }, 'Joan was specifically Anashuecot, named "chiefe Sachem and heire properly" in the 1672 Fones deed.')
-              )
-            ),
-
-            React.createElement('div', { className: 'border-t border-slate-800 pt-5 space-y-3' },
-              React.createElement('h3', { className: 'text-xs uppercase tracking-widest font-mono-tech text-slate-500 font-bold' }, 'State Statistics'),
-              React.createElement('div', { className: 'grid grid-cols-2 gap-2 text-center text-xs' },
-                React.createElement('div', { className: 'bg-slate-900/80 p-2.5 rounded border border-slate-800' },
-                  React.createElement('div', { className: 'font-mono-tech text-lg text-emerald-500 font-bold' }, statusCounts.PROVEN),
-                  React.createElement('div', { className: 'text-[10px] text-slate-400 uppercase' }, 'PROVEN')
-                ),
-                React.createElement('div', { className: 'bg-slate-900/80 p-2.5 rounded border border-slate-800' },
-                  React.createElement('div', { className: 'font-mono-tech text-lg text-blue-400 font-bold' }, statusCounts.PROBABLE),
-                  React.createElement('div', { className: 'text-[10px] text-slate-400 uppercase' }, 'PROBABLE')
-                ),
-                React.createElement('div', { className: 'bg-slate-900/80 p-2.5 rounded border border-slate-800' },
-                  React.createElement('div', { className: 'font-mono-tech text-lg text-amber-400 font-bold' }, statusCounts.UNVERIFIED),
-                  React.createElement('div', { className: 'text-[10px] text-slate-400 uppercase' }, 'UNVERIFIED')
-                ),
-                React.createElement('div', { className: 'bg-slate-900/80 p-2.5 rounded border border-slate-800' },
-                  React.createElement('div', { className: 'font-mono-tech text-lg text-rose-500 font-bold' }, statusCounts.NULL),
-                  React.createElement('div', { className: 'text-[10px] text-slate-400 uppercase' }, 'NULL')
-                )
-              )
-            ),
-
-            React.createElement('div', { className: 'border-t border-slate-800 pt-5' },
-              React.createElement('h3', { className: 'text-xs uppercase tracking-widest font-mono-tech text-slate-500 font-bold mb-2' }, 'Evidence Key'),
-              React.createElement('div', { className: 'space-y-1.5 text-xs font-mono-tech' },
-                React.createElement('div', { className: 'flex items-center' },
-                  React.createElement('span', { className: 'w-2.5 h-2.5 rounded-full bg-emerald-500 mr-2' }),
-                  React.createElement('span', { className: 'text-slate-400' }, '🟢 Primary Evidence')
-                ),
-                React.createElement('div', { className: 'flex items-center' },
-                  React.createElement('span', { className: 'w-2.5 h-2.5 rounded-full bg-blue-500 mr-2' }),
-                  React.createElement('span', { className: 'text-slate-400' }, '🔵 Supported Interpretation')
-                ),
-                React.createElement('div', { className: 'flex items-center' },
-                  React.createElement('span', { className: 'w-2.5 h-2.5 rounded-full bg-amber-500 mr-2' }),
-                  React.createElement('span', { className: 'text-slate-400' }, '🟡 Working Hypothesis')
-                ),
-                React.createElement('div', { className: 'flex items-center' },
-                  React.createElement('span', { className: 'w-2.5 h-2.5 rounded-full bg-slate-500 mr-2' }),
-                  React.createElement('span', { className: 'text-slate-400' }, '⚪ Unanswered Question')
-                )
-              )
-            )
-          ),
-
-          // MAIN CONTENT AREA
-          React.createElement('main', { className: 'flex-1 bg-[#080B15] p-5 lg:p-8 overflow-y-auto min-h-[calc(100vh-73px)]' },
-            renderMainContent()
-          )
-        ),
-
-        // FOOTER
-        React.createElement('footer', { className: 'border-t border-slate-800 bg-[#0B0F19] px-6 py-4 flex flex-col md:flex-row justify-between items-center text-xs text-slate-400 gap-2' },
-          React.createElement('div', null,
-            React.createElement('span', null, 'Status: '),
-            React.createElement('span', { className: 'text-amber-500 font-mono-tech font-bold uppercase' }, 'Tier 2 Thesis remains UNVERIFIED'),
-            React.createElement('span', { className: 'text-slate-500' }, ' | Chronological vulnerability cuts both ways.')
-          ),
-          React.createElement('div', { className: 'font-mono-tech text-slate-500' }, 'No Narrative Smoothing • 4 Laws In Force • Quidnessett Research Group')
-        )
-      );
-
-      // ===== MAIN CONTENT RENDERER =====
-      function renderMainContent() {
-        // ARCHIVE HOMEPAGE
-        if (activeTab === 'archive') {
-          return React.createElement('div', { className: 'space-y-8 max-w-4xl fade-in' },
-            React.createElement('div', { className: 'text-center py-10 border-b border-slate-800' },
-              React.createElement('h1', { className: 'text-4xl md:text-5xl font-serif-display font-black text-slate-100 mb-4 name-fragment-glow' }, 'The Joan Archive'),
-              React.createElement('p', { className: 'text-base text-slate-400 font-mono-tech max-w-2xl mx-auto leading-relaxed' }, 'Restoring Access. Preserving Primary Sources. Asking Better Questions.'),
-              React.createElement('p', { className: 'text-sm text-slate-500 mt-2 font-mono-tech' }, 'This is not a genealogy website. It is an open-access research library.')
-            ),
-
-            React.createElement('div', { className: 'bg-slate-900/20 border border-slate-800 rounded-lg p-6' },
-              React.createElement('p', { className: 'text-sm text-slate-300 leading-relaxed mb-4' }, 'Many of the records that shape this history remain scattered across archives, difficult to access, unpublished, or known only through later copies. Fires, war, colonial administration, and centuries of incomplete preservation have left gaps that continue to influence how this history is understood.'),
-              React.createElement('p', { className: 'text-sm text-amber-400 font-mono-tech font-bold' }, 'My goal is simple: Make the surviving evidence easier for everyone to see.')
-            ),
-
-            React.createElement('div', null,
-              React.createElement('h2', { className: 'text-lg font-bold font-serif-display text-amber-500 mb-3 flex items-center' },
-                React.createElement('span', { className: 'text-xl mr-2' }, '❓'),
-                'Why Joan?'
-              ),
-              React.createElement('p', { className: 'text-sm text-slate-300 leading-relaxed mb-3' }, 'One woman appears briefly in the historical record. In 1682 she is identified simply as Joan, wife of John Greene of Quidnessett. Before that, the documentary trail grows remarkably thin.'),
-              React.createElement('div', { className: 'bg-[#0B101E] border border-slate-800 rounded-lg p-5 space-y-2' },
-                React.createElement('p', { className: 'text-sm text-slate-300 font-mono-tech' }, '• Who was she?'),
-                React.createElement('p', { className: 'text-sm text-slate-300 font-mono-tech' }, '• What role did she hold before English legal records began naming her?'),
-                React.createElement('p', { className: 'text-sm text-slate-300 font-mono-tech' }, '• Can surviving primary sources tell us more than traditional genealogy has assumed?')
-              ),
-              React.createElement('p', { className: 'text-sm text-slate-400 mt-3 leading-relaxed' }, 'Those questions became the beginning of this project.')
-            ),
-
-            React.createElement('div', null,
-              React.createElement('h2', { className: 'text-lg font-bold font-serif-display text-amber-500 mb-3' }, '📚 What You\'ll Find Here'),
-              React.createElement('div', { className: 'grid grid-cols-1 md:grid-cols-2 gap-3' },
-                ['Primary source transcriptions','Original document references','Historical maps','Timelines','Name variant research','Signature and mark analysis','Research journals','Open questions','Competing interpretations'].map(function(item, i) {
-                  return React.createElement('div', { key: i, className: 'flex items-center text-sm text-slate-300 font-mono-tech' },
-                    React.createElement('span', { className: 'text-amber-500 mr-2' }, '▸'),
-                    item
-                  );
-                })
-              ),
-              React.createElement('p', { className: 'text-sm text-slate-400 mt-4 leading-relaxed' }, 'Every effort is made to distinguish between primary evidence, supported interpretation, working hypothesis, and unanswered question. Readers are encouraged to examine the evidence independently.')
-            ),
-
-            React.createElement('div', { className: 'bg-slate-900/20 border border-slate-800 rounded-lg p-6' },
-              React.createElement('h2', { className: 'text-lg font-bold font-serif-display text-slate-200 mb-3' }, '🧭 The Research Philosophy'),
-              React.createElement('p', { className: 'text-sm text-slate-400 leading-relaxed mb-4' }, 'Historical research is strongest when it remains transparent.'),
-              React.createElement('div', { className: 'space-y-2 text-sm text-slate-300 font-mono-tech' },
-                React.createElement('p', null, '• Primary sources come first.'),
-                React.createElement('p', null, '• Every claim should point back to evidence.'),
-                React.createElement('p', null, '• Contradictions are documented rather than hidden.'),
-                React.createElement('p', null, '• Uncertainty is acknowledged.'),
-                React.createElement('p', null, '• Ideas may change when new evidence appears.')
-              ),
-              React.createElement('p', { className: 'text-sm text-amber-400 mt-4 font-mono-tech italic' }, 'Changing a conclusion because of better evidence is not failure. It is how good history works.')
-            ),
-
-            React.createElement('div', { className: 'bg-amber-950/10 border border-amber-900/30 rounded-lg p-6' },
-              React.createElement('h2', { className: 'text-lg font-bold font-serif-display text-amber-400 mb-3' }, '🔬 The Joan Hypothesis'),
-              React.createElement('p', { className: 'text-sm text-slate-300 leading-relaxed mb-3' }, 'One working hypothesis explored within this archive is that Joan Greene may have been connected to the Narragansett sachem lineage and may possibly be identifiable with Anashuecot, named in the 1672 Fones Purchase deed.'),
-              React.createElement('div', { className: 'bg-amber-950/20 border border-amber-800/30 rounded p-3' },
-                React.createElement('p', { className: 'text-xs text-amber-300 font-mono-tech font-bold uppercase' }, 'Status: This remains a research hypothesis rather than an established historical fact.')
-              ),
-              React.createElement('p', { className: 'text-sm text-slate-400 mt-3 leading-relaxed' }, 'Evidence supporting and challenging the hypothesis is presented throughout the archive so readers can evaluate it themselves.'),
-              React.createElement('p', { className: 'text-sm text-slate-300 mt-3 leading-relaxed' }, "To be direct about it: even taken together, the convergences below are circumstantial. Geographic overlap, a matching timeline, and a documentary silence pattern are suggestive, not proof of identity. Saying \"Joan was Anashuecot\" is still a real evidentiary leap from what the primary sources currently show — this archive tries not to take that leap for you.")
-            ),
-
-            React.createElement('div', { className: 'bg-slate-900/20 border border-slate-800 rounded-lg p-6' },
-              React.createElement('h2', { className: 'text-lg font-bold font-serif-display text-slate-200 mb-3' }, '🔓 Why Open Access Matters'),
-              React.createElement('p', { className: 'text-sm text-slate-400 leading-relaxed mb-3' }, 'Too many important records remain difficult to find. Some exist only as fragile manuscripts. Others survive only because nineteenth-century researchers copied them before originals were lost. Many have never been fully digitized.'),
-              React.createElement('p', { className: 'text-sm text-slate-300 leading-relaxed' }, 'Making these documents easier to discover benefits everyone — not just this project. Whether my conclusions ultimately prove correct or not, I hope this archive encourages others to read the documents, visit archives, preserve records, and continue asking questions.'),
-              React.createElement('p', { className: 'text-sm text-amber-400 mt-3 font-mono-tech' }, "If more people become interested in Joan Greene, the Narragansett people, and Rhode Island's early documentary history, then this project has already succeeded.")
-            ),
-
-            React.createElement('div', { className: 'bg-emerald-950/10 border border-emerald-900/30 rounded-lg p-6' },
-              React.createElement('h2', { className: 'text-lg font-bold font-serif-display text-emerald-400 mb-3' }, '🤝 Help Digitize the Record'),
-              React.createElement('p', { className: 'text-sm text-slate-300 leading-relaxed mb-3' }, "This archive is small and grows slowly because so much of the underlying material has never been photographed, transcribed, or put anywhere searchable. That's the single biggest bottleneck here — not theory, not interpretation, just access."),
-              React.createElement('div', { className: 'bg-[#0B101E] border border-slate-800 rounded-lg p-5 space-y-2 mb-3' },
-                React.createElement('p', { className: 'text-sm text-slate-300 font-mono-tech' }, '• Photograph or scan Rhode Island land evidence, probate, or court volumes you have access to'),
-                React.createElement('p', { className: 'text-sm text-slate-300 font-mono-tech' }, '• Transcribe a page from the images already posted here'),
-                React.createElement('p', { className: 'text-sm text-slate-300 font-mono-tech' }, '• Point out an archive, finding aid, or index this project hasn\'t checked yet'),
-                React.createElement('p', { className: 'text-sm text-slate-300 font-mono-tech' }, '• Flag anything here that looks wrong — being wrong in public is how this gets fixed')
-              ),
-              React.createElement('p', { className: 'text-sm text-slate-400 leading-relaxed' }, "You don't need to agree with any hypothesis on this site to help. The 1672 and 1682 deeds, the Absolom affidavit, and dozens of adjacent records exist in archives right now, underused, because almost nobody outside a small circle of researchers has looked at them closely. That's a fixable problem.")
-            ),
-
-            React.createElement('div', { className: 'grid grid-cols-1 md:grid-cols-3 gap-4' },
-              React.createElement('button', {
-                onClick: function() { setActiveTab('primary'); },
-                className: 'bg-slate-900/40 border border-slate-800 hover:border-emerald-500/30 rounded-lg p-5 text-left transition-all card-hover group'
-              },
-                React.createElement('div', { className: 'text-2xl mb-2 group-hover:scale-110 transition-transform' }, '📜'),
-                React.createElement('h3', { className: 'text-sm font-bold text-emerald-400 font-mono-tech' }, 'See the Documents'),
-                React.createElement('p', { className: 'text-xs text-slate-400 mt-1' }, 'Primary sources gallery — the actual deeds, affidavits, and records.')
-              ),
-              React.createElement('button', {
-                onClick: function() { setActiveTab('fragments'); },
-                className: 'bg-slate-900/40 border border-slate-800 hover:border-amber-500/30 rounded-lg p-5 text-left transition-all card-hover group'
-              },
-                React.createElement('div', { className: 'text-2xl mb-2 group-hover:scale-110 transition-transform' }, '🧬'),
-                React.createElement('h3', { className: 'text-sm font-bold text-amber-400 font-mono-tech' }, 'Name Fragmentation'),
-                React.createElement('p', { className: 'text-xs text-slate-400 mt-1' }, 'One woman, six names, three centuries of erasure. Visual map.')
-              ),
-              React.createElement('button', {
-                onClick: function() { setActiveTab('contamination'); },
-                className: 'bg-slate-900/40 border border-slate-800 hover:border-rose-500/30 rounded-lg p-5 text-left transition-all card-hover group'
-              },
-                React.createElement('div', { className: 'text-2xl mb-2 group-hover:scale-110 transition-transform' }, '🚫'),
-                React.createElement('h3', { className: 'text-sm font-bold text-rose-400 font-mono-tech' }, 'Contamination Index'),
-                React.createElement('p', { className: 'text-xs text-slate-400 mt-1' }, 'The garbage filter. What your genealogy site got wrong and why.')
-              )
-            ),
-
-            React.createElement('div', { className: 'text-center py-6 border-t border-slate-800' },
-              React.createElement('p', { className: 'text-lg font-serif-display text-amber-400 italic' }, '"History belongs to everyone. Access to the evidence should too."')
-            )
-          );
-        }
-
-        // SOURCE SPINE TIMELINE
-        if (activeTab === 'spine') {
-          var statusButtons = ['ALL','PROVEN','PROBABLE','UNVERIFIED','NULL'].map(function(s) {
-            var activeClass = filterStatus === s ?
-              (s === 'PROVEN' ? 'bg-emerald-950/80 text-emerald-400 border border-emerald-500/20' :
-               s === 'PROBABLE' ? 'bg-blue-950/80 text-blue-400 border border-blue-500/20' :
-               s === 'UNVERIFIED' ? 'bg-amber-950/80 text-amber-400 border border-amber-500/20' :
-               s === 'NULL' ? 'bg-rose-950/80 text-rose-400 border border-rose-500/20' :
-               'bg-slate-700 text-white') :
-              'bg-slate-900 hover:bg-slate-800 text-slate-400';
-            return React.createElement('button', {
-              key: s,
-              onClick: function() { setFilterStatus(s); },
-              className: 'px-3 py-1 text-xs font-mono-tech rounded transition-colors ' + activeClass
-            }, s);
-          });
-
-          return React.createElement('div', { className: 'space-y-6 fade-in' },
-            React.createElement('div', { className: 'flex flex-col md:flex-row md:items-center justify-between gap-4 bg-slate-900/40 p-4 rounded-lg border border-slate-800/80' },
-              React.createElement('div', { className: 'relative flex-1' },
-                React.createElement('span', { className: 'absolute inset-y-0 left-3 flex items-center pointer-events-none' },
-                  React.createElement(SearchIcon)
-                ),
-                React.createElement('input', {
-                  type: 'text',
-                  placeholder: 'Filter timeline (e.g. Cocumscussoc, Fones)...',
-                  value: searchQuery,
-                  onChange: function(e) { setSearchQuery(e.target.value); },
-                  className: 'w-full bg-[#0B101E] border border-slate-700/80 rounded pl-10 pr-4 py-2 text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:border-amber-500 transition-colors'
-                })
-              ),
-              React.createElement('div', { className: 'flex flex-wrap items-center gap-2' },
-                React.createElement('span', { className: 'text-xs font-mono-tech text-slate-400 mr-2' }, 'Filter:'),
-                statusButtons
-              ),
-              React.createElement('div', { className: 'flex items-center space-x-2' },
-                React.createElement('input', { type: 'checkbox', id: 'laws-filter', checked: lawFilter, onChange: function(e) { setLawFilter(e.target.checked); }, className: 'rounded bg-slate-900 border-slate-700 text-amber-500 focus:ring-0' }),
-                React.createElement('label', { htmlFor: 'laws-filter', className: 'text-xs font-mono-tech text-slate-300 cursor-pointer' }, 'Show Law Triggers')
-              )
-            ),
-
-            React.createElement('div', { className: 'text-xs text-slate-400 flex justify-between items-center px-1' },
-              React.createElement('div', null, 'Showing ', React.createElement('span', { className: 'text-amber-500 font-bold' }, filteredEvents.length), ' nodes'),
-              searchQuery ? React.createElement('button', { onClick: function() { setSearchQuery(''); }, className: 'text-amber-500 hover:underline' }, 'Clear') : null
-            ),
-
-            React.createElement('div', { className: 'relative border-l border-slate-800 ml-4 pl-8 space-y-8 py-4' },
-              filteredEvents.map(function(evt) {
-                var isSelected = selectedEvent && selectedEvent.id === evt.id;
-                return React.createElement('div', { key: evt.id, className: 'relative group scroll-mt-24' },
-                  React.createElement('div', { className: 'absolute -left-[41px] top-1.5 w-6 h-6 rounded-full border border-[#070A13] flex items-center justify-center z-10 ' + getDotStyle(evt.status) },
-                    React.createElement('div', { className: 'w-2 h-2 rounded-full bg-[#070A13]' })
-                  ),
-                  React.createElement('div', {
-                    className: 'bg-gradient-to-r from-slate-900/80 to-[#0C1122]/40 rounded-lg p-5 border border-slate-800 hover:border-slate-700/80 transition-all cursor-pointer card-hover ' + (isSelected ? 'ring-2 ring-amber-500 border-slate-700 bg-slate-900/90' : ''),
-                    onClick: function() { setSelectedEvent(isSelected ? null : evt); }
-                  },
-                    React.createElement('div', { className: 'flex flex-wrap items-center justify-between gap-2 mb-2' },
-                      React.createElement('span', { className: 'text-sm font-mono-tech font-bold text-amber-500 tracking-wider' }, evt.date),
-                      React.createElement('span', { className: 'text-[10px] font-mono-tech border rounded px-2.5 py-0.5 font-bold ' + getStatusStyles(evt.status) }, evt.status)
-                    ),
-                    React.createElement('h4', { className: 'text-base font-bold text-slate-200 group-hover:text-amber-300 transition-colors' }, evt.event),
-                    React.createElement('div', { className: 'mt-4 grid grid-cols-1 md:grid-cols-3 gap-3 text-xs border-t border-slate-800/60 pt-3' },
-                      React.createElement('div', null,
-                        React.createElement('span', { className: 'text-slate-500 font-mono-tech block' }, 'WHO'),
-                        React.createElement('span', { className: 'text-slate-300 font-medium' }, evt.who)
-                      ),
-                      React.createElement('div', null,
-                        React.createElement('span', { className: 'text-slate-500 font-mono-tech block' }, 'WHERE'),
-                        React.createElement('span', { className: 'text-slate-300 font-medium' }, evt.where)
-                      ),
-                      React.createElement('div', null,
-                        React.createElement('span', { className: 'text-slate-500 font-mono-tech block' }, 'SOURCE'),
-                        React.createElement('span', { className: 'text-slate-300 font-mono-tech font-medium underline text-[11px] decoration-slate-700' }, evt.source)
-                      )
-                    ),
-                    isSelected ? React.createElement('div', { className: 'mt-4 border-t border-slate-800 pt-4 bg-slate-950/50 p-3 rounded space-y-3' },
-                      React.createElement('div', null,
-                        React.createElement('span', { className: 'text-amber-500 font-mono-tech text-[11px] block uppercase font-bold' }, 'Contradiction Notes:'),
-                        React.createElement('p', { className: 'text-xs text-slate-300 leading-relaxed font-mono-tech mt-1' }, evt.contradictionNotes)
-                      ),
-                      evt.lawsTriggered.length > 0 ? React.createElement('div', null,
-                        React.createElement('span', { className: 'text-rose-400 font-mono-tech text-[10px] block uppercase font-bold' }, 'Laws Triggered:'),
-                        React.createElement('div', { className: 'flex flex-wrap gap-2 mt-1' },
-                          evt.lawsTriggered.map(function(l, idx) {
-                            return React.createElement('span', { key: idx, className: 'bg-slate-900 border border-slate-700 px-2 py-0.5 rounded text-[10px] font-mono-tech text-slate-300' }, l);
-                          })
-                        )
-                      ) : null
-                    ) : null
-                  )
-                );
-              })
-            )
-          );
-        }
-
-        // PRIMARY SOURCES GALLERY
-        if (activeTab === 'primary') {
-          return React.createElement('div', { className: 'space-y-6 fade-in' },
-            React.createElement('div', { className: 'text-center py-8 border-b border-slate-800 mb-6' },
-              React.createElement('h1', { className: 'text-3xl font-serif-display font-black text-slate-100 mb-2' }, 'Primary Sources Gallery'),
-              React.createElement('p', { className: 'text-sm text-slate-400 font-mono-tech' }, 'Every claim anchored to a document. No family tree site can show you this.')
-            ),
-
-            React.createElement('div', { className: 'grid grid-cols-1 md:grid-cols-2 gap-6' },
-              PRIMARY_SOURCES.map(function(src) {
-                return React.createElement('div', { key: src.id, className: 'bg-[#0B101E] border border-slate-800 rounded-lg p-5 hover:border-slate-600 transition-all card-hover' },
-                  React.createElement('div', { className: 'flex justify-between items-start mb-3' },
-                    React.createElement('span', { className: 'text-xs font-mono-tech text-amber-500 font-bold' }, src.year),
-                    React.createElement('span', { className: 'text-[10px] font-mono-tech border rounded px-2 py-0.5 ' + getStatusStyles(src.status) }, src.status)
-                  ),
-                  React.createElement('h3', { className: 'text-base font-bold font-serif-display text-slate-200 mb-2' }, src.title),
-                  React.createElement('p', { className: 'text-xs text-slate-400 leading-relaxed mb-3' }, src.description),
-                  React.createElement('div', { className: 'border-t border-slate-800 pt-3 space-y-1' },
-                    React.createElement('div', { className: 'flex justify-between text-xs' },
-                      React.createElement('span', { className: 'text-slate-500 font-mono-tech' }, 'TYPE'),
-                      React.createElement('span', { className: 'text-slate-300 font-mono-tech' }, src.type)
-                    ),
-                    React.createElement('div', { className: 'flex justify-between text-xs' },
-                      React.createElement('span', { className: 'text-slate-500 font-mono-tech' }, 'SOURCE'),
-                      React.createElement('span', { className: 'text-slate-300 font-mono-tech text-right max-w-[70%]' }, src.location)
-                    )
-                  )
-                );
-              })
-            ),
-
-            React.createElement('div', { className: 'bg-slate-900/20 border border-slate-800 rounded-lg p-6 mt-8' },
-              React.createElement('h2', { className: 'text-lg font-bold font-serif-display text-slate-200 mb-4' }, 'Document vs. Algorithm'),
-              React.createElement('div', { className: 'overflow-x-auto' },
-                React.createElement('table', { className: 'w-full text-xs' },
-                  React.createElement('thead', null,
-                    React.createElement('tr', { className: 'border-b border-slate-700' },
-                      React.createElement('th', { className: 'text-left py-2 text-slate-400 font-mono-tech' }, 'Document'),
-                      React.createElement('th', { className: 'text-left py-2 text-slate-400 font-mono-tech' }, 'What It Actually Says'),
-                      React.createElement('th', { className: 'text-left py-2 text-slate-400 font-mono-tech' }, 'What YourRoots Claims')
-                    )
-                  ),
-                  React.createElement('tbody', null,
-                    React.createElement('tr', { className: 'border-b border-slate-800/50' },
-                      React.createElement('td', { className: 'py-3 text-amber-400 font-mono-tech' }, '1672 Fones Deed'),
-                      React.createElement('td', { className: 'py-3 text-slate-300' }, 'Anashuecot "chiefe Sachem and heire properly" — political office, land rights'),
-                      React.createElement('td', { className: 'py-3 text-rose-400' }, '[Not mentioned. Not in database.]')
-                    ),
-                    React.createElement('tr', { className: 'border-b border-slate-800/50' },
-                      React.createElement('td', { className: 'py-3 text-amber-400 font-mono-tech' }, '1682 Pawtuxet Sale'),
-                      React.createElement('td', { className: 'py-3 text-slate-300' }, 'Joan signs "her marke" as independent legal actor in £10 land transaction'),
-                      React.createElement('td', { className: 'py-3 text-rose-400' }, '[Not mentioned. Not in database.]')
-                    ),
-                    React.createElement('tr', { className: 'border-b border-slate-800/50' },
-                      React.createElement('td', { className: 'py-3 text-amber-400 font-mono-tech' }, '1682 Home-Place Deed'),
-                      React.createElement('td', { className: 'py-3 text-slate-300' }, 'Life-estate clause: "...as long as their father or mother should live" — mother is alive, co-occupying'),
-                      React.createElement('td', { className: 'py-3 text-rose-400' }, '[Not mentioned. Not in database.]')
-                    ),
-                    React.createElement('tr', null,
-                      React.createElement('td', { className: 'py-3 text-amber-400 font-mono-tech' }, '1677/8 Absolom Affidavit'),
-                      React.createElement('td', { className: 'py-3 text-slate-300' }, 'Anashuecot "conveyed out of the country". Father Tocomminon. Brother Washaucutt.'),
-                      React.createElement('td', { className: 'py-3 text-rose-400' }, '[Not mentioned. Not in database.]')
-                    )
-                  )
-                )
-              ),
-              React.createElement('div', { className: 'mt-4 p-3 bg-rose-950/20 border border-rose-900/30 rounded text-xs text-rose-300 font-mono-tech' },
-                React.createElement('strong', null, 'YourRoots conclusion:'),
-                ' "Joan Greene (1610–1682) is the child of Alice Daniels."',
-                React.createElement('br', null),
-                React.createElement('span', { className: 'text-rose-400/60' }, 'Zero citations. Zero primary sources. Algorithmic auto-fill fiction.')
-              )
-            )
-          );
-        }
-
-        // VISUAL TIMELINE / IMAGE GALLERY
-        if (activeTab === 'gallery') {
-          var sortedGallery = IMAGE_GALLERY.slice();
-          return React.createElement('div', { className: 'space-y-6 fade-in' },
-            React.createElement('div', { className: 'text-center py-8 border-b border-slate-800 mb-6' },
-              React.createElement('h1', { className: 'text-3xl font-serif-display font-black text-slate-100 mb-2' }, 'Visual Timeline'),
-              React.createElement('p', { className: 'text-sm text-slate-400 font-mono-tech' }, 'Scans linked directly to the write-up for that document. No caption here goes beyond what that page already establishes.')
-            ),
-
-            React.createElement('div', { className: 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5' },
-              sortedGallery.map(function(img, idx) {
-                return React.createElement('div', { key: idx, className: 'bg-[#0B101E] border border-slate-800 rounded-lg overflow-hidden hover:border-slate-600 transition-all card-hover' },
-                  React.createElement('img', { src: img.file, alt: img.title, className: 'w-full h-44 object-cover bg-slate-950', loading: 'lazy' }),
-                  React.createElement('div', { className: 'p-4' },
-                    React.createElement('div', { className: 'flex justify-between items-start mb-2' },
-                      React.createElement('span', { className: 'text-xs font-mono-tech text-amber-500 font-bold' }, img.date),
-                      React.createElement('span', { className: 'text-[10px] font-mono-tech border rounded px-2 py-0.5 ' + getStatusStyles(img.status) }, img.status)
-                    ),
-                    React.createElement('h3', { className: 'text-sm font-bold font-serif-display text-slate-200 mb-2' }, img.title),
-                    img.link ? React.createElement('a', { href: img.link, className: 'text-xs font-mono-tech text-emerald-400 hover:text-emerald-300 underline' }, 'Read the full write-up →') :
-                      React.createElement('span', { className: 'text-xs font-mono-tech text-slate-500' }, 'No dedicated page yet')
-                  )
-                );
-              })
-            ),
-
-            React.createElement('div', { className: 'bg-amber-950/10 border border-amber-900/30 rounded-lg p-6 mt-8' },
-              React.createElement('h2', { className: 'text-lg font-bold font-serif-display text-amber-400 mb-3' }, '📦 Awaiting Context'),
-              React.createElement('p', { className: 'text-sm text-slate-300 leading-relaxed mb-4' }, "These scans are in the archive but don't have a write-up yet — meaning nobody has pinned down their date, source, or what they actually say closely enough to caption them honestly. Filenames alone aren't treated as evidence here. If you recognize one of these or can help transcribe it, that's exactly the kind of help this project needs most."),
-              React.createElement('div', { className: 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2' },
-                IMAGES_NEEDING_CONTEXT.map(function(file, idx) {
-                  return React.createElement('div', { key: idx, className: 'text-xs font-mono-tech text-slate-400 bg-slate-900/40 border border-slate-800 rounded px-2 py-1.5 truncate' }, file.replace('images/', ''));
-                })
-              )
-            )
-          );
-        }
-
-        // NAME FRAGMENTATION MAP
-        if (activeTab === 'fragments') {
-          return React.createElement('div', { className: 'space-y-6 fade-in' },
-            React.createElement('div', { className: 'text-center py-8 border-b border-slate-800 mb-6' },
-              React.createElement('h1', { className: 'text-3xl font-serif-display font-black text-slate-100 mb-2 name-fragment-glow' }, 'Name Fragmentation Map'),
-              React.createElement('p', { className: 'text-sm text-slate-400 font-mono-tech' }, 'One Indigenous woman. Six documented names. Three centuries of colonial and algorithmic erasure.')
-            ),
-
-            React.createElement('div', { className: 'relative' },
-              React.createElement('div', { className: 'absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full timeline-line' }),
-              NAME_FRAGMENTS.map(function(frag, idx) {
-                return React.createElement('div', { key: idx, className: 'relative flex items-center mb-8 ' + (idx % 2 === 0 ? 'flex-row' : 'flex-row-reverse') },
-                  React.createElement('div', { className: 'w-5/12 ' + (idx % 2 === 0 ? 'text-right pr-8' : 'text-left pl-8') },
-                    React.createElement('div', { className: 'bg-[#0B101E] border border-slate-800 rounded-lg p-4 hover:border-amber-500/30 transition-all card-hover' },
-                      React.createElement('div', { className: 'flex items-center justify-between mb-2' },
-                        React.createElement('span', { className: 'text-xs font-mono-tech text-amber-500 font-bold' }, frag.year),
-                        React.createElement('span', { className: 'text-[10px] font-mono-tech text-slate-500 border border-slate-700 px-2 py-0.5 rounded' }, frag.type)
-                      ),
-                      React.createElement('h3', { className: 'text-lg font-bold font-serif-display text-slate-200 mb-1' }, frag.name),
-                      React.createElement('p', { className: 'text-xs text-slate-400 font-mono-tech mb-2' }, frag.context),
-                      React.createElement('p', { className: 'text-xs text-slate-500 leading-relaxed' }, frag.desc),
-                      React.createElement('p', { className: 'text-[10px] text-slate-600 font-mono-tech mt-2' }, 'Source: ' + frag.source)
-                    )
-                  ),
-                  React.createElement('div', { className: 'w-2/12 flex justify-center' },
-                    React.createElement('div', { className: 'w-4 h-4 rounded-full bg-amber-500 border-4 border-[#070A13] z-10' })
-                  ),
-                  React.createElement('div', { className: 'w-5/12' })
-                );
-              })
-            ),
-
-            React.createElement('div', { className: 'bg-slate-900/20 border border-slate-800 rounded-lg p-6 mt-8' },
-              React.createElement('h2', { className: 'text-lg font-bold font-serif-display text-slate-200 mb-4' }, 'The Erasure Mechanism'),
-              React.createElement('div', { className: 'grid grid-cols-1 md:grid-cols-3 gap-4' },
-                React.createElement('div', { className: 'bg-[#0B101E] border border-slate-800 p-4 rounded' },
-                  React.createElement('h4', { className: 'text-sm font-bold text-rose-400 font-mono-tech mb-2' }, 'Colonial Erasure (1672–1894)'),
-                  React.createElement('ul', { className: 'text-xs text-slate-400 space-y-1 font-mono-tech' },
-                    React.createElement('li', null, '• Scribe writes "his marke" for a woman'),
-                    React.createElement('li', null, '• Clerk omits Indigenous kinship terms'),
-                    React.createElement('li', null, '• English dower law replaces sachem-line title'),
-                    React.createElement('li', null, '• F.L. Greene (1894): "nothing further is known"')
-                  )
-                ),
-                React.createElement('div', { className: 'bg-[#0B101E] border border-slate-800 p-4 rounded' },
-                  React.createElement('h4', { className: 'text-sm font-bold text-purple-400 font-mono-tech mb-2' }, 'Algorithmic Erasure (2026)'),
-                  React.createElement('ul', { className: 'text-xs text-slate-400 space-y-1 font-mono-tech' },
-                    React.createElement('li', null, '• Platform assigns "mother: Alice Daniels"'),
-                    React.createElement('li', null, '• Database has no Indigenous kinship fields'),
-                    React.createElement('li', null, '• English parent-child slots replace clan identity'),
-                    React.createElement('li', null, '• Propagation treated as corroboration')
-                  )
-                ),
-                React.createElement('div', { className: 'bg-[#0B101E] border border-slate-800 p-4 rounded' },
-                  React.createElement('h4', { className: 'text-sm font-bold text-emerald-400 font-mono-tech mb-2' }, 'What Survives'),
-                  React.createElement('ul', { className: 'text-xs text-slate-400 space-y-1 font-mono-tech' },
-                    React.createElement('li', null, '• 1672 deed: "chiefe Sachem and heire properly"'),
-                    React.createElement('li', null, '• 1682 sale: "free & voluntary consent"'),
-                    React.createElement('li', null, '• 1677/8 affidavit: Tocomminon, Washaucutt'),
-                    React.createElement('li', null, '• 1858: Anaftiawin phonetic variant chain')
-                  )
-                )
-              )
-            )
-          );
-        }
-
-        // FIREWALLS
-        if (activeTab === 'firewalls') {
-          return React.createElement('div', { className: 'space-y-6 fade-in' },
-            React.createElement('div', { className: 'p-6 bg-slate-900/20 border border-slate-800 rounded-lg' },
-              React.createElement('h2', { className: 'text-lg font-bold font-serif-display text-slate-200 mb-2 flex items-center' },
-                React.createElement('span', { className: 'w-2.5 h-2.5 rounded bg-orange-500 mr-2' }),
-                ' Active Evidentiary Firewalls'
-              ),
-              React.createElement('p', { className: 'text-xs text-slate-400 leading-relaxed mb-6 font-mono-tech' },
-                'No Narrative Smoothing requires active protective boundaries preventing individual records with similar names from collapsing into false consensus.'
-              ),
-
-              React.createElement('div', { className: 'grid grid-cols-1 md:grid-cols-2 gap-6' },
-                React.createElement('div', { className: 'bg-[#0B101E] border border-slate-800 rounded-lg p-5' },
-                  React.createElement('div', { className: 'flex justify-between items-center mb-3' },
-                    React.createElement('h3', { className: 'text-sm font-bold font-serif-display text-amber-500' }, 'The Five-John Firewall'),
-                    React.createElement('span', { className: 'text-[10px] font-mono-tech bg-emerald-950 text-emerald-400 border border-emerald-500/20 px-2 rounded' }, 'SECURE')
-                  ),
-                  React.createElement('ul', { className: 'space-y-2 text-xs font-mono-tech' },
-                    React.createElement('li', { className: 'flex items-start text-slate-300' },
-                      React.createElement('span', { className: 'text-amber-500 mr-1.5' }, '▸'),
-                      React.createElement('span', null, React.createElement('strong', null, 'Bates Thesis:'), ' John Sr. used two geographic designations. No generational merge. ', React.createElement('span', { className: 'text-emerald-500' }, '(Validated)'))
-                    ),
-                    React.createElement('li', { className: 'flex items-start text-slate-300' },
-                      React.createElement('span', { className: 'text-amber-500 mr-1.5' }, '▸'),
-                      React.createElement('span', null, React.createElement('strong', null, 'Sibling Rigor:'), ' Lt. John, Henry, Daniel, James, Benjamin, Sarah. Edward unlinked. ', React.createElement('span', { className: 'text-amber-500' }, '(Held Open)'))
-                    ),
-                    React.createElement('li', { className: 'flex items-start text-slate-300' },
-                      React.createElement('span', { className: 'text-amber-500 mr-1.5' }, '▸'),
-                      React.createElement('span', null, React.createElement('strong', null, 'East Greenwich Decoupling:'), ' Marriage to Abigail Wardwell = independent bloodline. ', React.createElement('span', { className: 'text-rose-400' }, '(Firewalled)'))
-                    )
-                  )
-                ),
-
-                React.createElement('div', { className: 'bg-[#0B101E] border border-slate-800 rounded-lg p-5' },
-                  React.createElement('div', { className: 'flex justify-between items-center mb-3' },
-                    React.createElement('h3', { className: 'text-sm font-bold font-serif-display text-amber-500' }, 'Joan & Anashuecot Boundaries'),
-                    React.createElement('span', { className: 'text-[10px] font-mono-tech bg-amber-950 text-amber-400 border border-amber-500/20 px-2 rounded' }, 'ACTIVE')
-                  ),
-                  React.createElement('ul', { className: 'space-y-2 text-xs font-mono-tech' },
-                    React.createElement('li', { className: 'flex items-start text-slate-300' },
-                      React.createElement('span', { className: 'text-amber-500 mr-1.5' }, '▸'),
-                      React.createElement('span', null, React.createElement('strong', null, 'Quaiapen Elimination:'), ' Slain July 2, 1676. Anashuecot survives to 1678. ', React.createElement('span', { className: 'text-rose-400' }, '(Closed)'))
-                    ),
-                    React.createElement('li', { className: 'flex items-start text-slate-300' },
-                      React.createElement('span', { className: 'text-amber-500 mr-1.5' }, '▸'),
-                      React.createElement('span', null, React.createElement('strong', null, 'Joan Beggarly Fallacy:'), ' 20th-century compilation myth. Zero primary support. ', React.createElement('span', { className: 'text-rose-400' }, '(Closed)'))
-                    ),
-                    React.createElement('li', { className: 'flex items-start text-slate-300' },
-                      React.createElement('span', { className: 'text-amber-500 mr-1.5' }, '▸'),
-                      React.createElement('span', null, React.createElement('strong', null, 'Joan Greene Anchor:'), ' Living wife/mother in 1682 life-estate clause. ', React.createElement('span', { className: 'text-emerald-500' }, '(Confirmed)'))
-                    )
-                  )
-                )
-              )
-            ),
-
-            React.createElement('div', { className: 'p-6 bg-indigo-950/20 border border-indigo-900/30 rounded-lg space-y-4' },
-              React.createElement('div', { className: 'flex justify-between items-start' },
-                React.createElement('div', null,
-                  React.createElement('h3', { className: 'text-base font-bold font-serif-display text-slate-200' }, 'Linguistic & Scribe Deconstruction'),
-                  React.createElement('p', { className: 'text-xs text-indigo-300 mt-1 font-mono-tech' }, 'Calibrated July 2026')
-                ),
-                React.createElement('span', { className: 'text-[10px] font-mono-tech bg-indigo-950 text-indigo-400 border border-indigo-500/20 px-2.5 py-0.5 rounded uppercase' }, 'Methodology Shift')
-              ),
-              React.createElement('p', { className: 'text-xs text-slate-300 leading-relaxed font-mono-tech' },
-                'Algonquian linguistic structure holds ',
-                React.createElement('strong', null, 'no grammatical gender markers'),
-                ', operating on animate/inanimate axis. The descriptor ',
-                React.createElement('em', null, '"his marke"'),
-                ' on the 1672 deed cannot reflect indigenous speech; it represents English scribal default assumption.'
-              ),
-              React.createElement('div', { className: 'bg-[#080B15]/90 border border-slate-800 p-4 rounded text-xs space-y-2' },
-                React.createElement('div', { className: 'text-slate-400' },
-                  React.createElement('span', { className: 'text-indigo-400 font-bold' }, '◆ Lisa Brooks Precedent:'),
-                  ' Colonial legal texts systematically altered female sachem status to fit patriarchal frameworks.'
-                ),
-                React.createElement('div', { className: 'text-slate-400' },
-                  React.createElement('span', { className: 'text-indigo-400 font-bold' }, '◆ Fones Pattern:'),
-                  ' 5 accurate "her marke" listings exist, but 1672 deed remains an open contradiction.'
-                )
-              )
-            )
-          );
-        }
-
-        // NETWORK / ORBIT CONVERGENCE
-        if (activeTab === 'network') {
-          return React.createElement('div', { className: 'space-y-6 fade-in' },
-            React.createElement('div', { className: 'p-6 bg-slate-900/20 border border-slate-800 rounded-lg' },
-              React.createElement('h2', { className: 'text-lg font-bold font-serif-display text-slate-200 mb-2 flex items-center' },
-                React.createElement('span', { className: 'w-2.5 h-2.5 rounded bg-indigo-500 mr-2' }),
-                ' Orbit Convergence Map'
-              ),
-              React.createElement('p', { className: 'text-xs text-slate-400 leading-relaxed mb-6 font-mono-tech' },
-                'Distinct ancestral identities cross-pollinate across deeds (1672), court records (1676), affidavits (1677/8, 1679), and legacy deeds (1682). Grouped below by the actual document each person signed or was named in.'
-              ),
-
-              ["1672 Fones Purchase", "1682 Home-Place Deed", "1682 Pawtuxet Sale", "Broader Orbit"].map(function(groupName) {
-                var groupMembers = NETWORKS.filter(function(n) { return n.deedGroup === groupName; });
-                if (groupMembers.length === 0) return null;
-                return React.createElement('div', { key: groupName, className: 'mb-6' },
-                  React.createElement('h3', { className: 'text-xs uppercase tracking-widest font-mono-tech text-indigo-400 font-bold mb-3 border-b border-slate-800 pb-2' }, groupName + ' (' + groupMembers.length + ')'),
-                  React.createElement('div', { className: 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4' },
-                    groupMembers.map(function(node, idx) {
-                      return React.createElement('div', { key: idx, className: 'bg-[#0B101E] border border-slate-800 p-4 rounded-lg hover:border-slate-700 transition-all card-hover' },
-                        React.createElement('div', { className: 'flex justify-between items-start' },
-                          React.createElement('span', { className: 'text-sm font-bold font-serif-display text-indigo-400' }, node.name),
-                          React.createElement('span', { className: 'text-[9px] font-mono-tech px-2 py-0.5 rounded border ' + (node.frequency === 'High' ? 'bg-indigo-950 border-indigo-500/20 text-indigo-300' : 'bg-slate-900 border-slate-800 text-slate-400') }, 'FREQ: ' + node.frequency)
-                        ),
-                        React.createElement('p', { className: 'text-xs text-slate-400 mt-2 font-mono-tech leading-relaxed' }, node.association)
-                      );
-                    })
-                  )
-                );
-              })
-            ),
-
-            React.createElement('div', { className: 'bg-[#0B101E] border border-slate-800 rounded-lg p-5' },
-              React.createElement('h3', { className: 'text-sm font-bold font-serif-display text-amber-500 mb-4 uppercase tracking-wider' }, 'Research Open Threads'),
-              React.createElement('div', { className: 'space-y-2' },
-                threads.map(function(thread) {
-                  return React.createElement('div', {
-                    key: thread.id,
-                    className: 'flex items-start space-x-3 p-3 rounded bg-slate-900/50 hover:bg-slate-900/80 transition-colors border border-slate-800/80 cursor-pointer select-none',
-                    onClick: function() { toggleThread(thread.id); }
-                  },
-                    React.createElement('div', { className: 'mt-1 flex-shrink-0' },
-                      thread.done
-                        ? React.createElement('div', { className: 'w-4 h-4 bg-emerald-500 text-black font-bold flex items-center justify-center text-[10px] rounded' }, '✓')
-                        : React.createElement('div', { className: 'w-4 h-4 rounded border border-slate-700 bg-[#070A13]' })
-                    ),
-                    React.createElement('div', { className: 'flex-1' },
-                      React.createElement('p', { className: 'text-xs font-mono-tech ' + (thread.done ? 'line-through text-slate-500' : 'text-slate-300') }, thread.text)
-                    ),
-                    React.createElement('div', null,
-                      React.createElement('span', { className: 'text-[9px] font-mono-tech px-2 py-0.5 rounded uppercase ' +
-                        (thread.priority === 'CRITICAL' ? 'bg-red-950 border border-red-500/20 text-red-400' :
-                         thread.priority === 'HIGH' ? 'bg-amber-950 border border-amber-500/20 text-amber-400' :
-                         'bg-blue-950 border border-blue-500/20 text-blue-400')
-                      }, thread.priority)
-                    )
-                  );
-                })
-              )
-            )
-          );
-        }
-
-        // CONTAMINATION INDEX
-        if (activeTab === 'contamination') {
-          return React.createElement('div', { className: 'space-y-6 fade-in' },
-            React.createElement('div', { className: 'text-center py-8 border-b border-slate-800 mb-6' },
-              React.createElement('h1', { className: 'text-3xl font-serif-display font-black text-rose-400 mb-2' }, 'Contamination Index'),
-              React.createElement('p', { className: 'text-sm text-slate-400 font-mono-tech' }, 'Garbage In, Garbage Out. Document the garbage so we can learn instead of assume.')
-            ),
-
-            React.createElement('div', { className: 'grid grid-cols-1 md:grid-cols-2 gap-4 mb-6' },
-              React.createElement('div', { className: 'bg-slate-900/40 border border-rose-500/20 rounded-lg p-4' },
-                React.createElement('h3', { className: 'text-sm font-bold text-rose-400 font-mono-tech mb-2' }, '🤖 AI Hallucinations'),
-                React.createElement('p', { className: 'text-xs text-slate-400' }, 'Models generate plausible-sounding but fictitious sources, composite names, and logical structures. Narrative-smoothing engines.')
-              ),
-              React.createElement('div', { className: 'bg-slate-900/40 border border-purple-500/20 rounded-lg p-4' },
-                React.createElement('h3', { className: 'text-sm font-bold text-purple-400 font-mono-tech mb-2' }, '🌳 Algorithmic Genealogy'),
-                React.createElement('p', { className: 'text-xs text-slate-400' }, 'Platforms auto-fill parents, merge trees without verification, lack Indigenous kinship fields. Force sachems into English maternal slots.')
-              ),
-              React.createElement('div', { className: 'bg-slate-900/40 border border-amber-500/20 rounded-lg p-4' },
-                React.createElement('h3', { className: 'text-sm font-bold text-amber-400 font-mono-tech mb-2' }, '📚 Secondary Source Echo'),
-                React.createElement('p', { className: 'text-xs text-slate-400' }, 'La Mance (1904) propagates through decades. Each repetition treated as "corroboration." By 2026, false claims feel "established."')
-              ),
-              React.createElement('div', { className: 'bg-slate-900/40 border border-slate-600/20 rounded-lg p-4' },
-                React.createElement('h3', { className: 'text-sm font-bold text-slate-400 font-mono-tech mb-2' }, '✍️ Colonial Scribal'),
-                React.createElement('p', { className: 'text-xs text-slate-400' }, 'Clerks re-gendered Indigenous women, stripped context, flattened political offices into English family roles. The original erasure.')
-              )
-            ),
-
-            React.createElement('div', { className: 'space-y-4' },
-              CONTAMINATIONS.map(function(c, idx) {
-                return React.createElement('div', { key: idx, className: 'bg-[#0B101E] border border-slate-800 p-5 rounded-lg hover:border-rose-500/20 transition-all card-hover' },
-                  React.createElement('div', { className: 'flex justify-between items-start mb-3' },
-                    React.createElement('span', { className: 'text-sm font-mono-tech font-bold text-rose-400' }, c.item),
-                    React.createElement('span', { className: 'text-[10px] font-mono-tech bg-rose-950 text-rose-300 border border-rose-500/20 px-2 py-0.5 rounded' }, 'QUARANTINED')
-                  ),
-                  React.createElement('div', { className: 'grid grid-cols-1 md:grid-cols-2 gap-3 text-xs font-mono-tech' },
-                    React.createElement('div', null,
-                      React.createElement('span', { className: 'text-slate-500 text-[10px] block uppercase' }, 'Erroneous Claim'),
-                      React.createElement('span', { className: 'text-slate-300' }, c.nature)
-                    ),
-                    React.createElement('div', null,
-                      React.createElement('span', { className: 'text-slate-500 text-[10px] block uppercase' }, 'Contamination Vector'),
-                      React.createElement('span', { className: 'text-slate-300' }, c.vector)
-                    )
-                  )
-                );
-              })
-            ),
-
-            React.createElement('div', { className: 'bg-slate-900/20 border border-slate-800 rounded-lg p-6' },
-              React.createElement('h2', { className: 'text-lg font-bold font-serif-display text-slate-200 mb-4' }, 'Why Contamination Keeps Happening'),
-              React.createElement('div', { className: 'space-y-3 text-xs text-slate-400 font-mono-tech' },
-                React.createElement('p', null,
-                  React.createElement('strong', { className: 'text-amber-400' }, 'The Narrative Smoothing Incentive:'),
-                  ' Colonial clerks, AI models, and genealogy platforms all share the same pressure: ',
-                  React.createElement('em', null, 'completeness sells, complexity costs.'),
-                  ' A "his marke" is faster than learning Narragansett gender grammar. An "Alice Daniels" auto-fill retains subscribers. A "Cojonoquond" completes the pattern.'
-                ),
-                React.createElement('p', null,
-                  React.createElement('strong', { className: 'text-amber-400' }, 'The Indigenous Data Model Gap:'),
-                  ' None of these systems have fields for sachem-line inheritance, matrilineal land rights, cross-sibling stewardship, or war-displacement identity shifts. ',
-                  React.createElement('em', null, 'When the data model cannot represent the reality, the reality is erased.')
-                ),
-                React.createElement('p', null,
-                  React.createElement('strong', { className: 'text-amber-400' }, 'The Propagation-Corroboration Fallacy:'),
-                  ' Repetition is treated as truth. "His marke" appears in multiple deeds, so it must be correct. "Alice Daniels → Joan" appears in multiple trees, so it must be true. ',
-                  React.createElement('em', null, 'Repetition is not corroboration. Propagation is not proof.')
-                )
-              )
-            ),
-
-            React.createElement('div', { className: 'bg-purple-950/20 border border-purple-900/30 rounded-lg p-6' },
-              React.createElement('h2', { className: 'text-lg font-bold font-serif-display text-purple-300 mb-3' }, 'Call for Algorithmic Audit Volunteers'),
-              React.createElement('p', { className: 'text-xs text-slate-400 font-mono-tech leading-relaxed mb-4' },
-                'We need researchers with platform access to audit Ancestry, MyHeritage, FamilySearch, and WikiTree for Joan Greene entries. Document auto-assigned relationships, missing Indigenous fields, and citation architecture. Compare platform data models to colonial record-keeping structures.'
-              ),
-              React.createElement('div', { className: 'flex flex-wrap gap-2' },
-                ['YourRoots','Ancestry','MyHeritage','FamilySearch','WikiTree','FindAGrave'].map(function(name) {
-                  return React.createElement('span', { key: name, className: 'text-xs font-mono-tech bg-purple-950/50 text-purple-300 border border-purple-700/30 px-3 py-1.5 rounded' }, name);
-                })
-              )
-            )
-          );
-        }
-
-        // WHAT WE DON'T KNOW
-        if (activeTab === 'gaps') {
-          return React.createElement('div', { className: 'space-y-6 fade-in' },
-            React.createElement('div', { className: 'text-center py-8 border-b border-slate-800 mb-6' },
-              React.createElement('h1', { className: 'text-3xl font-serif-display font-black text-slate-100 mb-2' }, "What We Don't Know"),
-              React.createElement('p', { className: 'text-sm text-slate-400 font-mono-tech' }, 'Honesty about gaps is our strength. Every open thread is an invitation to collaborate.')
-            ),
-
-            React.createElement('div', { className: 'grid grid-cols-1 md:grid-cols-2 gap-6' },
-              React.createElement('div', { className: 'bg-emerald-950/20 border border-emerald-900/30 rounded-lg p-5' },
-                React.createElement('h3', { className: 'text-sm font-bold text-emerald-400 font-mono-tech mb-3 flex items-center' },
-                  React.createElement('span', { className: 'mr-2' }, '🟢'),
-                  ' PROVEN (' + statusCounts.PROVEN + ')'
-                ),
-                React.createElement('ul', { className: 'space-y-2 text-xs text-slate-400 font-mono-tech' },
-                  React.createElement('li', null, '• John Greene Sr. at Cocumscussoc 40+ years (1679 affidavit)'),
-                  React.createElement('li', null, '• 1672 Fones Purchase deed names Anashuecot'),
-                  React.createElement('li', null, '• 1676 Providence records burn'),
-                  React.createElement('li', null, '• 1682 Joan signs "her marke" on Pawtuxet sale'),
-                  React.createElement('li', null, '• 1682 life-estate clause confirms Joan alive'),
-                  React.createElement('li', null, '• John Sr. dead before 25 Sept 1685 (Bates)'),
-                  React.createElement('li', null, '• 1703 Fones enters 1672 deed + 1677/8 affidavit'),
-                  React.createElement('li', null, '• 1858 Hough records Anaftiawin variant'),
-                  React.createElement('li', null, '• 1881 Narragansett Tribal List includes "Green"'),
-                  React.createElement('li', null, '• 1894 F.L. Greene: "nothing further is known"'),
-                  React.createElement('li', null, '• 1918-19 Bates: rigorous Five-John Firewall'),
-                  React.createElement('li', null, '• Quaiapen slain 2 July 1676 (decoupled from Anashuecot)')
-                )
-              ),
-
-              React.createElement('div', { className: 'bg-blue-950/20 border border-blue-900/30 rounded-lg p-5' },
-                React.createElement('h3', { className: 'text-sm font-bold text-blue-400 font-mono-tech mb-3 flex items-center' },
-                  React.createElement('span', { className: 'mr-2' }, '🟡'),
-                  ' PROBABLE (' + statusCounts.PROBABLE + ')'
-                ),
-                React.createElement('ul', { className: 'space-y-2 text-xs text-slate-400 font-mono-tech' },
-                  React.createElement('li', null, '• Tier 1: Joan was Narragansett sachem-line woman'),
-                  React.createElement('li', null, '• 1677/8 Absolom affidavit: Anashuecot "conveyed out"'),
-                  React.createElement('li', null, '• Tocomminon as father, Browne as guardian'),
-                  React.createElement('li', null, '• 1672 "his marke" = scribal construct (linguistic argument)'),
-                  React.createElement('li', null, '• Robert Greene (tenant) 1676–1686 Fones deeds'),
-                  React.createElement('li', null, '• 1685 deed referencing "John Greene Sr. now deceased"'),
-                  React.createElement('li', null, '• 1694 Massachusetts probate (Lt. John Greene)'),
-                  React.createElement('li', null, '• 1941 Hildenbrand corroborates Edward')
-                )
-              ),
-
-              React.createElement('div', { className: 'bg-amber-950/20 border border-amber-900/30 rounded-lg p-5' },
-                React.createElement('h3', { className: 'text-sm font-bold text-amber-400 font-mono-tech mb-3 flex items-center' },
-                  React.createElement('span', { className: 'mr-2' }, '⚪'),
-                  ' UNVERIFIED (' + statusCounts.UNVERIFIED + ')'
-                ),
-                React.createElement('ul', { className: 'space-y-2 text-xs text-slate-400 font-mono-tech' },
-                  React.createElement('li', null, '• Tier 2: Joan = Anashuecot specifically'),
-                  React.createElement('li', null, '• 1676 "Daniel Green" = Daniel² Greene of Quidnessett'),
-                  React.createElement('li', null, '• Bartlett Vols. 2-3: Greene + captive entries'),
-                  React.createElement('li', null, '• 1677 East Greenwich war-service: Greene grantees?'),
-                  React.createElement('li', null, '• 1908 Greene Reunion oral legends'),
-                  React.createElement('li', null, '• RIHS Mss 1210 bow-and-arrow mark claim')
-                )
-              ),
-
-              React.createElement('div', { className: 'bg-rose-950/20 border border-rose-900/30 rounded-lg p-5' },
-                React.createElement('h3', { className: 'text-sm font-bold text-rose-400 font-mono-tech mb-3 flex items-center' },
-                  React.createElement('span', { className: 'mr-2' }, '⚫'),
-                  ' NULL / DESTROYED (' + statusCounts.NULL + ')'
-                ),
-                React.createElement('ul', { className: 'space-y-2 text-xs text-slate-400 font-mono-tech' },
-                  React.createElement('li', null, '• "1695 will names Joan" — fabrication, John dead by 1685'),
-                  React.createElement('li', null, '• La Mance (1904) claims — circular, unverified'),
-                  React.createElement('li', null, '• "Joan Beggarly" — 20th-century compilation myth'),
-                  React.createElement('li', null, '• Bow-and-arrow pictograph on Anashuecot — AI fabrication'),
-                  React.createElement('li', null, '• "Cojonoquond" composite sachem — AI hallucination'),
-                  React.createElement('li', null, '• 1743 "Absalom Jennings" runaway ad — AI invention'),
-                  React.createElement('li', null, '• YourRoots "Alice Daniels → Joan" — algorithmic fiction')
-                )
-              )
-            ),
-
-            React.createElement('div', { className: 'bg-[#0B101E] border border-slate-800 rounded-lg p-6' },
-              React.createElement('h3', { className: 'text-lg font-bold font-serif-display text-amber-500 mb-4' }, 'Active Research Queue'),
-              React.createElement('div', { className: 'space-y-3' },
-                threads.filter(function(t) { return !t.done; }).map(function(thread) {
-                  return React.createElement('div', { key: thread.id, className: 'flex items-start space-x-3 p-3 rounded bg-slate-900/50 border border-slate-800/80' },
-                    React.createElement('div', { className: 'mt-1 flex-shrink-0' },
-                      React.createElement('div', { className: 'w-4 h-4 rounded border border-amber-700 bg-[#070A13]' })
-                    ),
-                    React.createElement('div', { className: 'flex-1' },
-                      React.createElement('p', { className: 'text-xs font-mono-tech text-slate-300' }, thread.text)
-                    ),
-                    React.createElement('span', { className: 'text-[9px] font-mono-tech px-2 py-0.5 rounded uppercase ' +
-                      (thread.priority === 'CRITICAL' ? 'bg-red-950 border border-red-500/20 text-red-400' :
-                       thread.priority === 'HIGH' ? 'bg-amber-950 border border-amber-500/20 text-amber-400' :
-                       'bg-blue-950 border border-blue-500/20 text-blue-400')
-                    }, thread.priority)
-                  );
-                })
-              )
-            )
-          );
-        }
-
-        // HOW TO HELP
-        if (activeTab === 'help') {
-          return React.createElement('div', { className: 'space-y-8 max-w-4xl fade-in' },
-            React.createElement('div', { className: 'text-center py-8 border-b border-slate-800 mb-6' },
-              React.createElement('h1', { className: 'text-3xl font-serif-display font-black text-slate-100 mb-2' }, 'How You Can Help'),
-              React.createElement('p', { className: 'text-sm text-slate-400 font-mono-tech' }, 'Historical research is collaborative. The goal is not to defend a story. The goal is to understand it as accurately as the surviving evidence allows.')
-            ),
-
-            React.createElement('div', { className: 'bg-slate-900/20 border border-slate-800 rounded-lg p-6' },
-              React.createElement('h2', { className: 'text-lg font-bold font-serif-display text-amber-500 mb-3' }, '🔍 What We\'re Looking For'),
-              React.createElement('p', { className: 'text-sm text-slate-300 leading-relaxed mb-4' }, 'If you know of any of the following, please share them:'),
-              React.createElement('div', { className: 'grid grid-cols-1 md:grid-cols-2 gap-3' },
-                ['Overlooked manuscripts','Unpublished transcriptions','Archival collections','Corrections to existing entries','Alternative interpretations','Related research or parallel projects'].map(function(item, i) {
-                  return React.createElement('div', { key: i, className: 'flex items-center text-sm text-slate-300 font-mono-tech' },
-                    React.createElement('span', { className: 'text-amber-500 mr-2' }, '▸'),
-                    item
-                  );
-                })
-              )
-            ),
-
-            React.createElement('div', { className: 'bg-[#0B101E] border border-slate-800 rounded-lg p-6' },
-              React.createElement('h2', { className: 'text-lg font-bold font-serif-display text-emerald-400 mb-3' }, '📧 How to Contribute'),
-              React.createElement('div', { className: 'space-y-4 text-sm text-slate-300' },
-                React.createElement('p', { className: 'leading-relaxed' }, 'The best contributions include:'),
-                React.createElement('div', { className: 'space-y-2 font-mono-tech text-xs text-slate-400 ml-4' },
-                  React.createElement('p', null, '• A specific citation (archive, collection, box, folder, page)'),
-                  React.createElement('p', null, '• A direct quotation from the source'),
-                  React.createElement('p', null, '• Your assessment of how it relates to existing evidence'),
-                  React.createElement('p', null, '• Any contradictions or complications it introduces')
-                ),
-                React.createElement('p', { className: 'text-amber-400 font-mono-tech text-xs mt-4' }, 'All contributions will be reviewed against the 4 Laws. No narrative smoothing, even from well-meaning collaborators.')
-              )
-            ),
-
-            React.createElement('div', { className: 'bg-blue-950/10 border border-blue-900/30 rounded-lg p-6' },
-              React.createElement('h2', { className: 'text-lg font-bold font-serif-display text-blue-400 mb-3' }, '🎯 Priority Research Areas'),
-              React.createElement('div', { className: 'space-y-3' },
-                threads.filter(function(t) { return !t.done && (t.priority === 'CRITICAL' || t.priority === 'HIGH'); }).map(function(thread) {
-                  return React.createElement('div', { key: thread.id, className: 'flex items-start space-x-3 p-3 rounded bg-slate-900/50 border border-slate-800/80' },
-                    React.createElement('div', { className: 'mt-1 flex-shrink-0' },
-                      React.createElement('div', { className: 'w-4 h-4 rounded border border-amber-700 bg-[#070A13]' })
-                    ),
-                    React.createElement('div', { className: 'flex-1' },
-                      React.createElement('p', { className: 'text-xs font-mono-tech text-slate-300' }, thread.text)
-                    ),
-                    React.createElement('span', { className: 'text-[9px] font-mono-tech px-2 py-0.5 rounded uppercase ' +
-                      (thread.priority === 'CRITICAL' ? 'bg-red-950 border border-red-500/20 text-red-400' :
-                       'bg-amber-950 border border-amber-500/20 text-amber-400')
-                    }, thread.priority)
-                  );
-                })
-              )
-            ),
-
-            React.createElement('div', { className: 'bg-slate-900/20 border border-slate-800 rounded-lg p-6' },
-              React.createElement('h2', { className: 'text-lg font-bold font-serif-display text-purple-400 mb-3' }, '🤝 Collaboration Principles'),
-              React.createElement('div', { className: 'space-y-2 text-sm text-slate-300 font-mono-tech' },
-                React.createElement('p', null, '• All contributions are credited by name unless you request anonymity.'),
-                React.createElement('p', null, '• Contradictory evidence is welcome — it makes the archive stronger.'),
-                React.createElement('p', null, '• No one "owns" this research. The archive belongs to everyone.'),
-                React.createElement('p', null, '• Changing your mind when better evidence appears is a virtue, not a failure.')
-              )
-            ),
-
-            React.createElement('div', { className: 'text-center py-6 border-t border-slate-800' },
-              React.createElement('p', { className: 'text-lg font-serif-display text-amber-400 italic' }, '"History belongs to everyone. Access to the evidence should too."')
-            )
-          );
-        }
-
-        // Fallback
-        return React.createElement('div', { className: 'text-center py-20 text-slate-500' }, 'Tab not found');
-      }
-    }
-
-    var rootElement = document.getElementById('root');
-    var root = ReactDOM.createRoot(rootElement);
-    root.render(React.createElement(App));
-  </script>
-<script src="https://utteranc.es/client.js"
-        repo="lemuwah/joan-lineage-theory"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
 </body>
 </html>
