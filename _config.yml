@@ -68,7 +68,7 @@ author:
 github:
   repository: "lemuwah/joan-lineage-theory"
 nav:
-  - Home: index.md
+  - Home: index.html
   - Primary Sources:
       - Fones Purchase (1672): primary_sources/1672_fones.md
   - Theory:
