@@ -46,10 +46,9 @@ This is a pure algorithmic guess created by tree-merging.
 
 ---
 
-### ❌ Claim: “Anashuecot used a bow-and-arrow mark.”
-**Status:** ⚫ NULL  
-**Why:** This originated from an AI hallucination in 2023–2024 and was copied into user trees.  
-No colonial deed shows this mark.
+### 🟡 Claim: "Anashuecot used a bow-and-arrow mark." — RECLASSIFIED 2026-07-17
+**Status:** ⚪ UNVERIFIED (was ⚫ NULL)
+**Why the change:** This was logged as a 2023–2024 AI hallucination with no colonial deed support. That's no longer the full picture — `images/absolom-affidavit.jpg` (the 1677/8 Absolom affidavit itself, see anchor below) shows a torn/damaged section directly over the mark location in the signature block, with a shape at least consistent with a bow-and-arrow pictograph. The tear itself is real; what it depicts is not confirmed. Not treated as fabrication anymore. Not treated as proven either — needs the physical document or a higher-resolution scan before any status upgrade past UNVERIFIED.
 
 ---
 
@@ -74,7 +73,7 @@ These are the **PROVEN** anchors from the documentary record:
   Names **Anashuecot** as “chiefe Sachem and heire properly.”
 
 - **1677/8 Absolom affidavit**  
-  States she was “**conveyed out of the country**,” father **Tocomminon**, brother **Washaucutt**.
+  States she was “**conveyed out of the country**,” father **Tocomminon**, brother **Washaucutt**. Scan (`images/absolom-affidavit.jpg`, pp.22–23) shows tear damage over the mark area next to Anashuecot's name — see UNVERIFIED bow-and-arrow entry above; not confirmed, not fabricated.
 
 - **1682 Pawtuxet sale**  
   “Joan” gives **“free & voluntary consent”** and signs **“her marke.”**
@@ -88,7 +87,6 @@ These are the **PROVEN** anchors from the documentary record:
 None of these documents mention:
 - Alice Daniels  
 - Cojonoquond  
-- bow-and-arrow marks  
 - English maternal lines  
 - any English birth identity for Joan
 
