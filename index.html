@@ -1,55 +1,77 @@
----
-layout
----
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Joan Archive — No Narrative Smoothing</title>
-  <meta name="description" content="An open-access research library dedicated to 17th-century Rhode Island.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Joane Greene Archive: Reconstructive Genealogy</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
-  <base target="_blank">
-
   <style>
-    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #070A13; color: #E2E8F0; }
-    .font-serif-display { font-family: 'Cinzel', serif; }
-    .font-mono-tech { font-family: 'JetBrains Mono', monospace; }
-    ::-webkit-scrollbar { width: 6px; height: 6px; }
-    ::-webkit-scrollbar-track { background: #0B0F19; }
-    ::-webkit-scrollbar-thumb { background: #1E293B; border-radius: 4px; }
-    .contamination-pulse { animation: pulse-border 2s infinite; }
-    @keyframes pulse-border { 0%, 100% { border-color: rgba(239, 68, 68, 0.3); } 50% { border-color: rgba(239, 68, 68, 0.6); } }
-    .nav-active { background: rgba(245,158,11,0.08); color: #F59E0B; border-left: 2px solid #F59E0B; }
+    body { background: #060910; color: #E2E8F0; font-family: 'Plus Jakarta Sans', sans-serif; }
+    .nav-active { background: linear-gradient(90deg, rgba(245,158,11,0.15), transparent); border-left: 2px solid #F59E0B; color: #FBBF24; }
   </style>
 </head>
-<body class="overflow-x-hidden">
+<body class="antialiased">
   <div id="root"></div>
 
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  
   <script>
-    // --- Data remains exactly as you provided ---
-    const TIMELINE_DATA = [ /* ... (your original data objects) ... */ ];
-    
-    // --- Safe Initialization ---
-    window.addEventListener('DOMContentLoaded', () => {
-      const rootElement = document.getElementById('root');
-      if (rootElement) {
-        const root = ReactDOM.createRoot(rootElement);
-        // Ensure you define the 'App' component before this line
-        root.render(React.createElement(App));
-      }
-    });
+    // --- Data Core ---
+    const FOUR_LAWS = [
+      { title: "Contradictions Are Held, Not Hidden", text: "No smoothing—display conflicting sources side-by-side." },
+      { title: "Documentary Evidence Over Narrative", text: "Primary transcripts outweigh secondary family trees." },
+      { title: "No Premature Disqualification", text: "Scribal shorthand (e.g., 'his marke') does not dictate identity." },
+      { title: "Contamination Law", text: "Compilation layers (Ancestry, WikiTree) are quarantined." }
+    ];
 
-    // --- App Component and Logic ---
-    function App() {
-      // (Keep all your existing state hooks and render function code here)
-      return React.createElement('div', null, 'Archive Loaded');
+    const JOANE_CORE = {
+      name: "Joane Greene",
+      status: "PROVEN — May 1682",
+      witnesses: ["William Carpenter", "John Wickes", "Samuel Gorton"],
+      bio: "She appears once. That single signature is the anchor for our reconstruction of the world around her."
+    };
+
+    // --- React Component ---
+    function ArchiveApp() {
+      return React.createElement('div', {className: 'min-h-screen flex'},
+        // Sidebar
+        React.createElement('aside', {className: 'w-64 border-r border-slate-800 p-6'},
+          React.createElement('h1', {className: 'text-lg font-bold text-amber-500'}, 'JOANE GREENE ARCHIVE'),
+          React.createElement('nav', {className: 'mt-8 space-y-2'},
+            ['Archive Home', 'Timeline', 'Digitization Lab', 'Quarantine'].map(item => 
+              React.createElement('button', {className: 'w-full text-left px-4 py-2 rounded hover:bg-slate-800'}, item)
+            )
+          )
+        ),
+        // Main Content
+        React.createElement('main', {className: 'flex-1 p-10'},
+          React.createElement('h2', {className: 'text-4xl font-serif text-white'}, 'Joane of Quidnessett'),
+          React.createElement('div', {className: 'mt-8 grid grid-cols-2 gap-6'},
+            React.createElement('div', {className: 'p-6 bg-slate-900 border border-slate-700 rounded-xl'},
+              React.createElement('h3', {className: 'text-emerald-400 font-bold'}, 'Status: ' + JOANE_CORE.status),
+              React.createElement('p', {className: 'mt-2 text-sm text-slate-300'}, JOANE_CORE.bio)
+            ),
+            React.createElement('div', {className: 'p-6 bg-slate-900 border border-slate-700 rounded-xl'},
+              React.createElement('h3', {className: 'text-amber-400 font-bold'}, 'Key Witnesses'),
+              React.createElement('ul', {className: 'mt-2 text-sm text-slate-300'}, JOANE_CORE.witnesses.map(w => React.createElement('li', null, '• ' + w)))
+            )
+          ),
+          React.createElement('section', {className: 'mt-10'},
+            React.createElement('h3', {className: 'text-xl font-semibold text-white'}, 'The Four Laws'),
+            React.createElement('div', {className: 'mt-4 grid grid-cols-2 gap-4'}, 
+              FOUR_LAWS.map(law => React.createElement('div', {className: 'p-4 border border-slate-800 rounded'},
+                React.createElement('h4', {className: 'text-sm font-bold text-amber-300'}, law.title),
+                React.createElement('p', {className: 'text-xs text-slate-500 mt-1'}, law.text)
+              ))
+            )
+          )
+        )
+      );
     }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(React.createElement(ArchiveApp));
   </script>
 </body>
 </html>
