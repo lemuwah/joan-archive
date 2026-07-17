@@ -1,332 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Joane Greene Archive — One Woman, One Record, May 1682</title>
-<meta name="description" content="One woman, one record. Joane Greene appears once in 1682 Pawtuxet, witnessed by Carpenter, Wickes, Gorton. Digitizing the envelope around her to make her visible.">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-<style>
-body{font-family:'Plus Jakarta Sans',sans-serif;background:#05070E;color:#E2E8F0}
-.font-serif{font-family:'Cinzel',serif}.font-mono{font-family:'JetBrains Mono',monospace}
-.nav-active{background:linear-gradient(90deg,rgba(245,158,11,0.18),transparent);color:#FBBF24;border-left:2px solid #F59E0B}
-.fade-in{animation:fadeIn .5s ease-out}@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-.status-proven{border-color:#10B981;color:#34D399;background:rgba(16,185,129,0.08)}.status-probable{border-color:#3B82F6;color:#60A5FA;background:rgba(59,130,246,0.08)}.status-null{border-color:#EF4444;color:#F87171;background:rgba(239,68,68,0.08)}
-</style>
-</head>
-<body>
-<noscript>
-<div style="max-width:900px;margin:40px auto;padding:24px;background:#0B101E;border:1px solid #334155;font-family:monospace;font-size:12px;line-height:1.7">
-<h1>The Joane Greene Archive — No JS Version</h1>
-<p><b>One woman. One record. May 1682. Pawtuxet, RI.</b> Joane Greene appears once, consenting in a deed witnessed by William Carpenter (non-Quaker speculator), John Wickes, and Samuel Gorton. Grade: PROVEN.</p>
-<h2>Evidence Key</h2>
-<ul><li>🟢 PROVEN — Direct primary source located</li><li>🔵 PROBABLE — Strong chain, one inferential link</li><li>🟡 UNVERIFIED — Claim exists, source not yet pulled</li><li>🔴 NULL — Searched and not found OR proven compilation layer. NULL is data.</li></ul>
-<h2>The Four Laws</h2>
-<p><b>Law 1: Contradictions Are Held, Not Hidden</b> — If sources conflict, both displayed side-by-side. No smoothing.</p>
-<p><b>Law 2: Documentary Evidence Over Narrative</b> — One 1672 deed > 100 family trees.</p>
-<p><b>Law 3: No Premature Disqualification</b> — We don't dismiss Anashuecot as 'male' because a scribe wrote 'his marke' for 7 signers.</p>
-<p><b>Law 4 — Contamination Law: Compilation Layers Are Toxic</b> — alfredgibbs.com, WikiTree, Findagrave, Ancestry user trees = quarantined in /contamination/. They are Echo Chambers, not sources.</p>
-<h2>Four-Agent System</h2>
-<p>🔭 <b>Explorer</b> — Finds every primary, even if it breaks theory. Hostile to comfort.</p>
-<p>⚔️ <b>Hostile Reviewer</b> — Tries to destroy theory using colonial law & scribal practice. E.g., Is 'his marke' gender or tic?</p>
-<p>🧬 <b>Synthesizer</b> — Rebuilds kinship map after attack, holding contradictions. Network, not tree.</p>
-<p>🏛️ <b>Archivist</b> — No citation = does not exist. Box.Folder.Page required.</p>
-<h2>How To Navigate</h2>
-<p>/sources/ = primary scans 600 DPI, IIIF. /contamination/ = quarantined compilation layers (DO NOT CITE). /digitization/ = lab notes. /theory/ = frameworks. /notes/ = name variants & scribe analysis.</p>
-<h2>Restored Critical Details</h2>
-<ul>
-<li><b>Kettelle dead-end:</b> Violet Kettelle Papers, Box 2; RIHS Mss 1210, folders 12-13; NULL; isolated compilation layer, not a primary anchor. Only surviving note: "RIHS Mss 1210 bow-and-arrow mark claim."</li>
-<li><b>Pawtuxet 1682:</b> PROVEN (was PROBABLE). Witnesses: William Carpenter (non-Quaker speculator), John Wickes, Samuel Gorton.</li>
-<li><b>48 grantees + Bartlett partial search:</b> 1677 East Greenwich war-service list — 48 grantees claimed. Bartlett search partial, pages 56-58 require text-diff against Fones Record original.</li>
-<li><b>Robert Greene (tenant):</b> 3 independent Fones Record deeds near Cocumscussoc show Robert Greene tenant. Full-corpus pass needed; family alignment remains contested.</li>
-<li><b>1694 Lt. John Greene probate:</b> Rationale — map exact progeny to rule out cross-generational contamination of Joane's children.</li>
-<li><b>1685 deed:</b> Primary document not yet individually pulled; high-priority action to pull it. Currently open thread #1.</li>
-<li><b>1908 Reunion:</b> Source is newspaper cutting. Contains 'Born Clarke' floating legend syndrome warning — Clarke surname appears without anchor, do not attach to Joane.</li>
-<li><b>1679 affidavit verbatim:</b> "forty years and more..." — NOT "40+ years". Exact phrase from Holden & Greene certification: "for above forty years".</li>
-<li><b>Named contamination vectors:</b> alfredgibbs.com, WikiTree, Findagrave — quarantined. Labeled Echo Chamber.</li>
-<li><b>Bartlett open thread:</b> Pages 56-58 text-diff vs Fones Record. Bartlett partial search noted.</li>
-<li><b>Coginiquant:</b> Determine if 1, 2, or 3 distinct individuals — do not default either way. HELD OPEN, not collapsed.</li>
-</ul>
+<div align="center">
+
+# 🌿 The Joane Greene Archive
+### *Digitize • Preserve • Reconstruct • Collaborate*
+
+**One woman. One record. May 1682. Pawtuxet, RI.**
+
+Joane Greene appears only once in the surviving English documentary record — a consent in a 1682 deed witnessed by **William Carpenter (non-Quaker speculator), John Wickes, and Samuel Gorton**. That single appearance is **PROVEN**, not probable.
+
+This archive asks: *What world made that consent necessary? And how can digitization make her visible?*
+
+🔗 **Live Site:** https://lemuwah.github.io/joan-lineage-theory/
+
 </div>
-</noscript>
-<div id="root"></div>
-<script>
-const IMAGES = {
-  petition1679: "images/1679-petition/1679_petition_narragansett_inhabitants_RI_records_58-59_forty-two-years.jpg",
-  council1678: "images/1678-council-order/1678_council_order_holden_greene_forty-years_RI_records_62-63.jpg",
-  greeneCert: "images/1679-greene-certificates/1679_john_greene_certificate_narragansett_RI_records_56-57_roger_williams_testimony.jpg",
-  captGreene: "images/1679-greene-certificates/1679_capt_john_greene_assembly_payment_RI_records_46-47.jpg",
-  prohibit: "images/1679-greene-certificates/1679_prohibition_letter_holdEN_greene_RI_records_40.jpg",
-  absolv: "images/1677-absolom-testimony/1677_absolom_counsellor_testimony_anashuecot_deed_pages22-23.jpg",
-  awawsunks: "images/1674-cakochawhunt/1674_awawsunks_her_marke_cakochawhunt_simon_eldist_RI_land_evidences_v1_p52-53.jpg"
-};
 
-const TIMELINE = [
-  {date:"Dec 1638", title:"Winthrop — Surgeon John Greene married to Alice Beggarly. NOT Quidnessett John", status:"PROVEN", img:null, desc:"Closes Beggarly line. 38-year gap before Joane 1682. Firewall.", quote:"Surgeon John Greene married to Alice Beggarly"},
-  {date:"Jan 1644", title:"Arnold letter: 'Mr. Green's wife is dead.' Alice Beggarly dead", status:"PROVEN", img:null, desc:"Alice dead 38 years before Joane. Absolute firewall against Beggarly-Joane merge.", quote:"Mr. Green's wife is dead"},
-  {date:"Jan 1, 1672", title:"Anashuecot deed — Quidnessett tract, 7 signers all 'his marke'", status:"PROVEN", img:null, desc:"Anashuecot, chiefe Sachem and heire properly... Together with ye volentary & free consent of Wampkegge and Ompamiatt my two Brothers, and Seecomp, Tyecuecsha & Nammeash my three sons. All 7 marked 'his marke' — scribal tic, not gender. See 1674 her marke comparator.", quote:"Anashuecot, chiefe Sachem and heire properly... volentary & free consent"},
-  {date:"Sept 29, 1674", title:"Awawsunks X her marke — Female sachem correctly gendered", status:"PROVEN", img:"awawsunks", desc:"Awawsunck Sachim Squa of Succonett. Correctly 'her marke' in 1674, 2 years AFTER 1672 'his marke' for 7 signers. Same pool, different outcome. Smoking gun for Law 3. Also Cakochawhunt alias Simon Eldist son of Awawsuncks.", quote:"Awawsunck X her marke"},
-  {date:"Jan 5, 1677", title:"Absolom Counsellor Testimony — Corroborates Anashuecot chain", status:"PROVEN", img:"absolv", desc:"Indian called Absolom declares present at Deed of Sale that Sachem Awashuecut made unto John Green, Henry Tibbits, John Fones... Faded manuscript p22-23. Direct corroboration that 1672 deed not isolated.", quote:"Indian Sachem Awashuecot made unto John Green Henry Tibbits John Fones"},
-  {date:"1678", title:"Order of Council — Holden & Greene Deputies — forty years", status:"PROVEN", img:"council1678", desc:"Randall Holden & John Greene Deputies certify forty years residence. Links to 1679 voluntary submission.", quote:"for the space of forty years that never any legal purchase..."},
-  {date:"Aug 1, 1679", title:"John Greene Certificate + Roger Williams — 'forty years and more...'", status:"PROVEN", img:"greeneCert", desc:"Verbatim: 'forty years and more...' Holden & John Greene certified 'of their certain knowledge as having inhabited that country for above forty years that never any legal purchase had been made thereof from the Indians by the Massachusetts or any others' Plus Roger Williams testimony. Pages 56-57.", quote:"forty years and more... for above forty years"},
-  {date:"Aug 1, 1679", title:"Capt John Greene — 60 pounds Assembly payment", status:"PROVEN", img:"captGreene", desc:"Capt Randall Houldon and Capt John Greene disbursed 45 pounds in England + 15 pounds passage = 60 pounds sterling. Political standing at Joane's time.", quote:"Capt John Greene 60 pounds"},
-  {date:"1679", title:"Prohibition Letter — Holden & Greene vs Massachusetts", status:"PROVEN", img:"prohibit", desc:"Prohibition asserting RI jurisdiction. Part of forty-years legal battle. Page 40.", quote:"Prohibition"},
-  {date:"1679", title:"Petition Narragansett inhabitants — 42 years — Richard Smith 1637", status:"PROVEN", img:"petition1679", desc:"'About forty-two years since, the father of one of your petitioners, namely, Richard Smith, deceased, who sold his possessions in Gloucestershire, and came into New England, began the first settlement of the Narragansett Country (then living at Taunton, in the Colony of New Plymouth) and erected a trading house...' 1637 anchor for Smith & Greene at Cocumscussoc. Pages 58-59.", quote:"About forty-two years since, the father... Richard Smith..."},
-  {date:"May 1682", title:"JOANE GREENE — Sole appearance — Pawtuxet consent — PROVEN", status:"PROVEN", img:null, desc:"HERO RECORD. Consent in Pawtuxet deed. Witnesses: William Carpenter (non-Quaker speculator), John Wickes, Samuel Gorton. Grade PROVEN (was PROBABLE) per audit. Requires legal consent — why? Drop scan into images/1682-joane-consent/.", quote:"Joane Greene consent — single appearance 1682"},
-  {date:"1685", title:"1685 deed — NOT YET PULLED — HIGH PRIORITY", status:"UNVERIFIED", img:null, desc:"Primary document not yet individually pulled; high-priority action to pull it. Open thread #1. May contain Joane or adjacent kin.", quote:"1685 deed pull"},
-  {date:"1694", title:"1694 Lt. John Greene probate — map progeny to rule out contamination", status:"PROBABLE", img:null, desc:"Rationale: map exact progeny to rule out cross-generational contamination of Joane's children. Do not assume Joan = Joane.", quote:"1694 probate rationale"},
-  {date:"1908", title:"1908 Reunion — newspaper cutting — 'Born Clarke' floating legend", status:"NULL", img:null, desc:"Source: newspaper cutting only. Contains 'Born Clarke' floating legend syndrome — Clarke surname appears without anchor, do not attach to Joane. Named vector.", quote:"Born Clarke floating legend"}
-];
+---
 
-const CRITICAL = [
-  {k:"Kettelle dead-end", v:"Violet Kettelle Papers, Box 2; RIHS Mss 1210, folders 12-13; NULL; isolated compilation layer, not a primary anchor. Only note: 'RIHS Mss 1210 bow-and-arrow mark claim.'"},
-  {k:"48 grantees + Bartlett", v:"1677 East Greenwich war-service: 48 grantees claimed. Bartlett search partial. Pages 56-58 require text-diff against Fones Record original."},
-  {k:"Robert Greene (tenant)", v:"3 independent Fones Record deeds near Cocumscussoc show Robert Greene tenant. Full-corpus pass needed; family alignment remains contested."},
-  {k:"1694 probate rationale", v:"Map exact progeny to rule out cross-generational contamination."},
-  {k:"1685 deed", v:"Primary document not yet individually pulled; high-priority action to pull it. Open thread #1."},
-  {k:"1908 Reunion", v:"Source: newspaper cutting. 'Born Clarke' floating legend syndrome warning — do not attach to Joane without Box.Folder.Page."},
-  {k:"1679 affidavit verbatim", v:"'forty years and more...' / 'for above forty years' — NOT paraphrase '40+ years'. Exact transcription required per Archivist law."},
-  {k:"Named contamination vectors", v:"alfredgibbs.com, WikiTree, Findagrave = Echo Chamber. Quarantined in /contamination/. No Box.Folder.Page = does not exist."},
-  {k:"Coginiquant", v:"Determine if 1, 2, or 3 distinct individuals — do not default either way. HELD OPEN."},
-  {k:"Bartlett pages 56-58", v:"Text-diff needed: Bartlett transcription vs Fones Record original. Partial search logged as UNVERIFIED."}
-];
+## 🌿 Why Joane Greene — Not John Greene
 
-function App(){
-  const [tab,setTab]=React.useState('joane');
-  const [selected,setSelected]=React.useState(null);
-  return React.createElement('div',{className:'min-h-screen flex flex-col md:flex-row'},
-    React.createElement('aside',{className:'w-full md:w-[300px] md:sticky md:top-0 md:h-screen border-b md:border-r border-slate-800 bg-[#080B14] flex flex-col'},
-      React.createElement('div',{className:'p-6 border-b border-slate-800'},
-        React.createElement('h1',{className:'font-serif font-black text-[18px] tracking-widest text-amber-100'},'JOANE GREENE'),
-        React.createElement('p',{className:'font-mono text-[9px] text-slate-500 uppercase tracking-[0.2em] mt-1'},'One woman • One record • May 1682'),
-        React.createElement('div',{className:'mt-4 p-3 rounded bg-emerald-950/20 border border-emerald-900/30'},
-          React.createElement('p',{className:'font-mono text-[11px] text-emerald-300'},'🔴 LIVE — Images wired • Audit restored'),
-          React.createElement('p',{className:'font-mono text-[9px] text-slate-400 mt-1'},'Click timeline cards to view 600 DPI scans')
-        )
-      ),
-      React.createElement('nav',{className:'p-3 space-y-1 flex-1 overflow-auto'},
-        [
-          {id:'joane',l:'🌿 Why Joane? — Start Here'},
-          {id:'howtoread',l:'📖 How To Read + Laws + Agents'},
-          {id:'gallery',l:'🖼️ Gallery — 7 Scans Wired'},
-          {id:'timeline',l:'📜 Timeline — 40 Years Envelope'},
-          {id:'critical',l:'📌 Restored Audit Trail'},
-          {id:'contam',l:'☠️ Contamination Quarantine'},
-          {id:'digitize',l:'💾 Digitization Crisis — Help'},
-          {id:'collab',l:'🤝 Collaborate — Why It Matters'}
-        ].map(i=>React.createElement('button',{key:i.id,onClick:()=>setTab(i.id),className:'w-full text-left px-4 py-3 rounded-lg font-mono text-[11px] uppercase tracking-widest transition '+(tab===i.id?'nav-active bg-slate-900':'text-slate-500 hover:text-slate-300 hover:bg-slate-900/50')},i.l))
-      ),
-      React.createElement('div',{className:'p-4 border-t border-slate-800'},
-        React.createElement('p',{className:'font-mono text-[9px] text-slate-600'},'© 2026 Joane Greene Archive • MIT + CC BY 4.0'),
-        React.createElement('a',{href:'https://github.com/lemuwah/joan-lineage-theory',target:'_blank',className:'font-mono text-[10px] text-amber-500/70 hover:text-amber-400'},'GitHub →')
-      )
-    ),
-    React.createElement('main',{className:'flex-1 p-4 md:p-10 bg-[#05070E] max-w-[1100px]'},
-      tab==='joane' && React.createElement('div',{className:'space-y-8 fade-in'},
-        React.createElement('div',{className:'border border-amber-900/30 rounded-[24px] p-8 md:p-12 bg-gradient-to-br from-amber-950/10 via-[#0B101E] to-[#080B14]'},
-          React.createElement('p',{className:'font-mono text-[10px] tracking-[0.3em] text-amber-500 uppercase'},'Why This Archive Exists'),
-          React.createElement('h1',{className:'font-serif text-[36px] md:text-[52px] font-black leading-[0.9] mt-4'},'One woman.',' One record.',' May 1682.'),
-          React.createElement('p',{className:'font-mono text-[13px] text-slate-300 mt-6 leading-7 max-w-2xl'},'Joane Greene appears only once in the surviving English documentary record — a consent in a May 1682 Pawtuxet deed. Witnessed by ',React.createElement('b',{className:'text-amber-200'},'William Carpenter (non-Quaker speculator), John Wickes, and Samuel Gorton'),'. That single appearance is ',React.createElement('span',{className:'px-2 py-0.5 rounded-full bg-emerald-950/40 border border-emerald-800 text-emerald-300 text-[11px]'},'PROVEN'),' — not probable, not family lore.'),
-          React.createElement('div',{className:'mt-8 grid md:grid-cols-3 gap-4 font-mono text-[11px]'},
-            [
-              {q:'Why is she interesting?',a:'Her consent was legally required. In 1682, English colonial law required a wife’s consent to alienate land she might have dower interest in — or, in Narragansett Country, where English title was still contested, her consent may signal Narragansett kinship authority, not English dower. We don’t know which. That not-knowing is the research.'},
-              {q:'Why center her, not John?',a:'Most Greene research centers men who got land grants. Centering Joane forces us to use Narragansett kinship logic, not English patrilineal trees. She breaks the default.'},
-              {q:'What is The Envelope Method?',a:'We cannot invent more Joane records. We digitize everything around her moment — 1672-1679 deeds, 40-years affidavits, scribe tics, contamination vectors — to make her context undeniable.'}
-            ].map(c=>React.createElement('div',{className:'p-4 rounded-xl bg-[#05070E] border border-slate-800'},
-              React.createElement('p',{className:'font-bold text-amber-300 mb-2'},c.q),
-              React.createElement('p',{className:'text-slate-400 leading-5'},c.a)
-            ))
-          ),
-          React.createElement('div',{className:'mt-8 p-4 rounded-xl bg-red-950/10 border border-red-900/30'},
-            React.createElement('p',{className:'font-mono text-[11px] text-red-300'},'🔥 Intrigue: In 1674, only two years after the 1672 Anashuecot deed marked 7 signers as "his marke," a female sachem Awawsunks was correctly recorded as "X her marke" in the same scribal pool. That one difference collapses the main attack on Anashuecot as female sachem. Click Gallery → Awawsunks.'),
-            React.createElement('p',{className:'font-mono text-[10px] text-slate-500 mt-2'},'Digitization win: side-by-side IIIF viewer — 1674 her marke vs 1672 his marke — upgrades Joane more than 10 family trees.')
-          )
-        ),
-        React.createElement('div',{className:'grid md:grid-cols-2 gap-6'},
-          React.createElement('div',{className:'p-6 rounded-2xl bg-[#0B101E] border border-slate-800'},
-            React.createElement('h3',{className:'font-serif font-bold text-amber-200'},'What we PROVE vs what we hold open'),
-            React.createElement('ul',{className:'font-mono text-[11px] text-slate-400 mt-3 space-y-2 list-disc ml-4'},
-              React.createElement('li',null,'PROVEN: May 1682 Pawtuxet consent with 3 witnesses — William Carpenter, John Wickes, Samuel Gorton'),
-              React.createElement('li',null,'PROVEN: 40-years envelope — 1678 council order, 1679 John Greene certificate "forty years and more...", 1679 voluntary submission'),
-              React.createElement('li',null,'PROVEN: 1674 Awawsunks "her marke" — proves scribes could gender correctly'),
-              React.createElement('li',null,'HELD OPEN: Coginiquant — 1, 2, or 3 individuals? Do not default'),
-              React.createElement('li',null,'NULL is data: Violet Kettelle Papers Box 2 RIHS Mss 1210 folders 12-13 — searched, isolated compilation layer')
-            )
-          ),
-          React.createElement('div',{className:'p-6 rounded-2xl bg-[#0B101E] border border-emerald-900/30'},
-            React.createElement('h3',{className:'font-serif font-bold text-emerald-300'},'Why collaborate? Because archives are rotting'),
-            React.createElement('p',{className:'font-mono text-[11px] text-slate-400 mt-3 leading-6'},'NARA estimates <5% of federal holdings are digitized. RI State Archives: thousands of boxes, 17th-century land evidences at 600 DPI only if volunteers do it. FamilySearch filmed 2.4M rolls but indexing is <30% for RI. Every year, acid paper, mold, and "Born Clarke" floating legends replace real citations. One high-res photo + Box.Folder.Page saves a lineage forever.'),
-            React.createElement('a',{onClick:()=>setTab('digitize'),className:'inline-block mt-4 px-4 py-2 rounded-full bg-emerald-900/30 border border-emerald-800 text-emerald-300 font-mono text-[11px] cursor-pointer'},'See crisis stats →')
-          )
-        )
-      ),
-      tab==='howtoread' && React.createElement('div',{className:'space-y-8 fade-in max-w-4xl'},
-        React.createElement('h1',{className:'font-serif text-3xl font-black'},'How To Read This Site'),
-        React.createElement('div',{className:'grid md:grid-cols-2 gap-6'},
-          React.createElement('div',{className:'p-6 rounded-2xl bg-[#0B101E] border border-slate-800'},
-            React.createElement('h3',{className:'font-mono text-[12px] font-bold text-amber-300 uppercase tracking-widest'},'Evidence Key'),
-            React.createElement('div',{className:'space-y-3 mt-4 font-mono text-[11px]'},
-              [{c:'PROVEN',d:'Direct primary source located and transcribed. Box.Folder.Page.'},{c:'PROBABLE',d:'Strong chain, one inferential link'},{c:'UNVERIFIED',d:'Claim exists, source not yet pulled'},{c:'NULL',d:'Searched and not found OR proven compilation layer. NULL is data.'}].map(e=>React.createElement('div',{className:'flex gap-3'},
-                React.createElement('span',{className:'px-2 py-1 rounded-full border text-[9px] h-fit '+(e.c==='PROVEN'?'status-proven':e.c==='PROBABLE'?'status-probable':'status-null')},e.c),
-                React.createElement('span',{className:'text-slate-400'},e.d)
-              ))
-            )
-          ),
-          React.createElement('div',{className:'p-6 rounded-2xl bg-[#0B101E] border border-slate-800'},
-            React.createElement('h3',{className:'font-mono text-[12px] font-bold text-amber-300 uppercase'},'The Four Laws'),
-            React.createElement('div',{className:'space-y-3 mt-4 font-mono text-[11px] leading-5 text-slate-300'},
-              React.createElement('p',null,React.createElement('b',null,'Law 1: Contradictions Are Held, Not Hidden'), ' — If sources conflict, both displayed side-by-side. No smoothing.'),
-              React.createElement('p',null,React.createElement('b',null,'Law 2: Documentary Evidence Over Narrative'), ' — One 1672 deed > 100 family trees.'),
-              React.createElement('p',null,React.createElement('b',null,'Law 3: No Premature Disqualification'), ' — We don\\'t dismiss Anashuecot as male because scribe wrote "his marke" for 7 signers. See 1674 her marke comparator.'),
-              React.createElement('p',{className:'p-3 rounded bg-red-950/10 border border-red-900/30'},React.createElement('b',{className:'text-red-300'},'Contamination Law: Compilation Layers Are Toxic'), ' — alfredgibbs.com, WikiTree, Findagrave, Ancestry user trees = quarantined in /contamination/. Echo Chamber, not source.')
-            )
-          )
-        ),
-        React.createElement('div',{className:'p-6 rounded-2xl bg-[#0B101E] border border-slate-800'},
-          React.createElement('h3',{className:'font-mono text-[12px] font-bold text-purple-300 uppercase'},'Four-Agent System (how we work)'),
-          React.createElement('div',{className:'grid md:grid-cols-4 gap-4 mt-4 font-mono text-[11px]'},
-            [
-              {i:'🔭 Explorer',d:'Finds every primary, even if it breaks theory. Hostile to comfort. "Find the deed that kills your favorite theory."'},
-              {i:'⚔️ Hostile Reviewer',d:'Tries to destroy theory using colonial law & scribal practice. "Is his marke gender or tic? Is Carpenter Quaker?"'},
-              {i:'🧬 Synthesizer',d:'Rebuilds kinship map after attack, holding contradictions. Network, not tree. "Map envelope, not patriline."'},
-              {i:'🏛️ Archivist',d:'No citation = does not exist. Box.Folder.Page required. "Verbatim forty years and more... not 40+."'}
-            ].map(a=>React.createElement('div',{className:'p-3 rounded-xl bg-[#05070E] border border-slate-800'},
-              React.createElement('p',{className:'font-bold text-slate-200'},a.i),
-              React.createElement('p',{className:'text-slate-500 mt-2 leading-5'},a.d)
-            ))
-          )
-        ),
-        React.createElement('div',{className:'p-6 rounded-2xl bg-amber-950/10 border border-amber-900/30 font-mono text-[11px]'},
-          React.createElement('h3',{className:'font-bold text-amber-300'},'How to Navigate (no JS required)'),
-          React.createElement('p',{className:'text-slate-400 mt-2 leading-6'},'/index.html = this app. /sources/ = all primary sources 600 DPI IIIF. /contamination/ = quarantined Echo Chambers (alfredgibbs.com, WikiTree, Findagrave) — DO NOT CITE, link exists to show quarantine. /digitization/ = lab how we digitize. /theory/ = frameworks. /notes/ = name variants + scribe analysis. Static text above is readable with JS disabled per audit.')
-        )
-      ),
-      tab==='gallery' && React.createElement('div',{className:'space-y-6 fade-in'},
-        React.createElement('h1',{className:'font-serif text-3xl font-black'},'Gallery — 7 Scans Wired'),
-        React.createElement('p',{className:'font-mono text-[11px] text-slate-500'},'Every image is 600 DPI where possible. Click to enlarge. If an image fails, your filename does not match — check console.'),
-        React.createElement('div',{className:'grid md:grid-cols-2 lg:grid-cols-3 gap-4'},
-          Object.entries(IMAGES).map(([k,v])=>React.createElement('div',{key:k,className:'group rounded-2xl overflow-hidden border border-slate-800 bg-[#0B101E] hover:border-amber-900/50 cursor-pointer',onClick:()=>{const ev=TIMELINE.find(t=>t.img===k); if(ev) setSelected(ev)}},
-            React.createElement('img',{src:v,className:'w-full h-56 object-cover group-hover:scale-[1.02] transition',onError:e=>{e.target.style.opacity='0.2'}}),
-            React.createElement('div',{className:'p-3'},
-              React.createElement('p',{className:'font-mono text-[10px] text-amber-400 uppercase'},k),
-              React.createElement('p',{className:'font-mono text-[8px] text-slate-600 truncate'},v)
-            )
-          ))
-        )
-      ),
-      tab==='timeline' && React.createElement('div',{className:'space-y-6 fade-in'},
-        React.createElement('h1',{className:'font-serif text-3xl font-black'},'Timeline — The 40-Year Envelope Around Joane'),
-        TIMELINE.map(ev=> React.createElement('div',{key:ev.title,className:'flex gap-4 p-4 rounded-xl border border-slate-800 bg-[#0B101E] hover:border-slate-700 cursor-pointer',onClick:()=>ev.img && setSelected(TIMELINE.find(t=>t.title===ev.title))},
-          React.createElement('div',{className:'w-28 flex-shrink-0'},
-            React.createElement('p',{className:'font-mono text-[10px] text-amber-400'},ev.date),
-            ev.img ? React.createElement('img',{src:IMAGES[ev.img],className:'mt-2 w-full h-20 object-cover rounded border border-slate-700'}) : React.createElement('div',{className:'mt-2 w-full h-20 rounded bg-slate-900 border border-slate-800 flex items-center justify-center font-mono text-[8px] text-slate-500 p-1 text-center'},ev.status)
-          ),
-          React.createElement('div',{className:'flex-1'},
-            React.createElement('h3',{className:'font-serif text-[13px] font-bold'},ev.title),
-            React.createElement('span',{className:'inline-block mt-1 px-2 py-0.5 rounded-full border font-mono text-[9px] '+(ev.status==='PROVEN'?'status-proven':ev.status==='NULL'?'status-null':'status-probable')},ev.status),
-            React.createElement('p',{className:'font-mono text-[11px] text-slate-400 mt-2 leading-5'},ev.desc),
-            ev.quote && React.createElement('p',{className:'font-mono text-[10px] text-amber-300/80 mt-2 italic'},'"'+ev.quote+'"')
-          )
-        ))
-      ),
-      tab==='critical' && React.createElement('div',{className:'space-y-6 fade-in max-w-4xl'},
-        React.createElement('h1',{className:'font-serif text-3xl font-black'},'📌 Restored Audit Trail — Nothing Lost'),
-        React.createElement('p',{className:'font-mono text-[11px] text-slate-400'},'These details were in your original static How To Read block and were compressed in the image-wired build. Restored verbatim per your audit.'),
-        React.createElement('div',{className:'space-y-3'},
-          CRITICAL.map(c=>React.createElement('div',{className:'p-4 rounded-xl bg-[#0B101E] border border-slate-800'},
-            React.createElement('p',{className:'font-mono text-[11px] font-bold text-amber-300'},c.k),
-            React.createElement('p',{className:'font-mono text-[11px] text-slate-400 mt-1 leading-5'},c.v)
-          ))
-        ),
-        React.createElement('div',{className:'p-6 rounded-2xl bg-red-950/10 border border-red-900/30'},
-          React.createElement('h3',{className:'font-mono text-[12px] font-bold text-red-300'},'Pawtuxet 1682 — Witness Restoration'),
-          React.createElement('p',{className:'font-mono text-[11px] text-slate-300 mt-2 leading-6'},'May 1682 Joane Greene consent — Grade: PROVEN (was PROBABLE). Witnesses restored: William Carpenter (non-Quaker speculator — critical to distinguish from Quaker Carpenters), John Wickes, Samuel Gorton. Witness list proves legal formality requiring Joane’s consent.'),
-          React.createElement('p',{className:'font-mono text-[11px] text-slate-500 mt-2'},'Location: Pawtuxet, RI. Source folder: /sources/1682-joane-greene-consent/ — placeholder, awaiting 600 DPI pull.')
-        )
-      ),
-      tab==='contam' && React.createElement('div',{className:'space-y-6 fade-in max-w-4xl'},
-        React.createElement('h1',{className:'font-serif text-3xl font-black'},'☠️ Contamination Quarantine'),
-        React.createElement('div',{className:'p-6 rounded-2xl bg-red-950/20 border border-red-900/30'},
-          React.createElement('p',{className:'font-mono text-[12px] text-red-300 font-bold'},'Named Vectors: alfredgibbs.com, WikiTree, Findagrave — Echo Chamber'),
-          React.createElement('p',{className:'font-mono text-[11px] text-slate-400 mt-2 leading-6'},'These are compilation layers with no Box.Folder.Page. They copy each other. They create "Born Clarke" floating legends. They turn PROBABLE into PROVEN by repetition. Quarantined in /contamination/ with explanation, not deleted, so researchers can see why they are toxic. No narrative smoothing even from well-meaning collaborators.'),
-          React.createElement('a',{href:'https://github.com/lemuwah/joan-lineage-theory/tree/main/contamination',target:'_blank',className:'inline-block mt-4 px-4 py-2 rounded-full bg-red-900/30 border border-red-800 text-red-300 font-mono text-[11px]'},'Open /contamination/ folder →')
-        )
-      ),
-      tab==='digitize' && React.createElement('div',{className:'space-y-6 fade-in max-w-4xl'},
-        React.createElement('h1',{className:'font-serif text-3xl font-black'},'💾 Digitization Crisis — Whole Families Losing History'),
-        React.createElement('div',{className:'grid md:grid-cols-3 gap-4 font-mono text-[11px]'},
-          [
-            {n:'<5%',t:'of NARA holdings digitized. 13.5 BILLION pages remain analog, at risk of fire, flood, mold.'},
-            {n:'~70%',t:'of county deed books 1600-1800 have never been indexed beyond grantor/grantee. Women like Joane vanish in unindexed margins.'},
-            {n:'1 photo = saved',t:'One 600 DPI scan + Box.Folder.Page saves a lineage forever. Without it, "Born Clarke" legends replace citations in 10 years.'}
-          ].map(s=>React.createElement('div',{className:'p-5 rounded-2xl bg-[#0B101E] border border-amber-900/20'},
-            React.createElement('p',{className:'font-serif text-2xl font-black text-amber-300'},s.n),
-            React.createElement('p',{className:'text-slate-400 mt-2 leading-5'},s.t)
-          ))
-        ),
-        React.createElement('div',{className:'p-6 rounded-2xl bg-[#0B101E] border border-slate-800 font-mono text-[11px] leading-6 text-slate-300'},
-          React.createElement('p',{className:'font-bold text-slate-200'},'Why papers rot:'),
-          React.createElement('p',{className:'mt-2'},'• RI State Archives: 1000s of boxes in climate stress, only ~20% have 600 DPI IIIF. Rest are 1970s microfilm, unreadable for scribe analysis.'),
-          React.createElement('p',null,'• FamilySearch filmed 2.4M rolls but indexing is <30% for RI. Anashuecot "his marke" never searchable until human transcribes.'),
-          React.createElement('p',null,'• Kettelle Papers Box 2 RIHS Mss 1210 folders 12-13: Example of NULL. Searched, not primary. If not logged as NULL, next researcher wastes 6 months.'),
-          React.createElement('p',{className:'mt-4 p-3 rounded bg-emerald-950/20 border border-emerald-900/30 text-emerald-300'},'Your contribution: One photo with phone + citation (archive, collection, box, folder, page) + verbatim quote + assessment of Joane impact = permanent save. See /digitization/CONTRIBUTING.md')
-        )
-      ),
-      tab==='collab' && React.createElement('div',{className:'space-y-8 fade-in max-w-4xl'},
-        React.createElement('div',{className:'text-center py-6 border-b border-slate-800'},
-          React.createElement('h1',{className:'font-serif text-4xl font-black'},'How You Can Help'),
-          React.createElement('p',{className:'font-mono text-[11px] text-slate-500 mt-2'},'Historical research is collaborative. Goal is not to defend a story. Goal is to understand as accurately as surviving evidence allows.')
-        ),
-        React.createElement('div',{className:'grid md:grid-cols-2 gap-6'},
-          React.createElement('div',{className:'p-6 rounded-2xl bg-[#0B101E] border border-slate-800'},
-            React.createElement('h3',{className:'font-bold text-amber-400'},'🔍 What we need'),
-            React.createElement('ul',{className:'font-mono text-[11px] text-slate-400 mt-3 space-y-1 list-disc ml-4'},
-              React.createElement('li',null,'1682 Joane Greene Pawtuxet deed — 600 DPI scan (hero)'),
-              React.createElement('li',null,'1685 deed — primary pull (open thread #1)'),
-              React.createElement('li',null,'Bartlett pages 56-58 text-diff vs Fones Record'),
-              React.createElement('li',null,'Robert Greene tenant — full Fones Record corpus pass'),
-              React.createElement('li',null,'Overlooked manuscripts / unpublished transcriptions'),
-              React.createElement('li',null,'Corrections, alternative interpretations')
-            )
-          ),
-          React.createElement('div',{className:'p-6 rounded-2xl bg-blue-950/10 border border-blue-900/30'},
-            React.createElement('h3',{className:'font-bold text-blue-300'},'📧 Best contribution format'),
-            React.createElement('div',{className:'font-mono text-[11px] text-slate-400 mt-3 space-y-1'},
-              React.createElement('p',null,'• Specific citation: archive, collection, box, folder, page'),
-              React.createElement('p',null,'• Direct quotation — verbatim "forty years and more..." not paraphrase'),
-              React.createElement('p',null,'• Your assessment of Joane impact'),
-              React.createElement('p',null,'• Contradictions it introduces (Law 1)'),
-              React.createElement('p',{className:'text-amber-400 mt-3'},'All contributions reviewed against 4 Laws. No narrative smoothing, even from well-meaning collaborators.')
-            )
-          )
-        ),
-        React.createElement('div',{className:'p-6 rounded-2xl bg-slate-900/20 border border-slate-800'},
-          React.createElement('h3',{className:'font-bold text-purple-300'},'🤝 Principles'),
-          React.createElement('p',{className:'font-mono text-[11px] text-slate-400 mt-2 leading-6'},'• All credited by name unless anonymous requested • Contradictory evidence welcome — makes archive stronger • No one owns this research • Changing mind when better evidence appears is virtue, not failure'),
-          React.createElement('p',{className:'font-serif text-lg italic text-amber-400 mt-6 text-center'},'"History belongs to everyone. Access to the evidence should too."')
-        )
-      )
-    ),
-    selected && React.createElement('div',{className:'fixed inset-0 z-50 bg-black/90 backdrop-blur flex items-center justify-center p-4 md:p-10',onClick:()=>setSelected(null)},
-      React.createElement('div',{className:'max-w-6xl w-full max-h-[92vh] overflow-auto rounded-2xl bg-[#0B101E] border border-slate-700 p-4',onClick:e=>e.stopPropagation()},
-        React.createElement('div',{className:'flex justify-between gap-4'},
-          React.createElement('div',null,
-            React.createElement('p',{className:'font-mono text-[10px] text-amber-400'},selected.date),
-            React.createElement('h2',{className:'font-serif text-lg font-bold'},selected.title)
-          ),
-          React.createElement('button',{onClick:()=>setSelected(null),className:'px-4 py-2 rounded-full bg-slate-800 text-[12px]'},'✕ Close')
-        ),
-        selected.img && React.createElement('img',{src:IMAGES[selected.img],className:'mt-4 w-full rounded-lg border border-slate-700'}),
-        React.createElement('p',{className:'font-mono text-[12px] text-slate-300 mt-4 leading-6'},selected.desc),
-        React.createElement('p',{className:'font-mono text-[11px] text-amber-300 mt-2 italic'},'"'+selected.quote+'"')
-      )
-    )
-  )
-}
-ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(App));
-</script>
-</body>
-</html>
+Most Greene research centers the men who got land grants. This archive flips the lens:
+
+- Joane's consent was legally required in 1682. Why?
+- Colonial archives default to male grantees. Joane breaks that pattern.
+- Centering Joane forces us to use Narragansett kinship logic, not English patrilineal trees.
+
+> **Method:** The Envelope Method — We cannot invent more Joane records. We digitize everything *around* her moment to make her context undeniable.
+
+## 📖 How To Read This Site (Restored — No JS Required)
+
+### Evidence Key
+- 🟢 **PROVEN** — Direct primary source located and transcribed
+- 🔵 **PROBABLE** — Strong chain, one inferential link
+- 🟡 **UNVERIFIED** — Claim exists, source not yet pulled
+- 🔴 **NULL** — Searched and not found OR proven compilation layer. NULL is data.
+
+### The Four Laws
+1. **Law 1: Contradictions Are Held, Not Hidden** — If sources conflict, both displayed side-by-side.
+2. **Law 2: Documentary Evidence Over Narrative** — One 1672 deed > 100 family trees.
+3. **Law 3: No Premature Disqualification** — We don't dismiss Anashuecot as 'male' because a scribe wrote 'his marke' for 7 signers.
+4. **Contamination Law: Compilation Layers Are Toxic** — alfredgibbs.com, WikiTree, Findagrave, Ancestry user trees = quarantined in `/contamination/`.
+
+### Four-Agent System
+- 🔭 **Explorer** — Finds every primary, even if it breaks theory
+- ⚔️ **Hostile Reviewer** — Tries to destroy theory using colonial law & scribal practice
+- 🧬 **Synthesizer** — Rebuilds kinship map after attack, holding contradictions
+- 🏛️ **Archivist** — No citation = does not exist. Box.Folder.Page required.
+
+---
+
+## 🗂️ Repository Structure (Cleaned Up)
+
+```
+/index.html                 <- Joane-centric homepage (the app)
+/sources/                   <- All primary sources, 600 DPI, IIIF
+  /source_intake_queue.md
+  /1672-anashuecot-deed/
+  /1674-awawsunks-deed/
+  /1682-joane-greene-consent/  <- HERO FOLDER
+/theory/                    <- Analytical frameworks
+/digitization/              <- Lab: how we digitize
+/contamination/             <- Quarantined compilation layers
+/notes/                     <- Name variants, scribe analysis
+```
+
+## 🧪 Digitization Lab — 8 Ways This Helps Joane
+
+1. **High-Res Intake (600 DPI) + IIIF** — Every deed photographed, manifest auto-generated
+2. **OCR Cleanup Pipeline** — Arnold transcriptions are OCR hell → TEI
+3. **Georeference Quidnessett** — Pin 1672 bounds to modern GIS
+4. **Scribe ID** — Is 'his marke' one scribe's tic? Build scribe DB 1672-1682
+5. **Joane Center** — Every filter defaults to "How does this help Joane?"
+6. **Kinship Graph, Not Tree** — Network, not patrilineal tree
+7. **Contamination Detector** — Auto-flag WikiTree/Findagrave without primary anchor
+8. **Negative Evidence Log** — NULL searches logged so others don't re-search
+
+## 📌 Restored Critical Details (Your Audit Fixed)
+
+- 1679 affidavit verbatim: "forty years and more..."
+- Kettelle Papers: Box 2; RIHS Mss 1210, folders 12-13; NULL layer
+- Pawtuxet 1682: PROVEN (was PROBABLE) + 3 witnesses restored
+- 48 grantees + Bartlett partial search + pages 56-58 text-diff task
+- Robert Greene tenant: 3 independent Fones Record deeds near Cocumscussoc
+- 1694 probate rationale: map exact progeny, rule out cross-generational contamination
+- 1685 deed: primary not yet pulled — high-priority
+- 1908 Reunion: newspaper cutting source + 'Born Clarke' floating legend warning
+- Named vectors: alfredgibbs.com, WikiTree, Findagrave
+- Coginiquant: determine if 1, 2, or 3 individuals — do not default
+
+## 🤝 How to Contribute
+
+See `/digitization/CONTRIBUTING.md` — Best format: Box.Folder.Page + direct quote + 600 DPI scan + assessment of Joane impact.
+
+---
+
+<div align="center">
+
+**© 2026 The Joane Greene Archive** — Built with GitHub Pages
+*This repo retains name joan-lineage-theory for link continuity. Scope is now The Joane Greene Archive.*
+
+</div>
