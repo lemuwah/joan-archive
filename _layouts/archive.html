@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="archive-layout">
+    <h1>{{ page.title }}</h1>
+    
+    {% if page.description %}
+    <p class="description">{{ page.description }}</p>
+    {% endif %}
+
+    <div class="archive-content">
+        {{ content }}
+    </div>
+</div>
