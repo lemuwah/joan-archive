@@ -4,7 +4,7 @@
 # Site Settings
 title: "The Joan Project"
 description: "No Narrative Smoothing — A historical research organism built from primary sources, hostile review, and structural reconstruction."
-baseurl: "/joan-lineage-theory"  # Change to "" if using custom domain
+baseurl: "/joan-archive"  # Change to "" if using custom domain
 url: "https://lemuwah.github.io"
 
 # Build Settings
@@ -66,7 +66,7 @@ author:
 # GitHub Pages specific
 # https://pages.github.com/versions/
 github:
-  repository: "lemuwah/joan-lineage-theory"
+  repository: "lemuwah/joan-archive"
 nav:
   - Home: index.html
   - Primary Sources:
