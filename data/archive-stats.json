@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T17:29:37.703Z",
+  "generatedAt": "2026-07-18T17:50:25.604Z",
   "totalImages": 0,
   "byStatus": {
     "PROVEN": 0,
@@ -15,7 +15,7 @@
     "Unclassified": 0
   },
   "byType": {},
-  "lastUpdated": "2026-07-18T12:29:22-05:00",
+  "lastUpdated": "2026-07-18T12:50:11-05:00",
   "dataIntegrity": {
     "completeReferences": 0,
     "missingReferences": 0,
