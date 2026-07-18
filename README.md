@@ -10,7 +10,7 @@ Joane Greene appears only once in the surviving English documentary record — a
 
 This archive asks: *What world made that consent necessary? And how can digitization make her visible?*
 
-🔗 **Live Site:** https://lemuwah.github.io/joan-lineage-theory/
+🔗 **Live Site:** https://lemuwah.github.io/joan-archive/
 
 </div>
 
