@@ -3,7 +3,7 @@ Last updated: 18 July 2026
 Total images: 55
 Verified: 42 | Pending: 8 | Hypothesis: 2 | Rejected: 1 | Needs ID: 2
 All images are stored in this directory and served via GitHub raw content.
-Base URL: https://raw.githubusercontent.com/lemuwah/joan-archive/images/
+Base URL:  https://raw.githubusercontent.com/lemuwah/joan-archive/images/
 Catalogue by Section
 1672 Fones Purchase — Anashuecot Deed
 Table
