@@ -1,0 +1,24 @@
+<div class="timeline-event" style="margin: 20px 0; padding: 15px; border-left: 3px solid #333; background-color: #f9f9f9;">
+    <div class="timeline-date" style="font-weight: bold; color: #0366d6;">
+        {{ include.year }}
+        {% if include.month %}
+        <span style="font-weight: normal;">- {{ include.month }}</span>
+        {% endif %}
+    </div>
+    
+    <div class="timeline-title" style="font-size: 1.1em; margin: 8px 0;">
+        {{ include.title }}
+    </div>
+    
+    {% if include.description %}
+    <div class="timeline-description" style="margin: 10px 0; color: #555;">
+        {{ include.description }}
+    </div>
+    {% endif %}
+    
+    {% if include.location %}
+    <div class="timeline-location" style="color: #666; font-size: 0.95em;">
+        📍 {{ include.location }}
+    </div>
+    {% endif %}
+</div>
