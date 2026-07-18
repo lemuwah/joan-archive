@@ -3,668 +3,166 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Joan Archive — Restoring Access. Preserving Primary Sources.</title>
+<title>The Joan Archive</title>
 <style>
   :root {
-    --bg: #0a0a0f;
-    --surface: #111118;
-    --surface-raised: #1a1a24;
-    --surface-hover: #22222e;
-    --border: #2a2a3a;
-    --border-accent: #3a3a4a;
-    --text-primary: #e8e6e1;
-    --text-secondary: #a0a0b0;
-    --text-tertiary: #6a6a7a;
-    --text-quaternary: #4a4a5a;
-    --accent: #c9a96e;
-    --accent-dim: #c9a96e33;
-    --accent-glow: #c9a96e15;
-    --danger: #c45c5c;
-    --danger-dim: #c45c5c22;
-    --positive: #5c9e6e;
-    --positive-dim: #5c9e6e22;
-    --warning: #c9a44c;
-    --warning-dim: #c9a44c22;
-    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    --font-mono: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, monospace;
+    --bg: #0a0a0f; --surface: #111118; --surface-raised: #1a1a24; --surface-hover: #22222e;
+    --border: #2a2a3a; --border-accent: #3a3a4a;
+    --text-primary: #e8e6e1; --text-secondary: #a0a0b0; --text-tertiary: #6a6a7a; --text-quaternary: #4a4a5a;
+    --accent: #c9a96e; --accent-dim: #c9a96e33; --accent-glow: #c9a96e15;
+    --danger: #c45c5c; --danger-dim: #c45c5c22;
+    --positive: #5c9e6e; --positive-dim: #5c9e6e22;
+    --warning: #c9a44c; --warning-dim: #c9a44c22;
     --sidebar-width: 280px;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: var(--font-sans);
-    background: var(--bg);
-    color: var(--text-primary);
-    line-height: 1.6;
-    overflow-x: hidden;
-  }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text-primary); line-height: 1.6; overflow-x: hidden; }
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
 
-  /* ===== LAYOUT ===== */
-  .app-layout {
-    display: flex;
-    min-height: 100vh;
-  }
+  .app-layout { display: flex; min-height: 100vh; }
 
-  /* ===== SIDEBAR ===== */
   .sidebar {
-    width: var(--sidebar-width);
-    background: var(--surface);
-    border-right: 1px solid var(--border);
-    position: fixed;
-    height: 100vh;
-    overflow-y: auto;
-    z-index: 200;
-    display: flex;
-    flex-direction: column;
+    width: var(--sidebar-width); background: var(--surface); border-right: 1px solid var(--border);
+    position: fixed; height: 100vh; overflow-y: auto; z-index: 200;
+    display: flex; flex-direction: column;
   }
-  .sidebar-header {
-    padding: 24px 20px 16px;
-    border-bottom: 1px solid var(--border);
-  }
-  .sidebar-brand {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 8px;
-  }
-  .sidebar-mark {
-    width: 40px;
-    height: 40px;
-    border-radius: 8px;
-    background: var(--accent);
-    color: var(--bg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 15px;
-    flex-shrink: 0;
-  }
-  .sidebar-title {
-    font-size: 17px;
-    font-weight: 600;
-    letter-spacing: 0.3px;
-    line-height: 1.2;
-  }
-  .sidebar-subtitle {
-    font-size: 10px;
-    color: var(--text-quaternary);
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
-    margin-top: 2px;
-  }
-  .sidebar-laws {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-    margin-top: 12px;
-  }
-  .sidebar-law-chip {
-    font-size: 9px;
-    padding: 3px 8px;
-    border-radius: 4px;
-    border: 1px solid var(--border);
-    color: var(--text-tertiary);
-    white-space: nowrap;
-  }
-  .sidebar-law-chip .dot {
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    margin-right: 4px;
-    vertical-align: middle;
-  }
+  .sidebar-header { padding: 24px 20px 16px; border-bottom: 1px solid var(--border); }
+  .sidebar-brand { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+  .sidebar-mark { width: 40px; height: 40px; border-radius: 8px; background: var(--accent); color: var(--bg); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 15px; flex-shrink: 0; }
+  .sidebar-title { font-size: 17px; font-weight: 600; letter-spacing: 0.3px; line-height: 1.2; }
+  .sidebar-subtitle { font-size: 10px; color: var(--text-quaternary); text-transform: uppercase; letter-spacing: 0.8px; margin-top: 2px; }
+  .sidebar-laws { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 12px; }
+  .sidebar-law-chip { font-size: 9px; padding: 3px 8px; border-radius: 4px; border: 1px solid var(--border); color: var(--text-tertiary); white-space: nowrap; }
+  .sidebar-law-chip .dot { display: inline-block; width: 5px; height: 5px; border-radius: 50%; margin-right: 4px; vertical-align: middle; }
 
-  .sidebar-nav {
-    padding: 16px 12px;
-    flex: 1;
-  }
-  .nav-section-title {
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    color: var(--accent);
-    margin: 16px 8px 8px;
-    font-weight: 600;
-  }
-  .nav-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 8px 12px;
-    border-radius: 6px;
-    color: var(--text-secondary);
-    font-size: 13px;
-    transition: all 0.15s;
-    cursor: pointer;
-    margin-bottom: 2px;
-  }
-  .nav-item:hover {
-    background: var(--surface-hover);
-    color: var(--text-primary);
-  }
-  .nav-item.active {
-    background: var(--accent-glow);
-    color: var(--accent);
-    border-left: 2px solid var(--accent);
-    margin-left: -2px;
-  }
-  .nav-item svg {
-    width: 16px;
-    height: 16px;
-    flex-shrink: 0;
-    opacity: 0.6;
-  }
-  .nav-item.active svg {
-    opacity: 1;
-    color: var(--accent);
-  }
+  .sidebar-nav { padding: 16px 12px; flex: 1; }
+  .nav-section-title { font-size: 10px; text-transform: uppercase; letter-spacing: 1.2px; color: var(--accent); margin: 16px 8px 8px; font-weight: 600; }
+  .nav-item { display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-radius: 6px; color: var(--text-secondary); font-size: 13px; transition: all 0.15s; cursor: pointer; margin-bottom: 2px; text-decoration: none; }
+  .nav-item:hover { background: var(--surface-hover); color: var(--text-primary); text-decoration: none; }
+  .nav-item.active { background: var(--accent-glow); color: var(--accent); border-left: 2px solid var(--accent); margin-left: -2px; }
+  .nav-item svg { width: 16px; height: 16px; flex-shrink: 0; opacity: 0.6; }
+  .nav-item.active svg { opacity: 1; color: var(--accent); }
 
-  .sidebar-tiers {
-    padding: 16px 20px;
-    border-top: 1px solid var(--border);
-  }
-  .tier-section-title {
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    color: var(--accent);
-    margin-bottom: 10px;
-    font-weight: 600;
-  }
-  .tier-card-mini {
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 10px;
-    margin-bottom: 8px;
-    background: var(--surface-raised);
-  }
-  .tier-card-mini .tier-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 4px;
-  }
-  .tier-card-mini .tier-name {
-    font-size: 11px;
-    font-weight: 600;
-    color: var(--text-primary);
-  }
-  .tier-badge {
-    font-size: 9px;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
+  .sidebar-tiers { padding: 16px 20px; border-top: 1px solid var(--border); }
+  .tier-section-title { font-size: 10px; text-transform: uppercase; letter-spacing: 1.2px; color: var(--accent); margin-bottom: 10px; font-weight: 600; }
+  .tier-card-mini { border: 1px solid var(--border); border-radius: 8px; padding: 10px; margin-bottom: 8px; background: var(--surface-raised); }
+  .tier-card-mini .tier-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+  .tier-card-mini .tier-name { font-size: 11px; font-weight: 600; color: var(--text-primary); }
+  .tier-badge { font-size: 9px; padding: 2px 6px; border-radius: 4px; font-weight: 600; text-transform: uppercase; }
   .tier-badge.probable { background: var(--warning-dim); color: var(--warning); }
   .tier-badge.unverified { background: var(--accent-dim); color: var(--accent); }
-  .tier-card-mini p {
-    font-size: 11px;
-    color: var(--text-tertiary);
-    line-height: 1.4;
-  }
+  .tier-card-mini p { font-size: 11px; color: var(--text-tertiary); line-height: 1.4; }
 
-  /* ===== MAIN CONTENT ===== */
-  .main-content {
-    margin-left: var(--sidebar-width);
-    flex: 1;
-    min-width: 0;
-  }
+  .main-content { margin-left: var(--sidebar-width); flex: 1; min-width: 0; }
 
-  /* ===== TOP ALERT ===== */
-  .top-alert {
-    background: var(--danger-dim);
-    border-bottom: 1px solid color-mix(in srgb, var(--danger) 30%, transparent);
-    padding: 10px 24px;
-  }
-  .top-alert-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    max-width: 900px;
-  }
-  .top-alert-text {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-  }
-  .top-alert-text .warn-icon {
-    color: var(--warning);
-    font-size: 15px;
-    flex-shrink: 0;
-    margin-top: 1px;
-  }
-  .top-alert-text strong {
-    color: var(--danger);
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-  .top-alert-text span {
-    font-size: 12px;
-    color: var(--text-secondary);
-  }
-  .top-alert a {
-    font-size: 12px;
-    padding: 5px 12px;
-    border: 1px solid color-mix(in srgb, var(--danger) 40%, transparent);
-    border-radius: 6px;
-    color: var(--danger);
-    white-space: nowrap;
-    text-decoration: none;
-  }
-  .top-alert a:hover {
-    background: color-mix(in srgb, var(--danger) 12%, transparent);
-  }
+  .top-alert { background: var(--danger-dim); border-bottom: 1px solid color-mix(in srgb, var(--danger) 30%, transparent); padding: 10px 24px; }
+  .top-alert-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; max-width: 900px; }
+  .top-alert-text { display: flex; align-items: flex-start; gap: 10px; }
+  .top-alert-text .warn-icon { color: var(--warning); font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+  .top-alert-text strong { color: var(--danger); font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .top-alert-text span { font-size: 12px; color: var(--text-secondary); }
+  .top-alert a { font-size: 12px; padding: 5px 12px; border: 1px solid color-mix(in srgb, var(--danger) 40%, transparent); border-radius: 6px; color: var(--danger); white-space: nowrap; text-decoration: none; }
+  .top-alert a:hover { background: color-mix(in srgb, var(--danger) 12%, transparent); }
 
-  /* ===== HERO ===== */
-  .hero {
-    padding: 64px 48px 48px;
-    text-align: center;
-    border-bottom: 1px solid var(--border);
-  }
-  .hero h1 {
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 1.1;
-    margin-bottom: 20px;
-    letter-spacing: -0.5px;
-    font-family: "Georgia", "Times New Roman", serif;
-  }
-  .hero h1 em {
-    color: var(--accent);
-    font-style: italic;
-  }
-  .hero-tagline {
-    font-size: 15px;
-    color: var(--text-secondary);
-    max-width: 640px;
-    margin: 0 auto 12px;
-    letter-spacing: 0.5px;
-  }
-  .hero-sub {
-    font-size: 13px;
-    color: var(--text-tertiary);
-    max-width: 560px;
-    margin: 0 auto 32px;
-    font-style: italic;
-  }
-  .hero .laws {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 28px;
-  }
-  .law-pill {
-    padding: 5px 14px;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    font-size: 11px;
-    color: var(--text-tertiary);
-    background: var(--surface-raised);
-  }
-  .law-pill strong {
-    color: var(--text-secondary);
-  }
+  .hero { padding: 64px 48px 48px; text-align: center; border-bottom: 1px solid var(--border); }
+  .hero h1 { font-size: 48px; font-weight: 400; line-height: 1.1; margin-bottom: 20px; letter-spacing: -0.5px; font-family: Georgia, "Times New Roman", serif; }
+  .hero h1 em { color: var(--accent); font-style: italic; }
+  .hero-tagline { font-size: 15px; color: var(--text-secondary); max-width: 640px; margin: 0 auto 12px; letter-spacing: 0.5px; }
+  .hero-sub { font-size: 13px; color: var(--text-tertiary); max-width: 560px; margin: 0 auto 32px; font-style: italic; }
+  .hero p { max-width: 640px; margin: 0 auto 24px; font-size: 15px; color: var(--text-secondary); line-height: 1.7; }
+  .hero .laws { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 28px; }
+  .law-pill { padding: 5px 14px; border: 1px solid var(--border); border-radius: 6px; font-size: 11px; color: var(--text-tertiary); background: var(--surface-raised); }
+  .law-pill strong { color: var(--text-secondary); }
 
-  /* ===== SECTIONS ===== */
-  .section {
-    padding: 48px;
-    border-bottom: 1px solid var(--border);
-    max-width: 900px;
-  }
-  .section-title {
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: var(--accent);
-    margin-bottom: 20px;
-    font-weight: 600;
-  }
-  .section h2 {
-    font-size: 26px;
-    font-weight: 500;
-    margin-bottom: 16px;
-    line-height: 1.3;
-  }
-  .section h3 {
-    font-size: 17px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    color: var(--text-primary);
-  }
-  .section p {
-    font-size: 14px;
-    color: var(--text-secondary);
-    line-height: 1.7;
-    margin-bottom: 16px;
-  }
-  .section p.lead {
-    font-size: 16px;
-    color: var(--text-primary);
-    line-height: 1.6;
-  }
+  .section { padding: 48px; border-bottom: 1px solid var(--border); max-width: 900px; }
+  .section-title { font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent); margin-bottom: 20px; font-weight: 600; }
+  .section h2 { font-size: 26px; font-weight: 500; margin-bottom: 16px; line-height: 1.3; }
+  .section h3 { font-size: 17px; font-weight: 500; margin-bottom: 10px; color: var(--text-primary); }
+  .section p { font-size: 14px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 16px; }
+  .section p.lead { font-size: 16px; color: var(--text-primary); line-height: 1.6; }
 
-  /* ===== ANOMALY BOX ===== */
-  .anomaly-box {
-    padding: 24px;
-    border-radius: 12px;
-    background: var(--surface-raised);
-    border: 1px solid var(--border-accent);
-    margin: 24px 0;
-  }
-  .anomaly-box h3 {
-    font-size: 15px;
-    color: var(--accent);
-    margin-bottom: 12px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .anomaly-box ul {
-    list-style: none;
-    padding: 0;
-  }
-  .anomaly-box li {
-    padding: 10px 0;
-    border-bottom: 1px solid var(--border);
-    font-size: 13px;
-    color: var(--text-secondary);
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-  }
-  .anomaly-box li:last-child {
-    border-bottom: none;
-  }
-  .anomaly-box .mark-missing {
-    color: var(--danger);
-    font-weight: 600;
-    flex-shrink: 0;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    min-width: 60px;
-  }
-  .anomaly-box .mark-present {
-    color: var(--positive);
-    font-weight: 600;
-    flex-shrink: 0;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    min-width: 60px;
-  }
-  .anomaly-box .mark-note {
-    color: var(--warning);
-    font-size: 11px;
-    font-style: italic;
-  }
+  .anomaly-box { padding: 24px; border-radius: 12px; background: var(--surface-raised); border: 1px solid var(--border-accent); margin: 24px 0; }
+  .anomaly-box h3 { font-size: 15px; color: var(--accent); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .anomaly-box ul { list-style: none; padding: 0; }
+  .anomaly-box li { padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 13px; color: var(--text-secondary); display: flex; align-items: flex-start; gap: 10px; }
+  .anomaly-box li:last-child { border-bottom: none; }
+  .anomaly-box .mark-missing { color: var(--danger); font-weight: 600; flex-shrink: 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; min-width: 60px; }
+  .anomaly-box .mark-present { color: var(--positive); font-weight: 600; flex-shrink: 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; min-width: 60px; }
+  .anomaly-box .mark-note { color: var(--warning); font-size: 11px; font-style: italic; }
 
-  /* ===== CARDS ===== */
-  .card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 16px;
-    margin: 24px 0;
-  }
-  .card {
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 20px;
-    background: var(--surface-raised);
-  }
-  .card h3 {
-    font-size: 15px;
-    font-weight: 500;
-    margin-bottom: 8px;
-    color: var(--text-primary);
-  }
-  .card p {
-    font-size: 13px;
-    color: var(--text-secondary);
-    line-height: 1.6;
-    margin-bottom: 0;
-  }
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin: 24px 0; }
+  .card { border: 1px solid var(--border); border-radius: 10px; padding: 20px; background: var(--surface-raised); }
+  .card h3 { font-size: 15px; font-weight: 500; margin-bottom: 8px; color: var(--text-primary); }
+  .card p { font-size: 13px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0; }
 
-  /* ===== IMAGE GALLERY ===== */
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 12px;
-    margin: 20px 0;
-  }
-  .gallery-item {
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    overflow: hidden;
-    background: var(--surface);
-    cursor: pointer;
-    transition: transform 0.2s, border-color 0.2s;
-  }
-  .gallery-item:hover {
-    transform: translateY(-2px);
-    border-color: var(--accent);
-  }
-  .gallery-item img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    display: block;
-    background: var(--bg);
-  }
-  .gallery-item .gallery-caption {
-    padding: 10px 12px;
-    font-size: 12px;
-    color: var(--text-secondary);
-    border-top: 1px solid var(--border);
-  }
-  .gallery-item .gallery-meta {
-    padding: 0 12px 10px;
-    font-size: 11px;
-    color: var(--text-quaternary);
-  }
+  .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin: 20px 0; }
+  .gallery-item { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; background: var(--surface); cursor: pointer; transition: transform 0.2s, border-color 0.2s; }
+  .gallery-item:hover { transform: translateY(-2px); border-color: var(--accent); }
+  .gallery-item img { width: 100%; height: 160px; object-fit: cover; display: block; background: var(--bg); }
+  .gallery-item .gallery-caption { padding: 10px 12px; font-size: 12px; color: var(--text-secondary); border-top: 1px solid var(--border); }
+  .gallery-item .gallery-meta { padding: 0 12px 10px; font-size: 11px; color: var(--text-quaternary); }
 
-  /* ===== MODAL ===== */
-  .modal-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.9);
-    z-index: 1000;
-    align-items: center;
-    justify-content: center;
-    padding: 24px;
-  }
-  .modal-overlay.open {
-    display: flex;
-  }
-  .modal-box {
-    max-width: 900px;
-    max-height: 90vh;
-    width: 100%;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    overflow: hidden;
-  }
-  .modal-img-wrap {
-    background: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-height: 70vh;
-    overflow: hidden;
-  }
-  .modal-img-wrap img {
-    max-width: 100%;
-    max-height: 70vh;
-    object-fit: contain;
-  }
-  .modal-body {
-    padding: 16px 20px;
-  }
-  .modal-body h4 {
-    font-size: 14px;
-    margin-bottom: 6px;
-    color: var(--text-primary);
-  }
-  .modal-body p {
-    font-size: 12px;
-    color: var(--text-secondary);
-    line-height: 1.6;
-    margin-bottom: 4px;
-  }
-  .modal-close {
-    position: sticky;
-    top: 8px;
-    float: right;
-    margin: 8px;
-    background: var(--surface-hover);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 4px 12px;
-    cursor: pointer;
-    color: var(--text-primary);
-    font-size: 13px;
-    z-index: 10;
-  }
+  .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 1000; align-items: center; justify-content: center; padding: 24px; }
+  .modal-overlay.open { display: flex; }
+  .modal-box { max-width: 900px; max-height: 90vh; width: 100%; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  .modal-img-wrap { background: #000; display: flex; align-items: center; justify-content: center; max-height: 70vh; overflow: hidden; }
+  .modal-img-wrap img { max-width: 100%; max-height: 70vh; object-fit: contain; }
+  .modal-body { padding: 16px 20px; }
+  .modal-body h4 { font-size: 14px; margin-bottom: 6px; color: var(--text-primary); }
+  .modal-body p { font-size: 12px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 4px; }
+  .modal-close { position: sticky; top: 8px; float: right; margin: 8px; background: var(--surface-hover); border: 1px solid var(--border); border-radius: 6px; padding: 4px 12px; cursor: pointer; color: var(--text-primary); font-size: 13px; z-index: 10; }
 
-  /* ===== BADGES ===== */
-  .badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    padding: 2px 8px;
-    border-radius: 4px;
-    font-size: 11px;
-    font-weight: 500;
-  }
+  .badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 500; }
   .badge.proven { background: var(--positive-dim); color: var(--positive); }
   .badge.caution { background: var(--warning-dim); color: var(--warning); }
   .badge.rejected { background: var(--danger-dim); color: var(--danger); }
   .badge.hypothesis { background: var(--accent-dim); color: var(--accent); }
 
-  /* ===== NOTE BOXES ===== */
-  .note-box {
-    padding: 14px 18px;
-    border-radius: 8px;
-    border-left: 3px solid var(--warning);
-    background: color-mix(in srgb, var(--warning) 6%, transparent);
-    font-size: 13px;
-    color: var(--text-secondary);
-    line-height: 1.6;
-    margin: 16px 0;
-  }
-  .note-box.mystery {
-    border-left-color: var(--accent);
-    background: color-mix(in srgb, var(--accent) 6%, transparent);
-  }
-  .note-box.verified {
-    border-left-color: var(--positive);
-    background: color-mix(in srgb, var(--positive) 6%, transparent);
-  }
+  .note-box { padding: 14px 18px; border-radius: 8px; border-left: 3px solid var(--warning); background: color-mix(in srgb, var(--warning) 6%, transparent); font-size: 13px; color: var(--text-secondary); line-height: 1.6; margin: 16px 0; }
+  .note-box.mystery { border-left-color: var(--accent); background: color-mix(in srgb, var(--accent) 6%, transparent); }
+  .note-box.verified { border-left-color: var(--positive); background: color-mix(in srgb, var(--positive) 6%, transparent); }
 
-  /* ===== TABLE ===== */
-  .data-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 13px;
-    margin: 16px 0;
-  }
-  .data-table th {
-    text-align: left;
-    padding: 10px 12px;
-    border-bottom: 2px solid var(--border);
-    color: var(--text-tertiary);
-    font-weight: 500;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-  .data-table td {
-    padding: 10px 12px;
-    border-bottom: 1px solid var(--border);
-    color: var(--text-secondary);
-    vertical-align: top;
-  }
-  .data-table td:first-child {
-    color: var(--text-primary);
-    font-weight: 500;
-  }
-  .data-table tr:hover td {
-    background: var(--surface-hover);
-  }
+  .data-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 16px 0; }
+  .data-table th { text-align: left; padding: 10px 12px; border-bottom: 2px solid var(--border); color: var(--text-tertiary); font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .data-table td { padding: 10px 12px; border-bottom: 1px solid var(--border); color: var(--text-secondary); vertical-align: top; }
+  .data-table td:first-child { color: var(--text-primary); font-weight: 500; }
+  .data-table tr:hover td { background: var(--surface-hover); }
 
-  /* ===== FOOTER ===== */
-  .site-footer {
-    padding: 32px 48px;
-    text-align: center;
-    font-size: 12px;
-    color: var(--text-quaternary);
-    border-top: 1px solid var(--border);
-  }
+  .laws-detail { margin: 24px 0; }
+  .law-detail-card { border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 12px; background: var(--surface-raised); }
+  .law-detail-card .law-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .law-detail-card .law-number { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+  .law-detail-card .law-title { font-size: 15px; font-weight: 600; color: var(--text-primary); }
+  .law-detail-card p { font-size: 13px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0; }
 
-  /* ===== MOBILE ===== */
+  .site-footer { padding: 32px 48px; text-align: center; font-size: 12px; color: var(--text-quaternary); border-top: 1px solid var(--border); }
+
   @media (max-width: 900px) {
-    .sidebar {
-      transform: translateX(-100%);
-      transition: transform 0.3s;
-    }
-    .sidebar.open {
-      transform: translateX(0);
-    }
-    .main-content {
-      margin-left: 0;
-    }
-    .hero {
-      padding: 40px 24px;
-    }
-    .hero h1 {
-      font-size: 32px;
-    }
-    .section {
-      padding: 32px 24px;
-    }
-    .menu-toggle {
-      display: block;
-      position: fixed;
-      top: 16px;
-      left: 16px;
-      z-index: 300;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      color: var(--text-primary);
-      padding: 8px 12px;
-      border-radius: 6px;
-      cursor: pointer;
-    }
+    .sidebar { transform: translateX(-100%); transition: transform 0.3s; }
+    .sidebar.open { transform: translateX(0); }
+    .main-content { margin-left: 0; }
+    .hero { padding: 40px 24px; }
+    .hero h1 { font-size: 32px; }
+    .section { padding: 32px 24px; }
+    .menu-toggle { display: block; position: fixed; top: 16px; left: 16px; z-index: 300; background: var(--surface); border: 1px solid var(--border); color: var(--text-primary); padding: 8px 12px; border-radius: 6px; cursor: pointer; }
   }
-  @media (min-width: 901px) {
-    .menu-toggle {
-      display: none;
-    }
-  }
+  @media (min-width: 901px) { .menu-toggle { display: none; } }
 </style>
+<base target="_blank">
 </head>
 <body>
 
 <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰ Menu</button>
 
 <div class="app-layout">
-  <!-- SIDEBAR -->
   <aside class="sidebar">
     <div class="sidebar-header">
       <div class="sidebar-brand">
         <div class="sidebar-mark">JA</div>
         <div>
           <div class="sidebar-title">The Joan Archive</div>
-          <div class="sidebar-subtitle">No Narrative Smoothing · 18 July 2026</div>
+          <div class="sidebar-subtitle">No Narrative Smoothing &middot; 18 July 2026</div>
         </div>
       </div>
       <div class="sidebar-laws">
@@ -709,6 +207,10 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
         What We Don't Know
       </a>
+      <a href="#4-laws" class="nav-item" onclick="setActive(this)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        The 4 Laws
+      </a>
       <a href="#help" class="nav-item" onclick="setActive(this)">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
         How to Help
@@ -722,7 +224,7 @@
           <span class="tier-name">Tier 1 Thesis</span>
           <span class="tier-badge probable">Probable</span>
         </div>
-        <p>Joan (wife of John Greene of Quidnessett) was a woman connected to the Narragansett sachem lineage — not an English settler's daughter with a lost paper trail.</p>
+        <p>Joan (wife of John Greene of Quidnessett) was a woman connected to the Narragansett sachem lineage &mdash; not an English settler's daughter with a lost paper trail.</p>
       </div>
       <div class="tier-card-mini">
         <div class="tier-header">
@@ -734,50 +236,42 @@
     </div>
   </aside>
 
-  <!-- MAIN CONTENT -->
   <main class="main-content">
-    <!-- TOP ALERT -->
     <div class="top-alert">
       <div class="top-alert-inner">
         <div class="top-alert-text">
-          <span class="warn-icon">⚠</span>
+          <span class="warn-icon">&#9888;</span>
           <div>
             <strong>Contamination Alert</strong>
-            <span>If you arrived from Ancestry, YourRoots, MyHeritage, or FamilySearch — your tree may be algorithmically poisoned.</span>
+            <span>If you arrived from Ancestry, YourRoots, MyHeritage, or FamilySearch &mdash; your tree may be algorithmically poisoned.</span>
           </div>
         </div>
-        <a href="#contamination">View Contamination Index →</a>
+        <a href="#contamination">View Contamination Index &rarr;</a>
       </div>
     </div>
 
-    <!-- HERO -->
     <section class="hero" id="archive">
       <h1>The <em>Joan</em> Archive</h1>
       <p class="hero-tagline">Restoring Access. Preserving Primary Sources. Asking Better Questions.</p>
       <p class="hero-sub">This is not a genealogy website. It is an open-access research library.</p>
-      <p style="max-width: 640px; margin: 0 auto 24px; font-size: 15px; color: var(--text-secondary); line-height: 1.7;">
-        Many of the records that shape this history remain scattered across archives, difficult to access, unpublished, or known only through later copies. Fires, war, colonial administration, and centuries of incomplete preservation have left gaps that continue to influence how this history is understood.
-      </p>
-      <p style="max-width: 640px; margin: 0 auto 32px; font-size: 15px; color: var(--accent); font-weight: 500;">
-        My goal is simple: Make the surviving evidence easier for everyone to see.
-      </p>
+      <p>Many of the records that shape this history remain scattered across archives, difficult to access, unpublished, or known only through later copies. Fires, war, colonial administration, and centuries of incomplete preservation have left gaps that continue to influence how this history is understood.</p>
+      <p style="color: var(--accent); font-weight: 500;">My goal is simple: Make the surviving evidence easier for everyone to see.</p>
       <div class="laws">
-        <span class="law-pill"><strong>Law 1</strong> — No smoothing</span>
-        <span class="law-pill"><strong>Law 2</strong> — La Mance sieve</span>
-        <span class="law-pill"><strong>Law 3</strong> — No early exclusion</span>
-        <span class="law-pill"><strong>Law 4</strong> — No algorithmic contamination</span>
+        <span class="law-pill"><strong>Law 1</strong> &mdash; No smoothing</span>
+        <span class="law-pill"><strong>Law 2</strong> &mdash; La Mance sieve</span>
+        <span class="law-pill"><strong>Law 3</strong> &mdash; No early exclusion</span>
+        <span class="law-pill"><strong>Law 4</strong> &mdash; No algorithmic contamination</span>
       </div>
     </section>
 
-    <!-- THE CORE ANOMALY -->
     <section class="section" id="the-anomaly">
       <div class="section-title">The Core Question</div>
       <h2>Why does a ghost of the record have to give consent?</h2>
       <p class="lead">
-        In 1682, a deed dividing John Greene's Quidnessett lands among his sons contains a single, extraordinary clause: the transaction requires the consent of <strong>Joan, his wife</strong>. A 30-shilling life-estate is reserved to her, with a further provision — <em>"or to her mother if she survive."</em>
+        In 1682, a deed dividing John Greene's Quidnessett lands among his sons contains a single, extraordinary clause: the transaction requires the consent of <strong>Joan, his wife</strong>. A 30-shilling life-estate is reserved to her, with a further provision &mdash; <em>"or to her mother if she survive."</em>
       </p>
       <p>
-        Here is the problem: <strong>Joan/e does not exist in any record before this moment.</strong> Not in baptisms. Not in marriage registers. Not in church rolls, court testimony, town meetings, estate inventories, dower claims, or gravestones. For roughly forty years — the entire documented career of one of the most litigious, paper-generating men in Narragansett Country — his wife is invisible.
+        Here is the problem: <strong>Joan/e does not exist in any record before this moment.</strong> Not in baptisms. Not in marriage registers. Not in church rolls, court testimony, town meetings, estate inventories, dower claims, or gravestones. For roughly forty years &mdash; the entire documented career of one of the most litigious, paper-generating men in Narragansett Country &mdash; his wife is invisible.
       </p>
       <p>
         And then, suddenly, English law <em>needs</em> her. Not as a courtesy. As a legal requirement. Where does the authority of a woman who never appeared in any prior document come from? Why does a ghost have to sign?
@@ -786,43 +280,41 @@
       <div class="anomaly-box">
         <h3>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-          Places Joan/e should appear, but doesn't
+          Places Joan/e should appear, but does not
         </h3>
         <ul>
-          <li><span class="mark-missing">Missing</span> <strong>Birth / baptism record</strong> — No baptism found in England or New England. John Greene's own origins are disputed.</li>
-          <li><span class="mark-missing">Missing</span> <strong>Marriage record</strong> — No marriage record survives for John Greene to any woman, in England or Rhode Island.</li>
-          <li><span class="mark-missing">Missing</span> <strong>Children's baptisms</strong> — No baptismal records for Daniel, James, or any other child in Quidnessett or nearby churches.</li>
-          <li><span class="mark-missing">Missing</span> <strong>Church membership rolls</strong> — No Joan/e Greene in First Baptist (Providence), Newport, or any RI church records c.1640–1682.</li>
-          <li><span class="mark-missing">Missing</span> <strong>Town meeting minutes</strong> — No retrospective mention in Quidnessett / North Kingstown records.</li>
-          <li><span class="mark-missing">Missing</span> <strong>Court testimony</strong> — Women of her tier routinely appear as witnesses. Joan/e never does.</li>
-          <li><span class="mark-missing">Missing</span> <strong>Estate inventory / dower claim</strong> — If she survived John, she would have had dower rights. No claim appears.</li>
-          <li><span class="mark-missing">Missing</span> <strong>Gravestone / burial record</strong> — No gravestone, no burial record in North Kingstown or surrounding towns.</li>
-          <li><span class="mark-missing">Missing</span> <strong>Later genealogies (pre-1894)</strong> — Arnold, Austin, Huling, and other early RI historians do not mention her beyond "wife Joan/e."</li>
-          <li><span class="mark-present">Present</span> <strong>1682 home-place deed</strong> <span class="mark-note">— Her sole appearance. The only document that names her.</span></li>
+          <li><span class="mark-missing">Missing</span> <strong>Birth / baptism record</strong> &mdash; No baptism found in England or New England. John Greene's own origins are disputed.</li>
+          <li><span class="mark-missing">Missing</span> <strong>Marriage record</strong> &mdash; No marriage record survives for John Greene to any woman, in England or Rhode Island.</li>
+          <li><span class="mark-missing">Missing</span> <strong>Children's baptisms</strong> &mdash; No baptismal records for Daniel, James, or any other child in Quidnessett or nearby churches.</li>
+          <li><span class="mark-missing">Missing</span> <strong>Church membership rolls</strong> &mdash; No Joan/e Greene in First Baptist (Providence), Newport, or any RI church records c.1640&ndash;1682.</li>
+          <li><span class="mark-missing">Missing</span> <strong>Town meeting minutes</strong> &mdash; No retrospective mention in Quidnessett / North Kingstown records.</li>
+          <li><span class="mark-missing">Missing</span> <strong>Court testimony</strong> &mdash; Women of her tier routinely appear as witnesses. Joan/e never does.</li>
+          <li><span class="mark-missing">Missing</span> <strong>Estate inventory / dower claim</strong> &mdash; If she survived John, she would have had dower rights. No claim appears.</li>
+          <li><span class="mark-missing">Missing</span> <strong>Gravestone / burial record</strong> &mdash; No gravestone, no burial record in North Kingstown or surrounding towns.</li>
+          <li><span class="mark-missing">Missing</span> <strong>Later genealogies (pre-1894)</strong> &mdash; Arnold, Austin, Huling, and other early RI historians do not mention her beyond "wife Joan/e."</li>
+          <li><span class="mark-present">Present</span> <strong>1682 home-place deed</strong> <span class="mark-note">&mdash; Her sole appearance. The only document that names her.</span></li>
         </ul>
       </div>
 
       <div class="note-box mystery">
-        <strong>The quiet is extra loud.</strong> Printing presses operated in Boston and Cambridge by the 1630s. Rhode Island courts recorded by the 1640s. Four competing colonial jurisdictions — Massachusetts Bay, Plymouth, Connecticut, and Rhode Island — all generated paper. John Greene fought for his land at every turn: petitions, boundary disputes, colonial authority. He only submitted to the Crown after they guaranteed his land. A man this litigious, this documented, had a wife invisible to English law for ~40 years. That is not a research failure. That is a pattern.
+        <strong>The quiet is extra loud.</strong> Printing presses operated in Boston and Cambridge by the 1630s. Rhode Island courts recorded by the 1640s. Four competing colonial jurisdictions &mdash; Massachusetts Bay, Plymouth, Connecticut, and Rhode Island &mdash; all generated paper. John Greene fought for his land at every turn: petitions, boundary disputes, colonial authority. He only submitted to the Crown after they guaranteed his land. A man this litigious, this documented, had a wife invisible to English law for ~40 years. That is not a research failure. That is a pattern.
       </div>
     </section>
 
-    <!-- THE CONSENT QUESTION -->
     <section class="section" id="consent">
       <div class="section-title">The Authority Question</div>
       <h2>Where does her authority come from?</h2>
       <p class="lead">
-        English common law in the 1680s did not require a wife's consent as a mere formality. A wife's joinder on a deed was a substantive legal act — it extinguished her dower rights, her claim to a life estate in the property. For this to happen, the wife had to be <em>identifiable</em>, <em>reachable</em>, and <em>legally competent</em>.
+        English common law in the 1680s did not require a wife's consent as a mere formality. A wife's joinder on a deed was a substantive legal act &mdash; it extinguished her dower rights, her claim to a life estate in the property. For this to happen, the wife had to be <em>identifiable</em>, <em>reachable</em>, and <em>legally competent</em>.
       </p>
       <p>
-        Joan/e was all three — yet none of those qualities are documented anywhere before 1682. She did not need to be "found" in 1682. She needed to be <em>recognized</em>. The law reached for her, and she was there. The question is not where she was hiding. The question is: <strong>what system of authority, outside the English record, made her available to English law at exactly this moment?</strong>
+        Joan/e was all three &mdash; yet none of those qualities are documented anywhere before 1682. She did not need to be "found" in 1682. She needed to be <em>recognized</em>. The law reached for her, and she was there. The question is not where she was hiding. The question is: <strong>what system of authority, outside the English record, made her available to English law at exactly this moment?</strong>
       </p>
       <p>
-        The "or to her mother if she survive" clause is anomalous for an English deed of this period. If Joan/e were the daughter of Alice Beggarly (d. January 1643/44), this clause would be legally meaningless — Alice had been dead for 38 years. Under Narragansett matrilineal succession, however, property rights derived from the senior matrilineal line. The clause becomes coherent: it is not an English legal formality. It is a <em>translation</em> of indigenous property logic into English deed language.
+        The "or to her mother if she survive" clause is anomalous for an English deed of this period. If Joan/e were the daughter of Alice Beggarly (d. January 1643/44), this clause would be legally meaningless &mdash; Alice had been dead for 38 years. Under Narragansett matrilineal succession, however, property rights derived from the senior matrilineal line. The clause becomes coherent: it is not an English legal formality. It is a <em>translation</em> of indigenous property logic into English deed language.
       </p>
     </section>
 
-    <!-- SHE IS NOT UNKNOWN -->
     <section class="section" id="undigitized">
       <div class="section-title">She Is Not Unknown</div>
       <h2>She is undigitized.</h2>
@@ -830,7 +322,7 @@
         The assumption that Joan/e is "lost to history" confuses <em>absence from databases</em> with <em>absence from existence</em>. She is not unknown. She is <strong>undigitized</strong>.
       </p>
       <p>
-        Original land evidence volumes sit in the RI State Archives on microfilm. Probate files from the colonial period were never fully indexed. Church records from the 1640s–1680s exist in manuscript form, some only in copies made before fires destroyed the originals. The 1676 Newport Court Martial transcript — a document that may contain the behavioral anchor for this whole question — has not been systematically digitized.
+        Original land evidence volumes sit in the RI State Archives on microfilm. Probate files from the colonial period were never fully indexed. Church records from the 1640s&ndash;1680s exist in manuscript form, some only in copies made before fires destroyed the originals. The 1676 Newport Court Martial transcript &mdash; a document that may contain the behavioral anchor for this whole question &mdash; has not been systematically digitized.
       </p>
       <p>
         Every "missing" record is a <em>not-yet-requested</em> record. The box that settles this question is probably on a shelf somewhere, not in a search engine.
@@ -838,65 +330,63 @@
 
       <div class="card-grid">
         <div class="card">
-          <h3>🖨️ Printing presses were a thing</h3>
-          <p>By the 1630s, Boston and Cambridge had operating presses. Rhode Island's courts recorded by the 1640s. Four competing colonial jurisdictions generated paper. The record-keeping environment was robust — which makes Joan/e's absence statistically improbable, not expected.</p>
+          <h3>&#128424; Printing presses were a thing</h3>
+          <p>By the 1630s, Boston and Cambridge had operating presses. Rhode Island's courts recorded by the 1640s. Four competing colonial jurisdictions generated paper. The record-keeping environment was robust &mdash; which makes Joan/e's absence statistically improbable, not expected.</p>
         </div>
         <div class="card">
-          <h3>🗺️ Four competing territories</h3>
+          <h3>&#128506; Four competing territories</h3>
           <p>Massachusetts Bay, Plymouth, Connecticut, and Rhode Island all claimed Narragansett Country at various points. Each generated petitions, deeds, court records, and boundary disputes. John Greene appears in all of them. Joan/e appears in none.</p>
         </div>
         <div class="card">
-          <h3>📦 The box is probably on a shelf</h3>
-          <p>North Kingstown's records burned, but not everything. Probate files, uncatalogued deed copies, and private family papers from the 1670s–1690s may still exist in attics, historical societies, or unprocessed archival collections.</p>
+          <h3>&#128230; The box is probably on a shelf</h3>
+          <p>North Kingstown's records burned, but not everything. Probate files, uncatalogued deed copies, and private family papers from the 1670s&ndash;1690s may still exist in attics, historical societies, or unprocessed archival collections.</p>
         </div>
         <div class="card">
-          <h3>🔍 "No record found" is data</h3>
+          <h3>&#128269; "No record found" is data</h3>
           <p>A systematic search that returns negative results narrows the field for everyone. If you check an archive and find nothing, that finding belongs in the record too. Negative space is still space.</p>
         </div>
       </div>
     </section>
 
-    <!-- DEED GALLERY -->
     <section class="section" id="deeds">
       <div class="section-title">Deed Gallery</div>
-      <h2>The documents that name her — and the ones that don't</h2>
+      <h2>The documents that name her &mdash; and the ones that do not</h2>
       <p>Click any image to view full size. All images link to the GitHub repository.</p>
 
-      <h3 style="margin-top: 24px;">1672 Fones Purchase — Anashuecot Deed</h3>
-      <p style="font-size: 13px; color: var(--text-tertiary); margin-bottom: 12px;">John Greene is first-named purchaser. Anashuecot is named "Chiefe Sachem and heire." This is the deed that connects John Greene to the Narragansett sachem lineage — and the phonetic anchor for the Tier 2 hypothesis.</p>
+      <h3 style="margin-top: 24px;">1672 Fones Purchase &mdash; Anashuecot Deed</h3>
+      <p style="font-size: 13px; color: var(--text-tertiary); margin-bottom: 12px;">John Greene is first-named purchaser. Anashuecot is named "Chiefe Sachem and heire." This is the deed that connects John Greene to the Narragansett sachem lineage &mdash; and the phonetic anchor for the Tier 2 hypothesis.</p>
       <div class="gallery" id="gallery-1672"></div>
 
-      <h3 style="margin-top: 32px;">1682 Home-Place Deed — Joan/e Named</h3>
+      <h3 style="margin-top: 32px;">1682 Home-Place Deed &mdash; Joan/e Named</h3>
       <p style="font-size: 13px; color: var(--text-tertiary); margin-bottom: 12px;">Joan/e's sole appearance in any known primary source. "Or to her mother if she survive." The clause that makes the anomaly visible.</p>
       <div class="gallery" id="gallery-1682"></div>
 
-      <h3 style="margin-top: 32px;">1674 Awawsunks Deed — Separate Document</h3>
-      <p style="font-size: 13px; color: var(--text-tertiary); margin-bottom: 12px;">Awawsunks signs "her marke." Phonetic overlap with Anashuecot — compare carefully, do not conflate without verbatim check.</p>
+      <h3 style="margin-top: 32px;">1674 Awawsunks Deed &mdash; Separate Document</h3>
+      <p style="font-size: 13px; color: var(--text-tertiary); margin-bottom: 12px;">Awawsunks signs "her marke." Phonetic overlap with Anashuecot &mdash; compare carefully, do not conflate without verbatim check.</p>
       <div class="gallery" id="gallery-1674"></div>
 
-      <h3 style="margin-top: 32px;">Absolom — "Counsellor" Testimony</h3>
+      <h3 style="margin-top: 32px;">Absolom &mdash; "Counsellor" Testimony</h3>
       <p style="font-size: 13px; color: var(--text-tertiary); margin-bottom: 12px;">Absolom signs the 1672 deed as "Counsellor." His affidavit states he counseled "ye Indian Sachem Mosenpp" and confirms Anashuecot "being conveyed out of ye country."</p>
       <div class="gallery" id="gallery-absolom"></div>
 
-      <h3 style="margin-top: 32px;">Richard Smith — Dutch Colonial Ties</h3>
+      <h3 style="margin-top: 32px;">Richard Smith &mdash; Dutch Colonial Ties</h3>
       <p style="font-size: 13px; color: var(--text-tertiary); margin-bottom: 12px;">Supports the "IG merchant mark" hypothesis: Smith's Cocumscussoc trading post had documented financial ties into the Dutch West India Company network.</p>
       <div class="gallery" id="gallery-smith"></div>
 
-      <h3 style="margin-top: 32px;">Maps & Georeference</h3>
-      <p style="font-size: 13px; color: var(--text-tertiary); margin-bottom: 12px;">Reference maps used to orient Quidnessett, East Greenwich, and Narragansett Country boundaries against deed language. Not primary evidence — orientation only.</p>
+      <h3 style="margin-top: 32px;">Maps &amp; Georeference</h3>
+      <p style="font-size: 13px; color: var(--text-tertiary); margin-bottom: 12px;">Reference maps used to orient Quidnessett, East Greenwich, and Narragansett Country boundaries against deed language. Not primary evidence &mdash; orientation only.</p>
       <div class="gallery" id="gallery-maps"></div>
 
-      <h3 style="margin-top: 32px;">Needs ID — Unlabeled Images (16)</h3>
+      <h3 style="margin-top: 32px;">Needs ID &mdash; Unlabeled Images (16)</h3>
       <p style="font-size: 13px; color: var(--text-tertiary); margin-bottom: 12px;">Added without reference notes. Flagged here, not hidden, so they stay visible while awaiting captions and citations.</p>
       <div class="gallery" id="gallery-needsid"></div>
     </section>
 
-    <!-- SOURCE SPINE -->
     <section class="section" id="source-spine">
       <div class="section-title">Source Spine</div>
       <h2>Where the theory lives</h2>
       <p>
-        The Tier 1 and Tier 2 theses — that Joan/e was connected to the Narragansett sachem lineage, possibly identifiable with Anashuecot — are documented in the <a href="https://github.com/lemuwah/joan-archive" target="_blank">Source Spine</a> of this archive. They are not hidden. They are simply not the main page.
+        The Tier 1 and Tier 2 theses &mdash; that Joan/e was connected to the Narragansett sachem lineage, possibly identifiable with Anashuecot &mdash; are documented in the <a href="https://github.com/lemuwah/joan-archive" target="_blank">Source Spine</a> of this archive. They are not hidden. They are simply not the main page.
       </p>
       <p>
         The Source Spine contains the five-lane convergence analysis, the phonetic/scribal analysis, the geographic overlap data, and the behavioral anomaly at the 1676 court martial. It is rigorous, skeptical, and explicit about what is proven vs. what is suggestive. If you want to evaluate the theory, that is where to go.
@@ -906,7 +396,6 @@
       </p>
     </section>
 
-    <!-- PRIMARY SOURCES TABLE -->
     <section class="section" id="primary-sources">
       <div class="section-title">Primary Sources</div>
       <h2>Every claim points back to a document</h2>
@@ -914,122 +403,145 @@
 
       <table class="data-table">
         <thead>
-          <tr>
-            <th>Document</th>
-            <th>Date</th>
-            <th>What it says</th>
-            <th>Status</th>
-          </tr>
+          <tr><th>Document</th><th>Date</th><th>What it says</th><th>Status</th></tr>
         </thead>
         <tbody>
-          <tr>
-            <td>RI Land Evidence — 1672 Fones Purchase (Deed #90)</td>
-            <td>1 Jan 1671/72</td>
-            <td>Anashuecot "Chiefe Sachem and heire." John Greene first-named purchaser.</td>
-            <td><span class="badge proven">Tier 1 — Primary</span></td>
-          </tr>
-          <tr>
-            <td>RI Land Evidence — 1682 Home-place Deed</td>
-            <td>24 Mar 1682</td>
-            <td>Joan/e named as wife. 30-shilling life-estate. "Or to her mother if she survive."</td>
-            <td><span class="badge proven">Tier 1 — Primary</span></td>
-          </tr>
-          <tr>
-            <td>Deed — 25 Sep 1685 (Edward Greene)</td>
-            <td>25 Sep 1685</td>
-            <td>Implies John Greene deceased by this date.</td>
-            <td><span class="badge proven">Tier 1 — Primary</span></td>
-          </tr>
-          <tr>
-            <td>Winthrop Papers, Vol. 4</td>
-            <td>Jan 1643/44</td>
-            <td>Arnold to Winthrop: "Mr. Green's wife is dead." Closes Alice Beggarly story.</td>
-            <td><span class="badge proven">Tier 1 — Primary</span></td>
-          </tr>
-          <tr>
-            <td>Winthrop Journal (Hosmer ed., 1908)</td>
-            <td>Dec 1638</td>
-            <td>Surgeon John Greene marries Alice Beggarly. NOT Joan/e. NOT Quidnessett John.</td>
-            <td><span class="badge proven">Tier 1 — Primary</span></td>
-          </tr>
-          <tr>
-            <td>Hough 1858 — Newport Court Martial</td>
-            <td>24 Aug 1676</td>
-            <td>John Greene denies charge; Daniel Greene testifies for prosecution. Behavioral anchor.</td>
-            <td><span class="badge caution">Tier 2 — Verbatim pending</span></td>
-          </tr>
-          <tr>
-            <td>F.L. Greene, "Greene Family Records" (1894)</td>
-            <td>1894</td>
-            <td>"His wife, in 1682, was named Joan, but nothing further is known about her."</td>
-            <td><span class="badge caution">Tier 2 — Compilation</span></td>
-          </tr>
-          <tr>
-            <td>La Mance, "The Greene Family" (1904)</td>
-            <td>1904</td>
-            <td>Adds "Joan Beggarly," 1635 passenger list, English pedigree — NO cited sources.</td>
-            <td><span class="badge rejected">Tier 4 — INVALIDATED</span></td>
-          </tr>
+          <tr><td>RI Land Evidence &mdash; 1672 Fones Purchase (Deed #90)</td><td>1 Jan 1671/72</td><td>Anashuecot "Chiefe Sachem and heire." John Greene first-named purchaser.</td><td><span class="badge proven">Tier 1 &mdash; Primary</span></td></tr>
+          <tr><td>RI Land Evidence &mdash; 1682 Home-place Deed</td><td>24 Mar 1682</td><td>Joan/e named as wife. 30-shilling life-estate. "Or to her mother if she survive."</td><td><span class="badge proven">Tier 1 &mdash; Primary</span></td></tr>
+          <tr><td>Deed &mdash; 25 Sep 1685 (Edward Greene)</td><td>25 Sep 1685</td><td>Implies John Greene deceased by this date.</td><td><span class="badge proven">Tier 1 &mdash; Primary</span></td></tr>
+          <tr><td>Winthrop Papers, Vol. 4</td><td>Jan 1643/44</td><td>Arnold to Winthrop: "Mr. Green's wife is dead." Closes Alice Beggarly story.</td><td><span class="badge proven">Tier 1 &mdash; Primary</span></td></tr>
+          <tr><td>Winthrop Journal (Hosmer ed., 1908)</td><td>Dec 1638</td><td>Surgeon John Greene marries Alice Beggarly. NOT Joan/e. NOT Quidnessett John.</td><td><span class="badge proven">Tier 1 &mdash; Primary</span></td></tr>
+          <tr><td>Hough 1858 &mdash; Newport Court Martial</td><td>24 Aug 1676</td><td>John Greene denies charge; Daniel Greene testifies for prosecution. Behavioral anchor.</td><td><span class="badge caution">Tier 2 &mdash; Verbatim pending</span></td></tr>
+          <tr><td>F.L. Greene, "Greene Family Records" (1894)</td><td>1894</td><td>"His wife, in 1682, was named Joan, but nothing further is known about her."</td><td><span class="badge caution">Tier 2 &mdash; Compilation</span></td></tr>
+          <tr><td>La Mance, "The Greene Family" (1904)</td><td>1904</td><td>Adds "Joan Beggarly," 1635 passenger list, English pedigree &mdash; NO cited sources.</td><td><span class="badge rejected">Tier 4 &mdash; INVALIDATED</span></td></tr>
         </tbody>
       </table>
     </section>
 
-    <!-- IDENTITY FIREWALLS -->
-    <section class="section" id="firewalls">
-      <div class="section-title">Identity Firewalls</div>
-      <h2>The 4-John Firewall</h2>
-      <p>
-        The genealogical conflation of multiple men named John Greene is the primary structural error propagated by La Mance (1904). These four men are <strong>distinct individuals</strong> with no documented connection.
-      </p>
+    <section class="section" id="name-fragments">
+      <div class="section-title">Name Fragments</div>
+      <h2>The 4 Joan/e of the Region &mdash; None Fit the Mold</h2>
+      <p>Four women named Joan (or Joan/e) operating in southern New England during the relevant period. Each has been proposed as a candidate. <strong>None fit.</strong></p>
 
       <table class="data-table">
         <thead>
-          <tr>
-            <th>Attribute</th>
-            <th>Quidnessett John</th>
-            <th>Surgeon John (Warwick)</th>
-            <th>Newark John (NJ)</th>
-            <th>Stonewall John (Narragansett)</th>
-          </tr>
+          <tr><th>Name / Source</th><th>Documented husband</th><th>Documented death</th><th>Geographic sphere</th><th>Fits?</th></tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Geographic sphere</td>
-            <td>Quidnessett / Narragansett Country</td>
-            <td>Shawomet / Warwick</td>
-            <td>Newark, New Jersey</td>
-            <td>Narragansett Country (d. July 1676)</td>
-          </tr>
-          <tr>
-            <td>Wife</td>
-            <td>Joan/e — 1682 only</td>
-            <td>Alice Beggarly — d. 1643/44</td>
-            <td>Documented in NJ records</td>
-            <td>Nawham — d. July 2, 1676</td>
-          </tr>
-          <tr>
-            <td>Key document</td>
-            <td>1672 Anashuecot deed; 1682 home-place deed</td>
-            <td>Winthrop Journal Dec 1638</td>
-            <td>1666 NJ records</td>
-            <td>Roger Williams letter, Apr 1676</td>
-          </tr>
-          <tr>
-            <td>Status</td>
-            <td><span class="badge proven">VERIFIED</span></td>
-            <td><span class="badge proven">VERIFIED</span></td>
-            <td><span class="badge proven">VERIFIED</span></td>
-            <td><span class="badge proven">VERIFIED</span></td>
-          </tr>
+          <tr><td>Joan Beggarly<br><span style="font-size:11px;color:var(--text-quaternary);">La Mance 1904; Ancestry trees</span></td><td>Surgeon John Greene of Warwick (Winthrop Journal, Dec 1638)</td><td>Alice Beggarly died Jan 1643/44</td><td>Shawomet / Warwick</td><td><span style="color:var(--danger);"><strong>NO</strong></span> &mdash; Chronologically impossible. 38-year gap.</td></tr>
+          <tr><td>Joan, wife of John Greene of Quidnessett<br><span style="font-size:11px;color:var(--text-quaternary);">1682 home-place deed</span></td><td>John Greene of Quidnessett</td><td>Not documented</td><td>Quidnessett / Narragansett Country</td><td><span style="color:var(--positive);"><strong>YES &mdash; THIS IS HER</strong></span></td></tr>
+          <tr><td>Joan (anglicized Awashonks)<br><span style="font-size:11px;color:var(--text-quaternary);">Plymouth Colony Records</span></td><td>Wampanoag sunksquaw. No English husband.</td><td>Not documented</td><td>Saconet / Plymouth Colony</td><td><span style="color:var(--danger);"><strong>NO &mdash; PARALLEL CASE</strong></span></td></tr>
+          <tr><td>Anashuecot / Awashuwett<br><span style="font-size:11px;color:var(--text-quaternary);">1672 Fones Purchase deed</span></td><td>"Chiefe Sachem and heire" &mdash; no husband named</td><td>Not documented after 1682</td><td>Quidnessett / Narragansett Country</td><td><span class="badge hypothesis">WORKING HYPOTHESIS</span> &mdash; Possibly same individual. Not proven.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section" id="firewalls">
+      <div class="section-title">Identity Firewalls</div>
+      <h2>The 4-John Firewall</h2>
+      <p>The genealogical conflation of multiple men named John Greene is the primary structural error propagated by La Mance (1904). These four men are <strong>distinct individuals</strong> with no documented connection.</p>
+
+      <table class="data-table">
+        <thead>
+          <tr><th>Attribute</th><th>Quidnessett John</th><th>Surgeon John (Warwick)</th><th>Newark John (NJ)</th><th>Stonewall John (Narragansett)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Geographic sphere</td><td>Quidnessett / Narragansett Country</td><td>Shawomet / Warwick</td><td>Newark, New Jersey</td><td>Narragansett Country (d. July 1676)</td></tr>
+          <tr><td>Wife</td><td>Joan/e &mdash; 1682 only</td><td>Alice Beggarly &mdash; d. 1643/44</td><td>Documented in NJ records</td><td>Nawham &mdash; d. July 2, 1676</td></tr>
+          <tr><td>Key document</td><td>1672 Anashuecot deed; 1682 home-place deed</td><td>Winthrop Journal Dec 1638</td><td>1666 NJ records</td><td>Roger Williams letter, Apr 1676</td></tr>
+          <tr><td>Status</td><td><span class="badge proven">VERIFIED</span></td><td><span class="badge proven">VERIFIED</span></td><td><span class="badge proven">VERIFIED</span></td><td><span class="badge proven">VERIFIED</span></td></tr>
         </tbody>
       </table>
 
       <div class="note-box" style="margin-top: 20px;">
-        <strong>Why the firewall matters:</strong> La Mance (1904) assigned Joan/e the surname "Beggarly" and identified her as the wife of Surgeon John Greene of Warwick. This is chronologically impossible: Alice Beggarly died in January 1643/44 — 38 years before Joan/e's 1682 appearance. La Mance provides no citations, manuscript references, or archival basis. <strong>Status: [INVALIDATED]</strong>
+        <strong>Why the firewall matters:</strong> La Mance (1904) assigned Joan/e the surname "Beggarly" and identified her as the wife of Surgeon John Greene of Warwick. This is chronologically impossible: Alice Beggarly died in January 1643/44 &mdash; 38 years before Joan/e's 1682 appearance. La Mance provides no citations, manuscript references, or archival basis. <strong>Status: [INVALIDATED]</strong>
       </div>
     </section>
 
-    <!-- CONTAMINATION INDEX -->
+    <section class="section" id="orbit">
+      <div class="section-title">Orbit Convergence</div>
+      <h2>Everyone in John Greene's orbit</h2>
+      <p>Every node below is backed by a primary source. This map exists to serve one question: who was around Joan/e, and why does she appear only twice?</p>
+      <p style="color: var(--text-tertiary); font-size: 13px;">
+        <strong>1672 Fones Purchase deed signers:</strong> John Greene (first-named purchaser), Anashuecot/Awashuwett (grantor), James Fones, Richard Smith, John Porter, Samuel Wilson, William Harris, Randall Holden, John Wickes, Francis Brinley, Thomas Hazard, Robert Hazard.
+      </p>
+      <p style="color: var(--text-tertiary); font-size: 13px;">
+        <strong>1682 Home-place deed signers:</strong> John Greene (grantor), Joan/e Greene (wife), Daniel Greene (son, 120 acres), James Greene (son, 60 acres), Henry X Tibbitts, Arthur Aylworth, John Nutsn (Nutt?), John Foanes (warden).
+      </p>
+      <p style="color: var(--text-tertiary); font-size: 13px;">
+        <strong>Children proven in 1682 deed:</strong> Daniel Greene (c.1652?&ndash;after 1682; testified for English prosecution at 1676 court martial), James Greene (c.1660?&ndash;after 1682). <strong>No daughters named in any surviving primary source.</strong>
+      </p>
+      <p style="color: var(--text-tertiary); font-size: 13px;">
+        <strong>Comparators &mdash; women who DO appear in the same records:</strong> Sarah Stanton/Tibbitts, Mary Tibbitts/Greene, Elizabeth Wickes, and an unidentified female in the John Fones household. These are the invitation: check what they left behind, then ask why Joan/e's pile is so much smaller.
+      </p>
+    </section>
+
+    <section class="section" id="unknown">
+      <div class="section-title">What We Don't Know</div>
+      <h2>The honest gaps</h2>
+      <p>This archive is built on the radical proposition that "we don't know" is a valid and valuable research outcome. Every uncertain thing is flagged. Every conflict is preserved. The absence of evidence is treated as evidence of absence only where the record-keeping environment would predict presence.</p>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>&#10067; When did John Greene die?</h3>
+          <p><strong>Open conflict:</strong> A 1685 deed implies death by 25 Sep 1685. Austin (1887), Huling (1884), and Cutter (1915) favor c.1695&ndash;1696, citing a will. No such will survives. Both claims are presented; the 1685 evidence deserves more weight.</p>
+          <span class="badge caution" style="margin-top: 8px; display: inline-block;">Unresolved</span>
+        </div>
+        <div class="card">
+          <h3>&#10067; Who was Joan/e's mother?</h3>
+          <p>The "or to her mother if she survive" clause in the 1682 deed implies a living senior female figure. If Alice Beggarly (d. 1643/44), the clause is meaningless. If a Narragansett matrilineal figure, the clause is coherent. No name survives.</p>
+          <span class="badge hypothesis" style="margin-top: 8px; display: inline-block;">Working hypothesis</span>
+        </div>
+        <div class="card">
+          <h3>&#10067; Where are the children's baptisms?</h3>
+          <p>Nine sons are sometimes attributed to John Greene in later genealogies. Only Daniel and James are named in the 1682 deed. No baptismal records survive for any child in Quidnessett or nearby churches.</p>
+          <span class="badge caution" style="margin-top: 8px; display: inline-block;">Unresolved</span>
+        </div>
+        <div class="card">
+          <h3>&#10067; What happened at the 1676 court martial?</h3>
+          <p>John Greene denied charges against Awaswin; his son Daniel testified for the English prosecution. A father-son split in the same proceeding is a behavioral anomaly. The verbatim Hough 1858 transcript is still pending.</p>
+          <span class="badge caution" style="margin-top: 8px; display: inline-block;">Verbatim pending</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="4-laws">
+      <div class="section-title">The 4 Laws</div>
+      <h2>The operating principles of this archive</h2>
+      <p>These four laws exist to prevent the most common errors in genealogical research: narrative smoothing, circular citation, premature exclusion, and algorithmic contamination. They are not decorative. They are enforced.</p>
+
+      <div class="laws-detail">
+        <div class="law-detail-card">
+          <div class="law-header">
+            <span class="law-number" style="background: #c45c5c22; color: #c45c5c;">1</span>
+            <span class="law-title">No Smoothing</span>
+          </div>
+          <p>Do not fill gaps with plausible stories. If the record is silent, say so. If two sources conflict, present both. The most dangerous thing in genealogy is not a wrong answer &mdash; it is a plausible answer that feels right. La Mance's "Joan Beggarly" feels right. It is also impossible. No smoothing means no comfort narratives.</p>
+        </div>
+        <div class="law-detail-card">
+          <div class="law-header">
+            <span class="law-number" style="background: #e0607a22; color: #e0607a;">2</span>
+            <span class="law-title">La Mance Sieve</span>
+          </div>
+          <p>La Mance (1904) is the primary contamination vector for this family. Every claim in La Mance must be verified against primary sources before acceptance. The default assumption is <em>error</em>, not authority. No citation? No acceptance. Chronologically impossible? Rejected. This sieve applies to everything downstream of La Mance too &mdash; Rixford (1932), algorithmic trees, and compiled genealogies that cite him.</p>
+        </div>
+        <div class="law-detail-card">
+          <div class="law-header">
+            <span class="law-number" style="background: #5c8ec922; color: #5c8ec9;">3</span>
+            <span class="law-title">No Early Exclusion</span>
+          </div>
+          <p>Do not dismiss hypotheses because they are uncomfortable or unconventional. The Narragansett hypothesis for Joan/e is not proven, but it is not disproven either. It remains in the record as a working hypothesis with its evidence weighed honestly. Early exclusion is how plausible answers get buried before they are tested.</p>
+        </div>
+        <div class="law-detail-card">
+          <div class="law-header">
+            <span class="law-number" style="background: #9c6fc922; color: #9c6fc9;">4</span>
+            <span class="law-title">No Algorithmic Contamination</span>
+          </div>
+          <p>Ancestry, FamilySearch, MyHeritage, and YourRoots algorithmically merge profiles, propagate errors, and create circular citations. A tree with 10,000 matches is not 10,000 independent confirmations. It is one error copied 10,000 times. This archive does not accept algorithmic trees as sources. Ever.</p>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="contamination">
       <div class="section-title">Contamination Index</div>
       <h2>Errors that became facts through repetition</h2>
@@ -1038,17 +550,17 @@
         <div class="card">
           <h3>Trap 1: The La Mance poison</h3>
           <p>La Mance (1904) assigned "Joan Beggarly" with NO cited primary sources. Propagated through Rixford (1932) into every major genealogy database. Chronologically impossible.</p>
-          <span class="badge rejected" style="margin-top: 8px; display: inline-block;">Tier 4 — INVALIDATED</span>
+          <span class="badge rejected" style="margin-top: 8px; display: inline-block;">Tier 4 &mdash; INVALIDATED</span>
         </div>
         <div class="card">
           <h3>Trap 2: The two-John conflation</h3>
           <p>Algorithmic trees merge Surgeon John, Quidnessett John, Newark John, and Stonewall John into one profile. Wives swapped. Children reassigned. Land records from four men attach to one.</p>
-          <span class="badge proven" style="margin-top: 8px; display: inline-block;">Resolved — Firewall VERIFIED</span>
+          <span class="badge proven" style="margin-top: 8px; display: inline-block;">Resolved &mdash; Firewall VERIFIED</span>
         </div>
         <div class="card">
           <h3>Trap 3: The "Joan Beggarly" circular citation</h3>
-          <p>Ancestry → FamilySearch → Ancestry. Both cite La Mance. La Mance cites nothing. The circle is complete and empty.</p>
-          <span class="badge rejected" style="margin-top: 8px; display: inline-block;">Tier 4 — INVALIDATED</span>
+          <p>Ancestry &rarr; FamilySearch &rarr; Ancestry. Both cite La Mance. La Mance cites nothing. The circle is complete and empty.</p>
+          <span class="badge rejected" style="margin-top: 8px; display: inline-block;">Tier 4 &mdash; INVALIDATED</span>
         </div>
         <div class="card">
           <h3>Trap 4: The 1635 passenger list</h3>
@@ -1058,66 +570,58 @@
         <div class="card">
           <h3>Trap 5: The death-date conflict</h3>
           <p>1685 deed implies death by that date. Austin (1887) favors c.1695-1696, citing a will. No such will survives. Treat 1695 as unverified tradition.</p>
-          <span class="badge caution" style="margin-top: 8px; display: inline-block;">Unresolved — conflict documented</span>
+          <span class="badge caution" style="margin-top: 8px; display: inline-block;">Unresolved &mdash; conflict documented</span>
         </div>
         <div class="card">
           <h3>Trap 6: The "proven vs probable" pressure</h3>
           <p>Every platform wants you to click "certain." There is no button for "we don't know." This archive treats "we don't know" as a valid research outcome.</p>
-          <span class="badge proven" style="margin-top: 8px; display: inline-block;">Operating principle — Law 1</span>
+          <span class="badge proven" style="margin-top: 8px; display: inline-block;">Operating principle &mdash; Law 1</span>
         </div>
       </div>
     </section>
 
-    <!-- HOW TO HELP -->
     <section class="section" id="help">
       <div class="section-title">How to Help</div>
       <h2>She's not lost. She's just not digitized yet.</h2>
-      <p class="lead">
-        Somewhere — a courthouse basement, a historical society's uncatalogued box, a probate file nobody's requested in decades — there is very likely more paper with Joan/e's name, or a name close enough to hers, sitting on a shelf.
-      </p>
-      <p>
-        This archive can't get there alone. It doesn't need you to believe any hypothesis. It needs more eyes on more original documents.
-      </p>
+      <p class="lead">Somewhere &mdash; a courthouse basement, a historical society's uncatalogued box, a probate file nobody's requested in decades &mdash; there is very likely more paper with Joan/e's name, or a name close enough to hers, sitting on a shelf.</p>
+      <p>This archive can't get there alone. It does not need you to believe any hypothesis. It needs more eyes on more original documents.</p>
 
       <div class="card-grid">
         <div class="card">
-          <h3>📍 If you're near an archive</h3>
-          <p>RI State Archives, RIHS, Kings County probate, North Kingstown land evidence. Photograph or request scans of anything touching John Greene of Quidnessett, Anashuecot, Absolom Counsellor, or Narragansett land deeds 1670–1690. Even "no record found" is useful.</p>
+          <h3>&#128205; If you're near an archive</h3>
+          <p>RI State Archives, RIHS, Kings County probate, North Kingstown land evidence. Photograph or request scans of anything touching John Greene of Quidnessett, Anashuecot, Absolom Counsellor, or Narragansett land deeds 1670&ndash;1690. Even "no record found" is useful.</p>
         </div>
         <div class="card">
-          <h3>✍️ If you read old handwriting</h3>
+          <h3>&#9997; If you read old handwriting</h3>
           <p>Several images still need careful transcription or second opinions on hard-to-read marks. The 1676 court martial verbatim transcript is the highest priority.</p>
         </div>
         <div class="card">
-          <h3>👤 If you know a name</h3>
+          <h3>&#128100; If you know a name</h3>
           <p>Sarah Tibbitts, Mary Tibbitts/Greene, Elizabeth Wickes, and any woman connected to the Fones household are real, findable comparison points. What you know could sharpen this whole picture.</p>
         </div>
         <div class="card">
-          <h3>🏛️ If you're an institution</h3>
-          <p>This project exists to make primary sources easier to reach, not to replace archives. Digitization capacity, cataloguing expertise, or pointers to unprocessed collections are exactly what's needed.</p>
+          <h3>&#127963; If you're an institution</h3>
+          <p>This project exists to make primary sources easier to reach, not to replace archives. Digitization capacity, cataloguing expertise, or pointers to unprocessed collections are exactly what is needed.</p>
         </div>
       </div>
 
       <div class="note-box verified" style="margin-top: 24px;">
-        <strong>What we learned:</strong> The most dangerous thing in genealogy is not a wrong answer. It is a plausible answer that feels right. La Mance's "Joan Beggarly" feels right — it gives her a surname, a family, a place in the English world. It is also impossible. The honest path is harder: Joan/e Unknown. But it is the only path that leads to real discovery.
+        <strong>What we learned:</strong> The most dangerous thing in genealogy is not a wrong answer. It is a plausible answer that feels right. La Mance's "Joan Beggarly" feels right &mdash; it gives her a surname, a family, a place in the English world. It is also impossible. The honest path is harder: Joan/e Unknown. But it is the only path that leads to real discovery.
       </div>
     </section>
 
     <footer class="site-footer">
-      <p>The Joan/e Archive — Open access research library. History belongs to everyone. Access to the evidence should too.</p>
-      <p style="margin-top:8px;">Peer Review Packet v4.2 — July 2026. Built with rigor. No narrative smoothing.</p>
-      <p style="margin-top:8px;"><a href="https://github.com/lemuwah/joan-archive" target="_blank">GitHub Repository</a> · <a href="https://github.com/lemuwah/joan-archive/tree/main/images" target="_blank">Image Archive</a></p>
+      <p>The Joan/e Archive &mdash; Open access research library. History belongs to everyone. Access to the evidence should too.</p>
+      <p style="margin-top:8px;">Peer Review Packet v4.2 &mdash; July 2026. Built with rigor. No narrative smoothing.</p>
+      <p style="margin-top:8px;"><a href="https://github.com/lemuwah/joan-archive" target="_blank">GitHub Repository</a> &middot; <a href="https://github.com/lemuwah/joan-archive/tree/main/images" target="_blank">Image Archive</a></p>
     </footer>
   </main>
 </div>
 
-<!-- IMAGE MODAL -->
 <div class="modal-overlay" id="imgModal" onclick="if(event.target===this) closeModal()">
   <div class="modal-box" onclick="event.stopPropagation()">
-    <button class="modal-close" onclick="event.stopPropagation(); closeModal()">Close ✕</button>
-    <div class="modal-img-wrap">
-      <img id="modalImg" src="" alt="" onclick="event.stopPropagation()">
-    </div>
+    <button class="modal-close" onclick="event.stopPropagation(); closeModal()">Close &times;</button>
+    <div class="modal-img-wrap"><img id="modalImg" src="" alt="" onclick="event.stopPropagation()"></div>
     <div class="modal-body">
       <h4 id="modalCaption"></h4>
       <p id="modalMeta"></p>
@@ -1126,10 +630,8 @@
 </div>
 
 <script>
-// GitHub raw image base path
 const IMG_BASE = 'https://raw.githubusercontent.com/lemuwah/joan-archive/main/images/';
 
-// Image data for galleries
 const galleryData = {
   'gallery-1672': [
     { file: '1672_anashuecot_deed_body.jpg', caption: '1672 Anashuecot Deed — Body', meta: 'RI State Archives — NK Land Evidence Deed #90' },
@@ -1197,13 +699,15 @@ function renderGalleries() {
   for (const [containerId, images] of Object.entries(galleryData)) {
     const container = document.getElementById(containerId);
     if (!container) continue;
-    container.innerHTML = images.map(img => `
-      <div class="gallery-item" onclick="openModal('${img.file}', '${img.caption.replace(/'/g, "\\'")}', '${img.meta.replace(/'/g, "\\'")}')">
+    container.innerHTML = images.map(img => {
+      const safeCaption = img.caption.replace(/'/g, "\'");
+      const safeMeta = img.meta.replace(/'/g, "\'");
+      return `<div class="gallery-item" onclick="openModal('${img.file}', '${safeCaption}', '${safeMeta}')">
         <img src="${IMG_BASE}${img.file}" alt="${img.caption}" onerror="this.style.opacity='0.3'; this.parentElement.style.pointerEvents='none';">
         <div class="gallery-caption">${img.caption}</div>
         <div class="gallery-meta">${img.meta}</div>
-      </div>
-    `).join('');
+      </div>`;
+    }).join('');
   }
 }
 
@@ -1227,12 +731,10 @@ function setActive(el) {
   el.classList.add('active');
 }
 
-// Close modal on Escape
 document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape') closeModal();
 });
 
-// Close sidebar on mobile when clicking a link
 document.querySelectorAll('.nav-item').forEach(item => {
   item.addEventListener('click', () => {
     if (window.innerWidth <= 900) {
@@ -1243,5 +745,6 @@ document.querySelectorAll('.nav-item').forEach(item => {
 
 renderGalleries();
 </script>
+
 </body>
 </html>
