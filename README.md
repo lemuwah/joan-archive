@@ -4,9 +4,11 @@
 # 🌿 The Joane Greene Archive
 ### *Digitize • Preserve • Reconstruct • Collaborate*
 
-**One woman. One record. May 1682. Pawtuxet, RI.**
-
-Joane Greene appears only once in the surviving English documentary record — a consent in a 1682 deed witnessed by **William Carpenter (non-Quaker speculator), John Wickes, and Samuel Gorton**. That single appearance is **PROVEN**, not probable.
+**Two appearances. One month. May 1682. Pawtuxet + Home-Place, RI.
+Joane Greene appears twice in surviving English primary sources in May 1682:**
+May 19, 1682 - Pawtuxet deed — "free & voluntary consent" to William Carpenter, witnessed by John Wickes and Samuel Gorton [PROVEN]
+May 1682 - Home-place deed — [your existing hero deed]
+Two appearances 19 days apart is still a "quiet archive" — it strengthens the "extra loud" argument. She appears only when her dower consent is legally required, then disappears in the surviving English documentary record — a consent in a 1682 deed witnessed by **William Carpenter (non-Quaker speculator), John Wickes, and Samuel Gorton**. That appearance is **PROVEN**, not probable.
 
 This archive asks: *What world made that consent necessary? And how can digitization make her visible?*
 
