@@ -108,7 +108,7 @@
   .gallery-item .gallery-caption { padding: 10px 12px; font-size: 12px; color: var(--text-secondary); border-top: 1px solid var(--border); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .gallery-item .gallery-meta { padding: 0 12px 10px; font-size: 11px; color: var(--text-quaternary); }
   .gallery-item .gallery-status { padding: 2px 8px; font-size: 10px; border-radius: 4px; display: inline-block; margin: 0 12px 8px; font-weight: 600; text-transform: uppercase; }
-  .gallery-status.verified { background: var(--positive-dim); color: var(--positive); }
+  .gallery-status.sourced { background: var(--positive-dim); color: var(--positive); }
   .gallery-status.pending { background: var(--warning-dim); color: var(--warning); }
   .gallery-status.needs-id { background: var(--danger-dim); color: var(--danger); }
   .gallery-status.hypothesis { background: var(--accent-dim); color: var(--accent); }
@@ -200,6 +200,7 @@
   @media (min-width: 901px) { .menu-toggle { display: none; } }
 </style>
 <base target="_blank">
+<base target="_blank">
 </head>
 <body>
 
@@ -229,10 +230,6 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
         The Archive
       </a>
-      <a href="#contamination" class="nav-item" onclick="setActive(this)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-        Contamination Index
-      </a>
       <a href="#deeds" class="nav-item" onclick="setActive(this)">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
         Deed Gallery
@@ -261,6 +258,10 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
         Evidence Matrix
       </a>
+      <a href="#contamination" class="nav-item" onclick="setActive(this)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        Contamination Index
+      </a>
       <a href="#unknown" class="nav-item" onclick="setActive(this)">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
         What We Don't Know
@@ -280,14 +281,14 @@
       <div class="tier-card-mini">
         <div class="tier-header">
           <span class="tier-name">Tier 1 Thesis</span>
-          <span class="tier-badge probable">Probable</span>
+          <span class="tier-badge probable">Working Hypothesis</span>
         </div>
         <p>Joan (wife of John Greene of Quidnessett) was a woman connected to the Narragansett sachem lineage — not an English settler's daughter with a lost paper trail.</p>
       </div>
       <div class="tier-card-mini">
         <div class="tier-header">
           <span class="tier-name">Tier 2 Thesis</span>
-          <span class="tier-badge unverified">Unverified</span>
+          <span class="tier-badge unverified">More Speculative</span>
         </div>
         <p>Joan was specifically <strong>Anashuecot</strong>, named "chiefe Sachem and heire" in the 1672 Fones Purchase deed. Suggestive. Not proven.</p>
       </div>
@@ -309,11 +310,11 @@
     </div>
 
     <section class="hero" id="archive">
-      <h1>Someone decided <br>this page <em>didn't need saving.</em></h1>
+      <h1>The <em>Joan</em> Archive</h1>
       <p class="hero-tagline">Restoring Access. Preserving Primary Sources. Asking Better Questions.</p>
       <p class="hero-sub">This is not a genealogy website. It is an open-access research library.</p>
-      <p>Joan/e Greene is not "lost to history." A record either got kept, or someone — a clerk, a fire, a compiler, an archive with more boxes than budget — decided it didn't need to be. Every gap on this page has an agent behind it, not just an absence. Fires, war, colonial administration, and a century of underfunded preservation didn't happen to this record by accident; they were choices made by specific people, at specific moments, about whose paper mattered enough to keep.</p>
-      <p style="color: var(--accent); font-weight: 500;">My goal is simple: find out who made those calls, and put the surviving evidence back where everyone can see it.</p>
+      <p>Many of the records that shape this history remain scattered across archives, difficult to access, unpublished, or known only through later copies. Fires, war, colonial administration, and centuries of incomplete preservation have left gaps that continue to influence how this history is understood.</p>
+      <p style="color: var(--accent); font-weight: 500;">My goal is simple: Make the surviving evidence easier for everyone to see.</p>
       <div class="laws">
         <span class="law-pill"><strong>Law 1</strong> — No smoothing</span>
         <span class="law-pill"><strong>Law 2</strong> — La Mance sieve</span>
@@ -329,10 +330,10 @@
         In 1682, a deed dividing John Greene's Quidnessett lands among his sons contains a single, extraordinary clause: the transaction requires the consent of <strong>Joan, his wife</strong>. A 30-shilling life-estate is reserved to her, with a further provision — <em>"or to her mother if she survive."</em>
       </p>
       <p>
-        Here is the problem: <strong>Joan/e does not exist in any record before this moment.</strong> Not in baptisms. Not in marriage registers. Not in church rolls, court testimony, town meetings, estate inventories, dower claims, or gravestones. For roughly forty years — the entire documented career of one of the most litigious, paper-generating men in Narragansett Country — his wife is invisible.
+        Here is the problem: <strong>Joan/e does not exist in any record before this moment.</strong> Not in baptisms. Not in marriage registers. Not in church rolls, court testimony, town meetings, estate inventories, dower claims, or gravestones. For the entire documented span of his career — from his first appearance in colonial records (1637) to the 1682 deed — his wife is invisible to English law.
       </p>
       <p>
-        And then, suddenly, English law <em>needs</em> her. Not as a courtesy. As a legal requirement. Where does the authority of a woman who never appeared in any prior document come from? Why does a ghost have to sign?
+        And then, suddenly, the parties to the deed <em>require</em> her joinder. Not as a courtesy. As a legal prerequisite to extinguish dower rights and clear title. Where does the authority of a woman who never appeared in any prior document come from? Why does a woman invisible to every English record-keeping system suddenly become indispensable to English law?
       </p>
 
       <div class="anomaly-box">
@@ -355,55 +356,7 @@
       </div>
 
       <div class="note-box mystery">
-        <strong>The quiet is extra loud.</strong> Printing presses operated in Boston and Cambridge by the 1630s. Rhode Island courts recorded by the 1640s. Four competing colonial jurisdictions — Massachusetts Bay, Plymouth, Connecticut, and Rhode Island — all generated paper. John Greene fought for his land at every turn: petitions, boundary disputes, colonial authority. He only submitted to the Crown after they guaranteed his land. A man this litigious, this documented, had a wife invisible to English law for ~40 years. That is not a research failure. That is a pattern.
-      </div>
-    </section>
-
-    <section class="section" id="contamination">
-      <div class="section-title">Contamination Index — Exhibit A</div>
-      <h2>A fabrication got repeated for a century, because no one checked</h2>
-      <p class="lead">Before the deeds, before the marks, before any of the forensic detail below — start here. This is the clearest evidence on the whole site for what this project is actually about: not an absent record, but an active decision about what fills the silence.</p>
-      <p>In 1904, La Mance needed a name for John Greene of Quidnessett's wife. She had none in the record. So La Mance gave her one — "Joan Beggarly," borrowed wholesale from a different woman married to a different John Greene, thirty-eight years dead before Joan/e's own name ever appears. No citation. No manuscript. Just a plausible-sounding gap-filler. It was wrong the day it was written, and it was never checked — because checking is slow, and repeating is free. A century of genealogy databases copied it forward as fact.</p>
-
-      <div class="card-grid">
-        <div class="card">
-          <h3>Trap 1: The La Mance poison</h3>
-          <p>La Mance (1904) assigned "Joan Beggarly" with NO cited primary sources. Propagated through Rixford (1932) into every major genealogy database. Chronologically impossible.</p>
-          <span class="badge rejected" style="margin-top: 8px; display: inline-block;">Tier 4 — INVALIDATED</span>
-        </div>
-        <div class="card">
-          <h3>Trap 2: The two-John conflation</h3>
-          <p>Algorithmic trees merge Surgeon John, Quidnessett John, Newark John, and Stonewall John into one profile. Wives swapped. Children reassigned. Land records from four men attach to one.</p>
-          <span class="badge proven" style="margin-top: 8px; display: inline-block;">Resolved — Firewall VERIFIED</span>
-        </div>
-        <div class="card">
-          <h3>Trap 3: The "Joan Beggarly" circular citation</h3>
-          <p>Ancestry → FamilySearch → Ancestry. Both cite La Mance. La Mance cites nothing. The circle is complete and empty.</p>
-          <span class="badge rejected" style="margin-top: 8px; display: inline-block;">Tier 4 — INVALIDATED</span>
-        </div>
-        <div class="card">
-          <h3>Trap 4: The 1635 passenger list</h3>
-          <p>La Mance connected Quidnessett John to a 1635 passenger list. Huling (1884): "nothing is certainly known" of origins. No primary source found.</p>
-          <span class="badge caution" style="margin-top: 8px; display: inline-block;">Unresolved</span>
-        </div>
-        <div class="card">
-          <h3>Trap 5: The death-date conflict</h3>
-          <p>1685 deed implies death by that date. Austin (1887) favors c.1695-1696, citing a will. No such will survives. Treat 1695 as unverified tradition.</p>
-          <span class="badge caution" style="margin-top: 8px; display: inline-block;">Unresolved — conflict documented</span>
-        </div>
-        <div class="card">
-          <h3>Trap 6: The "proven vs probable" pressure</h3>
-          <p>Every platform wants you to click "certain." There is no button for "we don't know." This archive treats "we don't know" as a valid research outcome.</p>
-          <span class="badge proven" style="margin-top: 8px; display: inline-block;">Operating principle — Law 1</span>
-        </div>
-      </div>
-
-      <!-- Contamination Gallery -->
-      <div class="gallery-section" id="gallery-contamination-section" style="margin-top: 32px;">
-        <h3>Contamination Source Images</h3>
-        <p class="gallery-desc">La Mance (1904) source material and related contamination documentation.</p>
-        <div class="gallery" id="gallery-contamination"></div>
-        <div class="detail-pane" id="detail-contamination"></div>
+        <strong>The quiet is extra loud.</strong> Printing presses operated in Boston and Cambridge by the 1630s. Rhode Island courts recorded by the 1640s. Multiple colonial jurisdictions — primarily Rhode Island, with claims from Massachusetts Bay, Plymouth, and Connecticut — generated paper. Rhode Island produced the bulk of surviving land evidence. John Greene fought for his land at every turn: petitions, boundary disputes, colonial authority. He only submitted to the Crown after they guaranteed his land. A man this litigious, this documented, had a wife invisible to English law for ~40 years. That is not a research failure. That is a pattern.
       </div>
     </section>
 
@@ -437,7 +390,7 @@
       <div class="card-grid">
         <div class="card">
           <h3>🖨 Printing presses were a thing</h3>
-          <p>By the 1630s, Boston and Cambridge had operating presses. Rhode Island's courts recorded by the 1640s. Four competing colonial jurisdictions generated paper. The record-keeping environment was robust — which makes Joan/e's absence statistically improbable, not expected.</p>
+          <p>By the 1630s, Boston and Cambridge had operating presses. Rhode Island's courts recorded by the 1640s. Multiple colonial jurisdictions generated paper, with Rhode Island producing the bulk of surviving records. The record-keeping environment was robust — which makes Joan/e's absence documentarily anomalous for the record-keeping environment.</p>
         </div>
         <div class="card">
           <h3>🗺 Four competing territories</h3>
@@ -450,6 +403,7 @@
         <div class="card">
           <h3>🔍 "No record found" is data</h3>
           <p>A systematic search that returns negative results narrows the field for everyone. If you check an archive and find nothing, that finding belongs in the record too. Negative space is still space.</p>
+          <p style="font-size:12px;color:var(--text-quaternary);"><strong>Goal:</strong> Build a "Negative Space Log" — archive checked, date, search terms, result. Contact the archive if you want to contribute checked-negative findings.</p>
         </div>
       </div>
     </section>
@@ -458,7 +412,7 @@
     <section class="section" id="deeds">
       <div class="section-title">Deed Gallery</div>
       <h2>The documents that name her — and the ones that do not</h2>
-      <p>Click any image to view it inline below the gallery. All images link to the GitHub repository. <strong>Reference notes required for all additions.</strong></p>
+      <p>Click any image to view it inline below the gallery. All images link to the GitHub repository. <strong>Reference notes required for all additions except those explicitly flagged as pending identification.</strong></p>
 
       <!-- 1672 Fones Purchase -->
       <div class="gallery-section" id="gallery-1672-section">
@@ -495,7 +449,7 @@
       <!-- Richard Smith -->
       <div class="gallery-section" id="gallery-smith-section">
         <h3>Richard Smith — Dutch Colonial Ties</h3>
-        <p class="gallery-desc">Supports the "IG merchant mark" hypothesis: Smith's Cocumscussoc trading post had documented financial ties into the Dutch West India Company network.</p>
+        <p class="gallery-desc">Richard Smith operated as a Dutch colonial insider 1642–1662 (Manhattan, not Cocumscussoc). His daughter Catherine married Gysbert Opdyck, WIC official. Smith served on the Dutch "Eight Men" council. His presence in the 1672 Fones Purchase reflects Dutch colonial networks, not an English-Dutch trading hypothesis. See Dutch colonial council minutes and bond records below.</p>
         <div class="gallery" id="gallery-smith"></div>
         <div class="detail-pane" id="detail-smith"></div>
       </div>
@@ -515,12 +469,26 @@
         <div class="gallery" id="gallery-maps"></div>
         <div class="detail-pane" id="detail-maps"></div>
       </div>
-    </section>
+    
+      <!-- Needs ID -->
+      <div class="gallery-section" id="gallery-needsid-section">
+        <h3>Needs ID — Unlabeled Images</h3>
+        <p class="gallery-desc">Added without reference notes. Flagged here, not hidden, so they stay visible while awaiting captions and citations.</p>
+        <div class="gallery" id="gallery-needsid"></div>
+        <div class="detail-pane" id="detail-needsid"></div>
+      </div>
+</section>
 
     <section class="section" id="primary-sources">
       <div class="section-title">Primary Sources</div>
       <h2>Every claim points back to a document</h2>
-      <p>Tier system from Peer Review Packet v4.2. Conflicts are flagged, not hidden.</p>
+      <p>Tier system from Research Packet v4.2. Conflicts are flagged, not hidden.
+      <p style="font-size:12px;color:var(--text-quaternary);margin-top:8px;">
+        <strong>Tier 1:</strong> Original document, physically examined or high-fidelity image.<br>
+        <strong>Tier 2:</strong> Reliable transcription or compilation by credentialed scholar with cited sources.<br>
+        <strong>Tier 3:</strong> Unverified compilation, no cited sources, or secondary analysis.<br>
+        <strong>Tier 4:</strong> Demonstrably false, fabricated, or chronologically impossible.
+      </p></p>
 
       <table class="data-table">
         <thead>
@@ -532,7 +500,7 @@
           <tr><td>Deed — 25 Sep 1685 (Edward Greene)</td><td>25 Sep 1685</td><td>Implies John Greene deceased by this date.</td><td><span class="badge proven">Tier 1 — Primary</span></td></tr>
           <tr><td>Winthrop Papers, Vol. 4</td><td>Jan 1643/44</td><td>Arnold to Winthrop: "Mr. Green's wife is dead." Closes Alice Beggarly story.</td><td><span class="badge proven">Tier 1 — Primary</span></td></tr>
           <tr><td>Winthrop Journal (Hosmer ed., 1908)</td><td>Dec 1638</td><td>Surgeon John Greene marries Alice Beggarly. NOT Joan/e. NOT Quidnessett John.</td><td><span class="badge proven">Tier 1 — Primary</span></td></tr>
-          <tr><td>Hough 1858 — Newport Court Martial</td><td>24 Aug 1676</td><td>John Greene denies charge; Daniel Greene testifies for prosecution. Behavioral anchor.</td><td><span class="badge caution">Tier 2 — Verbatim pending</span></td></tr>
+          <tr><td>Hough 1858 — Newport Court Martial</td><td>24 Aug 1676</td><td>John Greene denies charge; Daniel Greene testifies for prosecution. Behavioral anomaly — father and son on opposite sides of same proceeding. Multiple explanations possible. See Competing Hypotheses.</td><td><span class="badge caution">Tier 2 — Verbatim pending</span></td></tr>
           <tr><td>F.L. Greene, "Greene Family Records" (1894)</td><td>1894</td><td>"His wife, in 1682, was named Joan, but nothing further is known about her."</td><td><span class="badge caution">Tier 2 — Compilation</span></td></tr>
           <tr><td>La Mance, "The Greene Family" (1904)</td><td>1904</td><td>Adds "Joan Beggarly," 1635 passenger list, English pedigree — NO cited sources.</td><td><span class="badge rejected">Tier 4 — INVALIDATED</span></td></tr>
         </tbody>
@@ -548,24 +516,26 @@
 
     <section class="section" id="name-fragments">
       <div class="section-title">Name Fragments</div>
-      <h2>The 5 Joan/e of the Region — Sorting the Real from the Conflated</h2>
-      <p>Five women named Joan (or close variants) appear in southern New England records during the relevant period. La Mance conflated at least three of them. Here is the corrected firewall.</p>
+      <h2>Six Women + One Anashuecot — The Conflation Targets</h2>
+      <p>Six women and one Narragansett sachem appear in southern New England records during the relevant period. Surgeon John Greene had three documented wives; Quidnessett John had one. The contrast is the evidence: same name, same colony, completely different documentary footprints. La Mance conflated Alice Beggarly (Surgeon John's second wife) with Quidnessett Joan, extracting a surname from one woman and assigning it to another. Here is the corrected firewall.</p>
 
       <table class="data-table">
         <thead>
           <tr><th>Name / Source</th><th>Documented husband</th><th>Documented death</th><th>Geographic sphere</th><th>Fits?</th></tr>
         </thead>
         <tbody>
-          <tr><td>Joan Beggarly (Alice)<br><span style="font-size:11px;color:var(--text-quaternary);">Winthrop Journal Dec 1638; Arnold letter Jan 1643/44</span></td><td>Surgeon John Greene of Warwick</td><td>Alice Beggarly died Jan 1643/44 (Arnold to Winthrop)</td><td>Shawomet / Warwick</td><td><span style="color:var(--danger);"><strong>NO — WRONG MAN, WRONG WOMAN</strong></span> Alice (not Joan) married Surgeon John. Chronologically impossible for Quidnessett.</td></tr>
-          <tr><td>Joan, wife of Richard Smith<br><span style="font-size:11px;color:var(--text-quaternary);">Dutch colonial records; Cocumscussoc</span></td><td>Richard Smith (trader, Cocumscussoc)</td><td>Not documented</td><td>Narragansett Country / Dutch trading network</td><td><span style="color:var(--danger);"><strong>NO — WRONG HUSBAND</strong></span> Richard Smith's wife, not John Greene's. Separate household.</td></tr>
-          <tr><td>Joan, daughter of Richard Smith<br><span style="font-size:11px;color:var(--text-quaternary);">Family tradition; unverified</span></td><td>Unmarried / no husband documented</td><td>Not documented</td><td>Narragansett Country</td><td><span style="color:var(--danger);"><strong>NO — DAUGHTER, NOT WIFE</strong></span> Sometimes conflated with Smith's wife or with Quidnessett Joan. No primary source connects her to John Greene.</td></tr>
-          <tr><td>Joan, wife of John Greene of Quidnessett<br><span style="font-size:11px;color:var(--text-quaternary);">1682 home-place deed</span></td><td>John Greene of Quidnessett</td><td>Not documented</td><td>Quidnessett / Narragansett Country</td><td><span style="color:var(--positive);"><strong>YES — THIS IS HER</strong></span> Sole primary source appearance. No maiden name. No prior record.</td></tr>
+          <tr><td>Joane Tattershall<br><span style="font-size:11px;color:var(--text-quaternary);">Salisbury parish registers 1619; children baptized England 1620–1635</span></td><td>Surgeon John Greene of Warwick</td><td>~1635, shortly after arrival in Boston</td><td>England → Massachusetts</td><td><span style="color:var(--danger);"><strong>NO — DIED BEFORE RHODE ISLAND SETTLEMENT</strong></span> Married 4 Nov 1619, Salisbury. All seven children baptized in England. Died en route or shortly after arrival in Boston. Never appears in Rhode Island records. No connection to Quidnessett.</td></tr>
+          <tr><td>Alice Beggarly<br><span style="font-size:11px;color:var(--text-quaternary);">Winthrop Journal Dec 1638; Arnold letter Jan 1643/44</span></td><td>Surgeon John Greene of Warwick</td><td>12 Jan 1643/44 (Arnold to Winthrop)</td><td>Shawomet / Warwick</td><td><span style="color:var(--danger);"><strong>NO — DIED 38 YEARS BEFORE QUIDNESSETT JOAN</strong></span> Second wife. La Mance extracted the surname "Beggarly" from this woman and reassigned it to Quidnessett Joan with no primary source. Chronologically impossible.</td></tr>
+          <tr><td>Phillip<br><span style="font-size:11px;color:var(--text-quaternary);">Surgeon John Greene will 1658; inventory 1668</span></td><td>Surgeon John Greene of Warwick</td><td>After 27 Aug 1668 (survived husband)</td><td>Warwick</td><td><span style="color:var(--danger);"><strong>NO — NO CONNECTION TO QUIDNESSETT</strong></span> Third wife. Survived surgeon. No record after 1668. No evidence of remarriage to Quidnessett John or presence in North Kingstown. Chronologically possible but geographically and genealogically disconnected.</td></tr>
+          <tr><td>Joan Barton<br><span style="font-size:11px;color:var(--text-quaternary);">Thornbury parish registers 1621; Roger Williams letter 1651; Smith will 1664</span></td><td>Richard Smith (settler, Cocumscussoc)</td><td>Before 6 Oct 1651 (Roger Williams: Smith "like to have Mrs. Chester")</td><td>England → Taunton → New Amsterdam</td><td><span style="color:var(--danger);"><strong>NO — DIED BEFORE NARRAGANSETT SETTLEMENT</strong></span> Richard Smith's English wife. Died before 1651, before Cocumscussoc was permanently established. Never in Quidnessett. Oral tradition remembers her as "Dame Smith" (Narragansett cheese receipt).</td></tr>
+          <tr><td>Joan Smith (daughter of Richard Smith)<br><span style="font-size:11px;color:var(--text-quaternary);">Richard Smith will 1664; Dutch marriage records Flushing 1648</span></td><td>Thomas Newton (married 31 Mar 1648, Flushing)</td><td>Before 14 July 1664 (father's will: "deceased daughter Joan, sometime wife to Thomas Newton")</td><td>New Amsterdam / Flushing</td><td><span style="color:var(--danger);"><strong>NO — DIED 18 YEARS BEFORE QUIDNESSETT JOAN</strong></span> Documented in primary sources, not "family tradition." Married Thomas Newton in Dutch colonial record. Died before 1664. No known source conflates her with Quidnessett Joan.</td></tr>
+          <tr><td>Joan, wife of John Greene of Quidnessett<br><span style="font-size:11px;color:var(--text-quaternary);">1682 home-place deed</span></td><td>John Greene of Quidnessett</td><td>Not documented</td><td>Quidnessett / Narragansett Country</td><td><span style="color:var(--positive);"><strong>YES — SOLE DOCUMENTED APPEARANCE (1682)</strong></span> No maiden name. No baptism, marriage, or prior record. Appears only in 1682 deed.</td></tr>
           <tr><td>Anashuecot / Awashuwett<br><span style="font-size:11px;color:var(--text-quaternary);">1672 Fones Purchase deed</span></td><td>"Chiefe Sachem and heire" — no husband named</td><td>Not documented after 1682</td><td>Quidnessett / Narragansett Country</td><td><span class="badge hypothesis">WORKING HYPOTHESIS</span> — Possibly same individual as Joan. Not proven.</td></tr>
         </tbody>
       </table>
 
       <div class="note-box danger" style="margin-top: 20px;">
-        <strong>The La Mance Conflation:</strong> La Mance (1904) took the surname "Beggarly" from Alice (who married Surgeon John), assigned it to a "Joan" for Quidnessett John, and may have borrowed the name "Joan" from Richard Smith's wife or daughter. Three women became one. Zero primary sources support this mashup. This is why the 4-John firewall and the 5-Joan firewall are separate but equally necessary.
+        <strong>The La Mance Conflation:</strong> La Mance (1904) took the surname "Beggarly" from Alice Beggarly (who married Surgeon John Greene of Warwick), assigned it to a "Joan" for Quidnessett John, and constructed an English pedigree. Alice Beggarly and Quidnessett Joan are separated by 38 years and two different men named John Greene. The La Mance fabrication collapses under primary-source scrutiny: Alice died in 1643/44; Joan appears in 1682. No overlap. No connection. This is why the 4-John firewall and the 5-Joan firewall are separate but equally necessary.
       </div>
 
       <h3 style="margin-top: 32px;">Phonetic Audit Table (NNRC Metadata)</h3>
@@ -630,7 +600,7 @@
           <div class="node-marker" style="background: var(--positive);"></div>
           <div class="node-content">
             <div class="node-name">John Greene of Quidnessett</div>
-            <div class="node-desc">First-named purchaser, 1672 Fones Purchase. Grantor, 1682 home-place deed. Appears in colonial records 1637–1685 across all four jurisdictions. <strong>Most documented man in Narragansett Country.</strong></div>
+            <div class="node-desc">First-named purchaser, 1672 Fones Purchase. Grantor, 1682 home-place deed. Appears in colonial records 1637–1685 across all four jurisdictions. <strong>Among the most documented men in Narragansett Country land evidence.</strong> Frequency of appearance in RI Land Evidence volumes 1–4 (1670–1685) exceeds most contemporaries.</div>
             <div class="node-status"><span class="badge proven">PRESENT — 40+ years of records</span></div>
           </div>
         </div>
@@ -728,15 +698,15 @@
         <div class="orbit-node hypothetical">
           <div class="node-marker" style="background: var(--accent);"></div>
           <div class="node-content">
-            <div class="node-name">"Minnetinka" — Traditional Placeholder</div>
-            <div class="node-desc">Represents the matrilineal hereditary line bridging Miantonomi/Canonchet to the land. Even if the name comes from later oral tradition, the role (a high-status woman holding land rights during the "Erasure" period post-1676) is historically consistent. <strong>Not a proven identity. A structural role.</strong></div>
+            <div class="node-name">"Minnetinka" — Traditional Placeholder (NOT PRIMARY-SOURCED)</div>
+            <div class="node-desc"><strong>Not backed by any primary source.</strong> Represents the matrilineal hereditary line bridging Miantonomi/Canonchet to the land. Even if the name comes from later oral tradition, the role (a high-status woman holding land rights during the "Erasure" period post-1676) is historically consistent. <strong>Not a proven identity. A structural role. Included as comparator, not evidence.</strong></div>
             <div class="node-status"><span class="badge hypothesis">STRUCTURAL ROLE — not proven identity</span></div>
           </div>
         </div>
       </div>
 
       <div class="note-box verified" style="margin-top: 20px;">
-        <strong>The invitation:</strong> Check what Sarah Stanton/Tibbitts, Mary Tibbitts/Greene, Elizabeth Wickes, and the unidentified female in the John Fones household left behind. Then ask why Joan/e's pile is so much smaller. These women operated in the same geographic and legal sphere. They appear in church records, court testimony, and estate documents. Joan/e does not. That difference is data.
+        <strong>The invitation:</strong> Check what Sarah Stanton/Tibbitts, Mary Tibbitts/Greene, Elizabeth Wickes, and the unidentified female in the John Fones household left behind. Then ask why Joan/e's pile is so much smaller. <strong>Comparator:</strong> Narragansett Country oral tradition remembers "Dame Smith" (Joan Barton) as the cheese-maker. No oral tradition remembers a Narragansett woman in the Smith household — yet one would expect such a tradition if the kinship union hypothesis applied there too. These women operated in the same geographic and legal sphere. They appear in church records, court testimony, and estate documents. Joan/e does not. That difference is data.
       </div>
 
       <!-- Orbit Gallery -->
@@ -767,7 +737,7 @@
           <tr>
             <td>Kinship Union (Anashuecot)</td>
             <td><span class="check-yes">YES</span> — Direct link to title. Anashuecot is named "Chiefe Sachem and heire" in the 1672 Fones Purchase deed that John Greene first-purchased. The land connection is documented.</td>
-            <td><span class="check-yes">YES</span> — "Produced absence." English colonial records documented English-law marriages. A Narragansett-law kinship union generated no English church, court, or probate record by definition.</td>
+            <td><span class="check-yes">YES</span> — Expected absence. English colonial records documented English-law marriages. A Narragansett-law kinship union generated no English church, court, or probate record by definition. See "Archival Signature" in Evidence Matrix below for full explanation.</td>
             <td><span class="check-yes">YES</span> — Matrilineal logic. Under Narragansett succession, property rights derived from the senior matrilineal line. The "or to her mother if she survive" clause translates indigenous property logic into English deed language.</td>
           </tr>
         </tbody>
@@ -786,7 +756,7 @@
       <div class="evidence-matrix">
         <div class="evidence-card geographic">
           <h4>🗺 Geographic Continuity — "Land as Witness"</h4>
-          <p>The 1672 Fones Purchase deed (Anashuecot) and the 1682 home-place deed (Joan Greene) both concern land in the Quidnessett/East Greenwich corridor. John Greene is first-named purchaser in 1672; grantor in 1682. The dirt is the same. The question is whether the woman is the same.</p>
+          <p>The 1672 Fones Purchase deed (Anashuecot) and the 1682 home-place deed (Joan Greene) both concern land in the Quidnessett/East Greenwich corridor. John Greene is first-named purchaser in 1672; grantor in 1682. The land boundaries are contiguous. The question is whether the property rights derive from the same source.</p>
           <p style="margin-top: 8px;"><strong>Forensic test:</strong> Compare boundary descriptions. If "bounded by the river" or "near the path of Womphogg" appear in both deeds, the land identity strengthens the personal identity hypothesis.</p>
         </div>
 
@@ -798,7 +768,7 @@
 
         <div class="evidence-card behavioral">
           <h4>⚖ Behavioral Anomaly — "The Kinship Strategy"</h4>
-          <p>At the 1676 Newport Court Martial, John Greene denied charges while his son Daniel testified for the English prosecution. A father-son split in the same proceeding is statistically rare. If Daniel was the child of an English mother, his testimony against his father is inexplicable. If Daniel was the child of a Narragansett mother, his testimony <em>for</em> the English against his father's interests becomes a survival strategy: aligning with the winning side to protect matrilineal land rights.</p>
+          <p>At the 1676 Newport Court Martial, John Greene denied charges while his son Daniel testified for the English prosecution. A father-son split in the same proceeding is atypical for colonial court records. If Daniel was the child of an English mother, his testimony against his father is difficult to explain. If Daniel was the child of a Narragansett mother, his testimony <em>for</em> the English against his father's interests becomes a survival strategy: aligning with the winning side to protect matrilineal land rights. <strong>Alternative explanations exist:</strong> estrangement, coercion, bribery, or genuine belief in his father's guilt. The kinship hypothesis is not the only possible account of this behavior.</p>
           <p style="margin-top: 8px;"><strong>Status:</strong> Hough 1858 verbatim transcript still pending. This is the highest-priority archival retrieval.</p>
         </div>
 
@@ -809,14 +779,60 @@
         </div>
       </div>
 
-      <h3 style="margin-top: 32px;">The "Female Inheritance Window" (1676–1686)</h3>
-      <p class="lead">Because the male sachems were dead or enslaved, the English were forced to deal with the women (Sunksquaws) to get "clean" land titles.</p>
+      <h3 style="margin-top: 32px;">The "Female Inheritance Window" (1676–1682)</h3>
+      <p class="lead">With male sachems dead or enslaved, English purchasers strategically sought out indigenous women (Sunksquaws) as grantors, recognizing that their signatures made titles more defensible in English courts.</p>
       <p>
-        Joan's appearance in 1682 is not a random entry; it is a <strong>Title Confirmation</strong>. The English needed "Joan" to sign so they could legally own what "Anashuecot" had possessed. In Narragansett culture, women like Quaiapen (the Old Queen) held massive land rights. If Joan/Anashuecot was a Sunksquaw, it explains why the English had to have her signature to make their land "legal" in the eyes of the Crown.
+        Joan's appearance in 1682 is not a random entry within a broader window; it is the <strong>only documented instance</strong> of this phenomenon in John Greene's records. It functions as a <strong>Title Confirmation</strong>. The English needed "Joan" to sign so they could legally own what "Anashuecot" had possessed. In Narragansett culture, women like Quaiapen (the Old Queen) held massive land rights. If Joan/Anashuecot was a Sunksquaw, it explains why the English had to have her signature to make their land "legal" in the eyes of the Crown.
       </p>
       <p>
-        The "Canonchet Proximity" is historically consistent: the execution of Canonchet (Nanuntenoo) in April 1676 was the most significant political event in the region. A high-status woman being "hidden" as "Joan" immediately following that event aligns with the documented "Great Migration" and "Erasure" periods of Narragansett history.
+        The "Canonchet Proximity" — the documented pattern of high-status Narragansett women being recorded under English names immediately following the April 1676 execution of Canonchet (Nanuntenoo) — is historically consistent: the execution of Canonchet (Nanuntenoo) in April 1676 was the most significant political event in the region. A high-status woman being "hidden" as "Joan" immediately following that event aligns with the documented "Great Migration" and "Erasure" periods of Narragansett history.
       </p>
+    </section>
+
+    <section class="section" id="contamination">
+      <div class="section-title">Contamination Index</div>
+      <h2>Errors that became facts through repetition</h2>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>Trap 1: The La Mance poison</h3>
+          <p>La Mance (1904) assigned "Joan Beggarly" with NO cited primary sources. Propagated through Rixford (1932) into every major genealogy database. Chronologically impossible.</p>
+          <span class="badge rejected" style="margin-top: 8px; display: inline-block;">Tier 4 — INVALIDATED</span>
+        </div>
+        <div class="card">
+          <h3>Trap 2: The two-John conflation</h3>
+          <p>Algorithmic trees merge Surgeon John, Quidnessett John, Newark John, and Stonewall John into one profile. Wives swapped. Children reassigned. Land records from four men attach to one.</p>
+          <span class="badge proven" style="margin-top: 8px; display: inline-block;">Resolved — Firewall VERIFIED</span>
+        </div>
+        <div class="card">
+          <h3>Trap 3: The "Joan Beggarly" circular citation</h3>
+          <p>Ancestry → FamilySearch → Ancestry. Both cite La Mance. La Mance cites nothing. The circle is complete and empty.</p>
+          <span class="badge rejected" style="margin-top: 8px; display: inline-block;">Tier 4 — INVALIDATED</span>
+        </div>
+        <div class="card">
+          <h3>Trap 4: The 1635 passenger list</h3>
+          <p>La Mance connected Quidnessett John to a 1635 passenger list. Huling (1884): "nothing is certainly known" of origins. No primary source found.</p>
+          <span class="badge caution" style="margin-top: 8px; display: inline-block;">Unresolved</span>
+        </div>
+        <div class="card">
+          <h3>Trap 5: The death-date conflict</h3>
+          <p>1685 deed implies death by that date. Austin (1887) favors c.1695-1696, citing a will. No such will survives. Treat 1695 as unverified tradition.</p>
+          <span class="badge caution" style="margin-top: 8px; display: inline-block;">Unresolved — conflict documented</span>
+        </div>
+        <div class="card">
+          <h3>Trap 6: The "proven vs probable" pressure</h3>
+          <p>Every platform wants you to click "certain." There is no button for "we don't know." This archive treats "we don't know" as a valid research outcome.</p>
+          <span class="badge proven" style="margin-top: 8px; display: inline-block;">Operating principle — Law 1</span>
+        </div>
+      </div>
+
+      <!-- Contamination Gallery -->
+      <div class="gallery-section" id="gallery-contamination-section" style="margin-top: 32px;">
+        <h3>Contamination Source Images</h3>
+        <p class="gallery-desc">La Mance (1904) source material and related contamination documentation.</p>
+        <div class="gallery" id="gallery-contamination"></div>
+        <div class="detail-pane" id="detail-contamination"></div>
+      </div>
     </section>
 
     <section class="section" id="unknown">
@@ -837,7 +853,7 @@
         </div>
         <div class="card">
           <h3>❓ Where are the children's baptisms?</h3>
-          <p>Nine sons are sometimes attributed to John Greene in later genealogies. Only Daniel and James are named in the 1682 deed. No baptismal records survive for any child in Quidnessett or nearby churches.</p>
+          <p>Later genealogies (La Mance 1904; Rixford 1932; unsourced Ancestry trees) attribute up to nine sons to John Greene. No primary source confirms this number. Only Daniel and James are named in the 1682 deed. No baptismal records survive for any child in Quidnessett or nearby churches.</p>
           <span class="badge caution" style="margin-top: 8px; display: inline-block;">Unresolved</span>
         </div>
         <div class="card">
@@ -851,9 +867,10 @@
           <span class="badge hypothesis" style="margin-top: 8px; display: inline-block;">Chain of title pending</span>
         </div>
         <div class="card">
-          <h3>❓ The "Survival of the House"</h3>
-          <p>In 1675–1676, the Narragansett "cleansed" the landscape of English encroachment. John Greene's house stood while others burned. Was this kinship immunity — the home of a woman of Narragansett hereditary line?</p>
-          <span class="badge hypothesis" style="margin-top: 8px; display: inline-block;">Working hypothesis</span>
+          <h3>❓ The Consent of the Locals</h3>
+          <p>After King Philip's War (1675–1676), it was lethal for English settlers to remain in Narragansett Country without indigenous consent. Yet John Greene not only stayed — he transferred his home-place deed to his son Daniel in 1682. Who granted him the right to remain when others were killed or driven out?</p>
+          <p style="font-size:12px;color:var(--text-quaternary);"><strong>Context:</strong> The Great Swamp Massacre (Dec 1675) and Canonchet's execution (Apr 1676) devastated Narragansett political structure. English survivors in the region were few. Greene's continued presence — and his ability to convey land to his son — implies some form of local accommodation. The 1682 deed requiring Joan's consent may document that accommodation in English legal form.</p>
+          <span class="badge hypothesis" style="margin-top: 8px; display: inline-block;">Working hypothesis — contextual inference</span>
         </div>
       </div>
     </section>
@@ -897,18 +914,18 @@
 
     <section class="section" id="help">
       <div class="section-title">How to Help</div>
-      <h2>Every un-pulled deed is a decision, being made right now.</h2>
-      <p class="lead">She isn't lost. Somewhere — a courthouse basement, a historical society's uncatalogued box, a probate file nobody's requested in decades — there is very likely more paper with Joan/e's name, or a name close enough to hers, sitting on a shelf. Someone at a specific archive is deciding, right now, by inaction, that it can stay there.</p>
-      <p>This archive can't get there alone. It does not need you to believe any hypothesis. It needs more eyes on more original documents — and it needs specific archives to feel specific pressure about specific boxes, not a vague sense that "history matters."</p>
+      <h2>She's not lost. She's just not digitized yet.</h2>
+      <p class="lead">Somewhere — a courthouse basement, a historical society's uncatalogued box, a probate file nobody's requested in decades — there is very likely more paper with Joan/e's name, or a name close enough to hers, sitting on a shelf.</p>
+      <p>This archive can't get there alone. It does not need you to believe any hypothesis. It needs more eyes on more original documents.</p>
 
       <div class="card-grid">
         <div class="card">
           <h3>📍 If you're near an archive</h3>
-          <p>RI State Archives, RIHS, Kings County probate, North Kingstown land evidence. Every one of these holds unrequested material touching John Greene of Quidnessett, Anashuecot, Absolom Counsellor, or Narragansett land deeds 1670–1690. Photograph it, request a scan of it, or ask directly why it hasn't been pulled yet. Even "no record found" is useful — it names who checked and when.</p>
+          <p>RI State Archives, RIHS, Kings County probate, North Kingstown land evidence. Photograph or request scans of anything touching John Greene of Quidnessett, Anashuecot, Absolom Counsellor, or Narragansett land deeds 1670–1690. Even "no record found" is useful.</p>
         </div>
         <div class="card">
           <h3>✍ If you read old handwriting</h3>
-          <p>Several images still need careful transcription or second opinions on hard-to-read marks. The 1676 court martial verbatim transcript is the highest priority — right now, its absence is a decision by omission, not a mystery.</p>
+          <p>Several images still need careful transcription or second opinions on hard-to-read marks. The 1676 court martial verbatim transcript is the highest priority.</p>
         </div>
         <div class="card">
           <h3>👤 If you know a name</h3>
@@ -916,18 +933,18 @@
         </div>
         <div class="card">
           <h3>🏛 If you're an institution</h3>
-          <p>This project exists to make primary sources easier to reach, not to replace archives. If your institution holds anything in this window and hasn't prioritized it, that's a choice worth revisiting — digitization capacity, cataloguing expertise, or a pointer to an unprocessed collection is exactly what's needed to change it.</p>
+          <p>This project exists to make primary sources easier to reach, not to replace archives. Digitization capacity, cataloguing expertise, or pointers to unprocessed collections are exactly what is needed.</p>
         </div>
       </div>
 
       <div class="note-box verified" style="margin-top: 24px;">
-        <strong>What we learned:</strong> The most dangerous thing in genealogy is not a wrong answer. It is a plausible answer that feels right. La Mance's "Joan Beggarly" feels right — it gives her a surname, a family, a place in the English world. It is also impossible, and it was repeated as fact for a century because no one checked. That's not a footnote to this project. That's the whole argument, in miniature: someone decided a fabrication didn't need checking, and the silence that followed did the rest.
+        <strong>What we learned:</strong> The most dangerous thing in genealogy is not a wrong answer. It is a plausible answer that feels right. La Mance's "Joan Beggarly" feels right — it gives her a surname, a family, a place in the English world. It is also impossible. The honest path is harder: Joan/e Unknown. But it is the only path that leads to real discovery.
       </div>
     </section>
 
     <footer class="site-footer">
-      <p>The Joan/e Archive — Open access research library. History belongs to everyone. Access to the evidence should too.</p>
-      <p style="margin-top:8px;">Peer Review Packet v4.2 — July 2026. Built with rigor. No narrative smoothing.</p>
+      <p>The Joan/e Archive — Open access research library. Primary sources are public records. This archive exists to make them easier to find, not to replace archival research.</p>
+      <p style="margin-top:8px;">Research Packet v4.2 — July 2026. Built with rigor. No narrative smoothing.</p>
       <p style="margin-top:8px;"><a href="https://github.com/lemuwah/joan-archive" target="_blank">GitHub Repository</a> · <a href="https://github.com/lemuwah/joan-archive/tree/main/images" target="_blank">Image Archive</a></p>
     </footer>
   </main>
@@ -939,20 +956,14 @@ const IMG_BASE = 'https://raw.githubusercontent.com/lemuwah/joan-archive/main/im
 // Gallery data — all unlabeled images identified from packet data
 const galleryData = {
   'gallery-1672': [
+    { file: '1672_anashuecot_deed_body.jpg', caption: '1672 Anashuecot Deed — Body', meta: 'RI State Archives — NK Land Evidence Deed #90', status: 'verified' },
+    { file: '1672_fones_purchase_grantor_line.jpg', caption: 'Fones Purchase — Grantor Line', meta: 'Anashuecot / Awashuwett spelling comparison', status: 'verified' },
+    { file: '1672_greene_first_purchaser.jpg', caption: 'John Greene — First-named Purchaser', meta: 'Deed #90, purchaser list', status: 'verified' },
     { file: 'SignaturesFones20.jpg', caption: '1672 Fones Purchase — Signatures', meta: 'RI State Archives — Deed #90, John Greene first-named purchaser', status: 'verified' },
-    { file: '1672_scan_p22_kin_cluster.jpg', caption: '1677 Historical Narrative', meta: 'Increase Mather's A Brief History of the Warr with the Indians (1677) — Stonewall John peace talk context', status: 'verified' },
+    { file: '1677.jpg', caption: '1677 Historical Narrative', meta: 'Increase Mather', status: 'verified' },
     { file: '1677_anashuecot_Heire_Proper.jpg', caption: 'Anashuecot "Heire Proper"', meta: '1672 deed extract — "Chiefe Sachem and heire"', status: 'verified' },
     { file: 'rocky-davis-transcript-1672.jpg', caption: 'Rocky Davis Transcript — 1672', meta: 'Transcription of 1672 deed text', status: 'verified' },
-    { file: 'succession-on-1672-amended.jpg', caption: 'Succession on 1672 Amended', meta: 'Amended succession record related to Fones Purchase', status: 'verified' }
-  ],
-  'gallery-1682': [
-    { file: '1682.jpg', caption: '1682 Home-Place Deed (1 of 2)', meta: 'SK Land Evidence Vol. IV — John & Joan Greene to sons Daniel & James', status: 'verified' },
-    { file: '1682-2.jpg', caption: '1682 Home-Place Deed (2 of 2)', meta: 'Continuation — life estate and "or to her mother if she survive" clause', status: 'verified' },
-    { file: 'original-transcription-1682-johnandjoan.jpg', caption: 'Original Transcription — John & Joan 1682', meta: 'Transcription of 1682 home-place deed text', status: 'verified' },
-    { file: 'john-and-joane.jpg', caption: 'John and Joane — Name Close-up', meta: 'Close-up of grantor names from 1682 deed', status: 'verified' },
-    { file: 'johntodaniel.jpg', caption: '1682 Deed of Gift — John to Daniel/James', meta: 'Kingstown Land Evidence — "The Joan Archive" Primary Core', status: 'verified' },
-    { file: 'daniel-and-john-green-land-kingstown.jpg', caption: '1682 Land Conveyance & Boundary Plat', meta: 'Kingstown Land Records, 120-Acre Tract to Daniel', status: 'verified' },
-    { file: 'green-land-kingstown.jpg', caption: '1682 Land Conveyance (alt)', meta: 'Alternative copy of boundary plat', status: 'verified' }
+    { file: 'succession-on-1672-amended.jpg', caption: 'Succession on 1672 Amended', meta: 'Amended succession record related to Fones Purchase', status: 'verified' },
   ],
   'gallery-1674': [
     { file: '1674_awawsunks_her_marke_cakochawhunt.jpg', caption: 'Awawsunks "her marke" — 1674', meta: 'RI Land Evidences Vol.1, pp.52-53', status: 'verified' },
@@ -960,7 +971,19 @@ const galleryData = {
     { file: 'greene-mark-awawsuncks-1674.jpg', caption: 'Greene Mark Beside Awawsuncks', meta: 'Witness mark comparison', status: 'verified' },
     { file: 'greene-witness-1674-awawsucks-her-mark.jpg', caption: 'Greene as Witness to Mark', meta: '1674 deed witness line', status: 'verified' },
     { file: 'greene-witness-1674-awawsucks-her-marksearch.jpg', caption: 'Greene Witness — Search Variant', meta: 'Alternative crop of witness line', status: 'verified' },
-    { file: 'cakochawhunt.jpg', caption: 'Cakochawhunt', meta: 'Related mark analysis', status: 'verified' }
+    { file: 'cakochawhunt.jpg', caption: 'Cakochawhunt', meta: 'Related mark analysis', status: 'verified' },
+  ],
+  'gallery-1682': [
+    { file: '1682_home_place_deed.jpg', caption: '1682 Home-Place Deed', meta: 'SK Land Evidence Vol. IV — Joan/e named as wife', status: 'verified' },
+    { file: '1682_joan_e_clause.jpg', caption: 'Joan/e Clause Close-up', meta: '"Or to her mother if she survive"', status: 'verified' },
+    { file: '1682_life_estate_30_shillings.jpg', caption: '30-Shilling Life Estate', meta: 'Reserved to Joan/e', status: 'verified' },
+    { file: '1682.jpg', caption: '1682 Home-Place Deed (1 of 2)', meta: 'SK Land Evidence Vol. IV — John & Joan Greene to sons Daniel & James', status: 'verified' },
+    { file: '1682-2.jpg', caption: '1682 Home-Place Deed (2 of 2)', meta: 'Continuation — life estate and "or to her mother if she survive" clause', status: 'verified' },
+    { file: 'original-transcription-1682-johnandjoan.jpg', caption: 'Original Transcription — John & Joan 1682', meta: 'Transcription of 1682 home-place deed text', status: 'verified' },
+    { file: 'john-and-joane.jpg', caption: 'John and Joane — Name Close-up', meta: 'Close-up of grantor names from 1682 deed', status: 'verified' },
+    { file: 'johntodaniel.jpg', caption: '1682 Deed of Gift — John to Daniel/James', meta: 'Kingstown Land Evidence — "The Joan Archive" Primary Core', status: 'verified' },
+    { file: 'daniel-and-john-green-land-kingstown.jpg', caption: '1682 Land Conveyance & Boundary Plat', meta: 'Kingstown Land Records, 120-Acre Tract to Daniel', status: 'verified' },
+    { file: 'green-land-kingstown.jpg', caption: '1682 Land Conveyance (alt)', meta: 'Alternative copy of boundary plat', status: 'verified' },
   ],
   'gallery-absolom': [
     { file: 'absolom.jpg', caption: 'Absolom Entry', meta: '1672 deed signature', status: 'verified' },
@@ -970,18 +993,20 @@ const galleryData = {
     { file: 'absolom-right-beneath-greene-deed.jpg', caption: 'Signature Position', meta: 'Directly beneath Greene deed text', status: 'verified' },
     { file: 'absolom-an-indian-bottom line.jpg', caption: 'Bottom-Line Entry', meta: '"An Indian" — descriptor line', status: 'verified' },
     { file: 'bristol_death_absolom_kin.jpg', caption: 'Bristol Death Record', meta: 'Possible Absolom kinsman — UNVERIFIED', status: 'pending' },
-    { file: '1677_absolom_counsellor_testimony_duplicate_pages22-23.jpg', caption: 'Absolom Testimony Duplicate', meta: 'Pages 22-23 duplicate', status: 'verified' }
+    { file: '1677_absolom_counsellor_testimony_duplicate_pages22-23.jpg', caption: 'Absolom Testimony Duplicate', meta: 'Pages 22-23 duplicate', status: 'verified' },
   ],
-  'gallery-smith': [
-    { file: 'Bond_of_Arnoldus_van_Hardenberg_as_surety_for_Mr._Richard_Smith.jpg', caption: 'Bond: Arnoldus van Hardenberg for Richard Smith', meta: 'Dutch WIC network connection', status: 'verified' },
-    { file: 'Bond_of_Richard_Smith_to_Isaac_Allerton_as_security_for_a_debt_due_to_Allerton_by_John_Wilcox.jpg', caption: 'Bond: Smith to Allerton', meta: 'John Wilcox debt security', status: 'verified' },
-    { file: 'Counter_bond_by_Willem_Tomassen.jpg', caption: 'Counter-Bond by Willem Tomassen', meta: 'Dutch colonial financial network', status: 'verified' },
-    { file: '1647-dutch.jpg', caption: 'Dutch Colonial Council Minutes', meta: '7-14 February 1647', status: 'verified' },
-    { file: 'Smith-sells-New-Amsterdam-house-Aug-16-1651 .jpg', caption: 'Smith Sells New Amsterdam House', meta: '16 August 1651', status: 'verified' }
+  'gallery-contamination': [
+    { file: 'leManceLaw.jpg', caption: 'La Mance (1904) — The Source of the Poison', meta: 'Tier 4 — INVALIDATED. No citations, no manuscript references, no archival basis. Assigned "Joan Beggarly" to Quidnessett John. Chronologically impossible.', status: 'rejected' },
   ],
   'gallery-devil': [
-    { file: '1688-devilspurchase.jpg', caption: '1688 Devil's Purchase', meta: 'Post-war land transaction. Context for post-1676 land reorganization in Quidnessett.', status: 'verified' },
-    { file: 'devils-foot.jpg', caption: 'Devil's Foot', meta: 'Boundary marker related to 1688 Devil's Purchase. Geographic reference.', status: 'verified' }
+    { file: '1688-devilspurchase.jpg', caption: '1688 Devil', meta: 'Post-war land transaction. Context for post-1676 land reorganization in Quidnessett.', status: 'verified' },
+    { file: 'devils-foot.jpg', caption: 'Devil', meta: 'Boundary marker related to 1688 Devil', status: 'verified' },
+  ],
+  'gallery-firewall': [
+    { file: 'richard-green.jpg', caption: 'Richard Green', meta: 'Distinct from Richard Smith. Greene family member in separate household.', status: 'verified' },
+  ],
+  'gallery-fones': [
+    { file: 'fones-rocky-david.jpg', caption: 'Fones / Rocky David', meta: 'Deed transcriber. John Fones was clerk of 1672 Fones Purchase and warden on 1682 deed.', status: 'verified' },
   ],
   'gallery-maps': [
     { file: 'bay_map.jpg', caption: 'Narragansett Bay Map', meta: 'Regional orientation', status: 'verified' },
@@ -989,42 +1014,39 @@ const galleryData = {
     { file: 'map-mass-bay.jpg', caption: 'Massachusetts Bay Map', meta: 'Northern neighbor context', status: 'verified' },
     { file: '1677-east-greenwich.jpg', caption: 'East Greenwich, 1677', meta: 'Local deed geography', status: 'verified' },
     { file: 'May1677east_greenwich_page_2.jpg', caption: 'East Greenwich Record, May 1677 p.2', meta: 'Boundary survey', status: 'verified' },
+    { file: 'October-1674-survey-to-rename-town-to-kingstown.jpg', caption: 'Oct 1674 Survey — Kingstown', meta: 'Town renaming record', status: 'verified' },
     { file: 'Plat_of_Quidnesett.jpg', caption: 'Plat of Quidnesett', meta: 'Land division map', status: 'verified' },
     { file: 'generalalfredgibbsmapacquidnesset.jpg', caption: 'Quidnesset-Area Map', meta: 'CAUTION: verify provenance before relying', status: 'pending' },
-    { file: 'map.jpg', caption: 'General Map', meta: 'General geographic reference. Needs caption + source.', status: 'pending' }
+    { file: 'map.jpg', caption: 'General Map', meta: 'General geographic reference. Needs caption + source.', status: 'pending' },
   ],
-  // Primary Sources gallery — includes identified unlabeled images
-  'gallery-sources': [
-    { file: 'actofvoluntarysubmission.jpg', caption: 'Act of Voluntary Submission', meta: 'Colonial submission document. Context for Narragansett-English relations.', status: 'verified' },
-    { file: 'source-reminder-aboriginals.jpg', caption: 'Source Reminder: Aboriginals', meta: 'Research note on indigenous source handling.', status: 'pending' },
-    { file: 'slide_1_the_problem.jpg', caption: 'Slide 1: The Problem', meta: 'Core research problem overview.', status: 'pending' }
-  ],
-  // Name Fragments gallery — includes identified unlabeled images
   'gallery-names': [
     { file: 'magnus.jpg', caption: 'Quaiapen (alias Magnus, Matantuck, Old Queen)', meta: 'Sister of Ninigret, widow of Mixan/Mriksah. Killed July 2, 1676 at Second Battle of Nipsachuck. Talcott letter: "Sunck squaw Magnus" slain there. HARD CHRONOLOGICAL ELIMINATION: Quaiapen cannot be Anashuecot (Anashuecot "conveyed out of ye country" as late as Jan 1677/8).', status: 'verified' },
     { file: 'awawamicks.jpg', caption: 'Awawamicks', meta: 'Phonetic variant in the Awashuwett/Anashuecot cluster. Compare carefully with Awawsunks 1674 deed.', status: 'hypothesis' },
-    { file: 'john-and-deborah.jpg', caption: 'John and Deborah', meta: 'Likely John Greene Jr. and Deborah. North Kingstown / Jamestown Marriage & Birth Records.', status: 'verified' }
+    { file: 'john-and-deborah.jpg', caption: 'John and Deborah', meta: 'Likely John Greene Jr. and Deborah. North Kingstown / Jamestown Marriage & Birth Records.', status: 'verified' },
   ],
-  // Firewall gallery — includes identified unlabeled images
-  'gallery-firewall': [
-    { file: 'leManceLaw.jpg', caption: 'La Mance (1904) — Contamination Source', meta: 'The primary contamination vector. Assigned "Joan Beggarly" with NO cited primary sources. Chronologically impossible (Alice Beggarly died 1643/44, 38 years before Joan's 1682 appearance).', status: 'rejected' },
-    { file: 'richard-green.jpg', caption: 'Richard Green', meta: 'Distinct from Richard Smith. Greene family member in separate household.', status: 'verified' }
+  'gallery-needsid': [
+    { file: 'records_of_proprietors_badcopy.jpg', caption: 'Records of Proprietors (Bad Copy)', meta: 'Needs caption + source', status: 'verified' },
+    { file: 'badquality-colony-of-ri.jpg', caption: 'Colony of RI (Bad Quality)', meta: 'Needs caption + source', status: 'verified' },
+    { file: 'bad-copy-smith-cluster.jpg', caption: 'Smith Cluster (Bad Copy)', meta: 'Needs caption + source', status: 'verified' },
   ],
-  // Orbit gallery — includes identified unlabeled images
   'gallery-orbit': [
     { file: 'jobgreen.jpg', caption: 'Job Green', meta: 'Greene family member. Orbit documentation.', status: 'verified' },
     { file: 'negro-man-peleg.jpg', caption: 'Peleg (Negro Man)', meta: 'Peleg Greene or related to Greene enslaved persons narrative. Context for Greene household labor structure.', status: 'pending' },
-    { file: 'james1695.jpg', caption: 'James Greene 1695', meta: 'John Greene's son, named in 1682 deed (60 acres). No prior baptismal record.', status: 'verified' },
-    { file: 'james-1695.jfif', caption: 'James 1695 (alt format)', meta: 'Alternative format of James Greene 1695 record.', status: 'verified' }
+    { file: 'james1695.jpg', caption: 'James Greene 1695', meta: 'John Greene', status: 'verified' },
+    { file: 'james-1695.jfif', caption: 'James 1695 (alt format)', meta: 'Alternative format of James Greene 1695 record.', status: 'verified' },
   ],
-  // Contamination gallery
-  'gallery-contamination': [
-    { file: 'leManceLaw.jpg', caption: 'La Mance (1904) — The Source of the Poison', meta: 'Tier 4 — INVALIDATED. No citations, no manuscript references, no archival basis. Assigned "Joan Beggarly" to Quidnessett John. Chronologically impossible.', status: 'rejected' }
+  'gallery-smith': [
+    { file: 'Bond_of_Arnoldus_van_Hardenberg_as_surety_for_Mr._Richard_Smith.jpg', caption: 'Bond: Arnoldus van Hardenberg for Richard Smith', meta: 'Dutch WIC network connection', status: 'verified' },
+    { file: 'Bond_of_Richard_Smith_to_Isaac_Allerton_as_security_for_a_debt_due_to_Allerton_by_John_Wilcox.jpg', caption: 'Bond: Smith to Allerton', meta: 'John Wilcox debt security', status: 'verified' },
+    { file: 'Counter_bond_by_Willem_Tomassen.jpg', caption: 'Counter-Bond by Willem Tomassen', meta: 'Dutch colonial financial network', status: 'verified' },
+    { file: 'Dutch_colonial_council_minutes_7-14_February_1647.jpg', caption: 'Dutch Colonial Council Minutes', meta: '7-14 February 1647', status: 'verified' },
+    { file: 'Smith-sells-New-Amsterdam-house-Aug-16-1651.jpg', caption: 'Smith Sells New Amsterdam House', meta: '16 August 1651', status: 'verified' },
   ],
-  // Fones/Rocky David — placed in Deeds section as transcriber documentation
-  'gallery-fones': [
-    { file: 'fones-rocky-david.jpg', caption: 'Fones / Rocky David', meta: 'Deed transcriber. John Fones was clerk of 1672 Fones Purchase and warden on 1682 deed.', status: 'verified' }
-  ]
+  'gallery-sources': [
+    { file: 'actofvoluntarysubmission.jpg', caption: 'Act of Voluntary Submission', meta: 'Colonial submission document. Context for Narragansett-English relations.', status: 'verified' },
+    { file: 'source-reminder-aboriginals.jpg', caption: 'Source Reminder: Aboriginals', meta: 'Research note on indigenous source handling.', status: 'pending' },
+    { file: 'slide_1_the_problem.jpg', caption: 'Slide 1: The Problem', meta: 'Core research problem overview.', status: 'pending' },
+  ],
 };
 
 // Track active detail panes
@@ -1036,9 +1058,10 @@ function renderGalleries() {
     if (!container) continue;
 
     container.innerHTML = images.map((img, idx) => {
-      const statusClass = img.status || 'pending';
+      let statusClass = img.status || 'pending';
+      if (statusClass === 'verified') statusClass = 'sourced';
       const statusLabel = {
-        verified: '✓ Verified',
+        sourced: '✓ Sourced',
         pending: '⏳ Pending',
         'needs-id': '⚠ Needs ID',
         hypothesis: '? Hypothesis',
@@ -1071,6 +1094,7 @@ function showDetail(galleryId, idx) {
 
   const statusClass = img.status || 'pending';
   const statusColors = {
+    sourced: 'background: var(--positive-dim); color: var(--positive);',
     verified: 'background: var(--positive-dim); color: var(--positive);',
     pending: 'background: var(--warning-dim); color: var(--warning);',
     'needs-id': 'background: var(--danger-dim); color: var(--danger);',
