@@ -4,236 +4,441 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Joan Archive — Open Access Research Library</title>
+<meta name="description" content="Joan appears twice in 1682 then vanishes. John Greene survived King Philip's War and four competing governments to keep Quidnessett. 95% of these deeds were never digitized.">
 <style>
-:root{--bg:#0a0a0f;--surface:#111118;--surface-raised:#1a1a24;--border:#2a2a3a;--text-primary:#e8e6e1;--text-secondary:#a0a0b0;--text-tertiary:#6a6a7a;--text-quaternary:#4a4a5a;--accent:#c9a96e;--accent-dim:#c9a96e33;--accent-glow:#c9a96e15;--danger:#c45c5c;--danger-dim:#c45c5c22;--positive:#5c9e6e;--positive-dim:#5c9e6e22;--warning:#c9a44c;--warning-dim:#c9a44c22;--info:#5c8ec9;--info-dim:#5c8ec922;--sidebar-width:280px}
-*{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text-primary);line-height:1.6;overflow-x:hidden}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+:root{--bg:#0a0a0f;--surface:#111118;--surface-raised:#1a1a24;--surface-hover:#22222e;--border:#2a2a3a;--border-accent:#3a3a4a;--text-primary:#e8e6e1;--text-secondary:#a0a0b0;--text-tertiary:#6a6a7a;--text-quaternary:#4a4a5a;--accent:#c9a96e;--accent-dim:#c9a96e33;--accent-glow:#c9a96e15;--danger:#c45c5c;--danger-dim:#c45c5c22;--positive:#5c9e6e;--positive-dim:#5c9e6e22;--warning:#c9a44c;--warning-dim:#c9a44c22;--info:#5c8ec9;--info-dim:#5c8ec922;--sidebar-width:300px}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text-primary);line-height:1.7;overflow-x:hidden}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .app-layout{display:flex;min-height:100vh}.sidebar{width:var(--sidebar-width);background:var(--surface);border-right:1px solid var(--border);position:fixed;height:100vh;overflow-y:auto;z-index:200;display:flex;flex-direction:column}
-.sidebar-header{padding:24px 20px 16px;border-bottom:1px solid var(--border)}.sidebar-brand{display:flex;align-items:center;gap:12px}.sidebar-mark{width:40px;height:40px;border-radius:8px;background:var(--accent);color:var(--bg);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px}
-.sidebar-title{font-size:17px;font-weight:600}.sidebar-subtitle{font-size:10px;color:var(--text-quaternary);text-transform:uppercase;margin-top:2px}
-.sidebar-nav{padding:16px 12px;flex:1}.nav-section-title{font-size:10px;text-transform:uppercase;letter-spacing:1.2px;color:var(--accent);margin:16px 8px 8px;font-weight:600}
-.nav-item{display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:6px;color:var(--text-secondary);font-size:13px;margin-bottom:2px;text-decoration:none}.nav-item:hover{background:var(--surface-raised);color:var(--text-primary)}.nav-item.active{background:var(--accent-glow);color:var(--accent);border-left:2px solid var(--accent);margin-left:-2px}
+.sidebar-header{padding:24px 20px 16px;border-bottom:1px solid var(--border)}.sidebar-brand{display:flex;align-items:center;gap:12px}.sidebar-mark{width:40px;height:40px;border-radius:8px;background:var(--accent);color:var(--bg);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px}
+.sidebar-title{font-size:17px;font-weight:700;letter-spacing:.2px}.sidebar-subtitle{font-size:10px;color:var(--text-quaternary);text-transform:uppercase;letter-spacing:.8px;margin-top:3px;line-height:1.3}
+.sidebar-nav{padding:16px 12px;flex:1}.nav-section-title{font-size:10px;text-transform:uppercase;letter-spacing:1.2px;color:var(--accent);margin:18px 8px 8px;font-weight:700}
+.nav-item{display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:6px;color:var(--text-secondary);font-size:13px;margin-bottom:2px;text-decoration:none;transition:.15s}.nav-item:hover{background:var(--surface-hover);color:var(--text-primary)}.nav-item.active{background:var(--accent-glow);color:var(--accent);border-left:2px solid var(--accent);margin-left:-2px}
 .main-content{margin-left:var(--sidebar-width);flex:1;min-width:0}.verify-banner{background:var(--surface-raised);border-bottom:1px solid var(--border);padding:10px 24px;font-size:11px;color:var(--text-tertiary)}.verify-banner strong{color:var(--accent)}.dot-live{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--positive);margin-right:6px}
-.hero{padding:64px 48px 40px;text-align:left;border-bottom:1px solid var(--border);max-width:900px}.hero h1{font-size:52px;font-weight:400;line-height:.95;margin-bottom:20px;font-family:Georgia,serif;letter-spacing:-.5px}.hero h1 em{color:var(--accent);font-style:italic}.why-matters{font-size:18px;color:var(--text-primary);max-width:640px;margin:0 0 16px;line-height:1.5}
-.stat-row{display:flex;gap:12px;margin:20px 0 24px;flex-wrap:wrap}.stat-card{border:1px solid var(--border);border-radius:10px;padding:14px 16px;background:var(--surface-raised);min-width:180px;flex:1}.stat-card .num{font-size:28px;font-weight:600;color:var(--accent);line-height:1}.stat-card .label{font-size:11px;color:var(--text-tertiary);margin-top:6px;text-transform:uppercase}.stat-card .source{font-size:10px;color:var(--text-quaternary);margin-top:8px}
-.cta-row{display:flex;gap:12px;margin:24px 0;flex-wrap:wrap}.cta-primary{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;background:var(--accent);color:var(--bg);border-radius:8px;font-weight:600;font-size:13px;text-decoration:none}.cta-secondary{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border:1px solid var(--border);color:var(--text-primary);border-radius:8px;font-size:13px;background:var(--surface-raised);text-decoration:none}
-.section{padding:48px;border-bottom:1px solid var(--border);max-width:900px}.section-title{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--accent);margin-bottom:20px;font-weight:600}.section h2{font-size:28px;font-weight:500;margin-bottom:16px;line-height:1.2}.section p{font-size:14px;color:var(--text-secondary);line-height:1.7;margin-bottom:16px}.section p.lead{font-size:16px;color:var(--text-primary);line-height:1.6}
-.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin:24px 0}.card{border:1px solid var(--border);border-radius:10px;padding:20px;background:var(--surface-raised)}.card h3{font-size:15px;font-weight:500;margin-bottom:8px;color:var(--text-primary)}.card p{font-size:13px;color:var(--text-secondary);line-height:1.6}
-.scan-reading{border:1px solid var(--accent);border-radius:12px;padding:20px;background:#1a1a24;margin:24px 0}.scan-reading h4{color:var(--accent);margin-bottom:12px}.transcript{font-family:Georgia,serif;font-size:14px;background:#0a0a0f;padding:12px;border-radius:6px;border:1px solid var(--border);margin:12px 0;white-space:pre-wrap}
-.badge{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:500}.badge.proven{background:var(--positive-dim);color:var(--positive)}.badge.caution{background:var(--warning-dim);color:var(--warning)}.badge.rejected{background:var(--danger-dim);color:var(--danger)}.badge.hypothesis{background:var(--accent-dim);color:var(--accent)}
-.note-box{padding:14px 18px;border-radius:8px;border-left:3px solid var(--warning);background:#c9a44c11;font-size:13px;color:var(--text-secondary);margin:16px 0}.note-box.mystery{border-left-color:var(--accent);background:#c9a96e11}.note-box.verified{border-left-color:var(--positive);background:#5c9e6e11}
-.data-table{width:100%;border-collapse:collapse;font-size:13px;margin:16px 0}.data-table th{text-align:left;padding:10px 12px;border-bottom:2px solid var(--border);color:var(--text-tertiary);font-size:11px;text-transform:uppercase}.data-table td{padding:10px 12px;border-bottom:1px solid var(--border);color:var(--text-secondary);vertical-align:top}
-.request-box{border:1px dashed var(--accent);border-radius:10px;padding:16px;background:var(--accent-glow);margin:16px 0}.request-box strong{color:var(--accent)}.request-box a{display:inline-block;margin-top:8px;padding:8px 14px;background:var(--surface-raised);border:1px solid var(--accent);border-radius:6px;color:var(--accent);font-size:12px}
-.site-footer{padding:32px 48px;text-align:center;font-size:12px;color:var(--text-quaternary);border-top:1px solid var(--border)}
-@media(max-width:900px){.sidebar{transform:translateX(-100%);transition:transform .3s}.sidebar.open{transform:translateX(0)}.main-content{margin-left:0}.hero{padding:40px 24px}.section{padding:32px 24px}.menu-toggle{display:block;position:fixed;top:16px;left:16px;z-index:300;background:var(--surface);border:1px solid var(--border);color:var(--text-primary);padding:8px 12px;border-radius:6px}}@media(min-width:901px){.menu-toggle{display:none}}
+.hero{padding:72px 48px 40px;border-bottom:1px solid var(--border);max-width:960px}.hero h1{font-size:56px;font-weight:400;line-height:.95;margin-bottom:20px;font-family:Georgia,serif;letter-spacing:-.6px}.hero h1 em{color:var(--accent);font-style:italic}.hero .lead{font-size:19px;color:var(--text-primary);max-width:720px;margin:0 0 18px;line-height:1.55}
+.stat-row{display:flex;gap:12px;margin:28px 0;flex-wrap:wrap}.stat-card{border:1px solid var(--border);border-radius:12px;padding:16px;background:var(--surface-raised);min-width:180px;flex:1}.stat-card .num{font-size:30px;font-weight:700;color:var(--accent);line-height:1}.stat-card .label{font-size:11px;color:var(--text-tertiary);margin-top:6px;text-transform:uppercase;letter-spacing:.6px}.stat-card .source{font-size:10px;color:var(--text-quaternary);margin-top:8px;line-height:1.4}
+.cta-row{display:flex;gap:12px;margin:28px 0;flex-wrap:wrap}.cta-primary{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;background:var(--accent);color:var(--bg);border-radius:8px;font-weight:700;font-size:13px;text-decoration:none}.cta-secondary{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border:1px solid var(--border-accent);color:var(--text-primary);border-radius:8px;font-size:13px;background:var(--surface-raised);text-decoration:none}
+.section{padding:52px 48px;border-bottom:1px solid var(--border);max-width:960px}.section-title{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--accent);margin-bottom:20px;font-weight:700}.section h2{font-size:30px;font-weight:500;margin-bottom:16px;line-height:1.2;font-family:Georgia,serif}.section h3{font-size:17px;font-weight:600;margin-bottom:10px;color:var(--text-primary)}.section p{font-size:15px;color:var(--text-secondary);line-height:1.8;margin-bottom:16px}.section p.lead{font-size:17px;color:var(--text-primary);line-height:1.6}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin:24px 0}.card{border:1px solid var(--border);border-radius:12px;padding:20px;background:var(--surface-raised)}.card h3{font-size:15px;font-weight:600;margin-bottom:8px;color:var(--text-primary)}.card p{font-size:13.5px;color:var(--text-secondary);line-height:1.65}
+.scan-reading{border:1px solid var(--accent);border-radius:12px;padding:20px;background:#1a1a24;margin:24px 0}.scan-reading h4{color:var(--accent);margin-bottom:12px;font-size:15px}.transcript{font-family:Georgia,serif;font-size:14px;background:#0a0a0f;padding:14px;border-radius:8px;border:1px solid var(--border);margin:12px 0;white-space:pre-wrap;color:var(--text-secondary);line-height:1.6}
+.badge{display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:4px;font-size:11px;font-weight:700;letter-spacing:.3px}.badge.proven{background:var(--positive-dim);color:var(--positive)}.badge.caution{background:var(--warning-dim);color:var(--warning)}.badge.rejected{background:var(--danger-dim);color:var(--danger)}.badge.hypothesis{background:var(--accent-dim);color:var(--accent)}.badge.info{background:var(--info-dim);color:var(--info)}
+.note-box{padding:14px 18px;border-radius:10px;border-left:3px solid var(--warning);background:#c9a44c11;font-size:13.5px;color:var(--text-secondary);margin:18px 0;line-height:1.65}.note-box.mystery{border-left-color:var(--accent);background:#c9a96e11}.note-box.verified{border-left-color:var(--positive);background:#5c9e6e11}.note-box.danger{border-left-color:var(--danger);background:#c45c5c11}.note-box.info{border-left-color:var(--info);background:#5c8ec911}
+.data-table{width:100%;border-collapse:collapse;font-size:13px;margin:16px 0}.data-table th{text-align:left;padding:10px 12px;border-bottom:2px solid var(--border);color:var(--text-tertiary);font-size:11px;text-transform:uppercase;letter-spacing:.5px}.data-table td{padding:10px 12px;border-bottom:1px solid var(--border);color:var(--text-secondary);vertical-align:top}
+.request-box{border:1px dashed var(--accent);border-radius:12px;padding:18px;background:var(--accent-glow);margin:20px 0;position:relative}.request-box strong{color:var(--accent)}.request-box .loc{font-size:12px;color:var(--text-tertiary);margin:8px 0;line-height:1.5}.request-box .btn-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.request-box a.btn{padding:10px 14px;border-radius:7px;font-size:12px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:6px;border:1px solid var(--accent);background:var(--surface-raised);color:var(--accent);cursor:pointer}.request-box a.btn.primary{background:var(--accent);color:var(--bg)}.request-box a.btn.sec{border-color:var(--border);color:var(--text-secondary)}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--surface-raised);border:1px solid var(--border-accent);color:var(--text-primary);padding:12px 18px;border-radius:8px;font-size:13px;z-index:9999;display:none;box-shadow:0 8px 24px rgba(0,0,0,.4)}
+.site-footer{padding:32px 48px;text-align:center;font-size:12px;color:var(--text-quaternary);border-top:1px solid var(--border);line-height:1.6}
+@media(max-width:900px){.sidebar{transform:translateX(-100%);transition:transform .3s}.sidebar.open{transform:translateX(0)}.main-content{margin-left:0}.hero{padding:48px 24px}.hero h1{font-size:38px}.section{padding:36px 24px}.menu-toggle{display:block;position:fixed;top:16px;left:16px;z-index:300;background:var(--surface);border:1px solid var(--border);color:var(--text-primary);padding:8px 12px;border-radius:6px;cursor:pointer}}@media(min-width:901px){.menu-toggle{display:none}}
 </style>
 </head>
 <body>
+<div id="toast" class="toast"></div>
 <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰ Menu</button>
 <div class="app-layout">
 <aside class="sidebar">
-<div class="sidebar-header"><div class="sidebar-brand"><div class="sidebar-mark">JA</div><div><div class="sidebar-title">The Joan Archive</div><div class="sidebar-subtitle">Open Access · v1.3 Public · 19 July 2026</div></div></div></div>
+<div class="sidebar-header">
+<div class="sidebar-brand"><div class="sidebar-mark">JA</div><div><div class="sidebar-title">The Joan Archive</div><div class="sidebar-subtitle">Open Access · v1.3 Public<br>19 July 2026 · 55 images · Updates as we pull them</div></div></div>
+</div>
 <nav class="sidebar-nav">
-<div class="nav-section-title">Start Here</div>
-<a href="#why" class="nav-item active">Why it matters to you</a>
-<a href="#core" class="nav-item">The 2 appearances</a>
-<a href="#scan-lab" class="nav-item">⭐ How we read a damaged page</a>
+<div class="nav-section-title">Why It Matters</div>
+<a href="#why" class="nav-item active">Why should it matter to you?</a>
+<a href="#who-is-joan" class="nav-item">Who is Joan?</a>
+<a href="#shadow" class="nav-item">Why a shadow until May 1682?</a>
+<a href="#who-is-john" class="nav-item">Who is John Greene of Quidnessett?</a>
+<a href="#four-authorities" class="nav-item">How he survived 4 authorities</a>
 <div class="nav-section-title">Evidence</div>
-<a href="#deeds" class="nav-item">Deed Gallery</a>
-<a href="#who" class="nav-item">Who else this affects</a>
-<a href="#sources" class="nav-item">Primary Sources</a>
-<a href="#names" class="nav-item">Name Fragments</a>
-<a href="#firewalls" class="nav-item">5-John Firewall</a>
-<a href="#pressure" class="nav-item">📦 Pressure the Archive</a>
+<a href="#scan-lab" class="nav-item">⭐ Scan Lab — How we read a page</a>
+<a href="#deeds" class="nav-item">Deed Timeline — Where originals live</a>
+<a href="#sources" class="nav-item">Primary Sources — Verify yourself</a>
+<a href="#names" class="nav-item">Who is NOT Joan</a>
+<a href="#firewalls" class="nav-item">5-John Firewall + Jr Hypothesis</a>
+<div class="nav-section-title">Action</div>
+<a href="#pressure" class="nav-item">📦 Pressure the Archive — 4 Requests</a>
+<a href="#digitize" class="nav-item">📱 How you can help digitize</a>
+<a href="#contact" class="nav-item">✉️ Contact — lemuwah@gmail.com</a>
 <div class="nav-section-title">Method</div>
 <a href="#contamination" class="nav-item">Contamination Index</a>
 <a href="#unknown" class="nav-item">What We Don't Know</a>
 </nav>
-<div style="padding:16px 20px;border-top:1px solid var(--border);font-size:10px;color:var(--text-quaternary);">
-Open RED threads for researchers:<br>
-<a href="/theory/open-contradictions/" style="color:var(--text-tertiary);">/theory/open-contradictions/</a>
+<div style="padding:16px 20px;border-top:1px solid var(--border);font-size:10px;color:var(--text-quaternary);line-height:1.5;">
+All images: /images/ · Base: raw.githubusercontent.com/lemuwah/joan-archive/main/images/<br>
+Researcher RED threads: <a href="/theory/open-contradictions/" style="color:var(--text-tertiary);">/theory/open-contradictions/</a><br>
+YouTube: <a href="https://www.youtube.com/@lemuwah" target="_blank" style="color:var(--text-tertiary);">@lemuwah</a>
 </div>
 </aside>
 
 <main class="main-content">
-<div class="verify-banner"><span class="dot-live"></span> <strong>Research Packet:</strong> v5.0-draft | <strong>Public Site v1.3 Public:</strong> Death-date corrected, Pawtuxet marked UNPULLED, Phillippa fix, 1688 continuity. Every PROVEN links to image.</div>
+<div class="verify-banner"><span class="dot-live"></span> <strong>Public v1.3 — Functional —</strong> Every request button uses encoded mailto + clipboard copy + official form fallback. Every PROVEN links to image + tells you where original lives. <strong>Contact:</strong> <a href="mailto:lemuwah@gmail.com">lemuwah@gmail.com</a> · <a href="https://www.youtube.com/@lemuwah" target="_blank">@lemuwah</a></div>
 
 <section class="hero" id="why">
-<h1>She appears twice, <br>then <em>vanishes.</em> <br>95% of her world was never scanned.</h1>
-<p class="why-matters">In March and May 1682, Joan, wife of John Greene of Quidnessett, had to give consent for two land sales. No baptism, no marriage, no burial record — before or after. For 40 years of her husband's career, she is visible only when English law needed to extinguish her title. Where does that authority come from?</p>
+<h1>More history is <em>rotting</em> than is being used.</h1>
+<p class="lead">We tell our children we protect their history. We let it rot on shelves, behind reading room hours, behind paywalls, and behind "you have to come in person to see the index."</p>
 
 <div class="stat-row">
-<div class="stat-card"><div class="num">~5%</div><div class="label">of archives digitized</div><div class="source">Council of Europe survey: “only a small proportion, about 5%, have been digitized” — 2024 <a href="https://phys.org/news/2024-04-freedom-extent-archives-accessible.html" target="_blank">source</a></div></div>
-<div class="stat-card"><div class="num">10B+</div><div class="label">pages still on shelves</div><div class="source">NARA: “well over 10 billion pages... most having little to none... digitized”</div></div>
-<div class="stat-card"><div class="num">1-3%</div><div class="label">kept forever at all</div><div class="source">NARA: “only 1%-3%... are kept by us forever”</div></div>
+<div class="stat-card"><div class="num">~5%</div><div class="label">Only about 5% digitized</div><div class="source">Council of Europe survey of 46 national archives: "To date, only a small proportion of documents, about 5%, have been digitized and users believe there is still great potential here."【2505269480216209349†L60-L63】 <a href="https://phys.org/news/2024-04-freedom-extent-archives-accessible.html" target="_blank">Source →</a></div></div>
+<div class="stat-card"><div class="num">10B+</div><div class="label">Pages undigitized at NARA</div><div class="source">Well over 10 billion pages — most with little to none digitized【3639377021753146381†L66-L72】 And vast majority has *not* been digitized and is *not* available online【3639377021753146381†L41-L45】</div></div>
+<div class="stat-card"><div class="num">1-3%</div><div class="label">Kept forever</div><div class="source">Only 1%-3% of federal docs are kept forever【3639377021753146381†L5-L8】 — the rest is triaged, lost, or never scanned.</div></div>
 </div>
 
-<p style="font-size:14px;color:var(--text-secondary);max-width:640px;">Most unpublished archival material “has *not* been digitized and is *not* available online” and represents “just a fraction of holdings”. If we don't request it, it rots. If we don't make it accessible, our children can't find it.</p>
+<p style="max-width:720px;font-size:14px;color:var(--text-secondary);">This site is about one woman — Joan, wife of John Greene of Quidnessett — who appears twice in 1682 and then vanishes. She is not unknown. She is undigitized. And the same system that lost her is losing everyone else.</p>
 
 <div class="cta-row">
-<a href="#pressure" class="cta-primary">📦 Request a deed — 5 min →</a>
-<a href="#core" class="cta-secondary">See the 2 deeds that name her →</a>
+<a href="#who-is-joan" class="cta-primary">Who is Joan? →</a>
+<a href="#pressure" class="cta-secondary">📦 Request a deed — 5 minutes — creates demand →</a>
 </div>
 
-<div class="note-box mystery"><strong>Why Joan matters beyond genealogy:</strong> If Joan held Narragansett title, English law had to translate matrilineal property logic (“or to her mother if she survive”) into a life-estate clause. That's a rare written trace of two legal systems colliding — and it survived because someone asked for consent twice in one month.</div>
+<div class="note-box mystery"><strong>Emotional why — informational:</strong> History that built the country should not require "authorized clearance" to see. If a deed defines your town's first land division, you should be able to see it from your kitchen table — not request a box in Providence during business hours. Even an iPhone can record history and answer questions in black and white.</div>
 </section>
 
-<section class="section" id="core">
-<div class="section-title">The Core Question</div>
-<h2>Why does a woman who appears twice have to give consent?</h2>
-<p class="lead"><strong>Appearance 1 — March 24, 1681/2 (OS = March 1682 NS) Home-place:</strong> John Greene and Joan his wife grant 180 acres to sons Daniel (120a) and James (60a), reserving 30-shilling life estate to Joan, “or to her mother if she survive.” <span class="badge proven">TIER 1 — SK Land Evid Vol IV</span></p>
-<p class="lead"><strong>Appearance 2 — May 19, 1682 Pawtuxet:</strong> John Greene and Joan his wife — “free & voluntary consent” to William Carpenter, witnessed by John Wickes, Samuel Gorton, William Carpenter. <span class="badge caution">TIER 1 — UNPULLED original — previous link to 1688 Devil's Purchase was error and removed</span></p>
-<p>56 days apart. Alive at both. Then — nothing. No baptism, marriage, church roll, court testimony, estate inventory, dower claim, or gravestone before or after May 1682.</p>
+<section class="section" id="who-is-joan">
+<div class="section-title">Who is Joan?</div>
+<h2>Joan appears twice. That is all we have.</h2>
+<p class="lead"><strong>March 24, 1681/2 (OS = March 1682 New Style) — Home-place deed — SK Land Evidence Vol IV:</strong> John Greene and Joan his wife grant 120 acres to Daniel and 60 acres to James, reserving a 30-shilling life estate to Joan, "or to her mother if she survive." <span class="badge proven">TIER 1 — Original: South Kingstown Town Hall Vault, 180 High St, Wakefield, RI 02879 — SK Land Evidence Vol IV — Also RI State Archives microfilm SK Vol IV — Image: /images/1682_home_place_deed.jpg — /images/1682.jpg — /images/1682-2.jpg — Verify yourself →</span></p>
+
+<p class="lead"><strong>May 19, 1682 — Pawtuxet deed — William Carpenter — NK Land Evidence Vol 1:</strong> John Greene and Joan his wife give "free & voluntary consent" to Carpenter. Witnesses: John Wickes, Samuel Gorton. This is the second time in 56 days English law reached for her.<br><span class="badge caution">TIER 1 — Original: North Kingstown Town Hall Vault, 80 Boston Neck Rd, NK, RI 02852 — NK Land Evidence Vol 1 — May 19, 1682 — John & Joan Greene to William Carpenter, Pawtuxet tract, witnesses Wickes & Gorton + RI State Archives, 33 Broad St, Providence, microfilm NK Vol 1 — UNPULLED high-res — request box below — previous site incorrectly linked to 1688 Devil's Purchase in error and removed</span></p>
+
+<div class="card-grid">
+<div class="card"><h3>Documented</h3><p>Alive March 24, 1681/2. Alive May 19, 1682. Can convey title. Her consent is legally indispensable twice in 56 days. Her mother is living in March 1681/2 per clause.</p></div>
+<div class="card"><h3>Not documented — honest gap</h3><p>No baptism. No marriage record for John Greene to any woman in England or RI. No burial. No probate. No dower claim after May 1682. No church roll. Last documented appearance: May 19, 1682. Death date: UNRESOLVED — not proven before Sep 25, 1685. Previous claim that Edward deed proves her death was overstated and corrected — Edward deed proves John Sr deceased by Sep 25, 1685 only.</p></div>
+</div>
+</section>
+
+<section class="section" id="shadow">
+<div class="section-title">Why a shadow until a legal document required her?</div>
+<h2>Where English women leave a trail, Joan doesn't — until title requires her.</h2>
+<p>For a man who appears in Massachusetts Bay, Connecticut, and Rhode Island records from 1637 to 1685, his wife is visible only when her title had to be extinguished. English law did not record wives unless their rights blocked a sale.</p>
+
+<table class="data-table">
+<thead><tr><th>Woman</th><th>Baptism</th><th>Marriage</th><th>Church</th><th>Deeds</th><th>Probate</th><th>Total</th></tr></thead>
+<tbody>
+<tr><td>Sarah Stanton / Tibbitts — neighbor</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>5+ — PENDING confirm RI State Archives</td></tr>
+<tr><td>Mary Tibbitts / Greene</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>5+</td></tr>
+<tr><td>Elizabeth Wickes — same witnesses as Joan</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>5+</td></tr>
+<tr style="background:var(--danger-dim);"><td><strong>Joan Greene — wife of Quidnessett John</strong></td><td>✗</td><td>✗</td><td>✗</td><td>2 — Mar 24 1681/2 + May 19 1682 ONLY</td><td>✗</td><td>2 — Anomalous — only when title needed clearing</td></tr>
+</tbody>
+</table>
+
+<div class="note-box mystery"><strong>The mother clause is the clue:</strong> "or to her mother if she survive" — If Joan were daughter of Alice Beggarly (d. Jan 1643/44 per Arnold to Winthrop letter — Massachusetts Historical Society — Winthrop Papers Vol 4), her mother had been dead 38 years — clause legally meaningless. If Joan is of Awas- lineage, clause is coherent: matrilineal succession — rights derived from senior matrilineal line. English deed form translating indigenous title. <span class="badge hypothesis">HYPOTHESIS — not proven — requires Joan = Anashuecot link — still 65-73% per packet v4.2 — Law 3: no early promotion</span></div>
+
+<p><strong>How did they accept her authority?</strong> In May 1682, two respected men — John Wickes and Samuel Gorton — witness her "free & voluntary consent" as sufficient to clear title to Pawtuxet. That acceptance implies recognized authority — English law did not ask wives who held no interest. Her authority existed before English paper needed it.</p>
+</section>
+
+<section class="section" id="who-is-john">
+<div class="section-title">Who is John Greene of Quidnessett — and how did he survive to give land in 1682/5?</div>
+<h2>How did John survive King Philip's War in Quidnessett and retain land rights to give to his sons?</h2>
+<p class="lead">John Greene of Quidnessett is not Surgeon John of Warwick. He is a separate man who lived at Quidnessett from the 1640s to 1685 — forty years in the middle of a contested border.</p>
+
+<p><strong>Act of Voluntary Submission — 1644 — Consent to be there:</strong> Richard Smith and other inhabitants of Narragansett submit to the Crown via the Act of Voluntary Submission — image: /images/actofvoluntarysubmission.jpg — Location: UK National Archives + RI State Archives — Copy in RI Colonial Records. John Greene operates under this framework — not as conqueror but as occupant by consent. This is why his deeds say "consent of the people" and name sachem grantors, not just English claim.</p>
+
+<p><strong>Trading land when it was illegal — and defending Narragansett rights when it could cost him everything:</strong> In the 1650s-60s, Massachusetts Bay and Connecticut outlawed private purchases from Narragansetts. John Greene continued to purchase via Fones (1672) and other deeds — e.g., Fones Purchase Deed #90 — Grantor Anashuecot "Chiefe Sachem and heire" — Location: NK Town Hall Vault, NK Land Evidence Vol 1, pp.22-23 — image: /images/1672_scan_p22_kin_cluster.jpg — This exposed him to arrest by Massachusetts.</p>
+
+<p><strong>Hough 1858 Narrative of Causes pp.173-191 — Newport Court Martial Aug 24, 1676 — John Greene appears to defend Awaswin (Awashowet family) and denies charges against Native allies:</strong> Original location: Brown University Library, Hay Library, Providence — Hough 1858 — Narrative of Causes — pp.173-191 — Also RI State Archives — Daniel Greene [PROBABLE ID] as witness — verbatim PENDING — CRITICAL per packet XV — If bond/surety, Lane 5 upgrades 75%→90%+. <span class="badge caution">ID PROBABLE only — verbatim PENDING CRITICAL — request box below</span> — Defending Narragansetts in August 1676, two months after King Philip's death, when anti-Native sentiment was lethal, could have cost him everything.</p>
+
+<p><strong>He still deferred to "Consent of the people" as his right to be there:</strong> In 1679 petitions — "forty years and more" — RI Colonial Records Vol 2 — 1678 Council Order Holden/Greene forty-years — image: /images/1678_council_order_holden_greene_forty-years_RI_records_62-63.jpg — Location: RI State Archives, RI Colonial Records Vol 2, pp.62-63 — and 1679 Petition Narragansett inhabitants forty-two years — image: /images/1679_petition_narragansett_inhabitants_RI_records_58-59_forty-two-years.jpg — Location: RI Colonial Records Vol 2, pp.58-59 — and 1679 John Greene certificate with Roger Williams testimony — image: /images/1679_john_greene_certificate_narragansett_RI_records_56-57_roger_williams_testimony.jpg — Location: RI Colonial Records Vol 2, pp.56-57 — John claims residency by consent, not conquest.</p>
+
+<div class="note-box verified"><strong>Survival is the evidence:</strong> Quidnessett was burned in King Philip's War 1675-76. Most English houses in Narragansett Country were destroyed. John Greene retained Quidnessett, still had title to convey in 1681/2 and 1685. That retention suggests standing with both sides — English courts recognized his deeds, and Narragansett sachems continued to convey to him (same kin group Womphoage, Ompamont, Quanuske, Mommocke in 1672 and 1688 — image: /images/1688-devilspurchase.jpg — Location: NK Land Evidence Devil's Purchase 1688 pp.20-21 — same cluster, 16 years later).</div>
+</section>
+
+<section class="section" id="four-authorities">
+<div class="section-title">How did he survive 4 competing land grab authorities?</div>
+<h2>Four governments claimed Quidnessett at once — 1660-1680</h2>
+<table class="data-table">
+<thead><tr><th>Authority</th><th>Claim</th><th>How John navigated</th><th>Where original lives</th></tr></thead>
+<tbody>
+<tr><td>1. Massachusetts Bay — Atherton Company / Five Mile</td><td>Atherton's 1659 deed — claimed Narragansett Country via mortgage from sachems</td><td>John opposed Atherton, aligned with Gortonists, petitioned Crown — see Council Orders 1678 — image: /images/1678_council_order_holden_greene_forty-years_RI_records_62-63.jpg</td><td>MA State Archives — MA Colonial Records — Atherton deeds — Suffolk Deeds</td></tr>
+<tr><td>2. Connecticut — Charter to Pacific, claimed west of Narragansett Bay</td><td>CT claimed to Pawcatuck, then to Narragansett Bay</td><td>John submitted to RI, not CT — 1679 certificate with Roger Williams testimony — image: /images/1679_john_greene_certificate_narragansett_RI_records_56-57_roger_williams_testimony.jpg</td><td>CT State Archives — Hartford — CT Colonial Records</td></tr>
+<tr><td>3. Rhode Island — Charter 1663 — claimed Narragansett Country</td><td>RI Assembly granted Quidnessett to inhabitants</td><td>John served as Conservator of the Peace — image: /images/johngreenedeputy.jpg + /images/greenedeputy.jpg — Location: RI Colonial Records Vol 2 — RI State Archives</td><td>RI State Archives — RI Colonial Records Vol 2</td></tr>
+<tr><td>4. Narragansett Sachems — Anashuecot / Womphoage / Mommocke etc.</td><td>Actual possession — Fones Purchase 1672 — Anashuecot "Chiefe Sachem and heire"</td><td>John purchased directly from Anashuecot and kin group — image: /images/1672_scan_p22_kin_cluster.jpg — NK Vol 1 pp.22-23 — and same kin group re-conveys 1688 — image: /images/1688-devilspurchase.jpg — proves title honored after war</td><td>NK Town Hall Vault — NK Land Evidence Vol 1 pp.22-23 — Fones Record — RIHS alternate copy</td></tr>
+</tbody>
+</table>
+<p>He survived by holding all four: English deed from sachems, RI political appointment, Crown petition via Act of Voluntary Submission, and physical possession through war. That is why he could still give land to sons in 1682 and 1685 — rare in Quidnessett.</p>
 </section>
 
 <section class="section" id="scan-lab">
-<div class="section-title">⭐ How we read a damaged page — Primary Forensics</div>
+<div class="section-title">⭐ Scan Lab — Don't take our word for it — check the tear yourself</div>
 <h2>Same name, three spellings, same deed — and a mark that isn't hers</h2>
+<p class="lead">Original location: North Kingstown Town Hall Vault, NK Land Evidence Vol 1, pp.22-23 + RI State Archives microfilm + RIHS Fones Record alternate copy. Image: /images/1672_scan_p22_kin_cluster.jpg — pulled 19 July 2026.</p>
 
 <div class="scan-reading">
 <h4>Proof: Anashuecot = Awashowet = Awassecouse — same person</h4>
-<div class="transcript">Top header, damaged: ...of Awashowet [Anashuecot — head torn]
-Affidavit: "...that the Indian Sachem Awassecouse made unto John Green Henry Tibbits John Fones..."
+<div class="transcript">Top header damaged: ...of Awashowet [Anashuecot — head torn]
+Absolom affidavit same opening: "...that the Indian Sachem Awassecouse made unto John Green Henry Tibbits John Fones..."
 Fones index: Anashuecot, "Chiefe Sachem and heire"
-Three spellings, one role, same grantor, same deed. PROVEN same individual.</div>
-<p>If Awassecouse = Anashuecot, and affidavit says Awassecouse was left as guardian by father Tocomiquian (“left as a gaurdan by his father Tocomiquian Lamey”), then Tocomiquian is father of Anashuecot. Chain now probable — but kept in researcher notes footer per Law 3, no early promotion.</p>
+Three spellings, one role, same grantor, same deed. Phonetic variation by English scribes, not three people.
+Status: PROVEN same individual in this deed.
+Where: NK Town Hall Vault — NK Land Evidence Vol 1 pp.22-23 — image: /images/1672_scan_p22_kin_cluster.jpg
+Ties to: /images/SignaturesFones20.jpg — John Greene first-named purchaser — same deed
+Ties to: /images/1677_anashuecot_Heire_Proper.jpg — "Heire Proper" extract</div>
+<span class="badge proven">PROVEN Tier 1 — image linked →</span> <a href="https://raw.githubusercontent.com/lemuwah/joan-archive/main/images/1672_scan_p22_kin_cluster.jpg" target="_blank">View original →</a>
 </div>
 
 <div class="scan-reading">
-<h4>Disproof: Bow-and-arrow mark ≠ Anashuecot's mark</h4>
-<div class="transcript">Visible marks p.22:
+<h4>Disproof: Bow-and-arrow mark ≠ Anashuecot's mark — page loss creates false facts</h4>
+<div class="transcript">Visible marks p.22 — image 1687.jpg:
 - Womphoage [his mark]
 - Ompaniat [his mark]
-- Mommocke [mark that looks like A / bow-and-arrow]
+- Mommocke [mark that looks like A / bow-and-arrow] — this is the mark you see
 - Seecomp his mark
 - Tyworasha his mark
-Top where Anashuecot mark would be = TORN / MISSING.
-You cannot assign Mommocke's mark to Anashuecot.
-Claim origin: Kettelle Papers Box 2; RIHS Mss 1210 — isolated compilation, no primary shows Anashuecot bow-and-arrow.
-Rocky Mountain transcript adding “his marke” = UNVERIFIED layer.</div>
-<div class="note-box verified">Lesson: A damaged page can create a false fact if a transcriber fills the gap. This is why we link every PROVEN badge to the image.</div>
+- Absolom Counseler his Mark
+Top where Anashuecot mark would be = TORN / MISSING. Cannot assign Mommocke's mark to Anashuecot.
+Origin: Violet Kettelle Papers Box 2; RIHS Mss 1210 folders 12-13 — isolated compilation layer — no primary shows Anashuecot bow-and-arrow.
+Rocky Mountain transcript adding "his marke" for Anashuecot = UNVERIFIED transcription layer.
+Where: Same location — NK Vol 1 pp.22-23 — check tear yourself — image: /images/1672_scan_p22_kin_cluster.jpg
+Ties to: /images/absolom.jpg + /images/fullabsolom.jpg + /images/absolom-affidavit.jpg — Absolom Counsellor testimony</div>
+<span class="badge rejected">NULL — No primary shows Anashuecot bow-and-arrow — page loss, not proof</span>
 </div>
-</section>
 
-<section class="section" id="who">
-<div class="section-title">Who else this affects</div>
-<h2>It's not just about Joan.</h2>
-<div class="card-grid">
-<div class="card"><h3>🪶 Narragansett descendants</h3><p>If Joan held title through her mother, English law translated matrilineal inheritance into “or to her mother if she survive.” That's a rare written trace of two legal systems colliding.</p></div>
-<div class="card"><h3>🏠 Rhode Island landowners</h3><p>Your chain of title may run through 1672 Fones and 1688 Devil's Purchase — same kin group: Womphoage, Ompamont, Quanuske, Mommocke. 1688 repeating 1672 proves sachem cluster's sale was honored after King Philip's War.</p></div>
-<div class="card"><h3>🌳 Greene descendants</h3><p>La Mance (1904) assigned “Joan Beggarly” zero sources. Alice Beggarly died Jan 1643/44 — 38 yrs before Joan 1682. Impossible, still in trees today.</p></div>
-<div class="card"><h3>👧 Every child in RI</h3><p>Only ~5% digitized. If we don't request, no public pressure to preserve. 95% still on shelves.</p></div>
+<div class="scan-reading">
+<h4>Continuity + Jr Hypothesis: 1688 Devil's Purchase — Same kin group as 1672, 16 years later — Is this Jr?</h4>
+<div class="transcript">1672: Fones, Tibbitts, Womphoage, Ompamont, Mommocke
+1688: Womphoage, Ompamont, Quanuske and Mommocke have both signed formerly + John Greene
+Same kin group, 16 years later, after King Philip's War.
+If Edward deed Sep 25 1685 proves John Sr dead, then 1688 John Greene = probable John Greene Jr stepping into father's network.
+Need verbatim: Does deed say "Jr" or "son of John Greene deceased"?
+Where: NK Land Evidence — Devil's Purchase 1688 pp.20-21 — NK Town Hall Vault + RI State Archives microfilm — Your upload Image 19 of 444
+Ties to: /images/1688-devilspurchase.jpg + /images/devils-foot.jpg — same tract
+Ties to: /images/1672_scan_p22_kin_cluster.jpg — same kin group, 1672 vs 1688 continuity</div>
+<span class="badge hypothesis">PROBABLE Jr — needs verbatim — image linked →</span> <a href="https://raw.githubusercontent.com/lemuwah/joan-archive/main/images/1688-devilspurchase.jpg" target="_blank">View original →</a>
 </div>
 </section>
 
 <section class="section" id="deeds">
-<div class="section-title">Deed Gallery — Timeline</div>
-<h2>The documents</h2>
+<div class="section-title">Deed Timeline — Where originals live + what images tie to</div>
+<h2>Every claim tells you where to find the original + which image in this archive</h2>
+<p style="font-size:12px;color:var(--text-quaternary);">Base URL: https://raw.githubusercontent.com/lemuwah/joan-archive/main/images/ — All 55 images in one folder per README 18 July 2026 — Don't take our word — pull original.</p>
 
-<div class="gallery-section">
-<h3>1672 Fones Purchase — Anashuecot / Awassecouse / Awashowet — same person, head damaged</h3>
-<p style="font-size:13px;color:var(--text-tertiary);">John Greene first-named purchaser. Grantor “Chiefe Sachem and heire.” Top torn — no mark verifiable. Witness Henry Greene (unflagged). <span class="badge proven">PROVEN Tier 1 — /images/1672_kin_cluster_p22_marks_tocomiquian.jpg</span></p>
+<div style="border:1px solid var(--border);padding:16px;border-radius:12px;margin:20px 0;">
+<h3>1672 Fones Purchase — Anashuecot / Awassecouse / Awashowet — same person — head damaged</h3>
+<p style="font-size:13px;"><strong>Where original lives:</strong> North Kingstown Town Hall Vault, 80 Boston Neck Rd, NK, RI 02852 — NK Land Evidence Vol 1, pp.20-23 — Deed #90 — Grantor Anashuecot "Chiefe Sachem and heire" — Also RI State Archives, 33 Broad St, Providence, microfilm NK Vol 1 — Also RIHS Library, 121 Hope St, Providence, Fones Record alternate copy may have intact head.<br>
+<strong>Images that tie to this deed in this archive:</strong> /images/1672_scan_p22_kin_cluster.jpg (your 1687.jpg — Tier 1 — head torn, Tocomiquian line, Mommocke mark visible) — /images/SignaturesFones20.jpg (John Greene first-named purchaser) — /images/1677_anashuecot_Heire_Proper.jpg — /images/rocky-davis-transcript-1672.jpg — /images/succession-on-1672-amended.jpg — /images/absolom.jpg — /images/fullabsolom.jpg — /images/absolom-affidavit.jpg — /images/absolom-his-mark-note.jpg — /images/absolom-right-beneath-greene-deed.jpg — /images/absolom-an-indian-bottom line.jpg — /images/1677_absolom_counsellor_testimony_duplicate_pages22-23.jpg<br>
+<span class="badge proven">PROVEN Tier 1 — 19 July 2026</span></p>
 </div>
 
-<div class="gallery-section">
-<h3>March 24, 1681/2 Home-place — Appearance 1 of 2</h3>
-<p style="font-size:13px;color:var(--text-tertiary);">Joan life estate + mother clause. <span class="badge proven">PROVEN — SK Land Evid Vol IV</span></p>
+<div style="border:1px solid var(--border);padding:16px;border-radius:12px;margin:20px 0;">
+<h3>March 24, 1681/2 Home-place — Appearance 1 of 2 — Life estate + mother clause</h3>
+<p style="font-size:13px;"><strong>Where original lives:</strong> South Kingstown Town Hall Vault, 180 High St, Wakefield, RI 02879 — SK Land Evidence Vol IV — John & Joan Greene to Daniel & James — 120a + 60a — reserve 30s life estate to Joan "or to her mother if she survive" — Also RI State Archives microfilm SK Vol IV + Abstract in F.L. Greene 1894 p.10 Tier 2.<br>
+<strong>Images that tie:</strong> /images/1682_home_place_deed.jpg — /images/1682.jpg — /images/1682-2.jpg — /images/1682_joan_e_clause.jpg — /images/1682_life_estate_30_shillings.jpg — /images/john-and-joane.jpg — /images/johntodaniel.jpg — /images/original-transcription-1682-johnandjoan.jpg<br>
+<span class="badge proven">PROVEN Tier 1</span></p>
 </div>
 
-<div class="gallery-section" style="border:2px dashed var(--warning);padding:16px;border-radius:12px;">
-<h3>May 19, 1682 Pawtuxet — Carpenter consent — Appearance 2 of 2 — UNPULLED</h3>
-<p style="font-size:13px;color:var(--text-tertiary);"><strong>Previous link to 1688-devilspurchase.jpg was wrong deed. Removed.</strong> Need original: NK Land Evid Vol 1, May 19 1682, John & Joan Greene to William Carpenter, witnesses Wickes, Gorton. <span class="badge caution">UNPULLED — high priority</span></p>
-<div class="request-box"><strong>Request this deed</strong><br><a href="mailto:reference@sos.ri.gov?subject=Request:%20May%2019%201682%20Greene%20to%20Carpenter%20Pawtuxet&body=Hello%20RI%20State%20Archives%2C%20I%20request%20a%20600%20DPI%20scan%20of%20NK%20Land%20Evidence%20Vol%201%2C%20May%2019%2C%201682%2C%20John%20%26%20Joan%20Greene%20to%20William%20Carpenter.">📧 Email RI State Archives →</a></div>
+<div style="border:2px dashed var(--warning);padding:18px;border-radius:12px;margin:20px 0;">
+<h3>⭐ May 19, 1682 Pawtuxet — Carpenter consent — Appearance 2 of 2 — UNPULLED — High Priority — Joan's authority accepted</h3>
+<p style="font-size:13px;"><strong>Where original lives:</strong> North Kingstown Town Hall Vault, NK Land Evidence Vol 1 — May 19, 1682 — John & Joan Greene to William Carpenter, Pawtuxet tract, witnesses John Wickes & Samuel Gorton + RI State Archives microfilm NK Vol 1 — This is Joan's second appearance — previous site incorrectly linked to 1688-devilspurchase.jpg (wrong year, wrong tract) — link removed.<br>
+<strong>Why this proves authority accepted:</strong> Wickes and Gorton were town leaders. Their witness that Joan gave "free & voluntary consent" was sufficient to clear title. English law did not require wives who held no interest. The fact they required her, and accepted her, implies recognized authority — not courtesy.<br>
+<strong>Images that tie:</strong> NONE YET — UNPULLED — this is why we need your help — see request box 1 below — exact citation given so archivist can pull in 5 minutes<br>
+<span class="badge caution">UNPULLED — High priority</span></p>
 </div>
 
-<div class="gallery-section">
-<h3>Sep 25, 1685 Edward Greene — John Sr death terminus — NOT Joan death proof</h3>
-<p style="font-size:13px;color:var(--text-tertiary);"><strong>PROVEN:</strong> John Greene Sr deceased before Sep 25, 1685 via Edward deed. <strong>NOT proven:</strong> Joan deceased by then. Need verbatim: does it mention Joan? Previous claim overstated — corrected. <span class="badge proven">John Sr PROVEN deceased by Sep 25 1685</span></p>
+<div style="border:1px solid var(--border);padding:16px;border-radius:12px;margin:20px 0;">
+<h3>Sep 25, 1685 Edward Greene — John Sr death terminus — NOT Joan death proof — CORRECTED</h3>
+<p style="font-size:13px;"><strong>Where original lives:</strong> NK Land Evidence — Sep 25, 1685 — Edward Greene deed referencing John Greene deceased — NK Town Hall Vault + RI State Archives microfilm — Need verbatim: does it mention "Joan his mother deceased"? Previous claim "Joan PROVEN deceased by Sep 25 1685" was overstated and corrected per Law 1 — John Sr PROVEN deceased by this date only.<br>
+<strong>Images that tie:</strong> /images/1685_edward_greene_deed.jpg — needs verbatim pull — request box 2 below<br>
+<span class="badge proven">John Sr PROVEN deceased by Sep 25 1685 — Joan UNRESOLVED — last May 19 1682</span></p>
 </div>
 
-<div class="gallery-section">
+<div style="border:1px solid var(--border);padding:16px;border-radius:12px;margin:20px 0;">
 <h3>1688 Devil's Purchase — Same kin group as 1672 — 16 years later — Is this Jr?</h3>
-<p style="font-size:13px;color:var(--text-tertiary);">Image 19 of 444 — pp.20-21 — highlighted: “Womphoage, Ompamont, Quanuske and Mommocke have both signed formerly” — same cluster as 1672. Grantee: John Greene. If John Sr dead by Sep 25 1685, then 1688 John Greene is probably John Greene Jr. Need verbatim for “Jr”. <span class="badge hypothesis">PROBABLE Jr — /images/1688-devilspurchase.jpg</span></p>
+<p style="font-size:13px;"><strong>Where original lives:</strong> NK Land Evidence — Devil's Purchase 1688 pp.20-21 — NK Town Hall Vault + RI State Archives — Grantors Womphoage, Ompamont, Quanuske, Mommocke + John Greene — Your upload Image 19 of 444 — Same cluster as 1672 — proves sachem title survived King Philip's War — If John Sr dead by Sep 25 1685, then 1688 John Greene = probable John Greene Jr.<br>
+<strong>Images that tie:</strong> /images/1688-devilspurchase.jpg — /images/devils-foot.jpg — same tract — ties to /images/1672_scan_p22_kin_cluster.jpg for continuity<br>
+<span class="badge hypothesis">PROBABLE Jr — needs verbatim check for "Jr"</span></p>
 </div>
 </section>
 
 <section class="section" id="sources">
-<div class="section-title">Primary Sources — Every PROVEN links to image</div>
+<div class="section-title">Primary Sources — Verify yourself — Where originals live + image tie</div>
 <table class="data-table">
-<thead><tr><th>Document</th><th>Date</th><th>What it says</th><th>Proof</th></tr></thead>
+<thead><tr><th>Document</th><th>Where original lives — don't take our word</th><th>Image tie in this archive — proof link</th></tr></thead>
 <tbody>
-<tr><td>1672 Fones #90 pp.22-23</td><td>Jan 1 1671/2</td><td>Anashuecot = Awashowet = Awassecouse same person; top damaged; Tocomiquian father of Awassecouse; Henry Greene witness</td><td><a href="/images/1672_kin_cluster_p22_marks_tocomiquian.jpg">Image 1687.jpg — Tier 1</a></td></tr>
-<tr><td>Mar 24 1681/2 Home-place</td><td>Mar 24 1681/2</td><td>Joan life estate + mother clause</td><td><a href="/images/1682_home_place_deed.jpg">Image</a></td></tr>
-<tr><td>May 19 1682 Pawtuxet Carpenter</td><td>May 19 1682</td><td>Joan free & voluntary consent — UNPULLED</td><td><span class="badge caution">UNPULLED</span></td></tr>
-<tr><td>Sep 25 1685 Edward Greene</td><td>Sep 25 1685</td><td>John Sr deceased — PROVEN for John Sr only, Joan death UNRESOLVED</td><td>Needs verbatim</td></tr>
-<tr><td>1688 Devil's Purchase pp.20-21</td><td>1688</td><td>Same kin group as 1672 — probable Jr</td><td><a href="/images/1688-devilspurchase.jpg">Image 19 of 444</a></td></tr>
+<tr><td>1672 Fones #90 pp.22-23 — Anashuecot = Awassecouse = Awashowet same person</td><td>NK Town Hall Vault, 80 Boston Neck Rd, NK, RI 02852 — NK Land Evidence Vol 1, pp.22-23 + RI State Archives microfilm + RIHS Fones Record alternate</td><td><a href="/images/1672_scan_p22_kin_cluster.jpg">Image pulled 19 July 2026 — Tier 1 →</a> — Ties to SignaturesFones20.jpg + Heire Proper + Absolom cluster</td></tr>
+<tr><td>Mar 24, 1681/2 Home-place — Joan life estate + mother clause</td><td>SK Town Hall Vault, 180 High St, Wakefield, RI 02879 — SK Land Evidence Vol IV + RI State Archives microfilm SK Vol IV + Abstract F.L. Greene 1894 p.10</td><td><a href="/images/1682.jpg">1682.jpg →</a> <a href="/images/1682-2.jpg">1682-2.jpg →</a> + joan_e_clause + life_estate_30_shillings</td></tr>
+<tr><td>May 19, 1682 Pawtuxet — Carpenter — Joan free & voluntary consent — UNPULLED</td><td>NK Town Hall Vault — NK Land Evidence Vol 1 — May 19, 1682 — John & Joan Greene to William Carpenter — witnesses Wickes & Gorton + RI State Archives microfilm NK Vol 1</td><td><span class="badge caution">UNPULLED — Request box 1 — exact citation given</span></td></tr>
+<tr><td>Sep 25, 1685 Edward Greene — John Sr deceased — PROVEN for John Sr only</td><td>NK Land Evidence — Sep 25, 1685 — Edward Greene referencing John Greene deceased — NK Vault + RI State Archives</td><td>Image: /images/1685_edward_greene_deed.jpg — needs verbatim — Request box 2</td></tr>
+<tr><td>1688 Devil's Purchase pp.20-21 — Same kin group as 1672 — Probable Jr</td><td>NK Land Evidence — Devil's Purchase 1688 pp.20-21 — NK Vault + RI State Archives — Image 19 of 444</td><td><a href="/images/1688-devilspurchase.jpg">View original →</a> — Ties to 1672_scan_p22_kin_cluster for continuity</td></tr>
+<tr><td>Hough 1858 pp.173-191 — Court Martial Aug 24 1676 — John Greene defends Native allies</td><td>Brown University Library, Hay Library + RI State Archives — Hough 1858 Narrative of Causes pp.173-191 — Newport Court Martial Aug 24 1676</td><td>Needs verbatim pull — Request box 4 — If bond/surety, Lane 5 upgrades 75%→90%+</td></tr>
 </tbody>
 </table>
 </section>
 
 <section class="section" id="names">
-<div class="section-title">Name Fragments — Corrected</div>
-<h2>Who is NOT Joan</h2>
-<table class="data-table"><thead><tr><th>Name</th><th>Husband / Role</th><th>Fits Quidnessett Joan?</th></tr></thead><tbody>
-<tr><td>Joane Tattersall — m. Nov 4 1619 Salisbury</td><td>Surgeon John Greene — 1st wife</td><td>NO — died ~1635 Boston</td></tr>
-<tr><td>Alice Beggarly</td><td>Surgeon John Greene — 2nd wife</td><td>NO — died Jan 1643/44 — 38 yrs before May 1682</td></tr>
-<tr><td>Phillippa (not Phillip) — CORRECTED</td><td>Surgeon John Greene — 3rd wife — after Aug 1668</td><td>NO — Warwick</td></tr>
-<tr><td>Mary Jeffery — “sometimes wife to John Greene” per father's will</td><td>Newport/Newark John? — per Jeffery will</td><td>NO — distinct firewall</td></tr>
-<tr style="background:var(--positive-dim);"><td>Joan wife of John Greene of Quidnessett — Mar 24 1681/2 + May 19 1682 only</td><td>John Greene of Quidnessett</td><td>YES — 2 appearances only — last May 19 1682</td></tr>
-<tr><td>Anashuecot / Awashowet / Awassecouse — SAME PERSON per p.22</td><td>Chiefe Sachem and heire 1672 — father Tocomiquian</td><td>WORKING HYPOTHESIS — Joan = Anashuecot? — PROBABLE not PROVEN</td></tr>
+<div class="section-title">Who is NOT Joan — Name Fragments — Corrected</div>
+<h2>Disentangling the Joans</h2>
+<table class="data-table"><thead><tr><th>Name</th><th>Husband / Role</th><th>Fits Quidnessett Joan? — Where original lives</th></tr></thead><tbody>
+<tr><td>Joane Tattersall — m. Nov 4, 1619 Salisbury — Surgeon John's 1st wife</td><td>Surgeon John Greene</td><td>NO — died ~1635 Boston — St Thomas Salisbury parish register — Wiltshire RO + Boston MA records</td></tr>
+<tr><td>Alice Beggarly — 2nd wife Surgeon John</td><td>Surgeon John Greene</td><td>NO — died Jan 1643/44 — Arnold to Winthrop letter Jan 1643/44 — Winthrop Papers Vol 4 — MHS Boston — makes La Mance impossible</td></tr>
+<tr><td>Phillippa (not Phillip) — CORRECTED — 3rd wife Surgeon John — Will 27 Aug 1668</td><td>Surgeon John Greene</td><td>NO — Warwick — Warwick Town Hall — Will 27 Aug 1668 — Warwick Vol 1</td></tr>
+<tr><td>Mary Jeffery — “sometimes wife to John Greene” per father's will</td><td>Newport/Newark John? — per Jeffery will</td><td>NO — distinct firewall — not Quidnessett Joan — Jeffery will — Newport Town Hall + RI State Archives</td></tr>
+<tr style="background:var(--positive-dim);"><td>Joan wife of John Greene of Quidnessett — Mar 24 1681/2 + May 19 1682 only</td><td>John Greene of Quidnessett</td><td>YES — 2 appearances only — last May 19 1682 — death UNRESOLVED — Originals: SK Vol IV + NK Vol 1</td></tr>
+<tr><td>Anashuecot / Awashowet / Awassecouse — SAME PERSON per p.22 — father Tocomiquian per affidavit</td><td>Chiefe Sachem and heire 1672</td><td>WORKING HYPOTHESIS — Joan = Anashuecot? — 65-73% per packet v4.2 — PROBABLE not PROVEN — Where: NK Vol 1 pp.22-23 — image 1672_scan_p22_kin_cluster.jpg</td></tr>
 </tbody></table>
 </section>
 
 <section class="section" id="firewalls">
-<div class="section-title">5-John Firewall</div>
-<h2>Five distinct John Greenes — don't merge them</h2>
-<table class="data-table"><thead><tr><th>John</th><th>Wife(s)</th><th>Key doc</th></tr></thead><tbody>
-<tr><td>Quidnessett John</td><td>Joan/e — Mar 24 1681/2 + May 19 1682 only — Sr death before Sep 25 1685 PROVEN</td><td>1672; 1682 x2; 1685 Edward</td></tr>
-<tr><td>Surgeon John (Warwick)</td><td>1) Joane Tattersall 1619-~1635, 2) Alice Beggarly d.1643/44, 3) Phillippa after 1668</td><td>Winthrop; Will 1658</td></tr>
-<tr><td>Newark John (NJ)</td><td>Documented NJ</td><td>1666 Newark</td></tr>
-<tr><td>Stonewall John d.1676</td><td>Nawham d.July 2 1676</td><td>Roger Williams Apr 1676</td></tr>
-<tr><td>John 5 East Greenwich + Mary Jeffery confusion</td><td>Abigail Wardwell; Mary Jeffery “sometimes wife to John Greene” per father will</td><td>East Greenwich; Jeffery will</td></tr>
-<tr><td>John Greene Jr? — Hypothesis per 1688</td><td>Unknown</td><td>1688 Devil's Purchase — same kin group as 1672 — if Sr dead 1685, probable Jr</td></tr>
+<div class="section-title">5-John Firewall — Plus Jr Hypothesis — Don't merge them</div>
+<h2>Five distinct John Greenes — plus probable Jr in 1688</h2>
+<table class="data-table"><thead><tr><th>John</th><th>Wife(s)</th><th>Key doc — where original lives</th></tr></thead><tbody>
+<tr><td>Quidnessett John — Subject — Survived war, retained land to give sons 1682/5</td><td>Joan/e — Mar 24 1681/2 + May 19 1682 only — Sr death before Sep 25 1685 PROVEN via Edward deed — NK Land Evidence Sep 25 1685</td><td>1672 Fones #90 — NK Vol 1 pp.22-23 — NK Vault + RI State Archives — 1682 x2 — SK Vol IV + NK Vol 1 — 1685 Edward — NK Vol</td></tr>
+<tr><td>Surgeon John (Warwick) — Distinct DNA per Greene DNA project — supports firewall</td><td>1) Joane Tattersall 1619-~1635, 2) Alice Beggarly d.1643/44, 3) Phillippa after 1668</td><td>Winthrop Papers — MHS Boston — Will 1658 — Warwick Town Hall</td></tr>
+<tr><td>Newark John (NJ)</td><td>Documented NJ</td><td>Newark NJ records — Newark Town Hall</td></tr>
+<tr><td>Stonewall John d.1676</td><td>Nawham d.July 2 1676</td><td>Roger Williams letter Apr 1 1676 — RIHS Library</td></tr>
+<tr><td>John 5 East Greenwich + Mary Jeffery confusion</td><td>Abigail Wardwell; Mary Jeffery “sometimes wife to John Greene” per father will</td><td>East Greenwich Town Hall + Jeffery will — check which John — distinct from Quidnessett Joan</td></tr>
+<tr><td>John Greene Jr? — Hypothesis per 1688 continuity — same kin group Womphoage, Ompamont, Quanuske, Mommocke</td><td>Unknown</td><td>1688 Devil's Purchase — NK Land Evidence pp.20-21 — NK Vault + RI State Archives — need verbatim check for "Jr" — image: /images/1688-devilspurchase.jpg — if Sr dead Sep 25 1685, this is probable Jr</td></tr>
 </tbody></table>
+<div class="note-box info"><strong>Greene DNA Project — supports firewall:</strong> Greene DNA project suggests John Greene of Quidnessett is NOT same DNA thread as Surgeon John of Warwick — possibly Irish/Scots lineage — keep focus on Joan, but supports distinct men. Source: <a href="https://www.familytreedna.com/public/Green?iframe=ydna-results-overview" target="_blank">FamilyTreeDNA Green project →</a></div>
 </section>
 
 <section class="section" id="pressure">
-<div class="section-title">📦 Pressure the Archive — Why aren't they preserved?</div>
-<h2>Are we protecting our children's history?</h2>
-<p class="lead">95% of deeds like Joan's have never been scanned. Every request you send is logged as public demand. Archives prioritize what the public asks for.</p>
+<div class="section-title">📦 Pressure the Archive — Why aren't they preserved? — Functional buttons</div>
+<h2>Why should we have to go to a facility to check out a digital item to research what's available?</h2>
+<p class="lead">We have iPhones that shoot 48 megapixels. A 600 DPI scan answers the question "What does the mark look like?" A transcript with "[illegible]" does not. Even an iPhone can record history and answer questions in black and white. So why aren't they preserved?</p>
+<p>Archives log public requests. 10 emails for the same deed = preservation priority. Every request is a vote. Your email matters — and these buttons give archivists exact citations so they can pull in 5 minutes, not 5 hours. That is how we help without burning bridges.</p>
 
-<div class="request-box"><strong>1. May 19, 1682 Pawtuxet — Joan's consent — UNPULLED</strong><br>RI State Archives — NK Land Evid Vol 1 — May 19 1682<br><a href="mailto:reference@sos.ri.gov?subject=Request:%20May%2019%201682%20Greene%20to%20Carpenter">📧 Email Archives →</a></div>
-<div class="request-box"><strong>2. Sep 25, 1685 Edward Greene — verbatim needed</strong><br>Does it mention Joan? Settles whether Joan death proven by 1685 or still UNRESOLVED.<br><a href="mailto:reference@sos.ri.gov?subject=Request:%20Sep%2025%201685%20Edward%20Greene%20verbatim">📧 Request Verbatim →</a></div>
-<div class="request-box"><strong>3. Alternate copy 1672 Fones top — recover Anashuecot head</strong><br>Current p.22 top torn — need intact copy<br><a href="mailto:reference@rihs.org?subject=Request:%20Alternate%20copy%201672%20Fones%20Deed">📧 Request Alternate 1672 →</a></div>
-<div class="request-box"><strong>4. 1688 Devil's Purchase verbatim — is it Jr?</strong><br>Same kin group as 1672, 16 years later, after John Sr dead — probable Jr.<br><a href="mailto:reference@sos.ri.gov?subject=Request:%20May%2025%201688%20Devil%27s%20Purchase%20verbatim">📧 Request 1688 Verbatim →</a></div>
+<!-- REQUEST 1 -->
+<div class="request-box" style="border-color:var(--warning);">
+<strong>Request 1: May 19, 1682 Pawtuxet — Joan's free & voluntary consent — UNPULLED — Highest Priority</strong>
+<div class="loc"><strong>Where original lives:</strong> RI State Archives, 33 Broad St, Providence, RI 02903 — statearchives@sos.ri.gov + reference@sos.ri.gov — (401) 222-2353 + North Kingstown Town Hall Vault, 80 Boston Neck Rd, NK, RI 02852 — NK Land Evidence Vol 1 — May 19, 1682 — John & Joan Greene to William Carpenter, Pawtuxet, witnesses John Wickes & Samuel Gorton<br><strong>Image tie:</strong> NONE YET — UNPULLED — previous link to 1688-devilspurchase.jpg was wrong deed (wrong year, wrong tract) — removed — this request will create first image for /images/1682_pawtuxet_carpenter_consent.jpg</div>
+<div class="btn-row">
+<a class="btn primary" href="mailto:statearchives@sos.ri.gov?cc=reference@sos.ri.gov&subject=Request%3A%20May%2019%201682%20Greene%20to%20Carpenter%20Pawtuxet%20600DPI&body=Hello%20RI%20State%20Archives%2C%0A%0AI%20request%20a%20600%20DPI%20color%20scan%20of%20North%20Kingstown%20Land%20Evidence%20Vol%201%2C%20deed%20dated%20May%2019%2C%201682%2C%20grantors%20John%20Greene%20and%20Joan%20his%20wife%2C%20grantee%20William%20Carpenter%2C%20Pawtuxet%20tract%2C%20witnesses%20John%20Wickes%20and%20Samuel%20Gorton.%0A%0ALocation%3A%20NK%20Town%20Hall%20Vault%20%2B%20RI%20State%20Archives%20microfilm%20NK%20Vol%201.%0A%0APurpose%3A%20Public%20research%20library%20The%20Joan%20Archive%20%28open%20access%2C%20non-commercial%29.%20Will%20credit%20source.%0A%0APlease%20advise%20fee.%20Thank%20you.%0A">📧 Email Archive — 1 Click</a>
+<a class="btn sec" onclick="copyCitation('North Kingstown Land Evidence Vol 1, May 19 1682, John & Joan Greene to William Carpenter, Pawtuxet, witnesses John Wickes & Samuel Gorton')">📋 Copy Citation</a>
+<a class="btn sec" href="https://www.sos.ri.gov/divisions/state-archives/request" target="_blank">🌐 Official Form</a>
+</div>
+</div>
+
+<!-- REQUEST 2 -->
+<div class="request-box">
+<strong>Request 2: Sep 25, 1685 Edward Greene — verbatim — does it mention Joan? — settles death question</strong>
+<div class="loc"><strong>Where original lives:</strong> NK Land Evidence — Sep 25, 1685 — Edward Greene deed referencing John Greene deceased — RI State Archives microfilm NK + NK Town Hall Vault — Need verbatim whether Joan mentioned — Previous claim "Joan PROVEN deceased by Sep 25 1685" was overstated — corrected — John Sr PROVEN deceased only — <strong>Image tie:</strong> /images/1685_edward_greene_deed.jpg — needs verbatim pull</div>
+<div class="btn-row">
+<a class="btn primary" href="mailto:statearchives@sos.ri.gov?cc=reference@sos.ri.gov&subject=Request%3A%20Sep%2025%201685%20Edward%20Greene%20verbatim%20does%20it%20mention%20Joan&body=Hello%20RI%20State%20Archives%2C%0A%0AI%20request%20verbatim%20and%20600%20DPI%20scan%20of%20North%20Kingstown%20Land%20Evidence%2C%20Sep%2025%2C%201685%2C%20Edward%20Greene%20deed%20referencing%20John%20Greene%20deceased.%20Need%20to%20check%20whether%20Joan%20his%20mother%20is%20mentioned%20as%20deceased%20or%20living.%20This%20settles%20whether%20Joan%20death%20is%20proven%20by%201685.%0A%0ALocation%3A%20NK%20Land%20Evidence%20Sep%2025%201685%20Edward%20Greene.%0A%0APurpose%3A%20The%20Joan%20Archive%20open%20access.%20Thank%20you.%0A">📧 Email Archive — Request Sep 25 1685</a>
+<a class="btn sec" onclick="copyCitation('NK Land Evidence Sep 25 1685 Edward Greene deed referencing John Greene deceased - need verbatim does it mention Joan')">📋 Copy Citation</a>
+<a class="btn sec" href="https://www.sos.ri.gov/divisions/state-archives/request" target="_blank">🌐 Official Form</a>
+</div>
+</div>
+
+<!-- REQUEST 3 -->
+<div class="request-box">
+<strong>Request 3: Alternate copy 1672 Fones — Top torn — Need intact copy to recover Anashuecot head/mark</strong>
+<div class="loc"><strong>Where original lives:</strong> RI Historical Society Library, 121 Hope St, Providence, RI 02906 — reference@rihs.org — Fones Family Papers — Fones Record — plus NK Town Hall Vault NK Land Evidence Vol 1 pp.22-23 — current p.22 top torn, need intact copy — Rocky Mountain transcript UNVERIFIED — <strong>Image tie:</strong> /images/1672_scan_p22_kin_cluster.jpg (your 1687.jpg — Tier 1 — head torn, Tocomiquian line, Mommocke mark visible) — Ties to SignaturesFones20.jpg + Heire Proper + Absolom cluster</div>
+<div class="btn-row">
+<a class="btn primary" href="mailto:reference@rihs.org?cc=statearchives@sos.ri.gov&subject=Request%3A%20Alternate%20copy%201672%20Fones%20Purchase%20Deed%2090%20pp.22-23&body=Hello%20RIHS%20Reference%2C%0A%0AI%20request%20alternate%20copy%20of%201672%20Fones%20Purchase%20Deed%2090%2C%20grantor%20Anashuecot%20%28Awassecouse%2C%20Awashowet%29%2C%20grantees%20John%20Greene%2C%20Henry%20Tibbitts%2C%20John%20Fones.%20Current%20copy%20NK%20Land%20Evidence%20Vol%201%20pp.22-23%20has%20torn%20header%20where%20Anashuecot%20mark%20would%20be.%20Need%20intact%20copy%20to%20recover%20head%20and%20mark.%0A%0ALocation%3A%20RIHS%20Fones%20Family%20Papers%20%2B%20NK%20Town%20Hall%20Vault%20NK%20Vol%201%20pp.22-23.%0A%0APurpose%3A%20The%20Joan%20Archive%20open%20access.%20Thank%20you.%0A">📧 Email RIHS — Request Alternate 1672</a>
+<a class="btn sec" onclick="copyCitation('Fones Purchase Deed 90 1672 Anashuecot Awassecouse - alternate copy needed top torn NK Vol 1 pp22-23 - RIHS Fones Family Papers')">📋 Copy Citation</a>
+<a class="btn sec" href="https://www.rihs.org/research/requests/" target="_blank">🌐 RIHS Form</a>
+</div>
+</div>
+
+<!-- REQUEST 4 -->
+<div class="request-box">
+<strong>Request 4: Hough 1858 pp.173-191 — CRITICAL — Court Martial + 1688 Devil's Purchase Jr check</strong>
+<div class="loc"><strong>Where originals live:</strong> Brown University Library, Hay Library + RI State Archives — Hough 1858 Narrative of Causes pp.173-191 — Newport Court Martial Aug 24 1676 — John Greene appears — Also Devil's Purchase 1688 pp.20-21 — Womphoage, Ompamont, Quanuske, Mommocke + John Greene — need verbatim whether Jr — <strong>Image tie:</strong> /images/1688-devilspurchase.jpg (Image 19 of 444) — same kin group as 1672 — proves continuity after war — Ties to 1672_scan_p22_kin_cluster.jpg</div>
+<div class="btn-row">
+<a class="btn primary" href="mailto:statearchives@sos.ri.gov?cc=reference@sos.ri.gov&subject=Request%3A%20Hough%201858%20pp.173-191%20plus%20Devils%20Purchase%201688%20Jr%20check&body=Hello%20RI%20State%20Archives%2C%0A%0AI%20request%202%20items%3A%0A%0A1%29%20Hough%201858%20Narrative%20of%20Causes%20pp.173-191%20-%20Newport%20Court%20Martial%20Aug%2024%201676%20-%20John%20Greene%20intervention%20defending%20Native%20allies.%0A%0A2%29%20NK%20Land%20Evidence%20Devils%20Purchase%201688%20pp.20-21%20-%20grantors%20Womphoage%2C%20Ompamont%2C%20Quanuske%2C%20Mommocke%2C%20grantee%20John%20Greene%20-%20need%20to%20check%20whether%20grantee%20is%20John%20Greene%20Jr%20or%20references%20John%20Greene%20deceased%20%28tests%20Jr%20hypothesis%20after%20Sr%20death%20Sep%2025%201685%29.%0A%0APurpose%3A%20The%20Joan%20Archive%20open%20access.%20Thank%20you.%0A">📧 Email Archive — Request Hough + 1688</a>
+<a class="btn sec" onclick="copyCitation('Hough 1858 pp173-191 Newport Court Martial Aug 24 1676 John Greene + Devils Purchase 1688 pp20-21 Jr check - same kin group Womphoage Ompamont Quanuske Mommocke')">📋 Copy Citation</a>
+<a class="btn sec" href="https://www.sos.ri.gov/divisions/state-archives/request" target="_blank">🌐 Official Form</a>
+</div>
+</div>
+
+<div class="note-box verified"><strong>How you know it worked:</strong> You will get an auto-reply from RI State Archives in 1-2 days with fee ($0.50/page typical). Even if you don't pay, the request is logged as public demand. Forward receipt to <a href="mailto:lemuwah@gmail.com">lemuwah@gmail.com</a> — I log as "Requested X times — last: [date]" to show demand.</div>
+</section>
+
+<section class="section" id="digitize">
+<div class="section-title">📱 How you can help digitize — Even an iPhone can record history</div>
+<h2>What can we do to restore documents to help digitize and make available to everyone?</h2>
+<p class="lead">You don't need a $10,000 scanner. You need a phone, a flat surface, and 5 minutes. That is how we answer questions in black and white.</p>
+
+<div class="card-grid">
+<div class="card"><h3>📱 iPhone best practice — answers questions in black and white</h3><p><strong>1.</strong> Flat, no shadow, natural light near window — no flash. <strong>2.</strong> Ruler for scale at bottom. <strong>3.</strong> 2 angles: straight overhead + 45-degree for watermark/seal. <strong>4.</strong> Include volume + page number in frame. <strong>5.</strong> Upload original — don't crop — we can enhance. <strong>6.</strong> Name: Town_Vol_Page_Year_Grantor_Grantee.jpg — e.g., NK_Vol1_p22_1672_Anashuecot_Greene.jpg</p></div>
+<div class="card"><h3>🔓 FOIA should cover history that built the country</h3><p>Deeds 1672-1688 are public domain — no copyright, no privacy, no redaction needed. Freedom of Information Act should cover the very history that built the country. No more "redacted" or "unauthorized clearance for the truth" for 350-year-old public land records. We want to know where we come from. Public land records should be public — online, searchable, free — not behind a paywall.</p></div>
+<div class="card"><h3>💾 What we do with your scan — open access, no paywall</h3><p>We host in /images/ on GitHub raw — permanent, free, no login, no subscription, no ads — link every PROVEN badge to image so others can verify. We credit source: "RI State Archives — NK Vol 1 — p.22 — scanned by [your name if you want]." We never sell. We publish updates as we pull them so it looks good and works.</p></div>
+<div class="card"><h3>✉️ Have family papers? Attic find? Have a conversation</h3><p>Family papers 1670-1690 may still exist in attics in North Kingstown, East Greenwich, South Kingstown. If you have deeds, letters, Bible records mentioning Greene, Smith, Fones, Tibbitts, Wickes, Gorton, Anashuecot, Awassecouse, Womphoage, Mommocke — photograph and email <a href="mailto:lemuwah@gmail.com">lemuwah@gmail.com</a> — I will transcribe and host openly with your permission. Let's talk through it — relatable, functional.</p></div>
+</div>
+
+<div class="note-box verified"><strong>Our promise — informational with emotional why, not feisty:</strong> We want to help archivists, not fight them. Archivists are underfunded. Every request you send creates logged demand they use to justify digitization grants. Requesting is helping. This site gives exact citations so staff can pull in 5 minutes, not 5 hours. That is how we restore documents — together. Direct: <a href="mailto:lemuwah@gmail.com">lemuwah@gmail.com</a> — I read every email.</div>
+</section>
+
+<section class="section" id="contact">
+<div class="section-title">✉️ Contact — Have a conversation directly</div>
+<h2>Too many changes? Let's talk through them.</h2>
+<p class="lead">We publish updates as we do them so it looks good and works. Everything functional. All links working and reference where original deed can be found — don't just take our word for it.</p>
+<p>Direct email: <a href="mailto:lemuwah@gmail.com">lemuwah@gmail.com</a> — I read every email. If you are a descendant, archivist, researcher, or you have a deed in your attic, reach out. If you requested a deed, tell me — I will log it as "Requested X times — last: [date]" to show demand.</p>
+<p>YouTube: <a href="https://www.youtube.com/@lemuwah" target="_blank">@lemuwah</a> — history hunts, scanning trips, how we keep history from rotting — personality: curious, hands-on, making it accessible.</p>
+<p>GitHub: <a href="https://github.com/lemuwah/joan-archive" target="_blank">lemuwah/joan-archive</a> — all 55 images, open RED threads, contamination index, and this site — open access, no paywall — FOIA should cover history that built the country — no more redacted truth behind paywalls.</p>
+
+<div class="request-box">
+<strong>💬 Want to help right now? — 3 steps, functional</strong><br>
+1. Click one request button above — sends exact citation to archive — creates logged demand — clipboard fallback if mail app fails + official form link.<br>
+2. Email <a href="mailto:lemuwah@gmail.com">lemuwah@gmail.com</a> — "I requested May 19 1682" — I will log it publicly.<br>
+3. If you have an iPhone and a deed — photograph and send — we will host — even iPhone can record history and answer questions in black and white.
+</div>
 </section>
 
 <section class="section" id="contamination">
-<div class="section-title">Contamination Index</div>
-<h2>Errors that became facts</h2>
+<div class="section-title">Contamination Index — How errors become facts</div>
+<h2>Errors that became facts through repetition</h2>
 <div class="card-grid">
-<div class="card"><h3>La Mance poison</h3><p>Assigned “Joan Beggarly” zero sources. Still in trees. Impossible.</p><span class="badge rejected">Tier 4 — INVALIDATED</span></div>
-<div class="card" style="border:2px solid var(--positive);"><h3>Death-date — CORRECTED per your catch</h3><p>Previous: “Joan PROVEN deceased before Sep 25 1685” — OVERSTATED. PROVEN: John Sr deceased before Sep 25 1685. Joan death = UNRESOLVED — last May 19 1682.</p><span class="badge caution">CORRECTED — John PROVEN | Joan UNRESOLVED</span></div>
-<div class="card"><h3>Bow-and-arrow — CORRECTED via scan</h3><p>Mark visible = Mommocke, not Anashuecot. Anashuecot head missing. No primary shows Anashuecot bow-and-arrow.</p><span class="badge rejected">NULL — Page loss</span></div>
+<div class="card" style="border:2px solid var(--danger);"><h3>Trap 1: La Mance poison — Tier 4 INVALIDATED</h3><p>La Mance (1904) assigned "Joan Beggarly" with NO cited primary sources. Still in 10k trees. Chronologically impossible — Alice Beggarly died Jan 1643/44, 38 years before Joan 1682. Image: /images/leManceLaw.jpg — Location: La Mance 1904 — RIHS Library — No sources cited — <span class="badge rejected">INVALIDATED</span></p></div>
+<div class="card" style="border:2px solid var(--positive);"><h3>Trap 5: Death-date — CORRECTED per your catch</h3><p>Previous claim "Joan PROVEN deceased before Sep 25 1685" — OVERSTATED. PROVEN: John Sr deceased before Sep 25 1685 via Edward deed — NK Land Evidence Sep 25 1685 — Edward Greene referencing John Greene deceased — Location: NK Vault + RI State Archives — Joan death UNRESOLVED — last May 19 1682 — need Edward verbatim does it mention Joan? — <span class="badge caution">CORRECTED — John Sr PROVEN | Joan UNRESOLVED</span></p></div>
+<div class="card"><h3>Trap 7: Bow-and-arrow — NULL — page loss, not proof</h3><p>Mark visible p.22 = Mommocke, NOT Anashuecot. Anashuecot head missing/damaged — torn — no primary shows Anashuecot bow-and-arrow. Origin Kettelle Papers Box 2; RIHS Mss 1210 — isolated compilation — no primary. Rocky Mountain transcript adding "his marke" for Anashuecot = UNVERIFIED layer — zero backup because header gone. — <span class="badge rejected">NULL — Page loss</span></p></div>
+<div class="card"><h3>Trap 8: Tocomminon-as-father — Open thread per Law 3 — moved off homepage</h3><p>p.22 proves Tocomiquian father of Awassecouse (=Anashuecot). Does NOT prove father of Joan until Joan=Anashuecot proven — still PROBABLE 65-73% per packet v4.2 — Moved off homepage per Law 3 to avoid bold claim — see /theory/open-contradictions/tocomiquian-guardianship.md — Location: NK Vol 1 pp.22-23 — image: /images/1672_scan_p22_kin_cluster.jpg — lower half</p><span class="badge hypothesis">OPEN — Researcher notes only</span></div>
 </div>
 </section>
 
 <section class="section" id="unknown">
-<div class="section-title">What We Don't Know</div>
+<div class="section-title">What We Don't Know — Honest Gaps — Updates published as we pull them</div>
+<h2>We don't hide gaps. We list them so you can help fill them.</h2>
 <div class="card-grid">
-<div class="card" style="border:2px solid var(--warning);"><h3>When did Joan die?</h3><p>Last appearance May 19, 1682. Previous PROVEN before Sep 25 1685 was wrong — that proves John Sr dead, not Joan. Need Edward deed verbatim.</p><span class="badge caution">UNRESOLVED</span></div>
-<div class="card"><h3>1688 John Greene — Jr?</h3><p>Same kin group as 1672: Womphoage, Ompamont, Quanuske, Mommocke. If Sr dead 1685, 1688 grantee likely Jr.</p><span class="badge hypothesis">PROBABLE Jr</span></div>
-<div class="card"><h3>May 19 1682 Pawtuxet original</h3><p>Still UNPULLED — high priority — previous link to 1688 Devil's was error.</p><span class="badge caution">UNPULLED</span></div>
+<div class="card" style="border:2px solid var(--warning);"><h3>❓ When did Joan die? — UNRESOLVED</h3><p>Last appearance May 19, 1682 — Pawtuxet — NK Land Evidence Vol 1 — Need Edward Greene Sep 25, 1685 verbatim — does it mention Joan? Location: NK Vault + RI State Archives microfilm — previous PROVEN before Sep 25 1685 was wrong — that proves John Sr dead, not Joan.</p><span class="badge caution">UNRESOLVED — Last May 19 1682</span></div>
+<div class="card"><h3>❓ 1688 John Greene — Jr?</h3><p>Same kin group as 1672: Womphoage, Ompamont, Quanuske, Mommocke have both signed formerly — Image 19 of 444 — pp.20-21 — NK Land Evidence Devil's Purchase 1688 — If Sr dead Sep 25 1685, 1688 grantee likely Jr — Need verbatim whether deed says "Jr" or "son of John Greene deceased" — Location: NK Vault + RI State Archives</p><span class="badge hypothesis">PROBABLE Jr — Needs verbatim</span></div>
+<div class="card"><h3>❓ May 19 1682 Pawtuxet original — UNPULLED</h3><p>NK Land Evidence Vol 1 — May 19, 1682 — John & Joan Greene to William Carpenter — witnesses Wickes & Gorton — NK Town Hall Vault + RI State Archives microfilm — Previous link to 1688-devilspurchase.jpg was error — wrong year, wrong tract — removed.</p><span class="badge caution">UNPULLED — High priority</span></div>
+<div class="card"><h3>❓ Anashuecot mark + gender — page loss</h3><p>NK Land Evidence Vol 1 pp.22-23 top torn — need alternate copy — RIHS Fones Record — plus Hough 1858 pp.173-191 — CRITICAL — Newport Court Martial Aug 24 1676 — Brown Library + RI State Archives</p><span class="badge caution">Page loss — needs alternate copy</span></div>
 </div>
 </section>
 
 <footer class="site-footer">
-<p>The Joan Archive — Open access research library.</p>
-<p>Every PROVEN links to an image. Every UNPULLED has a request button. 95% of archives are not digitized — your request creates demand.</p>
-<p style="margin-top:8px;">Public Site v1.3 Public — Includes death-date correction, Phillippa fix, Pawtuxet UNPULLED flag, 1688 continuity as Jr hypothesis, Tocomiquian moved to internal thread per Law 3. Last verified: 19 July 2026</p>
-<p style="margin-top:8px;"><a href="https://github.com/lemuwah/joan-archive">GitHub</a> · <a href="/theory/open-contradictions/">Open RED Threads</a> · <a href="https://phys.org/news/2024-04-freedom-extent-archives-accessible.html">5% source</a></p>
+<p>The Joan Archive — Open access research library. History belongs to everyone. Access to the evidence should too.</p>
+<p>55 images — Base: https://raw.githubusercontent.com/lemuwah/joan-archive/main/images/ — All in one folder per README 18 July 2026<br>Contact: <a href="mailto:lemuwah@gmail.com">lemuwah@gmail.com</a> · YouTube: <a href="https://www.youtube.com/@lemuwah" target="_blank">@lemuwah</a> · GitHub: <a href="https://github.com/lemuwah/joan-archive" target="_blank">joan-archive</a></p>
+<p style="margin-top:8px;">Research Packet v4.2 March 2026 — 5-lane convergence 65-73% — Public Site v1.3 Functional — Every PROVEN links to image + tells you where original lives so you don't have to take our word for it — FOIA should cover history that built the country — No more redacted truth behind paywalls — We publish updates as we pull them so it looks good and works.<br>Last verified: 19 July 2026</p>
 </footer>
 </main>
 </div>
-<script>function setActive(el){document.querySelectorAll('.nav-item').forEach(n=>n.classList.remove('active'));el.classList.add('active');if(window.innerWidth<=900)document.querySelector('.sidebar').classList.remove('open');}</script>
+
+<script>
+function copyCitation(text){
+  if(navigator.clipboard && window.isSecureContext){
+    navigator.clipboard.writeText(text).then(()=>{showToast('Citation copied! Paste into archive form:\n' + text);}).catch(()=>{fallbackCopy(text);});
+  } else {
+    fallbackCopy(text);
+  }
+}
+function fallbackCopy(text){
+  const ta=document.createElement('textarea');
+  ta.value=text; ta.style.position='fixed'; ta.style.opacity='0';
+  document.body.appendChild(ta); ta.select();
+  try{document.execCommand('copy'); showToast('Citation copied! Paste into archive form');}catch(e){prompt('Copy this citation (Ctrl+C):', text);}
+  document.body.removeChild(ta);
+}
+function showToast(msg){
+  const t=document.getElementById('toast');
+  t.textContent=msg; t.style.display='block';
+  setTimeout(()=>{t.style.display='none';}, 4000);
+}
+function setActive(el){
+  document.querySelectorAll('.nav-item').forEach(n=>n.classList.remove('active'));
+  el.classList.add('active');
+  if(window.innerWidth<=900) document.querySelector('.sidebar').classList.remove('open');
+}
+const sections=document.querySelectorAll('.section, .hero');
+window.addEventListener('scroll',()=>{
+  let cur='';
+  sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120) cur=s.id;});
+  if(cur) document.querySelectorAll('.nav-item').forEach(a=>{a.classList.remove('active'); if(a.getAttribute('href')==='#'+cur) a.classList.add('active');});
+});
+// Add feedback on primary buttons
+document.querySelectorAll('a.btn.primary').forEach(btn=>{
+  btn.addEventListener('click', function(){
+    const original=this.innerHTML;
+    this.innerHTML='✓ Opening email... check mail app';
+    setTimeout(()=>{this.innerHTML=original;}, 2500);
+    showToast('Opening email app — if nothing happens, use Copy Citation + Official Form — both count as demand!');
+  });
+});
+</script>
 </body>
 </html>
