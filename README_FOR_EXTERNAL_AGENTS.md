@@ -1,4 +1,4 @@
-# External AI Agent Guide
+# External AI Agent Guide https://github.com/lemuwah/joan-archive/tree/main
 **Purpose:**  
 This document explains how any AI model (Claude, Gemini, Kimi, Llama, Grok, etc.) can operate inside the Joan / Anashuecot lineage research organism without breaking structure, logic, or workflow.
 
