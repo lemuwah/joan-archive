@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transparency Merge Lab — Joan Archive</title>
+<style>
+:root { --bg:#0a0a0f; --surface:#111118; --surface-raised:#1a1a24; --border:#2a2a3a; --text-primary:#e8e6e1; --text-secondary:#a0a0b0; --accent:#c9a96e; --accent-glow:#c9a96e15; }
+body { font-family:-apple-system, sans-serif; background:var(--bg); color:var(--text-primary); padding:24px; line-height:1.6; }
+a { color:var(--accent); }
+.card { border:1px solid var(--border); border-radius:10px; padding:20px; background:var(--surface-raised); margin:16px 0; }
+button { padding:8px 16px; border-radius:6px; border:none; cursor:pointer; font-weight:600; }
+#mergeCanvas { width:100%; max-width:900px; border:1px dashed var(--border); border-radius:8px; background:repeating-conic-gradient(#111118 0% 25%, #1a1a24 0% 50%) 0 0 / 20px 20px; }
+label { display:inline-flex; align-items:center; gap:6px; font-size:11px; background:var(--surface); border:1px solid var(--border); padding:4px 8px; border-radius:6px; cursor:pointer; margin:4px; }
+</style>
+</head>
+<body>
+<h1>Transparency Merge Lab</h1>
+<p>Compare deeds with adjustable transparency. Background exports as transparent PNG. <a href="index.html">← Back to Archive</a></p>
+<p style="font-size:12px; color:#a0a0b0;">Tip: If images fail to merge, it's GitHub CORS. Use Firefox or download images first, then drag-and-drop (coming next). For now this uses <code>raw.githubusercontent.com</code> — some browsers block cross-origin canvas. If blank, right-click image → Save, then use local compare.</p>
+<div class="card">
+<div id="merge-controls" style="display:flex; flex-wrap:wrap;"></div>
+<div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
+<button id="mergeBtn" style="background:var(--accent); color:var(--bg);">Merge Selected → Transparent Canvas</button>
+<button id="clearBtn" style="background:var(--surface); color:var(--text-primary); border:1px solid var(--border);">Clear</button>
+</div>
+<canvas id="mergeCanvas" width="900" height="600" style="margin-top:20px;"></canvas>
+<div id="mergeList" style="margin-top:12px; font-size:11px; color:#a0a0b0;"></div>
+</div>
+<script>
+const IMG_BASE = 'https://raw.githubusercontent.com/lemuwah/joan-archive/main/images/';
+const galleryFiles = ["fones-purchase-1672.jpg","1672-anashuecot-close.jpg","1672-signatures.jpg","1682.jpg","1682-2.jpg","john-and-joane.jpg","johntodaniel.jpg","awawsunks-1674.jpg","bay_map.jpg","Plat_of_Quidnesett.jpg","1677-east-greenwich.jpg","magnus.jpg","jobgreen.jpg","fones-rocky-david.jpg","1678_council_order_holden_greene_forty-years_RI_records_62-63.jpg","1679_john_greene_certificate_narragansett_RI_records_56-57_roger_williams_testimony.jpg","leManceLaw.jpg","1937_updike_p19_overseer_thesis_john_greene_not_warwick.jpg"];
+const mergeControls = document.getElementById('merge-controls');
+const mergeList = document.getElementById('mergeList');
+const canvas = document.getElementById('mergeCanvas');
+const ctx = canvas.getContext('2d');
+let selected = [];
+mergeControls.innerHTML = galleryFiles.map(f => `<label><input type="checkbox" data-file="${f}" onchange="toggle(this)"> ${f.slice(0,22)} <input type="range" min="0" max="100" value="70" data-op="${f}" oninput="setOp(this)" style="width:50px"></label>`).join('');
+window.toggle = el => { const file=el.dataset.file; if(el.checked){ if(!selected.find(s=>s.file===file)) selected.push({file, opacity:0.7}); } else { selected=selected.filter(s=>s.file!==file); } render(); };
+window.setOp = el => { const it=selected.find(s=>s.file===el.dataset.op); if(it) it.opacity=parseInt(el.value)/100; };
+function render(){ mergeList.textContent = selected.length ? 'Selected: '+selected.map(s=>s.file).join(', ') : 'Select 2-4 images'; }
+document.getElementById('mergeBtn').onclick = async () => {
+  if(selected.length<1) return alert('Select images');
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  for(const sel of selected){
+    const img=new Image(); img.crossOrigin='anonymous';
+    await new Promise(r=>{ img.onload=r; img.onerror=r; img.src=IMG_BASE+sel.file; });
+    ctx.globalAlpha=sel.opacity;
+    const scale=Math.min(canvas.width/img.width, canvas.height/img.height);
+    const w=img.width*scale, h=img.height*scale;
+    ctx.drawImage(img,(canvas.width-w)/2,(canvas.height-h)/2,w,h);
+  }
+  ctx.globalAlpha=1;
+};
+document.getElementById('clearBtn').onclick = () => { ctx.clearRect(0,0,canvas.width,canvas.height); selected=[]; document.querySelectorAll('#merge-controls input[type=checkbox]').forEach(c=>c.checked=false); render(); };
+render();
+</script>
+</body>
+</html>
