@@ -4,54 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title | default: site.title }}</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <script src="https://cdn.tailwindcss.com"></script>
- <style>
-  body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #070A13; color: #E2E8F0; line-height: 1.7; }
-  .container { max-width: 800px; margin: 0 auto; padding: 3rem 1.5rem; }
-  
-  h1 { font-family: 'Cinzel', serif; font-weight: 900; color: #F59E0B; font-size: 2.25rem; margin-bottom: 1.5rem; letter-spacing: 0.02em; }
-  h2 { font-family: 'Cinzel', serif; font-weight: 700; color: #E2E8F0; font-size: 1.25rem; border-bottom: 1px solid #1E293B; padding-bottom: 0.5rem; margin-top: 2.5rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em; }
-  h3 { font-family: 'Cinzel', serif; font-weight: 500; color: #CBD5E1; font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.75rem; }
-  
-  p { margin-bottom: 1rem; max-width: 70ch; }
-  ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem; }
-  li { margin-bottom: 0.5rem; }
-  
-  blockquote { border-left: 3px solid #F59E0B; padding-left: 1.25rem; margin: 1.5rem 0; color: #94A3B8; font-style: italic; font-size: 1.1rem; }
-  
-  a { color: #F59E0B; text-decoration: none; }
-  a:hover { color: #FBBF24; text-decoration: underline; }
-  
-  strong { color: #F59E0B; font-weight: 600; }
-  em { color: #CBD5E1; }
-  
-  code { background: #1E293B; padding: 0.125rem 0.35rem; border-radius: 0.25rem; font-family: 'JetBrains Mono', monospace; font-size: 0.9em; }
-  
-  img { max-width: 100%; border: 1px solid #334155; border-radius: 0.5rem; margin: 1.5rem 0; display: block; }
-  
-  .btn { display: inline-block; padding: 0.875rem 1.75rem; background: #D97706; color: #000; font-weight: 700; border-radius: 0.5rem; text-decoration: none; margin-bottom: 2rem; }
-  .btn:hover { background: #F59E0B; }
-  
-  hr { border: none; border-top: 1px solid #1E293B; margin: 2rem 0; }
-</style>
+
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #070A13; color: #E2E8F0; line-height: 1.7; display: flex; }
+    .sidebar { width: 260px; background: #0F172A; height: 100vh; position: fixed; left: 0; top: 0; overflow-y: auto; padding: 1rem; border-right: 1px solid #1E293B; }
+    .content { margin-left: 260px; width: 100%; }
+    .sidebar-toggle { position: fixed; top: 1rem; left: 1rem; z-index: 500; background: #F59E0B; color: #000; padding: 0.5rem 0.75rem; border-radius: 0.25rem; font-weight: bold; }
+
+    /* Collapsed state */
+    .sidebar-collapsed .sidebar { width: 0; padding: 0; overflow: hidden; }
+    .sidebar-collapsed .content { margin-left: 0; }
+
+    .container { max-width: 800px; margin: 0 auto; padding: 3rem 1.5rem; }
+
+    h1 { font-family: 'Cinzel', serif; font-weight: 900; color: #F59E0B; font-size: 2.25rem; margin-bottom: 1.5rem; letter-spacing: 0.02em; }
+    h2 { font-family: 'Cinzel', serif; font-weight: 700; color: #E2E8F0; font-size: 1.25rem; border-bottom: 1px solid #1E293B; padding-bottom: 0.5rem; margin-top: 2.5rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    h3 { font-family: 'Cinzel', serif; font-weight: 500; color: #CBD5E1; font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.75rem; }
+
+    p { margin-bottom: 1rem; max-width: 70ch; }
+    ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem; }
+    li { margin-bottom: 0.5rem; }
+
+    blockquote { border-left: 3px solid #F59E0B; padding-left: 1.25rem; margin: 1.5rem 0; color: #94A3B8; font-style: italic; font-size: 1.1rem; }
+
+    a { color: #F59E0B; text-decoration: none; }
+    a:hover { color: #FBBF24; text-decoration: underline; }
+
+    strong { color: #F59E0B; font-weight: 600; }
+    em { color: #CBD5E1; }
+
+    code { background: #1E293B; padding: 0.125rem 0.35rem; border-radius: 0.25rem; font-family: 'JetBrains Mono', monospace; font-size: 0.9em; }
+
+    img { max-width: 100%; border: 1px solid #334155; border-radius: 0.5rem; margin: 1.5rem 0; display: block; }
+
+    .btn { display: inline-block; padding: 0.875rem 1.75rem; background: #D97706; color: #000; font-weight: 700; border-radius: 0.5rem; text-decoration: none; margin-bottom: 2rem; }
+    .btn:hover { background: #F59E0B; }
+
+    hr { border: none; border-top: 1px solid #1E293B; margin: 2rem 0; }
+  </style>
 </head>
+
 <body>
-   <div class="container">
-    {{ content }}
+
+  <button id="sidebar-toggle" class="sidebar-toggle">☰</button>
+
+  <div class="sidebar">
+    <!-- Add your navigation here -->
+    <h2 class="text-yellow-400 font-bold mb-4">Navigation</h2>
+    <a href="/" class="block mb-2">Home</a>
+    <a href="/primary_sources/" class="block mb-2">Primary Sources</a>
+    <a href="/NEGATIVE_LOG/" class="block mb-2">Negative Log</a>
+    <a href="/source_intake_queue/" class="block mb-2">Intake Queue</a>
   </div>
 
-  <div style="max-width: 800px; margin: 3rem auto 0 auto; padding: 0 1.5rem;">
-    <script src="https://utteranc.es/client.js"
-            repo="lemuwah/joan-lineage-theory"
-            issue-term="pathname"
-            theme="github-dark"
-            crossorigin="anonymous"
-            async>
-    </script>
+  <div class="content">
+    <div class="container">
+      {{ content }}
+    </div>
+
+    <div style="max-width: 800px; margin: 3rem auto 0 auto; padding: 0 1.5rem;">
+      <script src="https://utteranc.es/client.js"
+              repo="lemuwah/joan-lineage-theory"
+              issue-term="pathname"
+              theme="github-dark"
+              crossorigin="anonymous"
+              async>
+      </script>
+    </div>
   </div>
+
+  <script src="{{ '/assets/js/sidebar.js' | relative_url }}"></script>
 
 </body>
 </html>
