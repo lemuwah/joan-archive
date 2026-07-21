@@ -231,4 +231,23 @@ Easton, John. A Narrative of the Causes Which Led to Philip's Indian War, of 167
 Available via Internet Archive: A narrative of the causes which led to Philip's Indian war
 
 
-
+## What This Means for the Court Martial Pages (180–189)
+The Court Martial record is **not** the original Easton manuscript. It's a separate document that Hough bundled into his 1858 edition alongside Easton's narrative. The search results describe the book's contents as:
+"Introduction.--A relation of the Indian war by Mr. Easton of Rhode Island, 1675.--Papers relating to Philip's Indian war.--Record of a court martial held at Newport, R.I., in August 1676" 
+So the Court Martial record is "Papers relating to Philip's Indian war" — a distinct source Hough obtained and printed. Where did Hough get it?
+Unknown from search. Could be:
+Rhode Island State Archives
+Rhode Island Historical Society (they hold the published edition, call number E83.67 E19) 
+A private collection Hough accessed in the 1850s
+The same New York State Archives that held Easton's narrative
+What You Need to Do
+To find the original of the Court Martial record (the pages with John Green and Daniel Green), you need to chase Hough's sources. Options:
+Table
+Repository	What to Ask For
+New York State Archives	Hough's working papers, or the "Papers relating to Philip's Indian war" he used
+Rhode Island State Archives	Court Martial records, August 1676, Newport
+Rhode Island Historical Society	E83.67 E19 (they have the book, may have acquisition records showing Hough's source)
+Library of Congress	Rhode Island General Assembly Records MSS85753 (your 1677 document came from here — same series may hold 1676 Court Martial)
+The Hard Truth
+The original Easton manuscript (the 1675 "Relation") is not the document containing your John Green/Daniel Green reference. That reference is in the Court Martial record, which Hough appended to his edition. The Court Martial original may be lost, or it may be in Rhode Island archives under a different catalog entry.
+Hough's 1858 edition is currently your best source for the Court Martial text. If you want the original, you need to contact the repositories above and ask specifically for "Record of a court martial held at Newport, R.I., in August, 1676" — not the Easton narrative.
