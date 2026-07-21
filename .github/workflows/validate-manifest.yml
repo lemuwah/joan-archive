@@ -32,7 +32,6 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          # GitHub now defaults to Node 24; use it explicitly
           node-version: '24'
 
       - name: Run validation script
