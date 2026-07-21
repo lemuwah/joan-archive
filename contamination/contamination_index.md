@@ -59,6 +59,12 @@ This is a misreading of Narragansett leadership lists.
 
 ---
 
+### ❌ Claim: "Anashuecot at Dumb Boy Trial"
+**Status:** ⚫ NULL  
+**Why:** Gemini Fabrication, narrative smoothing documented in [transcript .md](https://github.com/lemuwah/joan-archive/blob/main/notes/hough_1858_court_martial_rough.md)
+
+---
+
 ### ❌ Claim: “Joan appears in the 1695 will.”
 **Status:** ⚫ NULL  
 **Why:** This is contamination from La Mance (1904), who fabricated Greene genealogy to fill gaps.
