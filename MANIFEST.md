@@ -51,7 +51,6 @@ greene-witness-1674-awawsucks-her-mark.jpg
 greene-witness-1674-awawsucks-her-marksearch.jpg  
 greenedeputy.jpg  
 greenesworn.jpg  
-james-1695.jfif  
 james1695.jpg  
 jobgreen.jpg  
 john-40-years.jpg  
