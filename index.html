@@ -47,8 +47,10 @@
     width: var(--sidebar-width); background: var(--surface); border-right: 1px solid var(--border);
     position: fixed; height: 100vh; overflow-y: auto; z-index: 200;
     display: flex; flex-direction: column;
+    transform: translateX(-100%);
     transition: transform 0.3s ease;
   }
+  .sidebar.open { transform: translateX(0); }
   .sidebar-header { padding: 24px 20px 16px; border-bottom: 1px solid var(--border); position: relative; }
   .sidebar-close {
     display: none;
@@ -94,7 +96,15 @@
   .tier-badge.unverified { background: var(--accent-dim); color: var(--accent); }
   .tier-card-mini p { font-size: 11px; color: var(--text-tertiary); line-height: 1.4; }
 
-  .main-content { margin-left: var(--sidebar-width); flex: 1; min-width: 0; }
+  .main-content { margin-left: 0; flex: 1; min-width: 0; transition: margin-left 0.3s ease; }
+  .main-content.sidebar-push { margin-left: var(--sidebar-width); }
+  .menu-toggle {
+    display: flex; align-items: center; gap: 6px;
+    position: fixed; top: 16px; left: 16px; z-index: 300;
+    background: var(--surface); border: 1px solid var(--border); color: var(--text-primary);
+    padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 13px;
+  }
+  .menu-toggle:hover { border-color: var(--border-accent); }
 
   .top-alert { background: var(--danger-dim); border-bottom: 1px solid color-mix(in srgb, var(--danger) 30%, transparent); padding: 10px 24px; }
   .top-alert-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; max-width: 900px; }
@@ -263,17 +273,12 @@
   .sidebar-backdrop.active { display: block; }
 
   @media (max-width: 900px) {
-    .sidebar { transform: translateX(-100%); transition: transform 0.3s; }
-    .sidebar.open { transform: translateX(0); }
-    .main-content { margin-left: 0; }
     .hero { padding: 40px 24px; }
     .hero h1 { font-size: 32px; }
     .section { padding: 32px 24px; }
-    .menu-toggle { display: block; position: fixed; top: 16px; left: 16px; z-index: 300; background: var(--surface); border: 1px solid var(--border); color: var(--text-primary); padding: 8px 12px; border-radius: 6px; cursor: pointer; }
     .search-box { margin: 0 24px 24px; }
     .search-results { padding: 0 24px; }
   }
-  @media (min-width: 901px) { .menu-toggle { display: none; } }
 
     /* Utterances discussion styling */
   .utterances-wrapper {
@@ -733,7 +738,8 @@ However, if the household operated within or adjacent to Narragansett kinship no
         </div>
         <div class="card">
           <h3>2. Absolom — "Counsellor"</h3>
-          <p>Absolom signs not as a witness but as <strong>"Counsellor"</strong> — a political office, not a personal name. His later affidavit confirms he "counseled ye Indian Sachem Mosenpp," names <strong>Tocomminon</strong> explicitly as Anashuecot's father, states Mr. Browne was left as guardian by Tocomminon, and attests that Anashuecot was "conveyed out of ye country." His presence on the deed means the transaction had <em>advisory oversight</em> from a recognized political counselor. English deeds do not have "counselors."</p>
+          <p>Absolom signs not as a witness but as <strong>"Counsellor"</strong> — a political office, not a personal name. His later affidavit confirms he "counseled ye Indian Sachem Mosenpp," names <strong>Tocomminon</strong> explicitly as Anashuecot's father, states Mr. Browne was left as guardian by Tocomminon, and attests that Anashuecot was "conveyed out of ye country." His presence on the deed means the transaction had <em>advisory oversight</em> from a recognized political counselor. English deeds do not have "counselors."
+          <span class="badge caution" style="margin-left: 8px;">⏳ Pending verification — the Tocomminon affidavit itself has not yet been examined directly at RIHS MSS 461, Folder 1, Page 22; see Open Contradiction below</span></p>
         </div>
         <div class="card">
           <h3>3. Six Signatures — Grantor Side</h3>
@@ -853,7 +859,7 @@ However, if the household operated within or adjacent to Narragansett kinship no
       <!-- Absolom -->
       <div class="gallery-section" id="gallery-absolom-section">
         <h3>Absolom — "Counsellor" Testimony</h3>
-        <p class="gallery-desc">Absolom signs the 1672 deed as "Counsellor." His affidavit states he counseled "ye Indian Sachem Mosenpp," names Tocomminon explicitly as Anashuecot's father, and confirms Anashuecot "being conveyed out of ye country."</p>
+        <p class="gallery-desc">Absolom signs the 1672 deed as "Counsellor." His affidavit states he counseled "ye Indian Sachem Mosenpp," names Tocomminon explicitly as Anashuecot's father, and confirms Anashuecot "being conveyed out of ye country." <span class="badge caution" style="margin-left: 4px;">⏳ Pending verification — RIHS MSS 461</span></p>
         <div class="gallery" id="gallery-absolom"></div>
         <div class="detail-pane" id="detail-absolom"></div>
       </div>
@@ -1350,7 +1356,6 @@ const galleryData = {
     { file: 'absolom-affidavit.jpg', caption: 'Absolom Affidavit — Close Crop', meta: 'Counsellor testimony', status: 'tier1' },
     { file: 'absolom-his-mark-note.jpg', caption: '"His marke" Notation', meta: 'Bow-and-arrow mark / copyist convention', status: 'tier1' },
     { file: 'absolom-right-beneath-greene-deed.jpg', caption: 'Signature Position', meta: 'Directly beneath Greene deed text', status: 'tier1' },
-    { file: 'absolom-an-indian-bottom%20line.jpg', caption: 'Bottom-Line Entry', meta: '"An Indian" — descriptor line', status: 'tier1' },
     { file: 'bristol_death_absolom_kin.jpg', caption: 'Bristol Death Record', meta: 'Possible Absolom kinsman — UNVERIFIED', status: 'pending' },
     { file: '1677_absolom_counsellor_testimony_duplicate_pages22-23.jpg', caption: 'Absolom Testimony Duplicate', meta: 'Pages 22-23 duplicate', status: 'tier2' },
   ],
@@ -1525,10 +1530,36 @@ function setActive(el) {
   }
 }
 
-function toggleSidebar() {
-  document.querySelector('.sidebar').classList.toggle('open');
-  document.querySelector('.sidebar-backdrop').classList.toggle('active');
+function applySidebarState(open) {
+  const sidebar = document.querySelector('.sidebar');
+  const main = document.querySelector('.main-content');
+  const backdrop = document.querySelector('.sidebar-backdrop');
+  const isWide = window.innerWidth > 900;
+  sidebar.classList.toggle('open', open);
+  main.classList.toggle('sidebar-push', open && isWide);
+  backdrop.classList.toggle('active', open && !isWide);
+  try { localStorage.setItem('joan-sidebar-open', open ? '1' : '0'); } catch (e) {}
 }
+
+function toggleSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  applySidebarState(!sidebar.classList.contains('open'));
+}
+
+// Restore last-used state on load; default open on wide screens, closed on narrow, if no preference saved yet
+(function initSidebar() {
+  let saved = null;
+  try { saved = localStorage.getItem('joan-sidebar-open'); } catch (e) {}
+  const isWide = window.innerWidth > 900;
+  const open = saved === null ? isWide : saved === '1';
+  applySidebarState(open);
+})();
+
+// Keep push-vs-overlay behavior correct if the window is resized/rotated
+window.addEventListener('resize', function() {
+  const sidebar = document.querySelector('.sidebar');
+  applySidebarState(sidebar.classList.contains('open'));
+});
 
 // Search functionality
 function doSearch() {
