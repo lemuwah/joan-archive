@@ -1,3 +1,5 @@
+Cite this archive: Green, W. (2026). Joan Archive open source research project. Zenodo. https://doi.org/10.5281/zenodo.21482575
+
 # The Joan Archive — Open Access Research Library
 
 **No narrative smoothing.**
