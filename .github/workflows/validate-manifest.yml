@@ -4,8 +4,7 @@ on:
   push:
     branches:
       - main
-
-pull_request:
+  pull_request:
     branches:
       - main
 
@@ -28,6 +27,13 @@ jobs:
         with:
           node-version: '24'
 
+      - name: Debug — list images and manifest
+        run: |
+          echo "Manifest:"
+          cat MANIFEST.md
+          echo "Images:"
+          ls -1 images
+
       - name: Run validation script
         id: validate
         run: node .github/scripts/validate-manifest.js
@@ -36,9 +42,6 @@ jobs:
       - name: Generate stats JSON
         id: stats
         run: node .github/scripts/generate-stats.js
-
-      # Removed auto-commit and auto-push to avoid conflicts
-      # Stats are generated but not committed automatically
 
       - name: Comment on PR with validation results
         if: github.event_name == 'pull_request'
