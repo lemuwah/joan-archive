@@ -28,16 +28,16 @@
   :root {
     --bg: #0a0a0f; --surface: #111118; --surface-raised: #1a1a24; --surface-hover: #22222e;
     --border: #2a2a3a; --border-accent: #3a3a4a;
-    --text-primary: #e8ee1; --text-secondary: #a0a0b0; --text-tertiary: #aa7a; --text-quaternary: #4a4a5a;
-    --accent: #c9a9e; --accent-dim: #c9a9e33; --accent-glow: #c9a9e15;
+    --text-primary: #e8eef1; --text-secondary: #a0a0b0; --text-tertiary: #7a7a8a; --text-quaternary: #4a4a5a;
+    --accent: #c9a9e9; --accent-dim: #c9a9e933; --accent-glow: #c9a9e915;
     --danger: #c45c5c; --danger-dim: #c45c5c22;
-    --positive: #5c9ee; --positive-dim: #5c9ee22;
+    --positive: #5c9e8e; --positive-dim: #5c9e8e22;
     --warning: #c9a44c; --warning-dim: #c9a44c22;
     --info: #5c8ec9; --info-dim: #5c8ec922;
     --sidebar-width: 280px;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text-primary); line-height: 1.; overflow-x: hidden; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text-primary); line-height: 1.6; overflow-x: hidden; }
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
 
@@ -1318,6 +1318,44 @@ Whether the correction occurred during the signing ceremony or afterward cannot 
       <p style="margin-top:8px;">Research Packet v5.1 — July 2026. Hostile review applied. No narrative smoothing.</p>
       <p style="margin-top:8px;"><a href="https://github.com/lemuwah/joan-archive" target="_blank">GitHub Repository</a> · <a href="https://github.com/lemuwah/joan-archive/tree/main/images" target="_blank">Image Archive</a></p>
     </footer>
+
+
+
+    <section class="section" id="tools"><div class="section-title">Tools</div><h2>Research Tools</h2><div class="card-grid"><div class="card"><h3>Transparency Merge Lab</h3><p>Layer deeds with adjustable transparency. Kept on a separate page so the main archive loads fast.</p><a href="merge.html" style="display:inline-block;margin-top:8px;padding:6px 12px;border:1px solid var(--border);border-radius:6px;">Open merge.html →</a></div></div></section>
+
+    <section class="section" id="discuss">
+      <div class="section-title">Community Discussion</div>
+      <h2>Talk here. No GitHub account digging required — but it helps.</h2>
+      <p class="lead">You do NOT need to understand git to contribute. Comment below like you would on any blog. If you have a GitHub account, your comment is archived forever in the repository. If you don't, your question still prompts a maintainer to log it.</p>
+      <div class="card-grid">
+        <div class="card">
+          <h3>What to add here?</h3>
+          <p>• "I checked [archive] for [name] — found nothing" → goes to Negative Space Log<br>• "This image looks like..." → transcription help<br>• "Why does this clause..." → legal context<br>• "My family has papers from..." → preservation lead</p>
+        </div>
+        <div class="card">
+          <h3>How it works</h3>
+          <p>Comments below are powered by Utterances (open-source). They post as GitHub Issues in this repo with label 💬 discussion. That means your note becomes part of the permanent archive, not lost in social media. You can log in with GitHub in one click, or email the maintainer and we will post for you.</p>
+          <p style="margin-top:8px;"><a href="https://github.com/lemuwah/joan-archive/issues/new?labels=%F0%9F%92%AC+discussion&title=Discussion%3A+Joan+Archive+Note" target="_blank" style="padding:6px 12px;border:1px solid var(--border);border-radius:6px;display:inline-block;margin-top:6px;">Open a discussion without commenting →</a></p>
+        </div>
+      </div>
+
+      <div class="utterances-wrapper">
+        <div class="utterances-header">
+          <div>
+            <h3>💬 Discussion Threads</h3>
+            <p>Powered by Utterances · Posts as GitHub Issues · No tracking cookies</p>
+          </div>
+          <a href="https://github.com/lemuwah/joan-archive/issues" target="_blank" style="font-size:12px;padding:5px 10px;border:1px solid var(--border);border-radius:6px;white-space:nowrap;">View on GitHub →</a>
+        </div>
+        <div class="utterances-frame-container" id="utterances-container">
+          <div class="utterances-loading" id="utterances-loading">
+            <span class="spinner"></span> Loading discussion threads...
+          </div>
+        </div>
+      </div>
+    </section>
+
+
   </main>
 </div>
 
@@ -1615,42 +1653,6 @@ document.addEventListener('keydown', function(e) {
 // Initialize
 renderGalleries();
 </script>
-
-
-
-    <section class="section" id="tools"><div class="section-title">Tools</div><h2>Research Tools</h2><div class="card-grid"><div class="card"><h3>Transparency Merge Lab</h3><p>Layer deeds with adjustable transparency. Kept on a separate page so the main archive loads fast.</p><a href="merge.html" style="display:inline-block;margin-top:8px;padding:6px 12px;border:1px solid var(--border);border-radius:6px;">Open merge.html →</a></div></div></section>
-
-    <section class="section" id="discuss">
-      <div class="section-title">Community Discussion</div>
-      <h2>Talk here. No GitHub account digging required — but it helps.</h2>
-      <p class="lead">You do NOT need to understand git to contribute. Comment below like you would on any blog. If you have a GitHub account, your comment is archived forever in the repository. If you don't, your question still prompts a maintainer to log it.</p>
-      <div class="card-grid">
-        <div class="card">
-          <h3>What to add here?</h3>
-          <p>• "I checked [archive] for [name] — found nothing" → goes to Negative Space Log<br>• "This image looks like..." → transcription help<br>• "Why does this clause..." → legal context<br>• "My family has papers from..." → preservation lead</p>
-        </div>
-        <div class="card">
-          <h3>How it works</h3>
-          <p>Comments below are powered by Utterances (open-source). They post as GitHub Issues in this repo with label 💬 discussion. That means your note becomes part of the permanent archive, not lost in social media. You can log in with GitHub in one click, or email the maintainer and we will post for you.</p>
-          <p style="margin-top:8px;"><a href="https://github.com/lemuwah/joan-archive/issues/new?labels=%F0%9F%92%AC+discussion&title=Discussion%3A+Joan+Archive+Note" target="_blank" style="padding:6px 12px;border:1px solid var(--border);border-radius:6px;display:inline-block;margin-top:6px;">Open a discussion without commenting →</a></p>
-        </div>
-      </div>
-
-      <div class="utterances-wrapper">
-        <div class="utterances-header">
-          <div>
-            <h3>💬 Discussion Threads</h3>
-            <p>Powered by Utterances · Posts as GitHub Issues · No tracking cookies</p>
-          </div>
-          <a href="https://github.com/lemuwah/joan-archive/issues" target="_blank" style="font-size:12px;padding:5px 10px;border:1px solid var(--border);border-radius:6px;white-space:nowrap;">View on GitHub →</a>
-        </div>
-        <div class="utterances-frame-container" id="utterances-container">
-          <div class="utterances-loading" id="utterances-loading">
-            <span class="spinner"></span> Loading discussion threads...
-          </div>
-        </div>
-      </div>
-    </section>
 
 <script>
 // ── Utterances Integration ──
