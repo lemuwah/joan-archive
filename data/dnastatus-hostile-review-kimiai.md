@@ -93,4 +93,53 @@ Kit	Surname	Ancestor	Haplogroup	Test
 27438	Greene	Dr. John The Surgeon Greene, 1597-1659	I-M170	Y-DNA67
 251314	Greene	(blank)	I-FTC61816	Big Y-700
 B1252707	Green	William green b 1636 d1713	I-Z60	(no test listed)
-This is **the only claim in the Gemini text that survives contact with
+This is **the only claim in the Gemini text that survives contact 
+
+hostile review of findings continued: Here is a hostile, line-by-line review of what this project table actually proves, what it merely suggests, and what it cannot tell us.
+1. The only hard fact: R-FTG9921 is a real, testable signature shared by two Quidnessett claimants
+Kit 166769 (Greene, Big Y-700) and kit B819637 (Ristau, Big Y-700) both return R-FTG9921. Both claim John Greene of Quidnessett. That is a genuine match at the SNP level, not a low-resolution guess.
+What this means:
+They share a common paternal ancestor who lived after the R-FTG9921 mutation occurred. FTDNA estimates that split at ~1750 CE .
+John Greene died in 1695, so he did not carry R-FTG9921. He carried whatever was immediately upstream—most likely R-BY186325 or an intermediate SNP between BY186325 and FTG9921.
+The Ristau match is the most important entry in the entire table. A different surname with the same terminal SNP means a documented NPE, adoption, or name change occurred somewhere in that line. It is independent corroboration that the haplogroup is tied to a specific paternal lineage, not just a Greene family that happens to test alike.
+Caution: I found a WikiTree entry listing kit B819637 as R-BY186325, not R-FTG9921 . Your table says R-FTG9921. That discrepancy needs to be resolved before you treat the Ristau match as confirmed FTG9921. If the WikiTree entry is current, the match is at the BY186325 level, not the more recent FTG9921 level.
+2. Kit 172964 (R-BY186325, Big Y-500, no claimed ancestor) is the most interesting unknown
+R-FTG9921 is a subclade of R-BY186325 . R-BY186325 itself has a TMRCA of ~1800 BCE . That is 3,800 years of potential unrelated branches.
+Kit 172964 sits at the parent haplogroup. There are two possibilities:
+A. He is a Quidnessett descendant who branched off before the FTG9921 mutation appeared (~1750 CE). If so, he represents a separate son-line of John Greene and is genealogically valuable.
+B. He is completely unrelated to the Quidnessett line and merely shares the ancient BY186325 ancestor with thousands of other men.
+The blank ancestor field is a critical failure. Without a documented pedigree, kit 172964 tells us almost nothing. He could prove the Quidnessett line is older than FTG9921, or he could be noise.
+3. The R-Z156 claimants (219979, N61285, 666416) are consistent but unproven
+All three claim John Greene of Quidnessett and show R-Z156. R-Z156 is a deep subclade of R-U106 , formed ~2700 BCE .
+Because R-FTG9921 is almost certainly downstream of R-Z156 (the alternative would require two unrelated Quidnessett claimants to coincidentally land on different major branches of R-U106), these three testers are probably on the same track as kits 166769 and B819637. But:
+219979 and 666416 only took Family Finder (autosomal). The R-Z156 assignment is likely an estimate, not a confirmed SNP call.
+N61285 took a Backbone SNP Pack, which gives a confirmed R-Z156 call, but that is still 4,700 years upstream of R-FTG9921.
+They are not confirmed to share the Quidnessett line. They are simply not ruled out by the data they have provided.
+4. The R-M269 testers are genealogically useless for this question
+Kits 15636, 8023, 125613, 154581, 262156, and 473923 are all R-M269. R-M269 is the base haplogroup for roughly half of Western European men. It is ~15,000 branches deep .
+125613 claims "John Greene, Rhode Island, 1638" but tested only Y-DNA12. That is not enough STRs to place him reliably anywhere near the Quidnessett line.
+473923 (Samuel Green b. 1759) tested Y-DNA111, which is respectable for STR matching, but without SNP confirmation he remains an R-M269 guess. He could be R-FTG9921, R-U106, R-P312, or anything else under M269.
+These entries cannot be used to prove or disprove a connection to John Greene of Quidnessett.
+5. Kit 2162 (George Green, R-U106) is a false flag
+George Green shows R-U106 via Family Finder. R-U106 is the parent haplogroup of R-Z156 . Because he does not claim Quidnessett descent, his R-U106 result is irrelevant to the Quidnessett question. He is on the right continent of the tree, but the wrong family.
+6. What this teaches us about John Greene's deep ancestry
+If we accept that the Quidnessett line falls under R-Z156, then we know this much about deep ancestry:
+R-Z156 is strongly associated with Germanic migrations and is found at elevated frequency in the British Isles, particularly Ireland, Scotland, and Northern England . Ancient DNA places R-Z156 in the Únětice culture near Prague (~2000 BCE) and later in Iron Age Britain .
+This is broadly consistent with an English origin for John Greene. It is not proof of one. R-Z156 is found across Germany, the Netherlands, Belgium, France, and Scandinavia as well . The haplogroup only tells us his paternal line was part of the northwest European R-U106 expansion. It does not tie him to a specific county, village, or parish in England.
+7. The real problems this table exposes
+Table
+Issue	Why it matters
+FTG9921 TMRCA ~1750 CE	John Greene died in 1695. The SNP is too young to be his. It belongs to one of his descendant branches. You cannot say "John Greene was R-FTG9921." You can only say "some of John Greene's descendants are R-FTG9921."
+Kit 172964 has no ancestor	Without a pedigree, the R-BY186325 result is just a data point floating in 3,800 years of tree.
+R-Z156 claimants lack Big Y	Three men claim the ancestor but have not tested to the level that would confirm they actually share the FTG9921 branch. They are taking up project space with unverified claims.
+B819637 WikiTree discrepancy	If B819637 is actually R-BY186325 and not R-FTG9921, your "two-confirmed-FTG9921" evidence collapses to one.
+R-M269 crowd	Six kits at the base haplogroup contribute nothing to the Quidnessett question.
+8. What would actually move this forward
+Confirm B819637's terminal SNP. If he is R-BY186325 and not R-FTG9921, the Quidnessett signature is weaker than the table implies.
+Get kit 172964's pedigree. If he is a documented Quidnessett descendant, he becomes the control that proves John Greene was pre-FTG9921.
+Upgrade the R-Z156 claimants. Kits 219979, N61285, and 666416 need Big Y or at least a SNP pack that tests FTG9921/BY186325. Until then, their claims are unsupported.
+Test Samuel Green (473923) for downstream SNPs. If he is R-FTG9921 or R-BY186325, he could anchor the New York branch to Quidnessett. If he is R-P312 or another major branch, he is unrelated.
+Kit 125613 needs SNP testing. Y-DNA12 is pre-modern. His "John Greene, Rhode Island, 1638" claim cannot be evaluated.
+Bottom line
+The table teaches us that there is a specific, recent Y-DNA signature (R-FTG9921, TMRCA ~1750 CE) shared by at least one, and possibly two, descendants of John Greene of Quidnessett. That signature is a subclade of R-BY186325, which sits under the R-Z156 branch of R-U106. The deep ancestry is northwest European/Germanic, consistent with but not proving English origins.
+What the table does not teach us: where in England John Greene came from, whether he connects to any other Greene family in the project, or whether the R-Z156 claimants actually belong to the same line. The blank ancestor on kit 172964 and the low resolution of half the project are the biggest holes
