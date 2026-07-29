@@ -1,6 +1,41 @@
 log the FTDNA Green/Greene project, R-BY186325, and the specific still-needed comparison haplogroup from C6. Tag as highest priority.
 
 https://www.familytreedna.com/public/Green?iframe=ydna-results-overview
+Here is the exact genetic and genealogical strategy to track your John Greene (John of Quidnessett) backwards, forwards, and across the colonial landscape using the Y-DNA profile.
+
+---
+
+### 1. Tracking Backwards (Pre-1639 & British Isles Origins)
+
+The core challenge with 17th-century Green lines is separating distinct patriarchal origins. While Surgeon John Greene of Warwick belongs to haplogroup **I-M223**, the Quidnessett line is anchored in **R-M269**, specifically downstream **R-BY186325** (FTDNA Subgroup C6).
+
+* **Target the SNP Terminal Branch:** Test or compare Big Y-700 data against **R-BY186325** and adjacent sub-clades (such as **R-FT273431** / **R-FTB79899**).
+* **Filter Out Misassigned Pedigrees:** Eliminate any prospective UK/Irish origin candidates that test into I-M223, I-M253, or non-R1b branches.
+
+
+* **Focus geographical searches:** Look for early 17th-century Green/Greene families in regions with dense R-BY186325 / R-FT273431 descendant clusters (specifically checking maritime and merchant hubs in Western England, Bristol, and Ireland/O'Byrne-associated trading nodes).
+
+---
+
+### 2. Tracking Forwards (Colonial Rhode Island & Descendant Branches)
+
+To map John’s line through the late 17th and 18th centuries in Rhode Island, Connecticut, and Massachusetts:
+
+* **Sub-Clade Branching by Son:** Use Big Y SNP results to isolate specific branches downstream of John’s sons (John Jr., Edward, Benjamin, Henry, and Robert).
+* **Identify Branching SNPs:**
+* Descendants of **Benjamin Greene** (m. Humility Coggeshall) and **Henry Greene** carry confirmed **R-BY186325** signatures.
+* Testing living direct male-line descendants of *John Jr.* (1651–1729) or *Edward* will pinpoint the precise SNP mutation that occurred at each generation split.
+
+
+* **Match STR Offsets:** Look for fast-mutating STR markers (DYS464, CDY) within Group C6 to differentiate the North Kingstown/Quidnessett branch from West Greenwich and Westerly branches.
+
+---
+
+### 3. Cross-Referencing DNA with Primary Source Records
+
+Y-DNA proves genetic continuity, but land records prove identity. To tie the genetic line directly to your documentary evidence:
+
+* **Witness Cluster Mapping:** Map land transactions involving Benjamin, Henry, and John Jr. alongside neighboring families (Aylesworth, Coggeshall, Greenman). Where Y-DNA matches overlap with recurring witness signatures, you establish tight geographic and familial boundaries.
 
 
 Green / Greene Surname DNA Project - Y-DNA Results Overview
