@@ -143,3 +143,66 @@ Kit 125613 needs SNP testing. Y-DNA12 is pre-modern. His "John Greene, Rhode Isl
 Bottom line
 The table teaches us that there is a specific, recent Y-DNA signature (R-FTG9921, TMRCA ~1750 CE) shared by at least one, and possibly two, descendants of John Greene of Quidnessett. That signature is a subclade of R-BY186325, which sits under the R-Z156 branch of R-U106. The deep ancestry is northwest European/Germanic, consistent with but not proving English origins.
 What the table does not teach us: where in England John Greene came from, whether he connects to any other Greene family in the project, or whether the R-Z156 claimants actually belong to the same line. The blank ancestor on kit 172964 and the low resolution of half the project are the biggest holes
+
+---
+
+1. Hard Facts
+R-FTG9921 is a colonial American branch, not John Greene's own haplogroup. FTDNA Discover places its formation at ~1750 CE . John Greene of Quidnessett died before 25 September 1685 . Therefore:
+R-BY186325 = the haplogroup John Greene himself carried (or at minimum, his paternal-line ancestors back to the common ancestor of all R-BY186325 testers).
+R-FTG9921 = a sub-branch that formed in colonial America, roughly two generations after his death, shared by one or two of his descendants.
+A confirmed tester exists: Kelly Ristau, FTDNA kit B819637, haplogroup R-BY186325, tracing paternally to Augustus Green (1740–1824) of Suffolk County, New York — a documented descendant of John Greene of Quidnessett through the Quidnessett → Long Island → Albany County line .
+2. What R-Z156 Geography Actually Tells Us
+R-BY186325 sits under R-Z156, which is 19% of all R-U106 testers . McDonald's phylogeography (the best open analysis of this branch) gives us these relevant patterns:
+R-Z156 is less common in England than other R-U106 branches. It is more common in Ireland (particularly Northern Ireland) and Scotland .
+It has ancient DNA in Iron Age Britain: sample I11149 from Teversham, Cambridgeshire (733–397 BC) .
+It also appears in Roman York: 3DRIF-16, a late Roman burial, typed to R-Z304 (downstream of R-Z156) .
+McDonald argues R-Z156 likely detoured west from Bohemia through southern Germany rather than staying in the Czech plain .
+What this means for John Greene: His deep paternal ancestry is northwest European/Germanic, consistent with English origins — but R-Z156 is not the "typical" Anglo-Saxon R-U106 profile. If he was English, his particular R-Z156 lineage may have arrived in Britain earlier than the main post-Roman Germanic migrations, or via a route that left more descendants in the east of England (Cambridgeshire) and in Scotland/Ireland than in the English south or west.
+3. Critical Distinction: R-BY186325 vs. R-FTG9921
+Table
+Level	Haplogroup	TMRCA	What it represents
+John Greene's era	R-BY186325	Unknown (older than 1750 CE)	John Greene's own Y-line
+Colonial America	R-FTG9921	~1750 CE	A branch formed after his death
+This means two separate chase lanes:
+Lane A — R-FTG9921 (colonial): Find the other R-FTG9921 tester(s). Can they trace to a specific son of John Greene? This would map which colonial branch carries the mutation. If two descendants of different sons both carry R-FTG9921, you have proven the SNP occurred at or before John Greene's generation (contradicting the ~1750 TMRCA) — which would be a real finding worth logging.
+Lane B — R-BY186325 (English): This is where the ocean-crossing lead lives. Other testers in R-BY186325 who are not in R-FTG9921 are your best shot at identifying the English region or even parish. Their surnames and earliest known ancestors are the only genetic clue to John Greene's pre-1635 location.
+4. Actionable Leads
+Lead 1: Mine the Big Y Block Tree for R-BY186325
+Log into FTDNA, pull the Block Tree for R-BY186325. Record:
+How many total testers sit at R-BY186325 but not in R-FTG9921?
+Their surnames (not just Greene — any surname match is useful).
+Their earliest known ancestor locations (country, county, parish if listed).
+Their non-matching variant counts relative to the Augustus Green tester.
+If any R-BY186325 tester traces to England, that is your highest-value lead. If they trace to Scotland or Ireland, that changes the origin hypothesis for John Greene's paternal line.
+Lead 2: Audit the Greene Surname Project Properly
+Your archive's source_spine.md flags an unresolved DNA audit: "R-FTB79899" vs. "R-Z255" — held as an internal inconsistency 
+. R-Z255 is under R-L21 (an entirely different major branch of R1b). This is not a minor mismatch — it suggests either:
+Two different kits are being conflated, or
+One assignment is wildly wrong.
+Action: Resolve this before trusting any Greene-project haplogroup claims. Contact the project administrator. Ask directly: which kit numbers are assigned to which haplogroup? Is kit B2778 the same line as kit B819637 (Augustus Green)?
+The old Green/Greene DNA project at RootsWeb (last updated 2008)  is obsolete for Big Y analysis. Do not rely on it.
+Lead 3: Test a Warwick Greene Descendant
+The Bowridge Hill tradition claims John Greene the Surgeon (Warwick line) and John Greene of Quidnessett were first cousins twice removed . If true, they should share the same broad haplogroup (R-BY186325 or at minimum R-Z156).
+Action: Identify a documented male-line descendant of John Greene the Surgeon (Warwick line) and encourage Big Y-700 testing. If they come back R-Z156+ but not R-BY186325, the Bowridge Hill cousin connection is genetically refuted. If they come back R-BY186325+, the tradition gains real weight. If they come back R-Z255 or R-L21, the entire Gillingham pedigree collapses for both lines.
+Lead 4: Cross-Reference with the "Matthew" Passenger
+The strongest documentary candidate for John Greene's arrival is "Jo: Greene, age 29" on the Matthew of London, 21 May 1635, bound for St Christophers . Birth year c.1606 matches.
+Action: Search St Christopher's / St Kitts colonial records for any Greene male who either stayed or re-embarked for New England. The Y-DNA tells us nothing about the West Indies leg, but if R-BY186325 English testers cluster in a specific region (e.g., East Anglia, London, or the southeast), that narrows which "John Greene" on the port departure lists is most plausible.
+Lead 5: Check for R-Z156 in Dorset
+The Bowridge Hill tradition places the family in Gillingham, Dorset . Dorset is in southwest England. McDonald's data shows R-Z156 is less common in England than other R-U106 branches and has no particular Dorset concentration. This is not disproof — one man is not a population — but it means the DNA gives no independent support for a Dorset origin. If R-BY186325 testers instead cluster in eastern or northern England, that is active evidence against Dorset.
+5. Hostile Review — What Could Be Wrong
+The TMRCA is a model, not a date. FTDNA's ~1750 CE for R-FTG9921 has confidence intervals. If the true date is 1700 CE, R-FTG9921 could still be colonial American. If it's 1600 CE, it could be English. The SNP count matters — check how many SNPs define R-FTG9921.
+NPE risk. Augustus Green's paper trail to John Greene of Quidnessett is long (6+ generations). A non-paternal event anywhere in that chain breaks the DNA-pedigree link. The archive treats this line as probable, not proven, at each generation.
+R-BY186325 may have no other testers. If the only testers in R-BY186325 are the Augustus Green line and one or two others, there may be no geographic signal at all. The "lead" would be a dead end until more men test.
+The WikiTree R-BY186325 claim is unsourced there. WikiTree lists the haplogroup but does not show the actual FTDNA match data or STR panel results. Verify directly with kit B819637's public project page.
+6. Suggested Archive Update
+Add a new file to your research_queue/:
+plain
+Task: Y-DNA Lead Execution — R-BY186325 / R-FTG9921
+Agent: Synthesizer + Archivist
+Focus: 
+  1. Pull FTDNA Block Tree for R-BY186325 — surnames, EKAs, non-matching variants
+  2. Resolve source_spine.md inconsistency (R-FTB79899 vs. R-Z255)
+  3. Identify Warwick-line male descendant for Big Y testing
+  4. Map any English R-BY186325 testers against Hotten 1635 passenger list origins
+Constraints: No Bowridge Hill assumption. Treat Dorset as null hypothesis unless DNA supports it.
+This keeps the DNA thread in your formal queue with the same rigor as your deed lifecycle work
