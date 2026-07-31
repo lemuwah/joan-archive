@@ -42,9 +42,6 @@ Neither the digitization problem nor the contamination problem is solved by beli
 ## The working hypothesis
 
 | | Status |
-|---|---|
-| **Tier 1** — Joan (wife of John Greene of Quidnessett) was a woman connected to the Narragansett sachem lineage, not an English settler's daughter with a lost paper trail | Working hypothesis |
-| **Tier 2** — Joan was specifically **Anashuecot**, named "chiefe Sachem and heire" in the 1 January 1671/72 Fones Purchase deed | More speculative — suggestive, not proven |
 
 Every claim on the site carries a status tag (Tier 1 Primary → Tier 4 Invalidated) so you can see at a glance how much weight it can bear. Open contradictions — places where the sources genuinely disagree — are marked and left open rather than resolved for the sake of a clean story.
 
