@@ -15,7 +15,7 @@ This is not a genealogy website. It is an open-access research library — prima
 | Date | Document | What happened |
 |---|---|---|
 | 24 March 1682 | Home-place deed (RI Land Evidence) | John Greene divides his Quidnessett land among his sons. Joan's consent is required; a 30-shilling life-estate is reserved to her — "or to her mother if she survive." |
-| 19 May 1682 | Pawtuxet deed (RI Land Evidence, Vol. VII, pp.177–178) | John Greene sells inherited Pawtuxet land to William Carpenter for £10. Joan gives separate "free & voluntary consent" and signs with her mark. Witnesses: John Wickes, Samuel Gorton. |
+| 19 May 1682 | Pawtuxet deed (Records of RI & Providence Plantations Vol. VII, pp. 177–178) | John Greene sells inherited Pawtuxet land to William Carpenter for £10. Joan gives separate "free & voluntary consent" and signs with her mark. Witnesses: John Wickes, Samuel Gorton. |
 
 Forty years of total invisibility to English law doesn't end with a single mention that could be a scribal fluke. It ends with two separate transactions, two different tracts, two different sets of witnesses — both requiring her, in the same season. That pattern is the core anomaly this archive is built around.
 
@@ -31,7 +31,7 @@ Forty years of total invisibility to English law doesn't end with a single menti
 
 The document that could resolve the biggest open question here — Record of a court martial held at Newport, R.I., in August, 1676 — has never been systematically digitized. It may be sitting, readable, in a library right now.
 
-**You don't need expertise to help with this.** A phone camera exceeds the resolution of many institutional scanners. If you're near an archive that touches Narragansett Country, John Greene of Quidnessett, or Anashuecot/Absolom Counsellor between 1670–1690, a single photo of a relevant page is a real, permanent contribution — see **How to Help** on the live site for a menu of asks ranging from 60 seconds to a full afternoon. "No record found" counts too: log it in the Negative Space Log so nobody else burns six hours on the same dead end.
+**You don't need expertise to help with this.** A phone camera exceeds the resolution of many institutional scanners. If you're near an archive that touches Narragansett Country, John or Joan Greene of Quidnessett, or Anashuecot/Absolom Counsellor between 1600–1700, a single photo of a relevant page is a real, permanent contribution — see **How to Help** on the live site for a menu of asks ranging from 60 seconds to a full afternoon. "No record found" counts too: log it in the Negative Space Log so nobody else burns six hours on the same dead end.
 
 ## Contamination is the other half of the problem
 
