@@ -3,7 +3,11 @@
 **No narrative smoothing.**
 
 🔗 **Live site:** https://lemuwah.github.io/joan-archive/  
-📚 **Cite this archive:** Green, W. (2026). *Joan Archive open source research project*. Zenodo. https://doi.org/10.5281/zenodo.21482575
+📚 **Cite this archive:** Green, W. (2026). *Joan Archive open source research project*.
+Zenodo. https://doi.org/10.5281/zenodo.21482575
+
+Version v2
+10.5281/zenodo.21729961
 
 ---
 
