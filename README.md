@@ -118,4 +118,4 @@ If you have a Narragansett or other Indigenous research background, correction o
 
 ---
 
-*This repository retains the name `joan-archive` for link continuity.*
+*This repository retains the name `joan-lineage-theory` for link continuity.*
