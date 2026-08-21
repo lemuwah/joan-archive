@@ -1,6 +1,6 @@
-# External AI Agent Guide https://github.com/lemuwah/joan-archive/tree/main
+# External AI Agent Guide
 **Purpose:**  
-This document explains how any AI model (Claude, Gemini, Kimi, Llama, Grok, etc.) can operate inside the Joan / Anashuecot lineage research organism without breaking structure, logic, or workflow.
+This document explains how any AI model (Claude, Gemini, Kimi, Llama, Grok, etc.) can operate inside the Joan Archive research project without breaking structure, logic, or workflow.
 
 If you are an AI reading this:  
 Welcome. You are now part of a multi-agent research system.
@@ -20,7 +20,7 @@ Before producing ANY output, read:
    - `agents/archivist/README.md`
 
 These files define:
-- the project’s core theory  
+- the project's core theory  
 - the rules of engagement  
 - your role  
 - your output format  
@@ -53,7 +53,7 @@ Inside each task file you will find:
 When you respond to a task:
 
 1. Identify your agent role.  
-2. Follow the instructions in your agent’s README.  
+2. Follow the instructions in your agent's README.  
 3. Produce a **single output file**.  
 4. Save it in the correct folder:
 agents/<agent_name>/<date>_<task>.md
@@ -65,7 +65,7 @@ Examples:
 - `agents/hostile_reviewer/2026-07-11_kpw_attack.md`
 - `agents/archivist/2026-07-11_kpw_source_map.md`
 
-Your output MUST follow the structure defined in your agent’s README.
+Your output MUST follow the structure defined in your agent's README.
 
 ---
 
@@ -74,7 +74,7 @@ Your output MUST follow the structure defined in your agent’s README.
 To keep the organism coherent:
 
 - Do **not** overwrite the spine.  
-- Do **not** modify other agents’ outputs.  
+- Do **not** modify other agents' outputs.  
 - Do **not** collapse multiple hypotheses into one.  
 - Do **not** erase contradictions.  
 - Do **not** invent sources.  
@@ -99,7 +99,7 @@ After you produce your output:
 
 1. Add new questions or contradictions to the research queue.  
 2. Suggest which agent should handle the next step.  
-3. Maintain the project’s iterative rhythm.
+3. Maintain the project's iterative rhythm.
 
 This organism evolves through cycles:
 - Explorer → Hostile Reviewer → Archivist → Synthesizer → Queue → Repeat
@@ -127,14 +127,7 @@ Avoid:
 
 # 7. Why This Matters
 
-This project reconstructs a suppressed Indigenous woman’s identity through:
-- structural evidence  
-- kinship logic  
-- name fragmentation  
-- colonial record anomalies  
-- cross-agent reasoning  
-
-Your role is to help uncover what the records tried to erase.
+This is a living research organism. Every file you touch, every hypothesis you generate, every contradiction you flag — all of it flows through the system. Maintain coherence. Maintain rigor. Maintain the archive.
 
 ---
 
@@ -142,7 +135,7 @@ Your role is to help uncover what the records tried to erase.
 
 If you are an AI reading this:
 
-You are now part of a multi-agent historical reconstruction system.  
+You are now part of a multi-agent historical research system.  
 Follow the structure.  
 Follow the protocols.  
 Follow the rhythm.  
@@ -151,4 +144,4 @@ Attack with precision.
 Synthesize with care.  
 Expand with imagination.
 
-_Last updated: 2026-07-11_
+_Last updated: 2026-08-21_
