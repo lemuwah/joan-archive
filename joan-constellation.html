@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Joan Archive — Constellation View</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<style>
+  :root{
+    --void:#0a0d16;
+    --void-2:#0e1220;
+    --river:#1c3a52;
+    --river-glow:#2f6f8f;
+    --parchment:#e8dcc3;
+    --parchment-dim:#a89b7f;
+    --document:#4a9d9c;
+    --firewall:#d4a63a;
+    --contradiction:#c0546b;
+    --ink:#cbd3de;
+    --ink-dim:#6b7688;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;height:100%;background:var(--void);font-family:Georgia,'Iowan Old Style','Palatino Linotype',serif;color:var(--ink);overflow:hidden;}
+  #app{position:relative;width:100vw;height:100vh;}
+
+  header{
+    position:absolute;top:0;left:0;right:0;z-index:10;
+    padding:18px 22px 10px;
+    background:linear-gradient(180deg, rgba(10,13,22,0.95) 0%, rgba(10,13,22,0.0) 100%);
+    pointer-events:none;
+  }
+  header h1{
+    margin:0; font-size:20px; font-weight:400; letter-spacing:0.04em;
+    color:var(--parchment); font-variant:small-caps;
+  }
+  header .sub{
+    margin-top:3px; font-size:12px; color:var(--ink-dim); font-family:ui-monospace,Menlo,Consolas,monospace;
+    letter-spacing:0.03em;
+  }
+
+  svg{display:block;}
+
+  .river-label{
+    font-family:ui-monospace,Menlo,Consolas,monospace;
+    font-size:10px; fill:var(--ink-dim); letter-spacing:0.05em;
+  }
+
+  .link{ fill:none; }
+  .link-witnessed{ stroke:#3a4356; stroke-width:1; }
+  .link-cites{ stroke:var(--document); stroke-width:1.1; opacity:0.7; }
+  .link-contradicts{ stroke:var(--contradiction); stroke-width:1.4; stroke-dasharray:2,3; }
+  .link-conflates{ stroke:var(--firewall); stroke-width:1.2; stroke-dasharray:1,2; opacity:0.85; }
+
+  .node-glow{ opacity:0.35; filter:blur(6px); }
+  .node circle, .node rect, .node polygon{
+    stroke-width:1.2; cursor:pointer;
+  }
+  .node text{
+    font-size:9.5px; fill:var(--ink); pointer-events:none;
+    font-family:ui-monospace,Menlo,Consolas,monospace; letter-spacing:0.01em;
+  }
+  .node.dimmed{ opacity:0.12; }
+  .link.dimmed{ opacity:0.05; }
+
+  #legend{
+    position:absolute; left:18px; bottom:18px; z-index:10;
+    background:rgba(14,18,32,0.88); border:1px solid #232b3d; border-radius:6px;
+    padding:12px 14px; font-size:11px; color:var(--ink-dim); max-width:220px;
+    backdrop-filter:blur(4px);
+  }
+  #legend .row{display:flex; align-items:center; gap:8px; margin:5px 0;}
+  #legend .sw{width:11px; height:11px; flex:none;}
+  #legend h2{font-size:10px; margin:0 0 8px; color:var(--parchment-dim); text-transform:uppercase; letter-spacing:0.08em; font-weight:400;}
+  #legend hr{border:none; border-top:1px solid #232b3d; margin:9px 0;}
+
+  #detail{
+    position:absolute; right:18px; top:70px; z-index:10; width:280px;
+    background:rgba(14,18,32,0.94); border:1px solid #2a3146; border-radius:6px;
+    padding:16px 18px; max-height:70vh; overflow-y:auto;
+    box-shadow:0 12px 40px rgba(0,0,0,0.5);
+    transform:translateX(320px); transition:transform 0.35s ease;
+  }
+  #detail.open{ transform:translateX(0); }
+  #detail .type-tag{
+    font-family:ui-monospace,monospace; font-size:9px; letter-spacing:0.08em;
+    text-transform:uppercase; padding:2px 7px; border-radius:3px; display:inline-block;
+  }
+  #detail h3{ margin:10px 0 4px; font-size:16px; color:var(--parchment); font-weight:400; line-height:1.3;}
+  #detail .year{ font-family:ui-monospace,monospace; font-size:11px; color:var(--ink-dim); }
+  #detail p{ font-size:12.5px; line-height:1.55; color:var(--ink); margin:10px 0 0;}
+  #detail .close{
+    position:absolute; top:10px; right:12px; cursor:pointer; color:var(--ink-dim);
+    font-family:ui-monospace,monospace; font-size:13px; background:none; border:none;
+  }
+  #detail .conf{
+    margin-top:12px; font-size:11px; color:var(--parchment-dim);
+    font-family:ui-monospace,monospace;
+  }
+
+  #hint{
+    position:absolute; top:18px; right:22px; z-index:9;
+    font-size:11px; color:var(--ink-dim); font-family:ui-monospace,monospace;
+    text-align:right;
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <header>
+    <h1>The Joan Archive · Constellation View</h1>
+    <div class="sub">river = chronology &nbsp;·&nbsp; soup = everything the river can't resolve on its own</div>
+  </header>
+  <div id="hint">drag a node to disturb the soup<br>click a node to read it</div>
+  <svg id="canvas"></svg>
+  <div id="legend">
+    <h2>Node kinds</h2>
+    <div class="row"><span class="sw" style="background:var(--parchment); border-radius:50%;"></span> person</div>
+    <div class="row"><span class="sw" style="background:var(--document);"></span> document / record</div>
+    <div class="row"><span class="sw" style="background:var(--firewall); clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);"></span> firewall entry (a "John")</div>
+    <div class="row"><span class="sw" style="background:var(--contradiction); transform:rotate(45deg);"></span> open contradiction</div>
+    <hr>
+    <h2>Edge kinds</h2>
+    <div class="row"><span class="sw" style="background:#3a4356; height:2px;"></span> witnessed / signed</div>
+    <div class="row"><span class="sw" style="background:var(--document); height:2px;"></span> cites</div>
+    <div class="row"><span class="sw" style="background:var(--contradiction); height:2px; background-image:linear-gradient(90deg,var(--contradiction) 60%,transparent 40%); background-size:6px 2px;"></span> contradicts</div>
+    <div class="row"><span class="sw" style="background:var(--firewall); height:2px; background-image:linear-gradient(90deg,var(--firewall) 50%,transparent 50%); background-size:4px 2px;"></span> conflates / mistaken for</div>
+  </div>
+  <div id="detail"></div>
+</div>
+
+<script>
+const nodes = [
+  // --- PEOPLE ---
+  {id:"joan", label:"Joan Greene", type:"person", year:1660, tier:"Tier 2 · 60–70%",
+    desc:"Wife of John Greene Sr. of Quidnessett. Gave 'free & voluntary consent' to land sales in 1682, signed with her own mark, held an independent life-estate interest in the 1682 home-place deed. The Joan Project's central question: is she identifiable as Anashuecot?"},
+  {id:"johnsr", label:"John Greene Sr.", type:"person", year:1655, tier:"anchor",
+    desc:"Of Quidnessett. Confirmed dead before 25 Sept 1685 (Bates, via a deed naming his land 'now deceased'). His will was lost in the North Kingstown fire — not the 1695 document once attributed to him."},
+  {id:"anashuecot", label:"Anashuecot", type:"person", year:1672, tier:"Tier 2 · 60–70%",
+    desc:"Narragansett sachem named 'chiefe Sachem and heire properly' in the 1672 Fones Purchase deed. Deported 'conveyed out of ye country' after King Philip's War. Central hypothesis: Anashuecot = Joan."},
+  {id:"tocomminon", label:"Tocomminon", type:"person", year:1678, tier:"RED · open",
+    desc:"Named as Anashuecot's FATHER in the 1677/8 Absolom affidavit — a primary source contradicting an earlier working theory that this was a 'mangled recollection.' Unresolved: who is Tocomminon, really?"},
+  {id:"brothers", label:"Wampkegge / Ompamiatt / Washaucutt", type:"person", year:1678, tier:"RED · open",
+    desc:"Anashuecot's brothers per the Absolom affidavit. Washaucutt's status is unresolved — a third named brother, or a variant spelling of one of the other two?"},
+  {id:"danielgreen", label:"'Daniel Green' (1676 witness)", type:"person", year:1676, tier:"probable",
+    desc:"Witness at the 1676 Newport court-martial. PROBABLE identification as Daniel² Greene of Quidnessett — age ~29, documented freeman before 1676. John Fones, the deed's recorder, was also a member of this court-martial."},
+
+  // --- FIREWALL (the Johns) ---
+  {id:"john-surgeon", label:"Surgeon John (Warwick)", type:"firewall", year:1640,
+    desc:"One entry in the Five/Six-John Firewall — kept structurally separate from John of Quidnessett to prevent cross-attribution."},
+  {id:"john-quidnessett", label:"John Sr. (Quidnessett)", type:"firewall", year:1650,
+    desc:"The John at the center of the Joan Project. Bates's thesis: he used two place-based names across his lifetime — not a father-son merge."},
+  {id:"john-lt", label:"Lieutenant John² (Newport)", type:"firewall", year:1670,
+    desc:"Son of John Sr. His 1694/95 Massachusetts probate (Taunton Vol.1, p.103) was the source of the 'father's 1695 will' contamination — wrong John, wrong document."},
+  {id:"john-major", label:"Major John (Warwick)", type:"firewall", year:1618,
+    desc:"b. before 1620, d. 1708. Required sixth Firewall entry, added after primary-source cross-checks kept surfacing his name adjacent to the others."},
+  {id:"john-eastgreenwich", label:"John (East Greenwich)", type:"firewall", year:1660,
+    desc:"Possibly born Clarke, name changed to Greene. Flagged for the Firewall with caution — this is also a recurring 'floating legend' motif attached to more than one Greene."},
+
+  // --- DOCUMENTS ---
+  {id:"deed1672", label:"1672 Fones Purchase deed", type:"document", year:1672,
+    desc:"Names Anashuecot 'chiefe Sachem and heire properly.' Witnessed by Henry Greene (by mark) — a Four-John Firewall check still needed. Recorded retrospectively by John Fones, ~1686–1703."},
+  {id:"courtmartial1676", label:"1676 Newport court-martial", type:"document", year:1676,
+    desc:"Hough 1858, p.181. Lists a 'Daniel Green' among witnesses. John Fones (later recorder of the 1672 deed) was himself a member."},
+  {id:"affidavit1678", label:"1677/8 Absolom affidavit", type:"document", year:1678,
+    desc:"Names Tocomminon as Anashuecot's father and confirms his brothers Wampkegge, Ompamiatt, Washaucutt. Also records Anashuecot's post-war deportation."},
+  {id:"williams1679", label:"1679 Roger Williams testimony", type:"document", year:1679,
+    desc:"Partially recovered. Part of the network-convergence proof — Williams's name recurs across five separate records alongside Absolome, Tocomminon, Tibbetts, Smith, Rogers, Hough."},
+  {id:"deedmarch1682", label:"24 Mar 1682 home-place deed", type:"document", year:1682,
+    desc:"180 acres to sons Daniel & James. Life-estate clause: 30 shillings annually 'as long as their father OR MOTHER should live' — a non-standard clause under English coverture, consistent with an Indigenous legal framework for Joan."},
+  {id:"deedmay1682", label:"19 May 1682 Pawtuxet deed", type:"document", year:1682,
+    desc:"Joan gives 'free & voluntary consent,' signs with her mark. Buyer William Carpenter was a land speculator, NOT a Quaker — this eliminates the 'protective Quaker network' hypothesis."},
+  {id:"deed1685", label:"deed re: 'now deceased' (1685)", type:"document", year:1685,
+    desc:"Names land 'formerly in possession of John Greene, sr., of Narragansett, now deceased.' Confirms John Sr.'s death before 25 Sept 1685. Primary citation for this line still needs to be pulled from Bates's full article text."},
+  {id:"greene1894", label:"F.L. Greene (1894)", type:"document", year:1894,
+    desc:"The pre-contamination safe harbor: 'His wife, in 1682, was named Joan, but nothing further is known about her.' Predates the La Mance contamination."},
+  {id:"austin1887", label:"Austin's Genealogical Dictionary (1887)", type:"document", year:1887,
+    desc:"Identified as the likely canonical root source of the Beggarly cross-attribution error between the Warwick and Quidnessett Greene lines."},
+  {id:"lamance1904", label:"La Mance (1904)", type:"document", year:1904,
+    desc:"Source of the La Mance contamination firewall: all post-1904 genealogical claims are rejected unless independently corroborated by primary sources."},
+  {id:"bates1918", label:"Bates, RIHS Collections (1918)", type:"document", year:1918,
+    desc:"'John Greene of Newport and Narragansett.' Resolved the death date, the 1695-will contamination, and confirmed the Four-John Firewall directly from primary citations."},
+
+  // --- OPEN CONTRADICTIONS / CLAIMS ---
+  {id:"bowarrow", label:"bow-and-arrow mark", type:"contradiction", year:1672,
+    desc:"UNVERIFIED, trending NULL. All seven 1672 deed signers are recorded uniformly as 'his marke' with no pictographic description — this specific mark shape looks like an AI fabrication, not a primary-source detail."},
+  {id:"beggarly", label:"'Beggarly' surname contamination", type:"contradiction", year:1644,
+    desc:"Alice Beggarly's death (~Jan 1643/4) belongs independently to both Surgeon John's and Quidnessett John's lines. The surname attached to Joan is likely borrowed cross-contamination from the Surgeon's line, rooted in Austin 1887."},
+  {id:"will1695", label:"'1695 will names Joan'", type:"contradiction", year:1695,
+    desc:"A conflation: Lieutenant John²'s Massachusetts probate mistaken for his father's lost will. Same species of error as the Beggarly / La Mance contaminations — wrong John, wrong document, right-sounding date."},
+  {id:"receipt1635", label:"1635 RIHS manuscript receipt", type:"contradiction", year:1635,
+    desc:"'Received by me Roger Williams of John Green.' UNVERIFIED — requires handwriting comparison before it can anchor anything."}
+];
+
+const links = [
+  {source:"anashuecot", target:"deed1672", type:"cites"},
+  {source:"deed1672", target:"bowarrow", type:"contradicts"},
+  {source:"deed1672", target:"john-quidnessett", type:"cites"},
+  {source:"courtmartial1676", target:"danielgreen", type:"witnessed"},
+  {source:"courtmartial1676", target:"deed1672", type:"cites"},
+  {source:"affidavit1678", target:"anashuecot", type:"witnessed"},
+  {source:"affidavit1678", target:"tocomminon", type:"witnessed"},
+  {source:"affidavit1678", target:"brothers", type:"witnessed"},
+  {source:"williams1679", target:"affidavit1678", type:"cites"},
+  {source:"deedmarch1682", target:"joan", type:"witnessed"},
+  {source:"deedmay1682", target:"joan", type:"witnessed"},
+  {source:"deed1685", target:"johnsr", type:"cites"},
+  {source:"bates1918", target:"deedmarch1682", type:"cites"},
+  {source:"bates1918", target:"deedmay1682", type:"cites"},
+  {source:"bates1918", target:"deed1685", type:"cites"},
+  {source:"bates1918", target:"will1695", type:"contradicts"},
+  {source:"will1695", target:"john-lt", type:"conflates"},
+  {source:"greene1894", target:"joan", type:"cites"},
+  {source:"lamance1904", target:"beggarly", type:"conflates"},
+  {source:"austin1887", target:"beggarly", type:"conflates"},
+  {source:"beggarly", target:"john-surgeon", type:"contradicts"},
+  {source:"beggarly", target:"john-quidnessett", type:"contradicts"},
+  {source:"receipt1635", target:"john-quidnessett", type:"contradicts"},
+  {source:"john-eastgreenwich", target:"john-quidnessett", type:"conflates"},
+  {source:"johnsr", target:"john-quidnessett", type:"cites"},
+  {source:"joan", target:"anashuecot", type:"contradicts"}
+];
+
+const typeColor = { person:"var(--parchment)", document:"var(--document)", firewall:"var(--firewall)", contradiction:"var(--contradiction)" };
+const typeColorHex = { person:"#e8dcc3", document:"#4a9d9c", firewall:"#d4a63a", contradiction:"#c0546b" };
+
+const svg = d3.select("#canvas");
+let W = window.innerWidth, H = window.innerHeight;
+svg.attr("width", W).attr("height", H);
+
+const yearExtent = d3.extent(nodes, d => d.year);
+const xScale = d3.scaleLinear().domain(yearExtent).range([90, W-90]);
+
+const g = svg.append("g");
+
+// zoom
+svg.call(d3.zoom().scaleExtent([0.4,3]).on("zoom", (e)=> g.attr("transform", e.transform)));
+
+// river band
+const riverY = H/2;
+g.append("rect").attr("x",0).attr("y", riverY-60).attr("width", W).attr("height",120)
+  .attr("fill","url(#riverGrad)");
+const defs = svg.append("defs");
+const grad = defs.append("linearGradient").attr("id","riverGrad").attr("x1","0").attr("x2","0").attr("y1","0").attr("y2","1");
+grad.append("stop").attr("offset","0%").attr("stop-color","#1c3a52").attr("stop-opacity",0);
+grad.append("stop").attr("offset","50%").attr("stop-color","#1c3a52").attr("stop-opacity",0.35);
+grad.append("stop").attr("offset","100%").attr("stop-color","#1c3a52").attr("stop-opacity",0);
+
+// year ticks along the river
+const years = [1635,1650,1670,1680,1700,1750,1800,1850,1900,1920];
+g.selectAll(".yeartick").data(years).enter().append("text")
+  .attr("class","river-label")
+  .attr("x", d=>xScale(d)).attr("y", riverY+72)
+  .attr("text-anchor","middle")
+  .text(d=>d);
+g.append("text").attr("class","river-label").attr("x", W/2).attr("y", riverY+90)
+  .attr("text-anchor","middle").style("fill","#4a5670").text("← the river (chronology) →");
+
+const link = g.append("g").selectAll("path")
+  .data(links).enter().append("path")
+  .attr("class", d=>"link link-"+d.type);
+
+const node = g.append("g").selectAll("g")
+  .data(nodes).enter().append("g")
+  .attr("class","node")
+  .call(d3.drag()
+    .on("start", (e,d)=>{ if(!e.active) sim.alphaTarget(0.3).restart(); d.fy=d.y; })
+    .on("drag", (e,d)=>{ d.y=e.y; d.fy=e.y; })
+    .on("end", (e,d)=>{ if(!e.active) sim.alphaTarget(0); }));
+
+function shapeFor(sel, type){
+  if(type==="person"){
+    sel.append("circle").attr("r",8).attr("fill",typeColorHex.person).attr("stroke","#3a3428").attr("stroke-opacity",0.6);
+  } else if(type==="document"){
+    sel.append("rect").attr("x",-7).attr("y",-7).attr("width",14).attr("height",14).attr("rx",2)
+      .attr("fill",typeColorHex.document).attr("fill-opacity",0.85).attr("stroke","#0e3d3c");
+  } else if(type==="firewall"){
+    sel.append("polygon").attr("points","0,-9 8,-4.5 8,4.5 0,9 -8,4.5 -8,-4.5")
+      .attr("fill",typeColorHex.firewall).attr("fill-opacity",0.9).attr("stroke","#5c4310");
+  } else {
+    sel.append("rect").attr("x",-7).attr("y",-7).attr("width",14).attr("height",14)
+      .attr("transform","rotate(45)")
+      .attr("fill",typeColorHex.contradiction).attr("fill-opacity",0.9).attr("stroke","#5c1f2c");
+  }
+}
+node.each(function(d){ shapeFor(d3.select(this), d.type); });
+
+node.append("text").attr("dy", 20).attr("text-anchor","middle").text(d=>d.label);
+
+node.on("click",(e,d)=>{
+  e.stopPropagation();
+  showDetail(d);
+  highlightNeighbors(d);
+});
+svg.on("click", ()=>{ clearHighlight(); closeDetail(); });
+
+const sim = d3.forceSimulation(nodes)
+  .force("x", d3.forceX(d=>xScale(d.year)).strength(0.9))
+  .force("y", d3.forceY(riverY).strength(0.06))
+  .force("collide", d3.forceCollide(26))
+  .force("charge", d3.forceManyBody().strength(-40))
+  .force("link", d3.forceLink(links).id(d=>d.id).distance(70).strength(0.15))
+  .on("tick", ticked);
+
+function ticked(){
+  link.attr("d", d=>`M${d.source.x},${d.source.y} L${d.target.x},${d.target.y}`);
+  node.attr("transform", d=>`translate(${d.x},${d.y})`);
+}
+
+function highlightNeighbors(d){
+  const connected = new Set([d.id]);
+  links.forEach(l=>{
+    if(l.source.id===d.id) connected.add(l.target.id);
+    if(l.target.id===d.id) connected.add(l.source.id);
+  });
+  node.classed("dimmed", n=>!connected.has(n.id));
+  link.classed("dimmed", l=>l.source.id!==d.id && l.target.id!==d.id);
+}
+function clearHighlight(){
+  node.classed("dimmed", false);
+  link.classed("dimmed", false);
+}
+
+function showDetail(d){
+  const el = document.getElementById("detail");
+  el.innerHTML = `
+    <button class="close" onclick="document.getElementById('detail').classList.remove('open')">✕ close</button>
+    <span class="type-tag" style="background:${typeColorHex[d.type]}22; color:${typeColorHex[d.type]}; border:1px solid ${typeColorHex[d.type]}55;">${d.type}</span>
+    <h3>${d.label}</h3>
+    <div class="year">${d.year}</div>
+    <p>${d.desc}</p>
+    ${d.tier ? `<div class="conf">confidence: ${d.tier}</div>` : ""}
+  `;
+  el.classList.add("open");
+}
+function closeDetail(){ document.getElementById("detail").classList.remove("open"); }
+
+window.addEventListener("resize", ()=>{
+  W = window.innerWidth; H = window.innerHeight;
+  svg.attr("width",W).attr("height",H);
+  xScale.range([90,W-90]);
+  sim.force("x", d3.forceX(d=>xScale(d.year)).strength(0.9));
+  sim.alpha(0.3).restart();
+});
+</script>
+</body>
+</html>
