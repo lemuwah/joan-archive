@@ -54,19 +54,20 @@ This doesn't mean these are bad options. They're good options for people who hav
 
 ## The Standard
 
-The 4 Laws + 4 Operating Principles govern everything:
+The 5 Laws + 4 Operating Principles govern everything:
 
-### The 4 Laws
+### The 5 Laws
 1. **No Narrative Smoothing** — contradictions stay visible
 2. **La Mance Law** — no claim accepted from La Mance (1904) without independent corroboration
 3. **No Premature Disqualification** — hypotheses stay open until evidence closes them
 4. **No Algorithmic Contamination** — AI output never becomes source material
+5. **No Jurisdictional Assumption** — no colony, authority, or record repository dismissed as "unlikely" to hold evidence of Joan; the Narragansett region was contested territory documented by Rhode Island, Massachusetts Bay, Plymouth Colony, Connecticut, the Crown, New York, and Native landholders; equal priority with Law 2; dismissing a repository without checking it is a violation
 
 ### The 4 Operating Principles
 1. Extra caution and respect toward Indigenous culture
 2. No overclaiming
 3. Be kind and explain reasoning
-4. Stick to the 4 Laws always
+4. Stick to the 5 Laws always
 
 ---
 

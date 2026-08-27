@@ -1,14 +1,15 @@
 # THE JOAN PROJECT — SOURCE SPINE & TIMELINE
-**Status as of 20 July 2026** | **Four Laws in force throughout**
+**Status as of 27 August 2026** | **Five Laws in force throughout**
 
 ---
 
-## The Four Governing Laws
+## The Five Governing Laws
 
 *   **Law 1 — No Narrative Smoothing:** All contradictions logged and held open with status tags until 100% proven.
 *   **Law 2 — La Mance Law:** No claim traceable to La Mance (1904) accepted without independent primary corroboration.
 *   **Law 3 — No Premature Disqualification:** No hypothesis eliminated until thoroughly tested against primary sources.
 *   **Law 4 — No Algorithmic Contamination:** Every identified contamination (AI hallucination, fabricated source, algorithmic auto-fill guess, or uncorroborated secondary/circular compilation) must be logged in the AI Contamination Log or `contamination_index.md` with its vector and rejection reasoning — never silently deleted.
+*   **Law 5 — No Jurisdictional Assumption:** No colony, authority, or record repository may be dismissed as "unlikely" to hold evidence of Joan. The Quidnessett/Narragansett region was contested territory documented by Rhode Island, Massachusetts Bay, Plymouth Colony, Connecticut, the Crown (Colonial Office), New York, and Native landholders — each with overlapping and conflicting jurisdictional claims, each generating records, often catalogued in unexpected locations. This law has equal priority with Law 2 (La Mance Law). Dismissing a repository without checking it is a violation.
 
 **Status Tag System:**  
 🟢 **PROVEN** | 🟡 **PROBABLE** | ⚪ **UNVERIFIED** | ⚫ **NULL**
@@ -27,8 +28,8 @@
 | Date | Event | Who | Where | Source | Status |
 |---|---|---|---|---|---|
 | c.1642 (implied) | John Greene arrives, settles with Richard Smith | John Greene Sr. | Cocumscussoc | John Greene's own 1679 affidavit (*"forty years and more..."*) | 🟢 |
-| 1664 | Court record: *"John Greene Sen'r, living at Narragansett or Aquidnesitt"* | John Greene Sr. | Newport Court | Newport court record | 🟢 |
-| 1 Jan 1671/72 | Fones Purchase deed: Anashuecot named *"chiefe Sachem and heire properly"*; brothers Wampkegge, Ompamiatt named; witnessed by Henry Greene (mark), George Wightman | Anashuecot, Wampkegge, Ompamiatt, Henry Greene, George Wightman | Narragansett Country | Fones Record (Arnold transcription / RI State Archives) | 🟢 |
+| 1664 | Court record: *"John Greene Seniʳ, living at Narragansett or Aquidnesitt"* | John Greene Sr. | Newport Court | Newport court record | 🟢 |
+| 1 Jan 1671/72 | Fones Purchase deed: Anashuecot named *"chiefe Sachem and heire properly"*; brothers Wampkegge, Ompamiate named; witnessed by Henry Greene (mark), George Wightman | Anashuecot, Wampkegge, Ompamiate, Henry Greene, George Wightman | Narragansett Country | Fones Record (Arnold transcription / RI State Archives) | 🟢 |
 | 1 Jan 1671/72 | Same deed: all seven signers recorded *"his marke"*, no pictograph described in transcribed text | Anashuecot + 6 others | — | Fones Record | 🟢 |
 | 1676 | Court-martial: witness "Daniel Green" testimony (Anaftiawin context) | "Daniel Green" | — | Hough 1858, pp. 173–191 *(retrieval incomplete)* | 🟡 |
 | 1676 | Providence town records burn (King Philip's War) | — | Providence | Historical event | 🟢 |
@@ -69,7 +70,7 @@
 2. **Execution (1 Jan 1671/72):** 6 Native grantors, 6 English buyers, Absolom as *Counsellor*.
 3. **Wartime Transit (1672–1676):** Private syndicate custody during King Philip's War; survived Cocumscussoc burning.
 4. **Post-War Ancillary Affidavit (1677/78):** Absolom deposition establishing lineage and wartime displacement (*"conveyed out of ye country"*).
-5. **Belated Bureaucratic Enrolment (1703):** Official enrolment by Clerk Fones 31 years post-execution during boundary review.
+5. **Belated Bureaucratic Enrollment (1703):** Official enrolment by Clerk Fones 31 years post-execution during boundary review.
 6. **Cartographic Anchorage (1717/18):** Survey confirmation on Quidnessett Plat map (*"John Green & Son 151 Ac"*).
 
 ### 3.2 The 1682 Home-Place & Pawtuxet Consent Lifecycle Matrix (`theory/1682_deed_lifecycle.md`)
@@ -84,7 +85,7 @@
 
 ## 4. Seven(+)-Name Network Convergence
 Recurring across 1672 deed, 1676 court-martial, 1677/8 affidavit, 1679 testimony, 1682 deeds:
-**Absolome · Tocomminon · Tibbetts · Smith · Williams · Rogers · Hough**  
+**Absolome · Tocomminon · Tibbitts · Smith · Williams · Rogers · Hough**  
 *Status:* 🟢 pattern confirmed as structural argument; individual link strengths vary.
 
 ---
@@ -128,9 +129,9 @@ Narragansett has no masculine/feminine grammatical gender → *"his marke"* cann
 5.  **Complete Hough 1858 pp. 173–191 retrieval** for Anaftiawin / Daniel Green court-martial entries *(currently incomplete)*.
 6.  **Bartlett Vols. 2–3 Search:** Search for Greene + captive entries *(slave-trade test)*.
 7.  **IG Merchant Seal Hypothesis:** I.G. gravestone (RIHS Mss 117, Box 1, Folders 8–13) as potential key evidence.
-8.  **Audit Family TreeDNA Green/e Surname Project (Code H10429) against Kit B2778:**
+8.  **Audit FamilyTreeDNA Green/e Surname Project (Code H10429) against Kit B2778:**
     *   *INTERNAL INCONSISTENCY:* "R-FTB79899" vs. "R-Z255" — unresolved. Both codes held ⚪ **UNVERIFIED** until mismatch is explained (e.g., one is a downstream SNP of the other, or one is a kit number vs. haplogroup). Do not treat either as reliable until reconciled.
-9.  **Coginiquant / Cogineaquon / Cononjonant Name-Cluster:** Read Potter's Atherton Purchase (~pp. 58–60) or Arnold 1894. *(Note: Do not confuse with the fabricated composite "Cojonoquond" logged in Section 7).*
+9.  **Coginiquant / Cogineaquon / Cononjonant Name-Cluster:** Read Potter's Atherton Purchase (~pp. 58–60) or Arnold 1894. **(Note: Do not confuse with the fabricated composite "Cojonoquond" logged in Section 7).**
 10. **Direct documentary link between Joan and Anashuecot (CRITICAL — closes Tier 2):** No single source contains both names. The 31-year documentary gap (1672 execution → 1703 Fones entry) remains the central evidentiary vulnerability.
 
 ---
