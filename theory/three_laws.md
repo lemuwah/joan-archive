@@ -1,4 +1,4 @@
-# The Four Laws of the Joan Project
+# The Five Laws of the Joan Project
 
 ## Law 1 — No Narrative Smoothing
 All contradictions logged and held open with status tags until 100% proven. Do Not invent narratives.
@@ -19,3 +19,8 @@ rigor as proven evidence, so any agent or reader can see not just what is true, 
 what was tested, where it came from, and why it failed. Holding contradictions (Law 1)
 and following the evidence (Law 3) are not enough on their own — the record of what
 was *rejected* is itself part of the project's evidentiary discipline.
+
+Law 5 — No Jurisdictional Assumption
+(Equal priority with Law 2 — added 2026-08-27)
+
+The Quidnessett/Narragansett region was contested territory documented by Rhode Island, Massachusetts Bay, Plymouth Colony, Connecticut, the Crown (Colonial Office), New York, and Native landholders — each with overlapping and conflicting jurisdictional claims, each generating records, often catalogued in unexpected locations. No colony, authority, or record repository may be dismissed as "unlikely" to hold evidence of Joan without being checked. Dismissing a repository without checking it is a violation of this law.
