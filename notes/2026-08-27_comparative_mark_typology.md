@@ -1,12 +1,29 @@
 # Comparative Mark Typology — Framework
-**Date:** 2026-08-27  
-**Agent:** Migoo  
-**Status:** FRAMEWORK + INITIAL SOURCE LIST — data collection in progress  
-**Purpose:** Build a comparison framework for colonial-era marks so that when Joan's mark is eventually accessed, it can be immediately contextualized  
+**Date:** 2026-08-27 (updated 2026-08-28)
+**Agent:** Migoo
+**Status:** FRAMEWORK + INITIAL SOURCE LIST — data collection in progress
+**Purpose:** Build a comparison framework for colonial-era marks so that when Joan's mark is eventually accessed, it can be immediately contextualized
 
 ---
 
 ## The 4 Laws apply throughout this document.
+
+---
+
+## Anashuecot Mark Condition Note (Added 2026-08-28)
+
+**Critical update from email archive review:**
+
+The Fones Record area containing Anashuecot's mark is **physically damaged/torn** in the original manuscript. The mark itself is **not visible** in the surviving document.
+
+The transcription classifies Anashuecot as male ("his mark") — this could be:
+1. The scribe's default convention for an unfamiliar signer
+2. An accurate recording of how the signer was presented to the clerk
+3. A reflection of English assumptions about land authority (default male)
+
+**This is an open condition of the source material, not a data conflict.** We cannot verify or discount the gender classification without access to additional primary sources that describe Anashuecot independently of the Fones Record.
+
+**This means:** Any comparison between Anashuecot's mark and Joan's mark cannot be visual — it can only be contextual (role in deed, legal position, geographic location, temporal proximity). The plus-mark description sometimes referenced in research discussions **cannot be confirmed from the original** due to physical damage.
 
 ---
 
@@ -64,12 +81,6 @@ This group exists for awareness only. We include it because:
 - We will not catalog Indigenous marks ourselves — that work belongs to Indigenous scholars and communities
 
 **We note with respect that Indigenous pictographic marks carry deep cultural and personal significance. They are not simply "signatures" in the European sense. Any comparison must be made with this understanding.**
-
----
-
-## Free, Browsable Sources for Mark Collection
-
-See `notes/2026-08-27_free_browsable_archives.md` for the full list of archives where original manuscript pages can be browsed tonight at no cost.
 
 ---
 
