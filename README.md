@@ -78,12 +78,18 @@ Every claim on the site carries a status tag (Tier 1 Primary → Tier 4 Invalida
 
 ---
 
-## The four laws
+## The five laws
 
 1. **No Smoothing** — contradictions in the sources are displayed, not resolved away for narrative convenience.
 2. **La Mance Sieve** — any claim traceable to Lora Sarah Nichols La Mance's uncited 1904 compilation is quarantined until it's independently verified from a primary source.
 3. **No Early Exclusion** — hypotheses aren't ruled out just because they're inconvenient or unfamiliar.
 4. **No Algorithmic Contamination** — claims that exist only because they were copied between genealogy platforms don't count as evidence, no matter how many trees repeat them.
+5. **law 5-Add Law 5 — No Jurisdictional Assumption (equal priority with La Mance Law)** — 2026-08-27
+The Quidnessett/Narragansett region was contested territory documented by
+Rhode Island, Massachusetts Bay, Plymouth Colony, Connecticut, the Crown,
+New York, and Native landholders — each generating records, often catalogued
+in unexpected locations. No repository may be dismissed as unlikely without
+checking it.
 
 ---
 
