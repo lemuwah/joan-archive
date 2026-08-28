@@ -1,55 +1,49 @@
 # People Directory
+**Last updated:** 2026-08-28
 
-This directory contains individual research profiles for every named person in the Joan Archive's documentary orbit.
-
-## Structure
-
-Each profile includes:
-- **Identity card** — dates, locations, relationships, distinguishing features
-- **Primary source trail** — only documents that name this person directly
-- **Contamination points** — where secondary sources create confusion
-- **Open questions** — unresolved items preserved per Law 3 (No Early Exclusion)
-
-## Index
-
-### Core Subjects
-- [Joan/e Greene](../index.html) — the central subject; two 1682 appearances only
-- [John Greene of Quidnessett](five_john_primary_source_trail.md#john-1-john-greene-of-quidnessett) — Joan's husband
-
-### The Five Johns (Primary Source Trail)
-- [Five-John Primary Source Trail](five_john_primary_source_trail.md) — complete disambiguation reference
-- [Surgeon John Greene of Warwick](five_john_primary_source_trail.md#john-2-surgeon-john-greene-of-warwick)
-- [Lieutenant John² Greene of Newport](five_john_primary_source_trail.md#john-3-lieutenant-john²-greene-of-newport)
-- [John Greene of East Greenwich](five_john_primary_source_trail.md#john-4-john-greene-of-east-greenwich)
-- [Stonewall John (Nawham)](five_john_primary_source_trail.md#john-5-stonewall-john-nawham)
-
-### Joan's Orbit (1682 Deeds)
-- Daniel Greene — *page pending*
-- James Greene — *page pending*
-- John Fones/Foanes — *page pending*
-
-### Narragansett Political Figures
-- Anashuecot — *page pending*
-- Absolom — *page pending*
-- Tocomminon — *page pending*
-- [Coginaquand/Cononjonant](../notes/2026-08-27_coginaquand_date_discrepancy.md) — sachem; date discrepancy question
-- Queen Quaiapen — *page pending*
-
-### English Network
-- Richard Smith — *page pending*
-- William Carpenter — *page pending*
-- [Nath. Greene](../notes/2026-08-27_nath_greene_unidentified.md) — unidentified 1687 witness
-
-### Scholarly Authorities
-- Louise Prosser Bates — *page pending*
-- Lora Sarah Nichols La Mance — *page pending*
+Individual profile pages for documented persons in the Joan Archive. Each profile contains only verified facts with inline source citations. La Mance-derived claims are excluded per Law 2 unless independently corroborated.
 
 ---
 
-**Status markers:**
-- 🟢 Tier 1 — Original document examined
-- 🟢 Tier 2 — Reliable scholarly transcription
-- 🟡 Tier 3 — Unverified compilation
-- 🔴 Tier 4 — Demonstrably false or fabricated
+## The Five Laws apply throughout this directory.
 
-**The 5 Laws apply throughout this directory.**
+---
+
+## The Three John Greenes
+
+The single most damaging confusion in Greene genealogy is the conflation of three contemporaries named John Greene in colonial Rhode Island. La Mance (1904) treated the Quidnessett John as the Surgeon's son. This is **not supported by primary evidence** and is contradicted by:
+- Different wives (Ann Almy vs. Joan)
+- Different children (completely non-overlapping lists)
+- Different freeman records (Warwick 1647 vs. Acquidnesset 1671)
+- Different offices (Deputy Governor vs. none established)
+- Y-DNA divergence (Irish Sea cluster vs. expected English modal)
+
+The RI State Archives has confirmed the three-John structure is "evident from the records."
+
+- [`john_greene_warwick.md`](john_greene_warwick.md) — Major John Greene, Deputy Governor. Son of the Surgeon. Best documented.
+- [`john_greene_newport.md`](john_greene_newport.md) — John Greene of Newport / Green End. Thinnest record.
+- [`john_greene_quidnessett.md`](john_greene_quidnessett.md) — John Greene of Quidnessett. Joan's husband. The one this archive is about.
+
+### The Newport–Quidnessett Identification Problem
+
+Louise Prosser Bates (*RIHS Collections* XI–XII, 1918–19) argued the Newport man and the Quidnessett man were **the same person**, based on:
+- A 1651 Quidnessett land purchase by a "John Greene" described as a Newport husbandman
+- The c. 1661–1663 movement from Newport to Quidnessett
+- Overlapping property chains
+
+Later genealogical analysis considers this "plausible but unresolved." Multiple generations named John Greene make assignments difficult.
+
+**Per Law 1:** This question is held open. The profiles are maintained separately because the evidence does not conclusively prove they are the same person. If future evidence resolves this, the profiles can be merged.
+
+---
+
+## Other People (to be added as profiles are created)
+
+- Joan Greene (wife of John of Quidnessett) — see `theory/source_spine.md` for current documentation
+- Anashuecot / Awashouse — see `notes/2026-08-28_anashuecot_phonetic_variants.md`
+- Absolom — see `primary_sources/absolom.md`
+- Tocomminon — Anashuecot's father, named in Absolom affidavit
+
+---
+
+*This directory exists to prevent conflation. Each profile is a firewall.*
