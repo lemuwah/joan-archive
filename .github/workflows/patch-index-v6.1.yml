@@ -1,0 +1,30 @@
+name: Patch index.html v6.1
+on:
+  workflow_dispatch:
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fix encoding and Anashuecot entry
+        run: |
+          # Fix 1: Replace broken emoji encoding
+          sed -i 's/&x26a0;&xfe0f;/\u26a0\ufe0f/g' index.html
+          # Fix 2: Update Anashuecot fate description
+          sed -i 's/Absent from English records after 1672\. Fate unknown: execution, enslavement, or flight\./Per Absolom affidavit (1677\/78): \&ldquo;conveyed out of the country.\&rdquo; Ninigret and other Niantic\/Narragansett sachems maintained neutrality during King Philip\&rsquo;s War./g' index.html
+          # Verify
+          echo "x26a0 remaining: $(grep -c 'x26a0' index.html || echo 0)"
+          echo "Fate unknown remaining: $(grep -c 'Fate unknown' index.html || echo 0)"
+      - name: Commit
+        run: |
+          git config user.name 'lemuwah'
+          git config user.email 'lemuwah@gmail.com'
+          git add index.html
+          git diff --cached --quiet || git commit -m 'Fix index.html: emoji encoding + Anashuecot Absolom correction
+
+1. Replace &x26a0;&xfe0f; with actual warning emoji
+2. Replace "Fate unknown" with Absolom affidavit quote
+   (conveyed out of the country) + Ninigret neutrality context
+
+All 5 laws in force.'
+          git push
