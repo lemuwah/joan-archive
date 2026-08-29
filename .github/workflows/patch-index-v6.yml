@@ -1,0 +1,96 @@
+name: Patch index.html to v6.0
+on:
+  workflow_dispatch:
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Apply v6.0 patches
+        run: |
+          python3 << 'SCRIPT'
+          with open('index.html', 'r') as f:
+              content = f.read()
+
+          changes = []
+
+          # 1. Add Tomaquag Museum link
+          old = 'Narragansett Tribal Historic Preservation Office</strong>, tribal historians'
+          new = 'Narragansett Tribal Historic Preservation Office</strong>, <a href="https://www.tomaquagmuseum.org/" target="_blank"><strong>Tomaquag Museum</strong></a> (Exeter, RI), tribal historians'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('1. Tomaquag Museum link added')
+
+          # 2. Add Pilgrim Hall Absalom deposition row
+          old = '          <tr><td>F.L. Greene, "Greene Family Records" (1894)'
+          new = '          <tr><td>Pilgrim Hall Museum \u2014 Absalom Deposition (Hog Island)</td><td>1683/84</td><td>A separate deposition (distinct from the 1677/78 Tocomminon affidavit) independently describes Absalom as \"an Indian formerly belonging to Cohasset in the Narragansett Country and sometimes Counselor unto the Narragansett Sachem.\" Confirms \"Counsellor\" as a real recurring title held across multiple documents at different institutions.</td><td><span class="badge proven">Tier 1 \u2014 Primary (independent)</span></td></tr>\n          <tr><td>F.L. Greene, "Greene Family Records" (1894)'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('2. Pilgrim Hall Absalom row added')
+
+          # 3. Add alfredgibbs.com contamination alert
+          old = '      <div class="card-grid">\n        <div class="card">\n          <h3>\u26a0\ufe0f Self-Audit'
+          new_alert = '      <div class="note-box danger" style="margin-bottom: 24px;">\n        <strong>\u26a0\ufe0f Active Contamination (2026):</strong> <a href="https://alfredgibbs.com/john-greene-of-quidnessett-1606-1695/" target="_blank">alfredgibbs.com</a> is actively publishing video content stating he married \"Mrs. Joan Beggarly\" around 1642 \u2014 treating the La Mance-derived name as settled fact. The full contamination chain: Winthrop/Bartlett (1856) correctly named Alice Beggarly as wife of <em>Surgeon</em> John of Warwick \u2192 La Mance (1904) moved the name to the wrong John without citation \u2192 secondary genealogies copied \u2192 alfredgibbs.com (2026) presents as established fact. <strong>Independent validation:</strong> <a href="https://www.wikitree.com/wiki/Greene-43" target="_blank">WikiTree (Greene-43)</a> independently flags La Mance as unsourced and confirms the Five-John distinction. <a href="https://www.caskey-family.com/john-greene-2/" target="_blank">Caskey Family</a> rules out two specific candidates.\n      </div>\n\n      <div class="card-grid">\n        <div class="card">\n          <h3>\u26a0\ufe0f Self-Audit'
+          # Try a simpler anchor
+          old2 = '      <p>Your tree may look clean. Run this 2-minute self-audit'
+          if old2 in content:
+              content = content.replace(old2, '      <div class="note-box danger" style="margin-bottom: 24px;">\n        <strong>\u26a0\ufe0f Active Contamination (2026):</strong> <a href="https://alfredgibbs.com/john-greene-of-quidnessett-1606-1695/" target="_blank">alfredgibbs.com</a> is actively publishing video content stating he married &quot;Mrs. Joan Beggarly&quot; around 1642 &mdash; treating the La Mance-derived name as settled fact. Full chain: Winthrop/Bartlett (1856) &rarr; La Mance misattribution (1904) &rarr; secondary genealogies &rarr; alfredgibbs.com (2026). <strong>External validation:</strong> <a href="https://www.wikitree.com/wiki/Greene-43" target="_blank">WikiTree (Greene-43)</a> flags La Mance as unsourced. <a href="https://www.caskey-family.com/john-greene-2/" target="_blank">Caskey Family</a> rules out two candidates.\n      </div>\n\n      <p>Your tree may look clean. Run this 2-minute self-audit')
+              changes.append('3. alfredgibbs.com contamination alert added')
+
+          # 4. Strengthen La Mance Clause
+          old = 'Chronologically impossible: Alice died Jan 1643/44; Joan appears 1682. See Appendix: Contamination Index for full deconstruction. Tier 4'
+          new = 'Chronologically impossible: Alice died Jan 1643/44; Joan appears 1682. <strong>Full chain now traced:</strong> Winthrop/Bartlett (1856, Vol. I p.16 footnote) correctly attributes &quot;Beggerly&quot; to John Greene of <em>Warwick</em>. La Mance moved the name to the wrong John without citation. Every &quot;Joan Beggarly&quot; entry traces to this single misattribution. See Appendix: Contamination Index for full deconstruction. Tier 4'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('4. La Mance Clause strengthened with Winthrop footnote')
+
+          # 5. Add Rocky David Farm legal context
+          old = '          <p style="margin-top: 8px;"><strong>The shift:</strong> Post-1676, some surviving Narragansett individuals'
+          new = '          <div class="note-box verified" style="margin-top: 12px;">\n            <strong>Legal Context (New):</strong> Two years before the 1672 Fones Purchase, Rhode Island&rsquo;s General Assembly had already outlawed direct land purchases from the Narragansett, making the transaction technically invalid under colonial law. The six purchasers were only allowed to keep small farms within it as a compromise. <em>Source: rockydavidfarm.com (secondary &mdash; original statute text needed for Tier 1).</em>\n          </div>\n          <p style="margin-top: 8px;"><strong>The shift:</strong> Post-1676, some surviving Narragansett individuals'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('5. Rocky David Farm legal context added')
+
+          # 6. Add three Negative Space Log entries
+          old = '          <tr><td>Salisbury, Wiltshire'
+          new = '          <tr><td>Native Northeast Portal (nativenortheastportal.com)</td><td>Pending</td><td>Narragansett deeds, Fones Purchase comparators</td><td class="neg-pending">Academic digitization project. Comparison corpus for deed analysis. Not yet searched.</td><td>&mdash;</td></tr>\n          <tr><td>RIHS Mss 350 &mdash; Narragansett Indian Deed Collection</td><td>Pending</td><td>Narragansett deeds by box/folder</td><td class="neg-pending">Finding aid at rihs.org/mssinv/Mss350.htm. Real comparison set. Not yet examined.</td><td>&mdash;</td></tr>\n          <tr><td>Pilgrim Hall Museum &mdash; Absalom depositions</td><td>2026-08-29</td><td>Absalom, Counsellor, Narragansett Sachem</td><td class="neg-checked">FOUND &mdash; 1683/4 deposition independently confirms &quot;Counselor unto the Narragansett Sachem.&quot; Different document from 1677/78. See Documents table.</td><td>Research team</td></tr>\n          <tr><td>Salisbury, Wiltshire'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('6. Three new Negative Space Log entries added')
+
+          # 7. Update footer
+          old = 'Research Packet v5.2'
+          new = 'Research Packet v6.0'
+          if old in content:
+              content = content.replace(old, new)
+              old2 = 'July 2026. Hostile review applied. No narrative smoothing.'
+              new2 = 'August 2026. Three agent cycles completed. Five Laws in force. No narrative smoothing.'
+              content = content.replace(old2, new2)
+              changes.append('7. Footer updated to v6.0 August 2026')
+
+          with open('index.html', 'w') as f:
+              f.write(content)
+
+          print(f'Applied {len(changes)} changes:')
+          for c in changes:
+              print(f'  {c}')
+          SCRIPT
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git diff --cached --stat
+          git commit -m "Live site v6.0: 7 targeted edits applied via workflow
+
+          1. Tomaquag Museum linked in Record Ethics
+          2. Pilgrim Hall Absalom 1683/4 deposition added
+          3. alfredgibbs.com contamination alert
+          4. Winthrop footnote chain in La Mance Clause
+          5. Rocky David Farm legal context
+          6. Three new Negative Space Log entries
+          7. Footer v5.2 → v6.0 August 2026"
+          git push
