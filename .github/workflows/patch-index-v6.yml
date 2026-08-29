@@ -2,6 +2,9 @@ name: Patch index.html to v6.0
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   patch:
     runs-on: ubuntu-latest
@@ -25,18 +28,16 @@ jobs:
 
           # 2. Add Pilgrim Hall Absalom deposition row
           old = '          <tr><td>F.L. Greene, "Greene Family Records" (1894)'
-          new = '          <tr><td>Pilgrim Hall Museum \u2014 Absalom Deposition (Hog Island)</td><td>1683/84</td><td>A separate deposition (distinct from the 1677/78 Tocomminon affidavit) independently describes Absalom as \"an Indian formerly belonging to Cohasset in the Narragansett Country and sometimes Counselor unto the Narragansett Sachem.\" Confirms \"Counsellor\" as a real recurring title held across multiple documents at different institutions.</td><td><span class="badge proven">Tier 1 \u2014 Primary (independent)</span></td></tr>\n          <tr><td>F.L. Greene, "Greene Family Records" (1894)'
+          new = '          <tr><td>Pilgrim Hall Museum &mdash; Absalom Deposition (Hog Island)</td><td>1683/84</td><td>A separate deposition (distinct from the 1677/78 Tocomminon affidavit) independently describes Absalom as &quot;an Indian formerly belonging to Cohasset in the Narragansett Country and sometimes Counselor unto the Narragansett Sachem.&quot; Confirms &quot;Counsellor&quot; as a real recurring title held across multiple documents at different institutions.</td><td><span class="badge proven">Tier 1 &mdash; Primary (independent)</span></td></tr>\n          <tr><td>F.L. Greene, "Greene Family Records" (1894)'
           if old in content:
               content = content.replace(old, new)
               changes.append('2. Pilgrim Hall Absalom row added')
 
           # 3. Add alfredgibbs.com contamination alert
-          old = '      <div class="card-grid">\n        <div class="card">\n          <h3>\u26a0\ufe0f Self-Audit'
-          new_alert = '      <div class="note-box danger" style="margin-bottom: 24px;">\n        <strong>\u26a0\ufe0f Active Contamination (2026):</strong> <a href="https://alfredgibbs.com/john-greene-of-quidnessett-1606-1695/" target="_blank">alfredgibbs.com</a> is actively publishing video content stating he married \"Mrs. Joan Beggarly\" around 1642 \u2014 treating the La Mance-derived name as settled fact. The full contamination chain: Winthrop/Bartlett (1856) correctly named Alice Beggarly as wife of <em>Surgeon</em> John of Warwick \u2192 La Mance (1904) moved the name to the wrong John without citation \u2192 secondary genealogies copied \u2192 alfredgibbs.com (2026) presents as established fact. <strong>Independent validation:</strong> <a href="https://www.wikitree.com/wiki/Greene-43" target="_blank">WikiTree (Greene-43)</a> independently flags La Mance as unsourced and confirms the Five-John distinction. <a href="https://www.caskey-family.com/john-greene-2/" target="_blank">Caskey Family</a> rules out two specific candidates.\n      </div>\n\n      <div class="card-grid">\n        <div class="card">\n          <h3>\u26a0\ufe0f Self-Audit'
-          # Try a simpler anchor
-          old2 = '      <p>Your tree may look clean. Run this 2-minute self-audit'
-          if old2 in content:
-              content = content.replace(old2, '      <div class="note-box danger" style="margin-bottom: 24px;">\n        <strong>\u26a0\ufe0f Active Contamination (2026):</strong> <a href="https://alfredgibbs.com/john-greene-of-quidnessett-1606-1695/" target="_blank">alfredgibbs.com</a> is actively publishing video content stating he married &quot;Mrs. Joan Beggarly&quot; around 1642 &mdash; treating the La Mance-derived name as settled fact. Full chain: Winthrop/Bartlett (1856) &rarr; La Mance misattribution (1904) &rarr; secondary genealogies &rarr; alfredgibbs.com (2026). <strong>External validation:</strong> <a href="https://www.wikitree.com/wiki/Greene-43" target="_blank">WikiTree (Greene-43)</a> flags La Mance as unsourced. <a href="https://www.caskey-family.com/john-greene-2/" target="_blank">Caskey Family</a> rules out two candidates.\n      </div>\n\n      <p>Your tree may look clean. Run this 2-minute self-audit')
+          old = '      <p>Your tree may look clean. Run this 2-minute self-audit'
+          new = '      <div class="note-box danger" style="margin-bottom: 24px;">\n        <strong>&x26a0;&xfe0f; Active Contamination (2026):</strong> <a href="https://alfredgibbs.com/john-greene-of-quidnessett-1606-1695/" target="_blank">alfredgibbs.com</a> is actively publishing video content stating he married &quot;Mrs. Joan Beggarly&quot; around 1642 &mdash; treating the La Mance-derived name as settled fact. Full chain: Winthrop/Bartlett (1856) &rarr; La Mance misattribution (1904) &rarr; secondary genealogies &rarr; alfredgibbs.com (2026). <strong>External validation:</strong> <a href="https://www.wikitree.com/wiki/Greene-43" target="_blank">WikiTree (Greene-43)</a> flags La Mance as unsourced. <a href="https://www.caskey-family.com/john-greene-2/" target="_blank">Caskey Family</a> rules out two candidates.\n      </div>\n\n      <p>Your tree may look clean. Run this 2-minute self-audit'
+          if old in content:
+              content = content.replace(old, new)
               changes.append('3. alfredgibbs.com contamination alert added')
 
           # 4. Strengthen La Mance Clause
@@ -78,19 +79,15 @@ jobs:
               print(f'  {c}')
           SCRIPT
 
-      - name: Commit changes
+      - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add index.html
-          git diff --cached --stat
-          git commit -m "Live site v6.0: 7 targeted edits applied via workflow
-
-          1. Tomaquag Museum linked in Record Ethics
-          2. Pilgrim Hall Absalom 1683/4 deposition added
-          3. alfredgibbs.com contamination alert
-          4. Winthrop footnote chain in La Mance Clause
-          5. Rocky David Farm legal context
-          6. Three new Negative Space Log entries
-          7. Footer v5.2 → v6.0 August 2026"
-          git push
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git diff --cached --stat
+            git commit -m "Live site v6.0: 7 targeted edits applied via workflow"
+            git push
+          fi
