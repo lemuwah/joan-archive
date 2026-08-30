@@ -1,5 +1,6 @@
 # Anaftiawin Court Martial — August 1676, Newport
 **Created:** 2026-08-29
+**Last updated:** 2026-08-30
 **Source:** Hough 1858, *Narrative of the Causes which led to Philip's Indian War* (printed pp. 173–186 / PDF pp. 211–225)
 **Tier:** 2 (scholarly transcription of primary record)
 
@@ -53,6 +54,14 @@ Every other defendant received a clear outcome:
 - **Mollasses/Mamuxuat** — Delivered for transport (enslaved)
 - **Anaftiawin** — ❓ **SILENCE**
 
+### Secondary Scholarship on the Verdict Gap (2026-08-30)
+
+⚠️ **No secondary scholarship was found that discusses the Anaftiawin verdict gap specifically.** Searches across Lepore (*The Name of War*), Drake (*King Philip's War*), Calloway (*After King Philip's War*), and Pulsipher (*Subjects unto the Same King*) did not identify passages addressing Anaftiawin by name or discussing why his outcome was omitted.
+
+The broader account confirms that the court martial convicted and executed four Indians, but **does not establish that Anaftiawin was among those four.**
+
+**The gap is DOCUMENTARY, not evidence of acquittal.** Any claim that Anaftiawin was convicted, executed, released, or sold requires evidence from another record.
+
 ### Possible Readings (not theory — structural observations)
 
 1. The verdict was recorded elsewhere and lost
@@ -68,9 +77,9 @@ Immediately after the Anaftiawin entry and adjournment:
 
 Jireh Bull's garrison burned December 15, 1675, at Pettaquamscutt. 17 men killed. No biographical identification of Quonaehewacout located. **Name remains unlinked to the Anashuecot/Anochetuckett cluster** despite terminal-element similarity (-wacout / -tuckett / -uecot).
 
-## Phonetic Variant: Anaftiawin
+## Phonetic Variants: Anaftiawin
 
-This is the ONLY appearance of the form "Anaftiawin" in the primary record trail. Added to the variant list:
+This is the ONLY appearance of the form "Anaftiawin" in the primary record trail.
 
 **Verified variants (with primary source):**
 - Anashuecot — 1672 Fones Purchase deed ✅
@@ -78,14 +87,19 @@ This is the ONLY appearance of the form "Anaftiawin" in the primary record trail
 - Awashueset — 1672 Fones Purchase deed ✅
 - Awashous / Awashouse / Awashshous — 1661 deeds (Potter) ✅
 - Awashowat — 1661 deeds (Potter) ✅
+- Awashousse — 1644 Act of Submission (Gorton) ✅
 - Anaftiawin — 1676 court martial (Hough 1858) ✅
 
+**Downgraded / unreliable:**
+- Awasawin — ⚠️ No reliable primary source found. Originally reported from genealogical index; likely secondary derivation. DOWNGRADED.
+
 **Unverified / needs sourcing:**
-- Awasawin — found in genealogical index, not yet traced to primary source
 - Anashewacot — probable transcriptional variant, not verified in Potter
 - Awashuwett — may be later reading
 
-⚠️ **Potter does NOT establish that the Awashous/Awashouse forms from 1661 deeds refer to the same person as Anashuecot in 1672** — though they're in the same phonetic neighborhood. The scribe analysis (An- = Fones 1703 copy; Aw- = original 1660s clerks) fits.
+⚠️ **"Anaftiawin" is NOT independently attested outside Hough's transcription.** It should be treated as Hough's rendering, potentially of a different individual or a scribal variant, not automatically equated with Anashuecot.
+
+⚠️ **Potter does NOT establish that the Awashous/Awashouse forms from 1661 deeds refer to the same person as Anashuecot in 1672** — though they're in the same phonetic neighborhood.
 
 ## Connection to Broader Archive
 
