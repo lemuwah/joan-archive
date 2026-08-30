@@ -1,5 +1,5 @@
 # People Directory
-**Last updated:** 2026-08-28
+**Last updated:** 2026-08-29
 
 Individual profile pages for documented persons in the Joan Archive. Each profile contains only verified facts with inline source citations. La Mance-derived claims are excluded per Law 2 unless independently corroborated.
 
@@ -14,7 +14,7 @@ Individual profile pages for documented persons in the Joan Archive. Each profil
 The single most damaging confusion in Greene genealogy is the conflation of three contemporaries named John Greene in colonial Rhode Island. La Mance (1904) treated the Quidnessett John as the Surgeon's son. This is **not supported by primary evidence** and is contradicted by:
 - Different wives (Ann Almy vs. Joan)
 - Different children (completely non-overlapping lists)
-- Different freeman records (Warwick 1647 vs. Acquidnesset 1671)
+- Different freeman records (Warwick 1647 vs. Acquidnessett 1671)
 - Different offices (Deputy Governor vs. none established)
 - Y-DNA divergence (Irish Sea cluster vs. expected English modal)
 
@@ -34,6 +34,12 @@ Louise Prosser Bates (*RIHS Collections* XI–XII, 1918–19) argued the Newport
 Later genealogical analysis considers this "plausible but unresolved." Multiple generations named John Greene make assignments difficult.
 
 **Per Law 1:** This question is held open. The profiles are maintained separately because the evidence does not conclusively prove they are the same person. If future evidence resolves this, the profiles can be merged.
+
+---
+
+## Narragansett Country Settlers
+
+- [`thomas_gould.md`](thomas_gould.md) — Thomas Gould. First Quidnessett purchaser (1661). Settlement Lieutenant. Lead witness against Anaftiawin (1676). Neighboring proprietor to John Greene. **NEW: 2026-08-29**
 
 ---
 

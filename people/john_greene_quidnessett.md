@@ -1,5 +1,6 @@
 # John Greene of Quidnessett
 **Profile created:** 2026-08-28
+**Last updated:** 2026-08-29
 **Status:** THIS IS JOAN'S HUSBAND — the central figure of the Joan Archive
 
 ---
@@ -39,21 +40,57 @@ The strongest documentary evidence is for **Daniel and James** (named in the 168
 
 ## Freeman Records
 
-- Took the Rhode Island engagement/oath of allegiance at the **19–20 May 1671 court held at Acquidnesset/Wickford**
+- Took the Rhode Island engagement/oath of allegiance at the **19–20 May 1671 court held at Acquidnessett/Wickford**
 - This is distinct from John Greene Jr./II, admitted freeman of Narragansett **6 May 1673**
 
 **Source:** *Narragansett Historical Register* Vol. 2 (1883); *Records of the Colony of RI*
 
 ## Offices / Status
 
-- Freeman of Rhode Island — oath at Acquidnesset, 20 May 1671
+- Freeman of Rhode Island — oath at Acquidnessett, 20 May 1671
 - Quidnessett inhabitant/proprietor — named among inhabitants whose possessions RI agreed not to disturb
 - Fones Purchase proprietor — named purchaser, 1 January 1671/72
+- **Conservator of the Peace** — sworn 1679 (NOT "Commissioner" — corrected per primary source terminology)
 - **No elected colonial office established from the records located**
+- **No military title documented** — distinct from Lieut. John² and from Major John Greene of Warwick
 
 This is a critical distinction from Major John Greene of Warwick, who was Deputy Governor.
 
+## Legal Conflict with Colonial Authorities (1663–1679)
+
+Documented pattern of jurisdictional pressure:
+
+1. **Pre-1663:** Greene acquired Quidnessett land via Indian purchase — contrary to a Rhode Island General Court order. Title valid under Connecticut's claim but threatened under RI's.
+2. **1663:** Greene, Richard Smith, and others declared for Connecticut to protect Indian-derived titles.
+3. **May 5, 1664:** RI General Court issued warrant for "John Greene Sen'r living at Narragansett."
+4. **Early May 1664:** Forcibly removed from his home. Richard Smith's letter (Wickford, May 14, 1664, to Capt. Hutchinson) says RI men came "with a warrant under the governor's hand" and "forceably fetched him away." Source: *Narragansett Historical Register*, Vols. 1–2, Part 2. Original manuscript location unidentified (possibly MHS Winthrop Papers — OPEN).
+5. **May 1664:** Before the court, gave answers that offended ("the manner in which he had answered the Court"). Petitioned pardon. Court "passed by his offence," promised "all lawful protexion," kept him as freeman.
+6. **1664–1671:** Seven years of jurisdictional limbo.
+7. **May 19–20, 1671:** Special court at Acquidnessett. Inhabitants assured peaceful possession IF they acknowledge RI jurisdiction. Thomas Gould chosen Lieutenant and Conservator at this court.
+8. **May 20, 1671:** John Greene and son Daniel take oath of allegiance — only after getting written assurance about their land.
+9. **Jan 1, 1672:** Despite now being under RI, Greene goes directly to Narragansett sachems — the Fones Purchase with Anashuecot.
+10. **1679:** Sworn as Conservator of the Peace. Affidavit supports Richard Smith Jr.'s title.
+
+**Sources:** Potter, *Early History of Narragansett*; *Narragansett Historical Register*; *Records of the Colony of RI*; Richard Smith 1664 letter (in print).
+
 ## Key Land Records
+
+### The 1666 Quidnessett Plat
+
+⚠️ **CORRECTION (2026-08-29):** This is NOT a deed. It is an **ownership label on a proprietors' division plat** of the northern part of Quidnessett Neck.
+
+> "In 1666 the proprietors of the northern part of Quidnessetneck made a division of their lands, previously, so far as appears, unsurveyed. On a platf which purports to indicate the boundaries of each piece of property in that region in that year, a tract of one hundred and fifty-one acres is assigned to 'John Greene and Son.'"
+
+- **151 acres**, bounded north/east/south by highways
+- **The son is NOT named** in the surviving record
+- **Which John is UNPROVEN** — contextual signals (Quidnessett location, Potter's Acquidnessett inhabitants list) favor this John, but the plat itself contains no disambiguating identifier
+- Previous claim "Son = John Jr., age ~15" was unsupported — REMOVED
+
+**Source:** "Notes on Quidnessett, No. 2," *Narragansett Historical Register*, p. 61
+
+**⚠️ TEST THEORIES (held open per Law 1):**
+1. This is our John — supported by location and Potter's context
+2. This is a different John — plat doesn't say "of Quidnessett" or "Senior"
 
 ### The 1672 Fones Purchase
 
@@ -103,12 +140,13 @@ This is consistent with (but does not prove) the Quidnessett John being a differ
 ## What Distinguishes Him from the Other Johns
 
 1. **Wife Joan** — not Ann Almy (Warwick), not Mary Jefferay (Newport)
-2. **1671 Acquidnesset freeman oath** — not Warwick 1647, not Newport 1655
-3. **1672 Fones Purchase** — Quidnessett/Cocumscussoc corridor, not Occupasuetuxet or Green End
+2. **1671 Acquidnessett freeman oath** — not Warwick 1647, not Newport 1655
+3. **1672 Fones Purchase** — Quidnessett/Cocumscussoc corridor, not Occupessuetuxet or Green End
 4. **No colonial office** — Warwick John was Deputy Governor
 5. **Different children** — Daniel, James, Edward, Henry, etc. vs. Deborah, William, Peter, Job, etc.
 6. **Y-DNA divergence** — Irish Sea cluster vs. expected southern English modal
-7. **"Forty years and more" at Cocumscussoc** (1679 affidavit) — Warwick John was at Occupasuetuxet
+7. **"Forty years and more" at Cocumscussoc** (1679 affidavit) — Warwick John was at Occupessuetuxet
+8. **No military title** — Warwick John was Captain/Major; Lieut. John² is a separate individual
 
 ## Open Questions
 
@@ -117,6 +155,8 @@ This is consistent with (but does not prove) the Quidnessett John being a differ
 3. When exactly did he die? (Between March 1682 and Sept 1685 per Bates citation; "c. 1695" is traditional)
 4. Where is his will? (Confirmed lost in North Kingstown fire — Bates / F.L. Greene)
 5. Is the Luann-sourced children's birth year list accurate against the original *Records of the Colony of RI*?
+6. Which John is "John Greene and Son" on the 1666 Quidnessett plat? (TEST THEORIES open)
+7. Which John is "Lieut. John Green" on the August 1676 court martial panel? (NOT our John — no military title documented)
 
 ---
 
