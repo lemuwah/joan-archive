@@ -1,5 +1,5 @@
 # People Directory
-**Last updated:** 2026-08-29
+**Last updated:** 2026-08-30
 
 Individual profile pages for documented persons in the Joan Archive. Each profile contains only verified facts with inline source citations. La Mance-derived claims are excluded per Law 2 unless independently corroborated.
 
@@ -39,16 +39,29 @@ Later genealogical analysis considers this "plausible but unresolved." Multiple 
 
 ## Narragansett Country Settlers
 
-- [`thomas_gould.md`](thomas_gould.md) — Thomas Gould. First Quidnessett purchaser (1661). Settlement Lieutenant. Lead witness against Anaftiawin (1676). Neighboring proprietor to John Greene. **NEW: 2026-08-29**
+- [`thomas_gould.md`](thomas_gould.md) — Thomas Gould. First Quidnessett purchaser (1661). Settlement Lieutenant. Lead witness against Anaftiawin (1676). Neighboring proprietor to John Greene.
+
+---
+
+## Narragansett / Niantic Sachems
+
+See also: [`research/anashuecot_kin_group_mapping.md`](../research/anashuecot_kin_group_mapping.md) for the full 1672 kin group and Coginaquand succession analysis.
+
+- Anashuecot / Awashouse — Chief Sachem of Quidnessett. See `notes/2026-08-28_anashuecot_phonetic_variants.md` and `research/anashuecot_kin_group_mapping.md`
+- Tocomminon — Anashuecot's father (Absolom affidavit, ⚠️ UNVERIFIED)
+- Coginaquand / Cachaquant / Coquinquant — 1659 Atherton Purchase grantor. Quaiapen's cousin. See `notes/2026-08-27_coginiquant_name_cluster_expanded.md`
+- Wampkegge — Anashuecot's brother (1672 deed)
+- Ompamiatt — Anashuecot's brother (1672 deed)
+- Seecomp — Anashuecot's son (1672 deed)
+- Tyecuecsha — Anashuecot's son (1672 deed)
+- Nammeash — Anashuecot's son (1672 deed)
 
 ---
 
 ## Other People (to be added as profiles are created)
 
 - Joan Greene (wife of John of Quidnessett) — see `theory/source_spine.md` for current documentation
-- Anashuecot / Awashouse — see `notes/2026-08-28_anashuecot_phonetic_variants.md`
 - Absolom — see `primary_sources/absolom.md`
-- Tocomminon — Anashuecot's father, named in Absolom affidavit
 
 ---
 
