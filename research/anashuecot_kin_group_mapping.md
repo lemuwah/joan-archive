@@ -1,5 +1,6 @@
 # Anashuecot Kin Group — 1672 Fones Purchase Deed
 **Created:** 2026-08-30
+**Last updated:** 2026-08-30
 **Source:** Fones Purchase deed, 1 January 1671/72 (Arnold transcription / RI State Archives, confirmed p. 90)
 **Tier:** 1 (primary source)
 
@@ -19,6 +20,10 @@ All six described as **"sole heires & proprietors"** of Quidnessett.
 
 ### Family Structure
 
+**Generation 0 (ancestor):**
+- **Tocomminon** — Anashuecot's father (Absolom affidavit). ⚠️ Affidavit NOT confirmed in *Narragansett Historical Register*. Requires verification against original manuscript.
+- **Possibly = Tomanick** (1644 Narragansett submission) — see §Tomanick Investigation below
+
 **Generation 1 (siblings):**
 - **Anashuecot** — Chief Sachem, "heire properly"
 - **Wampkegge** — Anashuecot's brother
@@ -29,8 +34,62 @@ All six described as **"sole heires & proprietors"** of Quidnessett.
 - **Tyecuecsha** — son
 - **Nammeash** — son
 
-**Ancestor (from Absolom affidavit):**
-- **Tocomminon** — Anashuecot's father. "Tocomminon father to Anashuecot." ⚠️ Affidavit NOT confirmed in *Narragansett Historical Register* — exact forms "Tocomminon" and "Absalom" not found in that volume. Requires verification against original manuscript.
+---
+
+## Tomanick Investigation (2026-08-30)
+
+### The 1644 Narragansett Act of Submission
+
+Dated **19 April 1644**, enacted at a general assembly "upon the lands of the Nanhigansett." Submitted the Narragansett people, their lands, rights, inheritances, and possessions to the protection and government of King Charles I.
+
+**All Native participants:**
+
+- **Pessicus** — Principal sachem, successor of Miantonomi. His mark.
+- **Canonicus** (Canaunicus) — "That ancient" sachem, protector of Miantonomi. His mark.
+- **Mixan** — Son and heir of Canonicus. His mark.
+- **Awashousse** — Chief counselor to Pessicus. His mark. ⚠️ POSSIBLE Anashuecot/Awashouse — see phonetic variants registry.
+- **Tomanick** — Chief counselor to Pessicus. His mark. ⚠️ POSSIBLE Tocomminon — see analysis below.
+
+**English attorneys/commissioners:** Samuel Gorton, John Wickes, Randall Holden, John Warner.
+**English witnesses:** Christopher Helme, Robert Potter, Richard Carder.
+
+**Source:** Samuel Gorton, *Simplicity's Defence*; Potter 1835; 1683 commissioners' report. Original manuscript location NOT established.
+
+### The Tomanick ↔ Tocomminon Question
+
+**If they are the same person, this places Anashuecot's FATHER alongside Awashousse (possibly Anashuecot himself or a relative) as counselors to Pessicus in 1644 — 28 years before the Fones Purchase.**
+
+#### Tocomminon Variant Table
+
+- **Tomanick** — 1644, Narragansett Act of Submission (Gorton, *Simplicity's Defence*)
+- **Tocomino** — c. 1652 or earlier, recorded in Fones Record 21 March 1660-61: "John Browne obtained a grant from Tocomino ~8 years prior; Browne surrendered that interest to the company"
+- **Tocomminon** — 3 January 1677-78, Fones Record: witness Absolome identified Tocomminon as Browne's father, who left Browne as guardian
+- **Tacommanan** — August 1660, submission concerning Coheassuck (Potter)
+- **Tacummanan** — 1661, 1668, Narragansett/Coweset/Nipmuc claims (Potter, Roger Williams)
+
+⚠️ **The Fones Record internally connects Tocomino and Tocomminon as the same individual.** However, it does NOT connect either name to the 1644 Tomanick.
+
+⚠️ **Potter treats Tomanick, Tacommanan, and Tacummanan as SEPARATE index entries** — no cross-reference between them. Potter does not equate any of these with Tocomminon.
+
+#### Phonetic Analysis
+
+- **Shared features:** Both begin with to-/toh- prefix; both contain medial nasal consonant (m); both have unstressed medial vowel susceptible to inconsistent representation
+- **Non-trivial differences:** Loss of c/k (change from -com- to -ma-); change from -non/-no final syllable to -nick
+- **Assessment:** Phonetic relationship is POSSIBLE but cannot by itself prove identity. Establishing identity requires corroboration from kinship, office, landholding, geography, or a continuous chain of dated appearances.
+
+#### What Would Prove or Disprove
+
+**Would strengthen Tomanick = Tocomminon:**
+- A document linking Tomanick to Quidnessett/Cocumscussoc geography
+- A document linking Tomanick to Anashuecot or Awashousse by kinship
+- An intermediate spelling between Tomanick and Tocomino in the 1645-1660 gap
+
+**Would weaken or disprove:**
+- Tomanick appearing alongside Tocomino/Tocomminon as separate signers
+- Tomanick documented as belonging to a different kin group or territory
+- A death record for Tomanick predating the Tocomino appearances
+
+**Status: OPEN — phonetically plausible, documentarily unproven.**
 
 ---
 
@@ -53,9 +112,9 @@ All six described as **"sole heires & proprietors"** of Quidnessett.
 3. **Tyecuecsha** → Weak overlap with Tuckoneosset (shares T-k-u sound). Structurally different. No bridge document.
 4. **Wampkegge** → No match. "Wamp-" prefix is widespread in Algonquian (cf. Wampanoag, Wamsutta) but generic.
 5. **Seecomp** → No match located.
-6. **Tocomminon** → No match located. Not a variant of any known sachem name in sources consulted.
+6. **Tocomminon** → Possible = Tomanick (1644). See §Tomanick Investigation above.
 
-**Conclusion: None of the six kin group members map cleanly onto known Ninigret or Canonicus dynasty members.**
+**Conclusion: None of the six kin group members map cleanly onto known Ninigret or Canonicus dynasty members. However, Awashousse (1644) and Tomanick (1644) appearing together as Pessicus's counselors creates a structural parallel to the Anashuecot/Tocomminon father-son pair — held open.**
 
 ---
 
@@ -89,13 +148,22 @@ Anashuecot asserts he is **"chiefe Sachem and heire properly"** of Quidnessett �
 
 ⚠️ This is a **political and documentary succession, NOT a fully proven genealogical pedigree.**
 
+If the Tomanick = Tocomminon identification holds, the timeline extends:
+
+**Tomanick/Tocomminon (counselor to Pessicus, 1644) → Anashuecot (chiefe Sachem, 1672)**
+
+This would mean the kin group had political authority in Narragansett country for AT LEAST 28 years before the Fones Purchase, and Awashousse (possibly = Anashuecot) was already active alongside them.
+
 ### What's established:
 - Coginaquand held authority to convey Quidnessett in 1659 ✅
 - Tocomminon is identified as Anashuecot's father in the Absolom affidavit ✅ (but affidavit itself unverified — see above)
 - Anashuecot was recognized as "chiefe Sachem and heire properly" of Quidnessett in 1672 ✅
 - Anashuecot's title as "heire" implies hereditary succession ✅
+- Tomanick and Awashousse appear together as Pessicus's counselors in 1644 ✅
+- Tocomino and Tocomminon are the same person per the Fones Record ✅
 
 ### What's NOT established:
+- Whether Tomanick = Tocomminon ❌ (phonetically plausible, no documentary chain)
 - Whether Coginaquand is Tocomminon's father, brother, uncle, or predecessor ❌
 - Whether succession was patrilineal, matrilineal, or through some other mechanism ❌
 - Coginaquand's date or manner of death ❌
@@ -147,7 +215,9 @@ Anashuecot's deed structure — naming **two brothers and three sons** as co-gra
 4. Is Tocomminon documented anywhere else in Narragansett records?
 5. Did Tocomminon ever hold the Quidnessett sachemship, or did authority pass directly from Coginaquand's generation to Anashuecot?
 6. What role did Quaiapen (Coginaquand's cousin) play in the succession?
-7. Is the 1644 "Tomanick" who appears alongside Awashous in the Narragansett submission related to Tocomminon? (Phonetic: Tomanick ↔ Tocomminon — open)
+7. **Is Tomanick (1644) = Tocomminon?** Phonetically plausible, NO documentary chain. If proven, extends the kin group's political authority back to 1644.
+8. **Are Tacommanan (1660) and Tacummanan (1661/1668) the same person as Tocomminon?** Potter treats them as separate entries. The Fones Record does NOT cross-reference them.
+9. Where is the original 1644 Act of Submission manuscript?
 
 ---
 
