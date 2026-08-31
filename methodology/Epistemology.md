@@ -1,4 +1,4 @@
-⭐ Source Epistemology Note (Packet‑Ready)
+ Source Epistemology Note 
 Source Epistemology: How This Archive Reads Colonial Records
 
 The documentary record for 17th‑century Rhode Island is overwhelmingly colonial in origin. Deeds, probate files, court records, and town books were created to document English property, English inheritance, and English governance. As a result, these sources reflect the priorities, categories, and worldview of the colonists who produced them. They do not reliably record Indigenous identity, kinship, or social structure, and the absence of Indigenous women from these documents should not be interpreted as absence from history.
