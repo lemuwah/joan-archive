@@ -1,5 +1,5 @@
 # Open Research Leads
-**Last updated:** 2026-08-30 (chase 5)
+**Last updated:** 2026-08-31 (naming practices session + RI index resolution)
 
 Tracker for all open leads, organized by priority. Each lead includes what's known, what's needed, and where to look.
 
@@ -35,9 +35,11 @@ Tracker for all open leads, organized by priority. Each lead includes what's kno
 - **Status:** MANUSCRIPT UNLOCATED.
 
 ### 5. RI Land Evidences Vol. I — Index Consultation
-- **What:** The volume contains a grantor/grantee index. Checking under all Aw-/An- variants could reveal additional Awassuocitt/Anashuecot appearances.
-- **Where:** Archive.org has the full volume. Index may be at front or back.
-- **Status:** NOT YET CHECKED.
+- **Status:** ✅ RESOLVED (2026-08-30)
+- **Result:** Index tracks grantors/grantees only, NOT witnesses. Awassuocitt was a witness on the 1654 deed → not indexed. Anashuecot not indexed because the Fones Purchase is in a different record series (Fones Record / Arnold transcription), not in RI Land Evidences Vol. I.
+- **No Aw-/An- entries found** except Awawsunks (Awashonks, Sakonnet — different person).
+- **Coginaquand cluster confirmed:** Three variants indexed (Cachanaquoant, Cagananaquoant, Cogamaquoant) — none overlap with Anashuecot cluster. Separation confirmed.
+- **Bonus find:** Aquinaumpau to Gould, Thomas — Deed-1660 (p. 29). Thomas Gould buying from sachem Aquinaumpau. New lead — see #15 below.
 
 ---
 
@@ -53,8 +55,22 @@ Tracker for all open leads, organized by priority. Each lead includes what's kno
 ### 8. Anaftiawin Verdict Gap
 - **Status:** DOCUMENTARY GAP CONFIRMED. No secondary scholarship.
 
-### 9. Namowish ↔ Nammeash
+### 9. Namowish → Nammeash
 - **Status:** WEAKENED but OPEN.
+
+---
+
+## NEW LEADS (2026-08-30)
+
+### 15. Aquinaumpau → Gould, Thomas — Deed-1660
+- **What:** Thomas Gould buying from sachem Aquinaumpau (RI Land Evidences Vol. I, p. 29)
+- **Significance:** Thomas Gould was John Greene's co-settler, co-purchaser, and Lieutenant at Quidnessett. This is Gould purchasing from a sachem — potentially the Gould's Island or early Quidnessett purchase.
+- **Status:** NOT YET CHASED. Read the full deed text.
+
+### 16. Narragansett Naming Practices Framework
+- **What:** Williams primary source on name-changing applied to the Anashuecot variant cluster. Awashonks as documented comparator.
+- **Result:** Aw-/An- cluster = most likely ONE name (scribal variation). Anaftiawin = phonetic outlier, POSSIBLY a different name (mourning/war-name or different person). Both held open.
+- **Status:** FRAMEWORK DOCUMENTED. See `research/narragansett_naming_practices.md`
 
 ---
 
@@ -78,4 +94,4 @@ Tracker for all open leads, organized by priority. Each lead includes what's kno
 
 ---
 
-*Updated after chase 5 (2026-08-30). All leads tracked per Law 1 — no premature closure.*
+*Updated after naming practices session and RI index resolution (2026-08-31). All leads tracked per Law 1 — no premature closure.*
