@@ -2,7 +2,7 @@
 ## A Disambiguation Reference for the Joan Archive
 
 **Prepared for:** The Joan Archive (github.com/lemuwah/joan-archive)
-**Date:** August 27, 2026
+**Date:** August 27, 2026 (updated August 31, 2026)
 **Purpose:** Trace each of the five John Greenes through only the records that name him directly, with clear source citations, so that misattribution is immediately visible.
 **Governing Laws:** No Smoothing · La Mance Sieve · No Early Exclusion · No Algorithmic Contamination
 
@@ -31,7 +31,7 @@ Status markers:
 | **Born** | c. 1606, England | Inferred from 1635 ship manifest ("Greene Jo, aged 29") |
 | **Arrived** | 1635 on ship *Matthew* (Capt. Richard Goodladd) | Tier 3 Ship manifest |
 | **Residence** | Cocumscussoc/Quidnessett, Narragansett Country, RI | Tier 1: 1672 Fones Purchase; 1679 affidavit |
-| **Wife** | Joan/e (maiden name UNKNOWN) — appears only in two 1682 deeds | Tier 1: RI Land Evidence Vol. IV; Vol. VII pp. 177-178 |
+| **Wife** | Joan/e (maiden name UNKNOWN) — appears only in two 1682 deeds | Tier 1: RI Land Evidence Vol. IV; Vol. VII pp. 177–178 (**⚠️ Vol. VII UNVERIFIED — see note**) |
 | **Children** | Bates list: Lieut. John², Daniel², James², Benjamin², Henry², Sarah² | Tier 2: Bates, RIHS Collections XI-XII (1918-19) |
 | **Died** | Before 25 September 1685 | Tier 1: Joseph Clark deed, Jamestown Records |
 | **Will** | Destroyed in North Kingstown fire | Tier 2: Bates (1918-19) |
@@ -44,8 +44,20 @@ Status markers:
 4. **24 Aug 1676: Newport Court Martial** — CHARGED; Daniel testifies for prosecution. Source: Tier 2 (Hough 1858, DEAD END)
 5. **1679: Affidavit** — "forty years and more" with Richard Smith. Source: Tier 2
 6. **24 Mar 1682: Home-Place Deed** — Joan named; "or to her mother" clause. Source: Tier 1
-7. **19 May 1682: Pawtuxet Deed** — Joan gives "free & voluntary consent". Source: Tier 1
+7. **19 May 1682: Pawtuxet Deed** — Joan gives "free & voluntary consent". Source: **🟠 SUSPENDED** — cited as "RI Land Evidence Vol. VII pp. 177–178" but this volume has NOT been located or verified. See `theory/proof_pieces/09_pawtuxet_problem.md` and `theory/joan_firewall.md` Section 1.2. **DO NOT treat as Tier 1 until verbatim text is located.**
 8. **Before 25 Sep 1685: Death** — Joseph Clark deed. Source: Tier 1
+
+### ⚠️ NEW: 1658 Co-Signing Cluster
+
+The verified 1658 Pawtuxet deed ("John Greene Junr Warwick" → William Carpenter) lists "John Greene" as a witness alongside Ezekiel Holliman and Christopher Unthank. If this witnessing "John Greene" is Quidnessett John, this is a **primary source dated 1658 placing both Quidnessett John and the Surgeon's son on the same document.** This is the earliest possible documentary link between the two lines.
+
+**Implications:**
+- Both Johns in the same social/legal network as of 1658
+- 24 years later (1682), a "John Greene" sells Pawtuxet land to the SAME William Carpenter. Coincidence? Inheritance? Different transaction?
+- The Greene DNA Project shows genetic separation — if they co-sign, they're socially connected but genetically distinct
+- Need the full 1658 deed text to determine: does the witnessing John have any descriptor ("of Warwick," "of Narragansett") or is it bare "John Greene"?
+
+**Status: OPEN — needs deed text verification.**
 
 ### Contamination Points
 
@@ -55,12 +67,15 @@ Status markers:
 | "1695 will naming Joan" attributed to Quidnessett John | Secondary sources | HIGH — actually Lt. John²'s 1694 Taunton will |
 | Death date "1695" from misattributed will | Ancestry/FamilySearch/Geni | HIGH |
 | Wife identified as "Joane Tibbitts" | Genealogy forums | MEDIUM — unsourced |
+| Pawtuxet deed cited as Tier 1 PROVEN | Joan Archive (prior version) | HIGH — downgraded to SUSPENDED 2026-08-31 |
 
 ### Open Questions
 1. What ship did he arrive on — *Matthew* or another?
 2. What were the charges at the 1676 Court Martial?
 3. What is Joan's maiden name? (FIVE HYPOTHESES OPEN)
 4. Was his 1679 affidavit part of the CT/RI boundary dispute?
+5. **NEW:** Is the 1658 "John Greene" witness Quidnessett John or a different John? (See Co-Signing Cluster above)
+6. **NEW:** What is "RI Land Evidence Vol. VII" — which physical manuscript or book?
 
 ---
 
@@ -188,6 +203,7 @@ Not English — Narragansett leader given English working name "John" by Richard
 | 1635 ship | *Matthew* | *James* | — | — | — |
 | Richard Smith | lived with | — | — | — | worked for |
 | Narragansett Country | Yes | — | — | — | Yes |
+| 1658 Pawtuxet deed | **witness?** ⚠️ | — | — | — | — |
 | 1672 Fones Purchase | purchaser | — | — | — | — |
 | King Philip's War | court martial | — | — | — | killed |
 | 1682 Joan deeds | grantor | — | — | — | — |
@@ -202,6 +218,7 @@ Not English — Narragansett leader given English working name "John" by Richard
 3. **Lt. John² <> E. Greenwich**: Both in E. Greenwich 1685
 4. **Quidnessett <> Stonewall**: Both at Cocumscussoc
 5. **Surgeon's son <> Lt. John²**: Deputy Governor (d. 1708) confused with Lt. (d. 1694)
+6. **⚠️ NEW: Quidnessett <> Surgeon's line via 1658 Pawtuxet deed**: If Quidnessett John witnesses the Surgeon's son's land sale, the two lines share a direct legal transaction — complicating clean separation and raising questions about how Quidnessett John later held Pawtuxet land himself (if the 1682 deed is real).
 
 ---
 
