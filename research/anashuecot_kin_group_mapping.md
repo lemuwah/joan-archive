@@ -1,6 +1,6 @@
 # Anashuecot Kin Group — 1672 Fones Purchase Deed
 **Created:** 2026-08-30
-**Last updated:** 2026-08-30 (chase 3)
+**Last updated:** 2026-08-30 (chase 4)
 **Source:** Fones Purchase deed, 1 January 1671/72 (Arnold transcription / RI State Archives, confirmed p. 90)
 **Tier:** 1 (primary source)
 
@@ -22,7 +22,7 @@ All six described as **"sole heires & proprietors"** of Quidnessett.
 
 **Generation 0 (ancestor):**
 - **Tocomminon** — Anashuecot's father (Absolom affidavit). ⚠️ Affidavit NOT confirmed in *Narragansett Historical Register*. Requires verification against original manuscript.
-- **Possibly = Tomanick** (1644 Narragansett submission) — see §Tomanick Investigation below. Phonetically plausible, documentarily unproven.
+- **Possibly = Tomanick** (1644 Narragansett submission) — see §Tomanick Investigation. Phonetically plausible, documentarily unproven.
 
 **Generation 1 (siblings):**
 - **Anashuecot** — Chief Sachem, "heire properly"
@@ -36,183 +36,197 @@ All six described as **"sole heires & proprietors"** of Quidnessett.
 
 ---
 
+## AWASSUOCITT — 1654 Petawhomett Deed (MAJOR FIND) 🚨
+
+**Added 2026-08-30 (chase 4)**
+
+The 1654 Tacommonan deed for Petawhomett Neck (Potowomut) contains a witness named **"Awassuocitt"** with two sons:
+
+> Tacommonan deeded meadows and mowable land on Petawhomett Neck, bounded by Narragansett Bay, Potowomett River, and Coeassett Bay, to Randall Howldon and Ezekiel Hollyman for £15 in wampum plus annual coat payment.
+>
+> **"Awassuocitt"** appears as a witness. His sons named: **William Baker** ("his eldest son") and **Wawnunockshaw** ("another Son").
+
+**Source:** *Rhode Island Land Evidences, 1648–1696* (abstracts), via Archive.org.
+
+### Phonetic Analysis: Awassuocitt ↔ Anashuecot
+
+- **Aw-ass-uoci-tt** ↔ **Aw-ash-ue-cot** ↔ **An-ash-ue-cot**
+- Shared structure: initial Aw-/An- prefix + medial -ash-/-ass- + terminal -cot/-citt
+- This is squarely within the established variant cluster
+- The -uoci- ↔ -ue- medial element fits the same scribal compression pattern seen in other variants
+
+### Implications IF Awassuocitt = Anashuecot
+
+1. **Anashuecot was already active in 1654** — 18 years before the Fones Purchase
+2. **He had an English-named eldest son: William Baker** — this is extraordinary. An English name for a sachem's son in 1654 suggests deep cross-cultural engagement
+3. **He had a Narragansett-named son: Wawnunockshaw** — neither name matches Seecomp, Tyecuecsha, or Nammeash from the 1672 deed. These could be additional children, or the 1672 sons could have been born later.
+4. **He witnessed Tacommonan's deed but was NOT described as Tacommonan's relative** — he appears as an independent figure of sufficient status to witness a major land transaction
+5. **This places him at Petawhomett/Potowomut** in 1654, adjacent to Quidnessett across the river
+
+### What Would Prove or Disprove
+
+**Would strengthen Awassuocitt = Anashuecot:**
+- A document naming Awassuocitt at Quidnessett
+- A document naming William Baker as Anashuecot's son
+- An intermediate spelling between Awassuocitt and Anashuecot in the 1655–1671 gap
+- Wawnunockshaw appearing in a Quidnessett context
+
+**Would weaken or disprove:**
+- Awassuocitt appearing alongside Anashuecot/Awashouse as separate signers
+- Awassuocitt documented as belonging to a different kin group or territory than Quidnessett
+- William Baker or Wawnunockshaw appearing with a different father identified by name
+
+**Status: HIGH-PRIORITY TEST THEORY — phonetically strong, documentarily unbridged.**
+
+---
+
 ## Tomanick Investigation (2026-08-30)
 
 ### The 1644 Narragansett Act of Submission
 
-Dated **19 April 1644**, enacted at a general assembly "upon the lands of the Nanhigansett." Submitted the Narragansett people, their lands, rights, inheritances, and possessions to the protection and government of King Charles I.
+Dated **19 April 1644**, enacted at a general assembly "upon the lands of the Nanhigansett."
 
 **All Native participants:**
-
 - **Pessicus** — Principal sachem, successor of Miantonomi. His mark.
-- **Canonicus** (Canaunicus) — "That ancient" sachem, protector of Miantonomi. His mark.
+- **Canonicus** (Canaunicus) — "That ancient" sachem. His mark.
 - **Mixan** — Son and heir of Canonicus. His mark.
-- **Awashousse** — Chief counselor to Pessicus. His mark. ⚠️ POSSIBLE Anashuecot/Awashouse — see phonetic variants registry.
-- **Tomanick** — Chief counselor to Pessicus. His mark. ⚠️ POSSIBLE Tocomminon — see analysis below.
+- **Awashousse** — Chief counselor to Pessicus. His mark.
+- **Tomanick** — Chief counselor to Pessicus. His mark.
 
-**English attorneys/commissioners:** Samuel Gorton, John Wickes, Randall Holden, John Warner.
-**English witnesses:** Christopher Helme, Robert Potter, Richard Carder.
+**Source:** Samuel Gorton, *Simplicity's Defence*; Potter 1835.
 
-**Source:** Samuel Gorton, *Simplicity's Defence*; Potter 1835; 1683 commissioners' report. Original manuscript location NOT established.
+### Tocomminon Variant Table
 
-### The Tomanick ↔ Tocomminon Question
+- **Tomanick** — 1644, Narragansett Act of Submission
+- **Tocomino** — c. 1652 or earlier, recorded in Fones Record 21 March 1660-61
+- **Tocomminon** — 3 January 1677-78, Fones Record
 
-**If they are the same person, this places Anashuecot's FATHER alongside Awashousse (possibly Anashuecot himself or a relative) as counselors to Pessicus in 1644 — 28 years before the Fones Purchase.**
+⚠️ The Fones Record internally connects Tocomino and Tocomminon. The gap between Tomanick (1644) and Tocomino (c. 1652) remains unbridged.
 
-#### Tocomminon Variant Table
+### The Tacommanan / Tocommanan Line — ADJACENT TERRITORY
 
-- **Tomanick** — 1644, Narragansett Act of Submission (Gorton, *Simplicity's Defence*)
-- **Tocomino** — c. 1652 or earlier, recorded in Fones Record 21 March 1660-61: "John Browne obtained a grant from Tocomino ~8 years prior; Browne surrendered that interest to the company"
-- **Tocomminon** — 3 January 1677-78, Fones Record: witness Absolome identified Tocomminon as Browne's father, who left Browne as guardian
-
-⚠️ **The Fones Record internally connects Tocomino and Tocomminon as the same individual.**
-
-### The Tacommanan / Tocommanan Line — SEPARATE TERRITORY 🚨
-
-**CRITICAL FINDING (2026-08-30 chase 3):** Potter's Tacommanan/Tacummanan entries refer to a **different sachem line centered on Potowomut/Warwick/Coheassuck** — the WEST side of Narragansett Bay. This is geographically distinct from Quidnessett (North Kingstown/Wickford area).
+**CRITICAL FINDING:** The Tacommanan sachem line is associated with **Potowomut/Coheassuck** (west side of Narragansett Bay). This is geographically **adjacent** to Quidnessett but NOT the same territory. The Potowomut River is the boundary.
 
 #### Tacommanan Chronology
 
-- **Tocommanan** — 13 July 1654: Deeded Potowomut Neck (north of Potowomut River) to inhabitants of Warwick
-- **Tacomanan** — 1659: Formal submission of Coheassuck lands to RI government, with his son **Wasewkil** and grandson **Namowish**
-- **Tacommanan** — 23 August 1660: Deed of Coheassuck tract to the colony, with Wasewkil and Namowish
-- **Tacummanan** — 21 July 1679: Roger Williams testimony — purchases from Tacummanan by Gov. Benedict Arnold, John Brown, and Thomas Willett; Williams had seen their deeds and Col. Nicolls's confirmation
+- **Tocommanan** — 13 July 1654: Deeded Petawhomett Neck to Warwick inhabitants. **Awassuocitt** witnessed this deed.
+- **Tacomanan** — 1659: Submitted Coheassuck lands with son Wasewkil and grandson Namowish
+- **Tacommanan** — 23 August 1660: Deed of Coheassuck tract
+- **Tacummanan** — 21 July 1679: Roger Williams testimony
 
-**Coheassuck boundaries:** Bounded north by Potowomut River, south by Cocumsquisset (Stony) Brook, east by the bay, west by inland course. This is the **Warwick/East Greenwich area**, not Quidnessett.
+**Coheassuck boundaries:** North by Potowomut River, south by Cocumsquisset/Stony Brook, east by bay. This is the Warwick/East Greenwich area.
 
-⚠️ **This means the Tacommanan/Tocommanan sachem line is associated with a DIFFERENT territory than Anashuecot's Quidnessett.** While the names share the T-m prefix and the Fones Record's Tocomino/Tocomminon could phonetically bridge between them, the geographic distinction is significant.
+**Distance to Quidnessett: ~0 miles at boundary** (Potowomut River). Centers approximately 1.5 miles apart.
 
 #### Three Scenarios (held open per Law 1)
 
-1. **Tocomminon = Tacommanan = Tomanick** — One sachem with authority spanning both Coheassuck AND Quidnessett. Possible under the distributed sovereignty model but contradicted by Potter's separate index treatment.
-2. **Tocomminon (Fones Record) ≠ Tacommanan (Potter)** — Two separate sachems with similar names in adjacent territories. The Fones Record's Tocomino operated in Quidnessett; Tacommanan operated in Coheassuck/Potowomut.
-3. **Tomanick (1644) = Tocomminon but ≠ Tacommanan** — The 1644 counselor to Pessicus is Anashuecot's father, but the Potowomut sachem is a different person.
-
-**What would resolve this:**
-- A deed signed by both Tocomminon and Tacommanan as separate individuals
-- A deed where Tocomminon/Tacommanan explicitly claims authority over BOTH territories
-- Chapin 1931 mapping these as same or different
-
-### Phonetic Analysis
-
-- **Shared features:** Both begin with to-/toh- prefix; both contain medial nasal consonant (m); both have unstressed medial vowel susceptible to inconsistent representation
-- **Non-trivial differences:** Loss of c/k (change from -com- to -ma-); change from -non/-no final syllable to -nick
-- **Assessment:** Phonetic relationship is POSSIBLE but cannot by itself prove identity. Establishing identity requires corroboration from kinship, office, landholding, geography, or a continuous chain of dated appearances.
+1. **Tocomminon = Tacommanan = Tomanick** — One sachem spanning both territories
+2. **Tocomminon (Fones Record) ≠ Tacommanan (Potter)** — Two separate sachems in adjacent territories
+3. **Tomanick (1644) = Tocomminon but ≠ Tacommanan** — 1644 counselor is Anashuecot's father, Potowomut sachem is different
 
 ---
 
-## Phonetic Mapping Against Known Sachem Dynasties
+## Namowish ↔ Nammeash Investigation
 
-### Ninigret (Niantic) Line
-- Saccious → Ninigret I (Janemo) + Wepitanock (brother)
-- Ninigret I → Weunquesh (daughter/successor), Ninigret II (half-brother)
-- Quaiapen = Ninigret I's sister, married Mixan/Mexanno (Canonicus's eldest son)
+### Phonetic Comparison
+- **Nam-owish** (Tacommanan's grandson, 1659 Coheassuck)
+- **Nam-meash** (Anashuecot's son, 1672 Fones Purchase)
+- Shared "Nam-" prefix. Different terminal elements.
 
-### Canonicus (Narragansett) Line
-- Canonicus (Quissucquansh) → Mixan/Mexanno (eldest son)
-- Mascus (Canonicus's brother) → Miantonomo → Canonchet
-- Mixan + Quaiapen → Scuttup, Quequakanewett, Quinimiquet
+### Documentary Status
+- **Namowish:** NO appearances found after 1660 in any source searched (RI Land Evidences, King Philip's War records, Fones Record, Quidnessett records)
+- **Namowish as Tacommanan's grandson:** The relationship via Wasewkil is UNVERIFIED — requires primary source citation
+- **Wasewkil:** NO appearances under that spelling in RI Land Evidences
 
-### Overlap Results
+### Assessment
+The genealogical chain Tacommanan → Wasewkil → Namowish → Anashuecot is a **research hypothesis, NOT demonstrated genealogy.** Only the bottom portion (Anashuecot and his three sons) is directly supported by the 1672 deed.
 
-None of the six kin group members map cleanly onto known Ninigret or Canonicus dynasty members. However, Awashousse (1644) and Tomanick (1644) appearing together as Pessicus's counselors creates a structural parallel to the Anashuecot/Tocomminon father-son pair — held open.
+**However:** The Awassuocitt finding changes the picture. If Awassuocitt (1654 witness on Tacommanan's deed) = Anashuecot, then Anashuecot was ALREADY in Tacommanan's orbit in 1654 — which would make a kinship connection between the two families much more plausible, even without the Namowish = Nammeash identification.
+
+**Status: WEAKENED as a standalone bridge, but STRENGTHENED by the Awassuocitt parallel.**
+
+---
+
+## Stonewall John (Nawham) — Not Awasawin, But Relevant
+
+**Added 2026-08-30 (chase 4)**
+
+### Awasawin ≠ Nawham
+Phonetic comparison doesn't hold. N- vs. Aw- initial consonants are fundamentally different. Too big a leap for normal scribal variation.
+
+### Nawham's Documented Role
+- **Full name:** Nawham / Nawwhun. Roger Williams 1676: "Then Came one Nawham Mr R. Smiths John Wall Maker an Ingenious Fellow and peaseable."
+- **Killed:** July 2, 1676, at the Second Battle of Nipsachuck, alongside Queen Quaiapen
+- **Seven weeks before** the August court martial — cannot be Anaftiawin
+- **Role in King Philip's War:**
+  - December 1675: Peace overtures at Richard Smith's trading post
+  - Fortification work: Queen's Fort, Stony Fort
+  - 1676 encounter: Argued English broke the articles, Narragansetts tried to surrender prisoners
+  - "Peaseable" = his diplomatic posture in THAT encounter, not permanent neutrality
+
+### Relevance to the Archive
+Stonewall John was a **Narragansett diplomatic intermediary working through Richard Smith's trading post** — the same Cocumscussoc corridor where John Greene of Quidnessett lived for 40+ years. Another node in the Greene-Narragansett relationship network. His death alongside Quaiapen places him in the Narragansett political elite, not as a marginal figure.
 
 ---
 
 ## The Coginaquand Connection
 
 ### 1659: Coginaquand Deeds the Same Territory
-
-A sachem named **"Coquinaquant" / Coginaquand** deeded Quidnessett land to Humphrey Atherton on **June 11, 1659** (the Atherton Purchase). He is identified as "Sagamore or Schem of Naraganset."
-
-**Critical context:** The account states he was **made drunk and kept intoxicated for days** before signing. A concealed payment of £75 in wampum was involved.
-
-Coginaquand's relationship to known dynasties: described as **Quaiapen's cousin and the cousin of her deceased husband Mixanno**.
-
-**Source:** Potter, *Early History of Narragansett*.
+Coginaquand/Coquinquant deeded Quidnessett land to Humphrey Atherton on June 11, 1659. Made drunk and kept intoxicated for days before signing. Quaiapen's cousin.
 
 ### 1661: Cachaquant and Awashous Sign Together
+This proves they are DIFFERENT people.
 
-The 1661 Nisquitianxsett deed lists grantors as **Awashouse and Nucom**, described as owners of Nisquitianxsett. **This proves Cachaquant/Coginaquand and Awashouse/Anashuecot are DIFFERENT people.**
-
-### 1672: Anashuecot Claims the Same Territory
-
-Anashuecot asserts he is **"chiefe Sachem and heire properly"** of Quidnessett — the same territory Coginaquand deeded 13 years earlier.
+### 1672: Anashuecot Claims "Heire Properly"
+Same Quidnessett territory, 13 years after Coginaquand's deed.
 
 ---
 
 ## Reconstructed Succession: Quidnessett Authority
 
-**Coginaquand (1659 grantor) → Tocomminon → Anashuecot (1672 heir)**
+**Coginaquand (1659) → Tocomminon → Anashuecot (1672)**
 
-⚠️ This is a **political and documentary succession, NOT a fully proven genealogical pedigree.**
+⚠️ Political and documentary succession, NOT proven genealogical pedigree.
 
-If the Tomanick = Tocomminon identification holds, the timeline extends:
+If both Awassuocitt (1654) and Awashousse (1644) = Anashuecot, the timeline becomes:
 
-**Tomanick/Tocomminon (counselor to Pessicus, 1644) → Anashuecot (chiefe Sachem, 1672)**
+**1644:** Awashousse — chief counselor to Pessicus (with Tomanick)
+**1654:** Awassuocitt — witness on Tacommonan's deed at Petawhomett
+**1659:** Coginaquand deeds Quidnessett (Atherton Purchase)
+**1661:** Awashouse signs Nisquitianxsett deed (with Cachaquant as separate signer)
+**1672:** Anashuecot — "chiefe Sachem and heire properly" of Quidnessett
+**1676:** Anaftiawin — court martial, no verdict
+**1678:** "Conveyed out of ye country" (Absolom affidavit)
 
-### What's established:
-- Coginaquand held authority to convey Quidnessett in 1659 ✅
-- Tocomminon is identified as Anashuecot's father in the Absolom affidavit ✅ (but affidavit itself unverified)
-- Anashuecot was recognized as "chiefe Sachem and heire properly" of Quidnessett in 1672 ✅
-- Tomanick and Awashousse appear together as Pessicus's counselors in 1644 ✅
-- Tocomino and Tocomminon are the same person per the Fones Record ✅
-- Tacommanan/Tocommanan is a **Potowomut/Coheassuck sachem** — separate territory ✅
-
-### What's NOT established:
-- Whether Tomanick = Tocomminon ❌
-- Whether Tocomminon = Tacommanan ❌ (geographically questionable)
-- Whether Coginaquand is Tocomminon's father, brother, uncle, or predecessor ❌
-- Whether succession was patrilineal, matrilineal, or through some other mechanism ❌
+This gives a **34-year documented arc** (1644–1678) for a single individual — plausible for a sachem active across his adult lifetime.
 
 ---
 
-## The Atherton vs. Fones Purchase — Land Claim Overlap
+## Atherton vs. Fones Purchase
 
 ### Atherton Purchase (1659)
-- Included Quidnessett as its "North Purchase"
-- RI regarded it as **contrary to its law** requiring colonial consent
-- RI General Assembly characterized it as **"fraud piled upon extortion"**
-- RI refused to recognize the Atherton title
+- RI rejected as "fraud piled upon extortion"
 
-### Fones Purchase (January 1, 1671/72)
-- Made by John Greene, Thomas Waterman, John Andrew, Henry Tibbits, John Briggs, and John Fones from Anashuecot and kin
-- **Confirmed by RI Assembly in 1677** with provisos
+### Fones Purchase (1671/72)
+- Confirmed by RI Assembly 1677
 
-### Resolution
-RI rejected the unauthorized Atherton title and selectively regularized the Fones proprietors' possession through the 1677 confirmation.
-
----
-
-## Narragansett Authority Structure — Lisa Brooks Model
-
-Lisa Brooks (*Our Beloved Kin*, Yale): authority was **relational and distributed**, not a centralized chain of command. Power transmitted through maternal descent, marriage, sibling/nephew relationships, and control of particular places.
-
-Anashuecot's deed structure — naming two brothers and three sons as co-grantors, all "sole heires & proprietors" — fits exactly this distributed model.
-
----
-
-## Awasawin Variant — DOWNGRADED
-
-⚠️ **No reliable primary source occurrence of the exact spelling "Awasawin" was found.** The web search that initially reported this variant likely derived it from secondary genealogical indexing, not a primary document. **DOWNGRADED to unverified/unreliable** until a primary source citation is produced.
-
-The form "Anaftiawin" from Hough 1858 (the court martial record) is likewise **not independently attested** outside Hough's transcription. It should be treated as Hough's rendering, potentially of a different individual or a scribal variant, not automatically equated with Anashuecot.
+RI's invalidation reopened the territory for Anashuecot's grant.
 
 ---
 
 ## Open Questions
 
-1. What is the genealogical link between Coginaquand and Tocomminon?
-2. Where is the Absolom affidavit original manuscript?
-3. Does Howard Chapin's *Sachems of the Narragansetts* (1931) map this lineage? (Available via HathiTrust — needs direct consultation)
-4. Is Tocomminon documented anywhere else in Narragansett records?
-5. Did Tocomminon ever hold the Quidnessett sachemship between 1659 and 1672?
-6. What role did Quaiapen (Coginaquand's cousin) play in the succession?
-7. **Is Tomanick (1644) = Tocomminon?** Phonetically plausible, NO documentary chain.
-8. **Are Tacommanan/Tocommanan (Potowomut) and Tocomminon (Quidnessett) the same or different sachems?** Geographic evidence suggests DIFFERENT territories.
-9. Where is the original 1644 Act of Submission manuscript?
-10. **Richard Smith 1664 letter:** Most likely in MHS Winthrop Family Transcripts (Sept 1661–June 1664 coverage, stored offsite). NOT confirmed.
-11. **Chapin 1931:** Available via HathiTrust. Content unverified against our kin group.
+1. Is Awassuocitt (1654 Petawhomett deed witness) = Anashuecot? **HIGH PRIORITY**
+2. Who are William Baker and Wawnunockshaw? Do they appear elsewhere?
+3. What is the genealogical link between Coginaquand and Tocomminon?
+4. Where is the Absolom affidavit original manuscript?
+5. Does Chapin 1931 map any of these lineages?
+6. Is Tomanick (1644) = Tocomminon?
+7. Are Tacommanan (Potowomut) and Tocomminon (Quidnessett) the same or different?
+8. Namowish ↔ Nammeash: weakened but open
+9. Where is the 1644 Act of Submission original?
+10. Richard Smith 1664 letter: probably MHS Winthrop Family Transcripts
+11. Chapin 1931 on HathiTrust: unread
 
 ---
 

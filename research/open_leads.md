@@ -1,78 +1,78 @@
 # Open Research Leads
-**Last updated:** 2026-08-30
+**Last updated:** 2026-08-30 (chase 4)
 
 Tracker for all open leads, organized by priority. Each lead includes what's known, what's needed, and where to look.
+
+---
+
+## CRITICAL — New Discovery Requiring Immediate Follow-Up
+
+### 0. AWASSUOCITT (1654 Petawhomett Deed)
+- **What:** A witness named **"Awassuocitt"** appears on the 1654 Tacommonan deed for Petawhomett Neck. He has two sons: **William Baker** (eldest, English name) and **Wawnunockshaw** (Narragansett name).
+- **Why:** Aw-ass-uoci-tt is phonetically within the Anashuecot/Awashouse variant cluster. If this IS Anashuecot, it pushes his documentary presence back to 1654 — 18 years before the Fones Purchase — and reveals he had English-named children, indicating deep cross-cultural engagement.
+- **Where:** *RI Land Evidences, 1648–1696* abstracts (Archive.org). Need the **original deed manuscript** for exact spelling and context.
+- **Status:** HIGH-PRIORITY TEST THEORY. Phonetically strong, documentarily unbridged.
+- **Next steps:**
+  1. Search for William Baker in RI colonial records — is he identified as a sachem's son elsewhere?
+  2. Search for Wawnunockshaw anywhere in the record
+  3. Check whether the original deed says more about Awassuocitt's status/role
+  4. Look for Awassuocitt in other RI Land Evidences entries
 
 ---
 
 ## HIGH PRIORITY — Could resolve major questions
 
 ### 1. Howard Chapin, *Sachems of the Narragansetts* (1931)
-- **What:** 117-page monograph mapping Narragansett sachem lineages
-- **Why:** Could confirm or deny Anashuecot/Tocomminon/Tomanick connections and the Quidnessett sub-sachemship
-- **Where:** Available via HathiTrust (Providence: RIHS, 1931)
-- **Status:** NOT YET CONSULTED. Needs direct reading.
+- **Where:** HathiTrust (Providence: RIHS, 1931)
+- **Status:** NOT YET CONSULTED.
 
 ### 2. Absolom Affidavit — Original Manuscript
-- **What:** The affidavit where Absolom identifies Tocomminon as Anashuecot's father and describes Anashuecot being "conveyed out of ye country"
-- **Why:** Foundation of the entire kin group's generational structure
-- **Where:** Possibly RI State Archives; forms NOT confirmed in *Narragansett Historical Register*
-- **Status:** UNVERIFIED. The exact forms "Tocomminon" and "Absalom" were not found in the NHR.
+- **Status:** UNVERIFIED. Exact forms not confirmed in NHR.
 
 ### 3. Richard Smith Sr. 1664 Letter
-- **What:** Letter from Wickford, May 14, 1664, to Capt. Edward Hutchinson of Boston. Describes John Greene being "forceably fetched away."
-- **Why:** Primary source for the 1664 forced removal — the strongest evidence of colonial pressure on John
-- **Where:** Most likely in **MHS Winthrop Family Transcripts** (coverage: Sept 1661–June 1664; stored offsite, must be requested in advance). MHS consolidated index includes "Smith, Richard, Sr. (1596–1666; of R.I.)" but supplies no date, correspondent, or call number.
-- **Status:** PROBABLE LOCATION IDENTIFIED. Not confirmed.
+- **Where:** Most likely MHS Winthrop Family Transcripts (Sept 1661–June 1664)
+- **Status:** PROBABLE LOCATION. Not confirmed.
 
 ### 4. 1644 Act of Submission — Original Manuscript
-- **What:** The document where Tomanick and Awashousse appear as Pessicus's chief counselors
-- **Why:** If Tomanick = Tocomminon, this pushes the kin group back to 1644
-- **Where:** Known through Gorton's *Simplicity's Defence* and Potter 1835. Original manuscript location NOT established.
 - **Status:** MANUSCRIPT UNLOCATED.
 
 ---
 
-## MEDIUM PRIORITY — Would strengthen or narrow existing findings
+## MEDIUM PRIORITY
 
 ### 5. Tacommanan vs. Tocomminon — Same or Different?
-- **What:** Tacommanan/Tocommanan was a Potowomut/Coheassuck sachem. Tocomminon was connected to Quidnessett via the Fones Record. Are they the same person with authority over both territories, or different sachems?
-- **Why:** Resolves whether the Fones Record's Tocomino = Potter's Tacommanan, or whether Potter's separate index treatment reflects genuinely separate individuals
-- **Where:** A deed signed by both as separate individuals would disprove; a deed claiming both territories would support
-- **Status:** GEOGRAPHIC EVIDENCE SUGGESTS DIFFERENT. Held open.
+- **Finding:** Coheassuck and Quidnessett are **adjacent** (~0 miles at Potowomut River boundary), but separate sachem families documented
+- **New wrinkle:** Awassuocitt witnesses Tacommonan's deed, placing him in Tacommonan's orbit
+- **Status:** GEOGRAPHIC EVIDENCE SUGGESTS DIFFERENT TERRITORIES. Open.
 
 ### 6. "Lieut. John Green" on Court Martial Panel
-- **What:** Which John Greene held the Lieutenant rank and served on the August 1676 Newport court martial?
-- **Why:** Confirms it's NOT our John (no military title documented) and identifies which John it IS
-- **Where:** RI military commission records 1670s; Colony Records
-- **Status:** OPEN. Thomas Gould held Lieutenant title at 1671 Acquidnessett. The surgeon's son held Captain/Major.
+- **Status:** OPEN.
 
 ### 7. Anaftiawin Verdict Gap
-- **What:** Why was no verdict recorded for Anaftiawin when every other defendant got a clear outcome?
-- **Why:** Could reveal a deal, a relationship to the court, or a manuscript gap
-- **Where:** Original court martial manuscript (if extant); secondary scholarship (none found discussing this specifically)
-- **Status:** DOCUMENTARY GAP CONFIRMED. No secondary scholarship addresses it.
+- **Status:** DOCUMENTARY GAP CONFIRMED. No secondary scholarship.
+
+### 8. Namowish ↔ Nammeash
+- **Finding:** Namowish has NO appearances after 1660 anywhere. Namowish-as-Tacommanan's-grandson is UNVERIFIED.
+- **New context:** If Awassuocitt = Anashuecot, the bridge between Tacommanan's and Anashuecot's families exists through the 1654 deed witness relationship, even WITHOUT the Namowish = Nammeash identification
+- **Status:** WEAKENED as standalone bridge, but OPEN.
 
 ---
 
-## LOWER PRIORITY — Would add context
+## LOWER PRIORITY
 
-### 8. Quonaehewacout Identity
-- **What:** Who was Quonaehewacout, tried on August 31, 1676, immediately after Anaftiawin's case?
-- **Why:** Name shares terminal-element similarity with Anochetuckett (-wacout / -tuckett / -uecot)
-- **Status:** NO IDENTIFICATION FOUND. Remains unlinked.
+### 9. Quonaehewacout Identity
+- **Status:** NO IDENTIFICATION FOUND.
 
-### 9. Awasawin Variant
-- **What:** Originally reported from genealogical index as a variant of Anaftiawin
-- **Why:** Would expand the phonetic variant registry
-- **Status:** DOWNGRADED. No reliable primary source found.
+### 10. Awasawin Variant
+- **Status:** DOWNGRADED. No reliable primary source.
 
-### 10. Fones Record p. 166 (Arnold 1894) — Direct Consultation
-- **What:** The published transcription of the 1672 deed
-- **Why:** Verify exact spellings against the RI State Archives p. 90 confirmation
-- **Where:** James N. Arnold, ed., *Records of the Proprietors of the Narragansett*, Vol. 1 of *Rhode Island Colonial Gleanings* (Providence: Narragansett Historical Publishing Co., 1894), p. 166
-- **Status:** CITED but not directly read in this session.
+### 11. Stonewall John (Nawham) — Not Awasawin, But Network Node
+- **Finding:** Killed July 2, 1676 (before court martial). Was Narragansett diplomatic intermediary at Richard Smith's trading post — same Cocumscussoc corridor as John Greene.
+- **Status:** DOCUMENTED. No further chase needed unless new connection emerges.
+
+### 12. Fones Record p. 166 (Arnold 1894) — Direct Consultation
+- **Status:** CITED but not directly read.
 
 ---
 
-*Updated after chase 3 (2026-08-30). All leads tracked per Law 1 — no premature closure.*
+*Updated after chase 4 (2026-08-30). All leads tracked per Law 1 — no premature closure.*
