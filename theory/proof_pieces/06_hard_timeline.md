@@ -1,9 +1,10 @@
-# Proof Piece #6 — The Hard Timeline
+# Proof Piece #6 — The Hard Timeline (REVISED)
 ## Who Was Dead, Who Was Alive, and Who Could Be "Her Mother" in 1682
 
-**Status:** 🟡 PARTIALLY VERIFIED — death dates confirmed from multiple sources, Weunquesh connection analytical
-**Models tested:** A (Joan = Anashuecot / Narragansett woman), B (Joan = unknown English woman)
+**Status:** 🟡 PARTIALLY VERIFIED — death dates confirmed, Scuttup/Quequaquenuit pre-war deaths now documented
+**Models tested:** A (Joan = Narragansett woman), B (Joan = unknown English woman)
 **Laws applied:** Law 1 (No Narrative Smoothing), Law 2 (Indigenous Record Ethics), Law 3 (No Early Exclusion)
+**Last revised:** 2026-08-31 — corrected Scuttup/Quequaquenuit death dates per academic sources
 
 ---
 
@@ -13,164 +14,173 @@ The 1682 homeplace deed says "or to her mother if she survive." Who could that m
 
 ---
 
-## Part 1: The Narragansett Leadership Death Roll (1676)
+## Part 1: The Narragansett Leadership Death Roll
 
-King Philip's War annihilated the Narragansett paramount sachem line in a single year:
+King Philip's War annihilated the Narragansett paramount sachem line — but two key figures were **already dead before the war began:**
 
-| Name | Title / Role | Death | Circumstances | Source |
-|---|---|---|---|---|
-| **Canonchet / Nanuntenoo** | War leader, son of Miantonomi | **April 3, 1676** | Captured April 2, executed at Stonington CT | Multiple primary |
-| **Pessicus / Canonicus II** | Principal sachem | **June 1676** | Killed by Mohawk warriors near Piscataqua River | Potter (1835) |
-| **Quaiapen / Magnus / "Old Queen"** | Female sachem (*sunksquaw*), wife of Mixanno | **July 2, 1676** | Killed at Second Battle of Nipsachuck, North Smithfield RI | Multiple primary |
-| **Ninigret** | Niantic sachem, brother of Quaiapen | **Late 1676 or 1677** | Petition of Oct 7, 1676 refers to his wife as widow | Cornell UP; rhodetour.org |
+### Pre-War Deaths (CORRECTED)
+
+| Name | Death | Source | Significance |
+|---|---|---|---|
+| **Scuttup** (son of Quaiapen) | **1668** — 8 years before the war | Academic source: "in 1668, after the sachem Scuttup died" + Atherton confirmation | Was Quidnessett sachem; death opened succession question |
+| **Quequaquenuit / Gideon** (son of Quaiapen) | **"Died young"** — no exact date, last records early 1660s | Potter genealogical account; last identified records 1660–1664 | Second Quidnessett sachem heir; died before filling the role |
+
+⚠️ **Previous versions of this proof piece stated their fates were "undocumented." This was incorrect.** Scuttup's 1668 death and Quequaquenuit's early death are documented in academic and antiquarian sources.
+
+### War Deaths (1676–1677)
+
+| Name | Title / Role | Death | Circumstances |
+|---|---|---|---|
+| **Canonchet / Nanuntenoo** | War leader, son of Miantonomi | **April 3, 1676** | Captured April 2, executed at Stonington CT |
+| **Pessicus / Canonicus II** | Principal sachem | **June 1676** | Killed by Mohawk warriors near Piscataqua River |
+| **Quaiapen / Magnus / "Old Queen"** | Female sachem, wife of Mixanno | **July 2, 1676** | Killed at Second Battle of Nipsachuck |
+| **Ninigret** | Niantic sachem, brother of Quaiapen | **Late 1676 or 1677** | Petition of Oct 7, 1676 refers to his wife as widow |
 
 ### ❌ ELIMINATED as "Joan's Mother"
 
-- **Quaiapen** — dead July 2, 1676. Cannot be alive in March 1682.
-- **Weetamoo** (Pocasset) — dead 1676.
-- No other named female sachem of the Canonicus line survived the war.
+- **Quaiapen** — dead July 2, 1676
+- **Scuttup** — dead 1668 (and male)
+- **Quequaquenuit** — died young, pre-war (and male)
+- No named female sachem from the Canonicus core line survived the war
 
 ---
 
-## Part 2: Unknown Fates — Scuttup and Quequaquenuit
+## Part 2: The Succession Gap at Quidnessett
 
-| Name | Last documented | Post-war record? |
-|---|---|---|
-| **Scuttup** (son of Quaiapen) | Active pre-war and wartime; signed bonds, land disputes | **No death date found. No post-war record found.** |
-| **Quequaquenuit** (son of Quaiapen) | 1650s–1660s land transactions, 1668 Pettaquamscutt deed | **No death date found. No post-war record found.** |
+**This is now sharper than previously understood.**
 
-⚠️ Their survival or death is **undocumented**. We cannot place them in 1682 without evidence.
+Scuttup died in **1668**. Quequaquenuit died young (pre-1665). Both were sons of Quaiapen and Mixanno — the heirs to Quidnessett sachem authority.
+
+Anashuecot signs as "chiefe Sachem" at Quckeset in **1672** — only 4 years after Scuttup's death.
+
+**Question:** Who authorized Anashuecot's succession? The gap is **not** the war — it's the pre-war succession after Scuttup's 1668 death.
+
+### The Coginaquand Connection (from your commits)
+
+1683 commissioners' report identifies **Coginaquand** as "Chief Sachem and proprietor of the Narragansett country" who conveyed the "Norward Tract" in 1659. Coginaquand = Quaiapen's cousin and cousin of deceased husband Mixanno.
+
+Reconstructed succession (political/documentary, NOT proven genealogical):
+
+```
+Scuttup (d. 1668) → [SUCCESSION EVENT] → Anashuecot (1672)
+    Possible intermediary: Coginaquand (1659) → Tocomminon → Anashuecot
+```
 
 ---
 
 ## Part 3: Who WAS Alive and in Power in 1682?
 
-### Post-War Narragansett-Niantic Leadership Succession
+### Weunquesh / Chemunganock — The Only Documented Female Sachem
 
 | Period | Leader | Notes |
 |---|---|---|
-| ~1676–1677 | **Ninigret** | Last surviving principal leader; made peace with MA July 1676; died shortly after |
-| ~1677/1679–~1686 | **Weunquesh / Chemunganock** | Ninigret's **daughter**; recognized female sachem (*sunksquaw*) of the combined Narragansett-Niantic community |
+| ~1676–1677 | **Ninigret** | Last surviving principal leader; died shortly after |
+| ~1677/1679–~1686 | **Weunquesh / Chemunganock** | Ninigret's daughter; recognized female sachem |
 | Mid-1680s–~1722/23 | **Ninigret II** | Weunquesh's half-brother and successor |
 
-### 🟢 WEUNQUESH WAS ALIVE AND IN POWER IN 1682
+### 🆕 Weunquesh's 1679 Court Appearance (NEW FINDING)
 
-**Weunquesh / Chemunganock:**
-- Daughter of Ninigret (Niantic sachem, brother of Quaiapen)
-- Recognized female sachem of the combined Narragansett-Niantic community
-- Active **~1677/1679 to ~1686**
-- **Alive and holding sachem authority at precisely the date Joan signs both 1682 deeds**
+**September 17, 1679** — "The Suncksquaw, Ninecraft's daughter" (personal name unrecorded in this document) appeared at court at Westerly to assert a land claim against Harman Garrett. **She produced written evidence supporting her claim**, and the court ordered copies made.
+
+This is the clearest post-war record of a Narragansett-related woman exercising land authority — **3 years before Joan signs.**
+
+Source: RI Colonial Records (Archive.org)
 
 ---
 
-## Part 4: Testing the "Or to Her Mother" Clause Against the Hard Timeline
+## Part 4: The Awassuocitt Lead (from your commits)
+
+### 1654 Petawhomett Deed
+
+A witness named **AWASSUOCITT** appears on the 1654 Tacommonan deed for Petawhomett Neck.
+- Awassuocitt has sons: William Baker (eldest) and Wawnunockshaw
+- Phonetically in the Anashuecot/Awashouse cluster: **Aw-ass-uoci-tt ↔ Aw-ash-ue-cot**
+
+**If Awassuocitt (1654) = Anashuecot (1672):**
+- He was already active **18 years** before the Fones Purchase
+- He had English-named sons (William Baker — interpretive problem flagged)
+- He was operating in the Potowomut/Coheassuck area, adjacent to Quidnessett
+
+⚠️ **Per Law 2:** This is a phonetic hypothesis, not a proven identity. Held open.
+
+---
+
+## Part 5: Testing the "Or to Her Mother" Clause Against the Corrected Timeline
 
 ### What We Now Know
 
 1. Quaiapen is dead (July 1676). She cannot be Joan's mother.
-2. No other named female sachem from the Canonicus core line survived the war.
-3. Weunquesh is the **only documented female sachem alive in 1682.**
-4. Weunquesh is from the **Niantic branch** (Ninigret's daughter), not the **Canonicus core** (Quaiapen's line).
+2. Scuttup died 1668, Quequaquenuit died young — both pre-war, both male.
+3. No named female sachem from the Canonicus core line survived the war.
+4. Weunquesh is the only documented female sachem alive in 1682.
+5. Weunquesh exercised land authority with written evidence in 1679.
+6. The Quidnessett sachem succession gap is **pre-war** (1668–1672), not war-caused.
 
-### What This Means for Model A
+### Three Possibilities for "Her Mother" — All Open
 
-**If Joan is from the Anashuecot kin group (1672 deed), and the Anashuecot kin group descends from or is connected to the Quaiapen line:**
-
-- Quaiapen (the obvious "mother" candidate from that line) is dead.
-- The "or to her mother if she survive" clause could refer to:
-  1. **An unnamed woman** — Joan's actual biological mother, not a sachem, not documented in English records. A Narragansett woman who survived the war but was never recorded by English clerks.
-  2. **Weunquesh** — if "mother" is used in a kin-status sense (clan mother, senior female authority) rather than biological mother. Weunquesh held exactly that role in 1682.
-  3. **A woman from a different branch** of the Narragansett kin network who survived the war.
-
-### What This Means for Model B
-
-Model B (English Joan) still has the same problem: **under English law, a wife's mother has no legal interest in her son-in-law's property.** The death of Quaiapen doesn't help Model B — the clause is still anomalous regardless of which specific woman "her mother" refers to.
+1. **An unnamed biological mother** — an ordinary Narragansett woman who survived the war. Not a sachem, not documented.
+2. **Weunquesh in a kin-status role** — if "mother" means clan mother / senior female authority. She held exactly that position in 1682 and had demonstrated land authority in 1679.
+3. **A woman connected to the Scuttup/Quequaquenuit line** — if Joan's mother married into or descended from the Quidnessett sachem family before Scuttup's 1668 death.
 
 ---
 
-## Part 5: The Narrowing Window
-
-The hard timeline creates a structural constraint:
+## Part 6: The Corrected Narrowing Window
 
 ```
-1672 — Anashuecot signs as "chiefe Sachem" at Quidnessett
-         (kin group: 2 brothers, 3 sons)
+1654 — Awassuocitt witnesses Petawhomett deed (if = Anashuecot)
+1659 — Coginaquand conveys Norward Tract
+1660-1664 — Quequaquenuit's last records
+1668 — SCUTTUP DIES (pre-war)
+1672 — Anashuecot signs as "chiefe Sachem" at Quckeset
+         (4 years after Scuttup's death)
 
 1675–1676 — King Philip's War
     Apr 3, 1676: Canonchet executed
     Jun 1676: Pessicus killed
     Jul 2, 1676: Quaiapen killed
     Late 1676/1677: Ninigret dies
-    Oct 1676: RI orders certificates for Indigenous persons
 
 1677–1679 — Weunquesh becomes female sachem
-              (Ninigret's daughter, Niantic branch)
-
+SEPT 17, 1679 — WEUNQUESH AT COURT (land claim with written evidence)
 1679 — John Greene's affidavit: "40 years" continuous residence
-         Daniel, James, John all sign 1679 petition
 
 MARCH 24, 1681/82 — HOME-PLACE DEED
     Joan named. "Or to her mother if she survive."
-    Life-estate clause: 30 shillings/year
 
 MAY 19, 1682 — PAWTUXET DEED
     Joan gives "free & voluntary consent."
-    Signs with her mark.
 
 ~1686 — Weunquesh dies
 ```
 
-Joan appears in the record **exactly** during the window when:
-- The Narragansett paramount male sachem line is broken
-- The only surviving female sachem authority is Weunquesh (Niantic branch)
-- Indigenous persons need certificates to move freely
-- English legal documents are the only mechanism for protecting land rights
-
 ---
 
-## Part 6: What the Hard Timeline Proves and Doesn't Prove
+## Open Conditions (Updated)
 
-### PROVES:
-- Quaiapen, Canonchet, Pessicus, and Ninigret are all dead before 1682. None can be "Joan's mother."
-- Weunquesh is the only documented female sachem alive in 1682.
-- The Narragansett paramount male sachem line was effectively destroyed by mid-1676.
-- Joan's 1682 appearance falls precisely in the post-destruction window.
-
-### DOES NOT PROVE:
-- That Joan is from any specific sachem lineage.
-- That "her mother" = Weunquesh (this is analytical, not documented).
-- That "her mother" is a sachem at all — she could be an ordinary Narragansett woman who survived the war.
-- That Joan = Anashuecot.
-
-### CONTRADICTS:
-- Any hypothesis that Joan's mother = Quaiapen (dead 6 years before the deed).
-- Any hypothesis that the "mother" clause refers to a woman in the Canonicus core line (no surviving female sachem documented from that line after 1676).
-
----
-
-## Open Conditions
-
-- [ ] Search for Weunquesh/Chemunganock in land records — did she hold or convey any Quidnessett-area land?
-- [ ] Search for Weunquesh's mother (Ninigret's wife) — she may be a separate candidate for "Joan's mother"
-- [ ] Search for Scuttup and Quequaquenuit post-war — any record at all after 1676?
-- [ ] Search for any unnamed Narragansett women documented in post-war RI colonial records (certificates, court appearances, petitions)
-- [ ] Did the 1676 certificate system produce any records of women in the Quidnessett area?
-- [ ] Cross-reference the Anashuecot kin group (1672) against the Niantic branch — any connection to Ninigret's family?
+- [x] ~~Search for Scuttup/Quequaquenuit post-war~~ — **RESOLVED: both died pre-war**
+- [ ] Search for Weunquesh in Quidnessett-area land records
+- [ ] Verify Awassuocitt = Anashuecot hypothesis (phonetic, not proven)
+- [ ] Search for Ninigret's unnamed second wife
+- [ ] Search for post-war Narragansett women in RI colonial records
+- [ ] Cross-reference Coginaquand → Tocomminon → Anashuecot succession
+- [ ] Who authorized Anashuecot's succession after Scuttup's 1668 death?
 
 ---
 
 ## Sources
 
-- **Quaiapen death:** rhodetour.org; Wikipedia (citing Potter 1835 and primary military accounts)
-- **Canonchet execution:** bhpsri.substack.com; Ranger Benjamin Church blog (citing primary)
-- **Pessicus death:** Potter, *Early History of Narragansett* (1835); Archive.org
-- **Ninigret death:** Cornell UP (*Ninigret, Sachem of the Niantics and Narragansetts*); rhodetour.org
-- **Weunquesh / Chemunganock:** nativenortheastportal.com; Fisher & Silverman
-- **Ninigret II succession:** Wikipedia/Narragansett; general secondary
-- **Scuttup / Quequaquenuit:** Lisa Brooks, *Our Beloved Kin*; Fones Record
+- **Scuttup death (1668):** Academic source via Oxford UP chapter (2026 search)
+- **Quequaquenuit "died young":** Potter genealogical account
+- **Quaiapen death:** rhodetour.org; Potter 1835
+- **Canonchet execution:** primary military accounts
+- **Ninigret death:** Cornell UP; rhodetour.org
+- **Weunquesh 1679 court appearance:** RI Colonial Records Vol. 2 (Archive.org)
+- **Weunquesh succession:** nativenortheastportal.com; Fisher & Silverman
+- **Awassuocitt 1654:** RI Land Evidences abstract
+- **Coginaquand 1659/1683:** Potter 1835; 1683 commissioners' report
 
 ---
 
 *Joan Archive — theory/proof_pieces/06_hard_timeline.md*
 *Maintained under the 5 Laws of the Joan Archive*
-*Status: DRAFT — death dates verified, Weunquesh identified, genealogical connection to Anashuecot undocumented*
+*Status: REVISED 2026-08-31 — Scuttup/Quequaquenuit deaths corrected, Weunquesh 1679 added, Awassuocitt lead integrated*
