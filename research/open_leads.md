@@ -1,5 +1,5 @@
 # Open Research Leads
-**Last updated:** 2026-08-30 (chase 4)
+**Last updated:** 2026-08-30 (chase 5)
 
 Tracker for all open leads, organized by priority. Each lead includes what's known, what's needed, and where to look.
 
@@ -7,16 +7,14 @@ Tracker for all open leads, organized by priority. Each lead includes what's kno
 
 ## CRITICAL — New Discovery Requiring Immediate Follow-Up
 
-### 0. AWASSUOCITT (1654 Petawhomett Deed)
-- **What:** A witness named **"Awassuocitt"** appears on the 1654 Tacommonan deed for Petawhomett Neck. He has two sons: **William Baker** (eldest, English name) and **Wawnunockshaw** (Narragansett name).
-- **Why:** Aw-ass-uoci-tt is phonetically within the Anashuecot/Awashouse variant cluster. If this IS Anashuecot, it pushes his documentary presence back to 1654 — 18 years before the Fones Purchase — and reveals he had English-named children, indicating deep cross-cultural engagement.
-- **Where:** *RI Land Evidences, 1648–1696* abstracts (Archive.org). Need the **original deed manuscript** for exact spelling and context.
-- **Status:** HIGH-PRIORITY TEST THEORY. Phonetically strong, documentarily unbridged.
-- **Next steps:**
-  1. Search for William Baker in RI colonial records — is he identified as a sachem's son elsewhere?
-  2. Search for Wawnunockshaw anywhere in the record
-  3. Check whether the original deed says more about Awassuocitt's status/role
-  4. Look for Awassuocitt in other RI Land Evidences entries
+### 0. AWASSUOCITT (1654 Petawhomett Deed) — NOW WITH COMPLICATION
+- **What:** Witness named **"Awassuocitt"** on the 1654 Tacommonan deed. Phonetically within the Anashuecot variant cluster.
+- **Complication:** "William Baker eldest son to him" — but William Baker appears as English freeman of Portsmouth (1638). Is Baker truly Awassuocitt's biological son, or a separate English witness? Deed text is ambiguous.
+- **Wawnunockshaw** ("an other son") — ZERO appearances in any other source. Dead end unless new material surfaces.
+- **Where:** *RI Land Evidences, Vol. I, 1648–1696*, entry no. 299. Need the ORIGINAL MANUSCRIPT for layout/punctuation.
+- **Status:** HIGH-PRIORITY. Phonetic ID strong; Baker question open; Wawnunockshaw trail cold.
+- **New wrinkle:** The deed ALSO has **Tocommonan** as a witness alongside grantor **Tacommonan** — are these two people or one? Adds to variant table instability.
+- **Dedicated investigation:** `research/awassuocitt_1654_investigation.md`
 
 ---
 
@@ -36,43 +34,48 @@ Tracker for all open leads, organized by priority. Each lead includes what's kno
 ### 4. 1644 Act of Submission — Original Manuscript
 - **Status:** MANUSCRIPT UNLOCATED.
 
+### 5. RI Land Evidences Vol. I — Index Consultation
+- **What:** The volume contains a grantor/grantee index. Checking under all Aw-/An- variants could reveal additional Awassuocitt/Anashuecot appearances.
+- **Where:** Archive.org has the full volume. Index may be at front or back.
+- **Status:** NOT YET CHECKED.
+
 ---
 
 ## MEDIUM PRIORITY
 
-### 5. Tacommanan vs. Tocomminon — Same or Different?
-- **Finding:** Coheassuck and Quidnessett are **adjacent** (~0 miles at Potowomut River boundary), but separate sachem families documented
-- **New wrinkle:** Awassuocitt witnesses Tacommonan's deed, placing him in Tacommonan's orbit
+### 6. Tacommanan vs. Tocomminon — Same or Different?
+- **New finding:** 1654 deed has BOTH Tacommonan (grantor) and Tocommonan (witness). Could be same person or two people.
 - **Status:** GEOGRAPHIC EVIDENCE SUGGESTS DIFFERENT TERRITORIES. Open.
 
-### 6. "Lieut. John Green" on Court Martial Panel
+### 7. "Lieut. John Green" on Court Martial Panel
 - **Status:** OPEN.
 
-### 7. Anaftiawin Verdict Gap
+### 8. Anaftiawin Verdict Gap
 - **Status:** DOCUMENTARY GAP CONFIRMED. No secondary scholarship.
 
-### 8. Namowish ↔ Nammeash
-- **Finding:** Namowish has NO appearances after 1660 anywhere. Namowish-as-Tacommanan's-grandson is UNVERIFIED.
-- **New context:** If Awassuocitt = Anashuecot, the bridge between Tacommanan's and Anashuecot's families exists through the 1654 deed witness relationship, even WITHOUT the Namowish = Nammeash identification
-- **Status:** WEAKENED as standalone bridge, but OPEN.
+### 9. Namowish ↔ Nammeash
+- **Status:** WEAKENED but OPEN.
 
 ---
 
 ## LOWER PRIORITY
 
-### 9. Quonaehewacout Identity
+### 10. Quonaehewacout Identity
 - **Status:** NO IDENTIFICATION FOUND.
 
-### 10. Awasawin Variant
+### 11. Awasawin Variant
 - **Status:** DOWNGRADED. No reliable primary source.
 
-### 11. Stonewall John (Nawham) — Not Awasawin, But Network Node
-- **Finding:** Killed July 2, 1676 (before court martial). Was Narragansett diplomatic intermediary at Richard Smith's trading post — same Cocumscussoc corridor as John Greene.
-- **Status:** DOCUMENTED. No further chase needed unless new connection emerges.
+### 12. Stonewall John (Nawham)
+- **Status:** DOCUMENTED. Network node, killed July 2 1676.
 
-### 12. Fones Record p. 166 (Arnold 1894) — Direct Consultation
+### 13. Fones Record p. 166 (Arnold 1894)
 - **Status:** CITED but not directly read.
+
+### 14. William Baker identity
+- **What:** Is the William Baker in the 1654 deed Awassuocitt's biological son (English-named Native) or a separate English witness?
+- **Status:** HELD OPEN. Deed text says "eldest son to him"; colonial records classify Baker as English.
 
 ---
 
-*Updated after chase 4 (2026-08-30). All leads tracked per Law 1 — no premature closure.*
+*Updated after chase 5 (2026-08-30). All leads tracked per Law 1 — no premature closure.*
