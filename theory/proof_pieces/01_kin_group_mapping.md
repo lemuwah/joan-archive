@@ -1,9 +1,10 @@
-# Proof Piece #1 — Kin-Group Mapping (Revised)
+# Proof Piece #1 — Kin-Group Mapping (Revised 2026-08-31)
 ## 1672 Fones Purchase Signatories, Phonetic Analysis, & Narragansett Sachem Hierarchy
 
 **Status:** 🟡 PARTIALLY VERIFIED — signatory table complete, phonetic comparison done, genealogical link to paramount line open
 **Models tested:** A (Joan = Anashuecot), B (Joan = unknown English woman)
 **Laws applied:** Law 1 (Indigenous Record Ethics), Law 2 (No Narrative Smoothing), Law 3 (No Early Exclusion)
+**Last revised:** 2026-08-31 — Scuttup/Quequaquenuit deaths corrected; Coginaquand succession integrated; Model B recount
 
 ---
 
@@ -14,7 +15,7 @@ Location: Quckeset / Quidnessett, Narragansett Country
 
 | # | Name (as recorded) | Alternate spellings | Relationship to Anashuecot | Role in deed |
 |---|---|---|---|---|
-| 1 | **Anashuecot** | Anashuecutt, Awashueset, Awashuwett | Self | "Chiefe Sachem and heire properly" of the land |
+| 1 | **Anashuecot** | Anashuecutt, Awashueset, Awashuwett, Awashouse | Self | "Chiefe Sachem and heire properly" of the land |
 | 2 | **Wampkegge** | Wamphagge | Brother | Co-grantor |
 | 3 | **Ompamiatt** | — | Brother | Co-grantor |
 | 4 | **Seecomp** | Seccomp | Son | Co-grantor |
@@ -34,172 +35,94 @@ All six signed by marks.
 
 ## Part 2: The Narragansett Paramount Sachem Hierarchy
 
-Source: Potter (1835), Lisa Brooks (*Our Beloved Kin*), Ninigret biography (Cornell UP)
-
 ### The Core Lineage
 
 ```
 CANONICUS (d. 1647)
 ├── Mriksah / MIXANNO / Mexanno (eldest son)
 │     └── married QUAIAPEN ("Old Queen" / Matantuck / Magnus)
-│           ├── SCUTTUP (son) — "chiefe Sagamore or Sachem of Naragansets"
-│           └── QUEQUAQUENUIT / Quequegunewant (son) — same title
+│           ├── SCUTTUP (son) — d. 1668. "Chiefe Sagamore" at Quidnessett
+│           └── QUEQUAQUENUIT / Gideon (son) — "died young," last records 1660–1664
 │
 MASCUS (younger brother of Canonicus)
 ├── MIANTONOMI (son) — co-sachem, executed 1643
-│     └── CANONCHET / Nanuntenoo (son) — war leader, executed 1676
-└── PESSICUS (son) — principal sachem after Canonicus's death
+│     └── CANONCHET / Nanuntenoo (son) — war leader, executed April 3, 1676
+└── PESSICUS (son) — principal sachem after Canonicus's death, killed June 1676
 
-NINIGRET (Niantic sachem) — brother of Quaiapen
+CANONICUS's sister (unnamed)
+     └── NINIGRET (Niantic sachem, d. late 1676/1677)
+           ├── sister QUAIAPEN → connects to Mixanno line above
+           ├── Weunquesh (daughter) — female sachem ~1677–1686
+           └── Ninigret II (son) — successor, d. ~1722/23
 ```
 
-### Key Finding: Scuttup and Quequaquenuit Are Quaiapen's Sons
+### CORRECTED: Scuttup and Quequaquenuit Died BEFORE King Philip's War
 
-Lisa Brooks (*Our Beloved Kin*) identifies:
-- **Scuttup** = son of Quaiapen and Mixanno (Canonicus's son)
-- **Quequaquenuit / Quequegunewant** = another son of Quaiapen
+- **Scuttup** died **1668** — 8 years before the war. Source: academic record: "in 1668, after the sachem Scuttup died."
+- **Quequaquenuit** "died young" — last records 1660–1664. Source: Potter genealogical account.
 
-This places both **directly in the paramount sachem lineage** — grandchildren of Canonicus through the Mixanno–Quaiapen marriage.
-
-Both appear in **earlier** Fones Record instruments (pre-1672), acting as "chiefe Sagamore or Sachem of Naragansets" for Quidnessett-area land.
+⚠️ Previous versions of this proof piece implied their fates were unknown. This has been corrected.
 
 ---
 
-## Part 3: Phonetic & Morphological Comparison
+## Part 3: The Pre-War Succession Gap (1668–1672)
 
-### Shared Structural Features (Southern New England Algonquian)
+Scuttup died in 1668. Quequaquenuit died young. Anashuecot signs as "chiefe Sachem" in 1672 — 4 years after Scuttup's death.
+
+Reconstructed political succession (NOT proven genealogical):
+
+```
+Scuttup (d. 1668) → [SUCCESSION EVENT ~1668–1672] → Anashuecot (1672)
+    Possible intermediary: Coginaquand (1659 Atherton) → Tocomminon
+```
+
+See theory/Coginiquant-Cogineaquon.md for the Coginaquand investigation.
+
+---
+
+## Part 4: Phonetic & Morphological Comparison
+
+### vs. Narragansett Sachem Names
 
 | Feature | 1672 Signatories | Known Sachem Names | Assessment |
 |---|---|---|---|
-| Final `-ot`/`-et`/`-it` | Anashue**cot** | Narragan**sett**, Canonch**et**, Quequaquenu**it** | Common Algonquian terminal element — locative or personal name ending |
-| Final `-omp`/`-comp` | See**comp** | No direct cognate in paramount line | Consistent with Algonquian word structure but no match found |
-| Initial `wamp-` | **Wamp**kegge | **Wamp**anoag, **wamp**um | Recognized Algonquian root; no secure etymology for full name |
-| Pronominal prefixes (`n-`, `m-`, `w-`) | **N**ammeash, **W**ampkegge | **M**iantonomi, **N**anuntenoo, **N**inigret | Common grammatical feature; English clerks transcribed inconsistently |
-| `-icus`/`-us` ending | **Not present** in any 1672 name | Canon**icus**, Pess**icus** | Distinct pattern — may indicate different sub-lineage or different anglicization |
+| Final `-ot`/`-et`/`-it` | Anashue**cot** | Narragan**sett**, Canonch**et** | Common Algonquian terminal element |
+| `-icus`/`-us` ending | **ABSENT** from all 1672 names | Canon**icus**, Pess**icus** | May indicate different sub-lineage or clerk |
+| Initial `wamp-` | **Wamp**kegge | **Wamp**anoag, **wamp**um | Recognized Algonquian root |
 
-### What the Phonetics Tell Us
+### vs. Niantic/Ninigret Family Names
 
-1. **All 1672 names are Southern New England Algonquian** — same language family as the known Narragansett sachem hierarchy. Confirmed.
-
-2. **The `-icus`/`-us` ending is ABSENT** from all six 1672 names. This ending is prominent in the Canonicus–Pessicus line. Its absence may indicate:
-   - A different sub-lineage within the Narragansett polity
-   - A different anglicization convention used by a different clerk
-   - A different regional dialect within the broader Narragansett-speaking area
-   - ⚠️ Per Law 2: We do not know which explanation is correct. All four remain open.
-
-3. **Variant spellings within the deed are normal clerk artifacts**, not evidence of different people. Wampkegge/Wamphagge, Seecomp/Seccomp, Nammeash/Namoush are standard anglicization variation.
-
-4. **"Anashuecot" has no secure published etymology.** The root `Anashue-`/`Awashue-` does not match any documented Narragansett word in Williams's *Key*. This does NOT mean it's not Narragansett — Williams documented common words, not personal names.
-
-5. **Awashonks ≠ Anashuecot.** Phonetic similarity noted but these are different names from different communities (Awashonks = Sakonnet/Wampanoag; Anashuecot = Quidnessett/Narragansett).
+**TESTED AND NEGATIVE.** No 1672 signatory name matches any known Niantic family name. See proof piece #7 for full comparison.
 
 ---
 
-## Part 4: The Genealogical Gap
+## Part 5: Model Assessment
 
-### What Is Connected
+### Model A (Joan = Narragansett woman)
+Strengthened by geographic and institutional continuity at Quidnessett. Weakened by the absence of a genealogical link between Scuttup's line and Anashuecot.
 
-```
-CANONICUS → Mixanno → married Quaiapen → Scuttup + Quequaquenuit
-                                              │
-                                    Earlier Fones Record deeds
-                                    "Chiefe Sagamore" at Quidnessett
-                                              │
-                                              ▼
-                                    ??? GENEALOGICAL GAP ???
-                                              │
-                                              ▼
-                        ANASHUECOT + brothers + sons
-                        1672 Fones Purchase deed
-                        "Chiefe Sachem" at Quckeset
-```
+### Model B (Joan = unknown English woman)
+Requires **3–4 independent anomalies** to apply simultaneously:
+1. Joan's total absence from all English record systems (unique among Quidnessett wives)
+2. The matrilineal inheritance clause ("or to her mother") — no English legal parallel
+3. The survival anomaly (Greene homestead uniquely undestroyed during KPW)
+4. The pre-war succession coincidence at Quidnessett
 
-### What Is NOT Connected
-
-No source places Anashuecot within the Canonicus genealogy. The connection is:
-- **Geographic:** Both groups held sachem authority at Quidnessett
-- **Institutional:** Both used the same title ("chiefe Sachem/Sagamore")
-- **Temporal:** Scuttup/Quequaquenuit are earlier generation; Anashuecot's group is 1672
-- **Documentary:** Both appear in the Fones Record for the same area
-
-But the **family relationship** between the Scuttup/Quequaquenuit generation and Anashuecot's family group is **not documented**.
-
-### Possible Relationships (all open per Law 3)
-
-1. **Anashuecot = successor to Scuttup/Quequaquenuit** in the same sachem lineage (direct descent or lateral succession)
-2. **Anashuecot = parallel sachem** from a different kin group holding adjacent territory
-3. **Anashuecot = sub-sachem** under the paramount line who became "chiefe Sachem" after the paramount line was broken by war
-4. **Anashuecot = from a matrilineal branch** not captured by English patrilineal recording conventions
-
-⚠️ **Per Law 1:** Narragansett governance was not a single hereditary monarchy. Multiple sachem families held authority over different territories. Anashuecot's family holding "chiefe Sachem" title at Quckeset does not require direct descent from Canonicus.
+⚠️ Previous versions counted 7–8 anomalies. Per Hostile Review (Cycle #4), several were restatements of the same fact. Honest recount: 3–4.
 
 ---
 
-## Part 5: Model Assessment (Revised)
+## Open Conditions (Updated 2026-08-31)
 
-### Model A — Joan = Anashuecot
-
-**Strengthened by:**
-- The 1672 signatories are confirmed Narragansett-speaking, same language family as the paramount sachem line
-- The earlier Fones Record generation (Scuttup/Quequaquenuit) is **directly linked** to Quaiapen — the Narragansett female sachem who held independent land authority
-- Geographic and institutional continuity between the two generations at Quidnessett
-- If Anashuecot descends from or succeeds the Scuttup/Quequaquenuit line, then Joan-as-Anashuecot connects to the Canonicus paramount lineage through Quaiapen's matrilineal authority
-
-**Still requires:**
-- The genealogical link between Scuttup/Quequaquenuit and Anashuecot
-- Independent verification that Anashuecot = Joan (no document states this)
-
-### Model B — Joan = Unknown English Woman
-
-**Not affected by phonetic analysis** — Model B doesn't claim Joan was connected to the 1672 signatories. The phonetic comparison is relevant only if Joan = Anashuecot.
-
-**Model B still weakened by:** all evidence from Proof Pieces #3, #4, #5 (survival anomaly, no alternative Joan, neighbor-wife comparison, "or to her mother" clause).
-
----
-
-## Part 6: The Quaiapen Connection — Why It Matters
-
-Quaiapen ("Old Queen" / Matantuck / Magnus / "Sunk Squaw") was:
-- Sister of Ninigret (Niantic sachem)
-- Wife of Mixanno (Canonicus's eldest son)
-- A **female sachem in her own right** with independent territorial authority
-- Mother of Scuttup and Quequaquenuit — the earlier Quidnessett sachems
-- Killed during King Philip's War (July 1676)
-
-**If the Quidnessett sachem line passes through Quaiapen:**
-- Then the land authority at Quidnessett has a **matrilineal component**
-- Then the "or to her mother if she survive" clause in the 1682 deed aligns with matrilineal inheritance
-- Then Joan's presence in 1682 — after Quaiapen's death and Canonchet's execution — may represent a **surviving female heir** in a broken sachem lineage
-
-⚠️ **Per Law 2:** This is analytical reasoning, not evidence. The Quaiapen → Scuttup → ??? → Anashuecot chain has a documented gap. We do NOT claim this chain is proven.
-
----
-
-## Open Conditions
-
-- [ ] Search for Scuttup's descendants or successors after King Philip's War
-- [ ] Search for Quequaquenuit's fate — did he survive the war? Any post-1676 records?
-- [ ] Search for any source that places Anashuecot within the Canonicus–Quaiapen genealogy
-- [ ] Linguistic specialist needed: Algonquian morphological analysis of "Anashuecot" root
-- [ ] Cross-reference 1672 signatory names against Elisha Potter (1835) and Samuel Drake's sachem compilations
-- [ ] Search for sachem Moseupp (Absolome's principal) — where does he fit?
-- [ ] Compile children's table: Joan & John's children with birth years and documented appearances
-
----
-
-## Sources
-
-- **Fones Record p.90** — 1672 Fones Purchase deed
-- **Fones Record** — earlier instruments naming Scuttup and Quequaquenuit
-- **Lisa Brooks, *Our Beloved Kin*** — Scuttup and Quequaquenuit as Quaiapen's sons (ourbelovedkin.com)
-- **Julie Fisher & David Silverman, *Ninigret, Sachem of the Niantics and Narragansetts*** (Cornell UP) — sachem hierarchy and naming conventions
-- **Elisha Potter, *The Early History of Narragansett*** (1835) — sachem genealogies
-- **Roger Williams, *A Key into the Language of America*** (1643) — Narragansett vocabulary
-- **Narragansett Historical Register, Vol 1–3** — Quidnessett plat and sachem records
-- **rockydavidfarm.com** — 1672 deed transcript (secondary)
+- [x] ~~Scuttup/Quequaquenuit fates~~ — **RESOLVED: Scuttup d.1668, Quequaquenuit died young**
+- [ ] Genealogical link: Scuttup/Quequaquenuit → Anashuecot
+- [ ] Coginaquand → Tocomminon → Anashuecot succession verification
+- [ ] Algonquian morphological analysis of "Anashuecot" root
+- [ ] Sachem Moseupp (Absolome's principal) — where does he fit?
+- [ ] Awassuocitt (1654) = Anashuecot? (phonetic hypothesis, LOW confidence)
 
 ---
 
 *Joan Archive — theory/proof_pieces/01_kin_group_mapping.md*
 *Maintained under the 5 Laws of the Joan Archive*
-*Status: REVISED — phonetic comparison complete, Quaiapen connection documented, genealogical gap flagged*
+*Status: REVISED 2026-08-31 — deaths corrected, Model B recounted, Coginaquand integrated*
