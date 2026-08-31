@@ -12,19 +12,20 @@ Tracks all distinct "Joan" figures and prevents conflation, collapse, or legend-
 - **Transcription:** Screenshot of transcription on file in the repo. This is currently the archive's ONLY primary-source resource for Joan.
 
 ### 1.2 Joan in 1682 Pawtuxet land-rights sale
-- **Status:** 🟠 SUSPENDED — verbatim deed text never located
+- **Status:** 🔴 CITATION CHAIN BROKEN — source unknown
 - **Record type:** Alleged Pawtuxet land-rights sale to William Carpenter
 - **Claimed evidence:** May 19, 1682 record; "free & voluntary consent"; "her marke"
-- **Cited source:** Bartlett, *Records of the Colony of Rhode Island*, Vol. VII, pp. 177–178
-- **Problem:** Bartlett Vol. VII has NOT been located in any digitized source. The verbatim deed text has never been read by anyone working on this archive. The claim may originate from Bates 1918–19 or another secondary genealogical compilation citing Bartlett — citation chain unverified.
-- **Exhaustive digital search completed (see `theory/proof_pieces/09_pawtuxet_problem.md`):**
-  - RI Land Evidences Vol. I (Internet Archive) — NOT FOUND
-  - Early Records of the Town of Warwick (Chapin 1926) — NOT FOUND
-  - History & Genealogy of the Carpenter Family — NOT FOUND
-  - Early Records of the Town of Providence — NOT FOUND
-  - Bartlett Colony Records Vol. III (1678–1706) — NOT FOUND
-- **If this deed exists**, it is the ONLY record where Joan's first name appears, where she signs with "her marke," and where she gives "free & voluntary consent" — making it the single most important Joan document. It must be found or killed.
-- **If this deed does NOT exist**, Joan drops to ONE confirmed legal appearance (the March 1682 Quidnessett deed), and the "her marke" / "free & voluntary consent" language attributed to Joan is unverified.
+- **Cited source:** "RI Land Evidence, vol. VII, pp. 177–178"
+- **Investigation result (2026-08-31):**
+  - Bartlett Vol. VII = 1770–1776 (WRONG CENTURY) ❌
+  - RI State Archives Vol. VII = maritime/notary (WRONG SERIES) ❌
+  - Worthington abstracts = deed NOT FOUND ❌
+  - **Bates 1918–19 (most authoritative secondary source) = DOES NOT MENTION THIS DEED** ❌
+  - Bates goes directly from March 1682 home-place deed → will → death. No Pawtuxet. No Carpenter. No "her marke."
+- **Full investigation:** See `research/pawtuxet_deed_investigation.md`
+- **The deed details** (Joan, £10, Wickes & Gorton, "her marke") are cited consistently across multiple genealogical sources — BUT all may derive from a single unverified compilation. No one has traced the citation to a primary document.
+- **If this deed exists**, it is the ONLY record where Joan's first name appears, where she signs with "her marke," and where she gives "free & voluntary consent."
+- **If this deed does NOT exist**, Joan drops to ONE confirmed legal appearance (the March 1682 Quidnessett deed), and the "her marke" / "free & voluntary consent" language attributed to Joan is a ghost.
 
 ### 1.3 "1695 will names Joan" claim
 - **Status:** ⚫ NULL
@@ -45,11 +46,11 @@ Tracks all distinct "Joan" figures and prevents conflation, collapse, or legend-
 ### 2.3 Surgeon's Wives Tangle — CRITICAL DISAMBIGUATION
 The surgeon John Greene of Warwick had multiple documented wives. Any "Joan Greene" deed involving Pawtuxet land could be confused with this line:
 
-- **Joan Tattershall** — married the Surgeon (John Greene of Warwick). Documented first wife.
+- **Joan Tattershall** — married the Surgeon (John Greene of Warwick). Documented first wife. Married 1619 Salisbury; died ~1635. NEVER IN RHODE ISLAND.
 - **Alice Daniels "Beggerly" Greene** — La Mance (1904) identification of Joan's maiden name. Proven timeline-impossible via Alice Beggarly death evidence (Benedict Arnold letter + Winthrop Papers). See `research/legal_danger_framework.md`.
 - **Phillipa Greene** — "Phillip Green" witnesses the 1659 Nanaquakesett deed alongside "John Greene." Wife? Relative? Son? Unknown.
 
-**The 1658 Pawtuxet sale is verified:** "John Greene Junr Warwick" to William Carpenter — this is the Surgeon's son selling Warwick land. If the alleged May 1682 Pawtuxet deed exists and says "inherited Pawtuxet land," the question is: inherited from whom? If from the Surgeon's line → it's Warwick land, and Quidnessett John holding it implies a family connection or conflation. If the deed doesn't exist → it may be a confusion with the 1658 sale.
+**The 1658 Pawtuxet sale is verified:** "John Greene Junr Warwick" to William Carpenter — this is the Surgeon's son selling Warwick land. If the alleged May 1682 Pawtuxet deed exists, the same buyer (Carpenter) is purchasing from a "John Greene" again 24 years later. Which John? Through what inheritance or acquisition?
 
 **Firewall rule:** Until the May 1682 Pawtuxet deed is verified from a primary source, do NOT use "free & voluntary consent" or "her marke" as proven Joan evidence. Do NOT count Joan as having two legal appearances. Current confirmed count: **1.**
 
@@ -57,9 +58,9 @@ The surgeon John Greene of Warwick had multiple documented wives. Any "Joan Gree
 
 - **Tier 2 status:** ⚪ UNVERIFIED
 - **Support lanes:**
-  - Linguistic gender pattern ("her marke" vs. "his marke") — NOW SUSPENDED pending Pawtuxet deed verification. The "her marke" language comes from the unverified Pawtuxet deed, not the confirmed March 1682 deed.
+  - Linguistic gender pattern ("her marke" vs. "his marke") — 🔴 NOW BROKEN. The "her marke" language comes from the Pawtuxet deed whose citation chain is broken. If the deed is a ghost, this evidence falls entirely.
   - Sachem-line context (Fones Purchase deed, Absolom affidavit)
-- **Vulnerability:** 31-year gap between 1672 execution and 1703 Fones entry. Also: "her marke" evidence now suspended.
+- **Vulnerability:** 31-year gap between 1672 execution and 1703 Fones entry. Also: "her marke" evidence now broken.
 
 ## 4. Competing Hypotheses for Joan's Origins
 
@@ -79,12 +80,12 @@ The colonial record says almost nothing about Joan's origins, kin, or identity b
 
 ### 4.4 Indigenous or Mixed Ancestry
 - **Basis:** Structural indicators, not direct evidence:
-  - **Matrilineal clause** in the 1682 deed ("or to her mother if she survive") — anomalous under English common law; may indicate non-English kinship norms. Requires targeted comparative research (see `research_queue/RESEARCH_QUEUE.md` — baseline study: "or to her mother" clause frequency in 1680s RI deeds).
+  - **Matrilineal clause** in the 1682 deed ("or to her mother if she survive") — anomalous under English common law; may indicate non-English kinship norms. Requires targeted comparative research.
   - **Trading post context:** Cocumscussoc was a documented site of English–Indigenous interaction, including intermarriage.
-  - **Mark signature:** ⚠️ NOW SUSPENDED — the "her marke" language comes from the unverified Pawtuxet deed, not the March 1682 deed. If the Pawtuxet deed is killed, this indicator falls away.
+  - **Mark signature:** 🔴 NOW BROKEN — the "her marke" language comes from the Pawtuxet deed whose citation chain is broken. Cannot be used as an indicator until the deed is verified.
   - **Absence of English kin:** No English family, parish origin, or kinship network documented for Joan before her marriage.
 - **No direct primary source** connects Joan to any Narragansett individual or community.
-- **The matrilineal clause is the strongest lead** and the single most decisive test available: if comparable examples exist in other RI deeds → standard drafting; if none → anomalous and strengthens this hypothesis.
+- **The matrilineal clause is the strongest surviving lead** — the single most decisive test available.
 - **Status:** ⚪ UNVERIFIED
 
 ### Archive Position
@@ -96,4 +97,4 @@ All four hypotheses remain open. None has sufficient evidence to be elevated or 
 - **Rule B:** Secondary claims (La Mance, later genealogies) cannot override primary records.
 - **Rule C:** Any new "Joan" mention is logged here before being used in argument.
 - **Rule D:** No competing hypothesis for Joan's origins is elevated above the others without primary source evidence. All are held open per Law 1.
-- **Rule E:** The Pawtuxet deed (1.2) CANNOT be used as proven evidence for any argument until the verbatim text is located and read. Any argument that depends on "her marke" or "free & voluntary consent" from the Pawtuxet deed is SUSPENDED.
+- **Rule E:** The Pawtuxet deed (1.2) CANNOT be used as evidence for any argument until the verbatim text is located and read from a primary source. Any argument that depends on "her marke" or "free & voluntary consent" from the Pawtuxet deed is BROKEN until the deed is found or killed.
