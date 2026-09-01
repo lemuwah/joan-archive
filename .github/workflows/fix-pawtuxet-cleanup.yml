@@ -1,0 +1,120 @@
+name: Cleanup remaining Pawtuxet overclaims
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Apply remaining patches
+        run: |
+          python3 << 'SCRIPT'
+          with open('index.html', 'r') as f:
+              content = f.read()
+
+          changes = []
+
+          # 1. Documents table: add citation kill to Pawtuxet row description
+          old = 'John Greene sells inherited Pawtuxet land to William Carpenter for \xc2\xa310. Joan gives \"free &amp; voluntary consent\" and signs with her mark. Witnesses: John Wickes, Samuel Gorton. Second, independent 1682 transaction requiring Joan'
+          if old not in content:
+              # Try without the £ encoding issue
+              old = 'John Greene sells inherited Pawtuxet land to William Carpenter'
+              if old in content:
+                  content = content.replace(
+                      old,
+                      '\xe2\x9a\xa0\xef\xb8\x8f <strong>CITATION INVALIDATED:</strong> Vol. VII pp. 177\u2013178 = 1773 Gaspee records. Previously claimed: John Greene sells inherited Pawtuxet land to William Carpenter'
+                  )
+                  changes.append('1. Documents table: added citation kill notice to Pawtuxet row')
+          else:
+              content = content.replace(old, '\xe2\x9a\xa0\xef\xb8\x8f <strong>CITATION INVALIDATED:</strong> Vol. VII pp. 177\u2013178 = 1773 Gaspee records. Verbatim deed text not found in any digitized source. Previously described as: John Greene sells inherited Pawtuxet land to William Carpenter')
+              changes.append('1. Documents table: full citation kill notice added')
+
+          # 2. Six anomalies: "twice in the same year, on two separate transactions"
+          old = 'why did it require her signature twice in the same year, on two separate transactions?'
+          new = 'what system of authority made her available to English law at exactly this moment?'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('2. Six anomalies: removed twice/two transactions')
+
+          # 3. Hypotheses header: "& Pawtuxet Consent"
+          old = 'Explains 1682 Life-Estate &amp; Pawtuxet Consent?'
+          new = 'Explains 1682 Life-Estate Clause?'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('3. Hypotheses header: removed Pawtuxet')
+
+          # 4. Hypothesis C: "twice, in two unrelated transactions"
+          old = 'twice, in two unrelated transactions'
+          new = 'in a land transfer'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('4. Hypothesis C: removed twice/two transactions')
+
+          # 5. Methodological note: "the second Pawtuxet consent"
+          old = 'the life-estate clause and the second Pawtuxet consent'
+          new = 'the life-estate clause'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('5a. Method note: removed Pawtuxet consent ref')
+
+          # 5b. Methodological note: "two independent transactions"
+          old = 'across two independent transactions'
+          new = 'in the home-place deed'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('5b. Method note: removed two transactions ref')
+
+          # 6. Hypothesis E: remaining "twice" and "two" references
+          old = 'Both 1682 deeds are recorded in RI Land Evidence'
+          new = 'The 1682 home-place deed is recorded in RI Land Evidence'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('6a. Hypothesis E: Both deeds -> The deed')
+
+          old = 'two different witness sets and two different clerks'
+          new = 'consistent witness structure'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('6b. Hypothesis E: two witness sets -> consistent')
+
+          old = 'inventing Joan twice, in two independent transactions, before two different witness sets'
+          if old not in content:
+              old = 'who gains by inventing Joan in the home-place deed?'
+              # Already patched by previous workflow
+              if old in content:
+                  changes.append('6c. Already fixed by previous workflow')
+
+          old = 'not twice, with different formulas in each deed'
+          new = 'and the anomalous "or to her mother" clause is too unusual to fabricate'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('6d. Hypothesis E: removed twice/different formulas')
+
+          with open('index.html', 'w') as f:
+              f.write(content)
+
+          print(f'Applied {len(changes)} cleanup patches:')
+          for c in changes:
+              print(f'  {c}')
+          SCRIPT
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git diff --cached --stat
+            git commit -m "fix: cleanup remaining Pawtuxet overclaims (round 2)
+
+            Patches the 5 locations the previous workflow missed due
+            to HTML entity encoding differences."
+            git push
+          fi
