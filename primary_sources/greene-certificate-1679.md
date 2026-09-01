@@ -69,7 +69,7 @@ The same settlers — including Greene's co-settler Richard Smith and co-Deputy 
 - **"Forty-two years since"** (1637) — Smith's arrival, same timeline as Greene's certificate
 - **Trading house at Cocumscussoc** — Greene's home base
 - **"Natives were then very numerous"** — admission of dense Indigenous population at arrival
-- **"Chased the natives as far as Pawtuxet"** — the same area where Joan signs in 1682
+- **"Chased the natives as far as Pawtuxet"** — a reference to the geographic area *(Note: the 1682 Pawtuxet deed linking Joan to this area is currently ⚠️ SUSPENDED — see `research/pawtuxet_deed_investigation.md`)*
 
 Greene's 1679 certificate was **not isolated testimony** — it was **strategic evidence** in a **colonial sovereignty campaign** to secure Narragansett land against Massachusetts and Connecticut.
 

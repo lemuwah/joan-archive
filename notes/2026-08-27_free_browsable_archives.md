@@ -1,7 +1,13 @@
-# Free, Publicly Browsable Archives for Colonial Manuscript Images
+  1	# Free, Publicly Browsable Archives for Colonial Manuscript Images
 **Date:** 2026-08-27  
 **Agent:** Migoo  
 **Purpose:** Curated list of archives where original manuscript pages from 1660s–1690s New England can be browsed at no cost. These are the tools available to an independent researcher without institutional access.  
+
+---
+
+## ⚠️ NOTE (2026-09-01)
+
+This list was compiled when the archive was searching for Joan's mark on the **Pawtuxet deed (May 1682)**. That deed's citation has since been **invalidated** (see `research/pawtuxet_deed_investigation.md`). Joan's ONLY VERIFIED appearance is the **March 1682 home-place deed**. The Preservica link (item #1 below) and FamilySearch Film 564389 (item #9) remain the strongest leads for locating Joan's mark on the **home-place deed** instead.
 
 ---
 
@@ -21,7 +27,7 @@ This project is conducted without grant funding, institutional backing, or paid 
 - **URL:** https://sosri.access.preservica.com/home/
 - **Key collection:** Land and Public Notary Records, Vol. 1 (1648–1696)
   - **Direct link:** https://sosri.access.preservica.com/uncategorized/SO_34511b06-2694-4cbf-8833-645ddd7384c2/
-  - **Why it matters:** This is the exact volume that should contain the 1682 Pawtuxet deed. If the pages are browsable as manuscript scans (not just a catalog entry), Joan's mark could be here.
+  - **Why it matters:** This is the exact volume that should contain the 1682 ~~Pawtuxet~~ home-place deed. If the pages are browsable as manuscript scans (not just a catalog entry), Joan's mark could be here.
   - **Status as of 2026-08-27:** NEEDS VERIFICATION — the Preservica link exists but we have not confirmed whether individual page images are browsable or just the catalog metadata.
 - **Also relevant:** Fones Record (1659–1679) — deeds and land records from Narragansett country
   - **Catalog:** https://catalog.sos.ri.gov/repositories/2/resources/409
@@ -105,4 +111,4 @@ The Joan Archive documents this gap as part of the research process, not just th
 
 ---
 
-*This is a resource guide, not evidence. Last verified 2026-08-27.*
+*This is a resource guide, not evidence. Last verified 2026-08-27. Pawtuxet note added 2026-09-01.*

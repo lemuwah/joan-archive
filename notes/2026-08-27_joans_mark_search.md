@@ -1,8 +1,18 @@
 # Joan's Mark — Digital Search Report
 **Date:** 2026-08-27 (updated: Preservica direct link discovered + Plymouth County lead)  
 **Agent:** Migoo (search pass)  
-**Objective:** Locate a digitized visual image of Joan Greene's mark on the 1682 Pawtuxet deed  
+**Objective:** Locate a digitized visual image of Joan Greene's mark on ~~the 1682 Pawtuxet deed~~ a verified 1682 deed  
 **Status:** BLOCKED on institutional access — but one new lead needs verification tonight  
+
+---
+
+## ⚠️ SUSPENSION NOTICE (2026-09-01)
+
+**This search originally targeted Joan's mark on the 19 May 1682 Pawtuxet deed.** That deed's citation has been **definitively invalidated** (Vol. VII pp. 177–178 = 1773 Gaspee commission records). Joan's ONLY VERIFIED legal appearance is the **24 March 1681/82 home-place deed** (F.L. Greene 1894, p. 10; NK Land Evidence).
+
+**The search objective is now:** Locate Joan's mark on the **home-place deed**, not the Pawtuxet deed. The Preservica/FamilySearch leads below remain valid — RI Land Evidences Vol. I (1648–1696) should contain the home-place deed. The mark may be there.
+
+See: `research/pawtuxet_deed_investigation.md` | `contamination/vol_vii_citation_kill.md`
 
 ---
 
@@ -28,7 +38,7 @@ During the comparative mark search, we discovered that the RI State Archives Pre
 
 **This needs immediate verification:**
 - Does this link serve browsable manuscript page images, or just catalog metadata?
-- If browsable, can individual pages be navigated to find the May 1682 entries?
+- If browsable, can individual pages be navigated to find the ~~May~~ March 1682 entries?
 - If it's the actual deed book (not a finding aid), Joan's mark could be on one of these pages.
 
 **This is different from the previous Preservica search.** Earlier we searched Preservica by keyword and found nothing. This is a direct link to the specific volume that should contain the deed, found via a different search path.
@@ -69,3 +79,4 @@ This project documents these barriers as part of the research process — becaus
 ---
 
 *This document is a search report, not a source. It contains no primary evidence.*
+*Research note dated 2026-08-27. Suspension notice and objective correction added 2026-09-01.*

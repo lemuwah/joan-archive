@@ -6,22 +6,29 @@ Surgeon John a misidentification?
 
 ---
 
+## ⚠️ SUSPENSION NOTICE (2026-09-01)
+
+**C1 below relies on the 1682 Pawtuxet deed as a "documented link" between the Quidnessett and Warwick/Shawomet spheres.** That deed's citation ("Records of RI & Providence Plantations Vol. VII, pp. 177–178") has been **definitively invalidated** — those pages contain 1773 Gaspee commission records. Bates (1918–19) does not mention this deed.
+
+**C1's status is now: SUSPENDED.** The Pawtuxet overlap is an unverified claim, not a "documented link." The Firewall table's "these spheres don't touch" framing is not yet contradicted by a verified document. All other contradictions (C2–C6) and confirmations (F1–F3) are unaffected.
+
+See: `research/pawtuxet_deed_investigation.md` | `contamination/vol_vii_citation_kill.md`
+
+---
+
 ## ⚠️ CONTRADICTIONS / OPEN — not resolved either direction
 
-### C1. Pawtuxet overlap (NEW — upgrade from coincidence to documented link)
+### C1. Pawtuxet overlap — **⚠️ SUSPENDED (was: "upgrade from coincidence to documented link")**
 The 1682 Pawtuxet deed (John & Joan Greene → William Carpenter, "inherited
 Pawtuxet land") is witnessed by **John Wickes and Samuel Gorton** — both
 original 1643 Shawomet purchasers. Separately, Surgeon John Greene is
 documented purchasing land at Pawtuxet itself in 1641/2, adjoining
 Occupessatuxet Cove, before the Shawomet purchase.
-**Status:** Real, primary-sourced network overlap between the Quidnessett
-and Warwick/Shawomet spheres. Does NOT by itself prove shared identity —
-cousins with witnessed shared land history is a normal explanation — but
-the Firewall table's implicit "these spheres don't touch" framing is now
-contradicted by a specific document. Needs its own entry, not smoothed
-into either the Firewall table or dismissed.
-**Next step:** Pull the full 1682 Pawtuxet deed text — does "inherited"
-specify inherited *from whom*? That single word could resolve this.
+**Previous status:** Real, primary-sourced network overlap between the Quidnessett
+and Warwick/Shawomet spheres.
+**Current status (2026-09-01):** **SUSPENDED.** The deed's citation is invalidated. The overlap is unverified. Does NOT by itself prove shared identity —
+but this point is moot until the deed is found or killed.
+**Next step:** ~~Pull the full 1682 Pawtuxet deed text~~ → Verify whether the deed exists at all. See `research/pawtuxet_deed_investigation.md`.
 
 ### C2. Providence/Smith concurrency (open, not disproven)
 Claim: "40 years and more with Smith" and active Shawomet-circle membership
@@ -101,10 +108,12 @@ currently framed, pending any new counter-document.
 ### F3. Pawtuxet as a real, shared place-name (not coincidence)
 Confirmed as one specific tract at the mouth of the Pawtuxet River,
 directly north of/adjoining the Shawomet purchase — not a phonetic false
-cluster. (See C1 for the evidentiary weight this carries.)
+cluster. (See C1 for the evidentiary weight this carries — **now SUSPENDED**.)
 
 
 ---
 *Nothing above changes a VERIFIED badge in the Five-John Firewall today.
-C1 and C6 are the two threads most likely to actually move something if
-pursued — Pawtuxet deed text and the comparative haplogroup, respectively.*
+~~C1 and~~ C6 ~~are~~ is the ~~two threads~~ one thread most likely to actually move something if
+pursued — ~~Pawtuxet deed text and~~ the comparative haplogroup~~, respectively~~.*
+
+*Session log dated 2026-07-28. Suspension notice added 2026-09-01.*

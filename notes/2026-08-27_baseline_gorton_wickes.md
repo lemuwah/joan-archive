@@ -6,6 +6,16 @@
 
 ---
 
+## ⚠️ SUSPENSION NOTICE (2026-09-01)
+
+**This study was designed to investigate witnesses on the 19 May 1682 Pawtuxet deed.** That deed's citation ("Records of RI & Providence Plantations Vol. VII, pp. 177–178") has been **definitively invalidated** — those pages contain 1773 Gaspee commission records. The verbatim deed text has not been located in any digitized primary source. Bates (1918–19) does not mention it.
+
+**The framework below remains valid IF the deed is eventually located.** Until then, Wickes and Gorton as witnesses to Joan's consent is an UNVERIFIED claim. The baseline study is paused, not deleted.
+
+See: `research/pawtuxet_deed_investigation.md` | `contamination/vol_vii_citation_kill.md`
+
+---
+
 ## The 4 Laws apply throughout this document.
 
 ---
@@ -60,8 +70,9 @@ The 19 May 1682 Pawtuxet deed (John Greene to William Carpenter) was witnessed b
 
 ## Results
 
-*(To be populated as research proceeds.)*
+*(Paused pending deed verification. See suspension notice above.)*
 
 ---
 
 *This is a study framework. It contains no primary evidence and no conclusions.*
+*Research note dated 2026-08-27. Suspension notice added 2026-09-01.*
