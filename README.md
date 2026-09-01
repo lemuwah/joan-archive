@@ -11,7 +11,7 @@ Version v2
 
 ---
 
-Joan, wife of John Greene of Quidnessett, appears nowhere in the English documentary record for the entire documented span of her husband's life — and then, in 1682, appears twice: two independent legal acts, five weeks apart, each requiring her own consent and her own mark. This archive exists to ask why, and to make the surviving evidence around that question easier for anyone to check.
+Joan, wife of John Greene of Quidnessett, appears nowhere in the English documentary record for the entire documented span of her husband's life — and then, in 1682, appears once: a single legal act requiring her consent and her mark. This archive exists to ask why, and to make the surviving evidence around that question easier for anyone to check.
 
 This is not a genealogy website. It is an open-access research library — primary sources first, interpretation second, and every claim tagged with how much weight it can bear.
 
@@ -27,14 +27,15 @@ The 1672 Fones Purchase deed records Absolom as "Counsellor," Anashuecot as "Chi
 
 ---
 
-## Her two known appearances
+## Her known appearance
 
 | Date | Document | What happened |
 |---|---|---|
 | 24 March 1682 | Home-place deed (RI Land Evidence) | John Greene divides his Quidnessett land among his sons. Joan's consent is required; a 30-shilling life-estate is reserved to her — "or to her mother if she survive." |
-| 19 May 1682 | Pawtuxet deed (Records of RI & Providence Plantations Vol. VII, pp. 177–178) | John Greene sells inherited Pawtuxet land to William Carpenter for £10. Joan gives separate "free & voluntary consent" and signs with her mark. Witnesses: John Wickes, Samuel Gorton. |
 
-Forty years of total invisibility to English law doesn't end with a single mention that could be a scribal fluke. It ends with two separate transactions, two different tracts, two different sets of witnesses — both requiring her, in the same season. That pattern is the core question this archive is built around.
+**⚠️ Note on a claimed second appearance:** Some secondary sources describe a second deed dated 19 May 1682, in which Joan consents to the sale of Pawtuxet land to William Carpenter. This archive previously listed it as Tier 1 — Primary, citing "Records of RI & Providence Plantations Vol. VII, pp. 177–178." **That citation has been invalidated:** Bartlett's Vol. VII covers 1770–1776, and pp. 177–178 contain Gaspee commission records from 1773, not a 1682 deed. The verbatim text of the claimed Pawtuxet deed has not been located in any digitized primary source. All claims about Joan's Pawtuxet consent are **SUSPENDED** pending physical archive verification. See `theory/proof_pieces/09_pawtuxet_problem.md` for the full search record.
+
+Forty years of total invisibility to English law doesn't end with a single mention that could be a scribal fluke. It ends with a precisely constructed legal instrument requiring her, in the only season we know of. That pattern — and that anomalous "mother" clause — is the core question this archive is built around.
 
 ---
 
@@ -70,7 +71,7 @@ Neither the digitization problem nor the contamination problem is solved by beli
 
 ## Working Questions (not findings)
 
-The archive does not endorse any hypothesis. All explanations remain open until a primary source closes them. The site presents five competing hypotheses — English wife, structural archive silence, servant/indentured, widow of prior marriage, and deed interpolation — with an honest stress test against three criteria: geographic continuity, archival silence, and the 1682 double-consent anomaly.
+The archive does not endorse any hypothesis. All explanations remain open until a primary source closes them. The site presents five competing hypotheses — English wife, structural archive silence, servant/indentured, widow of prior marriage, and deed interpolation — with an honest stress test against three criteria: geographic continuity, archival silence, and the 1682 consent anomaly.
 
 **A single new document could overturn any of them.**
 
@@ -84,7 +85,7 @@ Every claim on the site carries a status tag (Tier 1 Primary → Tier 4 Invalida
 2. **La Mance Sieve** — any claim traceable to Lora Sarah Nichols La Mance's uncited 1904 compilation is quarantined until it's independently verified from a primary source.
 3. **No Early Exclusion** — hypotheses aren't ruled out just because they're inconvenient or unfamiliar.
 4. **No Algorithmic Contamination** — claims that exist only because they were copied between genealogy platforms don't count as evidence, no matter how many trees repeat them.
-5. **law 5-Add Law 5 — No Jurisdictional Assumption (equal priority with La Mance Law)** — 2026-08-27
+5. **Law 5—No Jurisdictional Assumption (equal priority with La Mance Law)** — 2026-08-27
 The Quidnessett/Narragansett region was contested territory documented by
 Rhode Island, Massachusetts Bay, Plymouth Colony, Connecticut, the Crown,
 New York, and Native landholders — each generating records, often catalogued
