@@ -1,0 +1,68 @@
+name: Final Pawtuxet cleanup (round 3)
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Apply final patches
+        run: |
+          python3 << 'SCRIPT'
+          with open('index.html', 'r', encoding='utf-8') as f:
+              content = f.read()
+
+          changes = []
+
+          # Line 907: "twice in the same year, on two separate transactions"
+          old = 'why did it require her signature twice in the same year, on two separate transactions?'
+          new = 'what system of authority made her available to English law at exactly this moment?'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('907: removed twice/two transactions')
+
+          # Line 1172: "& Pawtuxet Consent?" - literal & in the HTML
+          old = 'Explains 1682 Life-Estate & Pawtuxet Consent?'
+          new = 'Explains 1682 Life-Estate Clause?'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('1172: hypotheses header fixed')
+
+          # Line 1209: "the second Pawtuxet consent" and "two independent transactions"
+          old = 'the life-estate clause and the second Pawtuxet consent'
+          new = 'the life-estate clause'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('1209a: removed Pawtuxet consent ref')
+
+          old = 'across two independent transactions'
+          new = 'in the home-place deed'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('1209b: removed two transactions ref')
+
+          with open('index.html', 'w', encoding='utf-8') as f:
+              f.write(content)
+
+          print(f'Applied {len(changes)} patches:')
+          for c in changes:
+              print(f'  {c}')
+          SCRIPT
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git diff --cached --stat
+            git commit -m "fix: final 3 Pawtuxet overclaims patched (lines 907, 1172, 1209)"
+            git push
+          fi
