@@ -3,7 +3,7 @@
 This file outlines the Indigenous kinship structures (Niantic/Narragansett sphere) relevant to reconstructing the identity and relational world of Anashuecot. It provides the relational logic needed to interpret colonial records that may obscure or fragment her presence.
 
 Start every session by reading:
-- `hub/spine.md`
+- `theory/source_spine.md`
 - `theory/source_spine.md`
 - `theory/greene_sibling_map.md`
 
@@ -221,7 +221,8 @@ This map focuses on Indigenous relational structures, colonial distortions, and 
 - Places her in a **Narragansett conflict context**.
 - Suggests relational ties to other named Indigenous persons.
 
-### 4.2 Pawtuxet Records Vol. VII (1682 Sale)
+### 4.2 ~~Pawtuxet Records Vol. VII (1682 Sale)~~ — ⚠️ SUSPENDED
+**⚠️ SUSPENDED (2026-09-01):** the cited "Vol. VII pp. 177–178" contains 1773 Gaspee records, not a 1682 deed; verbatim text not located in any digitized primary source. See theory/proof_pieces/09_pawtuxet_problem.md and CORRECTIONS.md.
 - “**free & voluntary consent**” of Joan/Anashuecot.
 - Establishes her as a **legal and relational actor**.
 - Connects her to the Greene sibling set.

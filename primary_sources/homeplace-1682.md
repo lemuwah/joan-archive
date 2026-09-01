@@ -11,16 +11,19 @@ permalink: /primary/homeplace-1682/
 </div>
 
 # 1682 Home-Place Deed
-**Status:** 🟢 PROVEN
+**Status:** 🟢 PROVEN (deed exists; Joan named) / ⚠️ "or to her mother if she survive" wording UNVERIFIED — see [`contradictions/mother-clause-wording.md`](../contradictions/mother-clause-wording.md)
 
-This deed confirms **Joan** as living mother in the life-estate clause:
+This deed confirms **Joan** as John's living wife and as beneficiary of the annuity after his death. F.L. Greene 1894 (p. 10) paraphrases the two instruments as:
 
-> "...as long as their father or mother should live."
+> "...each of said sons to pay thirty shillings annually as long as their father or mother should live."
+
+The Worth 1921 abstract of the James instrument reads: *"...unto John Green... and after his decease to Joane Greene, his wife."* Neither source contains the phrase "or to her mother if she survive."
 
 ## What the document actually says
 - 180 acres to **Daniel** (120ac) and **James** (60ac).
 - Life-estate clause keeps parents on the land until death.
 - Confirms **Joan is alive** in March 1682.
+- Joan is a **named beneficiary**, not a grantor: John Greene alone signs and acknowledges (Worth abstract; NK manuscript signature block). No mark or signature for Joan is visible.
 
 ## What genealogy sites incorrectly claim
 - That Joan died before 1682.
@@ -30,9 +33,9 @@ This deed confirms **Joan** as living mother in the life-estate clause:
 None of these claims appear in the document.
 
 ## Evidence Status
-🟢 **PROVEN** — This document is fully authenticated and appears in F.L. Greene 1894, p.10.
+🟢 **PROVEN** — The deed is paraphrased in F.L. Greene 1894, p.10, abstracted (James instrument only) in Worth 1921 pp. 173–174, and survives as a post-1686 record copy (Daniel instrument) in NK Land Records (FamilySearch DGS 008204949, img 10). ⚠️ The "or to her mother" wording is **not** in any of these.
 
-## Transcription
+## Transcription (Worth 1921 abstract, pp. 173–174 — James instrument only; ellipses are Worth's)
 
 John Green to James Greene. . . .John Green of Aquidnesett. . .in the Narragansett Cuntry . . .thirtie shillings in Currant mony of New England to be paid. . .Yearly. . .unto John Green... and after his decease to Joane Greene, his wife... By James Greene (the natural son of John and Joan Greene. . . ) . . .Have Given. . .Land .. .lying. . .at Aquednessett. . .now in the posession of... James Greene ... sixty Acres. . .bounded. . .Northerly by the land. . .John Greene Easterly by quidnesett harbour. Southerly by a River or brook and land of Daniell Greene, and Westerly by a hie way,... with all. . .wood,. . .Quarries,. . .water courses, buildings ... at the decease of... John and Joane Greene. . .James Greene. . .shall have ... the ... Premises forever. . .Twenty fourth day of March. . .one Thowsand six hundred Eighty & one or two . . .
 
@@ -57,6 +60,12 @@ John Foanes Wardn.
   <img src="{{ site.baseurl }}/images/1682-2.JPG" alt="1682 Home-Place Deed — Page 2" style="max-width:100%; border:1px solid #444;">
 </a>
 
-**Sources:** [Original manuscript — F.L. Greene 1894, p.10 (archive.org)](https://archive.org/details/rhodeislandlande00wort/page/174/mode/2up) | [Official archive (Preservica)](https://sosri.access.preservica.com/)
+**F.L. Greene 1894, p. 10 (page image pulled 2026-09-01):**
+
+<a href="https://archive.org/details/descendantsofjos00gree/page/n15/mode/2up" target="_blank" rel="noopener">
+  <img src="{{ site.baseurl }}/images/1682_fl_greene_1894_p10_father_or_mother_should_live_nothing_further_known.jpg" alt="F.L. Greene 1894 p.10" style="max-width:100%; border:1px solid #444; margin-bottom:1rem;">
+</a>
+
+**Sources:** [Worth, *Rhode Island Land Evidences Vol. I, 1648–1696, abstracts* (1921), pp. 173–174 (archive.org)](https://archive.org/details/rhodeislandlande00wort/page/172/mode/2up) | [F.L. Greene, *Descendants of Joseph Greene of Westerly* (1894), p. 10 (archive.org)](https://archive.org/details/descendantsofjos00gree) | NK Land Records 1686–17xx, FamilySearch DGS 008204949, images 9–12 (Daniel instrument) | [Official archive (Preservica)](https://sosri.access.preservica.com/)
 
 > **Access note:** The archive.org link requires no login. The images above are local reference copies. Always verify against the original archival record.

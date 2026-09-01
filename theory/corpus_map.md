@@ -7,7 +7,7 @@ A master index of all primary and secondary sources used in the Joan Project.
 - 1672 Fones Purchase deed
 - 1677/8 Absolom affidavit
 - John Greene Sr. 1679 affidavit
-- Providence & Pawtuxet records (Vol. VII)
+- ~~Providence & Pawtuxet records (Vol. VII)~~ — ⚠️ "Vol. VII pp. 177–178" citation invalid (1773 Gaspee records); Pawtuxet deed SUSPENDED
 - Hough 1858 court-martial records
 - Bates 1918–19 RIHS Collections XI–XII
 

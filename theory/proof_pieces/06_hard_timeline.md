@@ -10,7 +10,9 @@
 
 ## The Question
 
-The 1682 homeplace deed says "or to her mother if she survive." Who could that mother be? The answer depends on who was **alive** in March 1682.
+> ⚠️ WORDING UNVERIFIED — not in F.L. Greene 1894 or the Worth 1921 abstract; see contradictions/mother-clause-wording.md. F.L. Greene 1894 reads "as long as their father or mother should live" (= Joan herself); the Worth abstract reads "after his decease to Joane Greene his wife." Part 5 below is preserved as written but should be read as conditional on the wording being confirmed in the NK manuscript.
+
+The 1682 homeplace deed is quoted as saying "or to her mother if she survive." Who could that mother be? The answer depends on who was **alive** in March 1682.
 
 ---
 
@@ -147,8 +149,8 @@ SEPT 17, 1679 — WEUNQUESH AT COURT (land claim with written evidence)
 MARCH 24, 1681/82 — HOME-PLACE DEED
     Joan named. "Or to her mother if she survive."
 
-MAY 19, 1682 — PAWTUXET DEED
-    Joan gives "free & voluntary consent."
+MAY 19, 1682 — PAWTUXET DEED (⚠️ SUSPENDED — citation invalid, text not located; see proof piece #9)
+    Claimed: Joan gives "free & voluntary consent." NOT counted as a verified appearance.
 
 ~1686 — Weunquesh dies
 ```

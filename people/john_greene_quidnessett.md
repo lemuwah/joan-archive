@@ -105,17 +105,17 @@ Dated **24 March 1681/82**. Conveys portions of Quidnessett land to sons:
 - **James Greene:** ~60 acres adjoining Daniel's land
 - Each son to pay **30 shillings annually** during the lifetime of John or Joan
 - Land bounded in part by land of their brother **John**
-- **Life-estate clause:** "as long as their father or mother should live" / "or to her mother if she survive"
+- **Life-estate clause:** "as long as their father or mother should live" (F.L. Greene 1894 paraphrase) / "after his decease to Joane Greene his wife" (Worth 1921 abstract). ~~"or to her mother if she survive"~~ — ⚠️ WORDING UNVERIFIED — not in F.L. Greene 1894 or the Worth 1921 abstract; see contradictions/mother-clause-wording.md
 
 James described as the **"natural son of John and Joan Greene"** (17th-century usage = biological son).
 
 **Source:** NK Land Evidence; F.L. Greene 1894 (p. 10)
 
-### The 1682 Pawtuxet Consent
+### ~~The 1682 Pawtuxet Consent~~ — ⚠️ SUSPENDED (2026-09-01)
 
-Dated **19 May 1682**. Joan gives her **"free & voluntary consent"** to the sale of Pawtuxet land rights to William Carpenter for £10. Joan signs **"her marke."** Witnesses: John Wickes, Samuel Gorton.
+**Claimed (secondary sources):** dated 19 May 1682, Joan gives her "free & voluntary consent" to the sale of Pawtuxet land rights to William Carpenter for £10 and signs "her marke." Witnesses: John Wickes, Samuel Gorton.
 
-**Source:** *Records of RI & Providence Plantations*, Vol. VII, pp. 177–178
+**Status:** The cited source — *Records of RI & Providence Plantations*, Vol. VII, pp. 177–178 — is **invalid**: that volume covers 1770–1776 and those pages contain 1773 Gaspee commission records. The deed's verbatim text has not been located in any digitized primary source, and Bates (1918–19) does not mention it. Not counted as a verified appearance of Joan. See `theory/proof_pieces/09_pawtuxet_problem.md` and `CORRECTIONS.md`.
 
 ### East Greenwich Proprietorship (1679)
 

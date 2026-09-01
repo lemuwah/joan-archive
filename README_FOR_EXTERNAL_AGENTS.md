@@ -11,13 +11,15 @@ Welcome. You are now part of a multi-agent research system.
 
 Before producing ANY output, read:
 
-1. `hub/spine.md`  
-2. `hub/hostile_protocol.md`  
-3. The README for the agent role you are performing:
-   - `agents/synthesizer/README.md`
-   - `agents/explorer/README.md`
+1. `theory/source_spine.md` (the spine)  
+2. `theory/three_laws.md` (the Five Laws)  
+3. `CORRECTIONS.md` (known past errors — do not re-import them)  
+4. `agents/hostile_reviewer/README.md` (the hostile protocol)  
+5. The README for the agent role you are performing:
+   - `agents/Synthesizer/README.md`
+   - `agents/Explorer/README.md`
    - `agents/hostile_reviewer/README.md`
-   - `agents/archivist/README.md`
+   - `agents/Archivist/README.md`
 
 These files define:
 - the project's core theory  
@@ -56,14 +58,14 @@ When you respond to a task:
 2. Follow the instructions in your agent's README.  
 3. Produce a **single output file**.  
 4. Save it in the correct folder:
-agents/<agent_name>/<date>_<task>.md
+agents/<AgentName>/<date>_<task>.md
 
 
 Examples:
-- `agents/synthesizer/2026-07-11_baseline_synthesis.md`
-- `agents/explorer/2026-07-11_kpw_hypotheses.md`
+- `agents/Synthesizer/2026-07-11_baseline_synthesis.md`
+- `agents/Explorer/2026-07-11_kpw_hypotheses.md`
 - `agents/hostile_reviewer/2026-07-11_kpw_attack.md`
-- `agents/archivist/2026-07-11_kpw_source_map.md`
+- `agents/Archivist/2026-07-11_kpw_source_map.md`
 
 Your output MUST follow the structure defined in your agent's README.
 

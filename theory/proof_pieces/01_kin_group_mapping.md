@@ -104,7 +104,7 @@ Strengthened by geographic and institutional continuity at Quidnessett. Weakened
 ### Model B (Joan = unknown English woman)
 Requires **3–4 independent anomalies** to apply simultaneously:
 1. Joan's total absence from all English record systems (unique among Quidnessett wives)
-2. The matrilineal inheritance clause ("or to her mother") — no English legal parallel
+2. The matrilineal inheritance clause ("or to her mother") — no English legal parallel — ⚠️ WORDING UNVERIFIED — not in F.L. Greene 1894 or the Worth 1921 abstract; see contradictions/mother-clause-wording.md
 3. The survival anomaly (Greene homestead uniquely undestroyed during KPW)
 4. The pre-war succession coincidence at Quidnessett
 

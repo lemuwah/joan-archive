@@ -56,9 +56,62 @@ The Pawtuxet deed is **SUSPENDED, not deleted.** It may still exist in:
 
 A direct query to RI State Archives would resolve this definitively.
 
+### Follow-up sweep (2026-09-01, second pass)
+
+A repository-wide grep after the first pass found the Pawtuxet deed still stated as fact in places the first pass missed. Corrected without rewriting the surrounding analysis:
+
+- `index.html` — "This Month's Focus" box, the "Places Joan/e should appear" list (Pawtuxet row was still marked *Present*), Question 1 body text, hypothesis stress-test matrix (two cells), Open Question closing paragraph ("appears twice"), and a mojibake `⚠️` left by an earlier automated patch
+- `joan-constellation.html` — Joan node and Pawtuxet deed node relabelled SUSPENDED; Bates→Pawtuxet link changed from *connects* to *differs* (Bates does not mention it)
+- `data/archive.json`, `data/research/{sources,evidence,claims}.jsonl` — S04 / SRC-1682-PAWT / E03 downgraded from Tier 1 to suspended; C01 restated as one verified appearance; S04 removed from C02's source list
+- `theory/` — proof pieces #02, #05, #06, #10; `1672_deed_lifecycle.md` Node 7; `1682_deed_lifecycle.md` GAP-4 (was still "HIGHEST PRIORITY" after the spine had resolved it); `anashuecot_kin_map.md`, `greene_sibling_map.md`, `corpus_map.md`
+- `people/john_greene_quidnessett.md`, `people/five_john_primary_source_trail.md`
+- Removed the five one-off `workflow_dispatch` patch workflows in `.github/workflows/` whose edits have all landed (one of them is the source of the mojibake and would reintroduce it if re-run)
+
 ### The impact on Joan
 
 If the Pawtuxet deed doesn't exist, Joan has **ONE verified legal appearance** — the March 24, 1682 home-place deed. This makes her documentary footprint uniquely thin among comparable Quidnessett wives and strengthens Model A (Indigenous woman who entered the English record system through marriage). See `theory/proof_pieces/10_independent_john_addendum_single_appearance.md`.
+
+---
+
+## Correction #2: "Or to her mother if she survive" — wording not found in any source
+
+**Date identified:** 2026-09-01  
+**Severity:** CRITICAL — the phrase was the archive's central documentary anomaly and the basis of the matrilineal-inheritance argument (proof piece #5 Part 2, #06 Part 5, #08, the live-site stress-test matrix)
+
+### What was wrong
+
+The archive quoted the 24 March 1681/82 home-place deed as containing the clause **"or to her mother if she survive"**, read as John Greene naming *Joan's* mother as a contingent beneficiary — which has no parallel in English dower practice.
+
+### How we caught it
+
+While checking the March deed after the Pawtuxet correction, the two sources the archive actually holds were read verbatim:
+
+- **F.L. Greene 1894, p. 10** (archive.org OCR): *"each of said sons to pay thirty shillings annually as long as their father or mother should live."* — a paraphrase; "their mother" is Joan.
+- **Worth 1921, RI Land Evidences Vol. I abstracts, pp. 173–174** (the page in `images/1682.jpg`): *"...unto John Green... and after his decease to Joane Greene, his wife"*; *"at the decease of... John and Joane Greene... James Greene... shall have... the Premises forever."* John Greene alone signs.
+- **NK Land Records manuscript** (`images/johntodaniel.jpg`, FamilySearch DGS 008204949 img 10): legible fragments read "...John Green dureing his naturall life and [Joane] Green his Wife... dureing her naturall life..."; signature block shows John Green alone.
+
+None contains "her mother." Git history shows the phrase first appeared on the live site on 2026-07-17 (`96a4c2e`) with the label *"Verbatim transcription still required [PENDING]"* and an unresolved citation ("SK Land Evidence Vol. IV"). The PENDING label was later dropped and the phrase was analyzed as fact from 2026-08-30 onward. Most likely vector (inference): a pronoun shift from F.L. Greene's "their mother" to "her mother."
+
+Two adjacent overclaims fell out of the same read: **"Joan's consent was required"** and **"Joan signs with her mark"** on the March deed. In both the abstract and the manuscript signature block, John is the sole grantor and signatory; Joan is a named beneficiary.
+
+### What changed
+
+- `contradictions/mother-clause-wording.md` created — side-by-side readings, git provenance, what survives, what would close it
+- Every quotation of the phrase in `README.md`, `index.html`, `joan-constellation.html`, `theory/source_spine.md`, `theory/1682_deed_lifecycle.md`, `theory/joan_firewall.md`, proof pieces #01/#04/#05/#06/#08/#09/#10/#10-addendum, `primary_sources/`, `people/` now carries **⚠️ WORDING UNVERIFIED**. The analyses built on it are left in place, marked conditional (Law 1).
+- `primary_sources/homeplace-1682.md` — the archive.org link was mislabelled "Original manuscript — F.L. Greene 1894"; it is Worth 1921. Corrected; both sources now cited separately.
+- `research/open_leads.md` — new leads 19b (transcribe DGS 008204949 imgs 9–12) and 19c (F.L. Greene has John Sr. alive in 1686 and 1692, contradicting Bates's pre-1685 death — held open, not resolved).
+
+### Addendum (same day): Bates 1918 p. 77 pulled
+
+Bates's own paraphrase — *"Greene and his wife Joan deeded to their sons ... thirty shillings a year ... so long as either parent lived"* — also lacks "her mother," but names **Joan as co-grantor**, which the abstract and manuscript signature block do not show. That is now a held contradiction (`contradictions/mother-clause-wording.md` §1d), so "Joan as a party to the deed" is downgraded to *contested*, not *refuted*. Page images for Bates pp. 74, 77 and F.L. Greene p. 10 added to `images/`; `primary_sources/bates-1918.md` created (it was linked from `primary_sources/index.md` but did not exist).
+
+### What's still open
+
+The phrase is **unverified, not disproven** (Law 3). Worth's abstracts drop text with ellipses; the manuscript has not been fully transcribed. A full transcription of the two March 1681/82 instruments in the North Kingstown record book is now the single most valuable digitization ask in this archive.
+
+### The impact on Joan
+
+What is verified is smaller and plainer than what the site said: Joan is named as John's wife, and as the person who receives the sons' 30 shillings a year after John dies, for her life. If the manuscript matches the abstract, the "mother clause" is an ordinary provision and the anomaly reduces to the one that was always the strongest — her forty-year silence and the fact that F.L. Greene, writing in 1894, could say *"nothing further is known about her."*
 
 ---
 

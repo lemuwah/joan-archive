@@ -4,7 +4,7 @@
 > **Rule:** No citation = does not exist. Need Box.Folder.Page + 600 DPI + direct quote.
 
 ### The One Record That Matters
-Joane Greene's ONLY VERIFIED appearance: **24 March 1681/82, Home-Place Deed** — Joan named as wife, signs with mark, 30-shilling life-estate reserved with anomalous clause "or to her mother if she survive." Everything below is the envelope we build around that moment.
+Joane Greene's ONLY VERIFIED appearance: **24 March 1681/82, Home-Place Deed** — Joan named as wife and as beneficiary of a 30-shilling life annuity after John's death. ⚠️ "Signs with mark" and the clause "or to her mother if she survive" are both UNVERIFIED — neither appears in F.L. Greene 1894 or the Worth 1921 abstract (John alone signs). See `contradictions/mother-clause-wording.md`. Everything below is the envelope we build around that moment.
 
 **⚠️ Note:** The May 1682 Pawtuxet deed previously listed here as the "hero document" has been **SUSPENDED**. Its citation ("Vol. VII pp. 177–178") is invalid — that volume covers 1770–1776 (Gaspee commission records). Bates (1918–19) does not mention this deed. See `research/pawtuxet_deed_investigation.md`.
 
@@ -15,7 +15,7 @@ Joane Greene's ONLY VERIFIED appearance: **24 March 1681/82, Home-Place Deed** �
 - [ ] **1682 Home-Place Deed — Joan's ONLY VERIFIED Appearance** 
     - **Status:** 🟢 PROVEN (F.L. Greene 1894, p. 10; NK Land Evidence)
     - **What it is:** The only surviving verified English record of Joane. John Greene divides Quidnessett land among sons Daniel (120ac) and James (60ac). Joan named with 30-shilling life-estate.
-    - **Why Joane:** Without her consent, deed invalid under coverture. The "or to her mother if she survive" clause has no English legal parallel.
+    - **Why Joane:** She is the named surviving beneficiary of the annuity. ~~Without her consent, deed invalid under coverture.~~ (The abstract shows John alone as grantor — Joan is not a party.) ~~The "or to her mother if she survive" clause has no English legal parallel.~~ ⚠️ WORDING UNVERIFIED — not in F.L. Greene 1894 or the Worth 1921 abstract; see contradictions/mother-clause-wording.md.
     - **Need:** 600 DPI scan of original from NK Land Evidence Book 1. Full TEI transcription. Scribe ID.
 
 - [ ] **⚠️ 1682 Pawtuxet Deed — SUSPENDED** 

@@ -3,7 +3,7 @@
 This file outlines the Greene family sibling structures relevant to the Joan / Anashuecot lineage project. It focuses on patterns, anomalies, and kinship configurations that may imply the presence of an unnamed or partially named Indigenous woman.
 
 Start every session by reading:
-- `hub/spine.md`
+- `theory/source_spine.md`
 - `theory/source_spine.md`
 
 ---
@@ -174,7 +174,7 @@ This is the **sibling cluster** that matters for:
 
 - **Cross‑check** Greene children list against:
   - Bates RIHS collections
-  - Pawtuxet Records Vol. VII
+  - ~~Pawtuxet Records Vol. VII~~ (⚠️ citation invalid — see contamination/vol_vii_citation_kill.md)
   - Fones Record excerpts
 - **Clarify** the status of **Edward³ Greene**.
 - **Map** which children appear in:

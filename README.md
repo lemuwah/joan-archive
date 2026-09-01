@@ -11,7 +11,7 @@ Version v2
 
 ---
 
-Joan, wife of John Greene of Quidnessett, appears nowhere in the English documentary record for the entire documented span of her husband's life — and then, in 1682, appears once: a single legal act requiring her consent and her mark. This archive exists to ask why, and to make the surviving evidence around that question easier for anyone to check.
+Joan, wife of John Greene of Quidnessett, appears nowhere in the English documentary record for the entire documented span of her husband's life — and then, in 1682, appears once: named as wife, and as the beneficiary of a life annuity, in a deed her husband signed alone. (Earlier versions of this page said the deed "required her consent and her mark"; that is not supported by the sources we hold — see `CORRECTIONS.md` #2.) This archive exists to ask why, and to make the surviving evidence around that question easier for anyone to check.
 
 This is not a genealogy website. It is an open-access research library — primary sources first, interpretation second, and every claim tagged with how much weight it can bear.
 
@@ -31,11 +31,11 @@ The 1672 Fones Purchase deed records Absolom as "Counsellor," Anashuecot as "Chi
 
 | Date | Document | What happened |
 |---|---|---|
-| 24 March 1682 | Home-place deed (RI Land Evidence) | John Greene divides his Quidnessett land among his sons. Joan's consent is required; a 30-shilling life-estate is reserved to her — "or to her mother if she survive." |
+| 24 March 1682 | Home-place deed (RI Land Evidence) | John Greene deeds his Quidnessett land to his sons Daniel and James. Each son is to pay 30 shillings a year to John and, after his death, to "Joane Greene his wife" for her life (Worth 1921 abstract); F.L. Greene 1894 paraphrases it as "as long as their father or mother should live." **⚠️ The wording "or to her mother if she survive," quoted on this site since July 2026, has not been found in either source and is UNVERIFIED** — see `contradictions/mother-clause-wording.md` and `CORRECTIONS.md` #2. Whether Joan signed is also unverified: the abstract shows John alone as signatory. |
 
 **⚠️ Note on a claimed second appearance:** Some secondary sources describe a second deed dated 19 May 1682, in which Joan consents to the sale of Pawtuxet land to William Carpenter. This archive previously listed it as Tier 1 — Primary, citing "Records of RI & Providence Plantations Vol. VII, pp. 177–178." **That citation has been invalidated:** Bartlett's Vol. VII covers 1770–1776, and pp. 177–178 contain Gaspee commission records from 1773, not a 1682 deed. The verbatim text of the claimed Pawtuxet deed has not been located in any digitized primary source. All claims about Joan's Pawtuxet consent are **SUSPENDED** pending physical archive verification. See `theory/proof_pieces/09_pawtuxet_problem.md` for the full search record.
 
-Forty years of total invisibility to English law doesn't end with a single mention that could be a scribal fluke. It ends with a precisely constructed legal instrument requiring her, in the only season we know of. That pattern — and that anomalous "mother" clause — is the core question this archive is built around.
+Forty years of total invisibility to English law doesn't end with a single mention that could be a scribal fluke. It ends with a legal instrument that names her, in the only season we know of. That pattern is the core question this archive is built around. (The "mother" clause that was previously described here as anomalous is under review — see the note above. If the deed only provides for "their father or mother," it is an ordinary two-life annuity and the anomaly reduces to the silence itself.)
 
 ---
 

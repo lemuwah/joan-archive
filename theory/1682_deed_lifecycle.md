@@ -4,7 +4,7 @@
 2. ~~Pawtuxet Sale Consent (19 May 1682)~~ — **⚠️ SUSPENDED: Verbatim text not located in any digitized primary source (see proof piece #9). All claims about this deed are held open pending verification.**
 **Grantor / Settlor:** John Greene Sr. of Quidnessett  
 **Beneficiaries / Grantees:** Daniel Greene (120 acres), James Greene (60 acres), ~~William Carpenter (Pawtuxet purchaser)~~  
-**Named Legal Actor:** Joan Greene / Joane ("...or to her mother if she survive")  
+**Named Legal Actor:** Joan Greene / Joane — named beneficiary ("...after his decease to Joane Greene his wife," Worth 1921 abstract). ~~("...or to her mother if she survive")~~ ⚠️ WORDING UNVERIFIED — not in F.L. Greene 1894 or the Worth 1921 abstract; see contradictions/mother-clause-wording.md  
 **Primary Source Anchors:** 
 * North Kingstown Land Evidence / F.L. Greene (1894, p. 10) — 🟢 VERIFIED
 * ~~Records of the Colony of Rhode Island & Providence Plantations, Vol. VII, pp. 177–178~~ — ⚠️ **UNVERIFIED** (citation exists but verbatim text not located in digitized sources; may be in undigitized volume, or may be a conflation of the 1658 Carpenter deed with the March 1682 Joan deed)
@@ -40,7 +40,7 @@ Per Law 1: The deed is not deleted. It is suspended pending physical archive ver
 [Node 3: ~~Pawtuxet Consent Execution (19 May 1682)~~] ──> **⚠️ SUSPENDED**
 │
 ▼
-[Node 4: Magisterial Acknowledgment & Colony Entry] ──> [Colony Records Vol. VII — UNVERIFIED]
+[Node 4: Magisterial Acknowledgment & Colony Entry] ──> [Colony Records Vol. VII — CITATION INVALID (1773 Gaspee records)]
 │
 ▼
 [Node 5: Death of John Greene Sr. (Pre-25 Sept 1685)] ──> [Bates Primary Anchor]
@@ -62,7 +62,7 @@ Per Law 1: The deed is not deleted. It is suspended pending physical archive ver
 ## Node 2: Home-Place Deed Execution & Life-Estate Clause (24 March 1681/82)
 * **Administrative Context:** Execution of the primary division instrument conveying 180 acres total: 120 acres to Daniel Greene and 60 acres to James Greene.
 * **The Encumbrance / Life-Estate Clause:**
-  * Contains the explicit protective language securing parental maintenance: *"as long as their father or mother should live"* / *"or to her mother if she survive"*.
+  * Contains the explicit protective language securing parental maintenance: *"as long as their father or mother should live"* (F.L. Greene 1894 paraphrase — "their mother" = Joan). ~~*"or to her mother if she survive"*~~ ⚠️ WORDING UNVERIFIED — not in F.L. Greene 1894 or the Worth 1921 abstract; see contradictions/mother-clause-wording.md.
 * **Legal Function:** Converts an immediate fee-simple transfer into a **remainder interest**, ensuring Joan retained legal right of occupancy and support on the homestead if John predeceased her.
 * **Source Anchor:** F.L. Greene (*Descendants of Joseph Greene of Westerly*, 1894, p. 10; transcript from NK Land Evidence).
 * **Status:** **PROVEN.**
@@ -77,9 +77,9 @@ Per Law 1: The deed is not deleted. It is suspended pending physical archive ver
   * Joan’s *"free & voluntary consent"* to the land transfer.
   * Formally signs with *"her marke"*.
   * Witnesses: John Wickes, Samuel Gorton.
-* **Source Anchor (as cited):** *Records of the Colony of Rhode Island and Providence Plantations*, Vol. VII, pp. 177–178.
+* **Source Anchor (as cited):** *Records of the Colony of Rhode Island and Providence Plantations*, Vol. VII, pp. 177–178. **❌ Citation invalid (2026-09-01):** those pages contain 1773 Gaspee commission records.
 * **Suspension reason:** Verbatim text not found in any searched digitized source. Possible conflation with the 1658 John Greene Junr Warwick → William Carpenter deed.
-* **Resolution path:** Physical examination of Colony Records Vol. VII (if it exists); check F.L. Greene 1894 and Bates 1918–19 for independent reference; FamilySearch Film 564389.
+* **Resolution path:** ~~Physical examination of Colony Records Vol. VII~~ (checked — wrong century); check RI Land Evidences Vol. I manuscript and Providence town deed books; check F.L. Greene 1894 and Bates 1918–19 for independent reference; FamilySearch Film 564389.
 
 ---
 
@@ -95,6 +95,6 @@ Per Law 1: The deed is not deleted. It is suspended pending physical archive ver
 | **GAP-1** | NK Land Evidence Book 1 (1682 entries) | RI State Archives / NK Town Hall | Inspect original pages for uncoppied marginalia or additional witness marks. |
 | **GAP-2** | ~~Pawtuxet Sale Original Manuscript (19 May 1682)~~ | ~~RIHS / Providence City Archives~~ | **SUSPENDED** — deed existence unverified. |
 | **GAP-3** | Bates Research Notes on 1685 Deed | RIHS Manuscripts (Bates Papers) | Retrieve full citation for the 25 Sept 1685 "John Greene Sr. deceased" deed. |
-| **GAP-4 (NEW)** | Colony Records Vol. VII pp. 177–178 | RI State Archives / RIHS | **HIGHEST PRIORITY** — verify whether the Pawtuxet deed exists at this citation. |
+| **~~GAP-4~~** | ~~Colony Records Vol. VII pp. 177–178~~ | ~~RI State Archives / RIHS~~ | **✅ RESOLVED (2026-09-01) — CITATION KILLED.** Bartlett Vol. VII covers 1770–1776; pp. 177–178 = 1773 Gaspee commission records. See contamination/vol_vii_citation_kill.md. Remaining question is GAP-2 (does the deed exist anywhere?) and the orphan-citation trace in source_spine.md GAP-4D. |
 | **GAP-5 (NEW)** | F.L. Greene 1894 p. 10 full read | Archive.org / RIHS | Does Greene mention a SECOND deed (Pawtuxet) or only the home-place? |
 | **GAP-6 (NEW)** | Bates 1918–19 full read for Pawtuxet | RIHS Collections XI–XII | Does Bates reference a Pawtuxet deed separately from the home-place? |

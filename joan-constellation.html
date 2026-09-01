@@ -209,7 +209,7 @@ const nodes = [
   // --- PEOPLE / RELATIONS ---
   {
     id:"joan", label:"Joan Greene", type:"person", year:1660,
-    desc:"Wife of John Greene Sr. of Quidnessett. In 1682 she gave her own 'free & voluntary consent' to a land sale and signed with her mark. A home-place deed that same year reserved 30 shillings annually 'as long as their father OR MOTHER should live' — unusual under English law, but consistent with Indigenous frameworks where a wife holds independent property interest.",
+    desc:"Wife of John Greene Sr. of Quidnessett. Her only verified appearance is the 24 March 1682 home-place deeds, which name her as beneficiary of a 30-shilling annuity after John's death ('as long as their father or mother should live' — F.L. Greene 1894; 'after his decease to Joane Greene his wife' — Worth 1921). John alone signs. A two-life annuity to parents is ordinary English practice; the 'or to her mother' wording previously cited as anomalous is UNVERIFIED (see contradictions/mother-clause-wording.md).",
     seeking:"Can we find additional records of Joan acting independently? Are there Narragansett oral histories that name a woman of this description?"
   },
   {
@@ -288,13 +288,13 @@ const nodes = [
   },
   {
     id:"deedmarch1682", label:"24 Mar 1682 home-place deed", type:"document", year:1682,
-    desc:"180 acres to sons Daniel and James. The life-estate clause — 30 shillings annually 'as long as their father OR MOTHER should live' — is non-standard under English coverture, under which a married woman typically could not hold independent property interest. Its presence here is one reason some researchers suspect Joan operated under Indigenous legal custom.",
+    desc:"180 acres to sons Daniel and James. The life-estate clause — 30 shillings annually 'as long as their father or mother should live' (F.L. Greene 1894 paraphrase) — has been read on this site as non-standard under English coverture. That reading is under review: a maintenance annuity to a father and then his widow is a common form, and the stronger 'or to her mother if she survive' wording has not been found in any source. See contradictions/mother-clause-wording.md.",
     seeking:"Comparison with other Rhode Island deeds of the same era: how common was an independent maternal life estate?"
   },
   {
-    id:"deedmay1682", label:"19 May 1682 Pawtuxet deed", type:"document", year:1682,
-    desc:"Joan gives 'free & voluntary consent' and signs with her mark. The buyer, William Carpenter, was a land speculator, not a Quaker. This removes one older theory — that Joan sold land through a protective Quaker network.",
-    seeking:"Carpenter's full land-speculation records. Did he acquire other Narragansett-held land in the same period?"
+    id:"deedmay1682", label:"19 May 1682 Pawtuxet deed (SUSPENDED)", type:"document", year:1682,
+    desc:"SUSPENDED (2026-09-01). Secondary sources describe Joan giving 'free & voluntary consent' to a sale to William Carpenter, a land speculator. The cited source (Records of RI & PP Vol. VII, pp. 177–178) actually contains 1773 Gaspee commission records, and the deed's verbatim text has not been located in any digitized primary source. Bates (1918) does not mention it. Not counted as an appearance of Joan.",
+    seeking:"Does this deed exist at all? Check RI Land Evidences Vol. I manuscript (FamilySearch Film 564389), Providence town deed books, and the Peirce Manuscripts."
   },
   {
     id:"deed1685", label:"Deed: 'now deceased' (1685)", type:"document", year:1685,
@@ -359,7 +359,7 @@ const links = [
   {source:"deedmay1682", target:"joan", type:"together"},
   {source:"deed1685", target:"johnsr", type:"connects"},
   {source:"bates1918", target:"deedmarch1682", type:"connects"},
-  {source:"bates1918", target:"deedmay1682", type:"connects"},
+  {source:"bates1918", target:"deedmay1682", type:"differs"},
   {source:"bates1918", target:"deed1685", type:"connects"},
   {source:"bates1918", target:"will1695", type:"differs"},
   {source:"will1695", target:"john-lt", type:"confused"},
