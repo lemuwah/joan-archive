@@ -5,6 +5,6 @@
 {"id":"C05","claim":"Five distinct John Greenes have been merged in secondary sources","sources":["S01","S05","S06","S18"],"confidence":"high","status":"verified"}
 {"id":"C06","claim":"1672 Fones Purchase functions as diplomatic treaty between two political systems","sources":["S01","S02","S23"],"confidence":"medium-high","status":"verified"}
 {"id":"C07","claim":"King Philip's War destroyed Narragansett governance, contextualizing Joan's 1682 emergence","sources":["S01","S09","S15","S22"],"confidence":"high","status":"verified"}
-{"id":"C08","claim":"The 'or to her mother' clause may reflect matrilineal kinship accommodation","sources":["S01","S03","S16"],"confidence":"medium","status":"interpretive_synthesis"}
+{"id":"C08","claim":"The 'or to her mother' clause may reflect matrilineal kinship accommodation — CONDITIONAL: the clause wording itself is UNVERIFIED (see contradictions/mother-clause-wording.md)","sources":["S01","S03","S16"],"confidence":"low","status":"suspended_pending_transcription"}
 {"id":"C09","claim":"Less than 5% of colonial records are digitized","sources":["S01","S19","S24"],"confidence":"medium-high","status":"verified"}
 {"id":"C10","claim":"Archive's four-law methodology is replicable for contamination-resistant genealogy","sources":["S01","S14","S21"],"confidence":"high","status":"verified"}

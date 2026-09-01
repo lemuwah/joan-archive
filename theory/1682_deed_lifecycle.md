@@ -4,7 +4,7 @@
 2. ~~Pawtuxet Sale Consent (19 May 1682)~~ — **⚠️ SUSPENDED: Verbatim text not located in any digitized primary source (see proof piece #9). All claims about this deed are held open pending verification.**
 **Grantor / Settlor:** John Greene Sr. of Quidnessett  
 **Beneficiaries / Grantees:** Daniel Greene (120 acres), James Greene (60 acres), ~~William Carpenter (Pawtuxet purchaser)~~  
-**Named Legal Actor:** Joan Greene / Joane ("...or to her mother if she survive")  
+**Named Legal Actor:** Joan Greene / Joane — named beneficiary ("...after his decease to Joane Greene his wife," Worth 1921 abstract). ~~("...or to her mother if she survive")~~ ⚠️ WORDING UNVERIFIED — not in F.L. Greene 1894 or the Worth 1921 abstract; see contradictions/mother-clause-wording.md  
 **Primary Source Anchors:** 
 * North Kingstown Land Evidence / F.L. Greene (1894, p. 10) — 🟢 VERIFIED
 * ~~Records of the Colony of Rhode Island & Providence Plantations, Vol. VII, pp. 177–178~~ — ⚠️ **UNVERIFIED** (citation exists but verbatim text not located in digitized sources; may be in undigitized volume, or may be a conflation of the 1658 Carpenter deed with the March 1682 Joan deed)
@@ -62,7 +62,7 @@ Per Law 1: The deed is not deleted. It is suspended pending physical archive ver
 ## Node 2: Home-Place Deed Execution & Life-Estate Clause (24 March 1681/82)
 * **Administrative Context:** Execution of the primary division instrument conveying 180 acres total: 120 acres to Daniel Greene and 60 acres to James Greene.
 * **The Encumbrance / Life-Estate Clause:**
-  * Contains the explicit protective language securing parental maintenance: *"as long as their father or mother should live"* / *"or to her mother if she survive"*.
+  * Contains the explicit protective language securing parental maintenance: *"as long as their father or mother should live"* (F.L. Greene 1894 paraphrase — "their mother" = Joan). ~~*"or to her mother if she survive"*~~ ⚠️ WORDING UNVERIFIED — not in F.L. Greene 1894 or the Worth 1921 abstract; see contradictions/mother-clause-wording.md.
 * **Legal Function:** Converts an immediate fee-simple transfer into a **remainder interest**, ensuring Joan retained legal right of occupancy and support on the homestead if John predeceased her.
 * **Source Anchor:** F.L. Greene (*Descendants of Joseph Greene of Westerly*, 1894, p. 10; transcript from NK Land Evidence).
 * **Status:** **PROVEN.**

@@ -90,6 +90,8 @@ Even the two poorly-documented wives (Esther and Margaret) appear in wills, land
 
 ## Part 2: The "Or to Her Mother If She Survive" Clause
 
+> **⚠️ WORDING UNVERIFIED — not in F.L. Greene 1894 or the Worth 1921 abstract; see contradictions/mother-clause-wording.md.** F.L. Greene 1894 p. 10 (verbatim): *"each of said sons to pay thirty shillings annually as long as their father or mother should live"* — "their mother" is Joan. Worth 1921 abstract of the James deed: *"...unto John Green and after his decease to Joane Greene his wife."* Neither names Joan's mother. Part 2 below was written on the "her mother" reading and is preserved unaltered (Law 1); its conclusion is **conditional** on that reading being confirmed in the North Kingstown manuscript (FamilySearch DGS 008204949, img 10). If the manuscript matches the abstract, this Part collapses and Model B is *not* weakened by it.
+
 ### Previous Assumption: Standard English Dower Language
 
 **WRONG.**

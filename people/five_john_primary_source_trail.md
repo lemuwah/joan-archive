@@ -43,7 +43,7 @@ Status markers:
 3. **1 Jan 1671/72: Fones Purchase Deed (#90)** — FIRST of six English purchasers. Anashuecot = "chiefe Sachem". Source: Tier 1
 4. **24 Aug 1676: Newport Court Martial** — CHARGED; Daniel testifies for prosecution. Source: Tier 2 (Hough 1858, DEAD END)
 5. **1679: Affidavit** — "forty years and more" with Richard Smith. Source: Tier 2
-6. **24 Mar 1682: Home-Place Deed** — Joan named; "or to her mother" clause. Source: Tier 1
+6. **24 Mar 1682: Home-Place Deed** — Joan named as wife/beneficiary. ~~"or to her mother" clause~~ (⚠️ WORDING UNVERIFIED — not in F.L. Greene 1894 or the Worth 1921 abstract; see contradictions/mother-clause-wording.md). Source: Tier 1 (Worth 1921 abstract; F.L. Greene 1894)
 7. **19 May 1682: Pawtuxet Deed** — Joan gives "free & voluntary consent". Source: **🟠 SUSPENDED** — cited as "RI Land Evidence Vol. VII pp. 177–178" but that citation is INVALID (Bartlett Vol. VII = 1770–1776; pp. 177–178 = 1773 Gaspee records) and the deed text has not been located anywhere. See `theory/proof_pieces/09_pawtuxet_problem.md` and `theory/joan_firewall.md` Section 1.2. **DO NOT treat as Tier 1 until verbatim text is located.**
 8. **Before 25 Sep 1685: Death** — Joseph Clark deed. Source: Tier 1
 

@@ -10,7 +10,9 @@
 
 ## The Question
 
-The 1682 homeplace deed says "or to her mother if she survive." Who could that mother be? The answer depends on who was **alive** in March 1682.
+> ⚠️ WORDING UNVERIFIED — not in F.L. Greene 1894 or the Worth 1921 abstract; see contradictions/mother-clause-wording.md. F.L. Greene 1894 reads "as long as their father or mother should live" (= Joan herself); the Worth abstract reads "after his decease to Joane Greene his wife." Part 5 below is preserved as written but should be read as conditional on the wording being confirmed in the NK manuscript.
+
+The 1682 homeplace deed is quoted as saying "or to her mother if she survive." Who could that mother be? The answer depends on who was **alive** in March 1682.
 
 ---
 

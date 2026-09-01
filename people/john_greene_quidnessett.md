@@ -105,7 +105,7 @@ Dated **24 March 1681/82**. Conveys portions of Quidnessett land to sons:
 - **James Greene:** ~60 acres adjoining Daniel's land
 - Each son to pay **30 shillings annually** during the lifetime of John or Joan
 - Land bounded in part by land of their brother **John**
-- **Life-estate clause:** "as long as their father or mother should live" / "or to her mother if she survive"
+- **Life-estate clause:** "as long as their father or mother should live" (F.L. Greene 1894 paraphrase) / "after his decease to Joane Greene his wife" (Worth 1921 abstract). ~~"or to her mother if she survive"~~ — ⚠️ WORDING UNVERIFIED — not in F.L. Greene 1894 or the Worth 1921 abstract; see contradictions/mother-clause-wording.md
 
 James described as the **"natural son of John and Joan Greene"** (17th-century usage = biological son).
 

@@ -7,7 +7,7 @@ Tracks all distinct "Joan" figures and prevents conflation, collapse, or legend-
 ### 1.1 Joan, wife of John Greene of Quidnessett
 - **Status:** 🟢 PROVEN (act — life-estate clause names her role)
 - **Record type:** Home-place deed, life-estate clause
-- **Key evidence:** 24 Mar 1682 Quidnessett deed ("as long as their father or mother should live"); also contains "or to her mother if she survive" clause
+- **Key evidence:** 24 Mar 1682 Quidnessett deed ("as long as their father or mother should live" — F.L. Greene 1894 paraphrase); ~~also contains "or to her mother if she survive" clause~~ ⚠️ WORDING UNVERIFIED — not in F.L. Greene 1894 or the Worth 1921 abstract; see contradictions/mother-clause-wording.md
 - **Notes:** Joan is not named by first name in this deed — she is identified by role ("mother"). Her mark is NOT on this deed. This is her only CONFIRMED appearance in the primary record.
 - **Transcription:** Screenshot of transcription on file in the repo. This is currently the archive's ONLY primary-source resource for Joan.
 
@@ -80,7 +80,7 @@ The colonial record says almost nothing about Joan's origins, kin, or identity b
 
 ### 4.4 Indigenous or Mixed Ancestry
 - **Basis:** Structural indicators, not direct evidence:
-  - **Matrilineal clause** in the 1682 deed ("or to her mother if she survive") — anomalous under English common law; may indicate non-English kinship norms. Requires targeted comparative research.
+  - **~~Matrilineal clause~~** in the 1682 deed ("or to her mother if she survive") — ⚠️ WORDING UNVERIFIED — not in F.L. Greene 1894 or the Worth 1921 abstract; see contradictions/mother-clause-wording.md. If the deed only says "their father or mother" / "to Joane his wife after his decease," this is an ordinary two-life annuity and NOT anomalous. Requires the NK manuscript transcription before it can be used as evidence either way.
   - **Trading post context:** Cocumscussoc was a documented site of English–Indigenous interaction, including intermarriage.
   - **Mark signature:** 🔴 NOW BROKEN — the "her marke" language comes from the Pawtuxet deed whose citation chain is broken. Cannot be used as an indicator until the deed is verified.
   - **Absence of English kin:** No English family, parish origin, or kinship network documented for Joan before her marriage.

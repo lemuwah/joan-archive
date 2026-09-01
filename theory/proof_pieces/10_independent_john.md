@@ -208,7 +208,7 @@ By 1685: Dead. Will destroyed in fire.
 - His entire adult life was spent in Narragansett Country, associated with Smith's trading post
 - Smith's trading post was an interracial frontier — intermarriage documented in this context
 - Joan's invisibility is explained: she has no English family because HE has no documented English family
-- The "or to her mother" clause: no English mother-in-law to protect, but a Narragansett mother with matrilineal land rights
+- The "or to her mother" clause: no English mother-in-law to protect, but a Narragansett mother with matrilineal land rights — ⚠️ WORDING UNVERIFIED — not in F.L. Greene 1894 or the Worth 1921 abstract; see contradictions/mother-clause-wording.md
 
 **Model B (Joan = unknown English woman) gets WEAKER:**
 - If John has no documented English family, where does an English wife come from?

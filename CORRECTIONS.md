@@ -73,5 +73,43 @@ If the Pawtuxet deed doesn't exist, Joan has **ONE verified legal appearance** �
 
 ---
 
+## Correction #2: "Or to her mother if she survive" — wording not found in any source
+
+**Date identified:** 2026-09-01  
+**Severity:** CRITICAL — the phrase was the archive's central documentary anomaly and the basis of the matrilineal-inheritance argument (proof piece #5 Part 2, #06 Part 5, #08, the live-site stress-test matrix)
+
+### What was wrong
+
+The archive quoted the 24 March 1681/82 home-place deed as containing the clause **"or to her mother if she survive"**, read as John Greene naming *Joan's* mother as a contingent beneficiary — which has no parallel in English dower practice.
+
+### How we caught it
+
+While checking the March deed after the Pawtuxet correction, the two sources the archive actually holds were read verbatim:
+
+- **F.L. Greene 1894, p. 10** (archive.org OCR): *"each of said sons to pay thirty shillings annually as long as their father or mother should live."* — a paraphrase; "their mother" is Joan.
+- **Worth 1921, RI Land Evidences Vol. I abstracts, pp. 173–174** (the page in `images/1682.jpg`): *"...unto John Green... and after his decease to Joane Greene, his wife"*; *"at the decease of... John and Joane Greene... James Greene... shall have... the Premises forever."* John Greene alone signs.
+- **NK Land Records manuscript** (`images/johntodaniel.jpg`, FamilySearch DGS 008204949 img 10): legible fragments read "...John Green dureing his naturall life and [Joane] Green his Wife... dureing her naturall life..."; signature block shows John Green alone.
+
+None contains "her mother." Git history shows the phrase first appeared on the live site on 2026-07-17 (`96a4c2e`) with the label *"Verbatim transcription still required [PENDING]"* and an unresolved citation ("SK Land Evidence Vol. IV"). The PENDING label was later dropped and the phrase was analyzed as fact from 2026-08-30 onward. Most likely vector (inference): a pronoun shift from F.L. Greene's "their mother" to "her mother."
+
+Two adjacent overclaims fell out of the same read: **"Joan's consent was required"** and **"Joan signs with her mark"** on the March deed. In both the abstract and the manuscript signature block, John is the sole grantor and signatory; Joan is a named beneficiary.
+
+### What changed
+
+- `contradictions/mother-clause-wording.md` created — side-by-side readings, git provenance, what survives, what would close it
+- Every quotation of the phrase in `README.md`, `index.html`, `joan-constellation.html`, `theory/source_spine.md`, `theory/1682_deed_lifecycle.md`, `theory/joan_firewall.md`, proof pieces #01/#04/#05/#06/#08/#09/#10/#10-addendum, `primary_sources/`, `people/` now carries **⚠️ WORDING UNVERIFIED**. The analyses built on it are left in place, marked conditional (Law 1).
+- `primary_sources/homeplace-1682.md` — the archive.org link was mislabelled "Original manuscript — F.L. Greene 1894"; it is Worth 1921. Corrected; both sources now cited separately.
+- `research/open_leads.md` — new leads 19b (transcribe DGS 008204949 imgs 9–12) and 19c (F.L. Greene has John Sr. alive in 1686 and 1692, contradicting Bates's pre-1685 death — held open, not resolved).
+
+### What's still open
+
+The phrase is **unverified, not disproven** (Law 3). Worth's abstracts drop text with ellipses; the manuscript has not been fully transcribed. A full transcription of the two March 1681/82 instruments in the North Kingstown record book is now the single most valuable digitization ask in this archive.
+
+### The impact on Joan
+
+What is verified is smaller and plainer than what the site said: Joan is named as John's wife, and as the person who receives the sons' 30 shillings a year after John dies, for her life. If the manuscript matches the abstract, the "mother clause" is an ordinary provision and the anomaly reduces to the one that was always the strongest — her forty-year silence and the fact that F.L. Greene, writing in 1894, could say *"nothing further is known about her."*
+
+---
+
 *This log is maintained under the 5 Laws of the Joan Archive.*  
 *If you find an error in this archive, please report it via [GitHub Issues](https://github.com/lemuwah/joan-archive/issues).*

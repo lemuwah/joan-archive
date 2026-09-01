@@ -15,7 +15,7 @@ Explains Joan's pattern with one premise: she was an Indigenous woman whose iden
 Requires **3–4 independent anomalies** to all coincidentally apply to one woman:
 
 1. **Total absence from all English record systems** (unique among Quidnessett wives — consolidates: no maiden name, no parish, no family, no pre-1682 record, no alternative Joan in four colonies, deeper erasure than comparable neighbor wives)
-2. **The matrilineal inheritance clause** ("or to her mother if she survive" — no English legal parallel found; consolidates: clause itself + Female Inheritance Window timing)
+2. **The matrilineal inheritance clause** ("or to her mother if she survive" — ⚠️ WORDING UNVERIFIED — not in F.L. Greene 1894 or the Worth 1921 abstract; see contradictions/mother-clause-wording.md; no English legal parallel found *for that wording*; consolidates: clause itself + Female Inheritance Window timing)
 3. **The survival anomaly** (Greene homestead uniquely undestroyed during KPW — with caveat: possible survivorship bias)
 4. **The pre-war succession coincidence** (Quidnessett sachem authority transferred 1668–1672; Joan appears 1682)
 

@@ -171,7 +171,7 @@ The absence from Williams does NOT prove the name is spurious — his vocabulary
 |---|---|---|
 | No English Joan found anywhere (#4) | Consistent — she wouldn't be in English records | Must explain total absence |
 | Neighbor wives documented, Joan not (#5) | Consistent — erasure pattern | Must explain unique silence |
-| "Or to her mother" clause (#5) | Consistent — matrilineal inheritance | No English legal parallel |
+| "Or to her mother" clause (#5) — ⚠️ WORDING UNVERIFIED — not in F.L. Greene 1894 or the Worth 1921 abstract; see contradictions/mother-clause-wording.md | Consistent — matrilineal inheritance *if the wording is real* | No English legal parallel *for that wording*; "their father or mother" (F.L. Greene) is ordinary |
 | Survival anomaly (#3) | Explained by kin protection | Requires stacked explanations |
 | Kin-group deed structure (#1) | Direct connection | Coincidental proximity |
 | Land continuity (#2) | Relationship-based | Separate English channel (Sanford) |

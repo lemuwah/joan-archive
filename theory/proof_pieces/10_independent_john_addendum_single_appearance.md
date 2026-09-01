@@ -25,7 +25,7 @@ An English colonial wife — especially the wife of a man who was a 40-year resi
 Joan appears in ZERO of these. Not one.
 
 If she also has only ONE land transfer appearance (not two), her documentary footprint is:
-- **ONE deed.** March 1682. Named as wife. Signs with mark. Named in the "or to her mother" clause.
+- **ONE deed.** March 1682. Named as wife and as beneficiary of the 30s annuity after John's death. ~~Signs with mark.~~ (Worth abstract: John alone signs — Joan as signatory UNVERIFIED.) ~~Named in the "or to her mother" clause.~~ ⚠️ WORDING UNVERIFIED — not in F.L. Greene 1894 or the Worth 1921 abstract; see contradictions/mother-clause-wording.md
 - **Nothing else. Ever. In any record system. Anywhere.**
 
 That is the footprint of someone who **barely exists** in the English record system. Not someone who was temporarily underdocumented — someone who was fundamentally outside it.
@@ -40,7 +40,7 @@ That is the footprint of someone who **barely exists** in the English record sys
 
 3. **If there's no Pawtuxet deed**, there's no evidence Joan had any connection to the Warwick/Providence corridor at all. Her entire documented existence is one signature on one Quidnessett document.
 
-4. **The "or to her mother" clause is now even more anomalous.** In Joan's ONLY documented appearance, John Greene inserted a clause with no English legal parallel. This wasn't a pattern across multiple deeds — it was a one-time insertion in the single document where Joan exists. Why use this one opportunity to protect a matrilineal inheritance interest?
+4. **The "or to her mother" clause is now even more anomalous.** (⚠️ WORDING UNVERIFIED — not in F.L. Greene 1894 or the Worth 1921 abstract; see contradictions/mother-clause-wording.md — this paragraph stands only if the wording is confirmed.) In Joan's ONLY documented appearance, John Greene inserted a clause with no English legal parallel. This wasn't a pattern across multiple deeds — it was a one-time insertion in the single document where Joan exists. Why use this one opportunity to protect a matrilineal inheritance interest?
 
 ---
 

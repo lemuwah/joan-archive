@@ -73,8 +73,8 @@ Choose a document below to begin.
 ---
 
 ## 🟢 1682 Home-Place Deed (Life-Estate Clause)
-**Status:** PROVEN  
-**Joan's ONLY VERIFIED legal appearance. "...as long as their father or mother should live."**
+**Status:** PROVEN (deed) / ⚠️ "or to her mother if she survive" wording UNVERIFIED — see `contradictions/mother-clause-wording.md`  
+**Joan's ONLY VERIFIED legal appearance. "...as long as their father or mother should live" (F.L. Greene 1894 paraphrase); "...and after his decease to Joane Greene his wife" (Worth 1921 abstract).**
 
 [Read document →]({{ site.baseurl }}/primary/homeplace-1682/)
 

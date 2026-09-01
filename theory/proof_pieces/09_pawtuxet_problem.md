@@ -69,7 +69,7 @@ The 1659 Nanaquakesett deed witnesses include **"John Greene"** (no qualifier) a
 ## Updated Status of All Claims
 
 ### VERIFIED (unaffected by Pawtuxet uncertainty):
-- ✅ March 1682 home-place deed (Joan named, "or to her mother") — verified through F.L. Greene 1894
+- ✅ March 1682 home-place deed (Joan named) — verified through F.L. Greene 1894 and Worth 1921 abstract. ⚠️ The "or to her mother" wording is NOT in either source — see contradictions/mother-clause-wording.md
 - ✅ Surgeon John's 1658 will does not name Quidnessett John
 - ✅ "John Greene Junior" in Warwick = Surgeon John's son (records prove father/son pair)
 - ✅ Occupasnetuxet ≠ Pawtuxet (different properties)
