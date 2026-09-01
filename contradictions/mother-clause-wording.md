@@ -52,13 +52,22 @@ Observations:
 
 The legible portion matches the Worth abstract of the James deed: a two-life annuity to John and then Joane "dureing her naturall life." **No "mother" is legible anywhere on either page, and no mark or signature for Joane is visible in the signature block — John Green alone signs and acknowledges.** A full paleographic transcription has never been made. This is the document that would settle the question.
 
+### 1d. Bates 1918, *RIHS Collections* XI, p. 77 — VERBATIM (paraphrase)
+
+Page image: `images/1682-1685_bates_1918_p77_deed_to_sons_died_before_25_sept_1685_RIHS_coll_XI.jpg`.
+
+> Greene **and his wife Joan** deeded to their sons, Daniel² and James,² land in Quidnisset in return for thirty shillings a year paid by each of them **so long as either parent lived.** This was March 24, 1681/2.
+
+A third paraphrase; again no "her mother." But Bates names **Joan as co-grantor** ("Greene and his wife Joan deeded"), which the Worth abstract and the manuscript signature block do not show. Held open: Bates may have read Joan in the grantor clause of the Daniel instrument (which Worth does not abstract), or may be paraphrasing loosely. This is the one thread on which "Joan as legal actor" still hangs, and it is exactly what a full transcription of the manuscript would settle.
+
 ---
 
-## 2. The three wordings and where each came from
+## 2. The wordings and where each came from
 
 | Wording | Source | Type | Status |
 |---|---|---|---|
-| "as long as their father or mother should live" | F.L. Greene 1894 p. 10 | 19th-c. paraphrase | ✅ Verified as a paraphrase; "mother" = Joan |
+| "as long as their father or mother should live" | F.L. Greene 1894 p. 10 (`images/1682_fl_greene_1894_p10_...jpg`) | 19th-c. paraphrase | ✅ Verified as a paraphrase; "mother" = Joan |
+| "so long as either parent lived" / "Greene and his wife Joan deeded" | Bates 1918 p. 77 | 20th-c. paraphrase | ✅ Verified as a paraphrase; Joan as co-grantor is Bates's reading only |
 | "and after his decease to Joane Greene his wife" / "at the decease of John and Joane Greene" | Worth 1921 abstract (James deed) | 20th-c. abstract of the record copy | ✅ Verified as an abstract; closest thing to deed text we hold |
 | "or to her mother if she survive" | **none located** | — | ❌ **UNVERIFIED — no source** |
 
@@ -83,7 +92,7 @@ The legible portion matches the Worth abstract of the James deed: a two-life ann
 - ⚠️ The phrase "or to her mother if she survive."
 - ⚠️ Any claim that a *second-generation-up* woman (Joan's mother) is named in the deed.
 - ⚠️ The "no English legal parallel" argument in proof piece #5 Part 2, #06 Part 5, #08 item 2, and the stress-test matrix on the live site, *insofar as it depends on the wife's mother being named.* A two-life annuity to a husband and then his widow is ordinary English practice; if that is all the deed says, the "mother clause" is not anomalous and the anomaly reduces to Joan's 40-year silence alone.
-- ⚠️ "Joan's consent was required" / "Joan signs with her mark" for the March deed. The Worth abstract shows John alone as grantor and signatory. Joan is a *beneficiary*. Whether she signed the Daniel instrument is unknown until image 10 (and adjacent pages) is read.
+- ⚠️ "Joan's consent was required" / "Joan signs with her mark" for the March deed. The Worth abstract shows John alone as grantor and signatory, and the manuscript signature block shows John alone. **Against this, Bates 1918 p. 77 writes "Greene and his wife Joan deeded"** — held as a live contradiction, not resolved. Whether Joan is named as a grantor in the Daniel instrument is unknown until images 9–12 are read.
 
 **Not suspended (Law 3):** the possibility that the full manuscript text contains language the abstract omitted. Worth's abstracts use ellipses heavily. The anomaly is *unverified*, not *disproven*.
 

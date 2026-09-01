@@ -53,7 +53,7 @@
 | 28 Dec 1658 | **Surgeon John's will** — names wife Philippa, sons John, Peter, James, Thomas, daughter Mary Sweet, granddaughter Ann Hade. **Does NOT mention any John at Quidnessett. Does NOT convey Pawtuxet land (bequeaths Occupasnetuxet to son John).** | Surgeon John Greene | Warwick | *History of Warwick* (Fuller); *Greenes of Rhode Island* (Archive.org) | 🟢 |
 | 1682 (undated) | William Carpenter confirmed non-Quaker land speculator (Pawtuxet Partners) | William Carpenter | — | Primary / genealogical record | 🟢 |
 | Pre-25 Sept 1685 | John Greene Sr.'s death — **PROVEN before this date** | John Greene Sr. | — | Bates, *RIHS Collections* XI (1918) | 🟢 |
-| 25 Sept 1685 | Deed referencing *"John Greene Sr. now deceased"* | — | — | Bates 1918–19 cites this; primary citation not yet independently pulled | 🟡 |
+| 25 Sept 1685 | Joseph Clark of Newport → Francis Brinley, Conanicut land bounded by Caleb Carr's land *"formerly in possession of 'John Greene, sr., of Narragansett, now deceased'"* | Joseph Clark, Francis Brinley | Jamestown (Conanicut) | Bates 1918 p. 74 [Jamestown Records] — Bates page image pulled 2026-09-01 (`images/1685_bates_1918_p74_...jpg`); the Jamestown deed itself not yet seen | 🟢 Bates / 🟡 deed |
 | 1685–86 (est.) | John Sr.'s will — confirmed lost in North Kingstown fire | — | North Kingstown | F.L. Greene 1894 / Bates | ⚫ |
 | 1694 | Lieut. John² Greene's Massachusetts probate | Lieut. John² Greene | Massachusetts | Probate record | 🟢 |
 | "1695" | Widely repeated claim: "1695 will names Joane" | — | — | Secondary/tertiary sources | ⚫ |

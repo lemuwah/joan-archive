@@ -60,6 +60,12 @@ John Foanes Wardn.
   <img src="{{ site.baseurl }}/images/1682-2.JPG" alt="1682 Home-Place Deed — Page 2" style="max-width:100%; border:1px solid #444;">
 </a>
 
+**F.L. Greene 1894, p. 10 (page image pulled 2026-09-01):**
+
+<a href="https://archive.org/details/descendantsofjos00gree/page/n15/mode/2up" target="_blank" rel="noopener">
+  <img src="{{ site.baseurl }}/images/1682_fl_greene_1894_p10_father_or_mother_should_live_nothing_further_known.jpg" alt="F.L. Greene 1894 p.10" style="max-width:100%; border:1px solid #444; margin-bottom:1rem;">
+</a>
+
 **Sources:** [Worth, *Rhode Island Land Evidences Vol. I, 1648–1696, abstracts* (1921), pp. 173–174 (archive.org)](https://archive.org/details/rhodeislandlande00wort/page/172/mode/2up) | [F.L. Greene, *Descendants of Joseph Greene of Westerly* (1894), p. 10 (archive.org)](https://archive.org/details/descendantsofjos00gree) | NK Land Records 1686–17xx, FamilySearch DGS 008204949, images 9–12 (Daniel instrument) | [Official archive (Preservica)](https://sosri.access.preservica.com/)
 
 > **Access note:** The archive.org link requires no login. The images above are local reference copies. Always verify against the original archival record.

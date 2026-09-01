@@ -30,7 +30,8 @@ Tracker for all open leads, organized by priority. Each lead includes what's kno
 - **Need:** Full transcription of NK Land Records, FamilySearch DGS 008204949 images 9–12 (both instruments). See `contradictions/mother-clause-wording.md`.
 
 ### 19c. JOHN SR.'S DEATH DATE — F.L. GREENE vs BATES (NEW 2026-09-01)
-- **What:** F.L. Greene 1894 p. 10 has John Sr. signing an address to the King 16 July 1686 and witnessing a deed 13 May 1692, "probably" dying before the 1696 freemen list. Bates 1918–19 has him dead before 25 Sept 1685. Both cannot be true of the same man; F.L. Greene may be merging John Sr. with a son (the merging Bates set out to undo). **Held open under Law 1** — not resolved.
+- **What:** F.L. Greene 1894 p. 10 has John Sr. signing an address to the King 16 July 1686 and witnessing a deed 13 May 1692, "probably" dying before the 1696 freemen list. Bates 1918 p. 74 has him dead before 25 Sept 1685 on the strength of Joseph Clark's Conanicut deed to Francis Brinley ("John Greene, sr., of Narragansett, now deceased" — Jamestown Records). Both cannot be true of the same man.
+- **Pulled 2026-09-01:** Bates pp. 74 and 77 and F.L. Greene p. 10 page images are now in `images/` and written up at `primary_sources/bates-1918.md`. Bates explicitly un-merges the later John Greenes: Lieut. John² of Newport (alive 1690) and a John Greene *alias* Clarke of East Greenwich (b. 6 June 1651, m. Abigail Wardwell) — whom F.L. Greene lists as John Sr.'s son "John, Jr." So the 1686/1692 acts are probably one of those men, and the "1695" death is probably a son's record. **Still unseen:** the Clark→Brinley deed itself, the 1686 address, the 1692 deed, and Edward Greene's deeds reciting his father's will. **Held open under Law 1** — Bates is the better-argued source, not a verified one.
 
 ### 20. "RI LAND EVIDENCE VOL. VII" — RESOLVED
 - **Status:** ✅ RESOLVED (2026-09-01) — **DEFINITIVELY KILLED**

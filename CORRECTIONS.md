@@ -101,6 +101,10 @@ Two adjacent overclaims fell out of the same read: **"Joan's consent was require
 - `primary_sources/homeplace-1682.md` — the archive.org link was mislabelled "Original manuscript — F.L. Greene 1894"; it is Worth 1921. Corrected; both sources now cited separately.
 - `research/open_leads.md` — new leads 19b (transcribe DGS 008204949 imgs 9–12) and 19c (F.L. Greene has John Sr. alive in 1686 and 1692, contradicting Bates's pre-1685 death — held open, not resolved).
 
+### Addendum (same day): Bates 1918 p. 77 pulled
+
+Bates's own paraphrase — *"Greene and his wife Joan deeded to their sons ... thirty shillings a year ... so long as either parent lived"* — also lacks "her mother," but names **Joan as co-grantor**, which the abstract and manuscript signature block do not show. That is now a held contradiction (`contradictions/mother-clause-wording.md` §1d), so "Joan as a party to the deed" is downgraded to *contested*, not *refuted*. Page images for Bates pp. 74, 77 and F.L. Greene p. 10 added to `images/`; `primary_sources/bates-1918.md` created (it was linked from `primary_sources/index.md` but did not exist).
+
 ### What's still open
 
 The phrase is **unverified, not disproven** (Law 3). Worth's abstracts drop text with ellipses; the manuscript has not been fully transcribed. A full transcription of the two March 1681/82 instruments in the North Kingstown record book is now the single most valuable digitization ask in this archive.
