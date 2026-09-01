@@ -1,5 +1,5 @@
 # THE JOAN PROJECT — SOURCE SPINE & TIMELINE
-**Status as of 31 August 2026** | **Five Laws in force throughout**
+**Status as of 1 September 2026** | **Five Laws in force throughout**
 
 ---
 
@@ -12,7 +12,7 @@
 *   **Law 5 — No Jurisdictional Assumption:** No colony, authority, or record repository may be dismissed as "unlikely" to hold evidence of Joan. The Quidnessett/Narragansett region was contested territory documented by Rhode Island, Massachusetts Bay, Plymouth Colony, Connecticut, the Crown (Colonial Office), New York, and Native landholders — each with overlapping and conflicting jurisdictional claims, each generating records, often catalogued in unexpected locations. This law has equal priority with Law 2 (La Mance Law). Dismissing a repository without checking it is a violation.
 
 **Status Tag System:**  
-🟢 **PROVEN** | 🟡 **PROBABLE** | ⚪ **UNVERIFIED** | ⚫ **NULL** | ⚠️ **SUSPENDED** *(new — added 2026-08-31 for claims whose source citation exists but verbatim text has not been located in digitized sources)*
+🟢 **PROVEN** | 🟡 **PROBABLE** | ⚪ **UNVERIFIED** | ⚫ **NULL** | ⚠️ **SUSPENDED** *(added 2026-08-31 for claims whose source citation exists but verbatim text has not been located in digitized sources)*
 
 ---
 
@@ -48,7 +48,7 @@
 | 17 Sept 1679 | **Weunquesh ("Suncksquaw, Ninecraft's daughter") appears at Westerly court** asserting land claim against Harman Garrett; produces written evidence; court orders copies made | Weunquesh | Westerly | RI Colonial Records Vol. 2 (Archive.org) | 🟢 |
 | 1679 | John Greene's own affidavit re: 40+ years at Cocumscussoc; sworn as Conservator of the Peace | John Greene Sr. | Cocumscussoc | Primary affidavit | 🟢 |
 | 24 Mar 1681/82 | **Home-Place Partition Deed:** 180 acres Quidnessett to sons Daniel (120ac) and James (60ac); **Life-Estate Clause:** *"...as long as their father or mother should live"* / *"...or to her mother if she survive"*. **Joan's ONLY VERIFIED legal appearance.** | John Greene Sr., Daniel², James², Joan | Quidnessett | F.L. Greene 1894 (p. 10) / NK Land Evidence | 🟢 |
-| 19 May 1682 | **⚠️ SUSPENDED:** Claimed second legal act — Joan consents (*"free & voluntary consent"*), signs *"her marke"*, to sale of Pawtuxet land rights to William Carpenter for £10; witnesses John Wickes, Samuel Gorton. **Verbatim text NOT FOUND in any digitized primary source.** Possible conflation with the 1658 John Greene Junr Warwick → William Carpenter deed. See theory/proof_pieces/09_pawtuxet_problem.md | John Greene Sr., Joan, William Carpenter | Pawtuxet | Cited: Records of RI & Providence Plantations, Vol. VII, pp. 177–178 | ⚠️ **SUSPENDED** |
+| 19 May 1682 | **⚠️ SUSPENDED:** Claimed second legal act — Joan consents (*"free & voluntary consent"*), signs *"her marke"*), to sale of Pawtuxet land rights to William Carpenter for £10; witnesses John Wickes, Samuel Gorton. **Verbatim text NOT FOUND in any digitized primary source.** Possible conflation with the 1658 John Greene Junr Warwick → William Carpenter deed. See theory/proof_pieces/09_pawtuxet_problem.md | John Greene Sr., Joan, William Carpenter | Pawtuxet | Cited: Records of RI & Providence Plantations, Vol. VII, pp. 177–178 | ⚠️ **SUSPENDED** |
 | 20 Nov 1658 | **VERIFIED:** "John Greene Junr Warwick" sells Pawtuxet land to William Carpenter — the little neck below Pawtuxet Falls, the Vineyard, undivided land from Packassett River to the sea. Witnesses: John Greene, Ezekel Holyman (his X marke), Christopher Unthanke. **This is Surgeon John's son (future Deputy Governor).** | John Greene Junr (Warwick), William Carpenter | Pawtuxet | RI Land Evidences Vol. I, abstract #68 (Worth) | 🟢 |
 | 28 Dec 1658 | **Surgeon John's will** — names wife Philippa, sons John, Peter, James, Thomas, daughter Mary Sweet, granddaughter Ann Hade. **Does NOT mention any John at Quidnessett. Does NOT convey Pawtuxet land (bequeaths Occupasnetuxet to son John).** | Surgeon John Greene | Warwick | *History of Warwick* (Fuller); *Greenes of Rhode Island* (Archive.org) | 🟢 |
 | 1682 (undated) | William Carpenter confirmed non-Quaker land speculator (Pawtuxet Partners) | William Carpenter | — | Primary / genealogical record | 🟢 |
@@ -127,6 +127,7 @@ Narragansett has no masculine/feminine grammatical gender → *"his marke"* cann
 *   Gemini architecture-first transition matrix with unsupported identity claims.
 *   `[SYNCED FROM SITE 2026-07-15]` **"Joan Greene = child of Alice Daniels":** YourRoots auto-assigned parentage with zero citations. *Vector:* Algorithmic Genealogy Contamination (YourRoots). Joan is documented as an adult sachem-line heir (1672), legal actor (1682), and mother (1682) — contradicts an unsourced child-parentage claim.
 *   `[SYNCED FROM SITE 2026-07-15]` **Lora La Mance circular pedigrees (1903/04):** Anchoring "Joan Beggarly" legends. *Vector:* Secondary compilation error / echo chamber. Per Law 2, excluded from evidentiary use.
+*   **"Vol. VII pp. 177–178" Citation (Law 4 — 2026-09-01):** The Pawtuxet deed citation "Records of RI & Providence Plantations, Vol. VII, pp. 177–178" is **DEFINITIVELY INVALID.** Bartlett Vol. VII covers 1770–1776; those pages contain 1773 Gaspee commission records. The citation has been traced as a likely volume-numbering conflation (manuscript vs. printed series). See `contamination/vol_vii_citation_kill.md` and `research/pawtuxet_deed_investigation.md`. *Vector:* Secondary compilation citation error, propagated through circular copying.
 
 *Note on Bow-and-Arrow Mark:* Previously logged here as a fabrication; resolved 2026-07-17 upon reviewing `images/absolom-affidavit.jpg`. Visible tear damage exists over the mark location consistent with (not confirming) the claim. Reclassified to ⚪ **UNVERIFIED** and removed from Contamination Log.
 
@@ -137,7 +138,7 @@ Narragansett has no masculine/feminine grammatical gender → *"his marke"* cann
 1.  **Joan's mark visual** — FamilySearch film 564389. Physical evidence she personally created.
 2.  **Potter 1835 pp. 58–60** — resolves Coginaquand identity, cheapest decisive test.
 3.  **Brooks endnote** for "cousin to her late husband" — determines primary vs. secondary status.
-4.  **Verify 1682 Pawtuxet deed existence** — check Colony Records Vol. VII pp. 177–178; F.L. Greene 1894 p. 10; Bates 1918–19.
+4.  **⚠️ SOURCE CHAIN BROKEN — UNVERIFIED:** ~~Verify 1682 Pawtuxet deed existence — check Colony Records Vol. VII pp. 177–178.~~ Vol. VII pp. 177–178 = 1773 Gaspee commission records (DEFINITIVELY KILLED 2026-09-01). Bates (1918–19) does not mention this deed. F.L. Greene 1894 says *"nothing further is known about her."* **Citation chain is broken. Deed remains ⚠️ UNVERIFIED.** Continue research for source if physical archive access becomes available — remaining leads: RI Land Evidences Vol. I original manuscript (Film 564389), Peirce Manuscripts (films 22291–22292), Providence town deed books. See `research/pawtuxet_deed_investigation.md` and `contamination/vol_vii_citation_kill.md`.
 5.  **Pull Bates's actual 1918–19 primary citation** for the 25 Sept 1685 *"John Greene Sr. now deceased"* deed.
 6.  **Verify 1676 court-martial witness "Daniel Green"** = Daniel² Greene of Quidnessett (currently PROBABLE only).
 7.  **Resolve Mosenpp/Moseupp sachem identity** against Absolom affidavit.
@@ -160,9 +161,11 @@ Narragansett has no masculine/feminine grammatical gender → *"his marke"* cann
 | **GAP-2** | Court of Trials Docket (1671–1673) | RI State Archives | Find official magistrate acknowledgment or recording fee log for the 1672 deed. |
 | **GAP-3** | NK Land Evidence Book 1 (1682 Entries) | RI State Archives / NK Town Hall | Direct inspection of damaged/restored 1682 pages for uncopied marginal signatures. |
 | **~~GAP-4~~** | ~~Pawtuxet Sale Original MS (19 May 1682)~~ | ~~RIHS / Providence City Archives~~ | **⚠️ SUSPENDED** — deed existence unverified. See proof piece #9. |
-| **GAP-4A (NEW)** | Colony Records Vol. VII pp. 177–178 | RI State Archives / RIHS | Verify whether the Pawtuxet deed exists at this citation. HIGHEST PRIORITY for resolving suspension. |
-| **GAP-4B (NEW)** | F.L. Greene 1894 p. 10 full read | Archive.org / RIHS | Does Greene mention a SECOND deed (Pawtuxet) or only the home-place? |
-| **GAP-4C (NEW)** | Bates 1918–19 full read for Pawtuxet | RIHS Collections XI–XII | Does Bates reference a Pawtuxet deed separately from the home-place? |
+| **~~GAP-4A~~** | ~~Colony Records Vol. VII pp. 177–178~~ | ~~RI State Archives / RIHS~~ | **✅ RESOLVED (2026-09-01) — DEFINITIVELY KILLED.** Vol. VII covers 1770–1776. Pages 177–178 = 1773 Gaspee commission records. Not a 1682 deed. See `contamination/vol_vii_citation_kill.md`. |
+| **GAP-4B** | F.L. Greene 1894 p. 10 full read | Archive.org / RIHS | Does Greene mention a SECOND deed (Pawtuxet) or only the home-place? **F.L. Greene says *"nothing further is known about her"* — consistent with only one deed.** |
+| **GAP-4C** | Bates 1918–19 full read for Pawtuxet | RIHS Collections XI–XII | **✅ RESOLVED (2026-08-31) — NEGATIVE.** Bates does NOT mention the Pawtuxet deed. Goes directly from March 1682 home-place deed → will → death. |
+| **GAP-4D (NEW)** | Trace the orphan citation | F.L. Greene 1894 / Austin 1887 / Updike 1907 / post-Bates compilations | Find the EARLIEST source that cites "Vol. VII pp. 177–178" and determine whether it references an actual manuscript or is circular. See `research/open_leads.md` #21. |
+| **GAP-4E (NEW)** | Physical archive verification | RI Land Evidences Vol. I manuscript (Film 564389); Peirce MSS (films 22291–22292); Providence town deed books | If the deed exists, it may be in an undiscovered physical source. Continue research if access becomes available. |
 | **GAP-5** | Bates Research Notes (1685 Deed) | RIHS Manuscripts (Bates Coll.) | Retrieve full transcript and citation for the 25 Sept 1685 *"John Greene Sr. deceased"* deed. |
 | **GAP-6** | Potter 1835 pp. 58–60 Retrieval | Archive.org / LC | Verify Atherton Purchase signer list to resolve the *Coginiquant / Cononjonant* open thread. |
 | **GAP-7** | NYPL Court-Martial Record (Hough 1858) | NYPL (HBC Call No.) | Complete 18-page transcript of *Anaftiawin* / *Daniel Green* cross-examination. |
@@ -207,7 +210,7 @@ Narragansett has no masculine/feminine grammatical gender → *"his marke"* cann
 
 ## 12. Next Steps
 
-1.  Verify Pawtuxet deed existence (GAP-4A/4B/4C) — resolves the suspension.
+1.  ~~Verify Pawtuxet deed existence (GAP-4A/4B/4C)~~ — GAP-4A KILLED, GAP-4C NEGATIVE, GAP-4B consistent with one deed only. **Remaining path: physical archives (GAP-4E) and citation trace (GAP-4D).**
 2.  Joan's mark (FamilySearch film 564389).
 3.  Potter 1835 pp. 58–60 (Coginaquand identity).
 4.  Brooks endnote for "cousin to her late husband."
