@@ -1,0 +1,227 @@
+name: Fix Pawtuxet overclaims on live site
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Apply Pawtuxet suspension patches
+        run: |
+          python3 << 'SCRIPT'
+          import re
+
+          with open('index.html', 'r') as f:
+              content = f.read()
+
+          changes = []
+
+          # 1. Replace Pawtuxet deed row in documents table with SUSPENDED version
+          old = '<tr><td>RI Land Evidence — 1682 Pawtuxet Deed (Records of RI &amp; Providence Plantations Vol. VII, pp.177–178)</td><td>19 May 1682</td><td>John Greene sells inherited Pawtuxet land to William Carpenter for £10. Joan gives "free &amp; voluntary consent" and signs with her mark. Witnesses: John Wickes, Samuel Gorton. Second, independent 1682 transaction requiring Joan\'s legal participation.</td><td><span class="badge proven">Tier 1 — Primary</span></td></tr>'
+          new = '<tr><td>⚠️ 1682 Pawtuxet Deed — <strong>SUSPENDED</strong></td><td>19 May 1682 (claimed)</td><td><strong>Citation invalidated:</strong> "Records of RI &amp; Providence Plantations Vol. VII, pp.177–178" actually contains 1773 Gaspee commission records, not a 1682 deed. Verbatim text not found in any digitized primary source. Possible conflation of the 1658 John Greene Junr Warwick → Carpenter deed with the March 1682 Joan deed. <em>This entry is retained for transparency — see <a href="https://github.com/lemuwah/joan-archive/blob/main/contamination/vol_vii_citation_kill.md">citation kill documentation</a>.</em></td><td><span class="badge rejected">SUSPENDED — Citation invalid</span></td></tr>'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('1. Documents table: Pawtuxet row → SUSPENDED with citation kill note')
+          else:
+              # Try without escaped apostrophe
+              old2 = 'RI Land Evidence — 1682 Pawtuxet Deed (Records of RI &amp; Providence Plantations Vol. VII, pp.177–178)'
+              if old2 in content:
+                  # Replace just the row containing this text
+                  content = content.replace(
+                      old2 + '</td><td>19 May 1682</td>',
+                      '⚠️ 1682 Pawtuxet Deed — <strong>SUSPENDED</strong></td><td>19 May 1682 (claimed)</td>'
+                  )
+                  # Fix the status badge
+                  content = content.replace(
+                      'Second, independent 1682 transaction requiring Joan',
+                      '<strong>⚠️ SUSPENDED:</strong> Citation "Vol. VII pp.177–178" invalidated (= 1773 Gaspee records). Verbatim text not found. See <a href="https://github.com/lemuwah/joan-archive/blob/main/contamination/vol_vii_citation_kill.md">citation kill</a>. Previously described as: Second, independent 1682 transaction requiring Joan'
+                  )
+                  changes.append('1. Documents table: Pawtuxet row updated with suspension notice')
+
+          # Fix the badge on the Pawtuxet row
+          old_badge = 'Joan\'s legal participation.</td><td><span class="badge proven">Tier 1 — Primary</span>'
+          new_badge = 'Joan\'s legal participation.</td><td><span class="badge rejected">SUSPENDED — Citation invalid</span>'
+          if old_badge in content:
+              content = content.replace(old_badge, new_badge)
+              changes.append('1b. Pawtuxet badge: Tier 1 → SUSPENDED')
+
+          # 2. Gallery description: "two known" → "one verified"
+          old = 'One of Joan/e\'s two known primary-source appearances'
+          new = 'Joan/e\'s only verified primary-source appearance'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('2. Gallery: two known → only verified')
+          # Also fix the "See also" part
+          old = 'See also the 19 May 1682 Pawtuxet deed, her second appearance the same year.'
+          new = 'A claimed second deed (19 May 1682 Pawtuxet) has been suspended — its source citation was invalidated.'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('2b. Gallery: Pawtuxet cross-reference → suspension note')
+
+          # 3. Negative Space Log: fix the RI State Archives entry
+          old = 'Joan appears in the 1682 home-place deed (Vol. IV) and the 19 May 1682 Pawtuxet deed (RI Land Evidence Vol. VII). Anashuecot appears only in 1672 deed (Vol. I).'
+          new = 'Joan appears in the 1682 home-place deed. A claimed Pawtuxet deed ("Vol. VII pp. 177–178") has been invalidated — those pages contain 1773 Gaspee records. Joan\'s only verified appearance is the March 1682 home-place deed. Anashuecot appears only in 1672 deed (Vol. I).'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('3. Negative Space Log: Vol. IV/VII references corrected')
+
+          # 4. Six anomalies section: remove Pawtuxet sentence
+          old = 'On 19 May 1682, a separate Pawtuxet deed required her independent "free &amp; voluntary consent."'
+          new = '<em>(A claimed second deed dated 19 May 1682 has been suspended — its source citation was invalidated. See Contamination Index.)</em>'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('4. Six anomalies: Pawtuxet sentence → suspension note')
+
+          # 5. Anomaly box: "One of two known appearances" → single appearance
+          old = 'One of two known appearances. See the 1682 Pawtuxet deed below.'
+          new = 'Joan\'s only verified primary-source appearance.'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('5. Anomaly box: two → one')
+
+          # 6. Remove Pawtuxet deed from "present" list in anomaly box
+          old = '          <li><span class="mark-present">Present</span> <strong>1682 Pawtuxet deed (19 May 1682)</strong> <span class="mark-note">— Joan gives separate "free &amp; voluntary consent" and signs with her mark on the sale of inherited Pawtuxet land to William Carpenter. Second independent legal act in the same year.</span></li>'
+          new = '          <li><span class="mark-missing">Suspended</span> <strong>1682 Pawtuxet deed (19 May 1682) — CITATION INVALIDATED</strong> <span class="mark-note">— Source citation "Vol. VII pp. 177–178" contains 1773 Gaspee records. Verbatim text not found. This claimed appearance is suspended pending physical archive verification.</span></li>'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('6. Anomaly box: Pawtuxet → SUSPENDED')
+
+          # 7. Joan Firewall: "two known primary-source appearances" → one
+          old = 'Joan/e of Quidnessett has two known primary-source appearances, both in 1682: the 24 Mar home-place deed and the 19 May Pawtuxet deed.'
+          new = 'Joan/e of Quidnessett has one verified primary-source appearance: the 24 Mar 1682 home-place deed. A claimed second appearance (19 May 1682 Pawtuxet deed) has been suspended — its source citation was invalidated.'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('7. Joan Firewall: two → one verified')
+
+          # 8. Joan Firewall table: "Tier 1 — Primary (two 1682 appearances)" → one
+          old = 'Tier 1 — Primary (two 1682 appearances)'
+          new = 'Tier 1 — Primary (one verified 1682 appearance)'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('8. Joan Firewall table: two → one')
+
+          # 9. Joan Firewall table: "24 Mar 1682 home-place deed; 19 May 1682 Pawtuxet deed"
+          old = '24 Mar 1682 home-place deed; 19 May 1682 Pawtuxet deed'
+          new = '24 Mar 1682 home-place deed (only verified appearance)'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('9. Joan Firewall table: deed list → single deed')
+
+          # 10. Five-John table: "1682 home-place & Pawtuxet deeds"
+          old = '1682 home-place &amp; Pawtuxet deeds'
+          new = '1682 home-place deed (Pawtuxet deed suspended)'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('10. Five-John table: Pawtuxet flagged')
+
+          # 11. Orbit: "Two documented appearances"
+          old = '<strong>Two documented appearances:</strong> the 24 Mar 1682 home-place deed and the 19 May 1682 Pawtuxet deed, both requiring her independent legal consent.'
+          new = '<strong>One verified appearance:</strong> the 24 Mar 1682 home-place deed, requiring her consent. A claimed second deed (19 May 1682 Pawtuxet, citing Vol. VII pp. 177–178) has been suspended — that citation was invalidated (pages contain 1773 Gaspee records).'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('11. Orbit: Two → One verified')
+
+          # 12. Orbit status badge
+          old = 'MISSING — except two 1682 deeds'
+          new = 'MISSING — except one verified 1682 deed'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('12. Orbit status: two → one')
+
+          # 13. Carpenter node: update to reflect suspended deed
+          old = 'Non-Quaker land speculator, Pawtuxet Partners member. Purchaser of inherited Pawtuxet land from John and Joan Greene, 19 May 1682, for £10.'
+          new = 'Non-Quaker land speculator, Pawtuxet Partners member. Cited as purchaser of Pawtuxet land from John and Joan Greene (19 May 1682, £10) — but this deed\'s source citation has been invalidated.'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('13. Carpenter node: updated to suspended')
+
+          # 14. Carpenter: "Joan's second independent 1682 consent"
+          old = 'Joan\'s second independent 1682 consent.'
+          new = '<strong>⚠️ SUSPENDED</strong> — deed source citation invalidated.'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('14. Carpenter: second consent → suspended')
+
+          # 15. Carpenter status badge
+          old = 'PRESENT — 19 May 1682'
+          new = 'SUSPENDED — deed citation invalidated'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('15. Carpenter badge: PRESENT → SUSPENDED')
+
+          # 16. Hypotheses header: remove Pawtuxet reference
+          old = 'Explains 1682 Life-Estate &amp; Pawtuxet Consent?'
+          new = 'Explains 1682 Life-Estate Clause?'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('16. Hypotheses header: removed Pawtuxet')
+
+          # 17. Hypotheses intro: remove Pawtuxet reference
+          old = 'the 1682 life-estate clause plus the separate Pawtuxet consent (why the anomalous, repeated language?)'
+          new = 'the 1682 life-estate clause (why the anomalous language, including the "or to her mother" provision?)'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('17. Hypotheses intro: removed Pawtuxet')
+
+          # 18. Hypothesis D: "does not explain the separate Pawtuxet consent"
+          old = 'and does not explain the separate Pawtuxet consent.'
+          new = 'and the "or to her mother" clause remains anomalous.'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('18. Hypothesis D: removed Pawtuxet reference')
+
+          # 19. Hypothesis E: "inventing Joan twice, in two independent transactions"
+          old = 'who gains by inventing Joan twice, in two independent transactions, before two different witness sets?'
+          new = 'who gains by inventing Joan in the home-place deed?'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('19. Hypothesis E: removed two-transactions reference')
+
+          # 20. Geographic continuity: "the 1682 home-place and Pawtuxet deeds"
+          old = 'the 1682 home-place and Pawtuxet deeds both concern land'
+          new = 'the 1682 home-place deed concerns land'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('20. Geographic: removed Pawtuxet from deed list')
+
+          with open('index.html', 'w') as f:
+              f.write(content)
+
+          print(f'Applied {len(changes)} of 20 targeted patches:')
+          for c in changes:
+              print(f'  {c}')
+          if len(changes) < 15:
+              print(f'\nWARNING: Only {len(changes)} of 20 patches matched. Some text may have changed.')
+          SCRIPT
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git diff --cached --stat
+            git commit -m "fix: CRITICAL — Pawtuxet deed suspended across entire live site
+
+            Vol. VII pp. 177-178 = 1773 Gaspee records, not 1682 deed.
+            Citation invalidated. Joan's only verified appearance is
+            the 24 Mar 1682 home-place deed.
+
+            20 targeted patches applied:
+            - Documents table: Pawtuxet row → SUSPENDED with citation kill
+            - Gallery, anomaly box, orbit: 'two appearances' → 'one verified'
+            - Joan Firewall: two → one
+            - Five-John table: Pawtuxet flagged
+            - Carpenter node: suspended
+            - Hypotheses: Pawtuxet references removed
+            - Negative Space Log: Vol references corrected
+            - Geographic continuity: Pawtuxet removed"
+            git push
+          fi
