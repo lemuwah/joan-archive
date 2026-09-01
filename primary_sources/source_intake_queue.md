@@ -1,22 +1,29 @@
 # Source Intake Queue — Joane-Centric
 
-> **How to read this:** 🟢 PROVEN = we have the primary. 🔵 PROBABLE = strong chain, one link missing. 🟡 UNVERIFIED = claim exists, image not yet pulled. 🔴 NULL = searched, not found OR proven compilation layer. NULL is data.
+> **How to read this:** 🟢 PROVEN = we have the primary. 🔵 PROBABLE = strong chain, one link missing. 🟡 UNVERIFIED = claim exists, image not yet pulled. 🔴 NULL = searched, not found OR proven compilation layer. ⚠️ SUSPENDED = citation exists but verbatim text not located / citation invalidated. NULL is data.
 > **Rule:** No citation = does not exist. Need Box.Folder.Page + 600 DPI + direct quote.
 
 ### The One Record That Matters
-Joane Greene appears once: May 1682, Pawtuxet deed consent. Everything below is the envelope we build around that moment.
+Joane Greene's ONLY VERIFIED appearance: **24 March 1681/82, Home-Place Deed** — Joan named as wife, signs with mark, 30-shilling life-estate reserved with anomalous clause "or to her mother if she survive." Everything below is the envelope we build around that moment.
+
+**⚠️ Note:** The May 1682 Pawtuxet deed previously listed here as the "hero document" has been **SUSPENDED**. Its citation ("Vol. VII pp. 177–178") is invalid — that volume covers 1770–1776 (Gaspee commission records). Bates (1918–19) does not mention this deed. See `research/pawtuxet_deed_investigation.md`.
 
 ---
 
 ## 1. HERO PRIORITY — The Deed Itself
 
-- [ ] **1682 Joane Greene Consent — Pawtuxet Deed** 
-    - **Status:** 🟢 PROVEN (was PROBABLE — witnesses restored)
-    - **What it is:** The only surviving English record of Joane. Her legal consent to sale.
-    - **Why Joane:** Without her consent, deed invalid under coverture. Why was it required here?
-    - **Witnesses to verify:** William Carpenter (non-Quaker speculator), John Wickes, Samuel Gorton
-    - **Need:** 600 DPI multispectral scan of signature/mark. Full TEI transcription. Scribe ID.
-    - **Also covers:** `1648-1696 Land Evidences Vol I - Pull Pawtuxet 1682 original image` — SAME TASK, don't duplicate. Check Rhode Island Land Evidences Vol I and RI State Archives original.
+- [ ] **1682 Home-Place Deed — Joan's ONLY VERIFIED Appearance** 
+    - **Status:** 🟢 PROVEN (F.L. Greene 1894, p. 10; NK Land Evidence)
+    - **What it is:** The only surviving verified English record of Joane. John Greene divides Quidnessett land among sons Daniel (120ac) and James (60ac). Joan named with 30-shilling life-estate.
+    - **Why Joane:** Without her consent, deed invalid under coverture. The "or to her mother if she survive" clause has no English legal parallel.
+    - **Need:** 600 DPI scan of original from NK Land Evidence Book 1. Full TEI transcription. Scribe ID.
+
+- [ ] **⚠️ 1682 Pawtuxet Deed — SUSPENDED** 
+    - **Previous Status:** 🟢 PROVEN — NOW ⚠️ SUSPENDED
+    - **What was claimed:** May 19, 1682 deed, John & Joan Greene → William Carpenter, £10, witnesses Wickes & Gorton. Joan's "free & voluntary consent" and "her marke."
+    - **Problem:** Citation "Vol. VII pp. 177–178" = 1773 Gaspee commission records, NOT a 1682 deed. Bates does not mention it. Verbatim text not found in ANY digitized source.
+    - **Full investigation:** `research/pawtuxet_deed_investigation.md`
+    - **Resolution path:** Physical examination of RI Land Evidences Vol. I manuscript (FamilySearch Film 564389); Peirce Manuscripts (films 22291–22292); Providence town deed books.
 
 ## 2. ENVELOPE AROUND JOANE — 1672-1685
 
@@ -63,11 +70,11 @@ These deeds prove the world that made her 1682 consent necessary.
 
 - [ ] **1648-1795 Land and Public Notary Records of RI**
     - **Source:** FamilySearch — index & images — Microfilm of RI State Archives MSS
-    - **Use:** May contain unrecorded Pawtuxet deeds.
+    - **Use:** May contain unrecorded deeds. Check for any Pawtuxet entries.
 
 - [ ] **1646-1851 Proceedings of the General Assembly**
     - **Source:** FamilySearch — index & images
-    - **Use:** Search 1679-1685 for Pawtuxet ratifications. Did Assembly need to approve Joane's deed?
+    - **Use:** Search 1679-1685 for Pawtuxet ratifications.
 
 - [ ] **1636-1936 Rhode Island Boundaries — John Hutchins Cady**
     - **Source:** FamilySearch — images only
@@ -75,7 +82,7 @@ These deeds prove the world that made her 1682 consent necessary.
 
 - [ ] **Peirce Manuscripts 1686-1826 — RI Land Evidences Copies**
     - **Source:** FamilySearch — images only — Microfilm at RI Historical Society
-    - **Use:** Scribe comparison. Does Peirce copy "his marke" differently? Law 3 test.
+    - **Use:** Scribe comparison. Does Peirce copy "his marke" differently? Law 3 test. Also: check for Pawtuxet deed.
 
 - [ ] **1638-1644 Records of RI + 1731-1773 Agents Accounts + 1747-1750 Certificates + 1786-1803 Account Book**
     - **Source:** FamilySearch
@@ -103,5 +110,5 @@ These deeds prove the world that made her 1682 consent necessary.
 1. Pick one checkbox
 2. Pull 600 DPI image + note FamilySearch Film # + RI State Archives Box.Folder.Page
 3. Add direct quote + TEI transcription
-4. Tag: How does this help Joane? (🟢🔵🟡🔴)
+4. Tag: How does this help Joane? (🟢🔵🟡🔴⚠️)
 5. PR to /sources/ or add to negative-evidence-log.md

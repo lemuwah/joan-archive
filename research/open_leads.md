@@ -1,5 +1,5 @@
 # Open Research Leads
-**Last updated:** 2026-08-31 (Bates negative finding — citation chain broken)
+**Last updated:** 2026-09-01 (Vol. VII citation definitively killed — Gaspee 1773 confirmed)
 
 Tracker for all open leads, organized by priority. Each lead includes what's known, what's needed, and where to look.
 
@@ -9,9 +9,9 @@ Tracker for all open leads, organized by priority. Each lead includes what's kno
 
 ### 17. PAWTUXET DEED PRIMARY SOURCE HUNT
 - **What:** May 19, 1682 deed, John & Joan Greene → William Carpenter, £10, witnesses John Wickes & Samuel Gorton. "Free & voluntary consent." "Her marke."
-- **Problem:** Citation "RI Land Evidence vol. VII pp. 177–178" does not resolve to any known volume. Citation chain BROKEN — Bates (most authoritative source) does not mention this deed.
+- **Problem:** Citation "RI Land Evidence vol. VII pp. 177–178" is **DEFINITIVELY DEAD** — those pages contain 1773 Gaspee commission records (Chief Justice Smythe's letter + commissioners' cover to Lord Dartmouth). Bates (most authoritative source) does not mention this deed.
 - **Full investigation:** `research/pawtuxet_deed_investigation.md`
-- **Status:** 🔴 CITATION CHAIN BROKEN. The archive cannot claim 2 Joan appearances until this deed is found or killed.
+- **Status:** 🔴 CITATION KILLED. The archive treats Joan as having ONE verified appearance (March 1682 home-place deed) until/unless the Pawtuxet deed is found in a primary source.
 
 ### 18. 1658 CO-SIGNING CLUSTER — QUIDNESSETT JOHN + SURGEON'S SON
 - **What:** The verified 1658 Pawtuxet deed has "John Greene Junr Warwick" (Surgeon's son) selling to William Carpenter. Witnesses include "John Greene" — which one?
@@ -25,8 +25,11 @@ Tracker for all open leads, organized by priority. Each lead includes what's kno
 - **Bates's children list:** Lt. John², Henry², Daniel², James², Benjamin², Sarah² (married Thomas Flounders).
 - **Next targets for citation chain:** See #21.
 
-### 20. "RI LAND EVIDENCE VOL. VII" — WHICH PHYSICAL VOLUME?
-- **Status:** PENDING — may require phone call or in-person visit.
+### 20. "RI LAND EVIDENCE VOL. VII" — RESOLVED
+- **Status:** ✅ RESOLVED (2026-09-01) — **DEFINITIVELY KILLED**
+- **Result:** Bartlett Vol. VII covers 1770–1776. Pages 177–178 = Gaspee commission records (1773). Not a 1682 deed. Not even the right century.
+- **Also killed:** "RI Land Evidence Vol. IV" (cited by Kimi for home-place deed) covers 1721–1741 (notary/maritime). Also wrong century.
+- **See:** `contamination/vol_vii_citation_kill.md`
 
 ### 21. TRACE THE ORPHAN CITATION — NEW
 - **What:** The "vol. VII pp. 177–178" citation does NOT come from Bates. Where DOES it come from? It may originate from a post-Bates genealogical compilation.
@@ -103,4 +106,4 @@ Tracker for all open leads, organized by priority. Each lead includes what's kno
 
 ---
 
-*Updated 2026-08-31. Bates negative finding confirmed. Citation chain broken. All leads tracked per Law 1.*
+*Updated 2026-09-01. Vol. VII citation definitively killed (Gaspee 1773). Joan = ONE verified appearance (March 1682). All leads tracked per Law 1.*

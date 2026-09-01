@@ -13,7 +13,7 @@ Every document is presented with:
 - Context  
 - What the document actually says  
 - What genealogy sites incorrectly claim  
-- Evidence status (🟢 PROVEN, 🟡 PROBABLE, ⚪ UNVERIFIED, ⚫ NULL)
+- Evidence status (🟢 PROVEN, 🟡 PROBABLE, ⚪ UNVERIFIED, ⚫ NULL, ⚠️ SUSPENDED)
 
 Choose a document below to begin.
 
@@ -64,17 +64,17 @@ Choose a document below to begin.
 
 ---
 
-## 🟢 1682 Pawtuxet Sale (Joan's "free & voluntary consent")
-**Status:** PROVEN  
-**Joan signs "her marke."**
+## ⚠️ 1682 Pawtuxet Sale — SUSPENDED
+**Status:** ⚠️ SUSPENDED — citation invalidated  
+**Previously listed as 🟢 PROVEN. Citation "Records of RI & Providence Plantations Vol. VII, pp. 177–178" is invalid — that volume covers 1770–1776 and those pages contain 1773 Gaspee commission records. Verbatim deed text not found in any digitized primary source. Bates (1918–19) does not mention this deed. See `research/pawtuxet_deed_investigation.md`.**
 
-[Read document →]({{ site.baseurl }}/primary/pawtuxet-1682/)
+[Investigation →]({{ site.baseurl }}/primary/pawtuxet-1682/)
 
 ---
 
 ## 🟢 1682 Home-Place Deed (Life-Estate Clause)
 **Status:** PROVEN  
-**"...as long as their father or mother should live."**
+**Joan's ONLY VERIFIED legal appearance. "...as long as their father or mother should live."**
 
 [Read document →]({{ site.baseurl }}/primary/homeplace-1682/)
 

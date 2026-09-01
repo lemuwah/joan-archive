@@ -1,6 +1,7 @@
 # Pawtuxet Deed Investigation
-**Created:** 2026-08-31
-**Status:** 🔴 CITATION CHAIN BROKEN — source unknown
+**Created:** 2026-08-31  
+**Updated:** 2026-09-01  
+**Status:** 🔴 CITATION CHAIN BROKEN — citation definitively invalidated  
 **Priority:** BLOCKS ARCHIVE INTEGRITY
 
 ---
@@ -37,11 +38,19 @@ If real, this is the ONLY record where:
 
 ### Phase 2: Citation Identification (2026-08-31)
 
-**Bartlett Vol. VII = WRONG CENTURY.** Bartlett's printed *Records of the Colony of Rhode Island and Providence Plantations* Volume VII covers **1770–1776** (Revolutionary era). Available on Internet Archive and HathiTrust. A 1682 deed cannot be on pp. 177–178 of this volume.
+**Bartlett Vol. VII = WRONG CENTURY.** Bartlett's printed *Records of the Colony of Rhode Island and Providence Plantations* Volume VII covers **1770–1776** (Revolutionary era). Available on [Internet Archive](https://archive.org/details/recordsofcolonyo07rhod).
+
+**🚨 DEFINITIVE (2026-09-01):** Pages 177–178 of Bartlett Vol. VII contain **1773 Gaspee commission records** — specifically:
+- **Page 177:** Chief Justice Frederick Smythe's request dated Newport, June 23, 1773, concerning the royal commission investigating the destruction of HMS *Gaspee*, with notes for June 21–22 concerning the 1764 attack on the armed schooner *St. John*.
+- **Page 178:** The commissioners' covering letter to Lord Dartmouth, headed "The Commissioners, &c., to Lord Dartmouth," Newport, June 22, 1773, signed by J. Wanton, Fred. Smythe, Dan. Horsmanden, and Robt. Auchmuty.
+
+**A 1682 deed cannot be at this citation. The citation is definitively dead.**
 
 **RI State Archives "Land & Public Notary Records" Vol. VII = WRONG SERIES.** Their Vol. 7 covers Public Notary records, 1758–1790. Not land deeds.
 
 **Worthington's RI Land Evidences Vol. I (1648–1696) = deed NOT INCLUDED.** The printed abstracts cover the right time period but do not contain this deed. Either Worthington skipped it, or it's in a different manuscript volume.
+
+**"RI Land Evidence Vol. IV" (cited by Kimi for the home-place deed) = WRONG DATE RANGE.** RI State Archives Vol. IV covers 1721–1741 (public-notary and maritime records). A March 1682 deed cannot be in Vol. IV. The correct source for any 1682 deed is RI Land Evidence Vol. I (1648–1696) or a town deed book.
 
 ### Phase 3: Bates Citation Chain (2026-08-31) — 🚨 CRITICAL NEGATIVE FINDING
 
@@ -83,8 +92,9 @@ These details are internally consistent and specific. But ALL may derive from a 
 
 | Possible Source | Status |
 |----------------|--------|
-| Bartlett, *Records of the Colony of RI*, Vol. VII | ❌ Covers 1770–1776 |
+| Bartlett, *Records of the Colony of RI*, Vol. VII | ❌ Covers 1770–1776; pp. 177–178 = 1773 Gaspee commission |
 | RI State Archives Land & Notary Records Vol. VII | ❌ Maritime/notary, 1758–1790 |
+| RI State Archives Land Evidence Vol. IV | ❌ Covers 1721–1741 (notary/maritime) |
 | Worthington, *RI Land Evidences* Vol. I abstracts | ❌ Deed not included |
 | Bates 1918–19 (RIHS Collections XI–XII) | ❌ Does NOT mention the deed |
 | Early Records of the Town of Warwick (Chapin 1926) | ❌ Not found |
@@ -95,12 +105,12 @@ These details are internally consistent and specific. But ALL may derive from a 
 
 ## Remaining Leads
 
-### Where "Vol. VII pp. 177–178" might actually be:
-1. **A Providence town-level deed book** — Pawtuxet was under Providence jurisdiction. Providence colonial deed books use their own volume numbering. "Vol. VII" could be a Providence deed book.
-2. **An unpublished RI State Archives manuscript** not in their online catalog. The original manuscripts are described as "four ancient volumes" of deeds — but additional volumes of recorded deeds may exist beyond these four.
-3. **FamilySearch Film 564389** — RI Land Evidences Vol. I original manuscript. Worthington's abstracts may have skipped this deed even though the manuscript contains it.
-4. **Peirce Manuscripts** (FamilySearch films 22291–22292) — handwritten deed abstracts.
-5. **RIHS MSS 1210, Box 2, Folder 13** (Kettelle Papers — "Greenes of Quidnessett")
+### Where the deed might actually be (if it exists):
+1. **RI Land Evidences Vol. I original manuscript** — FamilySearch Film 564389. Worthington's abstracts may have skipped this deed even though the manuscript contains it.
+2. **A Providence town-level deed book** — Pawtuxet was under Providence jurisdiction. Providence colonial deed books use their own volume numbering. "Vol. VII" could be a Providence deed book.
+3. **Peirce Manuscripts** (FamilySearch films 22291–22292) — handwritten deed abstracts.
+4. **RIHS MSS 1210, Box 2, Folder 13** (Kettelle Papers — "Greenes of Quidnessett")
+5. **North Kingstown town records** — original deed books, if they survived the fire.
 
 ### Where the CITATION might originate:
 1. **F.L. Greene, *The Greene Family and Its Branches* (1894)** — Did this earlier compilation cite the Pawtuxet deed? If so, what source did IT use?
@@ -120,12 +130,13 @@ BUT: If the 1682 Pawtuxet deed is real and says John Greene sold "inherited Pawt
 
 ## Current Status
 
-**🔴 CITATION CHAIN BROKEN**
+**🔴 CITATION CHAIN BROKEN — CITATION DEFINITIVELY INVALIDATED**
 
 - The deed details are specific and internally consistent across sources
 - BUT no one has traced the citation to an actual primary document
 - The most authoritative secondary source (Bates) does not mention the deed at all
-- "Vol. VII pp. 177–178" does not resolve to any known published or catalogued volume
+- "Vol. VII pp. 177–178" is **definitively dead** — those pages contain 1773 Gaspee commission records
+- "RI Land Evidence Vol. IV" (cited by Kimi) is also wrong — covers 1721–1741
 - The citation may be circular — multiple sources copying from a single unverified compilation
 
 **Until the verbatim deed text is located and read from a primary source, the archive cannot treat this deed as evidence.**
@@ -133,3 +144,4 @@ BUT: If the 1682 Pawtuxet deed is real and says John Greene sold "inherited Pawt
 ---
 
 *All hypotheses held open per Law 1. No premature closure.*
+*See also: contamination/vol_vii_citation_kill.md*
