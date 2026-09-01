@@ -1,5 +1,5 @@
-{"id":"C01","claim":"Joan appears in exactly two 1682 documents despite ~40-year marriage","sources":["S01","S03","S04","S06","S08"],"confidence":"high","status":"verified"}
-{"id":"C02","claim":"1682 deed language contains anomalies inconsistent with standard English dower practice","sources":["S01","S03","S04","S10","S11"],"confidence":"high","status":"verified"}
+{"id": "C01", "claim": "Joan appears in exactly one verified 1682 document (24 Mar 1682 home-place deed) despite ~40-year marriage; a claimed second 1682 document (Pawtuxet, S04) is SUSPENDED", "sources": ["S01", "S03", "S06", "S08", "S04 (suspended)"], "confidence": "high", "status": "verified"}
+{"id": "C02", "claim": "1682 deed language contains anomalies inconsistent with standard English dower practice", "sources": ["S01", "S03", "S10", "S11"], "confidence": "high", "status": "verified", "notes": "Formerly also relied on S04 (Pawtuxet deed) — removed 2026-09-01 after that source was suspended."}
 {"id":"C03","claim":"La Mance (1904) assigned Joan Beggarly maiden name without primary sources","sources":["S01","S07","S17","S25"],"confidence":"high","status":"verified"}
 {"id":"C04","claim":"La Mance error propagated to 10,000+ algorithmically copied profiles","sources":["S01","S17","S20","S21"],"confidence":"high","status":"verified"}
 {"id":"C05","claim":"Five distinct John Greenes have been merged in secondary sources","sources":["S01","S05","S06","S18"],"confidence":"high","status":"verified"}

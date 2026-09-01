@@ -140,7 +140,7 @@ The synthesis (Proof Piece #10) must address this complexity honestly.
 
 - **Fones Record p.90** — 1672 deed text
 - **F.L. Greene (1894) p.10** — 1682 homeplace deed transcript
-- **Records of the Colony of Rhode Island, Vol. VII, pp. 177–178** — 1682 Pawtuxet consent
+- ~~**Records of the Colony of Rhode Island, Vol. VII, pp. 177–178** — 1682 Pawtuxet consent~~ — **⚠️ SUSPENDED (2026-09-01):** the cited "Vol. VII pp. 177–178" contains 1773 Gaspee records, not a 1682 deed; verbatim text not located in any digitized primary source. See theory/proof_pieces/09_pawtuxet_problem.md and CORRECTIONS.md.
 - **Narragansett Historical Register, Vol 1–2** — Quidnessett plat and allotment history
 - **1717/18 Quidnessett Plat** — RI State Archives
 - **Aboriginal Title Statutes in the Thirteen Colonies** — 1651 prohibition text

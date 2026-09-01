@@ -209,7 +209,7 @@ const nodes = [
   // --- PEOPLE / RELATIONS ---
   {
     id:"joan", label:"Joan Greene", type:"person", year:1660,
-    desc:"Wife of John Greene Sr. of Quidnessett. In 1682 she gave her own 'free & voluntary consent' to a land sale and signed with her mark. A home-place deed that same year reserved 30 shillings annually 'as long as their father OR MOTHER should live' — unusual under English law, but consistent with Indigenous frameworks where a wife holds independent property interest.",
+    desc:"Wife of John Greene Sr. of Quidnessett. Her only verified appearance is the 24 March 1682 home-place deed, which required her consent and reserved 30 shillings annually 'as long as their father OR MOTHER should live' — unusual under English law, but consistent with Indigenous frameworks where a wife holds independent property interest.",
     seeking:"Can we find additional records of Joan acting independently? Are there Narragansett oral histories that name a woman of this description?"
   },
   {
@@ -292,9 +292,9 @@ const nodes = [
     seeking:"Comparison with other Rhode Island deeds of the same era: how common was an independent maternal life estate?"
   },
   {
-    id:"deedmay1682", label:"19 May 1682 Pawtuxet deed", type:"document", year:1682,
-    desc:"Joan gives 'free & voluntary consent' and signs with her mark. The buyer, William Carpenter, was a land speculator, not a Quaker. This removes one older theory — that Joan sold land through a protective Quaker network.",
-    seeking:"Carpenter's full land-speculation records. Did he acquire other Narragansett-held land in the same period?"
+    id:"deedmay1682", label:"19 May 1682 Pawtuxet deed (SUSPENDED)", type:"document", year:1682,
+    desc:"SUSPENDED (2026-09-01). Secondary sources describe Joan giving 'free & voluntary consent' to a sale to William Carpenter, a land speculator. The cited source (Records of RI & PP Vol. VII, pp. 177–178) actually contains 1773 Gaspee commission records, and the deed's verbatim text has not been located in any digitized primary source. Bates (1918) does not mention it. Not counted as an appearance of Joan.",
+    seeking:"Does this deed exist at all? Check RI Land Evidences Vol. I manuscript (FamilySearch Film 564389), Providence town deed books, and the Peirce Manuscripts."
   },
   {
     id:"deed1685", label:"Deed: 'now deceased' (1685)", type:"document", year:1685,
@@ -359,7 +359,7 @@ const links = [
   {source:"deedmay1682", target:"joan", type:"together"},
   {source:"deed1685", target:"johnsr", type:"connects"},
   {source:"bates1918", target:"deedmarch1682", type:"connects"},
-  {source:"bates1918", target:"deedmay1682", type:"connects"},
+  {source:"bates1918", target:"deedmay1682", type:"differs"},
   {source:"bates1918", target:"deed1685", type:"connects"},
   {source:"bates1918", target:"will1695", type:"differs"},
   {source:"will1695", target:"john-lt", type:"confused"},

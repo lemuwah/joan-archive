@@ -3,8 +3,8 @@
 The Synthesizer is responsible for integrating new information into the project’s core theory without creating noise, contradictions, or drift. This agent keeps the project coherent.
 
 Start every session by reading:
-- `hub/spine.md`
-- `hub/hostile_protocol.md`
+- `theory/source_spine.md`
+- `agents/hostile_reviewer/README.md` (hostile protocol)
 - any relevant files in `theory/`
 
 ---

@@ -7,9 +7,11 @@
 
 ---
 
+> **⚠️ Update 2026-09-01:** This proof piece was written when the archive counted two 1682 appearances. The 19 May 1682 Pawtuxet deed has since been **SUSPENDED** (citation invalid — Vol. VII pp. 177–178 = 1773 Gaspee records; text not located). Joan currently has **one** verified appearance: the 24 March 1682 home-place deed. The comparative argument below survives this change (one appearance is thinner than two), but the body text has not been rewritten. See `theory/proof_pieces/10_independent_john_addendum_single_appearance.md`.
+
 ## The Question
 
-Joan appears in exactly **two legal documents**, both in 1682. She has no documented existence before or after these two signatures. The stress test asks: is this normal for her community, or anomalous?
+Joan appears in exactly **two legal documents**, both in 1682 *(as understood when written — now ONE verified; see note above)*. She has no documented existence before or after these signatures. The stress test asks: is this normal for her community, or anomalous?
 
 ---
 
@@ -80,7 +82,7 @@ Of seven Quidnessett/Wickford wives surveyed:
 - **Two** (Esther Smith, Margaret Fones) lack proven maiden names but are documented by given name in wills or other records
 - **One** — Joan Greene — has **nothing**
 
-Even the two poorly-documented wives (Esther and Margaret) appear in wills, land records, or family compilations under their given names with at least one independent corroborating source. Joan has only the two 1682 deeds.
+Even the two poorly-documented wives (Esther and Margaret) appear in wills, land records, or family compilations under their given names with at least one independent corroborating source. Joan has only the 1682 deed(s) — now one verified.
 
 ⚠️ **Model B must now explain:** Why is Joan the ONLY wife in this community with zero pre-deed documentation, zero family connections, and zero English paper trail — when her husband was one of the most legally active men in the colony?
 
@@ -218,7 +220,7 @@ Each explanation is individually possible. Together they require **five independ
 ## Sources
 
 - **F.L. Greene (1894, p. 10)** — Home-place deed transcript
-- **Records of the Colony of RI & PP, Vol. VII, pp. 177–178** — Pawtuxet consent
+- ~~**Records of the Colony of RI & PP, Vol. VII, pp. 177–178** — Pawtuxet consent~~ — **⚠️ SUSPENDED (2026-09-01):** the cited "Vol. VII pp. 177–178" contains 1773 Gaspee records, not a 1682 deed; verbatim text not located in any digitized primary source. See theory/proof_pieces/09_pawtuxet_problem.md and CORRECTIONS.md.
 - **Rhode Island Land Evidences (Worth, 1921)** — dower release comparanda, neighbor wives
 - **Arnold Family Record** — Godsgift Arnold birth/parentage
 - **RI Vital Records compilations** — Tibbetts-Stanton marriage 1661

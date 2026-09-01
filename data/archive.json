@@ -122,15 +122,15 @@
     {
       "Record_ID": "SRC-1682-PAWT",
       "Date": "1682-05-19",
-      "Source_ID": "Records of RI & Providence Plantations, Vol. VII, pp. 177-178",
-      "Document_Type": "Consent Document",
+      "Source_ID": "Cited as \"Records of RI & Providence Plantations, Vol. VII, pp. 177-178\" — CITATION INVALID (pp. 177-178 = 1773 Gaspee records)",
+      "Document_Type": "Consent Document (claimed — SUSPENDED)",
       "Person_Name": "Joan Greene",
       "Phonetic_Variations": ["Joan", "Joane"],
-      "Signature_Mark": "her marke",
+      "Signature_Mark": "her marke (claimed, unverified)",
       "Land_Deed_Location": "Pawtuxet",
-      "Transcript_Notes": "Joan's 'free & voluntary consent' to £10 sale to William Carpenter. First direct physical record of Joan's active legal agency via signature mark.",
+      "Transcript_Notes": "SUSPENDED 2026-09-01. Claimed: Joan's 'free & voluntary consent' to £10 sale to William Carpenter, signed with her mark. Verbatim text NOT located in any digitized primary source; Bates does not mention it. Not counted as a verified appearance. See CORRECTIONS.md.",
       "Image_URL": "",
-      "Confidence_Level": "Primary Source"
+      "Confidence_Level": "Suspended"
     },
     {
       "Record_ID": "SRC-1685-DEATH",

@@ -108,7 +108,7 @@ Where did Quidnessett John inherit Pawtuxet land?
 1. **From a non-Greene relative** — through his own family (unknown) or through a prior marriage
 2. **Through Joan's family** — but the deed names John as grantor, not Joan
 3. **Through the Pawtuxet proprietorship** — a share acquired independently
-4. **The deed's use of "inherited" may be misread or paraphrased** — the actual deed text in RI Land Evidences Vol. VII pp. 177–178 needs verbatim verification
+4. **The deed's use of "inherited" may be misread or paraphrased** — the actual deed text has never been located; the cited "Vol. VII pp. 177–178" is invalid (1773 Gaspee records) — see proof piece #9
 5. **He DID inherit from Surgeon John's estate** — as a brother or cousin, even though the will doesn't name him (brothers inherit independently of wills; the will only conveys specific bequests)
 
 ### The critical distinction:
@@ -144,7 +144,7 @@ Even if Quidnessett John inherited Pawtuxet land from the Warwick Greene family,
 
 1679: Sworn affidavit about 40+ years' continuous residence. Conservator of the Peace.
 
-1682: Two deeds — the homeplace partition (Joan named) and the Pawtuxet sale (Joan consents).
+1682: One verified deed — the homeplace partition (Joan named). A claimed Pawtuxet sale (Joan consents) is SUSPENDED — citation invalid, text not located.
 
 By 1685: Dead. Will destroyed in fire.
 
@@ -261,7 +261,7 @@ The Pawtuxet inheritance is the ONE piece of evidence that requires some connect
 - **Greene DNA Project:** FTDNA public page
 - **Y-DNA Kit B2778:** Joan Archive research/ydna_summary.md
 - **Quidnessett John timeline:** Bates; alfredgibbs.com; Huling 1883–84
-- **RI Land Evidences:** Worth 1921 (Vol VII pp. 177–178 for Pawtuxet deed — NOT YET READ)
+- **RI Land Evidences:** Worth 1921 (~~Vol VII pp. 177–178 for Pawtuxet deed~~ — citation INVALID, 2026-09-01; Worth's Vol. I searched, Pawtuxet deed not found)
 
 ---
 

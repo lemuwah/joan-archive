@@ -108,9 +108,9 @@ This matrix maps the complete **documentary lifecycle** of the 1672 deed across 
 * **Administrative Context:** Neighboring deeds and family land divisions referencing the 1672 bounds.
 * **Key Intersecting Instruments:**
   * **24 March 1682 Home-Place Deed:** John Greene deeds 180 acres of the 1672 tract to sons Daniel (120 ac) and James (60 ac), containing the life-estate clause for wife Joan.
-  * **19 May 1682 Pawtuxet Consent:** Joan Greene provides separate consent to a £10 sale to William Carpenter.
-* **Source Anchor:** F.L. Greene (1894, p. 10); Records of RI & Providence Plantations, Vol. VII, pp. 177–178.
-* **Status:** **PROVEN.**
+  * ~~**19 May 1682 Pawtuxet Consent:** Joan Greene provides separate consent to a £10 sale to William Carpenter.~~ ⚠️ **SUSPENDED (2026-09-01)** — cited "Vol. VII pp. 177–178" = 1773 Gaspee records; verbatim text not located. See theory/proof_pieces/09_pawtuxet_problem.md.
+* **Source Anchor:** F.L. Greene (1894, p. 10) for the home-place deed. ~~Records of RI & Providence Plantations, Vol. VII, pp. 177–178~~ (invalid).
+* **Status:** **PROVEN** for the 24 March 1682 home-place deed; **SUSPENDED** for the Pawtuxet consent.
 
 ---
 

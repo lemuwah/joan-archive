@@ -31,7 +31,7 @@ Status markers:
 | **Born** | c. 1606, England | Inferred from 1635 ship manifest ("Greene Jo, aged 29") |
 | **Arrived** | 1635 on ship *Matthew* (Capt. Richard Goodladd) | Tier 3 Ship manifest |
 | **Residence** | Cocumscussoc/Quidnessett, Narragansett Country, RI | Tier 1: 1672 Fones Purchase; 1679 affidavit |
-| **Wife** | Joan/e (maiden name UNKNOWN) — appears only in two 1682 deeds | Tier 1: RI Land Evidence Vol. IV; Vol. VII pp. 177–178 (**⚠️ Vol. VII UNVERIFIED — see note**) |
+| **Wife** | Joan/e (maiden name UNKNOWN) — appears in ONE verified 1682 deed (24 Mar home-place); a claimed second (19 May Pawtuxet) is SUSPENDED | Tier 1: RI Land Evidence Vol. IV. ~~Vol. VII pp. 177–178~~ (**❌ citation INVALID — 1773 Gaspee records; see note**) |
 | **Children** | Bates list: Lieut. John², Daniel², James², Benjamin², Henry², Sarah² | Tier 2: Bates, RIHS Collections XI-XII (1918-19) |
 | **Died** | Before 25 September 1685 | Tier 1: Joseph Clark deed, Jamestown Records |
 | **Will** | Destroyed in North Kingstown fire | Tier 2: Bates (1918-19) |
@@ -44,7 +44,7 @@ Status markers:
 4. **24 Aug 1676: Newport Court Martial** — CHARGED; Daniel testifies for prosecution. Source: Tier 2 (Hough 1858, DEAD END)
 5. **1679: Affidavit** — "forty years and more" with Richard Smith. Source: Tier 2
 6. **24 Mar 1682: Home-Place Deed** — Joan named; "or to her mother" clause. Source: Tier 1
-7. **19 May 1682: Pawtuxet Deed** — Joan gives "free & voluntary consent". Source: **🟠 SUSPENDED** — cited as "RI Land Evidence Vol. VII pp. 177–178" but this volume has NOT been located or verified. See `theory/proof_pieces/09_pawtuxet_problem.md` and `theory/joan_firewall.md` Section 1.2. **DO NOT treat as Tier 1 until verbatim text is located.**
+7. **19 May 1682: Pawtuxet Deed** — Joan gives "free & voluntary consent". Source: **🟠 SUSPENDED** — cited as "RI Land Evidence Vol. VII pp. 177–178" but that citation is INVALID (Bartlett Vol. VII = 1770–1776; pp. 177–178 = 1773 Gaspee records) and the deed text has not been located anywhere. See `theory/proof_pieces/09_pawtuxet_problem.md` and `theory/joan_firewall.md` Section 1.2. **DO NOT treat as Tier 1 until verbatim text is located.**
 8. **Before 25 Sep 1685: Death** — Joseph Clark deed. Source: Tier 1
 
 ### ⚠️ NEW: 1658 Co-Signing Cluster

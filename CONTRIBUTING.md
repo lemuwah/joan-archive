@@ -3,7 +3,7 @@
 ## 🚀 Quick Start
 
 ### I want to add a primary source
-1. See [`RESEARCH_QUEUE.md`](./RESEARCH_QUEUE.md) — pick a PENDING task
+1. See [`research_queue/RESEARCH_QUEUE.md`](./research_queue/RESEARCH_QUEUE.md) — pick a PENDING task
 2. Scan at 600 DPI (see [`/digitization/equipment.md`](./digitization/equipment.md))
 3. Upload to `/images/`
 4. Add entry to `MANIFEST.md` — use [`/digitization/RUBRIC.md`](./digitization/RUBRIC.md) to classify
@@ -18,7 +18,7 @@
 ### I want to analyze kinship
 1. See [`/theory/`](./theory/) for kinship network format
 2. See [`/contamination/`](./contamination/) for what NOT to trust
-3. Follow Four Laws in [`README.md`](./README.md)
+3. Follow the Five Laws in [`README.md`](./README.md) / [`theory/three_laws.md`](./theory/three_laws.md)
 
 ---
 
@@ -50,6 +50,7 @@
 ## Questions?
 
 See:
-- [`README.md`](./README.md) — Four Laws & context
+- [`README.md`](./README.md) — Five Laws & context
+- [`CORRECTIONS.md`](./CORRECTIONS.md) — public log of errors found and fixed
 - [`/digitization/CONTRIBUTING.md`](./digitization/CONTRIBUTING.md) — detailed lab workflow
-- [`RESEARCH_QUEUE.md`](./RESEARCH_QUEUE.md) — what to work on next
+- [`research_queue/RESEARCH_QUEUE.md`](./research_queue/RESEARCH_QUEUE.md) — what to work on next

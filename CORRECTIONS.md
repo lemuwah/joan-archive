@@ -56,6 +56,17 @@ The Pawtuxet deed is **SUSPENDED, not deleted.** It may still exist in:
 
 A direct query to RI State Archives would resolve this definitively.
 
+### Follow-up sweep (2026-09-01, second pass)
+
+A repository-wide grep after the first pass found the Pawtuxet deed still stated as fact in places the first pass missed. Corrected without rewriting the surrounding analysis:
+
+- `index.html` — "This Month's Focus" box, the "Places Joan/e should appear" list (Pawtuxet row was still marked *Present*), Question 1 body text, hypothesis stress-test matrix (two cells), Open Question closing paragraph ("appears twice"), and a mojibake `⚠️` left by an earlier automated patch
+- `joan-constellation.html` — Joan node and Pawtuxet deed node relabelled SUSPENDED; Bates→Pawtuxet link changed from *connects* to *differs* (Bates does not mention it)
+- `data/archive.json`, `data/research/{sources,evidence,claims}.jsonl` — S04 / SRC-1682-PAWT / E03 downgraded from Tier 1 to suspended; C01 restated as one verified appearance; S04 removed from C02's source list
+- `theory/` — proof pieces #02, #05, #06, #10; `1672_deed_lifecycle.md` Node 7; `1682_deed_lifecycle.md` GAP-4 (was still "HIGHEST PRIORITY" after the spine had resolved it); `anashuecot_kin_map.md`, `greene_sibling_map.md`, `corpus_map.md`
+- `people/john_greene_quidnessett.md`, `people/five_john_primary_source_trail.md`
+- Removed the five one-off `workflow_dispatch` patch workflows in `.github/workflows/` whose edits have all landed (one of them is the source of the mojibake and would reintroduce it if re-run)
+
 ### The impact on Joan
 
 If the Pawtuxet deed doesn't exist, Joan has **ONE verified legal appearance** — the March 24, 1682 home-place deed. This makes her documentary footprint uniquely thin among comparable Quidnessett wives and strengthens Model A (Indigenous woman who entered the English record system through marriage). See `theory/proof_pieces/10_independent_john_addendum_single_appearance.md`.

@@ -147,8 +147,8 @@ SEPT 17, 1679 — WEUNQUESH AT COURT (land claim with written evidence)
 MARCH 24, 1681/82 — HOME-PLACE DEED
     Joan named. "Or to her mother if she survive."
 
-MAY 19, 1682 — PAWTUXET DEED
-    Joan gives "free & voluntary consent."
+MAY 19, 1682 — PAWTUXET DEED (⚠️ SUSPENDED — citation invalid, text not located; see proof piece #9)
+    Claimed: Joan gives "free & voluntary consent." NOT counted as a verified appearance.
 
 ~1686 — Weunquesh dies
 ```

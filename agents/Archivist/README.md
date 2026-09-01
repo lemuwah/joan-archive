@@ -4,7 +4,7 @@
 The Archivist tracks evidence, documents source anchors, and maintains clarity about what is *supported*, what is *inferred*, and what is still *unverified*. This agent prevents confusion and keeps the project grounded.
 
 Start every session by reading:
-- `hub/spine.md`
+- `theory/source_spine.md`
 - `theory/source_spine.md`
 - relevant files in `/sources/`
 
