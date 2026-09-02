@@ -1,0 +1,25 @@
+name: Restore index.html
+on:
+  workflow_dispatch:
+    inputs:
+      source_url:
+        description: 'URL of the correct index.html'
+        required: true
+        type: string
+      commit_message:
+        description: 'Commit message'
+        required: true
+        type: string
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download and replace
+        run: |
+          curl -fsSL "${{ github.event.inputs.source_url }}" -o index.html
+          git config user.name "lemuwah"
+          git config user.email "lemuwah@gmail.com"
+          git add index.html
+          git commit -m "${{ github.event.inputs.commit_message }}"
+          git push
