@@ -1,5 +1,5 @@
 # THE JOAN PROJECT — SOURCE SPINE & TIMELINE
-**Status as of 1 September 2026** | **Five Laws in force throughout**
+**Status as of 2 September 2026** | **Five Laws in force throughout**
 
 ---
 
@@ -32,13 +32,19 @@
 | 1651 | Caleb Carr sells "John Greene of Newport" 100 acres *"abutting on Quidnessett or Greene's Harbor"* | John Greene | Quidnessett | Bates 1918–19 | 🟢 |
 | 1654 | Petawhomett deed: witness **Awassuocitt** (phonetically Aw-ass-uoci-tt ↔ Anashuecot cluster); has sons incl. William Baker and Wawnunockshaw | Awassuocitt, Tacommonan | Potowomut/Coheassuck | RI Land Evidences abstract | ⚪ |
 | 1659 | Nanaquakesett deed: **Awashouse** witnesses; confirmed by Pessicus/Mossup; witnessed by **"John Greene"** (no qualifier) and Phillip Green | Awashouse, John Greene, Pessicus | Nanaquakesett | Early Records of the Town of Warwick (Chapin 1926), p. 38 | 🟢 |
+| 1659 | Atherton Purchase of Quidnessett from **Coginaquand**; confirmed 1660 by Quissucquansh, Scultop, Quequaquomet | Coginaquand, Atherton Co. | Quidnessett | Potter 1835 pp. 58–61 | 🟢 |
+| 1659 | **Tacommanan** submits Coheassuck lands to RI government with son Wasewkit and grandchild Namowish | Tacommanan, Wasewkit, Namowish | Coheassuck | Potter 1835 p. 60 | 🟢 |
+| 1660 | Quissucquansh, Ninigret, Scuttup, **Wequaqueniut** mortgage unsold Narragansett lands to Atherton Co. | Scuttup, Wequaqueniut, others | Narragansett Country | Potter 1835 p. 61 | 🟢 |
 | 1664 | Court record: *"John Greene Seniʳ, living at Narragansett or Aquidnesitt"* | John Greene Sr. | Newport Court | Newport court record | 🟢 |
+| pre-1665 | **Quequaquenuit dies** — Chapin 1931 gives death as 1665 | Quequaquenuit / Wequaqueniut | Quidnessett | Chapin 1931 / Potter 1835 | 🟡 *(secondary; page-level verification pending)* |
 | 1668 | **Scuttup dies** — Quidnessett sachem, son of Quaiapen and Mixanno. Pre-war death opens succession question. | Scuttup | Quidnessett | Academic source (Oxford UP): "in 1668, after the sachem Scuttup died" | 🟢 |
-| pre-1665 | **Quequaquenuit "died young"** — last records 1660–1664 | Quequaquenuit / Gideon | Quidnessett | Potter genealogical account | 🟡 |
+| 1668 | **Coganaquant** protests Atherton sale to **John Greene, Assistant** at Warwick | Coganaquant, John Greene | Warwick | Potter 1835 p. 58 | 🟢 |
+| 1668–1676 | **Post-Scuttup authority:** Quaiapin (Scuttup's mother) governs with Potuck as counselor and Quinnapin (Coginaquand's son) sharing authority | Quaiapin, Potuck, Quinnapin | Narragansett Country | Chapin 1931 | 🟡 *(secondary; page-level verification pending)* |
 | 1 Jan 1671/72 | Fones Purchase deed: Anashuecot named *"chiefe Sachem and heire properly"*; brothers Wampkegge, Ompamiate named; witnessed by Henry Greene (mark), George Wightman | Anashuecot, Wampkegge, Ompamiate, Henry Greene, George Wightman | Narragansett Country | Fones Record (Arnold transcription / RI State Archives) | 🟢 |
 | 1 Jan 1671/72 | Same deed: all seven signers recorded *"his marke"*, no pictograph described in transcribed text | Anashuecot + 6 others | — | Fones Record | 🟢 |
 | 1676 | Court-martial: witness "Daniel Green" testimony (Anaftiawin context) | "Daniel Green" | — | Hough 1858, pp. 173–191 *(retrieval incomplete)* | 🟡 |
-| 1676 | John Greene transports sachem Potuck in his sloop for peace negotiations. Promise broken by Talcott's attack July 3 | John Greene, Potuck | Warwick/Aquidneck | RI State Archives catalog | 🟢 |
+| 1676 | John Greene transports sachem Potuck in his sloop for peace negotiations. Promise broken by Talcott's attack July 3. **Potuck = Quaiapin's counselor per Chapin 1931.** | John Greene, Potuck | Warwick/Aquidneck | RI State Archives catalog | 🟢 |
+| 1676 | Quaiapin killed; Quinnapin executed (King Philip's War) | Quaiapin, Quinnapin | — | Chapin 1931 / Historical record | 🟢 |
 | 1676 | Providence town records burn (King Philip's War) | — | Providence | Historical event | 🟢 |
 | 1676–1686 | Robert Greene (tenant) appears in 3 independent Fones Record deeds near Cocumscussoc | Robert Greene (tenant) | Cocumscussoc | Fones Record full corpus pass | ⚪ |
 | 1677 | War-service reward list, 48 grantees, East Greenwich | — | East Greenwich | Bartlett *(partial search)* | 🟢 |
@@ -109,8 +115,10 @@ Recurring across 1672 deed, 1676 court-martial, 1677/8 affidavit, 1679 testimony
 *   **"Capt. John Greene" on wartime advisory council:** Warwick line per Firewall (distinct from Quidnessett John). 🟢
 *   **Joan Firewall:** Tracks distinct "Joan" figures across records to prevent conflation. Active, no resolution forced.
 *   **"Born Clarke" Floating Legend:** Attaches independently to ≥2 different Greenes (East Greenwich Fifth John; separate legend re: John of Quidnessett). Treated as a floating legend pattern, not independent corroborating fact each occurrence. ⚪
-*   **Mosenpp/Moseupp Sachem Identity:** Open thread #3. Chapin's *Sachems of the Narragansetts* (HathiTrust index) confirms "Moosup" as real documented sachem, strengthening the Absolom affidavit identification — but index has no entry for Anashuecot or the 1672 deed family group. 🟡
+*   **Mosenpp/Moseupp Sachem Identity:** Open thread #7. Chapin's *Sachems of the Narragansetts* (HathiTrust index) confirms "Moosup" as real documented sachem, strengthening the Absolom affidavit identification — but index has no entry for Anashuecot or the 1672 deed family group. 🟡
 *   **Pawtuxet Deed Conflation Hypothesis (NEW 2026-08-31):** The "19 May 1682" Pawtuxet deed may be a conflation of the 1658 Carpenter deed + the March 1682 Joan deed. See theory/proof_pieces/09_pawtuxet_problem.md. ⚠️
+*   **Post-Scuttup Succession Firewall (NEW 2026-09-02):** Chapin 1931 catalogs the paramount Narragansett succession as Quaiapin + Potuck + Quinnapin (1668–1676). The 1672 Fones deed calls Anashuecot "chiefe Sachem and heire properly" — these don't align. Four hypotheses held open equally (sub-sachem / title-not-name / Chapin missed Fones Record / parallel Tocomminon line). **None favored, none eliminated.** See `research/chapin_1931_sachems.md`. ⚪
+*   **John Greene as Magistrate (NEW 2026-09-02):** Potter 1835 p. 58 — John Greene served as colonial Assistant who took Coganaquant's formal protest against the Atherton Company in 1668. He was the magistrate overseeing Indigenous land disputes on the very land he lived on — administrative, not peripheral. 🟢
 
 ---
 
@@ -125,9 +133,10 @@ Narragansett has no masculine/feminine grammatical gender → *"his marke"* cann
 *   Fabricated composite sachem "Cojonoquond" (merged Coginiquant + Cononjonant).
 *   Fabricated 1743 "Absalom Jennings" runaway ad.
 *   Gemini architecture-first transition matrix with unsupported identity claims.
-*   `[SYNCED FROM SITE 2026-07-15]` **"Joan Greene = child of Alice Daniels":** YourRoots auto-assigned parentage with zero citations. *Vector:* Algorithmic Genealogy Contamination (YourRoots). Joan is documented as an adult sachem-line heir (1672), legal actor (1682), and mother (1682) — contradicts an unsourced child-parentage claim.
+*   `[SYNCED FROM SITE 2026-07-15]` **"Joan Greene = child of Alice Daniels":** YourRoots auto-assigned parentage with zero citations. *Vector:* Algorithmic Genealogy Contamination (YourRoots). **Note:** Joan is documented as a wife and beneficiary (1682 deed). Anashuecot is separately documented as a sachem-line heir (1672 deed). **No primary source connects them.** The YourRoots child-parentage claim contradicts the documentary record for Joan and is rejected.
 *   `[SYNCED FROM SITE 2026-07-15]` **Lora La Mance circular pedigrees (1903/04):** Anchoring "Joan Beggarly" legends. *Vector:* Secondary compilation error / echo chamber. Per Law 2, excluded from evidentiary use.
 *   **"Vol. VII pp. 177–178" Citation (Law 4 — 2026-09-01):** The Pawtuxet deed citation "Records of RI & Providence Plantations, Vol. VII, pp. 177–178" is **DEFINITIVELY INVALID.** Bartlett Vol. VII covers 1770–1776; those pages contain 1773 Gaspee commission records. The citation has been traced as a likely volume-numbering conflation (manuscript vs. printed series). See `contamination/vol_vii_citation_kill.md` and `research/pawtuxet_deed_investigation.md`. *Vector:* Secondary compilation citation error, propagated through circular copying.
+*   **Orphan Citation Trace (Law 4 — 2026-09-02):** Austin 1887, F.L. Greene 1894, Updike 1907, and Bates 1918–19 ALL describe the March 1682 deed and NONE mention a Pawtuxet deed. The "vol. VII pp. 177–178" citation does NOT appear in any located pre-20th-century published source. Citation is circular — likely entered the genealogical stream from a post-Bates mid-20th-century compilation. See `research/pawtuxet_deed_investigation.md`.
 
 *Note on Bow-and-Arrow Mark:* Previously logged here as a fabrication; resolved 2026-07-17 upon reviewing `images/absolom-affidavit.jpg`. Visible tear damage exists over the mark location consistent with (not confirming) the claim. Reclassified to ⚪ **UNVERIFIED** and removed from Contamination Log.
 
@@ -135,10 +144,10 @@ Narragansett has no masculine/feminine grammatical gender → *"his marke"* cann
 
 ## 8. Open Threads — Priority Order
 
-1.  **Joan's mark visual** — FamilySearch film 564389. Physical evidence she personally created.
-2.  **Potter 1835 pp. 58–60** — resolves Coginaquand identity, cheapest decisive test.
+1.  **Joan's mark visual** — FamilySearch film 564389 (NK Land Records manuscript, images 9–12). Physical evidence she personally created. Settles three questions: co-grantor status, mother clause wording, Joan's mark.
+2.  ~~**Potter 1835 pp. 58–60**~~ — ✅ **RESOLVED (2026-09-02).** Read from Internet Archive. Coginaquand confirmed as real sachem who sold Quidnessett to Atherton (1659) and protested to John Greene as Assistant (1668). Alias Jassarono confirmed. Tacommanan + son Wasewkit + grandchild Namowish submitted Coheassuck lands (1659). See `research/potter_1835_atherton_analysis.md`.
 3.  **Brooks endnote** for "cousin to her late husband" — determines primary vs. secondary status.
-4.  **⚠️ SOURCE CHAIN BROKEN — UNVERIFIED:** ~~Verify 1682 Pawtuxet deed existence — check Colony Records Vol. VII pp. 177–178.~~ Vol. VII pp. 177–178 = 1773 Gaspee commission records (DEFINITIVELY KILLED 2026-09-01). Bates (1918–19) does not mention this deed. F.L. Greene 1894 says *"nothing further is known about her."* **Citation chain is broken. Deed remains ⚠️ UNVERIFIED.** Continue research for source if physical archive access becomes available — remaining leads: RI Land Evidences Vol. I original manuscript (Film 564389), Peirce Manuscripts (films 22291–22292), Providence town deed books. See `research/pawtuxet_deed_investigation.md` and `contamination/vol_vii_citation_kill.md`.
+4.  **⚠️ SOURCE CHAIN BROKEN — UNVERIFIED:** ~~Verify 1682 Pawtuxet deed existence — check Colony Records Vol. VII pp. 177–178.~~ Vol. VII pp. 177–178 = 1773 Gaspee commission records (DEFINITIVELY KILLED 2026-09-01). Bates (1918–19) does not mention this deed. F.L. Greene 1894 says *"nothing further is known about her."* Orphan citation trace complete (2026-09-02): Austin 1887, F.L. Greene 1894, Updike 1907 ALL NEGATIVE. **Citation chain is broken and confirmed circular. Deed remains ⚠️ SUSPENDED.** Remaining path: physical archives only (Film 564389, Peirce MSS, Providence town deed books). See `research/pawtuxet_deed_investigation.md`.
 5.  **Pull Bates's actual 1918–19 primary citation** for the 25 Sept 1685 *"John Greene Sr. now deceased"* deed.
 6.  **Verify 1676 court-martial witness "Daniel Green"** = Daniel² Greene of Quidnessett (currently PROBABLE only).
 7.  **Resolve Mosenpp/Moseupp sachem identity** against Absolom affidavit.
@@ -148,8 +157,10 @@ Narragansett has no masculine/feminine grammatical gender → *"his marke"* cann
 11. **IG Merchant Seal Hypothesis:** I.G. gravestone (RIHS Mss 117, Box 1, Folders 8–13) as potential key evidence.
 12. **Audit FamilyTreeDNA Green/e Surname Project (Code H10429) against Kit B2778:**
     *   *INTERNAL INCONSISTENCY:* "R-FTB79899" vs. "R-Z255" — unresolved. Both codes held ⚪ **UNVERIFIED** until mismatch is explained.
-13. **Coginiquant / Cogineaquon / Cononjonant Name-Cluster:** Read Potter's Atherton Purchase (~pp. 58–60) or Arnold 1894.
+13. ~~**Coginiquant / Cogineaquon / Cononjonant Name-Cluster:**~~ ✅ **PARTIALLY RESOLVED (2026-09-02).** Coginaquand confirmed as real sachem, distinct from Anashuecot (Potter 1835 + Chapin 1931). Father of Quinnapin (Chapin). Alias Jassarono (Potter). Remaining: full Chapin page-level read for Tocomminon entries.
 14. **Direct documentary link between Joan and Anashuecot (CRITICAL — closes Tier 2):** No single source contains both names. The 31-year documentary gap (1672 execution → 1703 Fones entry) remains the central evidentiary vulnerability.
+15. **Chapin 1931 direct HathiTrust read (NEW 2026-09-02):** Does Chapin mention Tocomminon/Tacommanan? Does his bibliography include the Fones Record? Answers determine whether Anashuecot's omission is an oversight or a genuine exclusion. See `research/chapin_1931_sachems.md`.
+16. **1680s life-estate deed baseline (NEW 2026-09-02):** Pull 10–20 comparable NK/Narragansett-country deeds where parents convey to sons with maintenance annuities. Does "mother" language appear in any? Establishes whether the "father or mother" clause is standard or anomalous.
 
 ---
 
@@ -162,13 +173,14 @@ Narragansett has no masculine/feminine grammatical gender → *"his marke"* cann
 | **GAP-3** | NK Land Evidence Book 1 (1682 Entries) | RI State Archives / NK Town Hall | Direct inspection of damaged/restored 1682 pages for uncopied marginal signatures. |
 | **~~GAP-4~~** | ~~Pawtuxet Sale Original MS (19 May 1682)~~ | ~~RIHS / Providence City Archives~~ | **⚠️ SUSPENDED** — deed existence unverified. See proof piece #9. |
 | **~~GAP-4A~~** | ~~Colony Records Vol. VII pp. 177–178~~ | ~~RI State Archives / RIHS~~ | **✅ RESOLVED (2026-09-01) — DEFINITIVELY KILLED.** Vol. VII covers 1770–1776. Pages 177–178 = 1773 Gaspee commission records. Not a 1682 deed. See `contamination/vol_vii_citation_kill.md`. |
-| **GAP-4B** | F.L. Greene 1894 p. 10 full read | Archive.org / RIHS | Does Greene mention a SECOND deed (Pawtuxet) or only the home-place? **F.L. Greene says *"nothing further is known about her"* — consistent with only one deed.** |
-| **GAP-4C** | Bates 1918–19 full read for Pawtuxet | RIHS Collections XI–XII | **✅ RESOLVED (2026-08-31) — NEGATIVE.** Bates does NOT mention the Pawtuxet deed. Goes directly from March 1682 home-place deed → will → death. |
-| **GAP-4D (NEW)** | Trace the orphan citation | F.L. Greene 1894 / Austin 1887 / Updike 1907 / post-Bates compilations | Find the EARLIEST source that cites "Vol. VII pp. 177–178" and determine whether it references an actual manuscript or is circular. See `research/open_leads.md` #21. |
-| **GAP-4E (NEW)** | Physical archive verification | RI Land Evidences Vol. I manuscript (Film 564389); Peirce MSS (films 22291–22292); Providence town deed books | If the deed exists, it may be in an undiscovered physical source. Continue research if access becomes available. |
+| **GAP-4B** | F.L. Greene 1894 p. 10 full read | Archive.org / RIHS | **✅ RESOLVED (2026-09-02).** F.L. Greene mentions ONLY the home-place deed. Says *"nothing further is known about her."* Consistent with one deed only. |
+| **~~GAP-4C~~** | ~~Bates 1918–19 full read for Pawtuxet~~ | ~~RIHS Collections XI–XII~~ | **✅ RESOLVED (2026-08-31) — NEGATIVE.** Bates does NOT mention the Pawtuxet deed. Goes directly from March 1682 home-place deed → will → death. |
+| **~~GAP-4D~~** | ~~Trace the orphan citation~~ | ~~F.L. Greene 1894 / Austin 1887 / Updike 1907 / post-Bates compilations~~ | **✅ RESOLVED (2026-09-02) — ALL TARGETS NEGATIVE.** Austin 1887, F.L. Greene 1894, Updike 1907, Bates 1918–19 all describe March 1682 only. Citation is circular. See `research/pawtuxet_deed_investigation.md`. |
+| **GAP-4E** | Physical archive verification | RI Land Evidences Vol. I manuscript (Film 564389); Peirce MSS (films 22291–22292); Providence town deed books | If the deed exists, it may be in an unseen physical source. Continue research if access becomes available. |
 | **GAP-5** | Bates Research Notes (1685 Deed) | RIHS Manuscripts (Bates Coll.) | Retrieve full transcript and citation for the 25 Sept 1685 *"John Greene Sr. deceased"* deed. |
-| **GAP-6** | Potter 1835 pp. 58–60 Retrieval | Archive.org / LC | Verify Atherton Purchase signer list to resolve the *Coginiquant / Cononjonant* open thread. |
+| **~~GAP-6~~** | ~~Potter 1835 pp. 58–60 Retrieval~~ | ~~Archive.org / LC~~ | **✅ RESOLVED (2026-09-02).** Atherton signer names extracted. Coginaquand confirmed. Tacommanan confirmed. See `research/potter_1835_atherton_analysis.md`. |
 | **GAP-7** | NYPL Court-Martial Record (Hough 1858) | NYPL (HBC Call No.) | Complete 18-page transcript of *Anaftiawin* / *Daniel Green* cross-examination. |
+| **GAP-8 (NEW)** | Chapin 1931 direct HathiTrust read | HathiTrust (mdp.39015076399285) | Full page-by-page read for Tocomminon, bibliography check for Fones Record. |
 
 ---
 
@@ -179,9 +191,13 @@ Narragansett has no masculine/feminine grammatical gender → *"his marke"* cann
 *   **Model C Eliminated:** Joan Beggarly = Alice Daniels (wife of Surgeon John of Warwick, d. ~1643/44). Timeline impossible. La Mance contamination chain fully traced.
 *   **Single-Appearance Analysis (NEW):** Joan has ONE verified legal appearance (March 1682). The second (Pawtuxet, May 1682) is SUSPENDED. If she has only one appearance, her documentary footprint is uniquely thin among comparable Quidnessett wives — consistent with Model A (Indigenous woman), anomalous for Model B (English woman).
 *   **Scuttup d.1668 (CORRECTED):** The Quidnessett sachem succession gap is pre-war (1668–1672), not war-caused.
-*   **Weunquesh 1679 (NEW):** Female sachem exercised land authority at Westerly court 3 years before Joan signs. Contextual parallel.
+*   **Post-Scuttup Succession (NEW 2026-09-02):** Chapin 1931 catalogs Quaiapin + Potuck + Quinnapin as post-1668 authority. Anashuecot NOT in Chapin. Four open hypotheses — none favored, none eliminated. See `research/chapin_1931_sachems.md`.
+*   **John Greene as Magistrate (NEW 2026-09-02):** Potter 1835 confirms John Greene took Coganaquant's formal protest as colonial Assistant (1668). Administrative relationship to Narragansett sachems, not peripheral.
+*   **Weunquesh 1679 (NEW):** Female sachem exercised land authority at Westerly court 3 years before Joan is named in a deed. Contextual parallel.
 *   **Biggest Resolved Gap (2026):** Bates 1918–19 obtained and read — closes the single highest-priority structural gap that persisted March–June 2026.
 *   **Biggest Resolved Date Correction:** John Sr.'s death **PROVEN pre-25 Sept 1685**; "1695 will names Joan" reclassified as contamination (⚫ **NULL**).
+*   **Orphan Citation Trace Complete (2026-09-02):** Austin 1887, F.L. Greene 1894, Updike 1907, Bates 1918–19 — all describe March 1682 only, none cite Pawtuxet. Citation is circular. See `research/pawtuxet_deed_investigation.md`.
+*   **Potter 1835 Read (2026-09-02):** Coginaquand confirmed real sachem. Tacommanan = PROBABLE Tocomminon (same territory, generation, role). Namowish confirmed as Tacommanan's grandchild. No Anashuecot variant found. See `research/potter_1835_atherton_analysis.md`.
 *   **Strongest Live Lead:** Tocomminon confirmed as real, distinct person (Anashuecot's father) — solid node, not a memory artifact.
 *   **Robert (VA) Status:** Classified as ⚪ **UNVERIFIED** in both Section 2 and Section 10 pending direct search of Virginia records.
 *   **Tier 2 Thesis (Joan = Anashuecot):** Remains ⚪ **UNVERIFIED** — the 31-year gap between 1672 execution and 1703 Fones entry is an unresolved evidentiary vulnerability.
@@ -210,9 +226,14 @@ Narragansett has no masculine/feminine grammatical gender → *"his marke"* cann
 
 ## 12. Next Steps
 
-1.  ~~Verify Pawtuxet deed existence (GAP-4A/4B/4C)~~ — GAP-4A KILLED, GAP-4C NEGATIVE, GAP-4B consistent with one deed only. **Remaining path: physical archives (GAP-4E) and citation trace (GAP-4D).**
-2.  Joan's mark (FamilySearch film 564389).
-3.  Potter 1835 pp. 58–60 (Coginaquand identity).
-4.  Brooks endnote for "cousin to her late husband."
-5.  Flag contradictions for Hostile Reviewer.
-6.  Execute remaining research queue targets.
+1.  **🔴 FamilySearch DGS 008204949 images 9–12** — the NK Land Records manuscript. Settles three open questions at once: Joan as co-grantor? Mother clause wording? Joan's mark? Physical visit required.
+2.  **🔴 Direct HathiTrust read of Chapin 1931** — does Chapin mention Tocomminon? Does his bibliography include the Fones Record? Authenticated access required.
+3.  **🟡 Brooks endnote** for "cousin to her late husband" — primary vs. secondary determination.
+4.  **🟡 1680s life-estate deed baseline** — pull 10–20 comparable deeds. Does "mother" language appear? Digital search.
+5.  **🟡 F.L. Greene 1894 full read** — John alive in 1686 and 1692, contradicting Bates's pre-1685 death. New contradiction worth documenting.
+6.  Flag contradictions for Hostile Reviewer.
+7.  Execute remaining research queue targets.
+
+---
+
+*Updated 2 September 2026. All Five Laws in force. All hypotheses held open per Law 1. No assumed survival or demise without primary proof.*
