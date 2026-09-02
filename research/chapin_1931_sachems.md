@@ -36,7 +36,7 @@ This is significant but not fatal to the thesis:
 - The 1672 Fones deed calls Anashuecot "chiefe Sachem and heire properly" — that's a PRIMARY SOURCE
 - Chapin's list is a SECONDARY COMPILATION based on his reading of available sources
 - If Chapin didn't consult the Fones Record (which wasn't officially enrolled until 1703 and sits in NK Land Evidence, not colony records), he wouldn't have found the name
-- Alternatively, Chapin may have classified Anashuecot under the Potowomut/Coheassuck sub-jurisdiction rather than the main Narragansett line
+- Alternatively, Chapin may have classified Anashuecot under a different sub-jurisdiction rather than the main Narragansett line
 
 **Assessment:** Chapin's omission means the archive CANNOT cite Chapin as corroboration for Anashuecot's sachem status. The 1672 Fones deed remains the SOLE primary source for that title. This is a genuine weakness, not a disqualification (Law 3).
 
@@ -69,39 +69,49 @@ Chapin's succession creates a PROBLEM for the archive's thesis:
 **Chapin's post-Scuttup line:** Quaiapin + Potuck + Quinnapin (1668–1676)
 **Fones Record (1672):** Anashuecot = "chiefe Sachem and heire properly"
 
-These don't align. Either:
+These don't align. The archive holds the following as **OPEN HYPOTHESES** — none proven, none eliminated:
 
-**A. Anashuecot is a sub-sachem** — "chiefe Sachem" of a specific territory (Quidnessett? Coheassuck?) under the broader Narragansett authority held by Quaiapin. Chapin would list the paramount line; Anashuecot governs locally. This is the most conservative reading and is consistent with Narragansett political structure, which had multiple sachems governing subdivisions.
+**A. Anashuecot is a sub-sachem** — "chiefe Sachem" of a specific territory (Quidnessett? Coheassuck?) under the broader Narragansett authority held by Quaiapin. Chapin would list the paramount line; Anashuecot governs locally. This reading is consistent with Narragansett political structure, which had multiple sachems governing subdivisions. ⚪ UNVERIFIED.
 
-**B. Anashuecot is a title/role, not a personal name** — and the person behind it is someone Chapin DOES list (Quaiapin? Quinnapin? Someone else?). The 1672 deed records what the English called a "chiefe Sachem" without mapping it onto Chapin's genealogy.
+**B. Anashuecot is a title/role, not a personal name** — and the person behind it is someone Chapin DOES list (Quaiapin? Quinnapin? Someone else?). The 1672 deed records what the English called a "chiefe Sachem" without mapping it onto Chapin's genealogy. ⚪ UNVERIFIED.
 
-**C. Chapin missed it** — his 1931 book may not have consulted the Fones Record, which was enrolled in NK Land Evidence (local, not colony-level) and was not widely cited before Bates 1918. Chapin may have worked primarily from Bartlett's Colony Records and Providence/Warwick town records, which wouldn't include a Narragansett-internal deed.
+**C. Chapin missed it** — his 1931 book may not have consulted the Fones Record, which was enrolled in NK Land Evidence (local, not colony-level) and was not widely cited before Bates 1918. Chapin may have worked primarily from Bartlett's Colony Records and Providence/Warwick town records, which wouldn't include a Narragansett-internal deed. ⚪ UNVERIFIED — requires checking Chapin's bibliography.
 
-**D. Anashuecot is from the Tocomminon line, NOT the Quaiapin/Mixanno line** — and governs Coheassuck/Potowomut territory that Chapin may have treated as separate from the "Narragansett" proper. The 1677/78 affidavit names Tocomminon as Anashuecot's father. Potter 1835 confirms Tacommanan submitting Coheassuck lands in 1659. If Anashuecot inherited through Tocomminon's line rather than Quaiapin's, Chapin wouldn't list them in the main Narragansett succession.
+**D. Anashuecot is from the Tocomminon line, NOT the Quaiapin/Mixanno line** — The 1677/78 affidavit names Tocomminon as Anashuecot's father. Potter 1835 confirms a Tacommanan submitting Coheassuck lands in 1659. IF Tacommanan = Tocomminon (PROBABLE but not proven — see `research/potter_1835_atherton_analysis.md`), AND if Anashuecot inherited through that line, Chapin might not list them in the main Narragansett succession. ⚪ UNVERIFIED — built on two unproven links (Tacommanan = Tocomminon, and Anashuecot's inheritance path).
 
-**Assessment:** Option D is the strongest hypothesis right now. Anashuecot = Tocomminon's heir governing Coheassuck/Potowomut. The 1672 deed calls them "chiefe Sachem" of that territory, not paramount sachem of all Narragansett. Chapin catalogs the paramount line (Canonicus → Miantonomi → Mixanno → Scuttup → Quaiapin). The Tocomminon/Coheassuck line is a parallel structure.
+**No hypothesis is favored.** Each requires independent verification. The archive does not assume which is correct.
 
 ---
 
-## What This Means for Joan
+## What We Know vs. What We Don't
 
-If Anashuecot is from the Tocomminon/Coheassuck line:
-- Joan = daughter of a **local sachem line**, not the paramount Narragansett line
-- John Greene's Quidnessett land is adjacent to Coheassuck — geographic proximity supports marriage
-- The "or to her mother if she survive" clause (if verified) protects a matrilineal interest in this LOCAL sachem line
-- Joan's invisibility in English records is doubly expected: female + subordinate sachem line
+### 🟢 PROVEN (primary source):
+- Anashuecot is named "chiefe Sachem and heire properly" in the 1672 Fones deed
+- Tocomminon is named as Anashuecot's father in the 1677/78 Absolom affidavit
+- The 1677/78 affidavit says Anashuecot was "conveyed out of ye country"
+- Quaiapin, Potuck, and Quinnapin governed post-1668 (Chapin, secondary)
+- John Greene transported Potuck in 1676 (primary)
 
-If Anashuecot is NOT from this line, or is the same person as someone Chapin lists under a different name, the argument changes.
+### ⚪ UNVERIFIED:
+- Whether Tacommanan (Potter 1659) = Tocomminon (Absolom 1677/78)
+- Whether Anashuecot governed a sub-territory or was paramount sachem
+- What "conveyed out of ye country" means — displacement, hiding, captivity, death, voluntary departure, or something else. **The archive does not assume survival or demise.**
+- Whether Chapin consulted the Fones Record
+- Anashuecot's gender (scribe default "his" in transcription; original mark area physically damaged/torn — unable to verify or discount)
+- Any connection between Anashuecot and Joan Greene
 
-**The decisive test:** Does Chapin mention Tocomminon/Tacommanan at all? If he catalogs the Coheassuck sub-sachems separately, Anashuecot may appear there. This requires a direct read of the HathiTrust pages.
+### ⚫ NOT KNOWN:
+- What happened to Anashuecot after 1677/78
+- Whether Anashuecot was alive or dead by 1682
+- Whether the Tocomminon line and the Quaiapin line are related or independent
 
 ---
 
 ## Open Thread Updates
 
-- **Thread #1 (Chapin 1931):** CONSULTED — key findings extracted. Full page-by-page read still needed for Tocomminon entries.
+- **Thread #1 (Chapin 1931):** CONSULTED — key findings extracted. Full page-by-page read still needed for Tocomminon entries and bibliography check.
 - **Thread #13 (Coginiquant cluster):** FURTHER RESOLVED. Coginaquand confirmed as father of Quinnapin (Chapin).
-- **Succession gap (1665–1672):** PARTIALLY RESOLVED. Chapin's post-1668 authority = Quaiapin + Potuck + Quinnapin. Anashuecot either governs a sub-territory or is unlisted.
+- **Succession gap (1665–1672):** PARTIALLY MAPPED. Chapin's post-1668 authority = Quaiapin + Potuck + Quinnapin. Where Anashuecot fits is an open question with four unproven hypotheses.
 
 ---
 
@@ -109,8 +119,8 @@ If Anashuecot is NOT from this line, or is the same person as someone Chapin lis
 
 1. **Direct HathiTrust read** — authenticated access to page images. Search for: Tocomminon, Tacommanan, Coheassuck, Potowomut, Awashouse, Fones.
 2. **Check Chapin's source bibliography** — did he use the Fones Record? NK Land Evidence? This determines whether the omission is an oversight or a genuine exclusion.
-3. **Map the political geography** — if Anashuecot governs Coheassuck/Potowomut and Quaiapin governs the Narragansett proper, these are TWO parallel lines operating in overlapping territory. John Greene lives between them.
+3. **Map the political geography** — determine whether Coheassuck/Potowomut and the Narragansett proper are treated as one jurisdiction or two in colonial records. Document what the sources say, not what we infer.
 
 ---
 
-*All findings via secondary synthesis of Chapin 1931. No narrative smoothing. Page-by-page verification pending. All hypotheses held open per Law 1.*
+*All findings via secondary synthesis of Chapin 1931. No narrative smoothing. No assumed survival or demise of any person without primary proof. Page-by-page verification pending. All hypotheses held open per Law 1.*
