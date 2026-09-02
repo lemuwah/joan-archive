@@ -44,6 +44,8 @@ The tool returned **blanket "zero results"** across every search category:
 
 The tool then offered to **commit these false negatives to the git repository** as "negative-results" findings.
 
+**Visual evidence and third-party review:** See [`contamination/assets/tuskcontamination.md`](assets/tuskcontamination.md) — annotated screenshots of the session with independent Gemini review confirming the search failure was not user error.
+
 ### What Actually Exists (Known Primary Sources the Tool Failed to Find)
 
 The following primary sources are documented, transcribed, and publicly accessible. The archive holds or has verified all of them:
