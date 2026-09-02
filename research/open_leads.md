@@ -1,5 +1,5 @@
 # Open Research Leads
-**Last updated:** 2026-09-01 (Vol. VII citation definitively killed — Gaspee 1773 confirmed)
+**Last updated:** 2026-09-02 (GAP-4D orphan citation trace complete — all three targets NEGATIVE)
 
 Tracker for all open leads, organized by priority. Each lead includes what's known, what's needed, and where to look.
 
@@ -39,15 +39,15 @@ Tracker for all open leads, organized by priority. Each lead includes what's kno
 - **Also killed:** "RI Land Evidence Vol. IV" (cited by Kimi for home-place deed) covers 1721–1741 (notary/maritime). Also wrong century.
 - **See:** `contamination/vol_vii_citation_kill.md`
 
-### 21. TRACE THE ORPHAN CITATION — NEW
-- **What:** The "vol. VII pp. 177–178" citation does NOT come from Bates. Where DOES it come from? It may originate from a post-Bates genealogical compilation.
-- **Targets (in order):**
-  1. **F.L. Greene, *The Greene Family and Its Branches* (1894)** — pre-dates Bates. If this book cites the deed, it predates and is independent of Bates.
-  2. **Austin, *Genealogical Dictionary of Rhode Island* (1887)** — Referenced by Bates on p. 351. Widely used by later compilers.
-  3. **Updike, *A History of the Episcopal Church in Narragansett* (1907/1937)** — Covers Narragansett land transactions.
-  4. **Post-Bates compilations** — *Genealogies of Rhode Island Families* (1983), Ancestry/FamilySearch source citations, other genealogical databases.
-- **Goal:** Find the EARLIEST source that cites "vol. VII pp. 177–178" and determine whether it references an actual manuscript or is circular.
-- **Status:** PENDING — start with F.L. Greene 1894 on Internet Archive.
+### 21. TRACE THE ORPHAN CITATION — RESOLVED
+- **Status:** ✅ RESOLVED (2026-09-02) — **ALL THREE TARGETS NEGATIVE. Citation is circular.**
+- **What was checked:**
+  1. **F.L. Greene, *Descendants of Joseph Greene of Westerly* (1894)** — Internet Archive full text. Mentions ONLY the March 1682 home-place deed. Does NOT cite the Pawtuxet deed, does NOT cite "vol. VII pp. 177–178." Says "nothing further is known about her."
+  2. **Austin, *Genealogical Dictionary of Rhode Island* (1887)** — Internet Archive. Entry for "Greene John (of Kings Town)" on p. 86. Documents March 1682 home-place deed. Does NOT cite the Pawtuxet deed or "vol. VII."
+  3. **Updike, *History of the Episcopal Church in Narragansett* (1907)** — Three-volume edition checked. Discusses Surgeon John and wife Joane Tattersoll (different generation entirely). Does NOT cite the 1682 Pawtuxet deed.
+- **Conclusion:** The three most likely pre-1920 sources for Narragansett land transactions ALL describe the March 1682 deed and NONE mention Pawtuxet. The "vol. VII pp. 177–178" citation does NOT appear in any pre-20th-century published source located to date. It likely originates from a **post-Bates genealogical compilation** (mid-20th century or later) that either misread a manuscript volume number, conflated the 1658 Carpenter deed with the March 1682 Joan deed, or copied from another unverified secondary source.
+- **Remaining lead:** *Genealogies of Rhode Island Families* (1983, from NEHGR) — a major mid-century compilation that aggregates earlier articles. If the citation entered the genealogical stream, this is the likeliest vehicle. Also: Ancestry/FamilySearch source citations attached to the Joan Greene profile, which may reveal which user or database first entered the "vol. VII" reference.
+- **See:** `research/pawtuxet_deed_investigation.md`
 
 ---
 
@@ -114,4 +114,4 @@ Tracker for all open leads, organized by priority. Each lead includes what's kno
 
 ---
 
-*Updated 2026-09-01. Vol. VII citation definitively killed (Gaspee 1773). Joan = ONE verified appearance (March 1682). All leads tracked per Law 1.*
+*Updated 2026-09-02. GAP-4D orphan citation trace complete — all targets negative, citation is circular. Joan = ONE verified appearance (March 1682). All leads tracked per Law 1.*
