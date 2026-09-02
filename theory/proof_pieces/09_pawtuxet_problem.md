@@ -1,9 +1,9 @@
 # Proof Piece #9 — The Pawtuxet Problem (FINAL STATUS)
-## Verbatim Deed Search Complete — Deed Not Located in Digitized Sources
+## Verbatim Deed Search Complete — Deed Not Located; Citation Chain Broken
 
-**Status:** 🟠 CRITICAL UNCERTAINTY — verbatim text not found after exhaustive search of digitized sources
-**Laws applied:** Law 1 (No Narrative Smoothing), Law 2 (No Early Exclusion)
-**Date:** 2026-08-31 (final revision)
+**Status:** ⚠️ SUSPENDED — verbatim text not found; citation definitively killed; orphan citation trace complete (all targets negative)
+**Laws applied:** Law 1 (No Narrative Smoothing), Law 4 (No Algorithmic Contamination)
+**Date:** 2026-09-02 (final revision)
 
 ---
 
@@ -16,7 +16,24 @@
 | History & Genealogy of the Carpenter Family | ✅ Searched | ❌ NO |
 | Early Records of the Town of Providence | ✅ Searched | ❌ NO |
 | Bartlett Colony Records Vol. III (1678–1706) | ✅ Searched via web | ❌ NO |
-| Joan Archive source spine citation (Vol. VII pp. 177–178) | Cited | NOT VERIFIED — Vol. VII not digitized or not located |
+| Bartlett Colony Records Vol. VII (the cited source) | ✅ DEFINITIVELY KILLED | ❌ NO — Vol. VII covers 1770–1776; pp. 177–178 = 1773 Gaspee commission records |
+| RI State Archives "Land & Public Notary Records" Vol. VII | ✅ Checked | ❌ NO — covers 1758–1790 (maritime/notary) |
+| Bates, RIHS Collections XI–XII (1918–19) | ✅ Full read | ❌ NO — March 1682 only; does NOT mention Pawtuxet |
+| F.L. Greene, *Descendants of Joseph Greene* (1894) | ✅ Full text read | ❌ NO — March 1682 only; "nothing further is known about her" |
+| Austin, *Genealogical Dictionary of RI* (1887) | ✅ Checked | ❌ NO — March 1682 only (p. 86) |
+| Updike, *Episcopal Church in Narragansett* (1907) | ✅ Checked | ❌ NO — discusses Surgeon John only |
+
+---
+
+## Citation Chain: BROKEN
+
+The citation "Records of RI & Providence Plantations, Vol. VII, pp. 177–178" is **DEFINITIVELY INVALID:**
+
+- Bartlett Vol. VII covers **1770–1776** (Revolutionary era)
+- Pages 177–178 contain **1773 Gaspee commission records** (Chief Justice Smythe's request + commissioners' letter to Lord Dartmouth)
+- The four most authoritative pre-1920 sources (Austin 1887, F.L. Greene 1894, Updike 1907, Bates 1918–19) ALL describe the March 1682 deed and NONE mention a Pawtuxet deed
+- The citation does NOT appear in any located pre-20th-century published source
+- See `contamination/vol_vii_citation_kill.md` and `research/pawtuxet_deed_investigation.md`
 
 ---
 
@@ -48,7 +65,7 @@ Witness list includes:
 And on the confirmation by Pessicus/Mossup/Sucquaune:
 - Witnesses: **John Greene** and **Phillip Green**
 
-⚠️ **This is the same Awashouse who appears in Potter 1835 as a land owner at Nisquitianxsett (Oct 5, 1661) and who is phonetically equivalent to Anashuecot (Fones Record 1672).** The Warwick record confirms Awashouse was present at Gorton/Houlden land transactions, witnessed by John Greene.
+⚠️ **Awashouse (1659) is phonetically in the same cluster as Anashuecot (1672).** Whether they are the same person is UNVERIFIED. The Warwick record confirms Awashouse was present at Gorton/Houlden land transactions, witnessed by a John Greene.
 
 ---
 
@@ -76,19 +93,30 @@ The 1659 Nanaquakesett deed witnesses include **"John Greene"** (no qualifier) a
 - ✅ 1658 Pawtuxet sale by "John Greene Junr Warwick" to William Carpenter (verbatim text confirmed)
 - ✅ Awashouse present at 1659 Nanaquakesett deed witnessed by a John Greene
 
-### SUSPENDED (pending verbatim 1682 deed verification):
+### SUSPENDED (pending physical archive verification):
 - ⚠️ Joan signed a second deed in May 1682 — UNVERIFIED in primary sources
 - ⚠️ Joan consented to a Pawtuxet land sale — UNVERIFIED
 - ⚠️ John of Quidnessett held "inherited" Pawtuxet land — UNVERIFIED
 - ⚠️ £10 consideration — UNVERIFIED
 - ⚠️ Gorton and Wickes as witnesses to a Joan deed — UNVERIFIED
 
-### Where the Deed Might Still Be:
-1. **Bartlett Colony Records Vol. VII** — the cited source. May exist in a volume not yet digitized or under a different catalog entry on Archive.org
-2. **North Kingstown Town Records** — the deed may be recorded in the purchasing town, not the selling town
-3. **Peirce Manuscripts (FamilySearch films 22291–22292)** — handwritten abstracts
-4. **FamilySearch Film 564389** — RI Land Evidences Vol. I manuscript original
-5. **Physical archives** — RI State Archives, North Kingstown Town Clerk
+### Where the Deed Might Still Be (if it exists):
+1. **RI Land Evidences Vol. I original manuscript** — FamilySearch Film 564389. Worthington's printed abstracts may have skipped this deed even though the manuscript contains it.
+2. **A Providence town-level deed book** — Pawtuxet was under Providence jurisdiction. Providence colonial deed books use their own volume numbering. "Vol. VII" could be a Providence deed book, not Bartlett's colony records.
+3. **Peirce Manuscripts (FamilySearch films 22291–22292)** — handwritten deed abstracts
+4. **RIHS MSS 1210, Box 2, Folder 13** (Kettelle Papers — "Greenes of Quidnessett")
+5. **North Kingstown town records** — original deed books, if they survived the fire
+
+---
+
+## Conflation Hypothesis
+
+The strongest alternative explanation: Two real deeds got merged into one phantom:
+- **1658 deed:** Pawtuxet land + William Carpenter + "John Greene" = real
+- **March 1682 deed:** Joan + consent language = real
+- **May 1682 "Pawtuxet deed":** combines elements of both = possibly phantom
+
+The 1658 deed shares three elements with the claimed 1682 deed: Pawtuxet land + Carpenter as grantee + a John Greene as grantor. This is the strongest evidence for conflation, but conflation is NOT proven — it is one hypothesis held open alongside the possibility that the deed exists in an unseen physical source.
 
 ---
 
@@ -111,15 +139,19 @@ The Warwick records **strongly confirm** that "John Greene Junior" in Warwick go
 
 ---
 
-## Priority Actions
+## Priority Actions (updated 2026-09-02)
 
-1. **Check FamilySearch Film 564389** — may contain the manuscript original of the 1682 Pawtuxet deed
-2. **Contact RI State Archives (Kenneth Carlson)** — ask specifically about a John Greene → William Carpenter Pawtuxet deed, May 1682
-3. **Check Bates 1918–19 directly** — does she cite the Pawtuxet deed with a specific source?
-4. **Check Huling 1883–84 in Narragansett Historical Register** — does he mention a Pawtuxet sale?
+1. ~~Check Bartlett Vol. VII~~ — ✅ KILLED (1773 Gaspee, not 1682 deed)
+2. ~~Check Bates 1918–19~~ — ✅ NEGATIVE (March 1682 only)
+3. ~~Check F.L. Greene 1894~~ — ✅ NEGATIVE ("nothing further is known about her")
+4. ~~Check Austin 1887~~ — ✅ NEGATIVE (March 1682 only)
+5. ~~Check Updike 1907~~ — ✅ NEGATIVE (Surgeon John only)
+6. **Check FamilySearch Film 564389** — RI Land Evidences Vol. I manuscript original (PHYSICAL VISIT)
+7. **Check Providence town deed books** — "Vol. VII" may be a Providence volume number
+8. **Check Peirce Manuscripts** — FamilySearch films 22291–22292
 
 ---
 
 *Joan Archive — theory/proof_pieces/09_pawtuxet_problem.md*
 *Maintained under the 5 Laws of the Joan Archive*
-*Status: CRITICAL UNCERTAINTY — exhaustive digital search complete, deed not found, conflation hypothesis open*
+*Status: ⚠️ SUSPENDED — citation chain broken; all pre-1920 sources negative; conflation hypothesis open; physical archive verification remains the only path*
