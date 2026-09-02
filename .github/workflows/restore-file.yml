@@ -10,6 +10,8 @@ on:
         description: 'Commit message'
         required: true
         type: string
+permissions:
+  contents: write
 jobs:
   restore:
     runs-on: ubuntu-latest
