@@ -1,0 +1,77 @@
+name: Fix 5 integrity errors
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Apply fixes
+        run: |
+          python3 << 'SCRIPT'
+          with open('index.html', 'r', encoding='utf-8') as f:
+              content = f.read()
+
+          changes = []
+
+          # 1. Nawham = John's name, not wife
+          old = 'Nawham \u2014 d. July 2, 1676'
+          new = 'Unknown (Nawham = his own name per Roger Williams, not a wife)'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('1. Nawham: was listed as wife, now corrected')
+
+          # 2. "two moments in 1682" -> one
+          old = 'present only at the two moments in 1682 when her land rights intersected English legal process'
+          new = 'present only at the one verified moment in 1682 when her land rights intersected English legal process'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('2. Archival Signature: two moments -> one verified')
+
+          # 3. "legally required party" -> beneficiary
+          old = 'as a legally required party (a claimed second 1682 appearance is suspended)'
+          new = 'as a named beneficiary (John signs alone in the surviving abstract; a claimed second 1682 appearance is suspended)'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('3. Hypothesis A: legally required party -> beneficiary')
+
+          # 4. Footer: Three -> Five agent cycles
+          old = 'Three agent cycles completed'
+          new = 'Five agent cycles completed'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('4. Footer: Three -> Five cycles')
+
+          # 5. Lt. John wife: Unresolved -> Mary Jefferay
+          # The Five-John table has td cells in order
+          old = '<td>Unresolved</td><td>Abigail Wardwell</td>'
+          new = '<td>Mary Jefferay (Bates; d/o William Jefferay)</td><td>Abigail Wardwell</td>'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('5. Lt. John wife: Unresolved -> Mary Jefferay (Bates)')
+
+          with open('index.html', 'w', encoding='utf-8') as f:
+              f.write(content)
+
+          print(f'Applied {len(changes)} of 5 fixes:')
+          for c in changes:
+              print(f'  {c}')
+          SCRIPT
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git diff --cached --stat
+            git commit -m "fix: 5 integrity errors on live site (Nawham, two->one, beneficiary, footer, Lt. John wife)"
+            git push
+          fi
