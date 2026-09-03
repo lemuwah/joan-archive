@@ -20,6 +20,7 @@ Before producing ANY output, read:
    - `agents/Explorer/README.md`
    - `agents/hostile_reviewer/README.md`
    - `agents/Archivist/README.md`
+6. `AGENT_GUARDRAILS.md` (do-no-harm rules, CARE-B checkpoint, competing models, verified facts)
 
 These files define:
 - the project's core theory  
@@ -27,6 +28,7 @@ These files define:
 - your role  
 - your output format  
 - your guardrails  
+- what you MUST NOT claim without manuscript evidence
 
 ---
 
@@ -81,6 +83,10 @@ To keep the organism coherent:
 - Do **not** erase contradictions.  
 - Do **not** invent sources.  
 - Do **not** place files outside the correct folder.  
+- Do **not** center one identity model over others without evidence. The archive holds competing hypotheses (Models A–G). All open models receive equal treatment. See `AGENT_GUARDRAILS.md` §3.
+- Do **not** treat transcribed narratives as verbatim quotes. Bates's summary language does not prove Joan's legal actions. See `AGENT_GUARDRAILS.md` §1.
+- Do **not** describe Narragansett governance or cultural practice from non-Indigenous sources without tagging it as 📖 EXTERNAL INTERPRETATION. See `AGENT_GUARDRAILS.md` §6.
+- Do **not** commit any public-facing content without passing all five CARE-B checks: Collective benefit? Authority respected? Responsibility for harm? Ethical review? Bias check? See `AGENT_GUARDRAILS.md` §5.
 
 You may:
 - add new files  
@@ -124,12 +130,15 @@ Avoid:
 - emotional language  
 - ungrounded speculation  
 - collapsing multiple ideas prematurely  
+- centering one model as the default assumption
 
 ---
 
 # 7. Why This Matters
 
 This is a living research organism. Every file you touch, every hypothesis you generate, every contradiction you flag — all of it flows through the system. Maintain coherence. Maintain rigor. Maintain the archive.
+
+The archive investigates **who Joan was** — not a preferred theory about who Joan was.
 
 ---
 
@@ -144,6 +153,7 @@ Follow the rhythm.
 Contribute with rigor.  
 Attack with precision.  
 Synthesize with care.  
-Expand with imagination.
+Expand with imagination.  
+Center no model. Hold all hypotheses open.
 
-_Last updated: 2026-08-21_
+_Last updated: 2026-09-03_
