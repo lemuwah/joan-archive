@@ -108,6 +108,7 @@
     font-size: 0.85rem;
     color: var(--muted);
   }
+  .eml { direction: rtl; unicode-bidi: bidi-override; }
 </style>
 </head>
 <body>
@@ -222,7 +223,7 @@
 
 <p>All descriptions of Narragansett governance or cultural practice on this site are derived from non-Indigenous academic sources and are tagged 📖 <strong>EXTERNAL INTERPRETATION</strong>. This archive defers to Narragansett authority on their own history, governance, and cultural practices. That space is held, not filled.</p>
 
-<p>If you are from a Narragansett or other Indigenous research background, your input carries distinct and higher weight — not folded into general feedback. A private channel is available: email <strong>wendyleagreen@yahoo.com</strong> with "Joan Archive — Indigenous Review" in the subject line. Your correspondence will not be shared publicly without permission.</p>
+<p>If you are from a Narragansett or other Indigenous research background, your input carries distinct and higher weight — not folded into general feedback. A private channel is available: <span id="eml-idx"></span> with "Joan Archive — Indigenous Review" in the subject line. Your correspondence will not be shared publicly without permission.</p>
 
 <!-- ============ NAVIGATION ============ -->
 <h2>Explore</h2>
@@ -241,6 +242,17 @@
   <p>Maintained under the <a href="https://github.com/lemuwah/joan-archive/blob/main/theory/three_laws.md">Six Laws</a> of the Joan Archive.</p>
   <p>© 2026 Wendy Green. Open-access research. No narrative smoothing.</p>
 </footer>
+
+<script>
+(function(){
+  var u='wendyleagreen',d='yahoo.com',s='mailto:'+u+'@'+d+'?subject=Joan%20Archive%20%E2%80%94%20Indigenous%20Review';
+  var spots=['eml-idx','eml-cont','eml-about','eml-cont-gen'];
+  spots.forEach(function(id){
+    var el=document.getElementById(id);
+    if(el){var a=document.createElement('a');a.href=s;a.textContent=u+'@'+d;el.appendChild(a);}
+  });
+})();
+</script>
 
 </body>
 </html>

@@ -150,9 +150,9 @@
 <!-- ============ CONTACT ============ -->
 <h2>Contact</h2>
 
-<p>For research inquiries or corrections: open a <a href="https://github.com/lemuwah/joan-archive/issues">GitHub issue</a> or email <strong>wendyleagreen@yahoo.com</strong>.</p>
+<p>For research inquiries or corrections: open a <a href="https://github.com/lemuwah/joan-archive/issues">GitHub issue</a> or email <span id="eml-about"></span>.</p>
 
-<p>For Indigenous scholarly review: email <strong>wendyleagreen@yahoo.com</strong> with "Joan Archive — Indigenous Review" in the subject line. See the <a href="contribute.html">Contribute</a> page for the full private channel description.</p>
+<p>For Indigenous scholarly review: same address, subject line "Joan Archive — Indigenous Review." See the <a href="contribute.html">Contribute</a> page for the full private channel description.</p>
 
 <footer>
   <p><strong>The Joan Archive</strong> — <a href="index.html">Home</a> |
@@ -161,6 +161,14 @@
   <p>Maintained under the <a href="https://github.com/lemuwah/joan-archive/blob/main/theory/three_laws.md">Six Laws</a> of the Joan Archive.</p>
   <p>© 2026 Wendy Green. Open-access research. No narrative smoothing.</p>
 </footer>
+
+<script>
+(function(){
+  var u='wendyleagreen',d='yahoo.com',s='mailto:'+u+'@'+d;
+  var el=document.getElementById('eml-about');
+  if(el){var a=document.createElement('a');a.href=s;a.textContent=u+'@'+d;el.appendChild(a);}
+})();
+</script>
 
 </body>
 </html>
