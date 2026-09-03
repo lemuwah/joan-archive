@@ -11,225 +11,236 @@
 <meta property="og:url" content="https://lemuwah.github.io/joan-archive/">
 <style>
   :root {
-    --bg: #0a0a0f; --surface: #111118; --surface-raised: #1a1a24; --surface-hover: #22222e;
-    --border: #2a2a3a; --border-accent: #3a3a4a;
-    --text-primary: #e8eef1; --text-secondary: #a0a0b0; --text-tertiary: #7a7a8a; --text-quaternary: #4a4a5a;
-    --accent: #c9a9e9; --accent-dim: #c9a9e933; --accent-glow: #c9a9e915;
-    --danger: #c45c5c; --danger-dim: #c45c5c22;
-    --positive: #5c9e8e; --positive-dim: #5c9e8e22;
-    --warning: #c9a44c; --warning-dim: #c9a44c22;
-    --info: #5c8ec9; --info-dim: #5c8ec922;
+    --parchment: #faf6f0;
+    --ink: #2c2416;
+    --accent: #8b6914;
+    --muted: #6b5b3e;
+    --border: #d4c5a0;
+    --card-bg: #f5efe4;
+    --tag-open: #d4c5a0;
+    --tag-eliminated: #c9a0a0;
+    --danger: #8b2500;
+    --positive: #2e6b4f;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text-primary); line-height: 1.7; }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .container { max-width: 780px; margin: 0 auto; padding: 48px 24px; }
-  .hero { text-align: center; padding: 64px 24px 48px; border-bottom: 1px solid var(--border); }
-  .hero h1 { font-size: 42px; font-weight: 400; line-height: 1.1; margin-bottom: 16px; font-family: Georgia, "Times New Roman", serif; }
-  .hero h1 em { color: var(--accent); font-style: italic; }
-  .hero-sub { font-size: 15px; color: var(--text-secondary); max-width: 560px; margin: 0 auto 24px; }
-  .section { padding: 40px 0; border-bottom: 1px solid var(--border); }
-  .section-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent); margin-bottom: 16px; font-weight: 600; }
-  .section h2 { font-size: 24px; font-weight: 500; margin-bottom: 12px; }
-  .section p { font-size: 14px; color: var(--text-secondary); margin-bottom: 14px; }
-  .fact-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 13px; }
-  .fact-table th { text-align: left; padding: 10px 12px; border-bottom: 2px solid var(--border); color: var(--accent); font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
-  .fact-table td { padding: 12px; border-bottom: 1px solid var(--border); color: var(--text-secondary); vertical-align: top; }
-  .badge { display: inline-flex; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: 600; text-transform: uppercase; }
-  .badge.verified { background: var(--positive-dim); color: var(--positive); }
-  .badge.suspended { background: var(--danger-dim); color: var(--danger); }
-  .badge.hypothesis { background: var(--accent-dim); color: var(--accent); }
-  .note-box { padding: 16px 20px; border-radius: 8px; border-left: 3px solid var(--info); background: color-mix(in srgb, var(--info) 6%, transparent); font-size: 13px; color: var(--text-secondary); line-height: 1.6; margin: 20px 0; }
-  .note-box.ethics { border-left-color: var(--warning); background: color-mix(in srgb, var(--warning) 6%, transparent); }
-  .note-box.danger { border-left-color: var(--danger); background: color-mix(in srgb, var(--danger) 6%, transparent); }
-  .model-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 20px 0; }
-  .model-card { border: 1px solid var(--border); border-radius: 8px; padding: 16px; background: var(--surface-raised); }
-  .model-card h3 { font-size: 14px; font-weight: 500; margin-bottom: 6px; color: var(--text-primary); }
-  .model-card p { font-size: 12px; color: var(--text-tertiary); line-height: 1.5; margin: 0; }
-  .laws-bar { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin: 24px 0; }
-  .law-chip { padding: 4px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 10px; color: var(--text-tertiary); }
-  .nav-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 24px 0; }
-  .nav-card { border: 1px solid var(--border); border-radius: 8px; padding: 16px; background: var(--surface-raised); text-align: center; transition: border-color 0.2s; }
-  .nav-card:hover { border-color: var(--accent); text-decoration: none; }
-  .nav-card h3 { font-size: 14px; margin-bottom: 4px; color: var(--text-primary); }
-  .nav-card p { font-size: 11px; color: var(--text-tertiary); margin: 0; }
-  .site-footer { padding: 32px 24px; text-align: center; font-size: 11px; color: var(--text-quaternary); border-top: 1px solid var(--border); }
-  .correction-banner { background: var(--danger-dim); border: 1px solid color-mix(in srgb, var(--danger) 30%, transparent); padding: 12px 20px; border-radius: 8px; margin: 20px 0; font-size: 12px; color: var(--text-secondary); }
-  .correction-banner a { color: var(--danger); }
-  @media (max-width: 600px) {
-    .hero h1 { font-size: 28px; }
-    .container { padding: 24px 16px; }
-    .model-grid { grid-template-columns: 1fr; }
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: var(--parchment);
+    color: var(--ink);
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+  }
+  h1 { font-size: 1.8rem; margin-bottom: 0.3rem; color: var(--accent); }
+  h2 { font-size: 1.3rem; margin-top: 2.5rem; margin-bottom: 0.8rem; color: var(--accent); border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+  p { margin-bottom: 1rem; }
+  .subtitle { color: var(--muted); font-size: 1rem; margin-bottom: 2rem; font-style: italic; }
+  .nav-bar {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-bar a { color: var(--accent); text-decoration: none; font-size: 0.9rem; }
+  .nav-bar a:hover { text-decoration: underline; }
+  .nav-bar .current { font-weight: bold; text-decoration: none; color: var(--ink); }
+  a { color: var(--accent); }
+  ul, ol { margin-left: 1.5rem; margin-bottom: 1rem; }
+  li { margin-bottom: 0.4rem; }
+  .corrections-banner {
+    background: #f0e8d8;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.8rem 1.2rem;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+  }
+  .unknown-box {
+    background: #f5efe4;
+    border-left: 3px solid var(--danger);
+    padding: 1rem 1.2rem;
+    margin-bottom: 2rem;
+  }
+  .model-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .model-card h3 { font-size: 1.05rem; margin-bottom: 0.4rem; color: var(--accent); }
+  .model-card p { margin-bottom: 0.5rem; font-size: 0.92rem; }
+  .tag {
+    display: inline-block;
+    font-size: 0.78rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    margin-bottom: 0.3rem;
+  }
+  .tag-open { background: var(--tag-open); color: var(--ink); }
+  .tag-eliminated { background: var(--tag-eliminated); color: var(--ink); }
+  .law-plain { color: var(--muted); font-size: 0.88rem; font-style: italic; display: block; margin-top: 0.1rem; }
+  .nav-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+  }
+  .nav-cards a {
+    display: block;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--ink);
+    font-size: 0.9rem;
+  }
+  .nav-cards a:hover { background: #ede5d5; }
+  .nav-cards strong { color: var(--accent); }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.85rem;
+    color: var(--muted);
   }
 </style>
 </head>
 <body>
 
-<div class="container">
+<nav class="nav-bar">
+  <span class="current">Home</span>
+  <a href="context.html">Context</a>
+  <a href="analysis.html">Analysis</a>
+  <a href="contribute.html">Contribute</a>
+  <a href="about.html">About</a>
+  <a href="https://github.com/lemuwah/joan-archive">GitHub</a>
+</nav>
 
-  <!-- HERO -->
-  <div class="hero">
-    <h1>The <em>Joan</em> Archive</h1>
-    <p class="hero-sub">One name. One deed. No maiden name, no parents, no parish, no ship, no burial.</p>
-    <div class="laws-bar">
-      <span class="law-chip">Law 1: No Smoothing</span>
-      <span class="law-chip">Law 2: La Mance Sieve</span>
-      <span class="law-chip">Law 3: No Early Exclusion</span>
-      <span class="law-chip">Law 4: No AI Contamination</span>
-      <span class="law-chip">Law 5: No Jurisdictional Assumption</span>
-      <span class="law-chip">Law 6: No Centering</span>
-    </div>
-  </div>
+<h1>The Joan Archive</h1>
+<p class="subtitle">Open Access Research Library</p>
 
-  <!-- CORRECTIONS -->
-  <div class="correction-banner">
-    <strong>⚠️ Corrections applied:</strong> This archive corrected two overclaims in August–September 2026. A claimed second 1682 deed was suspended (citation invalidated). The “mother clause” wording is unverified. <a href="https://github.com/lemuwah/joan-archive/blob/main/CORRECTIONS.md">Full corrections log →</a>
-  </div>
-
-  <!-- WHAT THE RECORD SAYS -->
-  <div class="section">
-    <div class="section-label">What the Record Says</div>
-    <h2>Joan Greene, 1682</h2>
-    <p>Joan appears in a single colonial record — named as the wife of John Greene of Quidnessett in a March 1682 land deed. A life annuity of 30 shillings per year is reserved to her. No other record of Joan has been located.</p>
-
-    <table class="fact-table">
-      <thead>
-        <tr><th>Fact</th><th>Source</th><th>Status</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Joan is named as wife of John Greene in a March 1682 land deed</td>
-          <td>Worth abstract, <em>RI Land Evidences</em> Vol. I, p. 122</td>
-          <td><span class="badge verified">Verified</span></td>
-        </tr>
-        <tr>
-          <td>A life annuity of 30 shillings per year is reserved to her</td>
-          <td>Worth abstract, <em>RI Land Evidences</em> Vol. I, p. 122</td>
-          <td><span class="badge verified">Verified</span></td>
-        </tr>
-        <tr>
-          <td>No other record of Joan has been located</td>
-          <td>Negative search result (as of Sep 2026)</td>
-          <td><span class="badge verified">Verified</span></td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div class="note-box">
-      <strong>What we do not know:</strong> Whether Joan signed or marked the deed. Whether she gave consent as a legal party. Whether the deed contains a clause referencing her mother. These questions require examination of the original manuscript (FamilySearch DGS 008204949, images 9–12), which this project has not yet accessed.
-    </div>
-  </div>
-
-  <!-- WHO WAS SHE -->
-  <div class="section">
-    <div class="section-label">Open Question</div>
-    <h2>Who was Joan?</h2>
-    <p>This archive holds competing hypotheses and tests each against available colonial records. It makes no identity claim. It maps what is known, what has been searched, and what remains in silence. No model is privileged.</p>
-
-    <div class="model-grid">
-      <div class="model-card">
-        <h3>Model A — Narragansett</h3>
-        <p>Sachem-line woman. Phonetic, geographic, temporal overlap with Anashuecot (1672 Fones deed). <span class="badge hypothesis">Hypothesis</span></p>
-      </div>
-      <div class="model-card">
-        <h3>Model B — English</h3>
-        <p>Undocumented English woman. Many colonial wives left no records. Not unusual for the period. <span class="badge hypothesis">Hypothesis</span></p>
-      </div>
-      <div class="model-card">
-        <h3>Model C — Irish</h3>
-        <p>Y-DNA points to Irish Sea cluster (R-Z255). Could be patrilineal only or indicate broader origin. <span class="badge hypothesis">Hypothesis</span></p>
-      </div>
-      <div class="model-card">
-        <h3>Model D — Indentured</h3>
-        <p>Would explain absence of family records. Requires checking indenture and court records. <span class="badge hypothesis">Hypothesis</span></p>
-      </div>
-      <div class="model-card">
-        <h3>Model E — Enslaved</h3>
-        <p>Post-1676 enslavement of Narragansett people is documented. Requires checking disposition records. <span class="badge hypothesis">Hypothesis</span></p>
-      </div>
-      <div class="model-card">
-        <h3>Model F — Widow</h3>
-        <p>Remarried widow with no surviving first-marriage records. Requires probate search. <span class="badge hypothesis">Hypothesis</span></p>
-      </div>
-      <div class="model-card">
-        <h3>Model G — Other</h3>
-        <p>Something we haven’t considered. The archive keeps this slot open. <span class="badge hypothesis">Hypothesis</span></p>
-      </div>
-    </div>
-
-    <p style="font-size: 12px; color: var(--text-tertiary); text-align: center;">Each model is explored on the <a href="analysis.html">analysis page</a> with equal evidentiary treatment. Law 6: No Centering.</p>
-  </div>
-
-  <!-- INDIGENOUS PERSPECTIVES -->
-  <div class="section">
-    <div class="section-label">A Note on Narragansett Perspectives</div>
-
-    <div class="note-box ethics">
-      <p>This archive is authored by an independent researcher working from colonial-era English-language records — an inherently limited and outside vantage point.</p>
-      <p style="margin-top: 10px;">Contact has been initiated with the <a href="https://www.tomaquagmuseum.org/" target="_blank"><strong>Tomaquag Museum</strong></a> regarding Narragansett scholarly review. As of September 2026, no formal review by Narragansett scholars has occurred.</p>
-      <p style="margin-top: 10px;">All descriptions of Narragansett governance or cultural practice on this site are derived from non-Indigenous academic sources and are marked with a 📖 <strong>EXTERNAL INTERPRETATION</strong> tag. This archive defers to Narragansett authority on their own history, governance, and cultural practices. That space is held, not filled.</p>
-      <p style="margin-top: 10px;">If you are from a Narragansett or other Indigenous research background, your input carries <strong>distinct and higher weight</strong> — not folded into general feedback. A private channel is available.</p>
-    </div>
-  </div>
-
-  <!-- NAVIGATE THE ARCHIVE -->
-  <div class="section">
-    <div class="section-label">Navigate the Archive</div>
-    <h2>Pages</h2>
-
-    <div class="nav-links">
-      <a href="analysis.html" class="nav-card">
-        <h3>📊 Analysis</h3>
-        <p>Open hypotheses, evidence mapping, competing models stress-tested</p>
-      </a>
-      <a href="context.html" class="nav-card">
-        <h3>🗺 Context</h3>
-        <p>Timeline, geography, colonial jurisdiction, digitization crisis</p>
-      </a>
-      <a href="contribute.html" class="nav-card">
-        <h3>🤝 Contribute</h3>
-        <p>How to help, negative space log, what hasn’t been searched</p>
-      </a>
-      <a href="about.html" class="nav-card">
-        <h3>📖 About</h3>
-        <p>Methodology, Six Laws, AI hallucination checklist, corrections</p>
-      </a>
-      <a href="https://github.com/lemuwah/joan-archive" class="nav-card" target="_blank">
-        <h3>💻 GitHub</h3>
-        <p>Full repository, agent framework, source spine, evidence files</p>
-      </a>
-      <a href="https://github.com/lemuwah/joan-archive/discussions" class="nav-card" target="_blank">
-        <h3>💬 Discuss</h3>
-        <p>Open threads, questions, collaboration</p>
-      </a>
-    </div>
-  </div>
-
-  <!-- THE SIX LAWS -->
-  <div class="section">
-    <div class="section-label">Governing Framework</div>
-    <h2>The Six Laws</h2>
-    <p><strong>1. No Narrative Smoothing</strong> — All contradictions logged and held open. Two facts near each other do not become one inference.</p>
-    <p><strong>2. La Mance Law</strong> — No claim traceable to La Mance (1904) accepted without independent primary corroboration.</p>
-    <p><strong>3. No Premature Disqualification</strong> — No hypothesis eliminated until thoroughly tested. Applies to all models A–G equally.</p>
-    <p><strong>4. No Algorithmic Contamination</strong> — AI can suggest directions. AI cannot provide evidence. AI-generated connections are flagged, never presented as findings.</p>
-    <p><strong>5. No Jurisdictional Assumption</strong> — No colony or archive dismissed as unlikely. Extends to all identity models.</p>
-    <p><strong>6. No Centering</strong> — The archive investigates who Joan was, not a preferred theory. No model receives more space than its evidence warrants.</p>
-  </div>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <p>The Joan Archive — Open access research library. Primary sources are public records.</p>
-    <p style="margin-top: 6px;">Framework v2.0 — September 2026. Six Laws. No narrative smoothing. No centering.</p>
-    <p style="margin-top: 6px;">
-      <a href="https://github.com/lemuwah/joan-archive" target="_blank">GitHub</a> ·
-      <a href="https://github.com/lemuwah/joan-archive/blob/main/CORRECTIONS.md" target="_blank">Corrections</a> ·
-      <a href="https://github.com/lemuwah/joan-archive/blob/main/methodology/ai_hallucination_checklist.md" target="_blank">AI Checklist</a>
-    </p>
-  </footer>
-
+<div class="corrections-banner">
+  ⚠️ This archive has published corrections to its own prior claims. Transparency is part of the method. <a href="https://github.com/lemuwah/joan-archive/blob/main/CORRECTIONS.md">Read the corrections log.</a>
 </div>
+
+<!-- ============ THREE FACTS ============ -->
+<h2>What We Know</h2>
+<p>The complete list of verified facts about Joan:</p>
+<ol>
+  <li><strong>Joan is named as wife of John Greene</strong> in a March 1682 land deed at Quidnessett.<br>
+    <em>Source: Worth abstract, RI Land Evidences Vol. I, p. 122</em></li>
+  <li><strong>A life annuity of 30 shillings per year</strong> is reserved to her.<br>
+    <em>Source: Worth abstract</em></li>
+  <li><strong>No other record of Joan has been located.</strong><br>
+    <em>Source: Methodological — negative search result (as of September 2026)</em></li>
+</ol>
+
+<!-- ============ WHAT WE DON'T KNOW ============ -->
+<div class="unknown-box">
+  <h2 style="border:none; margin-top:0; padding:0;">What We Do Not Know</h2>
+  <ul>
+    <li>Whether Joan signed or marked the deed — <strong>not documented in any source we hold</strong></li>
+    <li>Whether Joan gave consent as a legal party — <strong>not documented</strong></li>
+    <li>Whether the deed references her mother — <strong>conflicting secondary accounts</strong></li>
+    <li>Joan's maiden name, parents, origin, birth, death, or burial — <strong>unknown</strong></li>
+  </ul>
+  <p>These questions require examination of the <a href="contribute.html">original manuscript</a>.</p>
+</div>
+
+<!-- ============ COMPETING MODELS ============ -->
+<h2>Who Was She? — Seven Competing Hypotheses</h2>
+<p>The archive holds seven hypotheses about Joan's identity. Six remain open. One has been eliminated. No model is privileged. Each is tested against the same evidence on the <a href="analysis.html">Analysis</a> page.</p>
+
+<div class="model-card">
+  <h3>Model A — Narragansett Sachem-Line Woman</h3>
+  <span class="tag tag-open">⚫ OPEN</span>
+  <p>Joan's 40-year documentary silence is unique among Quidnessett wives. The region was a documented site of English–Indigenous interaction.</p>
+</div>
+
+<div class="model-card">
+  <h3>Model B — English Woman, Undocumented</h3>
+  <span class="tag tag-open">⚫ OPEN</span>
+  <p>"Joan" is an English name in an English legal instrument. Absence of records for colonial women is common, though Joan's silence is unusually deep.</p>
+</div>
+
+<div class="model-card">
+  <h3>Model C — Irish Origin</h3>
+  <span class="tag tag-open">⚫ OPEN</span>
+  <p>Y-DNA results point to an Irish Sea genetic cluster. Irish immigration to New England in this period is documented but under-studied.</p>
+</div>
+
+<div class="model-card">
+  <h3>Model D — Indentured Servant</h3>
+  <span class="tag tag-open">⚫ OPEN</span>
+  <p>Would explain absence of maiden name and family records. Post-indenture marriage to a landholder is documented in the colonial period.</p>
+</div>
+
+<div class="model-card">
+  <h3>Model E — Enslaved Person</h3>
+  <span class="tag tag-open">⚫ OPEN</span>
+  <p>Post-1676 legal framework created conditions where enslaved persons entered English households. Would explain total absence of prior identity.</p>
+</div>
+
+<div class="model-card">
+  <h3>Model F — Widow of Prior Marriage</h3>
+  <span class="tag tag-open">⚫ OPEN</span>
+  <p>Remarriage of widows was common in colonial New England. Joan may be known by a prior husband's name in other records.</p>
+</div>
+
+<div class="model-card">
+  <h3>Model G — Joan Beggarly / Alice Daniels (La Mance 1904)</h3>
+  <span class="tag tag-eliminated">🔴 ELIMINATED</span>
+  <p>La Mance conflated multiple women. Alice Daniels Beggerly died c. 1643/44. Joan is alive in 1682. Timeline impossible. Wrong John Greene. <a href="https://github.com/lemuwah/joan-archive/blob/main/CORRECTIONS.md">Details.</a></p>
+</div>
+
+<!-- ============ SIX LAWS ============ -->
+<h2>The Six Laws</h2>
+<ol>
+  <li><strong>No Narrative Smoothing</strong>
+    <span class="law-plain">If a document doesn't say it, we don't say it.</span></li>
+  <li><strong>La Mance Law</strong>
+    <span class="law-plain">Every claim gets traced to its origin. If the chain breaks, the claim is suspended.</span></li>
+  <li><strong>No Premature Disqualification</strong>
+    <span class="law-plain">No hypothesis gets thrown out until the evidence says so — not because another hypothesis looks better.</span></li>
+  <li><strong>No Algorithmic Contamination</strong>
+    <span class="law-plain">When AI makes an error, the error is logged and kept on record — never silently corrected.</span></li>
+  <li><strong>No Jurisdictional Assumption</strong>
+    <span class="law-plain">Don't assume the answer is only in Rhode Island. Check everywhere.</span></li>
+  <li><strong>No Centering</strong>
+    <span class="law-plain">No favorite hypothesis. All models get equal space until evidence decides.</span></li>
+</ol>
+<p><a href="https://github.com/lemuwah/joan-archive/blob/main/theory/three_laws.md">Read the full Laws.</a></p>
+
+<!-- ============ INDIGENOUS PERSPECTIVES ============ -->
+<h2>Indigenous Perspectives</h2>
+<p>This archive is authored by an independent researcher working from colonial-era English-language records — an inherently limited and outside vantage point. Contact has been initiated with the <a href="https://www.tomaquagmuseum.org/">Tomaquag Museum</a> regarding Narragansett scholarly review. As of September 2026, no formal review has occurred.</p>
+
+<p>All descriptions of Narragansett governance or cultural practice on this site are derived from non-Indigenous academic sources and are tagged 📖 <strong>EXTERNAL INTERPRETATION</strong>. This archive defers to Narragansett authority on their own history, governance, and cultural practices. That space is held, not filled.</p>
+
+<p>If you are from a Narragansett or other Indigenous research background, your input carries distinct and higher weight — not folded into general feedback. A private channel is available: email <strong>wendyleagreen@yahoo.com</strong> with "Joan Archive — Indigenous Review" in the subject line. Your correspondence will not be shared publicly without permission.</p>
+
+<!-- ============ NAVIGATION ============ -->
+<h2>Explore</h2>
+<div class="nav-cards">
+  <a href="context.html"><strong>Context</strong><br>Colonial and Narragansett historical setting</a>
+  <a href="analysis.html"><strong>Analysis</strong><br>Seven hypotheses, tested equally</a>
+  <a href="contribute.html"><strong>Contribute</strong><br>What hasn't been searched yet</a>
+  <a href="about.html"><strong>About</strong><br>Methodology, corrections, AI disclosure</a>
+  <a href="https://github.com/lemuwah/joan-archive"><strong>GitHub</strong><br>Source files and research logs</a>
+  <a href="https://github.com/lemuwah/joan-archive/discussions"><strong>Discuss</strong><br>Join the conversation</a>
+</div>
+
+<footer>
+  <p><strong>The Joan Archive</strong> — <a href="https://github.com/lemuwah/joan-archive">GitHub</a> |
+  <a href="https://github.com/lemuwah/joan-archive/blob/main/CORRECTIONS.md">Corrections</a></p>
+  <p>Maintained under the <a href="https://github.com/lemuwah/joan-archive/blob/main/theory/three_laws.md">Six Laws</a> of the Joan Archive.</p>
+  <p>© 2026 Wendy Green. Open-access research. No narrative smoothing.</p>
+</footer>
 
 </body>
 </html>
