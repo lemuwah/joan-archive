@@ -11,45 +11,56 @@ permalink: /primary/homeplace-1682/
 </div>
 
 # 1682 Home-Place Deed
-**Status:** 🟢 PROVEN (deed exists; Joan named) / ⚠️ "or to her mother if she survive" wording UNVERIFIED — see [`contradictions/mother-clause-wording.md`](../contradictions/mother-clause-wording.md)
+**Status:** 🟢 PROVEN (deed exists; Joan named as beneficiary) / ⚠️ "or to her mother if she survive" wording UNVERIFIED — see [`contradictions/mother-clause-wording.md`](../contradictions/mother-clause-wording.md)
 
-This deed confirms **Joan** as John's living wife and as beneficiary of the annuity after his death. F.L. Greene 1894 (p. 10) paraphrases the two instruments as:
+This deed confirms **Joan** as John's living wife and as **beneficiary** of the annuity after his death.
+
+## What the manuscript says (AI-transcribed, ⚠️ UNVERIFIED)
+
+Image 10 of the NK Land Records (FamilySearch DGS 008204949) preserves the **Daniel instrument** — John Green Senr's deed of 120 acres to son Daniel. Four independent AI reads (Claude + Migoo ×3) of the FamilySearch full-resolution scan reveal:
+
+- **Grantor:** "the Said **John Green Senr**" — Five-John Firewall confirmed from manuscript
+- **Joan's role:** Joan appears in the **annuity/life-estate clause**, NOT in the granting clause. The phrasing reads: "*until such time as God Almighty has Required it of him or his Wife or during her natural life... of John & Joane Greene*"
+- **Joan is a BENEFICIARY**, not a co-grantor. John alone acts in the "Know all People" clause. Only John signs.
+- **Annual payment:** Thirty shillings, paid yearly — matches F.L. Greene 1894 paraphrase
+- **Acreage:** 120 acres, consistent with F.L. Greene's description
+- **"or to her mother if she survive":** NOT visible in any AI read. The life-estate clause uses "him or his Wife" language instead.
+
+Full transcription: [`digitization/transcriptions/008204949-10.md`](../digitization/transcriptions/008204949-10.md)
+
+## What this means for the contradictions
+
+**C-1 (co-grantor vs. beneficiary):** 🟡 Leaning RESOLVED. Both surviving instrument texts (Daniel manuscript + James abstract) show Joan as beneficiary. Bates's "co-grantor" framing is his summary description, not the deed's wording. Per AGENT_GUARDRAILS.md §1: transcribed narratives are not verbatim quotes.
+
+**C-3 (mother clause):** 🟠 NOT RESOLVED. F.L. Greene's "father or mother should live" may be a loose paraphrase of the manuscript's "him or his Wife" language. The specific "mother" phrasing remains unattributed to any primary source.
+
+F.L. Greene 1894 (p. 10) paraphrases the two instruments as:
 
 > "...each of said sons to pay thirty shillings annually as long as their father or mother should live."
 
 The Worth 1921 abstract of the James instrument reads: *"...unto John Green... and after his decease to Joane Greene, his wife."* Neither source contains the phrase "or to her mother if she survive."
 
 ## What the document actually says
-- 180 acres to **Daniel** (120ac) and **James** (60ac).
+- 180 acres total to **Daniel** (120ac) and **James** (60ac).
 - Life-estate clause keeps parents on the land until death.
+- Annuity of thirty shillings yearly payable to John and Joan jointly until both have died.
 - Confirms **Joan is alive** in March 1682.
-- Joan is a **named beneficiary**, not a grantor: John Greene alone signs and acknowledges (Worth abstract; NK manuscript signature block).
-- **No mark or signature for Joan is visible** in the Daniel instrument's execution block (Image 10, DGS 008204949). Only John Green signs.
+- Joan is a **named beneficiary**, not a grantor: John Greene Senr alone signs and acknowledges.
+- **No mark or signature for Joan** in either instrument.
 
 ## What genealogy sites incorrectly claim
 - That Joan died before 1682.
 - That the deed is "just a land division" with no kinship data.
 - That the life-estate clause is "standard boilerplate."
+- That Joan was a "co-grantor" who "deeded" the land alongside John.
 
-None of these claims appear in the document.
+None of these claims are supported by the manuscript text.
 
 ## Evidence Status
 🟢 **PROVEN** — The deed is paraphrased in F.L. Greene 1894, p.10, abstracted (James instrument only) in Worth 1921 pp. 173–174, and survives as a post-1686 record copy (Daniel instrument) in NK Land Records (FamilySearch DGS 008204949, img 10). ⚠️ The "or to her mother" wording is **not** in any of these.
 
-### AI Transcriptions of Image 10 (Daniel Instrument)
-Two independent AI transcription attempts have been performed on Image 10:
-- **Claude AI** (2026-09-03) and **Migoo AI** (2026-09-04)
-- Both converge on the same names and structure in the execution/acknowledgment block
-- Full dual-transcription file: [`digitization/transcriptions/008204949-10.md`](../digitization/transcriptions/008204949-10.md)
-
-**Key findings from Image 10:**
-- John Green signs by name (literate)
-- H. Tibbits witnesses by mark (illiterate)
-- [A]l[l]worth witnesses (likely Arthur Aylworth)
-- Jo: Fones acknowledges as recording officer/warden
-- **Joan is NOT named** in the visible execution/acknowledgment portion
-- The deed body (left-hand page) is heavily damaged; the life-estate clause, annuity, and beneficiary language would be there
-- **The left-hand page is now the #1 research target**
+## Also on Image 10: Start of George Havens Deed
+The bottom of Image 10's right page begins a new instrument — George Havens selling land, with **"Beni Green of Kingstown"** identified as the BUYER paying thirty pounds. This is Benjamin² Greene's **first independent documentary appearance outside the Bates roster**, confirmed from manuscript. Full details in the transcription file.
 
 ## Transcription (Worth 1921 abstract, pp. 173–174 — James instrument only; ellipses are Worth's)
 

@@ -1,4 +1,4 @@
-# Open Questions — Post-Cycle #6 / Image 10 Left Page Read (Updated 2026-09-04)
+# Open Questions — Post-High-Res Image 10 Read (Updated 2026-09-04)
 
 ## Synthesizer Agent
 
@@ -49,40 +49,42 @@ This may be:
 
 ---
 
-## 3. Current Open Questions (Post-Image 10 Left Page Read)
+## 3. Current Open Questions (Post-High-Res Read)
 
 ### CRITICAL
-1. 🚨 **Image 10 left page: Enhanced imaging needed.** The AI draft read shows "Joane Greene" in the deed body and a life-estate clause ("his Wife or during her natural life"). But the exact phrasing around Joan's role and the mother-clause wording are still obscured by manuscript damage. A higher-resolution scan or contrast-enhanced imaging of the left page could resolve C-1 and C-3 simultaneously.
-2. **GAP-L: NK manuscript — identify James instrument recording page.** Image 10 is confirmed as the Daniel instrument. The James instrument recording page has NOT been identified in the 444-image volume.
+1. 🚨 **C-1 LEANING RESOLVED: Joan = beneficiary.** Both instrument texts (Daniel manuscript + James abstract) show Joan in the annuity/life-estate clause, not the granting clause. Only John signs. Bates's "co-grantor" language is his summary, not the deed's words. ⚠️ Pending paleographic confirmation to close C-1 definitively.
+2. **C-3: Mother clause wording STILL UNRESOLVED.** The manuscript reads "him or his Wife or during her natural life" — NOT "or to her mother if she survive." F.L. Greene's "father or mother should live" may be a loose paraphrase. The specific "mother" phrasing has no primary source attribution.
+3. **GAP-L: NK manuscript — identify James instrument recording page.** Image 10 is the Daniel instrument. The James instrument recording hasn't been found in the 444-image volume.
 
 ### HIGH
-3. **Image 10 role-phrase resolution:** Is "John & Joane Greene" in the granting clause or the beneficiary clause? The current AI read suggests beneficiary (John alone in the "Know all People" opening; Joan appears in life-estate provision). Paleographic confirmation needed.
-4. **GAP-M: F.L. Greene 1894 pp. 10–11 verbatim (archive.org).** Quick win. Resolves C-2.
-5. **GAP-N: Bates 1918 p. 74 verbatim.** Image already pulled. Read it. Resolves C-2 from Bates side.
-6. **GAP-O: Expanded comparison set — all South County frontier wives 1660–1700.** Hostile Reviewer demand.
-7. **GAP-E: Potter 1835 pp. 58–60 direct read.** Resolves Coginaquand/Cononoant identity.
-8. **Image 9 left-page index scan:** Dedicated Greene-name pass at higher resolution. The entry "[A]l[?]nwoll[?] ... 10" might point to the Daniel instrument page but does not clearly read as "Greene."
+4. 🚨 **"John Green Senr" confirmed from manuscript.** Five-John Firewall now manuscript-backed. Update source_spine.md to reflect this.
+5. 🚨 **"Beni Green of Kingstown" — buyer in George Havens deed.** Benjamin²'s first independent documentary appearance outside Bates. Needs full high-res read of Image 11 to confirm context.
+6. **GAP-M: F.L. Greene 1894 pp. 10–11 verbatim (archive.org).** Quick win. Resolves C-2.
+7. **GAP-N: Bates 1918 p. 74 verbatim.** Resolves C-2 from Bates side.
+8. **GAP-O: Expanded comparison set — all South County frontier wives 1660–1700.** Hostile Reviewer demand.
+9. **GAP-E: Potter 1835 pp. 58–60 direct read.** Resolves Coginaquand/Cononoant identity.
+10. **Image 9 left-page index scan at high resolution.** Greene-name pass.
 
 ### MEDIUM
-9. **"Sachem Farm" / "Saturum Land" term check.** Claude flagged "Sachem Farm" from Image 11; Migoo read "Saturum Land" from the Paine POA. These may be the same term or different. Check against Fones Record, Potter 1835, and existing terminology notes.
-10. **Benjamin Greene from Image 11.** "Beni: Green" in a George Havens deed — second independent documentary appearance? Five-John Firewall applies to sons. Need date and role context.
-11. **Models D–G theory files** — determine if dedicated documents needed.
-12. **1636 court memorandum verbatim read** — La Mance proof step 2.
-13. **H. Tibbits identity** — cross-reference against seven-name convergence Tibbetts thread.
-14. **"John Nutsn" (Worth)** — does this name appear in damaged area of Image 10 right page?
-15. **La Mance: Where does "Alice Daniels" originate?**
+11. **"Sachem Farm" / "Saturum Land" term reconciliation.** Claude vs. Migoo read different terms from same area. Need high-res Image 11 read.
+12. **Image 11 full high-res read.** Would confirm Benjamin context and resolve Havens deed parties.
+13. **Models D–G theory files** — determine if dedicated documents needed.
+14. **1636 court memorandum verbatim read** — La Mance proof step 2.
+15. **H. Tibbits identity** — cross-reference seven-name convergence.
+16. **"John Nutsn" (Worth)** — does this name appear in damaged area of Image 10?
+17. **La Mance: Where does "Alice Daniels" originate?**
 
 ### LOW
-16. **GAP-B, GAP-C, GAP-R, GAP-4D** — unchanged from Cycle #5.
+18. **GAP-B, GAP-C, GAP-R, GAP-4D** — unchanged from Cycle #5.
 
 ---
 
-## 4. Active Contradictions (5)
+## 4. Active Contradictions
 
-| ID | Summary | Priority | Status After Image 10 Read |
+| ID | Summary | Priority | Status After High-Res Read |
 |---|---|---|---|
-| C-1 | Joan as co-grantor (Bates) vs. beneficiary only (Worth, NK MS) | CRITICAL | 🟡 PARTIALLY ADDRESSED — AI read leans toward beneficiary (John alone signs; Joan in life-estate clause) but exact role phrasing obscured |
+| C-1 | Joan as co-grantor (Bates) vs. beneficiary only (Worth, NK MS) | CRITICAL | 🟡 LEANING RESOLVED — beneficiary. Both instrument texts confirm. Bates = summary language per Guardrails §1. ⚠️ Paleographic confirmation needed to close. |
 | C-2 | John Sr. dead pre-1685 (Bates) vs. alive 1686/1692 (F.L. Greene) | HIGH | Unchanged — resolves via GAP-M + GAP-N |
-| C-3 | "Mother clause" — three wordings, only one sourced, and it's a paraphrase | CRITICAL | 🟠 NOT RESOLVED — "or to her mother if she survive" NOT visible. Life-estate clause present but full construction obscured |
-| C-4 | Pawtuxet deed — details cited but absent from all primary/authoritative secondary | SUSPENDED | Unchanged — physical archives only |
+| C-3 | "Mother clause" — three wordings, only one sourced, and it's a paraphrase | CRITICAL | 🟠 NOT RESOLVED. MS reads "him or his Wife" not "mother." F.L. Greene may be paraphrasing loosely. |
+| C-4 | Pawtuxet deed — details cited but absent from all primary/authoritative secondary | SUSPENDED | Unchanged |
 | C-5 | R-FTB79899 vs. R-Z255 haplogroup for Kit B2778 | OPEN | Unchanged |
