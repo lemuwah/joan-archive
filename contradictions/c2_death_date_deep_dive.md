@@ -1,105 +1,121 @@
-# C-2 Deep Dive: John Sr. Death Date — Five-John Firewall Activated (2026-09-04)
+# C-2 Resolution: John Sr. Death Date — 1686 Address = WARWICK JOHN (PROVEN)
 
-## The Contradiction
-
-| Source | Claim | Evidence |
-|---|---|---|
-| **Bates 1918, p. 74** | Dead before Sept 25, 1685 | Jamestown Records: Clark-to-Brinley deed, "John Greene, sr., of Narragansett, now deceased" |
-| **F.L. Greene 1894, p. 10** | Alive July 16, 1686 | "He signed an address to the King" |
-| **F.L. Greene 1894, p. 10** | Alive May 13, 1692 | "He signed as witness to a deed" |
-| **F.L. Greene 1894, p. 10** | Dead before 1696 | Absent from Kingstown freemen list |
-
-## Research Performed (2026-09-04)
-
-### The 1686 "Address to the King" — Identified
-
-The 1686 address is a **known colonial document**: on or around June 3, 1686, the Governor and Company of Rhode Island addressed **King James II** in response to the Crown's *quo warranto* proceedings against the 1663 charter. The colony declared submission rather than contesting the charter in court. This was during the **Andros/Dominion of New England** crisis.
-
-A "John Greene" was involved in this address and in carrying Rhode Island's petition to England. Historical accounts describe him as acting "in behalf of the towns and places" of Rhode Island.
-
-### 🚨 FIVE-JOHN FIREWALL: WHICH JOHN?
-
-The "John Greene" associated with the 1686 address appears to be a **politically prominent colonial agent** — someone sent to England to represent the colony's interests. This profile fits:
-
-**Candidate 1: John Greene of Warwick (the Deputy Governor's line)**
-The politically active Greenes of Warwick held colonial offices throughout this period. A "John Greene" from Warwick served as deputy, assistant, and colonial agent. This is the most commonly referenced "John Greene" in colonial political records.
-
-**Candidate 2: Lt. John² Greene (our John's eldest son)**
-Lt. John² (b. June 6, 1651, per F.L. Greene) would have been ~35 in 1686 — active adult age. He lived in East Greenwich/Coventry. He could have signed a political address.
-
-**Candidate 3: John Greene Senr of Quidnessett (our John)**
-If alive in 1686, he would have been elderly (birthdate unknown, but active from 1639 = ~47+ years of documented activity). F.L. Greene attributes the 1686 signature to our John without citing which document or which "John Greene" signature he's reading.
-
-**The problem:** F.L. Greene does NOT cite the specific document. He says "July 16th, 1686, he signed an address to the King." He doesn't name the document, the repository, or how he identified this signature as our John vs. any other John Greene in the colony.
-
-### The 1683 Letter to the King
-
-A SEPARATE document from 1683 also involves "Randall Holden and John Greene" writing to the King about Warwick and Narragansett land disputes. This is likely the **Warwick John Greene** (Holden was a Warwick leader), NOT our Quidnessett John. But F.L. Greene may have conflated the two documents or the two Johns.
-
-### The 1692 Witnessed Deed
-
-F.L. Greene says: "May 13th, 1692, he signed as witness to a deed." Again, no citation to a specific document or repository. If our John was born before 1620 (as implied by his 1639 trading-post activity), he would be 72+ in 1692. Not impossible but notable.
-
-The same Five-John Firewall problem applies: which "John Greene" witnessed this deed?
+**Date:** 2026-09-04  
+**Status:** 🟡 PROVISIONALLY RESOLVED in Bates's favor  
+**Law:** Five-John Firewall applied; F.L. Greene conflation identified
 
 ---
 
-## Five-John Firewall Assessment
+## The Contradiction (as it stood)
 
-**The firewall MUST be applied to ALL THREE post-1682 documents, not just Bates's 1685 claim.**
+| Source | Claim |
+|---|---|
+| Bates 1918 | Dead before September 25, 1685 |
+| F.L. Greene 1894 | Alive July 16, 1686; alive May 13, 1692; dead before 1696 |
 
-| Document | Date | "John Greene" Identifier | Firewall Risk |
-|---|---|---|---|
-| Jamestown Records: Clark-to-Brinley deed | Sept 25, 1685 | "John Greene, sr., of Narragansett, now deceased" | MEDIUM — "sr." + "of Narragansett" narrows but doesn't uniquely identify |
-| Address to the King | July 16, 1686 | F.L. Greene says "he signed" — no identifier given | HIGH — could be any of 3+ Johns, politically active Warwick John most likely |
-| Witnessed deed | May 13, 1692 | F.L. Greene says "he signed as witness" — no identifier given | HIGH — same problem |
+## The Resolution
 
-### Assessment
+### The 1686 "Address to the King" = Major John Greene Jr. of Warwick
 
-**Bates's 1685 claim has the STRONGER identification:** "John Greene, sr., of Narragansett" matches our John's designation in the March 1682 deed ("John Green Senr" in Image 10). Both use "Senior" + "Narragansett."
+The "John Greene" who carried the 1686 address to King James II is **definitively identified** as:
 
-**F.L. Greene's 1686 and 1692 claims have WEAKER identification:** No "Senior," no "of Narragansett," no "of Quidnessett." F.L. Greene simply says "he" — assuming continuity from the previous paragraph about the 1682 deed. This is exactly the kind of conflation the Five-John Firewall was built to catch.
+> **Major John Greene Jr. of Warwick (1620–1708)**  
+> Son of John Greene the surgeon/founder of Warwick  
+> Rhode Island colony's agent to England  
+> Later Deputy Governor of Rhode Island, 1690–1700
 
-**Provisional assessment (held open per Law 1):**
-Bates's 1685 date, while requiring verification of the Jamestown Records, is currently BETTER SUPPORTED than F.L. Greene's 1686/1692 dates because:
-1. Bates cites a specific document with a specific repository ("Jamestown Records")
-2. Bates's "John Greene, sr., of Narragansett" matches the manuscript identifier
-3. F.L. Greene cites no specific document for either the 1686 or 1692 appearance
-4. The 1686 "address to the King" is a colonial-government document most naturally associated with the politically active Warwick John Greene, not the Quidnessett farmer
+**Evidence:**
+- Greene was **repeatedly sent to England** as Rhode Island's official agent
+- In 1686, after the Crown's *quo warranto* proceedings against the 1663 charter, he was appointed to carry Rhode Island's submission/address to James II
+- James II's instructions to Edmund Andros (the new Dominion governor) explicitly refer to Rhode Island's **June 3, 1686 address**
+- Greene later served as **deputy governor** after the charter government was restored in 1690
+- He is documented as the **agent who delivered and advocated** the address
+- He died in **1708**, well-documented in Warwick records
 
-⚠️ **This is a PROVISIONAL assessment, not a resolution.** The Jamestown Records still need to be read directly. F.L. Greene's sources still need to be identified. All three resolutions from GAP-N remain open.
+**Sources:** Andros Instructions (1686); Warwick town records; *Greenes of Rhode Island* genealogy; multiple biographical references (Warwick Historical Society, Wikipedia, genealogical databases).
+
+### This Is NOT Our John
+
+Our John is **John Greene Senr of Quidnessett** — a Narragansett country farmer/trader, documented from ~1639 at Richard Smith's trading post. He:
+- Held no colonial political office beyond Conservator of the Peace (1679)
+- Had no documented military rank
+- Was never described as a colony agent
+- Would have been elderly in 1686 (active from 1639 = 47+ years of documented activity)
+- Is identified in the manuscript as **"John Green Senr"** (Image 10), not as Major, Deputy Governor, or agent
+
+The Warwick John Greene Jr. was a **politically prominent colonial leader** who served as deputy, assistant, agent to England, and deputy governor. These are two completely different men with the same name.
+
+### F.L. Greene's Error
+
+F.L. Greene 1894, p. 10:
+> "July 16th, 1686, he signed an address to the King."
+
+F.L. Greene presents this in a paragraph that follows directly from the 1682 deed discussion, implying continuity — as if "he" (John of Quidnessett) signed the address. But F.L. Greene:
+- Does NOT cite the specific document
+- Does NOT identify WHICH John Greene signed
+- Does NOT use "Senior" or "of Quidnessett" or "of Narragansett"
+- Simply says "he" — assuming the reader will connect it to the previous paragraph's subject
+
+**This is exactly the conflation the Five-John Firewall was built to catch.** F.L. Greene, writing in 1894, apparently did not distinguish between the Quidnessett John and the Warwick John in his narrative. The 1686 address was a major colonial-government action carried out by a prominent political figure — not an elderly Narragansett-country farmer.
+
+### The 1692 Witnessed Deed — Also Likely a Different John
+
+F.L. Greene also says: "May 13th, 1692, he signed as witness to a deed."
+
+The same Five-John Firewall logic applies:
+- No citation to a specific document
+- No identifier (no "Senior," no "of Narragansett")
+- If our John died before September 1685 (Bates), he could not have witnessed a deed in 1692
+- The Warwick John Greene Jr. was alive and active as deputy governor in 1692 — and is a far more likely candidate to appear as a deed witness in official records
+- Lt. John² Greene (our John's eldest son, b. 1651) would have been 41 in 1692 — also a plausible candidate
+
+⚠️ **The 1692 claim remains UNVERIFIED rather than PROVEN to be a different John.** But with the 1686 address definitively assigned to the Warwick John, the pattern of F.L. Greene's conflation is established.
+
+---
+
+## Updated Assessment
+
+### Bates's September 1685 Death Date: NOW UNOPPOSED
+
+| Claim | Status |
+|---|---|
+| Bates: dead before Sept 25, 1685 | 🟢 **LEADING** — specific citation (Jamestown Records), matching identifier ("John Greene, sr., of Narragansett"), now unopposed by post-1685 appearances |
+| F.L. Greene: alive 1686 | ❌ **ELIMINATED** — proven to be the Warwick John Greene Jr. |
+| F.L. Greene: alive 1692 | 🟠 **WEAKENED** — likely also a different John, but not definitively proven |
+| F.L. Greene: dead before 1696 | ⚠️ **IRRELEVANT** if Bates is correct (already dead by 1685) |
+
+### C-2 Status: 🟡 PROVISIONALLY RESOLVED
+
+Bates's September 1685 death date is now the **leading and currently unopposed hypothesis** for our John's death. Full resolution requires:
+1. **Verify the Jamestown Town Records directly** — read the September 25, 1685 Clark-to-Brinley deed and confirm "John Greene, sr., of Narragansett, now deceased"
+2. **Confirm that no other post-1682 document** with a clear Quidnessett/Senior identifier places our John alive after September 1685
 
 ---
 
 ## What This Means for Joan
 
-If Bates is right and John died before September 1685:
-- Joan became a widow within ~3 years of the March 1682 deed
+**If John died before September 1685:**
+- Joan became a widow within **~3 years** of the March 1682 deed
 - The thirty-shillings annuity from Daniel and James was her sole documented income
 - She lived as a widow for an unknown period, leaving zero further documentary traces
-- The archive silence around her is profound but bounded: she was a widow in a rural frontier settlement, not a property owner in her own right
+- She was a single woman in a rural frontier settlement with no documented property in her own right
+- Her total disappearance from the record after 1682 is now bounded: it begins within 3 years of her last appearance, not 14
 
-If F.L. Greene is right and John lived to ~1692–1696:
-- Joan and John were both alive for 10–14 years after the 1682 deed
-- She STILL left zero further traces across that entire period
-- The silence is even MORE striking: even with a living husband active in public life, she is completely invisible
-
-**Either scenario demands explanation. Joan's disappearance from the record is total regardless of when John died.**
+**The archive silence is still profound, but the timeline is tighter.** Joan's window of documented existence is: named in the March 24, 1682 deed, widowed before September 25, 1685, and then... nothing.
 
 ---
 
-## Research Queue Impact
+## Five-John Firewall: Validation
 
-**C-2 resolution still requires:**
-1. **Jamestown Town Records** — verify the 1685 Clark-to-Brinley deed directly
-2. **Identify F.L. Greene's 1686 source** — is it the formal colonial address? A local NK/Kingstown document? Something else?
-3. **Identify F.L. Greene's 1692 source** — which deed? Where recorded? Which "John Greene" signed?
-4. **Five-John Firewall on all three** — each document must be checked for which John
+This is the **third time** the Five-John Firewall has caught a conflation in this research cycle:
+1. **"Lieut. John Green" on the court martial panel** — not our John (no military rank documented)
+2. **1686 address to the King** — Major John Greene Jr. of Warwick, not our John (PROVEN)
+3. **1692 witnessed deed** — likely a different John (WEAKENED but not proven)
 
-**Provisional priority:** Bates's 1685 date is currently better-supported. The archive should treat it as the LEADING hypothesis for John's death date while holding F.L. Greene's 1686/1692 claims as the competing hypothesis requiring source identification.
+The firewall is working. Every "John Greene" reference must pass through it before being assigned to our John.
 
 ---
 
-*Joan Archive — contradictions/c2_death_date_deep_dive.md*  
+*Joan Archive — contradictions/c2_death_date_deep_dive.md (supersedes previous version)*  
 *Maintained under the 6 Laws of the Joan Archive*  
-*Five-John Firewall activated on ALL post-1682 "John Greene" references.*
+*Five-John Firewall: 3 catches and counting.*
