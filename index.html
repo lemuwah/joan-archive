@@ -64,6 +64,18 @@
     padding: 1rem 1.2rem;
     margin-bottom: 2rem;
   }
+  .correction-box {
+    background: #f5efe4;
+    border-left: 3px solid var(--accent);
+    padding: 1rem 1.2rem;
+    margin-bottom: 2rem;
+  }
+  .correction-box h2 { border: none; margin-top: 0; padding: 0; }
+  .verify-note {
+    font-size: 0.82rem;
+    color: var(--muted);
+    font-style: italic;
+  }
   .model-card {
     background: var(--card-bg);
     border: 1px solid var(--border);
@@ -123,20 +135,38 @@
 </nav>
 
 <h1>The Joan Archive</h1>
-<p class="subtitle">Open Access Research Library</p>
+<p class="subtitle">Open Access Research Library — built on honest transparency: what we know, what we don't, and what we got wrong.</p>
 
 <div class="corrections-banner">
   ⚠️ This archive has published corrections to its own prior claims. Transparency is part of the method. <a href="https://github.com/lemuwah/joan-archive/blob/main/CORRECTIONS.md">Read the corrections log.</a>
 </div>
 
+<!-- ============ RECENT CORRECTION — SEPT 2026 ============ -->
+<div class="correction-box">
+  <h2>Correction — September 2026: direct manuscript read of the March 1682 deed</h2>
+  <p>Everything on this page below "What We Know" has, until now, come from a secondary abstract (Worth) and a secondary narrative summary (Bates). This month the underlying leaf (RI Land Evidence, North Kingstown, DGS 008204949, image 10) was read directly for the first time. Several long-standing summaries did not survive contact with the manuscript.</p>
+  <p class="verify-note">This read is AI-assisted (transcription support only) and has not yet been independently paleographically verified. Per the La Mance Law and the No-Algorithmic-Contamination Law, it is logged here as a correction-in-progress, not a closed fact. <a href="https://github.com/lemuwah/joan-archive/blob/main/CORRECTIONS.md">Full write-up in the corrections log.</a></p>
+  <p>We're posting this half-finished on purpose. Every item below is a place where a better-trained eye than ours could confirm, correct, or overturn what we're currently seeing. If that's you, <a href="contribute.html">we want to hear from you</a>.</p>
+  <ul>
+    <li><strong>Joan is a named beneficiary, not a co-grantor.</strong> The granting clause names John Greene alone ("Know all People..."); Joan appears only in the maintenance/life-estate provision. Bates's "Greene and his wife Joan deeded" was her paraphrase of the deed's effect, not its words.</li>
+    <li><strong>Joan did not sign or mark the deed.</strong> Only John Greene signed. The prior firewall entry stating Joan "signs with her mark" is retracted — no mark, no signature, nothing from Joan in the execution block. Consistent with her role as beneficiary rather than party.</li>
+    <li><strong>The "her mother" clause is SUSPENDED.</strong> The manuscript reads "...during his naturall life and [Joan] his Wife for and during her naturall life..." — no third-party maternal figure appears. The "her mother" phrasing traced back to F.L. Greene's "father or mother should live," where "mother" meant Joan herself, not Joan's mother. The matrilineal-kinship argument built on "her mother" as a separate person has no surviving source and is suspended pending a fresh look.</li>
+    <li><strong>The deed names him "John Green(e), Senr."</strong> — confirmed from the manuscript, not present in the Worth abstract. This resolves which of the Five Johns this specific 1682 instrument belongs to.</li>
+    <li><strong>The witness "H. Tibbits"</strong> is very likely Henry Tibbitts, per F.L. Greene — whose daughter Mary later married Edward² Greene, one of John and Joan's sons. If correct, the witness is family, not a stranger: a small, concrete data point for the archive's existing seven-name convergence thread. <span class="verify-note">(Identification rests on a name match via a secondary source, not yet independently confirmed. If you have Tibbitts family research, this is a good place to jump in — <a href="contribute.html">get in touch</a>.)</span></li>
+    <li><strong>Benjamin Greene has independent documentary support for the first time.</strong> The same leaf records a separate transaction: George Havens of Newport, with his wife Mary's consent, selling land to "Beny Green of Kingstown" for thirty pounds — land held "near Quidnessett." Until now Benjamin appeared only on Bates's roster with no documentation of his own. <span class="verify-note">(Newly proposed addition to the sons list — PROBABLE, not yet PROVEN. If Benjamin Greene of Kingstown appears anywhere in your own research, we'd like to know.)</span></li>
+  </ul>
+</div>
+
 <!-- ============ THREE FACTS ============ -->
 <h2>What We Know</h2>
-<p>The complete list of verified facts about Joan:</p>
+<p>The core verified facts about Joan, updated to reflect the direct manuscript read above:</p>
 <ol>
-  <li><strong>Joan is named as wife of John Greene</strong> in a March 1682 land deed at Quidnessett.<br>
-    <em>Source: Worth abstract, RI Land Evidences Vol. I, p. 122</em></li>
-  <li><strong>A life annuity of 30 shillings per year</strong> is reserved to her.<br>
-    <em>Source: Worth abstract</em></li>
+  <li><strong>Joan is named as wife of John Greene, Senr.,</strong> in a March 1682 land deed at Quidnessett — as a named beneficiary of a life-estate provision, not as a co-grantor.<br>
+    <em>Source: direct manuscript read, RI Land Evidence, North Kingstown (DGS 008204949, image 10); cross-checked against the Worth abstract. <span class="verify-note">AI-assisted transcription, unverified pending paleographic review.</span></em></li>
+  <li><strong>A maintenance/life-estate provision</strong> is reserved to her "for and during her naturall life," alongside a parallel provision for John.<br>
+    <em>Source: direct manuscript read. <span class="verify-note">The exact figure is an open question, not a solved one — the Worth abstract gives 30 shillings/year; the direct read appears to show a different sum in the surrounding grant to their son Daniel. We're not resolving this ourselves. If you can read secretary hand and want to look at the leaf, <a href="contribute.html">start here</a>.</span></em></li>
+  <li><strong>Joan did not sign or mark the deed.</strong> Only John Greene signed.<br>
+    <em>Source: direct manuscript read (execution block).</em></li>
   <li><strong>No other record of Joan has been located.</strong><br>
     <em>Source: Methodological — negative search result (as of September 2026)</em></li>
 </ol>
@@ -145,17 +175,17 @@
 <div class="unknown-box">
   <h2 style="border:none; margin-top:0; padding:0;">What We Do Not Know</h2>
   <ul>
-    <li>Whether Joan signed or marked the deed — <strong>not documented in any source we hold</strong></li>
-    <li>Whether Joan gave consent as a legal party — <strong>not documented</strong></li>
-    <li>Whether the deed references her mother — <strong>conflicting secondary accounts</strong></li>
+    <li>Whether the deed references a separate "her mother" figure — <strong>now SUSPENDED as a likely misreading</strong> (see correction above), rather than simply undocumented</li>
     <li>Joan's maiden name, parents, origin, birth, death, or burial — <strong>unknown</strong></li>
+    <li>The exact maintenance sum reserved to Joan and John — <strong>the Worth abstract and the direct manuscript read disagree, and we're leaving that open rather than picking one</strong></li>
+    <li>Whether "H. Tibbits" is in fact Henry Tibbitts, and whether "Beny Green" is a son of John and Joan — <strong>both are leads, not established facts</strong></li>
   </ul>
-  <p>These questions require examination of the <a href="contribute.html">original manuscript</a>.</p>
+  <p><strong>These are open invitations, not dead ends.</strong> If you can read secretary hand, if you have access to the Kingstown probate or vital records, or if a name here connects to something in your own research — the <a href="contribute.html">original manuscript</a> and a list of what hasn't been searched yet are both public. We would rather have more eyes on the unresolved parts than a tidier page.</p>
 </div>
 
 <!-- ============ COMPETING MODELS ============ -->
 <h2>Who Was She? — Seven Competing Hypotheses</h2>
-<p>The archive holds seven hypotheses about Joan's identity. Six remain open. One has been eliminated. No model is privileged. Each is tested against the same evidence on the <a href="analysis.html">Analysis</a> page.</p>
+<p>The archive holds seven hypotheses about Joan's identity. Six remain open. One has been eliminated. No model is privileged. The September 2026 manuscript read above does not confirm or eliminate any of the six open models — it corrects how Joan appears in the one document we do have, which is a separate question from who she was. Each model is tested against the same evidence on the <a href="analysis.html">Analysis</a> page.</p>
 
 <div class="model-card">
   <h3>Model A — Narragansett Sachem-Line Woman</h3>
