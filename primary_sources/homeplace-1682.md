@@ -23,7 +23,8 @@ The Worth 1921 abstract of the James instrument reads: *"...unto John Green... a
 - 180 acres to **Daniel** (120ac) and **James** (60ac).
 - Life-estate clause keeps parents on the land until death.
 - Confirms **Joan is alive** in March 1682.
-- Joan is a **named beneficiary**, not a grantor: John Greene alone signs and acknowledges (Worth abstract; NK manuscript signature block). No mark or signature for Joan is visible.
+- Joan is a **named beneficiary**, not a grantor: John Greene alone signs and acknowledges (Worth abstract; NK manuscript signature block).
+- **No mark or signature for Joan is visible** in the Daniel instrument's execution block (Image 10, DGS 008204949). Only John Green signs.
 
 ## What genealogy sites incorrectly claim
 - That Joan died before 1682.
@@ -35,15 +36,30 @@ None of these claims appear in the document.
 ## Evidence Status
 🟢 **PROVEN** — The deed is paraphrased in F.L. Greene 1894, p.10, abstracted (James instrument only) in Worth 1921 pp. 173–174, and survives as a post-1686 record copy (Daniel instrument) in NK Land Records (FamilySearch DGS 008204949, img 10). ⚠️ The "or to her mother" wording is **not** in any of these.
 
+### AI Transcriptions of Image 10 (Daniel Instrument)
+Two independent AI transcription attempts have been performed on Image 10:
+- **Claude AI** (2026-09-03) and **Migoo AI** (2026-09-04)
+- Both converge on the same names and structure in the execution/acknowledgment block
+- Full dual-transcription file: [`digitization/transcriptions/008204949-10.md`](../digitization/transcriptions/008204949-10.md)
+
+**Key findings from Image 10:**
+- John Green signs by name (literate)
+- H. Tibbits witnesses by mark (illiterate)
+- [A]l[l]worth witnesses (likely Arthur Aylworth)
+- Jo: Fones acknowledges as recording officer/warden
+- **Joan is NOT named** in the visible execution/acknowledgment portion
+- The deed body (left-hand page) is heavily damaged; the life-estate clause, annuity, and beneficiary language would be there
+- **The left-hand page is now the #1 research target**
+
 ## Transcription (Worth 1921 abstract, pp. 173–174 — James instrument only; ellipses are Worth's)
 
-John Green to James Greene. . . .John Green of Aquidnesett. . .in the Narragansett Cuntry . . .thirtie shillings in Currant mony of New England to be paid. . .Yearly. . .unto John Green... and after his decease to Joane Greene, his wife... By James Greene (the natural son of John and Joan Greene. . . ) . . .Have Given. . .Land .. .lying. . .at Aquednessett. . .now in the posession of... James Greene ... sixty Acres. . .bounded. . .Northerly by the land. . .John Greene Easterly by quidnesett harbour. Southerly by a River or brook and land of Daniell Greene, and Westerly by a hie way,... with all. . .wood,. . .Quarries,. . .water courses, buildings ... at the decease of... John and Joane Greene. . .James Greene. . .shall have ... the ... Premises forever. . .Twenty fourth day of March. . .one Thowsand six hundred Eighty & one or two . . .
+John Green to James Greene. . . .John Green of Aquidnesett. . . .in the Narragansett Cuntry . . . .thirtie shillings in Currant mony of New England to be paid. . . .Yearly. . . .unto John Green... and after his decease to Joane Greene, his wife... By James Greene (the natural son of John and Joan Greene. . . ) . . . .Have Given. . . .Land .. .lying. . .at Aquednessett. . . .now in the posession of... James Greene ... sixty Acres. . . .bounded. . . .Northerly by the land. . .John Greene Easterly by quidnesett harbour. Southerly by a River or brook and land of Daniell Greene, and Westerly by a hie way,... with all. . .wood,. . . .Quarries,. . . .water courses, buildings ... at the decease of... John and Joane Greene. . . .James Greene. . . .shall have ... the ... Premises forever. . . .Twenty fourth day of March. . . .one Thowsand six hundred Eighty & one or two . . . .
 
 Wit. John Greene
 
-Henry X Tibbitts
+Henry X Tibbittts
 
-his marke. Arthur Aylworth John Nutsn : John Greene ... 24th of march 1681-82 acknowlidged this...
+his marke. Arthur Aylworth John Nutsn : John Greene ... 24th of march 1681-82 acknowledeged this...
 John Foanes Wardn.
 
 ## Scan / Image
@@ -58,6 +74,12 @@ John Foanes Wardn.
 
 <a href="https://archive.org/details/rhodeislandlande00wort/page/174/mode/2up" target="_blank" rel="noopener">
   <img src="{{ site.baseurl }}/images/1682-2.JPG" alt="1682 Home-Place Deed — Page 2" style="max-width:100%; border:1px solid #444;">
+</a>
+
+**NK Land Records — Daniel Instrument (FamilySearch DGS 008204949, Image 10):**
+
+<a href="https://www.familysearch.org/ark:/61903/3:1:3Q9M-CS7Q-MSQG-D?i=9" target="_blank" rel="noopener">
+  <img src="{{ site.baseurl }}/images/008204949-10green-fones-tibbits-march-1682.JPG" alt="Image 10 — Daniel instrument execution block (cropped)" style="max-width:100%; border:1px solid #444; margin-bottom:1rem;">
 </a>
 
 **F.L. Greene 1894, p. 10 (page image pulled 2026-09-01):**
