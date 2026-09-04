@@ -1,0 +1,94 @@
+diff --git a/AGENT_GUARDRAILS.md b/AGENT_GUARDRAILS.md
+index 2b1d6b0..727bc52 100644
+--- a/AGENT_GUARDRAILS.md
++++ b/AGENT_GUARDRAILS.md
+@@ -47,6 +47,9 @@ No hypothesis receives more visual space, more confident language, or more promi
+ - **Model E — Enslaved person.** Post-1676 legal framework created conditions for this.
+ - **Model F — Widow of prior marriage.** Could explain legal standing without requiring Indigenous identity.
+ - **Model G — Beggerly / La Mance.** Alice Daniels. 🔴 ELIMINATED — wrong John Greene, wrong town, timeline impossible.
++- **Model H — Mixed-heritage (English/Narragansett parentage).** *(Added 2026-09-04)* Distinct from Model A: a child of a documented or plausible English–Narragansett union in the Northern Node, recorded inconsistently across scribes rather than cleanly as English or Indigenous. Not yet tested against any source.
++
++**Cross-cutting factor, not a model:** war captivity or wartime displacement (1675–76) can interrupt the paper trail of a woman who started as Model A, B, C, D, or H — it is a mechanism that can produce silence, not an origin in itself. Do not create a separate "Model" for this; instead, when searching Court of Trials / captive-disposition records, tag any candidate found there with the origin model it best supports, not as its own category.
+ 
+ Every open model gets:
+ - Its own evidence section when analysis.html is built
+@@ -111,5 +114,18 @@ Until someone reads those images, the archive holds three facts and a wall of ho
+ 
+ ---
+ 
++## 9. No Default to Unidentified
++
++**Added 2026-09-04. Equal authority to the Five Laws.**
++
++"Joan — unidentified" is not a resting state. It is only an acceptable *current* status for a model once that model's plausible remote-accessible record types (per its row in `research_queue/HYPOTHESIS_TEST_MATRIX.md`) have actually been searched — not merely reasoned about.
++
++- A model does not get marked "exhausted" because it seems less likely than another — see Law 3. It gets marked exhausted because its specific record types were searched and returned nothing.
++- The goal is not to confirm Model A, or any single model. The goal is Joan's actual mother, father, siblings, and life — by whichever model the evidence supports. Models are a search structure, not a scoreboard.
++- The same standard applies by proxy to every John Greene in the John Firewall (`theory/john_firewall.md`): no John's status stays at 🟡 or ⚪ by default when a free, remote-accessible source could move it to 🟢 or 🔴. If a John's status hasn't changed, that means the source hasn't been checked yet — not that it can't be found.
++- This project has no institutional access and does no in-person archive travel (see `PROJECT_METHODOLOGY.md`). That constraint changes *how* a record type gets checked — free full-text search first, then a remote scan/microfilm request — never *whether* it gets checked.
++
++---
++
+ *This file is referenced in `README_FOR_EXTERNAL_AGENTS.md` as required reading.*  
+ *Maintained under the Five Laws of the Joan Archive.*
+diff --git a/theory/three_laws.md b/theory/three_laws.md
+index d2a2b51..200aedc 100644
+--- a/theory/three_laws.md
++++ b/theory/three_laws.md
+@@ -36,10 +36,12 @@ No claim traceable to La Mance (1904) accepted without independent primary corro
+ No hypothesis eliminated until thoroughly tested against primary sources. Even outlandish and wild ideas need thorough proof of nonexistence before eliminating as an option.
+ 
+ **Expanded (Sep 3, 2026):**
+-- This applies to ALL competing models about Joan's identity (A–G), not just the ones we find compelling. Model B (English woman) requires the same exhaustive search before elimination as Model A (Narragansett). Model D (indentured servant) and Model E (enslaved person) require the same as Model C (Irish origin).
++- This applies to ALL competing models about Joan's identity (A–H), not just the ones we find compelling. Model B (English woman) requires the same exhaustive search before elimination as Model A (Narragansett). Model D (indentured servant) and Model E (enslaved person) require the same as Model C (Irish origin).
+ - A model is not eliminated by the strength of another model. It is eliminated by its own evidence failing.
+ - See `AGENT_GUARDRAILS.md` §3 for the full model list.
+ 
++**Expanded (Sep 4, 2026):** "Unidentified" is not itself an allowed conclusion for a model until its record types have actually been searched, not just reasoned about — see `AGENT_GUARDRAILS.md` §9 and `research_queue/HYPOTHESIS_TEST_MATRIX.md`. The same no-default-status standard applies to every John in `theory/john_firewall.md`.
++
+ ---
+ 
+ ## Law 4 — No Algorithmic Contamination
+diff --git a/research_queue/HYPOTHESIS_TEST_MATRIX.md b/research_queue/HYPOTHESIS_TEST_MATRIX.md
+new file mode 100644
+index 0000000..7dc92c4
+--- /dev/null
++++ b/research_queue/HYPOTHESIS_TEST_MATRIX.md
+@@ -0,0 +1,37 @@
++# Hypothesis Test Matrix
++
++**Status:** Active. **Added:** 2026-09-04.
++**Governs:** `AGENT_GUARDRAILS.md` §9 (No Default to Unidentified), Law 3, Law 5, Law 6.
++
++This file exists so "unidentified" can never be a silent default. Every model in `AGENT_GUARDRAILS.md` §3 gets a row. A model's status only changes when a specific free/remote source has actually been searched — not when someone judges it less likely than another model.
++
++**Constraint (see `PROJECT_METHODOLOGY.md`):** no institutional access, no paid research services, no travel. Every "Search targets" entry below must be reachable via free full-text search or a remote scan/microfilm request.
++
++**Status key:** ⬜ Not started · 🔎 In progress · 🟡 Partial / inconclusive · 🔴 Searched, negative · 🟢 Searched, positive lead found
++
++| Model | Search targets (free/remote) | Status | Last checked |
++|---|---|---|---|
++| A — Narragansett sachem-line | RIHS MSS 461/629/1210 remote-scan requests; full-volume Fones "his marke" check; FamilySearch DGS 008204949 manuscript images 9–12 | 🔎 In progress | see `theory/joan_ancestry_shadow_models.md` |
++| B — English woman, undocumented | Arnold's *RI Vital Records* (Internet Archive/FamilySearch); RI town proprietors' records for a pre-1682 "Joan" daughter entry | ⬜ Not started | — |
++| C — Irish origin | Y-DNA Irish Sea cluster detail (source of this claim not yet logged here — locate and cite); Irish parish record availability check | ⬜ Not started | — |
++| D — Indentured servant | Hotten's *Original Lists* — unaccompanied women, not just male Greenes; Bartlett's *RI Colonial Records* indenture/freedom entries 1670–1680 | ⬜ Not started | — |
++| E — Enslaved / post-1676 legal status | Court of Trials captive-disposition records (`notes/` King Philip's War material); cross-check any female entry against all applicable origin models, not filed as its own origin | ⬜ Not started | — |
++| F — Widow, prior marriage/surname lost | RI probate/will indexes for a widow "Joan" remarrying 1670–1682; neighboring-town estate settlements naming a "Joan" who then disappears from that town's records | ⬜ Not started | — |
++| G — Beggerly / La Mance | — | 🔴 ELIMINATED — wrong John Greene, wrong town, timeline impossible (see `AGENT_GUARDRAILS.md` §3) | closed |
++| H — Mixed-heritage (English/Narragansett) | Richard Smith trading-post household records; Roger Williams's letters (Narragansett Club editions, Internet Archive) for mixed-parentage mentions near Quidnessett | ⬜ Not started | — |
++| Origin outside RI (Law 5, cross-cutting) | MA/Plymouth/CT vital records (FamilySearch, free NEHGS indexes) for a Joan/Joane who vanishes from that colony's record admid-century | ⬜ Not started | — |
++
++## John Firewall — same standard, by proxy
++
++Per `AGENT_GUARDRAILS.md` §9, every John in `theory/john_firewall.md` needs the same tracked-not-assumed treatment. Current statuses there (🟢/⚪) should get their own row here once a next concrete free-source action exists for each — not yet built out; starting point only.
++
++| John | Current status (`john_firewall.md`) | Next free/remote action | Last checked |
++|---|---|---|---|
++| John Sr. of Quidnessett | 🟢 PROVEN | — | — |
++| Lieut. John² Greene | 🟢 PROVEN | — | — |
++| Capt. John Greene (Warwick) | 🟢 PROVEN (distinct line) | — | — |
++| East Greenwich John ("born Clarke") | ⚪ UNVERIFIED | Identify which secondary genealogies carry this legend and whether any cite a primary source at all | — |
++
++---
++
++*Update the same row's Status and Last checked in the same commit as the search that changed it — this file drifts from reality the moment that rule is broken.*
