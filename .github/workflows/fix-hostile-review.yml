@@ -1,0 +1,164 @@
+name: Hostile review fixes
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Apply all 8 fixes
+        run: |
+          python3 << 'SCRIPT'
+          import os, re
+
+          changes = []
+
+          # Fix 1+2: All HTML pages - Six Laws -> Seven Laws + add Law 7 to index
+          for page in ['index.html', 'about.html', 'analysis.html', 'context.html', 'contribute.html']:
+              if not os.path.exists(page):
+                  continue
+              with open(page, 'r', encoding='utf-8') as f:
+                  content = f.read()
+
+              # Replace all "Six Laws" with "Seven Laws"
+              if 'Six Laws' in content:
+                  content = content.replace('Six Laws', 'Seven Laws')
+                  changes.append(f'{page}: Six Laws -> Seven Laws')
+
+              # Replace all "six laws" (lowercase) with "seven laws"
+              if 'six laws' in content:
+                  content = content.replace('six laws', 'seven laws')
+                  changes.append(f'{page}: six laws -> seven laws')
+
+              with open(page, 'w', encoding='utf-8') as f:
+                  f.write(content)
+
+          # Fix 2: Add Law 7 to index.html Laws section
+          with open('index.html', 'r', encoding='utf-8') as f:
+              content = f.read()
+          old_law6 = '<strong>6. No Centering</strong>'
+          if old_law6 in content and 'Law 7' not in content and '7. No Trust' not in content:
+              law7_line = '</p>\n    <p><strong>7. No Trust Without Evidence</strong> \u2014 Every claim carries PROOF, PLAUSIBLE, or DISCREDITED. No tag = unprocessed. Confidence is earned, not assumed.</p>'
+              # Find the line with Law 6 and add Law 7 after it
+              lines = content.split('\n')
+              new_lines = []
+              for line in lines:
+                  new_lines.append(line)
+                  if old_law6 in line:
+                      # Find the closing </p> for this line
+                      pass
+              # Simpler approach: replace the closing of the Law 6 paragraph
+              law6_end = 'No model receives more space than its evidence warrants.</p>'
+              if law6_end in content:
+                  content = content.replace(
+                      law6_end,
+                      law6_end + '\n    <p><strong>7. No Trust Without Evidence</strong> \u2014 Every claim carries PROOF, PLAUSIBLE, or DISCREDITED. No tag = unprocessed. Confidence is earned, not assumed.</p>'
+                  )
+                  changes.append('index.html: Law 7 added to Laws section')
+          with open('index.html', 'w', encoding='utf-8') as f:
+              f.write(content)
+
+          # Fix 3: AGENT_GUARDRAILS.md - Five Laws -> Seven Laws
+          if os.path.exists('AGENT_GUARDRAILS.md'):
+              with open('AGENT_GUARDRAILS.md', 'r', encoding='utf-8') as f:
+                  content = f.read()
+              for old in ['Five Laws', 'five Laws', 'five laws', 'Six Laws', 'six Laws']:
+                  if old in content:
+                      content = content.replace(old, 'Seven Laws')
+                      changes.append(f'AGENT_GUARDRAILS.md: {old} -> Seven Laws')
+              with open('AGENT_GUARDRAILS.md', 'w', encoding='utf-8') as f:
+                  f.write(content)
+
+          # Fix 4: analysis.html - Content warning for Models D+E
+          if os.path.exists('analysis.html'):
+              with open('analysis.html', 'r', encoding='utf-8') as f:
+                  content = f.read()
+
+              # Add content warning before Model D if not already present
+              if 'Content note' not in content and 'Model D' in content:
+                  warning = '<div class="note-box" style="border-left-color: var(--warning); background: color-mix(in srgb, var(--warning) 6%, transparent); margin: 20px 0;">\n        <strong>\u26a0\ufe0f Content note:</strong> Some hypotheses below address enslavement, forced servitude, and colonial violence against Indigenous and African persons. These are included because the documentary record requires examining them \u2014 not because they are preferred or probable. This archive does not treat any person\u2019s potential unfreedom as a casual research variable.\n      </div>'
+              
+                  # Try to insert before the models grid or before Model D mention
+                  model_d_marker = 'Model D'
+                  idx = content.find(model_d_marker)
+                  if idx > 0:
+                      # Find the preceding div or section
+                      insert_before = content.rfind('<div class="model-card"', 0, idx)
+                      if insert_before > 0:
+                          content = content[:insert_before] + warning + '\n      ' + content[insert_before:]
+                          changes.append('analysis.html: Content warning added for Models D+E')
+
+              # Fix 6: 30 shillings - add open question note
+              old_annuity = 'A life annuity of 30 shillings per year is reserved to her'
+              if old_annuity in content and 'open question' not in content:
+                  content = content.replace(
+                      old_annuity,
+                      'A life annuity is reserved to her (the Worth abstract gives 30 shillings/year; the direct manuscript read shows a potentially different figure \u2014 this is an open question)'
+                  )
+                  changes.append('analysis.html: Annuity amount marked as open question')
+
+              # Fix 7: Joan's mark under Model A
+              old_mark = "Joan's mark (if found in the manuscript) showing an Indigenous pictographic pattern"
+              if old_mark in content:
+                  content = content.replace(
+                      old_mark,
+                      'A re-examination of the manuscript by a paleographer revealing any mark or notation by Joan not visible in the AI transcription (the current AI read shows Joan does not sign)'
+                  )
+                  changes.append('analysis.html: Joan mark criteria updated per Image 10 findings')
+
+              # Fix 8: Manuscript search status
+              old_ms = 'Not yet searched: The manuscript (images 9'
+              if old_ms in content:
+                  content = content.replace(
+                      old_ms,
+                      'Partially read via AI transcription (Sep 2026): The manuscript (images 9'
+                  )
+                  changes.append('analysis.html: Manuscript status updated to reflect AI read')
+              # Also try alternate wording
+              old_ms2 = 'manuscript has not been examined'
+              if old_ms2 in content:
+                  content = content.replace(
+                      old_ms2,
+                      'manuscript has been read via AI transcription (Sep 2026) but not by a paleographer'
+                  )
+                  changes.append('analysis.html: Manuscript examination status updated')
+
+              with open('analysis.html', 'w', encoding='utf-8') as f:
+                  f.write(content)
+
+          # Fix 5: context.html - framing note on post-1676 legislation
+          if os.path.exists('context.html'):
+              with open('context.html', 'r', encoding='utf-8') as f:
+                  content = f.read()
+              old_disposal = 'disposal of captured Indigenous persons'
+              if old_disposal in content and 'This archive records' not in content:
+                  content = content.replace(
+                      old_disposal,
+                      'disposal of captured Indigenous persons <em>(This legislation is documented in colonial records. This archive records it as historical context for the legal environment of the 1682 deed, not as a characterization of Narragansett experience.)</em>'
+                  )
+                  changes.append('context.html: Framing note added to post-1676 enslavement legislation')
+              with open('context.html', 'w', encoding='utf-8') as f:
+                  f.write(content)
+
+          print(f'Applied {len(changes)} fixes:')
+          for c in changes:
+              print(f'  {c}')
+          SCRIPT
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git diff --cached --stat
+            git commit -m "fix: hostile review — Seven Laws everywhere, content warnings, consistency fixes"
+            git push
+          fi
