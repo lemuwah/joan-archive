@@ -1,7 +1,7 @@
-# The Six Laws of the Joan Archive
+# The Seven Laws of the Joan Archive
 
 **Status:** Active — supreme authority over all agent and human output.  
-**Last updated:** 2026-09-03  
+**Last updated:** 2026-09-05  
 **Companion files:** `AGENT_GUARDRAILS.md`, `methodology/editorial_standards.md`
 
 ---
@@ -13,7 +13,7 @@
 All contradictions logged and held open with status tags until 100% proven. Do not invent narratives.
 
 **Expanded (Sep 3, 2026):**
-- A transcribed narrative is not a verbatim quote. Worth's abstract describes the deed. Bates's summary describes the deed. Neither IS the deed. Only the manuscript is the deed. (See `AGENT_GUARDRAILS.md` §1.)
+- A transcribed narrative is not a verbatim quote. Worth’s abstract describes the deed. Bates’s summary describes the deed. Neither IS the deed. Only the manuscript is the deed. (See `AGENT_GUARDRAILS.md` §1.)
 - Two facts that sit near each other do not become one inference. Present them separately. Let the reader draw the line or not.
 - Inference is not fact. When a connection between documented facts requires a logical step, that step must be labeled as inference and placed on `analysis.html`, not `index.html`.
 
@@ -36,7 +36,7 @@ No claim traceable to La Mance (1904) accepted without independent primary corro
 No hypothesis eliminated until thoroughly tested against primary sources. Even outlandish and wild ideas need thorough proof of nonexistence before eliminating as an option.
 
 **Expanded (Sep 3, 2026):**
-- This applies to ALL competing models about Joan's identity (A–G), not just the ones we find compelling. Model B (English woman) requires the same exhaustive search before elimination as Model A (Narragansett). Model D (indentured servant) and Model E (enslaved person) require the same as Model C (Irish origin).
+- This applies to ALL competing models about Joan’s identity (A–G), not just the ones we find compelling. Model B (English woman) requires the same exhaustive search before elimination as Model A (Narragansett). Model D (indentured servant) and Model E (enslaved person) require the same as Model C (Irish origin).
 - A model is not eliminated by the strength of another model. It is eliminated by its own evidence failing.
 - See `AGENT_GUARDRAILS.md` §3 for the full model list.
 
@@ -50,28 +50,27 @@ Every identified contamination — AI hallucination, fabricated source, algorith
 
 Contamination is never silently deleted or quietly corrected in place — it is held on record with the same rigor as proven evidence, so any agent or reader can see not just what is true, but what was tested, where it came from, and why it failed.
 
-Holding contradictions (Law 1) and following the evidence (Law 3) are not enough on their own — the record of what was *rejected* is itself part of the project's evidentiary discipline.
+**Expanded (Sep 5, 2026):**
+- The "bow and arrow mark" claim is an example of Law 4 contamination. No primary or secondary source describes Joan’s mark as a bow and arrow. The claim originated in researcher brainstorming and was echoed by AI sessions as if it were sourced. Image 10 (DGS 008204949) confirms Joan does not sign the deed at all. This is logged as a contamination vector: **AI echo of unstructured discussion misinterpreted as citation.**
 
 ---
 
 ## Law 5 — No Jurisdictional Assumption
 
-**Lens anchor:** Lens 1 (Colonial Legal Record), Lens 4 (Material Record), Lens 6 (Negative Space)  
-*(Equal priority with Law 2 — added 2026-08-27)*
+**Lens anchor:** Lens 1 (Colonial Legal Record), Lens 4 (Material Record), Lens 6 (Negative Space)
 
 The Quidnessett/Narragansett region was contested territory documented by Rhode Island, Massachusetts Bay, Plymouth Colony, Connecticut, the Crown (Colonial Office), New York, and Native landholders — each with overlapping and conflicting jurisdictional claims, each generating records, often catalogued in unexpected locations.
 
-No colony, authority, or record repository may be dismissed as "unlikely" to hold evidence of Joan without being checked. Dismissing a repository without checking it is a violation of this law.
+No colony, authority, or record repository may be dismissed as “unlikely” to hold evidence of Joan without being checked. Dismissing a repository without checking it is a violation of this law.
 
 **Expanded (Sep 3, 2026):**
-- This extends to identity models. No origin hypothesis (English, Irish, Narragansett, indentured, enslaved, widowed) may be dismissed as "unlikely" without the corresponding record types being searched. If you haven't searched Irish parish records, you can't eliminate Model C. If you haven't searched indenture records, you can't eliminate Model D.
+- This extends to identity models. No origin hypothesis (English, Irish, Narragansett, indentured, enslaved, widowed) may be dismissed as “unlikely” without the corresponding record types being searched.
 
 ---
 
 ## Law 6 — No Centering
 
-**Lens anchor:** All lenses. Equal priority with Law 1.  
-*(Added 2026-09-03)*
+**Lens anchor:** All lenses. Equal priority with Law 1.
 
 The archive investigates **who Joan was** — not a preferred theory about who Joan was.
 
@@ -83,6 +82,27 @@ Every open model starts from the same three verified facts:
 3. No other record of Joan has been located
 
 See `AGENT_GUARDRAILS.md` §2–3 for implementation rules.
+
+---
+
+## Law 7 — No Trust Without Evidence
+
+**Lens anchor:** All lenses. Enforcement layer.
+
+Every claim in the archive carries one of three tags: **PROOF**, **PLAUSIBLE**, or **DISCREDITED**. No tag = unprocessed. No claim reaches the site without a tag. Confidence is earned, not assumed.
+
+- **PROOF** — Primary source exists. Page number, repository, image reference. The document says this in these words.
+- **PROOF — AI TRANSCRIPTION** — We read the original image via AI. Working authority, not final authority. Disclaimer attached.
+- **PLAUSIBLE** — A named scholar cites it, or the logic holds, but the original document has not been personally verified.
+- **DISCREDITED** — Tested and failed. Source does not say what was claimed, citation is broken, or contradicting primary evidence exists.
+
+**Promotion:** PLAUSIBLE → PROOF only when you find the primary source and it says what was claimed (exactly, not close).
+**Demotion:** PLAUSIBLE → DISCREDITED when the source does not exist or does not say what was claimed.
+
+**AI Transcription Disclaimer (required on all AI reads):**
+> *Transcribed by AI from manuscript image. Working research read — not an expert paleographic verification. Verify against the original. This archive does not claim transcription authority.*
+
+See `methodology/integrity_framework.md` for the full tag system, trust hierarchy, and ten logic rules.
 
 ---
 
