@@ -1,10 +1,10 @@
 # Joan (Unknown) Greene — Ancestry Shadow Models
 ## Seven Models, One Eliminated, Six Open
 
-**Date established:** 2026-08-30  
-**Last updated:** 2026-09-03 (expanded from 3 to 7 models per framework revision D-002)  
-**Status:** ⚪ UNVERIFIED for all open models  
-**Archive Law:** Law 1 (no narrative smoothing), Law 3 (no premature disqualification), Law 6 (no centering)  
+**Date established:** 2026-08-30
+**Last updated:** 2026-09-05 (Law 7 tags applied, Sep 5 search results integrated, Tibbitts discredited, children evidence linked)
+**Status:** ⚪ UNVERIFIED for all open models
+**Archive Law:** Law 1 (no narrative smoothing), Law 3 (no premature disqualification), Law 6 (no centering), Law 7 (no trust without evidence)
 **Epistemological basis:** See `methodology/Epistemology.md`
 
 ---
@@ -15,133 +15,113 @@ No primary source confirms Joan's ancestry. The archive maintains seven shadow m
 
 The archive does not collapse uncertainty into narrative. It does not center one model over others. It pursues evidence that can differentiate between models.
 
-Every open model starts from the same three verified facts:
-1. Joan is named as wife of John Greene in a March 1682 land deed (Worth abstract)
-2. A life annuity of 30 shillings per year is reserved to her (Worth abstract)
-3. No other record of Joan has been located
+Every open model starts from the same verified facts (see `evidence/joan_verified_facts.md`):
+1. Joan is named as wife of John Greene in a March 1682 land deed
+2. A life annuity is reserved to her (amount is an open question)
+3. Joan does not sign or mark the deed (Image 10, 🟢 PROOF — AI TRANSCRIPTION)
+4. No other record of Joan has been located
 
 ---
 
 ## Model A — Narragansett Sachem-Line Woman
 
-**Status:** ⚫ OPEN HYPOTHESIS
+**Status:** ⚪ OPEN HYPOTHESIS
 
-**Basis in the record:**
+**Tag: 🟡 PLAUSIBLE**
 
-### Strong (survives Corrections #1 and #2)
-- **Joan's 40-year documentary silence (H15).** She appears in exactly ONE verified legal document (March 1682 home-place deed) across 40+ years of marriage. This is unique among Quidnessett wives and is the strongest surviving structural indicator. See `agents/Explorer/2026-09-02_migoo_cycle5.md`.
-- **The neighbor-wife comparison set.** Ann Smith, Mary Gardiner, Elizabeth Helme, and Penelope Stanton all have more extensive documentation including maiden names. Joan is the outlier. Methodology is clean and testable.
-- **The Independent John hypothesis.** No colonial document links John Greene of Quidnessett to Surgeon John Greene of Warwick as kin.
-- **Trading post context.** Cocumscussoc was a documented site of English–Indigenous interaction, including intermarriage.
+### Strong (survives Corrections #1 and #2, confirmed Sep 5 2026)
+- **Joan's 40-year documentary silence (H15).** One verified appearance across 40+ years. Unique among Quidnessett wives.
+- **The neighbor-wife comparison set.** Ann Smith, Mary Gardiner, Elizabeth Helme, Penelope Stanton all have more documentation. Joan is the outlier.
+- **The Independent John hypothesis.** No colonial document links Quidnessett John to Warwick John as kin.
+- **Trading post context.** Cocumscussoc was a documented site of English–Indigenous interaction.
+- **Anashuecot geographic/temporal match.** Same territory, active 1661–1672.
 
-### Moderate (contextual, not direct)
-- **Weunquesh 1679.** Proves female Indigenous land authority mechanism existed in the region.
-- **Greene's documented pro-Indigenous actions (1676/1679).**
-- **Pre-war succession gap.** Scuttup's 1668 death opened a sachem succession gap.
+### Moderate
+- Weunquesh 1679 proves female Indigenous land authority existed in the region.
+- Greene's documented pro-Indigenous actions (1676/1679).
+
+### Sep 5 Search Results
+- Phonetic variant sweep: ALL negative outside 1661/1672 deeds. Kin group exists in ONE document only.
+- Multi-jurisdiction sweep: No hit in CT, MA, NY, or Crown records.
+- 1660 Atherton mortgage: Anashuecot absent. Either not yet active, too local, or excluded.
+- Tacommanan → Anashuecot via Namowish/Nammeash: 🟡 PLAUSIBLE — phonetic match, not documented link.
 
 ### ⚫ SUSPENDED (post-corrections)
 - ~~"Or to her mother if she survive" matrilineal clause~~ — see `contradictions/mother-clause-wording.md`
-- ~~Joan's second legal appearance (Pawtuxet deed)~~ — see `CORRECTIONS.md` #1
-- ~~Joan's mark as possible Indigenous pictographic signature~~ — mark not yet located
-
-### Speculative (held open, not promoted)
-- Awassuocitt phonetic hypothesis (low confidence)
-- 1659 Awashouse-Greene co-occurrence (data point only)
-- Anaftiawin = Anashuecot phonetic chain (data preserved, chain deleted from promotion)
-
-**What would confirm:** A bridging document connecting Joan to any Indigenous individual or community. Joan's mark showing an Indigenous pictographic pattern. DNA results connecting the Greene line to Indigenous ancestry.
-
-**What would eliminate:** An English parish record for Joan. A marriage record in any English colony. Finding that other frontier wives have similarly thin records (expanded comparison set).
+- ~~Joan's mark as Indigenous pictographic signature~~ — 🔴 DISCREDITED (Joan does not sign, Image 10)
+- ~~Joan's second appearance (Pawtuxet deed)~~ — 🔴 DISCREDITED see `CORRECTIONS.md` #1
 
 ---
 
 ## Model B — English Woman, Undocumented
 
-**Status:** ⚫ OPEN HYPOTHESIS
+**Status:** ⚪ OPEN HYPOTHESIS
 
-**Basis in the record:**
-- "Joan" is an English name. She appears in English legal instruments, married to an English-named man.
+**Tag: 🟡 PLAUSIBLE**
+
+- "Joan" is an English name. She appears in English legal instruments.
 - No colonial record identifies Joan as Indigenous.
-- English is the default identity assumption for a woman in a colonial English household (a prior, not a finding).
 - The absence of records for colonial women is common, though Joan's silence is unusually deep.
 
-**Anomalies it must explain:**
-1. Joan's documentary silence — unique among Quidnessett wives
-2. Her outlier status in the neighbor-wife comparison set
-
-**What would confirm:** Finding any English Joan matching colony, dates, and marriage to a John Greene. Documenting that other frontier wives have similarly thin records. Evidence that the 1869 NK fire destroyed the relevant records.
-
-**What would eliminate:** A positive identification of Joan as Indigenous, Irish, or otherwise non-English. A document explicitly identifying her origin.
+### Sep 5 Search Results
+- "Joan Tibbitts" maiden name claim: 🔴 DISCREDITED. Contamination chain documented. Henry Tibbitts is a real associate; the maiden name inference is fabricated.
+- No English parish record found matching Joan married to a John Green 1640–1665.
+- No children have birth/baptism records in ANY jurisdiction.
 
 ---
 
 ## Model C — Irish Origin
 
-**Status:** ⚫ OPEN HYPOTHESIS
+**Status:** ⚪ OPEN HYPOTHESIS
 
-**Basis in the record:**
-- Y-DNA results point to an Irish Sea genetic cluster. Could be patrilineal only, could indicate broader family origin.
-- Irish immigration to New England in the 1630s–1660s is documented but under-studied.
-- Irish women in colonial New England often left minimal records.
+**Tag: 🟡 PLAUSIBLE**
 
-**What would confirm:** An Irish parish record for Joan. A ship manifest showing Irish immigration to the Narragansett region. Further DNA analysis narrowing the Irish connection.
-
-**What would eliminate:** DNA ruling out Irish connection entirely. A positive identification of another origin.
-
-**Not yet searched:** Irish parish records (Law 5 requires checking before elimination).
+- Y-DNA results point to an Irish Sea genetic cluster.
+- 🟢 PROOF (linguistic): Siobhán → Joan is a real, documented anglicization. In colonial records, a Siobhán would appear as Joan, Joane, Johanna, or Jane.
+- No Cromwellian transport list names a Joan sent to New England. 🟡 Negative space logged.
+- Bristol servant registers 1654–1665: No female servant bound for New England. 🟡 Negative space logged.
+- Missing baptisms consistent with Irish Catholic household (no Protestant minister).
 
 ---
 
 ## Model D — Indentured Servant
 
-**Status:** ⚫ OPEN HYPOTHESIS
+**Status:** ⚪ OPEN HYPOTHESIS
 
-**Basis in the record:**
+**Tag: 🟡 PLAUSIBLE**
+
 - Would explain absence of maiden name, family, and parish record.
-- Post-indenture marriage to a landholder is documented in the colonial period.
-- Indentured women's records are systematically under-preserved.
-
-**Complication:** Earlier versions of this archive noted that indentured women had no dower rights to extinguish, making Joan's inclusion in the deed legally irrelevant. However, this depends on whether Joan was a co-grantor (S-005, ⚫ SUSPENDED) or a beneficiary. If she was a beneficiary only, the indenture objection does not apply.
-
-**What would confirm:** An indenture record for a Joan in RI/MA/Plymouth. A court record showing a former servant named Joan marrying in the Narragansett region.
-
-**What would eliminate:** Evidence that Joan had property rights inconsistent with former servant status.
-
-**Not yet searched:** Indenture records for RI, MA, Plymouth (Law 5 requires checking).
+- Post-indenture marriage to a landholder is documented in colonial period.
+- Bristol registers: No match for New England. Negative space logged.
+- Henry Tibbitts signs with his mark = another non-literate in John's circle. John's network is laboring-class, not gentry.
+- John absent from Atherton Company = NOT a capital partner. 🟢 PROOF (of absence) supports servant/employee status for John too.
 
 ---
 
 ## Model E — Enslaved Person
 
-**Status:** ⚫ OPEN HYPOTHESIS
+**Status:** ⚪ OPEN HYPOTHESIS
 
-**Basis in the record:**
-- Post-1676 legal framework (King Philip's War) created conditions where Indigenous and African enslaved persons entered English households.
-- Would explain total absence of prior identity in English records.
-- Narragansett Country had documented enslaved persons in this period.
+**Tag: 🟡 PLAUSIBLE**
 
-**What would confirm:** A record of an enslaved woman named Joan in the Narragansett region. Evidence of enslavement in the Greene household.
+⚠️ **Content note:** This hypothesis addresses enslavement and forced servitude of Indigenous and African persons. It is included because the documentary record requires examining it — not because it is preferred or probable.
 
-**What would eliminate:** Evidence of Joan's free status prior to the marriage. The deed's annuity provision (if she were enslaved, a life annuity would be legally unusual — but not impossible).
-
-**Not yet searched:** Post-1676 enslavement records for RI (Law 5 requires checking).
+- Post-1676 legal framework created conditions where Indigenous and African enslaved persons entered English households.
+- No RI disposal record names a Joan or assigns a captive to a Greene. Negative space logged.
+- The annuity provision (if Joan were enslaved, a life annuity would be legally unusual — but not impossible).
 
 ---
 
 ## Model F — Widow of Prior Marriage
 
-**Status:** ⚫ OPEN HYPOTHESIS
+**Status:** ⚪ OPEN HYPOTHESIS
 
-**Basis in the record:**
-- Could explain Joan's legal standing in the deed without requiring Indigenous identity.
+**Tag: 🟡 PLAUSIBLE**
+
+- Could explain legal standing without requiring Indigenous identity.
 - Remarriage of widows was common in colonial New England.
-- Would explain the absence of a maiden name (she may be known by her first husband's name in other records).
-
-**What would confirm:** A probate or marriage record for a Joan [surname] who remarried John Greene. A prior husband's estate record.
-
-**What would eliminate:** A marriage record showing Joan's maiden name directly. Evidence that John Greene was her first and only husband.
-
-**Not yet searched:** RI probate records pre-1682 (Law 5 requires checking).
+- Joan Borden (d. 1688) found as parallel case — documented RI widow named Joan. NOT a match. 🟡 Negative space logged.
+- No RI probate names a widow Joan in 1660–1680 who then disappears.
 
 ---
 
@@ -149,40 +129,24 @@ Every open model starts from the same three verified facts:
 
 **Status:** 🔴 ELIMINATED
 
-La Mance (1904) conflated multiple women into "Joan Beggarly." Alice Daniels Beggerly died c. 1643/44. Joan of Quidnessett is alive in 1682. **A dead woman cannot receive a life-estate.** Timeline impossible. Wrong John Greene (Surgeon John of Warwick, not Quidnessett John). Wrong town.
-
-See `agents/Archivist/2026-09-02_lamance_disentanglement_proof_steps.md`.  
-See `CORRECTIONS.md` #2.
-
-**Model status:** ❌ ELIMINATED. Rock solid.
+Timeline impossible. Alice Daniels Beggerly died c. 1643/44. Joan alive 1682. Wrong John Greene (Warwick, not Quidnessett).
 
 ---
 
-## The Honest Assessment (Sep 3, 2026)
+## The Honest Assessment (Sep 5, 2026)
 
-Six models remain open. None has positive direct evidence. All are built on the same three verified facts plus varying amounts of structural, contextual, and circumstantial indicators.
+Six models remain open. None has positive direct evidence. All are built on the same verified facts plus varying amounts of structural, contextual, and circumstantial indicators.
 
-Model A (Narragansett) has the most developed circumstantial case. Model B (English) has the strongest prior. Models C–F have not been adequately searched to evaluate.
+Model A (Narragansett) has the most developed circumstantial case but the thinnest primary source base (one deed family, one affidavit). Model B (English) has the strongest prior but no positive evidence either. Models C–F have been partially searched with negative results but remain open.
 
-The archive does not rank these models by preference. It ranks them by the amount of evidence gathered so far — and notes that the amount gathered is itself biased by where the archive has looked. Law 5 (No Jurisdictional Assumption) and Law 6 (No Centering) require that all models be searched with equal rigor before any ranking is attempted.
+**Children:** No birth or baptism record exists for ANY child of John and Joan Greene. All children are reconstructed from later deeds, wills, and marriages. See `evidence/children_evidence_grid.md`.
 
-The manuscript (FamilySearch DGS 008204949, images 9–12) remains the single most decisive unexamined source. It could confirm, suspend, or eliminate claims across multiple models.
+**The 1695/96 deed** (Benjamin to James) is the single most important unread document for Joan's timeline. If it mentions Joan, she's alive 13 years after the homeplace deed.
 
----
-
-## What the Archive Does NOT Do
-
-- Does not claim Joan was English.
-- Does not claim Joan was Narragansett.
-- Does not claim Joan was Irish, indentured, enslaved, or widowed.
-- Does not collapse uncertainty into narrative in any direction.
-- Does not treat the colonial record as neutral (see `methodology/Epistemology.md`).
-- Does not infer identity without primary sources.
-- Does not center one model over others without evidence (Law 6).
-- Holds all open models to the same evidentiary standard.
+The archive does not rank these models by preference. It ranks them by the amount of evidence gathered so far — and notes that the amount gathered is itself biased by where the archive has looked. Law 5 (No Jurisdictional Assumption), Law 6 (No Centering), and Law 7 (No Trust Without Evidence) require that all models be searched with equal rigor before any ranking is attempted.
 
 ---
 
-*Joan Archive — theory/joan_ancestry_shadow_models.md*  
-*Laws: 1 (no narrative smoothing), 2 (La Mance law), 3 (no premature disqualification), 5 (no jurisdictional assumption), 6 (no centering)*  
+*Joan Archive — theory/joan_ancestry_shadow_models.md*
+*Laws: 1 (no narrative smoothing), 2 (La Mance law), 3 (no premature disqualification), 5 (no jurisdictional assumption), 6 (no centering), 7 (no trust without evidence)*
 *All open models remain ⚪ UNVERIFIED. The archive does not collapse uncertainty into narrative.*
