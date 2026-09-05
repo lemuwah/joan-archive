@@ -2,7 +2,7 @@
 
 **Status:** Active — all agents (Migoo, Devin, Kimi, Claude, Gemini, any AI) must read this file before producing output.  
 **Added:** 2026-09-03  
-**Authority:** Equal to the Five Laws. Violations are treated the same as Law 1 violations.
+**Authority:** Equal to the Seven Laws. Violations are treated the same as Law 1 violations.
 
 ---
 
@@ -112,4 +112,4 @@ Until someone reads those images, the archive holds three facts and a wall of ho
 ---
 
 *This file is referenced in `README_FOR_EXTERNAL_AGENTS.md` as required reading.*  
-*Maintained under the Five Laws of the Joan Archive.*
+*Maintained under the Seven Laws of the Joan Archive.*
