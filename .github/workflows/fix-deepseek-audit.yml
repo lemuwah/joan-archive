@@ -1,0 +1,86 @@
+name: Fix DeepSeek audit items
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Apply fixes
+        run: |
+          python3 << 'SCRIPT'
+          import os
+
+          changes = []
+
+          # 1. Fix generic link text on index.html
+          with open('index.html', 'r', encoding='utf-8') as f:
+              content = f.read()
+          old = '>start here</a>'
+          new = '>see the contribute page</a>'
+          if old in content:
+              content = content.replace(old, new)
+              changes.append('index.html: start here -> descriptive link text')
+          with open('index.html', 'w', encoding='utf-8') as f:
+              f.write(content)
+
+          # 2. Add OG tags to sub-pages
+          og_tags = {
+              'about.html': {
+                  'title': 'About — The Joan Archive',
+                  'description': 'Methodology, Seven Laws, corrections, and AI hallucination checklist for the Joan Archive research project.',
+              },
+              'analysis.html': {
+                  'title': 'Analysis — The Joan Archive',
+                  'description': 'Open hypotheses about Joan Greene tested against primary sources. Seven competing models, equal treatment, no centering.',
+              },
+              'context.html': {
+                  'title': 'Context — The Joan Archive',
+                  'description': 'Timeline, geography, colonial jurisdiction, and digitization crisis surrounding Joan Greene of Quidnessett (1682).',
+              },
+              'contribute.html': {
+                  'title': 'Contribute — The Joan Archive',
+                  'description': 'How to help find Joan. Negative space log, manuscript access, what has not been searched yet.',
+              },
+          }
+
+          for page, meta in og_tags.items():
+              if not os.path.exists(page):
+                  continue
+              with open(page, 'r', encoding='utf-8') as f:
+                  content = f.read()
+              if 'og:title' in content:
+                  changes.append(f'{page}: OG tags already present, skipping')
+                  continue
+              # Insert OG tags before </head>
+              og_block = f'<meta property="og:title" content="{meta["title"]}">' + '\n'
+              og_block += f'<meta property="og:description" content="{meta["description"]}">' + '\n'
+              og_block += '<meta property="og:type" content="website">\n'
+              og_block += '<meta property="og:url" content="https://lemuwah.github.io/joan-archive/">\n'
+              content = content.replace('</head>', og_block + '</head>')
+              with open(page, 'w', encoding='utf-8') as f:
+                  f.write(content)
+              changes.append(f'{page}: OG tags added')
+
+          print(f'Applied {len(changes)} fixes:')
+          for c in changes:
+              print(f'  {c}')
+          SCRIPT
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git diff --cached --stat
+            git commit -m "fix: DeepSeek audit — OG tags on sub-pages + descriptive link text"
+            git push
+          fi
