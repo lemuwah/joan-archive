@@ -154,7 +154,7 @@ This is consistent with (but does not prove) the Quidnessett John being a differ
 2. What is Joan's actual identity? (See source spine Tier 1 and Tier 2 theses)
 3. When exactly did he die? (Between March 1682 and Sept 1685 per Bates citation; "c. 1695" is traditional)
 4. Where is his will? (Confirmed lost in North Kingstown fire — Bates / F.L. Greene)
-5. Is the Luann-sourced children's birth year list accurate against the original *Records of the Colony of RI*?
+5. Are the Le Mance children's birth year list accurate against the original *Records of the Colony of RI*?
 6. Which John is "John Greene and Son" on the 1666 Quidnessett plat? (TEST THEORIES open)
 7. Which John is "Lieut. John Green" on the August 1676 court martial panel? (NOT our John — no military title documented)
 
