@@ -60,7 +60,7 @@ No primary source confirms Joan's ancestry. The archive maintains seven shadow m
 - **F** — Widow of prior marriage (🟡 PLAUSIBLE)
 - **G** — Joan Beggarly / Alice Daniels (🔴 ELIMINATED — La Mance error)
 
-All open models remain ⚪ UNVERIFIED. The archive does not collapse uncertainty into narrative.
+All open models remain ⚠️ UNVERIFIED. The archive does not collapse uncertainty into narrative.
 
 Full analysis: `theory/joan_ancestry_shadow_models.md`
 
@@ -74,6 +74,7 @@ Full analysis: `theory/joan_ancestry_shadow_models.md`
 3. `theory/three_laws.md` — the Seven Laws in full
 4. `evidence/joan_verified_facts.md` — the four facts
 5. `methodology/editorial_standards.md` — what goes on public pages
+6. `primary_sources/NEGATIVE_LOG.md` — what has been searched and came back empty. **Read before searching — don't re-search dead ends**
 
 ### Evidence & Sources
 - `primary_sources/` — source intake queue, negative log, manuscript references
@@ -82,13 +83,14 @@ Full analysis: `theory/joan_ancestry_shadow_models.md`
 
 ### Theory & Analysis
 - `theory/` — Seven Laws, source spine, shadow models, proof pieces
-- `contradictions/` — held-open contradictions with status tracking
+- `contradictions/` — held-open contradictions with status tracking (see `contradictions/index.md`)
 - `contamination/` — La Mance chain, AI contamination log
 
 ### Methodology
 - `methodology/` — editorial standards, inference audit, epistemology, agent orientation, Kimi audit
 - `CORRECTIONS.md` — public corrections log
 - `decision_log.md` — numbered research decisions with rationale
+- `KNOWN_LIMITATIONS.md` — honest boundaries of this archive
 
 ### Agents
 - `agents/Archivist/` — research sweep documents for hostile review

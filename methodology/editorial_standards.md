@@ -11,7 +11,7 @@
 This is the complete list. Nothing else qualifies.
 
 | # | Fact | Source | Tag |
-|---|------|--------|------|
+|---|------|--------|-----|
 | 1 | Joan is named as wife of John Greene in a March 1682 land deed | Worth abstract + Image 10 AI transcription | PROOF — AI TRANSCRIPTION |
 | 2 | A life annuity is reserved to her (amount unverified — Worth says 30 shillings, manuscript read may differ) | Worth abstract + Image 10 AI transcription | PROOF — AI TRANSCRIPTION (amount OPEN QUESTION) |
 | 3 | Joan does not sign or mark the 1682 deed | Image 10 AI transcription | PROOF — AI TRANSCRIPTION |
@@ -37,6 +37,8 @@ The canonical tag system is defined in `methodology/integrity_framework.md`. The
 - **DISCREDITED** — Tested and failed
 
 Legacy tags in older files (PROVEN/PROBABLE/UNVERIFIED/NULL/SUSPENDED) are recognized as equivalent but the canonical system governs.
+
+**Tag-change documentation rule:** Every status tag change — promotion, demotion, or lateral reclassification — must be documented with: (a) which source triggered the change, (b) the date of the change, (c) who or what agent made the change, and (d) what the source actually says. Log the change in `CORRECTIONS.md` and update the relevant contradiction file in `contradictions/` if applicable. Undocumented tag changes violate Law 7.
 
 ---
 
