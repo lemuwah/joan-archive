@@ -1,7 +1,7 @@
 # The Seven Laws of the Joan Archive
 
 **Status:** Active — supreme authority over all agent and human output.  
-**Last updated:** 2026-09-05  
+**Last updated:** 2026-09-06  
 **Companion files:** `AGENT_GUARDRAILS.md`, `methodology/editorial_standards.md`
 
 ---
@@ -76,10 +76,11 @@ The archive investigates **who Joan was** — not a preferred theory about who J
 
 No identity model receives more visual space, more confident language, or more prominent placement than its evidence warrants. The absence of English records is not evidence for Narragansett identity — it is evidence of absence from English records, consistent with multiple models.
 
-Every open model starts from the same three verified facts:
-1. Joan is named as wife of John Greene in a March 1682 land deed (Worth abstract)
-2. A life annuity of 30 shillings per year is reserved to her (Worth abstract)
-3. No other record of Joan has been located
+Every open model starts from the same four verified facts:
+1. Joan is named as wife of John Greene in a March 1682 land deed (Worth abstract + Image 10 AI transcription)
+2. A life annuity is reserved to her (amount under review — Worth says 30 shillings; manuscript read may differ)
+3. Joan does not sign or mark the deed (Image 10, 🟢 PROOF — AI TRANSCRIPTION)
+4. No other record of Joan has been located
 
 See `AGENT_GUARDRAILS.md` §2–3 for implementation rules.
 
