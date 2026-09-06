@@ -1,4 +1,4 @@
-# The Seven Laws of the Joan Archive
+# The EVOLVING Laws of the Joan Archive as We learn the Road to Find Her. 
 
 **Status:** Active — supreme authority over all agent and human output.  
 **Last updated:** 2026-09-06  
