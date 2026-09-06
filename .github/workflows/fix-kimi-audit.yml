@@ -1,0 +1,126 @@
+name: Kimi audit fixes
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fix all issues
+        run: |
+          python3 << 'SCRIPT'
+          import os, glob
+
+          changes = []
+
+          # Fix all markdown files: Five Laws -> Seven Laws, Six Laws -> Seven Laws
+          for f in glob.glob('**/*.md', recursive=True):
+              with open(f, 'r', encoding='utf-8') as fh:
+                  content = fh.read()
+              modified = False
+              for old, new in [
+                  ('Five Laws', 'Seven Laws'),
+                  ('five Laws', 'Seven Laws'),
+                  ('five laws', 'seven laws'),
+                  ('Six Laws', 'Seven Laws'),
+                  ('six Laws', 'Seven Laws'),
+                  ('six laws', 'seven laws'),
+                  ('5 Laws', '7 Laws'),
+                  ('Five Governing Laws', 'Seven Governing Laws'),
+              ]:
+                  if old in content:
+                      content = content.replace(old, new)
+                      modified = True
+              if modified:
+                  with open(f, 'w', encoding='utf-8') as fh:
+                      fh.write(content)
+                  changes.append(f'{f}: law count fixed')
+
+          # Fix editorial_standards.md: annuity amount
+          es = 'methodology/editorial_standards.md'
+          if os.path.exists(es):
+              with open(es, 'r', encoding='utf-8') as fh:
+                  content = fh.read()
+              old = 'A life annuity of 30 shillings per year is reserved to her'
+              new = 'A life annuity is reserved to her (amount unverified — Worth says 30 shillings, manuscript read may differ)'
+              if old in content:
+                  content = content.replace(old, new)
+                  changes.append('editorial_standards.md: annuity amount corrected')
+              # Update fact count from 3 to 4
+              old2 = 'Only these three facts'
+              new2 = 'Only these four facts'
+              if old2 in content:
+                  content = content.replace(old2, new2)
+                  changes.append('editorial_standards.md: fact count 3 -> 4')
+              with open(es, 'w', encoding='utf-8') as fh:
+                  fh.write(content)
+
+          # Fix contradictions/mother-clause-wording.md: Model B -> Model A
+          mc = 'contradictions/mother-clause-wording.md'
+          if os.path.exists(mc):
+              with open(mc, 'r', encoding='utf-8') as fh:
+                  content = fh.read()
+              old = 'Model B (indigenous ancestry)'
+              new = 'Model A (Narragansett sachem-line)'
+              if old in content:
+                  content = content.replace(old, new)
+                  changes.append('mother-clause-wording.md: Model B -> Model A')
+              # Also catch variations
+              old2 = 'Model B (Indigenous ancestry)'
+              if old2 in content:
+                  content = content.replace(old2, 'Model A (Narragansett sachem-line)')
+                  changes.append('mother-clause-wording.md: Model B variant -> Model A')
+              with open(mc, 'w', encoding='utf-8') as fh:
+                  fh.write(content)
+
+          # Fix joan_ancestry_shadow_models.md: add Law 4
+          sm = 'theory/joan_ancestry_shadow_models.md'
+          if os.path.exists(sm):
+              with open(sm, 'r', encoding='utf-8') as fh:
+                  content = fh.read()
+              if 'Laws: 1, 2, 3, 5, 6, 7' in content:
+                  content = content.replace('Laws: 1, 2, 3, 5, 6, 7', 'Laws: 1, 2, 3, 4, 5, 6, 7')
+                  changes.append('shadow_models.md: added missing Law 4')
+              with open(sm, 'w', encoding='utf-8') as fh:
+                  fh.write(content)
+
+          # Fix HTML pages: add Law 7 where missing + fix Six->Seven
+          for page in ['index.html', 'about.html', 'analysis.html', 'context.html', 'contribute.html']:
+              if not os.path.exists(page):
+                  continue
+              with open(page, 'r', encoding='utf-8') as fh:
+                  content = fh.read()
+              modified = False
+              if 'Six Laws' in content:
+                  content = content.replace('Six Laws', 'Seven Laws')
+                  modified = True
+              if 'six laws' in content:
+                  content = content.replace('six laws', 'seven laws')
+                  modified = True
+              if modified:
+                  with open(page, 'w', encoding='utf-8') as fh:
+                      fh.write(content)
+                  changes.append(f'{page}: law count fixed')
+
+          print(f'Applied {len(changes)} fixes:')
+          for c in changes:
+              print(f'  {c}')
+          SCRIPT
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git diff --cached --stat
+            git commit -m "fix: Kimi audit — law counts, annuity, Model B swap, tag system across all files"
+            git push
+          fi
