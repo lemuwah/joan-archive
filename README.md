@@ -28,29 +28,21 @@ These are the only statements about Joan that can be made from the evidence curr
 3. **Joan does not sign or mark the deed** — John Greene is the sole signatory (Image 10, 🟢 PROOF — AI TRANSCRIPTION)
 4. **No other record of Joan has been located** across any colonial jurisdiction searched (RI, CT, MA, Plymouth, Crown)
 
-Everything else — her origins, her ancestry, her identity — is an open question explored through seven competing models. See `theory/joan_ancestry_shadow_models.md`.
+Everything else — her origins, her ancestry, her identity — is an open question explored through eight competing models. See `theory/joan_ancestry_shadow_models.md`.
 
 ---
 
-## The Seven Laws
+## The Laws of the Joan Archive
 
-This archive is governed by seven research integrity laws. They are not guidelines. They are absolute.
-
-1. **No Narrative Smoothing** — contradictions are logged, not resolved by fiat
-2. **La Mance Law** — no claim traceable to La Mance (1904) accepted without independent primary corroboration
-3. **No Premature Disqualification** — no hypothesis eliminated without thorough primary source testing
-4. **No Algorithmic Contamination** — every AI contamination logged with vector and rejection reasoning
-5. **No Jurisdictional Assumption** — search all relevant jurisdictions, not just RI
-6. **No Centering** — no ancestry model gets privileged placement or framing
-7. **No Trust Without Evidence** — if we can't prove it, we don't post it
+This archive is governed by the Laws of the Joan Archive. They are not guidelines. They are absolute. **The Laws evolve as our process improves — do not assume the count or content is the same as the last time you read them.** Always refer to the current full text.
 
 Full text: `theory/three_laws.md`
 
 ---
 
-## Seven Competing Models
+## Eight Competing Models
 
-No primary source confirms Joan's ancestry. The archive maintains seven shadow models:
+No primary source confirms Joan's ancestry. The archive maintains eight shadow models:
 
 - **A** — Narragansett sachem-line woman (🟡 PLAUSIBLE)
 - **B** — English woman, undocumented (🟡 PLAUSIBLE)
@@ -59,6 +51,7 @@ No primary source confirms Joan's ancestry. The archive maintains seven shadow m
 - **E** — Enslaved person (🟡 PLAUSIBLE)
 - **F** — Widow of prior marriage (🟡 PLAUSIBLE)
 - **G** — Joan Beggarly / Alice Daniels (🔴 ELIMINATED — La Mance error)
+- **H** — Mixed-heritage (English/Narragansett parentage) (🟡 PLAUSIBLE)
 
 All open models remain ⚠️ UNVERIFIED. The archive does not collapse uncertainty into narrative.
 
@@ -68,13 +61,9 @@ Full analysis: `theory/joan_ancestry_shadow_models.md`
 
 ## Repository Structure
 
-### Mandatory Reading (in order)
-1. `methodology/agent_orientation.md` — start here
-2. `AGENT_GUARDRAILS.md` — rules for all agents
-3. `theory/three_laws.md` — the Seven Laws in full
-4. `evidence/joan_verified_facts.md` — the four facts
-5. `methodology/editorial_standards.md` — what goes on public pages
-6. `primary_sources/NEGATIVE_LOG.md` — what has been searched and came back empty. **Read before searching — don't re-search dead ends**
+### Mandatory Reading
+
+⚠️ **The Laws and methodology evolve. Do not assume they are the same as last time.** Start with `methodology/agent_orientation.md` — it contains the full onboarding sequence and will always point to the current canonical reading list.
 
 ### Evidence & Sources
 - `primary_sources/` — source intake queue, negative log, manuscript references
@@ -82,7 +71,7 @@ Full analysis: `theory/joan_ancestry_shadow_models.md`
 - `images/` — manuscript images, Bates pages, F.L. Greene pages
 
 ### Theory & Analysis
-- `theory/` — Seven Laws, source spine, shadow models, proof pieces
+- `theory/` — the Laws, source spine, shadow models, proof pieces
 - `contradictions/` — held-open contradictions with status tracking (see `contradictions/index.md`)
 - `contamination/` — La Mance chain, AI contamination log
 
@@ -91,6 +80,9 @@ Full analysis: `theory/joan_ancestry_shadow_models.md`
 - `CORRECTIONS.md` — public corrections log
 - `decision_log.md` — numbered research decisions with rationale
 - `KNOWN_LIMITATIONS.md` — honest boundaries of this archive
+
+### Research
+- `research_queue/` — hypothesis test matrix, research targets, search queue
 
 ### Agents
 - `agents/Archivist/` — research sweep documents for hostile review
@@ -101,7 +93,7 @@ Full analysis: `theory/joan_ancestry_shadow_models.md`
 
 1. Read `methodology/agent_orientation.md` first
 2. Check `primary_sources/NEGATIVE_LOG.md` before searching — don't re-search dead ends
-3. Follow the Seven Laws
+3. Follow the Laws
 4. If you find an error, report it via [GitHub Issues](https://github.com/lemuwah/joan-archive/issues)
 
 ---
@@ -114,5 +106,5 @@ Full analysis: `theory/joan_ancestry_shadow_models.md`
 
 ---
 
-*The Joan Archive — maintained under the Seven Laws.*  
+*The Joan Archive — maintained under the Laws of the Joan Archive.*  
 *"There is no room for ego or fabrication — this is a quest for the truth."*

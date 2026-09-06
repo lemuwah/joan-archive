@@ -15,72 +15,79 @@
 3. Joan does not sign or mark the deed
 4. No other record of Joan has been located
 
-### Seven Competing Models (All PLAUSIBLE, None Proven)
-- **A** — Narragansett sachem-line woman
-- **B** — Undocumented English woman
-- **C** — Irish origin (Y-DNA)
-- **D** — Indentured servant
-- **E** — Enslaved person (post-1676)
-- **F** — Widow of prior marriage
-- **G** — ELIMINATED (La Mance / Joan Beggarly)
+### Eight Competing Models (All PLAUSIBLE, None Proven)
+- **A** — Narragansett sachem-line woman (⚠️ UNVERIFIED)
+- **B** — English woman, undocumented (⚠️ UNVERIFIED)
+- **C** — Irish origin (⚠️ UNVERIFIED)
+- **D** — Indentured servant (⚠️ UNVERIFIED)
+- **E** — Enslaved person (⚠️ UNVERIFIED)
+- **F** — Widow of prior marriage (⚠️ UNVERIFIED)
+- **G** — Joan Beggarly / La Mance — 🔴 ELIMINATED (wrong John, wrong town, timeline impossible)
+- **H** — Mixed-heritage (English/Narragansett parentage) (⚠️ UNVERIFIED) *(Added 2026-09-04)*
 
-### Five John Models (All PLAUSIBLE)
-- **I** — English settler (unproven default)
-- **II** — Irish origin (Y-DNA R-Z255)
-- **III** — Dutch-connected (trade networks)
-- **IV** — Servant/indentured to Richard Smith
-- **V** — Hybrid Irish + servant
+Model G is eliminated. All others remain open. The archive does not collapse uncertainty into narrative.
 
----
+### Five John Firewall
+Five men named John Greene are active in colonial Rhode Island. Confusing them is the #1 error in Greene genealogy.
 
-## What Has Been Exhausted
-
-- Worthington Vol. I (all 445 abstracts) — Joan appears once
-- Bates RIHS Collections XI–XIV — Joan appears 5 times, all as identifier
-- Clarke 1903 *Greenes of Rhode Island* — WRONG FAMILY (Warwick Greenes)
-- Bartlett Colony Records Vols. I–III — John appears, Joan does not
-- CT, MA, Plymouth, Crown records — Joan absent from all
-- Published ethnographies (Simmons, Rubertone, Bragdon, Salisbury) — no mention
+| # | Identity | Status |
+|---|----------|--------|
+| I | Surgeon of Warwick (d. 1658) | Distinct — will, Gillingham origin |
+| II | John of Quidnessett — **OUR JOHN** | Wife Joan, 1679 affidavit, 1682 deed |
+| III | John Jr of Warwick | Son of Surgeon, 1686 agent to England |
+| IV | John of Newport | May = #II (Bates says so, PLAUSIBLE alias) |
+| V | John of Kingstown | May = #II (post-incorporation name) |
 
 ---
 
-## Priority Targets (What to Search Next)
+## Mandatory Reading — Onboarding Sequence
 
-| # | Target | Why | Access |
-|---|--------|-----|--------|
-| 1 | **Bates RIHS articles — full text read** | She's the only scholar who studied our John. May have more context. | Internet Archive (free) |
-| 2 | **NK Land Evidence Book 1 (FamilySearch DGS 008204949)** | Local deed book. The 1695/96 Wightman deed should be here. Tests Joan alive/dead. | FamilySearch (login) |
-| 3 | **Jamestown Land Evidence Records, 1680–1899** | Clark-to-Brinley 1685 deed ("now deceased"). Tests John's death date. | FamilySearch (login) |
-| 4 | **Two-James audit** | Every "James Greene" in the archive needs brother vs. son label. | Internal audit |
-| 5 | **RI State Digital Archives** | sosri.access.preservica.com — manuscript images of colony-level land records. | Free online |
-| 6 | **Bartlett Vol. II — verify page numbers** | pp. 45, 51, 226–227, 255–263, 391–393. Cited but not personally read. | Internet Archive (free) |
+⚠️ **The Laws of the Joan Archive evolve as our process improves. Do not assume this list, or the Laws themselves, are the same as the last time you read them.** Always re-read from the current main branch.
 
----
+Read these files in this order before producing any output:
 
-## Mandatory Files for Any Agent
-
-Before producing output, read these in order:
-
-1. `theory/three_laws.md` — The Seven Laws
-2. `AGENT_GUARDRAILS.md` — Do-no-harm rules, models list, CARE-B
-3. `methodology/integrity_framework.md` — Tag system, logic rules, pipeline
-4. `methodology/editorial_standards.md` — What goes where, verified facts
-5. `evidence/joan_verified_facts.md` — The four facts
-6. `evidence/suspended_items.md` — What's suspended and why
-7. `CORRECTIONS.md` — Three corrections logged
-8. `methodology/kimi_hostile_audit.md` — Framework audit tracker
+1. `theory/three_laws.md` — the Laws in full (supreme authority)
+2. `AGENT_GUARDRAILS.md` — agent-specific rules (equal authority to the Laws)
+3. `evidence/joan_verified_facts.md` — the four facts
+4. `methodology/editorial_standards.md` — what goes on public pages, tag system, tag-change rules
+5. `primary_sources/NEGATIVE_LOG.md` — **what has been searched and came back empty. Read before searching — don't re-search dead ends**
+6. `evidence/suspended_items.md` — claims held open pending resolution
+7. `CORRECTIONS.md` — public corrections log
+8. `KNOWN_LIMITATIONS.md` — honest boundaries of this archive
+9. `contradictions/index.md` — all held-open contradictions with status
+10. `research_queue/HYPOTHESIS_TEST_MATRIX.md` — what has actually been searched per model
 
 ---
 
-## Contamination Events Caught (6 total)
+## What We Are Trying to Learn
 
-1. Bow-and-arrow mark — AI echo of brainstorming
-2. Joan Tibbitts maiden name — fabricated from flipped association
-3. John's death as PROOF — downgraded to PLAUSIBLE
-4. Clarke 1903 "daughter of sachem" — AI hallucination (full text search: zero hits)
-5. 1663 CT petition — conflation with 1668 petition
-6. Vol. VII pp. 177–178 citation — wrong century (1773 Gaspee records)
+1. **Who was Joan?** — maiden name, parents, origin, ancestry, birth, death
+2. **What does the 1682 deed actually say?** — paleographic verification of AI transcription
+3. **When did John die?** — C-2 contradiction: Bates says before Sept 1685, F.L. Greene says 1686/1692
+4. **What happened to Joan after 1682?** — total documentary silence
+5. **Which records mention our John vs. a different John?** — Five-John Firewall disambiguation
 
 ---
 
-*Maintained under the Seven Laws. Law 7: No Trust Without Evidence.*
+## How We Get There
+
+- Primary sources first, secondary sources as leads
+- Every claim tagged with evidence level (PROOF / PROOF — AI TRANSCRIPTION / PLAUSIBLE / DISCREDITED)
+- Hostile review after every research cycle
+- Colonial lens disclaimer on all Indigenous content
+- Multi-lens view: list what we know, what we're trying to learn, how we're getting there
+- The Laws are supreme and evolving
+
+---
+
+## Current Research Priorities
+
+1. **Paleographic verification** of Image 10 AI transcription
+2. **C-2 resolution** — locate and read Jamestown Town Records for 1685 Clark-to-Brinley deed
+3. **Image 10 left page** — enhanced imaging for C-1 and C-3 final resolution
+4. **James instrument** — find recording page in the 444-image volume
+5. **People pages hostile review** — colonial lens disclaimers, source verification, multi-lens notes on all 19 people pages
+
+---
+
+*Maintained under the Laws of the Joan Archive.*
