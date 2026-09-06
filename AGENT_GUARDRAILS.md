@@ -61,7 +61,7 @@ Every open model gets:
 This is everything the archive can state as fact about Joan:
 
 1. Joan is named as wife of John Greene in a March 1682 land deed (Worth abstract)
-2. A life annuity of 30 shillings per year is reserved to her (Worth abstract)
+2. A life annuity is reserved to her (amount under review) (Worth abstract)
 3. No other record of Joan has been located
 
 Three facts. Everything else is open. Every model starts from these three facts and nowhere else.

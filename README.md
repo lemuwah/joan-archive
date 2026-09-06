@@ -36,7 +36,7 @@ All descriptions of Narragansett governance or cultural practice derived from no
 ## The Three Verified Facts
 
 1. Joan is named as wife of John Greene in a March 1682 land deed (Worth abstract).
-2. A life annuity of 30 shillings per year is reserved to her (Worth abstract).
+2. A life annuity of amount under review is reserved to her (Worth abstract).
 3. No other record of Joan has been located.
 
 Everything beyond these three facts is hypothesis, inference, or suspended. See `evidence/joan_verified_facts.md` for the full sourced fact sheet.

@@ -188,7 +188,7 @@ Narragansett has no masculine/feminine grammatical gender → *"his marke"* cann
 
 *   **Structural Spine Intact:** Five-John Firewall holds; no generational-merge collapse detected.
 *   **Independent John Hypothesis (NEW):** No colonial document links John of Quidnessett to Surgeon John of Warwick. Surgeon John's will silent. Y-DNA divergent. Pawtuxet connection — the one thread tying them — is now SUSPENDED.
-*   **Model C Eliminated:** Joan Beggarly = Alice Daniels (wife of Surgeon John of Warwick, d. ~1643/44). Timeline impossible. La Mance contamination chain fully traced.
+*   **Model G Eliminated:** Joan Beggarly = Alice Daniels (wife of Surgeon John of Warwick, d. ~1643/44). Timeline impossible. La Mance contamination chain fully traced.
 *   **Single-Appearance Analysis (NEW):** Joan has ONE verified legal appearance (March 1682). The second (Pawtuxet, May 1682) is SUSPENDED. If she has only one appearance, her documentary footprint is uniquely thin among comparable Quidnessett wives — consistent with Model A (Indigenous woman), anomalous for Model B (English woman).
 *   **Scuttup d.1668 (CORRECTED):** The Quidnessett sachem succession gap is pre-war (1668–1672), not war-caused.
 *   **Post-Scuttup Succession (NEW 2026-09-02):** Chapin 1931 catalogs Quaiapin + Potuck + Quinnapin as post-1668 authority. Anashuecot NOT in Chapin. Four open hypotheses — none favored, none eliminated. See `research/chapin_1931_sachems.md`.
