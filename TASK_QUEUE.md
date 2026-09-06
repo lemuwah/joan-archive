@@ -89,11 +89,11 @@ Every direction gets tested. English, Indigenous, maritime, religious, legal, ar
   - Build each page BY searching — the backward mining IS the research.
   - Document collision points honestly: "this record could be either" gets flagged, not assigned.
   - Files:
-    - [ ] people/john_greene_warwick_surgeon.md
-    - [ ] people/john_greene_son_of_john.md
-    - [ ] people/john_greene_potowomut.md
-    - [ ] people/john_greene_occupessuatuxet.md
-    - [ ] people/john_greene_quidnessett.md (already exists — restructure to match)
+    - [x] people/john_greene_warwick_surgeon.md-lemuwah 9-6-2026
+    - [x] people/john_greene_son_of_john.md-lemuwah 9-6-2026
+    - [x] people/john_greene_potowomut.md-lemuwah 9-6-2026
+    - [x] people/john_greene_occupessuatuxet.md-lemuwah 9-6-2026
+    - [x] people/john_greene_quidnessett.md (already exists — restructure to match)
 - **What's already done:** five_john_primary_source_trail.md exists but is a combined doc, not individual pages
 - **Where to find what you need:** /people/, /research/
 - **Done when:** All 5 pages exist with universal format, initial backward mining notes, collision points flagged
