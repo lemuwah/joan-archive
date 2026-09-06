@@ -11,144 +11,106 @@ Version v2: [10.5281/zenodo.21729961](https://doi.org/10.5281/zenodo.21729961)
 
 ## What This Is
 
-Joan, wife of John Greene of Quidnessett, appears in exactly one verified document: a March 1682 land deed in which John Greene conveys land to his sons Daniel and James. Joan is named as his wife and as the beneficiary of a 30-shilling life annuity (Worth abstract, *RI Land Evidences* Vol. I, p. 122).
+Joan, wife of John Greene of Quidnessett, appears in exactly one verified document: a March 1682 land deed in which John Greene conveys land to his sons Daniel and James. Joan is named as his wife and as the beneficiary of a life annuity (amount under review — Worth abstract says 30 shillings; manuscript read may differ) (Worth abstract, *RI Land Evidences* Vol. I, p. 122).
 
-No other record of Joan has been located. No birth, baptism, marriage, death, burial, probate, church, or court record. Her maiden name is unknown. Her origin is unknown.
+No other record of Joan has been located. No birth, baptism, marriage, death, burial, probate, church, or court record. Her maiden name is unknown. Her origins are unknown. Her death date is unknown.
 
-This archive exists to document what is known, what is not known, and what is being investigated — transparently, with every claim tagged by how much weight it can bear.
-
-This is not a genealogy website. It is an open-access research library — primary sources first, interpretation second.
+This archive exists because one woman should not disappear from history just because she was only written down once.
 
 ---
 
-## Record Ethics
+## Four Verified Facts
 
-This archive documents English-language colonial records. **It does not claim to speak for Narragansett perspectives.** It does not purport to identify Joan's origins. It does not treat Indigenous people as clues to an English genealogical puzzle.
+These are the only statements about Joan that can be made from the evidence currently held:
 
-Corrections, context, or critique from the **Narragansett Tribal Historic Preservation Office**, tribal historians, or Indigenous studies scholars are treated as a **distinct and higher-weight category of input** — not folded into general feedback. See the [corrections weighting system](https://lemuwah.github.io/joan-archive/contribute.html) on the live site.
+1. **Joan is named as wife of John Greene** in a March 1682 land deed (Worth abstract + Image 10 AI transcription)
+2. **A life annuity is reserved to her** after John's death (amount under review — Worth says 30 shillings; manuscript may differ)
+3. **Joan does not sign or mark the deed** — John Greene is the sole signatory (Image 10, 🟢 PROOF — AI TRANSCRIPTION)
+4. **No other record of Joan has been located** across any colonial jurisdiction searched (RI, CT, MA, Plymouth, Crown)
 
-All descriptions of Narragansett governance or cultural practice derived from non-Indigenous academic sources are tagged 📖 **EXTERNAL INTERPRETATION** throughout the archive.
-
-**Private channel for Indigenous review:** Email wendyleagreen@yahoo.com with "Joan Archive — Indigenous Review" in the subject line. Correspondence will not be shared publicly without permission.
-
----
-
-## The Three Verified Facts
-
-1. Joan is named as wife of John Greene in a March 1682 land deed (Worth abstract).
-2. A life annuity of amount under review is reserved to her (Worth abstract).
-3. No other record of Joan has been located.
-
-Everything beyond these three facts is hypothesis, inference, or suspended. See `evidence/joan_verified_facts.md` for the full sourced fact sheet.
-
----
-
-## Seven Competing Models
-
-The archive holds seven hypotheses about Joan's identity. Six remain open. One has been eliminated. No model is privileged over others.
-
-- **Model A** — Narragansett sachem-line woman (⚫ OPEN)
-- **Model B** — English woman, undocumented (⚫ OPEN)
-- **Model C** — Irish origin (⚫ OPEN)
-- **Model D** — Indentured servant (⚫ OPEN)
-- **Model E** — Enslaved person (⚫ OPEN)
-- **Model F** — Widow of prior marriage (⚫ OPEN)
-- **Model G** — Joan Beggarly / Alice Daniels / La Mance 1904 (🔴 ELIMINATED — timeline impossible, wrong John Greene, wrong town)
-
-Each model is tested against the same evidence on the [Analysis](https://lemuwah.github.io/joan-archive/analysis.html) page. See `theory/joan_ancestry_shadow_models.md` for the full model documentation.
+Everything else — her origins, her ancestry, her identity — is an open question explored through seven competing models. See `theory/joan_ancestry_shadow_models.md`.
 
 ---
 
 ## The Seven Laws
 
-1. **No Narrative Smoothing** — If a document doesn't say it, we don't say it.
-2. **La Mance Law** — Every claim gets traced to its origin. If the chain breaks, the claim is suspended.
-3. **No Premature Disqualification** — No hypothesis gets thrown out until the evidence says so.
-4. **No Algorithmic Contamination** — When AI makes an error, the error is logged and kept on record.
-5. **No Jurisdictional Assumption** — Don't assume the answer is only in Rhode Island. Check everywhere.
-6. **No Centering** — No favorite hypothesis. All models get equal space until evidence decides.
+This archive is governed by seven research integrity laws. They are not guidelines. They are absolute.
 
-Full text with lens anchors and CARE-B checkpoint: `theory/three_laws.md`
+1. **No Narrative Smoothing** — contradictions are logged, not resolved by fiat
+2. **La Mance Law** — no claim traceable to La Mance (1904) accepted without independent primary corroboration
+3. **No Premature Disqualification** — no hypothesis eliminated without thorough primary source testing
+4. **No Algorithmic Contamination** — every AI contamination logged with vector and rejection reasoning
+5. **No Jurisdictional Assumption** — search all relevant jurisdictions, not just RI
+6. **No Centering** — no ancestry model gets privileged placement or framing
+7. **No Trust Without Evidence** — if we can't prove it, we don't post it
 
----
-
-## Contamination
-
-Since 1904, one uncited claim — "Joan Beggarly" — has been copied into more than 10,000 family trees across Ancestry, FamilySearch, and MyHeritage. It is chronologically impossible (Alice Daniels Beggerly died c. 1643/44; Joan is alive in 1682). See `CORRECTIONS.md` #2 and `contamination/` for the full contamination record.
+Full text: `theory/three_laws.md`
 
 ---
 
-## Suspended Claims
+## Seven Competing Models
 
-Several claims previously presented on this site have been **suspended** pending examination of the original manuscript (FamilySearch DGS 008204949, images 9–12):
+No primary source confirms Joan's ancestry. The archive maintains seven shadow models:
 
-- Joan signed with a mark
-- Joan gave consent
-- "Free and voluntary consent"
-- "Or to her mother if she survive"
-- Joan as co-grantor
-- The Pawtuxet deed (May 1682) — citation invalidated
+- **A** — Narragansett sachem-line woman (🟡 PLAUSIBLE)
+- **B** — English woman, undocumented (🟡 PLAUSIBLE)
+- **C** — Irish origin (🟡 PLAUSIBLE)
+- **D** — Indentured servant (🟡 PLAUSIBLE)
+- **E** — Enslaved person (🟡 PLAUSIBLE)
+- **F** — Widow of prior marriage (🟡 PLAUSIBLE)
+- **G** — Joan Beggarly / Alice Daniels (🔴 ELIMINATED — La Mance error)
 
-Full details: `evidence/suspended_items.md`
+All open models remain ⚪ UNVERIFIED. The archive does not collapse uncertainty into narrative.
+
+Full analysis: `theory/joan_ancestry_shadow_models.md`
 
 ---
 
-## What's in This Repository
+## Repository Structure
 
-### Framework (read these first)
-- `AGENT_GUARDRAILS.md` — rules for any AI agent working on this archive
-- `README_FOR_EXTERNAL_AGENTS.md` — required reading for external AI agents
-- `theory/three_laws.md` — The Seven Laws (path kept for link stability)
-- `decision_log.md` — framework decisions with reasoning
+### Mandatory Reading (in order)
+1. `methodology/agent_orientation.md` — start here
+2. `AGENT_GUARDRAILS.md` — rules for all agents
+3. `theory/three_laws.md` — the Seven Laws in full
+4. `evidence/joan_verified_facts.md` — the four facts
+5. `methodology/editorial_standards.md` — what goes on public pages
+
+### Evidence & Sources
+- `primary_sources/` — source intake queue, negative log, manuscript references
+- `evidence/` — verified facts, suspended items, children evidence grid
+- `images/` — manuscript images, Bates pages, F.L. Greene pages
+
+### Theory & Analysis
+- `theory/` — Seven Laws, source spine, shadow models, proof pieces
+- `contradictions/` — held-open contradictions with status tracking
+- `contamination/` — La Mance chain, AI contamination log
 
 ### Methodology
-- `methodology/editorial_standards.md` — what goes where, status tags, source hierarchy
-- `methodology/inference_audit.md` — 13 claims audited for inference vs. fact
-- `methodology/Epistemology.md` — how the archive reads colonial records
-- `methodology/multi_lens_rule.md` — the constellation principle
+- `methodology/` — editorial standards, inference audit, epistemology, agent orientation, Kimi audit
+- `CORRECTIONS.md` — public corrections log
+- `decision_log.md` — numbered research decisions with rationale
 
-### Evidence
-- `evidence/joan_verified_facts.md` — the 3 verified facts, formally sourced
-- `evidence/suspended_items.md` — 8 suspended claims with resolution paths
-- `primary_sources/` — source files including `NEGATIVE_LOG.md`
-- `theory/joan_ancestry_shadow_models.md` — 7 models (A–G)
-
-### Research
-- `theory/` — source spine, firewalls, deed lifecycles, shadow models
-- `contradictions/` — documented contradictions held open
-- `contamination/` — quarantined material traced to uncited or fabricated sources
-- `agents/` — multi-agent research cycle outputs (Explorer, Hostile Reviewer, Archivist, Synthesizer)
-- `pending_review/` — staging area for pre-commit CARE-B review
-
-### Public Site
-- `index.html` — 3 verified facts, 7 models, Seven Laws
-- `context.html` — colonial and Narragansett historical setting
-- `analysis.html` — 7 models tested equally
-- `contribute.html` — negative space log, unsearched repositories, corrections weighting
-- `about.html` — methodology, AI disclosure, citation
+### Agents
+- `agents/Archivist/` — research sweep documents for hostile review
 
 ---
 
 ## How to Contribute
 
-You do not need to believe any hypothesis on this site to help. The most useful contributions are **searches**, not interpretations:
-
-- **Check a repository** from the [unsearched list](https://lemuwah.github.io/joan-archive/contribute.html) and report what you find — including null results.
-- **Photograph a page.** If you're near an archive that touches Narragansett Country, a phone photo of a relevant page is a real contribution.
-- **Open a GitHub issue** at [github.com/lemuwah/joan-archive/issues](https://github.com/lemuwah/joan-archive/issues).
-- **Correct an error.** See `CORRECTIONS.md`.
-
-The single highest-priority unsearched source: **FamilySearch DGS 008204949, images 9–12** (the original manuscript of the March 1682 deed).
-
-**Contact:** wendyleagreen@yahoo.com  
-**Indigenous review:** Same address, subject line "Joan Archive — Indigenous Review."
+1. Read `methodology/agent_orientation.md` first
+2. Check `primary_sources/NEGATIVE_LOG.md` before searching — don't re-search dead ends
+3. Follow the Seven Laws
+4. If you find an error, report it via [GitHub Issues](https://github.com/lemuwah/joan-archive/issues)
 
 ---
 
-## License
+## Project Status
 
-[MIT](LICENSE)
+**Active.** Independent research, no institutional affiliation, no funding.  
+**Contact:** Wendy Green (archive owner)  
+**License:** Open access. Cite this archive when referencing its findings.
 
 ---
 
-*Maintained under the Seven Laws of the Joan Archive. No narrative smoothing. No centering.*
+*The Joan Archive — maintained under the Seven Laws.*  
+*"There is no room for ego or fabrication — this is a quest for the truth."*
