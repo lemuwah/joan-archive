@@ -1,0 +1,71 @@
+name: Kimi audit fixes v2
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fix law counts in all markdown files
+        run: |
+          find . -name '*.md' -exec sed -i \
+            -e 's/Five Laws/Seven Laws/g' \
+            -e 's/five Laws/Seven Laws/g' \
+            -e 's/five laws/seven laws/g' \
+            -e 's/Six Laws/Seven Laws/g' \
+            -e 's/six Laws/Seven Laws/g' \
+            -e 's/six laws/seven laws/g' \
+            -e 's/5 Laws/7 Laws/g' \
+            -e 's/Five Governing Laws/Seven Governing Laws/g' \
+            {} +
+          echo "Markdown law counts fixed"
+
+      - name: Fix law counts in HTML files
+        run: |
+          for f in index.html about.html analysis.html context.html contribute.html; do
+            if [ -f "$f" ]; then
+              sed -i 's/Six Laws/Seven Laws/g; s/six laws/seven laws/g' "$f"
+              echo "Fixed $f"
+            fi
+          done
+
+      - name: Fix annuity in editorial standards
+        run: |
+          if [ -f methodology/editorial_standards.md ]; then
+            sed -i 's/A life annuity of 30 shillings per year is reserved to her/A life annuity is reserved to her (amount unverified)/g' methodology/editorial_standards.md
+            sed -i 's/Only these three facts/Only these four facts/g' methodology/editorial_standards.md
+            echo "Editorial standards fixed"
+          fi
+
+      - name: Fix Model B to Model A in mother clause
+        run: |
+          if [ -f contradictions/mother-clause-wording.md ]; then
+            sed -i 's/Model B (indigenous ancestry)/Model A (Narragansett sachem-line)/g' contradictions/mother-clause-wording.md
+            sed -i 's/Model B (Indigenous ancestry)/Model A (Narragansett sachem-line)/g' contradictions/mother-clause-wording.md
+            echo "Mother clause Model B -> A fixed"
+          fi
+
+      - name: Fix missing Law 4 in shadow models
+        run: |
+          if [ -f theory/joan_ancestry_shadow_models.md ]; then
+            sed -i 's/Laws: 1, 2, 3, 5, 6, 7/Laws: 1, 2, 3, 4, 5, 6, 7/g' theory/joan_ancestry_shadow_models.md
+            echo "Shadow models Law 4 added"
+          fi
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git diff --cached --stat
+            git commit -m "fix: Kimi audit - law counts, annuity, Model B swap, Law 4 across all files"
+            git push
+          fi
