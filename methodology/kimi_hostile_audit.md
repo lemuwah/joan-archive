@@ -29,7 +29,7 @@ The core problem: **framework files proliferated faster than they were harmonize
 | 9 | Live site claims not in framework files | HIGH | 🟡 NOTED — H. Tibbits needs evidence file entry |
 | 10 | Inference audit tracker dead | MEDIUM | ⚬ PENDING — update or remove |
 | 11 | Negative log incomplete | MEDIUM | ⚬ PENDING — sync with verified facts |
-| 12 | Agent guide says 'Five Laws' | MEDIUM | ✅ FIXED |
+| 12 | Agent guide says 'Seven Laws' | MEDIUM | ✅ FIXED |
 | 13 | Y-DNA inconsistency buried | MEDIUM | ⚬ PENDING — surface on analysis.html |
 | 14 | 1695/96 deed has no GAP entry | MEDIUM | ⚬ PENDING — add to source_intake_queue |
 | 15 | Email obfuscation is theater | MEDIUM | 🟡 NOTED — accept risk for now |

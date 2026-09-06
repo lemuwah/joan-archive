@@ -184,5 +184,5 @@ MAY 19, 1682 — PAWTUXET DEED (⚠️ SUSPENDED — citation invalid, text not 
 ---
 
 *Joan Archive — theory/proof_pieces/06_hard_timeline.md*
-*Maintained under the 5 Laws of the Joan Archive*
+*Maintained under the 7 Laws of the Joan Archive*
 *Status: REVISED 2026-08-31 — Scuttup/Quequaquenuit deaths corrected, Weunquesh 1679 added, Awassuocitt lead integrated*

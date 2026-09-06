@@ -12,7 +12,7 @@ Welcome. You are now part of a multi-agent research system.
 Before producing ANY output, read:
 
 1. `theory/source_spine.md` (the spine)  
-2. `theory/three_laws.md` (the Five Laws)  
+2. `theory/three_laws.md` (the Seven Laws)  
 3. `CORRECTIONS.md` (known past errors — do not re-import them)  
 4. `agents/hostile_reviewer/README.md` (the hostile protocol)  
 5. The README for the agent role you are performing:

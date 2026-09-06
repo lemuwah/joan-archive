@@ -124,5 +124,5 @@ Requires **3–4 independent anomalies** to apply simultaneously:
 ---
 
 *Joan Archive — theory/proof_pieces/01_kin_group_mapping.md*
-*Maintained under the 5 Laws of the Joan Archive*
+*Maintained under the 7 Laws of the Joan Archive*
 *Status: REVISED 2026-08-31 — deaths corrected, Model B recounted, Coginaquand integrated*

@@ -206,5 +206,5 @@ Model B now requires **seven independent special explanations** stacked together
 ---
 
 *Joan Archive — theory/proof_pieces/04_alternative_identity_audit.md*
-*Maintained under the 5 Laws of the Joan Archive*
+*Maintained under the 7 Laws of the Joan Archive*
 *Status: REVISED — Model C closed, six angles searched, no alternative candidate found*

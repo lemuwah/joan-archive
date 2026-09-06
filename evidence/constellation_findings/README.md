@@ -39,4 +39,4 @@ The constellation defines her shape by defining everything around her.
 
 ---
 
-*Maintained under the Six Laws of the Joan Archive.*
+*Maintained under the Seven Laws of the Joan Archive.*

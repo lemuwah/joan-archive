@@ -68,4 +68,4 @@ These are COMPARATORS, not arguments. Each case shows a documented pattern Joan 
 
 *Each case is a comparator — not an argument for Joan's identity, but a documented pattern she either fits or doesn't.*
 
-*Maintained under the Six Laws of the Joan Archive.*
+*Maintained under the Seven Laws of the Joan Archive.*

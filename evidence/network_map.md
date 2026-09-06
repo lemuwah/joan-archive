@@ -29,4 +29,4 @@ When enough data accumulates, this becomes the visual constellation.
 
 ---
 
-*Maintained under the Six Laws of the Joan Archive.*
+*Maintained under the Seven Laws of the Joan Archive.*

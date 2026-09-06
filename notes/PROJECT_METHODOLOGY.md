@@ -54,9 +54,9 @@ This doesn't mean these are bad options. They're good options for people who hav
 
 ## The Standard
 
-The 5 Laws + 4 Operating Principles govern everything:
+The 7 Laws + 4 Operating Principles govern everything:
 
-### The 5 Laws
+### The 7 Laws
 1. **No Narrative Smoothing** — contradictions stay visible
 2. **La Mance Law** — no claim accepted from La Mance (1904) without independent corroboration
 3. **No Premature Disqualification** — hypotheses stay open until evidence closes them
@@ -67,7 +67,7 @@ The 5 Laws + 4 Operating Principles govern everything:
 1. Extra caution and respect toward Indigenous culture
 2. No overclaiming
 3. Be kind and explain reasoning
-4. Stick to the 5 Laws always
+4. Stick to the 7 Laws always
 
 ---
 

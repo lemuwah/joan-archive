@@ -59,7 +59,7 @@ Each model is tested against the same evidence on the [Analysis](https://lemuwah
 
 ---
 
-## The Six Laws
+## The Seven Laws
 
 1. **No Narrative Smoothing** — If a document doesn't say it, we don't say it.
 2. **La Mance Law** — Every claim gets traced to its origin. If the chain breaks, the claim is suspended.
@@ -98,7 +98,7 @@ Full details: `evidence/suspended_items.md`
 ### Framework (read these first)
 - `AGENT_GUARDRAILS.md` — rules for any AI agent working on this archive
 - `README_FOR_EXTERNAL_AGENTS.md` — required reading for external AI agents
-- `theory/three_laws.md` — The Six Laws (path kept for link stability)
+- `theory/three_laws.md` — The Seven Laws (path kept for link stability)
 - `decision_log.md` — framework decisions with reasoning
 
 ### Methodology
@@ -121,7 +121,7 @@ Full details: `evidence/suspended_items.md`
 - `pending_review/` — staging area for pre-commit CARE-B review
 
 ### Public Site
-- `index.html` — 3 verified facts, 7 models, Six Laws
+- `index.html` — 3 verified facts, 7 models, Seven Laws
 - `context.html` — colonial and Narragansett historical setting
 - `analysis.html` — 7 models tested equally
 - `contribute.html` — negative space log, unsearched repositories, corrections weighting
@@ -151,4 +151,4 @@ The single highest-priority unsearched source: **FamilySearch DGS 008204949, ima
 
 ---
 
-*Maintained under the Six Laws of the Joan Archive. No narrative smoothing. No centering.*
+*Maintained under the Seven Laws of the Joan Archive. No narrative smoothing. No centering.*

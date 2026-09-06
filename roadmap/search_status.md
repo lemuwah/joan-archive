@@ -82,7 +82,7 @@ If Joan comes up zero, this document proves exactly what's been checked.
 |---|------|--------------|--------|------|
 | 47 | evidence/joan_verified_facts.md | Current knowledge | ⬜ NOT STARTED | |
 | 48 | theory/joan_ancestry_shadow_models.md | All 7 models current? | ⬜ NOT STARTED | |
-| 49 | theory/three_laws.md | Six Laws current? | ⬜ NOT STARTED | |
+| 49 | theory/three_laws.md | Seven Laws current? | ⬜ NOT STARTED | |
 | 50 | AGENT_GUARDRAILS.md | Framework evolution | ⬜ NOT STARTED | |
 | 51 | index.html | Strip and rebuild | ⬜ NOT STARTED | |
 | 52 | context.html | Reframing check | ⬜ NOT STARTED | |
@@ -105,4 +105,4 @@ If Joan comes up zero, this document proves exactly what's been checked.
 
 *No search is wasted. A null result on every line is still the most comprehensive negative finding in Joan Archive history.*
 
-*Maintained under the Six Laws of the Joan Archive.*
+*Maintained under the Seven Laws of the Joan Archive.*

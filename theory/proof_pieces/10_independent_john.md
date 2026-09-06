@@ -266,5 +266,5 @@ The Pawtuxet inheritance is the ONE piece of evidence that requires some connect
 ---
 
 *Joan Archive — theory/proof_pieces/10_independent_john.md*
-*Maintained under the 5 Laws of the Joan Archive*
+*Maintained under the 7 Laws of the Joan Archive*
 *Status: STRESS-TESTED — independent model viable, Pawtuxet inheritance unresolved*

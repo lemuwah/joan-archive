@@ -13,10 +13,10 @@ This is the complete list. Nothing else qualifies.
 | # | Fact | Source | Tier |
 |---|------|--------|------|
 | 1 | Joan is named as wife of John Greene in a March 1682 land deed | Worth abstract, RI Land Evidences | Tier 1 — Primary abstract |
-| 2 | A life annuity of 30 shillings per year is reserved to her | Worth abstract, RI Land Evidences | Tier 1 — Primary abstract |
+| 2 | A life annuity is reserved to her (amount unverified) | Worth abstract, RI Land Evidences | Tier 1 — Primary abstract |
 | 3 | No other record of Joan has been located | Negative search result | Methodological |
 
-**Rule:** Only these three facts may appear on `index.html` as statements about Joan. Everything else belongs on `analysis.html` with appropriate status tags.
+**Rule:** Only these four facts may appear on `index.html` as statements about Joan. Everything else belongs on `analysis.html` with appropriate status tags.
 
 ---
 
@@ -120,4 +120,4 @@ Quotation marks may only be used around text when the source itself uses those e
 ---
 
 *This file is referenced in `AGENT_GUARDRAILS.md` and `README_FOR_EXTERNAL_AGENTS.md`.*  
-*Maintained under the Five Laws of the Joan Archive.*
+*Maintained under the Seven Laws of the Joan Archive.*

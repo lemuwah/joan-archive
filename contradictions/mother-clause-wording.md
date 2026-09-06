@@ -42,7 +42,7 @@ This phrasing, which treats "her mother" as a THIRD PARTY (Joan's own mother, no
 
 ## Impact on Ancestry Models
 
-The "mother clause" was previously cited as potential evidence for Model B (indigenous ancestry) — the argument being that naming Joan's mother as an alternate beneficiary reflected matrilineal kinship logic.
+The "mother clause" was previously cited as potential evidence for Model A (Narragansett sachem-line) — the argument being that naming Joan's mother as an alternate beneficiary reflected matrilineal kinship logic.
 
 **That argument is now SUSPENDED.** The manuscript does not say "her mother." It says "his Wife." F.L. Greene's "mother" means Joan herself, not Joan's mother. The matrilineal interpretation was built on a phrase that appears to have no primary or secondary source.
 

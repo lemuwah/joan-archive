@@ -43,8 +43,8 @@ Decisions are not reversible by agents. Only the archive owner can reverse a log
 
 **Date:** 2026-09-03  
 **Decision:** A sixth Law added to the archive framework at equal priority with Law 1. The archive investigates who Joan was, not a preferred theory about who Joan was.  
-**Reasoning:** The Five Laws prevented fabrication, contamination, premature elimination, and jurisdictional bias — but not centering bias. The framework itself was tilted toward Model A. Law 6 closes that gap.  
-**What changed:** `theory/three_laws.md` (now "The Six Laws")  
+**Reasoning:** The Seven Laws prevented fabrication, contamination, premature elimination, and jurisdictional bias — but not centering bias. The framework itself was tilted toward Model A. Law 6 closes that gap.  
+**What changed:** `theory/three_laws.md` (now "The Seven Laws")  
 **Authority:** Archive owner
 
 ---
@@ -124,4 +124,4 @@ Decisions are not reversible by agents. Only the archive owner can reverse a log
 ---
 
 *This file is part of the Joan Archive methodology.  
-Maintained under the Six Laws of the Joan Archive.*
+Maintained under the Seven Laws of the Joan Archive.*

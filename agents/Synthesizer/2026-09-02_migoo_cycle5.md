@@ -210,5 +210,5 @@ The archive is in better shape than it has ever been — not because it has more
 ---
 
 *Joan Archive — agents/Synthesizer/2026-09-02_migoo_cycle5.md*  
-*Maintained under the 5 Laws of the Joan Archive*  
+*Maintained under the 7 Laws of the Joan Archive*  
 *Cycle #5 complete. Next decisive action: transcribe DGS #008204949, images 9–12.*

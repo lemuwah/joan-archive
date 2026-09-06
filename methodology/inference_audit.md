@@ -137,4 +137,4 @@ This file catalogs claims currently on the site or in the repo that **feel** doc
 ---
 
 *This file is referenced in `methodology/editorial_standards.md`.  
-Maintained under the Five Laws of the Joan Archive.*
+Maintained under the Seven Laws of the Joan Archive.*

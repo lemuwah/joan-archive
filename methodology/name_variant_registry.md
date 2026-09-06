@@ -162,5 +162,5 @@ For every name, in every repository:
 
 ---
 
-*Maintained under the Six Laws of the Joan Archive.*
+*Maintained under the Seven Laws of the Joan Archive.*
 *Last updated: September 2026*

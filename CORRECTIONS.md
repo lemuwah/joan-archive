@@ -115,5 +115,5 @@ What is verified is smaller and plainer than what the site said: Joan is named a
 
 ---
 
-*This log is maintained under the 5 Laws of the Joan Archive.*  
+*This log is maintained under the 7 Laws of the Joan Archive.*  
 *If you find an error in this archive, please report it via [GitHub Issues](https://github.com/lemuwah/joan-archive/issues).*

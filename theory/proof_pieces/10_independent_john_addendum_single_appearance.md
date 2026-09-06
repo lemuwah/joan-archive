@@ -84,4 +84,4 @@ That is the pattern of an Indigenous woman with an English name, not an English 
 ---
 
 *Joan Archive — theory/proof_pieces/10_independent_john_addendum_single_appearance.md*
-*Maintained under the 5 Laws of the Joan Archive*
+*Maintained under the 7 Laws of the Joan Archive*

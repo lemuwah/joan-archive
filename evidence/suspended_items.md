@@ -97,4 +97,4 @@ All suspended items are also tracked in:
 ---
 
 *This file is the authoritative suspended-claims registry.  
-Maintained under the Six Laws of the Joan Archive.*
+Maintained under the Seven Laws of the Joan Archive.*

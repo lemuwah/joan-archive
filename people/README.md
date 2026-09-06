@@ -5,7 +5,7 @@ Individual profile pages for documented persons in the Joan Archive. Each profil
 
 ---
 
-## The Five Laws apply throughout this directory.
+## The Seven Laws apply throughout this directory.
 
 ---
 

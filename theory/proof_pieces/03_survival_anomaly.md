@@ -107,5 +107,5 @@ The Narragansett Bay mainland was devastated during King Philip's War. Nearly ev
 ---
 
 *Joan Archive — theory/proof_pieces/03_survival_anomaly.md*
-*Maintained under the 5 Laws of the Joan Archive*
+*Maintained under the 7 Laws of the Joan Archive*
 *Status: DRAFT — legal inference chain flagged, open conditions listed*

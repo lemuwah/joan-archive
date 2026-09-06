@@ -153,5 +153,5 @@ The Warwick records **strongly confirm** that "John Greene Junior" in Warwick go
 ---
 
 *Joan Archive — theory/proof_pieces/09_pawtuxet_problem.md*
-*Maintained under the 5 Laws of the Joan Archive*
+*Maintained under the 7 Laws of the Joan Archive*
 *Status: ⚠️ SUSPENDED — citation chain broken; all pre-1920 sources negative; conflation hypothesis open; physical archive verification remains the only path*

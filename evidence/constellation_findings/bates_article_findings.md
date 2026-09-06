@@ -76,5 +76,5 @@ Bates is a careful genealogist but she does not add a second primary source for 
 
 ---
 
-*Filed under the Six Laws of the Joan Archive.*
+*Filed under the Seven Laws of the Joan Archive.*
 *No narrative smoothing. No overclaiming. Joan appears in Bates as a reconstruction, not a discovery.*

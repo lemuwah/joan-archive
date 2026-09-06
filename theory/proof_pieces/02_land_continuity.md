@@ -149,5 +149,5 @@ The synthesis (Proof Piece #10) must address this complexity honestly.
 ---
 
 *Joan Archive — theory/proof_pieces/02_land_continuity.md*
-*Maintained under the 5 Laws of the Joan Archive*
+*Maintained under the 7 Laws of the Joan Archive*
 *Status: DRAFT — geographic relationship revised; Sanford chain undocumented; open conditions flagged*

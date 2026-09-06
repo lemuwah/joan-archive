@@ -12,7 +12,7 @@ Two parallel streams of work arrived simultaneously:
 ### Stream 1: The Framework Revision (Sep 2–3)
 The archive underwent its most significant structural overhaul since inception. 18 commits in ~48 hours rebuilt the entire public-facing and internal governance architecture:
 
-1. **Five Laws → Six Laws.** Law 6 (No Centering) added: no model receives more visual weight, narrative attention, or evidentiary benefit of the doubt than any other.
+1. **Seven Laws → Seven Laws.** Law 6 (No Centering) added: no model receives more visual weight, narrative attention, or evidentiary benefit of the doubt than any other.
 2. **3 models → 7 models (A–G).** The old A/B/C framework expanded. All models now receive equal treatment on the live site and in theory files. The archive no longer organizes itself around "preferred" vs "shadow" models.
 3. **AGENT_GUARDRAILS.md** created. New mandatory reading for all agents. CARE-B checkpoint (5 pre-commit checks), external-interpretation tagging, transcribed ≠ verbatim, no cross-lens smoothing.
 4. **editorial_standards.md** created. Verified facts list (the 3), suspended claims inventory, status tag definitions, source hierarchy (manuscript > abstract > secondary > compilation).
@@ -69,7 +69,7 @@ Five-step primary source audit separating four conflated women:
 
 ### Structural Changes
 - **Model space expanded from 3 to 7.** This is not new evidence — it's a framework decision. The theory files now treat all models equally per Law 6. `joan_ancestry_shadow_models.md` updated accordingly.
-- **Three Laws → Six Laws** in `theory/three_laws.md`. Law 6 (No Centering) is now load-bearing for all agent output.
+- **Three Laws → Seven Laws** in `theory/three_laws.md`. Law 6 (No Centering) is now load-bearing for all agent output.
 - **Verification standard formalized:** ✅ VERIFIED (archive read the primary source) / ⚠️ UNVERIFIED (secondary cites it) / ⚠️ SUSPENDED (citation invalidated) / ❌ KILLED.
 - **Site and theory alignment** completed via the Sep 3 framework revision. The site-theory drift identified in the Synthesizer README reconciliation pass is now addressed at a structural level — the old 148KB index.html with its embedded JS data objects is gone.
 
@@ -91,7 +91,7 @@ Five-step primary source audit separating four conflated women:
 
 ## Where Updates Were Written
 
-- `theory/three_laws.md` — edited (Five → Six Laws, CARE-B, lens anchors)
+- `theory/three_laws.md` — edited (Five → Seven Laws, CARE-B, lens anchors)
 - `theory/joan_ancestry_shadow_models.md` — edited (3 → 7 models, Law 6 compliance)
 - `AGENT_GUARDRAILS.md` — new
 - `methodology/editorial_standards.md` — new

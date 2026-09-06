@@ -108,7 +108,7 @@ The pattern — search failure → false negative logged as finding → offer to
 
 3. **Verify against the archive's own holdings.** Before accepting any AI research result — positive or negative — check it against the source spine and the archive's existing files. If the tool says "no 1672 land transfers" and the archive holds the 1672 Fones Purchase deed, the tool is wrong.
 
-4. **The Five Laws apply to AI tools the same as to secondary sources.** Law 1: no narrative smoothing (including smoothing by omission). Law 2: no unverified claims presented as fact (including false negatives presented as research conclusions). Law 4: no algorithmic contamination (including AI-generated false negatives entering the archive as data).
+4. **The Seven Laws apply to AI tools the same as to secondary sources.** Law 1: no narrative smoothing (including smoothing by omission). Law 2: no unverified claims presented as fact (including false negatives presented as research conclusions). Law 4: no algorithmic contamination (including AI-generated false negatives entering the archive as data).
 
 ---
 

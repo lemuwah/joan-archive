@@ -49,4 +49,4 @@ These repositories have been identified as potentially relevant but have NOT bee
 
 Log every dead end so others don't re-search.
 
-*Maintained under the Six Laws of the Joan Archive.*
+*Maintained under the Seven Laws of the Joan Archive.*

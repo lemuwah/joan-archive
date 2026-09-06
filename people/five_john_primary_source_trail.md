@@ -233,5 +233,5 @@ Not English — Narragansett leader given English working name "John" by Richard
 
 ---
 
-*The 5 Laws apply throughout this document.*
+*The 7 Laws apply throughout this document.*
 *Not for algorithmic redistribution.*

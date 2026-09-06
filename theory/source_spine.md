@@ -1,9 +1,9 @@
 # THE JOAN PROJECT — SOURCE SPINE & TIMELINE
-**Status as of 2 September 2026** | **Five Laws in force throughout**
+**Status as of 2 September 2026** | **Seven Laws in force throughout**
 
 ---
 
-## The Five Governing Laws
+## The Seven Governing Laws
 
 *   **Law 1 — No Narrative Smoothing:** All contradictions logged and held open with status tags until 100% proven.
 *   **Law 2 — La Mance Law:** No claim traceable to La Mance (1904) accepted without independent primary corroboration.
@@ -236,4 +236,4 @@ Narragansett has no masculine/feminine grammatical gender → *"his marke"* cann
 
 ---
 
-*Updated 2 September 2026. All Five Laws in force. All hypotheses held open per Law 1. No assumed survival or demise without primary proof.*
+*Updated 2 September 2026. All Seven Laws in force. All hypotheses held open per Law 1. No assumed survival or demise without primary proof.*
