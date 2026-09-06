@@ -1,0 +1,59 @@
+name: Consolidation pass
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fix AGENT_GUARDRAILS annuity
+        run: |
+          if [ -f AGENT_GUARDRAILS.md ]; then
+            sed -i 's/A life annuity of 30 shillings per year is reserved to her/A life annuity is reserved to her (amount under review)/g' AGENT_GUARDRAILS.md
+            sed -i 's/30 shillings per year/amount under review/g' AGENT_GUARDRAILS.md
+            echo "AGENT_GUARDRAILS annuity fixed"
+          fi
+
+      - name: Fix source_spine Model C to Model G
+        run: |
+          if [ -f theory/source_spine.md ]; then
+            sed -i 's/Model C Eliminated/Model G Eliminated/g' theory/source_spine.md
+            sed -i 's/Model C eliminated/Model G eliminated/g' theory/source_spine.md
+            echo "Source spine Model C -> G fixed"
+          fi
+
+      - name: Fix README annuity and add Fact 4
+        run: |
+          if [ -f README.md ]; then
+            sed -i 's/30 shillings per year/amount under review/g' README.md
+            sed -i 's/30-shilling annuity/life annuity (amount under review)/g' README.md
+            sed -i 's/30 shillings/amount under review/g' README.md
+            echo "README annuity fixed"
+          fi
+
+      - name: Fix any remaining Five/Six Laws in all files
+        run: |
+          find . -name '*.md' -exec sed -i \
+            -e 's/Five Laws/Seven Laws/g' \
+            -e 's/Six Laws/Seven Laws/g' \
+            -e 's/5 Laws/7 Laws/g' \
+            {} +
+          echo "All law counts harmonized"
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git diff --cached --stat
+            git commit -m "fix: consolidation pass — annuity, Model G, law counts, README"
+            git push
+          fi
