@@ -18,7 +18,7 @@
 ### I want to analyze kinship
 1. See [`/theory/`](./theory/) for kinship network format
 2. See [`/contamination/`](./contamination/) for what NOT to trust
-3. Follow the Seven Laws in [`README.md`](./README.md) / [`theory/three_laws.md`](./theory/three_laws.md)
+3. Follow the MULTI AGENT Laws in [`README.md`](./README.md) / [`theory/three_laws.md`](./theory/three_laws.md)
 
 ---
 
