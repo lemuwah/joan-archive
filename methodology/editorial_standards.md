@@ -1,7 +1,7 @@
 # Editorial Standards
 
 **Status:** Active — governs all public-facing content and analysis pages.  
-**Added:** 2026-09-03  
+**Restored:** 2026-09-06 (was missing/404 per Kimi audit)  
 **Companion files:** `AGENT_GUARDRAILS.md`, `methodology/Epistemology.md`, `CORRECTIONS.md`
 
 ---
@@ -10,11 +10,12 @@
 
 This is the complete list. Nothing else qualifies.
 
-| # | Fact | Source | Tier |
+| # | Fact | Source | Tag |
 |---|------|--------|------|
-| 1 | Joan is named as wife of John Greene in a March 1682 land deed | Worth abstract, RI Land Evidences | Tier 1 — Primary abstract |
-| 2 | A life annuity is reserved to her (amount unverified) | Worth abstract, RI Land Evidences | Tier 1 — Primary abstract |
-| 3 | No other record of Joan has been located | Negative search result | Methodological |
+| 1 | Joan is named as wife of John Greene in a March 1682 land deed | Worth abstract + Image 10 AI transcription | PROOF — AI TRANSCRIPTION |
+| 2 | A life annuity is reserved to her (amount unverified — Worth says 30 shillings, manuscript read may differ) | Worth abstract + Image 10 AI transcription | PROOF — AI TRANSCRIPTION (amount OPEN QUESTION) |
+| 3 | Joan does not sign or mark the 1682 deed | Image 10 AI transcription | PROOF — AI TRANSCRIPTION |
+| 4 | No other record of Joan has been located | Negative search result (as of Sep 2026) | Methodological |
 
 **Rule:** Only these four facts may appear on `index.html` as statements about Joan. Everything else belongs on `analysis.html` with appropriate status tags.
 
@@ -22,102 +23,45 @@ This is the complete list. Nothing else qualifies.
 
 ## 2. Suspended Claims
 
-These were previously stated or implied across the archive. All are suspended until the manuscript (FamilySearch DGS 008204949, images 9–12) is read.
-
-| Claim | Why suspended | What would resolve it |
-|-------|---------------|----------------------|
-| "Joan signed with a mark" | No source says this for the March 1682 deed | Manuscript examination |
-| "Joan gave consent" | Worth doesn't mention consent; Bates's "and his wife Joan deeded" is his narration, not a quote | Manuscript examination |
-| "Free and voluntary consent" | May come from the suspended Pawtuxet deed (see CORRECTIONS.md #1) | Pawtuxet deed verification OR manuscript examination |
-| "Or to her mother if she survive" | Not in any source we hold; see `contradictions/mother-clause-wording.md` | Manuscript examination |
-| Joan as co-grantor | Bates's summary language; not confirmed by Worth abstract | Manuscript examination |
-| Joan as legal actor | Inference from co-grantor assumption | Manuscript examination |
-
-**Rule:** Suspended claims must not appear on any public-facing page without a ⚫ SUSPENDED tag and a cross-reference to this file.
+See `evidence/suspended_items.md` for the complete list with reasons and resolution paths.
 
 ---
 
 ## 3. Status Tags
 
-Used throughout the archive:
+The canonical tag system is defined in `methodology/integrity_framework.md`. The authoritative tags are:
 
-- 🟢 **VERIFIED** — Confirmed by primary source citation. Can appear on `index.html`.
-- 🟡 **PROBABLE** — Supported by multiple sources but not explicitly confirmed. `analysis.html` only.
-- 🟡 **OPEN HYPOTHESIS** — Plausible, testable, not yet confirmed or eliminated. `analysis.html` only.
-- ⚫ **SUSPENDED** — Previously stated but source support withdrawn or insufficient. Must not appear on `index.html` without the tag.
-- 🔴 **ELIMINATED** — Disproven by primary sources. Retained in the record for transparency.
-- 📖 **EXTERNAL INTERPRETATION** — Derived from non-Indigenous academic sources. Not verified by Narragansett authority.
-- ⚠️ **CORRECTION** — A claim that was wrong and has been fixed. See `CORRECTIONS.md` for details.
+- **PROOF** — Primary source seen, page cited
+- **PROOF — AI TRANSCRIPTION** — Original image read by AI, disclaimer attached
+- **PLAUSIBLE** — Scholar cites it or logic holds, not personally verified
+- **DISCREDITED** — Tested and failed
+
+Legacy tags in older files (PROVEN/PROBABLE/UNVERIFIED/NULL/SUSPENDED) are recognized as equivalent but the canonical system governs.
 
 ---
 
 ## 4. Source Hierarchy
 
-When sources conflict, this hierarchy governs:
-
-1. **Manuscript original** — the deed itself (unread as of Sep 2026)
-2. **Primary abstract** — Worth's transcription in RI Land Evidences
-3. **Contemporary secondary** — Bates (RIHS Collections), Potter (1835), Chapin (1931)
-4. **Later secondary** — F.L. Greene (1903), Austin genealogies
-5. **Compilations / databases** — Ancestry, FamilySearch trees, Find A Grave
-6. **AI-generated content** — never a source; always requires independent verification
-
-**Rule:** A lower-tier source cannot override a higher-tier source. When a secondary source claims something the primary abstract does not contain, the claim is ⚫ SUSPENDED until the manuscript is read.
+| Tier | What | Example |
+|---|---|---|
+| 1 | Original manuscript, personally viewed | FamilySearch DGS image |
+| 2 | Published verbatim transcription by named scholar | Worth abstract, Bartlett |
+| 3 | Published summary/paraphrase by named scholar | Bates (1918), F.L. Greene |
+| 4 | Secondary compilation, genealogy database | Austin, WikiTree, Ancestry |
+| 5 | AI-generated, unsourced web content | ChatGPT output, alfredgibbs.com |
 
 ---
 
 ## 5. Content Placement Rules
 
-### index.html (the reading room)
-- Only 🟢 VERIFIED facts about Joan
-- No identity claims
-- No urgency framing
-- No personal names without consent
-- Competing models listed equally with no centering
-- Narragansett perspectives: held, not filled
-- Indigenous review disclosure
-
-### analysis.html (the hypothesis space)
-- All open models with equal treatment
-- Each model gets: evidence for, evidence against, what would confirm, what would eliminate
-- All status tags visible
-- Inferences clearly labeled as inferences
-- Cross-lens synthesis by the reader, not the archive
-
-### context.html (the historical setting)
-- Colonial and Narragansett context from documented sources
-- All Narragansett governance descriptions tagged 📖 EXTERNAL INTERPRETATION unless from Narragansett sources
-- No synthesis with Joan's identity
-
-### about.html (the methodology)
-- Review status disclosure
-- Epistemological stance (see `Epistemology.md`)
-- Corrections policy
-- How to contribute
+| Page | What goes here |
+|---|---|
+| `index.html` | Four verified facts only. No interpretation. No hypotheses. |
+| `analysis.html` | Open hypotheses (Models A–G), evidence mapping, stress tests |
+| `context.html` | Timeline, geography, colonial jurisdiction. Facts only, tagged. |
+| `contribute.html` | How to help, negative space log, what hasn't been searched |
+| `about.html` | Methodology, Seven Laws, corrections, AI checklist |
 
 ---
 
-## 6. The Inference Test
-
-Before any claim appears on a public page, ask:
-
-> **Can I point to one specific document that says this?**
-
-- **Yes** → cite it, tag 🟢 VERIFIED or 🟡 PROBABLE with the source
-- **No, but multiple documents imply it** → `analysis.html` with 🟡 tag, present each document separately, label the connection as inference
-- **No** → it doesn't go on a public page
-
----
-
-## 7. The Transcription Rule
-
-From `AGENT_GUARDRAILS.md` §1, restated here for emphasis:
-
-> A transcribed narrative is not a verbatim quote. Worth's abstract describes the deed. Bates's summary describes the deed. Neither IS the deed. Only the manuscript is the deed.
-
-Quotation marks may only be used around text when the source itself uses those exact words. Paraphrasing by a secondary author is cited as "[Author] describes..." or "[Author] states that..." — never presented as the deed's own language.
-
----
-
-*This file is referenced in `AGENT_GUARDRAILS.md` and `README_FOR_EXTERNAL_AGENTS.md`.*  
 *Maintained under the Seven Laws of the Joan Archive.*
