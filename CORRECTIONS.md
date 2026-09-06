@@ -18,7 +18,7 @@ This was presented as Joan's second legal appearance — making her documentary 
 
 ### How we caught it
 
-During a Pawtuxet land investigation on 2026-08-31, the verbatim deed text could not be located in any digitized primary source (Worth's RI Land Evidences Vol. I, Chapin's Early Records of Warwick, Carpenter genealogy, Early Records of Providence, Bartlett Colony Records Vol. III). The citation was then tested directly:
+During a Pawtuxet land investigation on 2026-08-31, the verbatim deed text could not be located in any digitized primary source. The citation was then tested directly:
 
 - **Bartlett's Vol. VII covers 1770–1776** (Revolutionary era), not the 1680s
 - **Pages 177–178 contain 1773 Gaspee commission records** — Chief Justice Smythe's request and the commissioners' letter to Lord Dartmouth
@@ -112,6 +112,37 @@ The phrase is **unverified, not disproven** (Law 3). Worth's abstracts drop text
 ### The impact on Joan
 
 What is verified is smaller and plainer than what the site said: Joan is named as John's wife, and as the person who receives the sons' 30 shillings a year after John dies, for her life. If the manuscript matches the abstract, the "mother clause" is an ordinary provision and the anomaly reduces to the one that was always the strongest — her forty-year silence and the fact that F.L. Greene, writing in 1894, could say *"nothing further is known about her."*
+
+---
+
+## Correction #3: La Mance / Joan Beggarly — Model G Elimination
+
+**Date identified:** 2026-08-30  
+**Date confirmed:** 2026-09-01  
+**Severity:** HIGH — affected genealogical databases (10,000+ tree entries) and was the only named maiden-name claim for Joan
+
+### What was wrong
+
+Multiple genealogy databases and compiled trees listed Joan Greene of Quidnessett's maiden name as "Beggarly" or "Beggerly," tracing to La Mance's 1904 compilation. This conflated two different women married to two different John Greenes:
+
+- **Alice Daniels** → married Richard Beggarly in England → he refused to come to New England → she came alone → Winthrop called her "the wife of one Beggarly" and thought she was scandalous → she married **Surgeon John Greene of Warwick** December 1638 → died c. January 1643/44
+- **Joan (Unknown)** → married **John Greene of Quidnessett** → alive 1682
+
+The timeline is impossible: Alice Daniels Beggerly died 38 years before Joan appears in the 1682 deed. They married different John Greenes (Warwick vs. Quidnessett). La Mance confused the two Johns in 1904, and 10,000+ genealogy tree entries inherited the error.
+
+### How we caught it
+
+During the Aug 30 alternative identity audit (proof piece #04), the Winthrop Papers index confirmed a "Mrs. Beggarly (Beggerly)" exists, and the archive owner identified the full chain: Alice Daniels → Richard Beggarly → Surgeon John of Warwick → death c. 1643/44. Timeline eliminates the connection completely.
+
+### What changed
+
+- Model G in `theory/joan_ancestry_shadow_models.md` — status changed to 🔴 ELIMINATED
+- `theory/proof_pieces/04_alternative_identity_audit.md` — Model C (Beggarly) closed with full evidence chain
+- This correction serves as the canonical elimination record that `analysis.html` Model G should link to
+
+### The impact on Joan
+
+The only specific maiden-name claim for Joan is dead. Her maiden name is unknown. Every genealogy database entry listing "Joan Beggarly" or "Joan Beggerly" as wife of John Greene of Quidnessett is a La Mance error from 1904.
 
 ---
 

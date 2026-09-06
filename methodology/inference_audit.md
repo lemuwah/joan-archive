@@ -25,12 +25,14 @@ This file catalogs claims currently on the site or in the repo that **feel** doc
 **Why it's inference:** He partitions the same land in 1682. No source says the house stood.  
 **Fix:** State the before/after documents. Leave the house status unsaid.  
 **Correct wording:** "John Greene partitioned 180 acres at Quidnessett in 1682. His 1679 affidavit states he lived in Narragansett Country 'forty years and more.' The neighboring Cocumscussoc trading post was burned during King Philip's War (1676). No primary source confirms or denies damage to his homestead."
+**Status:** ✅ RESOLVED 2026-09-04 — rewritten on context.html
 
 ### 2. "Joan's single appearance is anomalous for an English woman"
 
 **What was said:** Comparable wives appear more often in records.  
 **Why it's inference:** No study establishes the baseline for Quidnessett wives.  
 **Fix:** On `analysis.html`, present the comparison openly. "Mary Jefferay appears in X records. Joan appears in one. The baseline for Quidnessett wives has not been systematically compiled." That's Thread #16 (life-estate deed baseline).
+**Status:** ✅ RESOLVED 2026-09-04 — moved to analysis.html
 
 ### 3. "The Fones deed sat unrecorded for 31 years — why the delay?"
 
@@ -43,6 +45,7 @@ This file catalogs claims currently on the site or in the repo that **feel** doc
 **What was said:** Neither has pre-Rhode Island documentation.  
 **Why it's inference:** Pattern-matching across two absences.  
 **Fix:** State both facts separately. "No pre-Rhode Island record has been located for John Greene of Quidnessett. No record of any kind has been located for Joan outside the 1682 deed." Let the reader see the pattern.
+**Status:** ✅ RESOLVED 2026-09-04 — rewritten as two facts on index.html
 
 ### 5. "Awashouse and Anashuecot are the same person"
 
@@ -51,7 +54,7 @@ This file catalogs claims currently on the site or in the repo that **feel** doc
 **Fix:** Present the variant table. Flag Potter's equation (Awashowat = 1672 grantor) as the strongest link. Note the An-/Aw- split as scribal convention. Don't assert identity as fact.  
 **Status:** 🟡 PROBABLE — strong but not explicit.
 
-### 6. "Tacommanan = Tocomminon"
+### 6. "Tacommannan = Tocomminon"
 
 **What was said:** Same person referenced by two variant spellings.  
 **Why it's inference:** Same territory, same generation, same role, similar name.  
@@ -63,6 +66,7 @@ This file catalogs claims currently on the site or in the repo that **feel** doc
 **What was said:** Greene was personally connected to the sachem Potuck.  
 **Why it's inference:** The document says he transported Potuck in his sloop. Transportation ≠ personal relationship.  
 **Fix:** "John Greene transported the sachem Potuck by sloop for peace negotiations (1676). Potuck served as counselor to Quaiapin (Chapin 1931)." The transport is fact. "Relationship" is inference.
+**Status:** ✅ RESOLVED 2026-09-04 — rewritten on context.html
 
 ### 8. "The mother clause is anomalous"
 
@@ -119,14 +123,14 @@ This file catalogs claims currently on the site or in the repo that **feel** doc
 ## Resolution Tracker
 
 | # | Item | Status | Resolved? |
-|---|------|--------|-----------|
-| 1 | Homestead survived | Rewrite needed | ⬜ |
-| 2 | Joan anomalous for English woman | Move to analysis | ⬜ |
+|---|------|--------|----------|
+| 1 | Homestead survived | Rewritten on context.html | ✅ 2026-09-04 |
+| 2 | Joan anomalous for English woman | Moved to analysis.html | ✅ 2026-09-04 |
 | 3 | 31-year delay | Rewrite needed | ⬜ |
-| 4 | Matched invisibility | Rewrite as two facts | ⬜ |
+| 4 | Matched invisibility | Rewritten as two facts on index.html | ✅ 2026-09-04 |
 | 5 | Awashouse = Anashuecot | Move to analysis, 🟡 | ⬜ |
-| 6 | Tacommanan = Tocomminon | Move to analysis, 🟡 | ⬜ |
-| 7 | Greene-Potuck relationship | Rewrite to transport fact | ⬜ |
+| 6 | Tacommannan = Tocomminon | Move to analysis, 🟡 | ⬜ |
+| 7 | Greene-Potuck relationship | Rewritten to transport fact on context.html | ✅ 2026-09-04 |
 | 8 | Mother clause anomalous | Move to analysis, pending baseline | ⬜ |
 | 9 | Cocumscussoc burned | Find primary citation | ⬜ |
 | 10 | Conservator title | Verify primary vs Bates | ⬜ |

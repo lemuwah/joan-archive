@@ -34,7 +34,7 @@ The specific phrase "or to her mother if she survive" does NOT appear in:
 - Any other source the archive has examined
 
 This phrasing, which treats "her mother" as a THIRD PARTY (Joan's own mother, not Joan herself), has **no known source**. It may be:
-- A misreading of F.L. Greene's "father or mother" (confusing "mother" = Joan with "her mother" = Joan's mother)
+- A misreading of F.L. Greene's "their mother" (confusing "mother" = Joan with "her mother" = Joan's mother)
 - An AI hallucination or circular compilation artifact
 - From an unexamined source the archive has not yet found
 
@@ -46,7 +46,7 @@ The "mother clause" was previously cited as potential evidence for Model A (Narr
 
 **That argument is now SUSPENDED.** The manuscript does not say "her mother." It says "his Wife." F.L. Greene's "mother" means Joan herself, not Joan's mother. The matrilineal interpretation was built on a phrase that appears to have no primary or secondary source.
 
-This does NOT eliminate Model B. It eliminates ONE piece of evidence that was cited in support of Model B. The model stands or falls on other grounds (trading post context, mark practices, absence of English kin records, single-appearance analysis). But the archive's most dramatic specific claim — the matrilineal clause — was based on a misattributed quote.
+This does NOT eliminate Model A. It eliminates ONE piece of evidence that was cited in support of Model A. The model stands or falls on other grounds (trading post context, mark practices, absence of English kin records, single-appearance analysis). But the archive's most dramatic specific claim — the matrilineal clause — was based on a misattributed quote.
 
 ## Resolution Status
 
@@ -58,5 +58,5 @@ This does NOT eliminate Model B. It eliminates ONE piece of evidence that was ci
 ---
 
 *Joan Archive — contradictions/mother-clause-wording.md*  
-*Maintained under the 6 Laws of the Joan Archive*  
-*Updated 2026-09-04 with F.L. Greene verbatim + manuscript cross-reference*
+*Maintained under the Seven Laws of the Joan Archive*  
+*Updated 2026-09-06 with Model A correction (was Model B) + footer updated to Seven Laws*

@@ -2,7 +2,7 @@
 ## Seven Models, One Eliminated, Six Open
 
 **Date established:** 2026-08-30
-**Last updated:** 2026-09-05 (Law 7 tags applied, Sep 5 search results integrated, Tibbitts discredited, children evidence linked)
+**Last updated:** 2026-09-06 (Y-DNA inconsistency surfaced per Kimi audit #13; 1695/96 deed GAP entry added per #14)
 **Status:** ⚪ UNVERIFIED for all open models
 **Archive Law:** Law 1 (no narrative smoothing), Law 3 (no premature disqualification), Law 6 (no centering), Law 7 (no trust without evidence)
 **Epistemological basis:** See `methodology/Epistemology.md`
@@ -44,9 +44,9 @@ Every open model starts from the same verified facts (see `evidence/joan_verifie
 - Phonetic variant sweep: ALL negative outside 1661/1672 deeds. Kin group exists in ONE document only.
 - Multi-jurisdiction sweep: No hit in CT, MA, NY, or Crown records.
 - 1660 Atherton mortgage: Anashuecot absent. Either not yet active, too local, or excluded.
-- Tacommanan → Anashuecot via Namowish/Nammeash: 🟡 PLAUSIBLE — phonetic match, not documented link.
+- Tacommannan → Anashuecot via Namowish/Nammeash: 🟡 PLAUSIBLE — phonetic match, not documented link.
 
-### ⚫ SUSPENDED (post-corrections)
+### ⚠️ SUSPENDED (post-corrections)
 - ~~"Or to her mother if she survive" matrilineal clause~~ — see `contradictions/mother-clause-wording.md`
 - ~~Joan's mark as Indigenous pictographic signature~~ — 🔴 DISCREDITED (Joan does not sign, Image 10)
 - ~~Joan's second appearance (Pawtuxet deed)~~ — 🔴 DISCREDITED see `CORRECTIONS.md` #1
@@ -81,6 +81,8 @@ Every open model starts from the same verified facts (see `evidence/joan_verifie
 - No Cromwellian transport list names a Joan sent to New England. 🟡 Negative space logged.
 - Bristol servant registers 1654–1665: No female servant bound for New England. 🟡 Negative space logged.
 - Missing baptisms consistent with Irish Catholic household (no Protestant minister).
+
+**⚠️ Y-DNA INTERNAL INCONSISTENCY:** `source_spine.md` §12 notes two contradictory Y-DNA codes: 'R-FTB79899' vs. 'R-Z255.' Both are held ⚪ UNVERIFIED until the mismatch is explained. The Irish Sea cluster attribution depends on which code is correct. **This inconsistency must be resolved before Model C can be strengthened or weakened by the DNA evidence.** See `theory/source_spine.md` §12 for details.
 
 ---
 
@@ -129,11 +131,11 @@ Every open model starts from the same verified facts (see `evidence/joan_verifie
 
 **Status:** 🔴 ELIMINATED
 
-Timeline impossible. Alice Daniels Beggerly died c. 1643/44. Joan alive 1682. Wrong John Greene (Warwick, not Quidnessett).
+Timeline impossible. Alice Daniels Beggerly died c. 1643/44. Joan alive 1682. Wrong John Greene (Warwick, not Quidnessett). See `CORRECTIONS.md` #3.
 
 ---
 
-## The Honest Assessment (Sep 5, 2026)
+## The Honest Assessment (Sep 6, 2026)
 
 Six models remain open. None has positive direct evidence. All are built on the same verified facts plus varying amounts of structural, contextual, and circumstantial indicators.
 
