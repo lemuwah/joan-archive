@@ -27,6 +27,9 @@ jobs:
       - name: Run daily multi-perspective sweep
         run: python tools/daily_research/sweep.py
 
+      - name: Run four-agent daily review
+        run: python tools/multi_agent_daily/orchestrate.py
+
       - name: Open review pull request
         uses: peter-evans/create-pull-request@v7
         with:
@@ -45,3 +48,8 @@ jobs:
           branch: daily-research/${{ github.run_id }}
           add-paths: |
             research_queue/daily_sweep/**
+            research_queue/agent_runs/**
+            agents/Explorer/daily_logic.md
+            agents/Archivist/daily_logic.md
+            agents/Synthesizer/daily_logic.md
+            agents/hostile_reviewer/daily_logic.md
