@@ -1,4 +1,7 @@
-# Bates Deep Read — Full Article Mapped
+> > This archive documents lives lived between approximately 1600–1750 in Narragansett country (present-day Rhode Island). All records from this period were created within colonial legal systems and reflect their biases, categories, and blind spots. Every name found here — English, Narragansett, Niantic, mixed-heritage, unknown — represents a real person whose full story these records were not designed to capture. Content may include references to war, captivity, enslavement, displacement, legal coercion, and loss. These are documented realities of the period, not abstractions.
+>
+> All cultural and genealogical content is included for research purposes in the quest to identify Joan Unknown Greene and will be revised or removed if requested by descendant communities or tribal representatives. Search direction bias check: When an agent recommends "where to look next," ask: is this recommendation biased toward digitized, English-language, colonial-framework sources? What record types exist that this agent might not know to suggest? What would a Narragansett historian, a maritime historian, an archaeologist, a linguist look for that a genealogist wouldn't?
+> # Bates Deep Read — Full Article Mapped
 **Date:** 2026-09-05 (round 4)
 **Source:** Bates, Louise Prosser. "John Greene of Newport and Narragansett." *Collections of the Rhode Island Historical Society*, Vol. XI, No. 3, July 1918, pp. 69–78; continued Vol. XII, No. 1, January 1919, pp. 15–25.
 **Internet Archive:** https://archive.org/details/rhodeislandhistv11v12rhod
@@ -44,11 +47,11 @@ Bates (XI p. 78) names these children of John¹ and Joan:
 | Henry² | Of Quidnisset and "New Gearsey" | NOT in Image 10 deed | ⚠️ Not in our primary source |
 | Daniel² | Of Quidnisset | ✅ Named as grantee | ✅ |
 | James² | Of Quidnisset | ✅ Named as "natural son" | ✅ |
-| Benjamin² | Of Quidnisset | NOT in Image 10 deed | ⚠️ Not in our primary source |
+| Benjamin² | Of Quidnisset | Beny in Image 10 deed | 🟡 PLAUSIBLE Beny might equal Benjamin-needs professonial insight |
 | Sarah² | Married Thomas Flounders ~1668 | NOT in Image 10 deed | ⚠️ Not in our primary source |
 | Edward² | Mentioned XII pp. 24–25 | NOT in Image 10 deed | ⚠️ Not in our primary source |
 
-**Only Daniel and James are confirmed by Image 10.** The other 5 children come from Bates citing other records (unnamed). Until we find those records, the full children list is 🟡 PLAUSIBLE.
+**Only Beny, Daniel and James are confirmed by Image 10.** The other 5 children come from Bates citing other records (unnamed). Until we find those records, the full children list is 🟡 PLAUSIBLE.
 
 ---
 
