@@ -1,0 +1,71 @@
+# Registry of Internet Archive volumes this archive draws from.
+# Seeded 2026-09-07 from every archive.org/details/<id> link already cited
+# somewhere in the repo (grep -rhoE "archive\.org/details/[a-zA-Z0-9_]+").
+#
+# last_known_seq: the highest IA leaf/page index this archive has already
+#   pulled an image from, or already cited a page number for. Left as
+#   `null` where no specific page has been logged yet — fill in from the
+#   /page/nNN/ links in the citing .md files, or from README.md source notes,
+#   before running fetch_next_ia_page.py against that identifier. The script
+#   will refuse to run on a `null` entry rather than guess a starting point.
+#
+# label: human-readable name, for the PR title and pending-review filename.
+#
+# Add new volumes here as they come up in research — this file is the only
+# thing fetch_next_ia_page.py reads to know what to chase next.
+
+volumes:
+  - id: recordscolonyrh02bartgoog
+    label: "Bartlett, Records of the Colony of Rhode Island, Vol. II"
+    last_known_seq: null
+  - id: recordsofcolonyo02bart
+    label: "Bartlett/Arnold, Records of the Colony of Rhode Island, Vol. II (alt scan)"
+    last_known_seq: null
+  - id: recordsofcolonyo07rhod
+    label: "Records of the Colony of Rhode Island, Vol. VII"
+    last_known_seq: null
+  - id: recordsofcolonyo1112newp
+    label: "Records of the Colony of Rhode Island, Vols. XI-XII"
+    last_known_seq: null
+  - id: rhodeislandhisto11prov
+    label: "Rhode Island Historical Society Collections, Vol. XI (Providence copy)"
+    last_known_seq: null
+  - id: rhodeislandhisto11rhod
+    label: "Rhode Island Historical Society Collections, Vol. XI (alt scan)"
+    last_known_seq: null
+  - id: rhodeislandhistv11v12rhod
+    label: "Rhode Island Historical Society Collections, Vols. XI-XII"
+    last_known_seq: null
+  - id: earlyhistoryofna00pott
+    label: "Potter, Early History of Narragansett"
+    last_known_seq: null
+  - id: earlyhistoryofna00pott_0
+    label: "Potter, Early History of Narragansett (alt scan)"
+    last_known_seq: null
+  - id: greenesofrhodeis00gree
+    label: "The Greenes of Rhode Island"
+    last_known_seq: null
+  - id: descendantsofjos00gree
+    label: "Descendants of John Greene (F.L. Greene)"
+    last_known_seq: null
+  - id: narrativeofcause00east
+    label: "Narrative of the Causes... (Hough, court martial volume)"
+    last_known_seq: null
+  - id: narragansetthistv1v2rhod
+    label: "Narragansett history, Vols. I-II"
+    last_known_seq: null
+  - id: adigestearlycon01manwgoog
+    label: "A Digest of Early Connecticut... "
+    last_known_seq: null
+  - id: publicrecordsofc001conn
+    label: "Public Records of the Colony of Connecticut, Vol. I"
+    last_known_seq: null
+  - id: publicrecordsofc003conn
+    label: "Public Records of the Colony of Connecticut, Vol. III"
+    last_known_seq: null
+  - id: publicr18unse
+    label: "Public Records (unidentified vol. — confirm title before next run)"
+    last_known_seq: null
+  - id: rhodeislandlande00wort
+    label: "Worth, Rhode Island land evidences"
+    last_known_seq: null

@@ -136,6 +136,28 @@ Every direction gets tested. English, Indigenous, maritime, religious, legal, ar
 
 **Not yet done — still says "Seven Laws" or is otherwise unstandardized:** dated session/agent logs (`agents/*`, `research/*`, `research_findings/*`), `decision_log.md`, `contradictions/*`, `evidence/*`, `validation/*`, `roadmap/*`, `pending_review/*`, `primary_sources/NEGATIVE_LOG.md`, `research_queue/*`, `theory/source_spine.md`, `methodology/kimi_hostile_audit.md`, `methodology/ai_provenance.md`, `methodology/inference_audit.md`, `methodology/git_audit_checklist.md`, `methodology/name_variant_registry.md`, and the individual `/people/*.md` pages (several say "Seven Laws" or "MULTI AGENT Laws" inconsistently in their per-page header). Left alone deliberately this pass — most of these are dated session records, and the people pages are already queued for a full rewrite under Task 4, where the header line should be standardized as part of that pass rather than touched twice.
 
+## Task 6.5: Next-page fetch tooling (added 2026-09-07)
+- **Status:** BUILT, UNTESTED — needs a first real run before it's trusted
+- **Depends on:** NONE
+- **Priority:** MEDIUM — accelerates ongoing research, doesn't gate other tasks
+- **What was done:** Built `tools/next_page/` — automated "next page" fetching for the 17
+  Internet Archive volumes already cited in the repo (Track A), plus documentation of why
+  the FamilySearch deed-book images (008204949-*) can't be automated the same way and what
+  to do instead (Track B). GitHub Action at `.github/workflows/fetch-next-page.yml`, manual
+  trigger only, opens a PR — never auto-commits to a published page.
+- **What's NOT done / needs attention first:**
+  - `tools/next_page/sources.yml` has all 17 volumes with `last_known_seq: null` — needs a
+    human pass filling in the actual last-checked page for each, from existing citations, before
+    the fetcher can run against any of them.
+  - The IIIF manifest URL pattern (`iiif.archive.org/iiif/{id}/manifest.json`) was written from
+    documented archive.org IIIF support but has not been live-tested against any of this
+    archive's specific 17 identifiers — first run should be treated as a test, not a trusted fetch.
+  - `ANTHROPIC_API_KEY` repo secret needs to be set for the AI triage step to run; without it,
+    fetching + logging still works, just skips the relevance triage.
+- **Where to find what you need:** `tools/next_page/README.md` is the entry point.
+- **Done when:** At least one successful test run against a volume with a filled-in
+  `last_known_seq`, confirmed to produce a real page image in `images/_pending_review/`.
+
 ## Task 7: Phase 7+ (future — do not start before Tasks 1–6 are DONE)
 - **Status:** IN PROGRESS (some items completed early during framework build)
 - **Depends on:** ALL above
