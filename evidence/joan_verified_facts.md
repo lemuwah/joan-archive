@@ -41,8 +41,8 @@
 
 **Statement:** No other record of Joan has been located.
 **Source:** Methodological — negative search result
-**Tag:** 🟢 PROOF (of absence, as of Sep 2026)
-**Notes:** No birth, baptism, marriage, death, burial, probate, church, court, or land record has been found for Joan outside the March 1682 deed. The Pawtuxet deed (May 1682) citation was invalidated — see `CORRECTIONS.md` #1. The negative search log is at `primary_sources/NEGATIVE_LOG.md`.
+**Tag:** 🔍 SEARCHED, NOT FOUND (within the documented scope, as of Sep 2026)
+**Notes:** No birth, baptism, marriage, death, burial, probate, church, court, or land record has been found for Joan outside the March 1682 deed in the searches listed below. This is a scoped research result, not proof that no such record exists. The Pawtuxet deed (May 1682) citation was invalidated — see `CORRECTIONS.md` #1. The negative search log is at `primary_sources/NEGATIVE_LOG.md`.
 
 Searches completed Sep 5, 2026 with no result:
 - Arnold's Vital Records of Rhode Island
@@ -71,5 +71,5 @@ Searches completed Sep 5, 2026 with no result:
 ---
 
 *This file is the authoritative fact sheet for Joan Greene.*
-*Maintained under the Seven Laws of the Joan Archive.*
+*Maintained under the Multi Agent Laws of the Joan Archive.*
 *Law 7: No Trust Without Evidence — nothing is marked verified until we hold the image to back it up.*

@@ -158,6 +158,72 @@ Every direction gets tested. English, Indigenous, maritime, religious, legal, ar
 - **Done when:** At least one successful test run against a volume with a filled-in
   `last_known_seq`, confirmed to produce a real page image in `images/_pending_review/`.
 
+## Task 6.75: Truth-quest search synthesis and next actions (added 2026-09-07)
+- **Status:** ACTIVE — synthesis only; no search below is marked complete by this card
+- **Depends on:** Tasks 4–6 remain incomplete. This card does not override their statuses.
+- **Priority:** HIGHEST ACTIVE SEARCH CARD
+- **Governing laws:** Law 1 (hold contradictions open), Law 3 (test every model before
+  disqualification), Law 5 (check every jurisdiction), Law 6 (no centering), and Law 7
+  (no promotion without the document). Search direction must also satisfy `editorial_standards.md`
+  §§6–7 and record what was not searched.
+
+### Current evidence boundary
+
+The archive currently has four defensible Joan facts, all with an AI-transcription caveat:
+
+1. Joan is named as John Greene's wife in the March 1682 deed.
+2. A life annuity is reserved to her; the amount and exact wording remain under review.
+3. Joan does not sign or mark the confirmed 1682 deed image.
+4. No other record of Joan has been located in the searches listed in `evidence/joan_verified_facts.md`.
+
+The Pawtuxet deed citation is broken and remains suspended. The five-John firewall is useful
+for preventing conflation, but its DNA and lineage inputs still require independent source
+verification. The archive must therefore search for Joan's identity and documentary context,
+not search for confirmation of a preferred origin.
+
+### Ordered next searches
+
+| Rank | Search | Record families / repositories | Question tested | Promotion condition |
+|---|---|---|---|---|
+| 1 | Recover the orphan Pawtuxet citation | RI State Archives, Providence colonial deed books, Warwick/North Kingstown clerks, RIHS MSS 1210, FamilySearch films, Providence Vol. 14 | Does the May 1682 deed exist, and what volume/series does “Vol. VII, pp. 177–178” mean? | Original image or authoritative catalog record; otherwise log a scoped negative and keep S-007 suspended. |
+| 2 | Verify the March 1682 manuscript | FamilySearch DGS 008204949 Images 9–12; compare Image 10 with Worth and F.L. Greene | Exact annuity amount, parties, formula, witnesses, and whether any clause concerns Joan's mother | Human inspection of the image with page/line or image anchor; AI text remains working transcription. |
+| 3 | Resolve the five-John identity firewall | 1658 Pawtuxet signing cluster, 1671 freeman list, 1678 council order, 1679 certificate, 1682 deed, 1685 deed, full witnesses and land descriptions | Which John appears in each record: Surgeon, Quidnessett, Warwick/Occupasuetuxet, Newport, or Kingstown? | Full record text plus at least two independent identity anchors, not name-only matching. |
+| 4 | Trace the earliest Pawtuxet citation | F.L. Greene 1894, Austin 1887, Updike 1907/1937, Bates 1918–19, later compilations | Is the citation independent, circular, or a transcription error introduced by a later compiler? | Earliest citable source and explicit citation chain. |
+| 5 | Test Irish/Scottish and servant models | Bristol servant registers, Cromwellian transportation lists, Irish/Ulster and Scottish migration records, apprenticeship/bond records, port books, New England court and probate records | Can any record connect Joan, a plausible alias, or the Quidnessett household to Ireland, Ulster, Scotland, or servitude? | A contemporaneous record naming the person or a bounded household link; surname resemblance is insufficient. |
+| 6 | Test enslavement/captivity and status models | King Philip's War captivity/deportation records, RI/Massachusetts/Connecticut disposal records, manumissions, probate inventories, court records, church records | Is there documentary evidence for enslaved, captive, servant, or free status, without inferring from race or absence? | Exact source language plus context separating colonial legal category from lived identity. |
+| 7 | Search Indigenous and non-English knowledge systems | Narragansett/Niantic community histories, Indigenous-authored scholarship, language/name studies, oral-history protocols, archaeological and material-culture collections | What names, kinship terms, places, or documentary absences are invisible in English colonial searches? | Repository or community-authorized source with provenance and cultural-access notes; do not extract restricted knowledge. |
+| 8 | Search women’s and household records sideways | Widowhood, dower, annuity payments, probate, guardianship, church, midwife, neighbor, witness, and children’s records | Can Joan be located through household relationships rather than her own name? | Record names Joan or an identity-linked household with a clear date/place bridge. |
+| 9 | Search maritime and trade networks | Newport/Boston port records, merchant correspondence, Richard Smith trading-post records, ships, customs, seamen, coastal court cases | Could movement through the trading network explain Joan's appearance and documentary silence? | Dated record tied to the household or a documented associate; general regional trade context is not identity proof. |
+| 10 | Build the regional geography baseline | Quidnessett, Cocumscussoc, Pawtuxet, Warwick, Kingstown, Narragansett place-name variants; maps, surveys, deeds, archaeology | Which place labels refer to the same location, and which mark distinct jurisdictions or communities? | Map/deed anchor with date and repository; never use modern boundaries as a proxy for colonial identity. |
+
+### Required search output
+
+Each completed search writes a dated entry to the relevant page's `## Search Log` and, when
+machine-generated, a candidate record under `data/research/` with:
+
+- repository, stable identifier, URL, access date, and page/image anchor;
+- exact query, date range, jurisdiction, and record type searched;
+- what was found and what was not searched;
+- identity collisions and alternative explanations;
+- `PENDING_HUMAN_REVIEW` until a human inspects the original or authoritative record.
+
+The daily multi-perspective sweep is a discovery aid, not a verification pass. Its results must
+feed this queue only after deduplication, source-level review, and hostile challenge. Agreement
+between agents is not corroboration.
+
+### Bias check before closing this card
+
+The current queue is strongest on digitized English-language colonial records and weakest on:
+
+- Indigenous-authored or community-governed sources;
+- material culture, archaeology, and landscape evidence;
+- Irish/Scottish migration and servant-status records outside Rhode Island;
+- women’s household, church, widowhood, and annuity records;
+- maritime and port records connecting the Narragansett region to wider movement.
+
+Do not mark this card DONE until each gap has either a documented search, a scoped negative result,
+or an explicit access/permissions barrier recorded in the queue.
+
 ## Task 7: Phase 7+ (future — do not start before Tasks 1–6 are DONE)
 - **Status:** IN PROGRESS (some items completed early during framework build)
 - **Depends on:** ALL above
