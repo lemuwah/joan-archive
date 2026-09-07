@@ -24,7 +24,7 @@
 | 2026-09-05 | Royal Commission 1664–1665 | Narragansett boundary depositions | Joan Greene, Greene household | NULL | Web search | |
 | 2026-09-05 | Calendar of State Papers Colonial | RI petitions and complaints | Joan Greene, Greene household composition | NULL for Joan; John found in Clarke petition (Vol. 5) | Web search | |
 | 2026-09-05 | Plymouth Colony Records (Shurtleff/Pulsifer) | 12-volume series | Joan Greene, John Greene of Quidnessett | NULL for both | Web search | |
-| 2026-09-05 | Acts of the Privy Council Colonial Vol. I | 1613–1680 | Joan Greene, John Greene of Quidnessett | NULL for both | Web search | |
+| 2026-09-05 | Acts of the Privy Council Colonial Vol. I | 1613–1680 | Joan Greene, John Greene of Quidnessett | NULL for both| Web search | |
 | 2026-09-05 | Published ethnographies (Simmons, Rubertone, Bragdon, Salisbury) | Sachem genealogies, Indigenous-English contact | Joan Greene | NULL — no scholar identifies Joan as Indigenous from primary sources | Web search | |
 | 2026-09-05 | Clarke, Greenes of Rhode Island (1903) | Full text downloaded from Internet Archive | Joan Greene, Quidnessett, Townroe, daughter of sachem | NULL — ZERO HITS. Clarke covers Warwick Greenes only. | Full text search | See contamination event #4 |
 | 2026-09-05 | Bates, RIHS Collections Vol. XI–XII (1918–19) | Full article text | Joan | Found: 5 mentions as "John and Joan Greene of Newport and Quidnisset." No origins, maiden name, death date, or speculation. | Web search | Source exhausted |
@@ -32,6 +32,12 @@
 | 2026-09-05 | Bristol servant registers 1654–1665 | Published registers | Female servant bound for New England | NULL — no female match | Web search | Model C/D negative space |
 | 2026-09-05 | RI disposal records post-1676 | Colony disposal/captive records | Joan, captive assigned to Greene | NULL — no match | Web search | Model E negative space |
 | 2026-09-05 | RI probate pre-1682 | Probate records | Widow Joan, 1660–1680 | NULL — no widow Joan who disappears | Web search | Model F negative space |
+| 2026-09-06 | Jamestown Land Evidence Records | FamilySearch 1680–1899 | Joan Greene | NULL — no deed naming Joan in Jamestown records | Kimi (hostile search) | |
+| 2026-09-06 | NK Land Evidence Records 1686–1921 | FamilySearch | Joan Greene in 1695/96 Wightman or Benjamin-to-James deeds | NULL — no Joan reference in these deeds | Kimi (hostile search) | |
+| 2026-09-06 | Published passenger lists | Multiple databases | Joan Greene bound for New England | NULL — no match in any published passenger list | Kimi (hostile search) | |
+| 2026-09-06 | FamilySearch DGS 008204949 | Images 9–12 (manuscript) | Joan's mark or signature | NOT EXAMINED — images not accessed; no mark claim can be verified | Kimi (hostile search) | Access restriction |
+| 2026-09-06 | MA Bay court records (Shurtleff) | Full published volumes | Joan Greene | NULL — confirmed independently from Sep 5 search | Kimi (hostile search) | Independent confirmation |
+| 2026-09-06 | Primary sources for "Joan Beggarly" | All available databases | Joan Beggarly as a distinct person | NULL — "Beggarly" is a husband's surname from Winthrop's journal, never a maiden name | Kimi (hostile search) | Confirms La Mance error chain |
 
 ---
 
@@ -55,6 +61,7 @@ These repositories have been identified as potentially relevant but have NOT bee
 | Indenture records, RI/MA/Plymouth | Various | Model D (indentured servant) | ⚫ NOT SEARCHED | Medium |
 | Post-1676 enslavement records, RI | Various | Model E (enslaved person) | ⚫ NOT SEARCHED | Medium |
 | RI probate records pre-1682 | Various | Model F (widow of prior marriage) | ⚫ NOT SEARCHED | Medium |
+| RIHS | Mss 461 — "will complaint" | Physical pull target — may contain Joan reference | ⚫ NOT SEARCHED | **HIGH** |
 
 ---
 
