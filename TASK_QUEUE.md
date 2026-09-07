@@ -61,7 +61,7 @@ Every direction gets tested. English, Indigenous, maritime, religious, legal, ar
     ## Disclaimer
     [Universal block from Task 2]
     ## What We Know
-    [Sourced claims only. Tagged: 📄 PRIMARY, 📚 SECONDARY, 🌐 TERTIARY, ⚠️ AI-SOURCED]
+    [Sourced claims only. Tagged: 📔 PRIMARY, 📚 SECONDARY, 🌐 TERTIARY, ⚠️ AI-SOURCED]
     ## What We Don't Know
     [Honest blanks — research directions, not failures]
     ## Connections
@@ -89,11 +89,12 @@ Every direction gets tested. English, Indigenous, maritime, religious, legal, ar
   - Build each page BY searching — the backward mining IS the research.
   - Document collision points honestly: "this record could be either" gets flagged, not assigned.
   - Files:
-    - [x] people/john_greene_warwick_surgeon.md-lemuwah 9-6-2026
-    - [x] people/john_greene_son_of_john.md-lemuwah 9-6-2026
-    - [x] people/john_greene_potowomut.md-lemuwah 9-6-2026
-    - [x] people/john_greene_occupessuatuxet.md-lemuwah 9-6-2026
-    - [x] people/john_greene_quidnessett.md (already exists — restructure to match)
+    - [ ] people/john_greene_warwick_surgeon.md
+    - [ ] people/john_greene_son_of_john.md
+    - [ ] people/john_greene_potowomut.md
+    - [ ] people/john_greene_occupessuatuxet.md
+    - [ ] people/john_greene_quidnessett.md (already exists — restructure to match)
+  - **Note:** Items were previously marked [x] in error. DeepSeek audit (2026-09-06) confirmed these files do not exist in the repo. Status corrected to [ ] on 2026-09-07.
 - **What's already done:** five_john_primary_source_trail.md exists but is a combined doc, not individual pages
 - **Where to find what you need:** /people/, /research/
 - **Done when:** All 5 pages exist with universal format, initial backward mining notes, collision points flagged
@@ -124,7 +125,7 @@ Every direction gets tested. English, Indigenous, maritime, religious, legal, ar
 ---
 
 ## Provenance Tags Reference
-- 📄 PRIMARY — archive has read the original
+- 📔 PRIMARY — archive has read the original
 - 📚 SECONDARY — archive has read a published transcription
 - 🌐 TERTIARY — internet source, not independently verified
 - ❌ NOT SEARCHED — this record type has not been checked

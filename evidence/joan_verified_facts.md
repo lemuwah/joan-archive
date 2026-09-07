@@ -2,7 +2,7 @@
 
 **Status:** Active — the authoritative fact sheet for Joan.
 **Added:** 2026-09-03
-**Last updated:** 2026-09-05 — Image 10 AI transcription integrated, Law 7 tags applied, annuity amount corrected
+**Last updated:** 2026-09-07 — stale model count corrected (seven → eight), per Runable audit
 **Authority:** `methodology/editorial_standards.md` §1
 **Rule:** Only these facts may appear on `index.html` as statements about Joan. Nothing is marked verified until we hold the image to back it up.
 
@@ -62,7 +62,7 @@ Searches completed Sep 5, 2026 with no result:
 ## What This File Does NOT Contain
 
 - Joan's maiden name (unknown — "Joan Tibbitts" is 🔴 DISCREDITED, Sep 5 2026)
-- Joan's ancestry or origin (unknown — see seven competing models)
+- Joan's ancestry or origin (unknown — see eight competing models)
 - Whether Joan signed, marked, or consented (🔴 DISCREDITED — Image 10 shows she did not sign)
 - Joan's death date (widely repeated as 1682 but not documented)
 - Joan's children (attributed by compilations, no primary birth records exist — see `evidence/children_evidence_grid.md`)
