@@ -4,7 +4,7 @@ triage_pending_images.py — cheap first-pass relevance check on images/_pending
 
 Not a substitute for a human decision, and not a citation — this only decides what order
 a human should look at pending images in, and drafts a starting-point transcription they
-can correct. Every claim it produces is tagged AI-SOURCED / PROOF-AI TRANSCRIPTION per
+can correct. Every output it produces is tagged AI-SOURCED per
 methodology/editorial_standards.md and theory/three_laws.md Law 7 — never PROOF on its own.
 
 Requires an ANTHROPIC_API_KEY (repo secret in CI; env var locally). Uses vision-capable
@@ -92,7 +92,7 @@ def main():
         flag = "LIKELY RELEVANT" if found else "NO OBVIOUS MATCH — still needs a human look, this is a weak filter"
         sidecar.write_text(
             f"# Triage — {img.name}\n\n"
-            f"⚠️ AI-SOURCED — PROOF — AI TRANSCRIPTION per Law 7. Working read only, not a "
+            f"⚠️ AI-SOURCED — AI TRANSCRIPTION per Law 7. Working read only, not a "
             f"paleographic verification. Verify against the original before citing.\n\n"
             f"**Flag:** {flag}\n"
             f"**Terms matched:** {', '.join(found) if found else 'none'}\n"

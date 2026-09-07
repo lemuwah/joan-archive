@@ -43,6 +43,52 @@ agents:
       - output unmarked certainty
       - turn OCR into a quotation without image verification
 
+  identity_disambiguator:
+    role: person-identity-resolution
+    reads:
+      - candidate source records
+      - people/two-john-firewall.md
+      - data/people.yml
+      - relevant people pages
+    writes:
+      - competing identity assignments
+      - name, place, date, kinship, and witness comparisons
+      - explicit collision warnings
+    forbidden:
+      - merge people because names match
+      - use geography as proof of identity
+      - erase an unresolved identity collision
+
+  historical_status:
+    role: status-and-power-context
+    reads:
+      - source image or scan
+      - colonial legal and terminology references
+      - Indigenous-authored context where available
+    writes:
+      - source wording for servant, captive, enslaved, free, Indian, Negro, or related terms
+      - context notes separating legal category from lived identity
+      - searches for records that could confirm or complicate status
+    forbidden:
+      - infer status from race, surname, occupation, or absence of a record
+      - treat a colonial label as a complete identity
+      - generalize from another colony or century without marking the comparison
+
+  paleography_variants:
+    role: handwriting-and-name-variant-analysis
+    reads:
+      - original image at readable resolution
+      - verified transcriptions
+      - methodology/name_variant_registry.md
+    writes:
+      - literal letterforms and uncertain readings
+      - phonetic, orthographic, and scribal variants
+      - mark, signature, alias, witness, and formula comparisons
+    forbidden:
+      - silently normalize historical spelling
+      - turn a plausible reading into a quotation
+      - identify a person from handwriting style alone
+
   synthesizer:
     role: bounded-synthesis
     reads:

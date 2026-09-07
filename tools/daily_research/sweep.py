@@ -42,6 +42,17 @@ LENSES = {
     "regional_geography_variants": [
         "Quidnessett", "Cocumscussoc", "Warwick", "Kingstown", "Pawtuxet", "Narragansett"
     ],
+    "identity_disambiguation": [
+        "John Greene", "John Greene Sr", "John Greene Jr", "of Warwick", "of Newport",
+        "of Quidnessett", "son of John", "alias"
+    ],
+    "paleography_scribal_variants": [
+        "his marke", "her marke", "signed", "witness", "alias", "otherwise called", "X mark"
+    ],
+    "archival_access_gaps": [
+        "finding aid", "manuscript", "land evidence", "court records", "probate",
+        "town records", "unindexed", "microfilm"
+    ],
 }
 
 IA_ENDPOINT = "https://archive.org/advancedsearch.php"

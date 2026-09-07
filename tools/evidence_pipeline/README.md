@@ -39,6 +39,25 @@ Produces a rough transcription or image description. It must preserve uncertaint
 
 Output: AI-SOURCED working transcription.
 
+### Specialist agents
+
+Run these alongside the general Explorer and Archivist when the question requires a
+different perspective:
+
+- **Identity disambiguator** — separates same-name people using dates, places, kinship,
+  witnesses, and documentary context; it never merges on a name alone.
+- **Historical-status agent** — tests servant, indentured, captive, enslaved, free, and
+  colonial status terminology while preserving the source's exact wording and limits.
+- **Paleography and variants agent** — compares letterforms, marks, aliases, scribal
+  formulas, and spelling variants against the original image and the name registry.
+- **Irish/Scottish migration agent** — tests Ireland, Ulster, Scotland, servant migration,
+  apprenticeship, and transport records against a dated regional timeline.
+- **Negative-space auditor** — records repositories, jurisdictions, date ranges, and
+  record types searched without treating a scoped miss as proof of absence.
+
+These are independent challenges, not a voting system. Agreement between agents does not
+upgrade a candidate to verified evidence.
+
 ### Synthesizer
 
 Compares verified source records across the timeline and proposes a bounded statement. It must separate `PROOF`, `PLAUSIBLE`, and `DISCREDITED`, and preserve contradictions rather than resolve them by narrative smoothing.
