@@ -21,4 +21,4 @@ For HTML pages (`index.html`, `analysis.html`, `context.html`, `about.html`), re
 
 ---
 
-*Maintained under the Seven Laws of the Joan Archive.*
+*Maintained under the Multi Agent Laws of the Joan Archive.*

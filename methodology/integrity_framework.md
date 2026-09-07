@@ -2,7 +2,7 @@
 
 **Status:** Active — governs all evidence handling across the archive.  
 **Added:** 2026-09-05  
-**Authority:** Equal to the Seven Laws.
+**Authority:** Equal to the Multi Agent Laws.
 
 ---
 

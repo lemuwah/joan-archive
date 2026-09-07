@@ -63,7 +63,7 @@ Legacy tags in older files (PROVEN/PROBABLE/UNVERIFIED/NULL/SUSPENDED) are recog
 | `analysis.html` | Open hypotheses (Models A–H), evidence mapping, stress tests |
 | `context.html` | Timeline, geography, colonial jurisdiction. Facts only, tagged. |
 | `contribute.html` | How to help, negative space log, what hasn't been searched |
-| `about.html` | Methodology, Seven Laws, corrections, AI checklist |
+| `about.html` | Methodology, Multi Agent Laws, corrections, AI checklist |
 
 ---
 
@@ -106,4 +106,4 @@ This check applies to all recommendations in `/research_queue/`, all "Where To L
 
 ---
 
-*Maintained under the Seven Laws of the Joan Archive.*
+*Maintained under the Multi Agent Laws of the Joan Archive.*

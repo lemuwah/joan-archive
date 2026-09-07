@@ -13,7 +13,7 @@
 - Alice Daniels claim — no primary, merges two Joanes
 - Cojonoquond merge — conflates Anashuecot with male sachem
 
-These are NOT deleted — they are labeled and kept here to show why they fail the Seven Laws.
+These are NOT deleted — they are labeled and kept here to show why they fail the Multi Agent Laws.
 
 **Rule:** Any claim citing these without a primary anchor = QUARANTINED.
 

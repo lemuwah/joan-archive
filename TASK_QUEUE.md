@@ -49,7 +49,7 @@ Every direction gets tested. English, Indigenous, maritime, religious, legal, ar
 - **Depends on:** Tasks 1, 2 (need format and disclaimer ready) — ✅ BOTH DONE
 - **Priority:** HIGH
 - **What to do:**
-  - Pass A: Apply universal page format to each people .md (Disclaimer → What We Know → What We Don't Know → Connections → Where To Look Next → Search Log). Add provenance tags. Strip interpretive framing.
+  - Pass A: Apply universal page format to each people .md (Disclaimer → What We Know → What We Don't Know → Connections → Where To Look Next → Search Log). Add provenance tags. Strip interpretive framing. Standardize each page's "Laws apply throughout" header line to say "Multi Agent Laws" (not "Seven Laws," not "MULTI AGENT Laws," no numeral) per the 2026-09-07 naming standard above.
   - Pass B: While page is open, extract one concrete search lead driven by the page's own content. Add to search log with ❌ NOT SEARCHED tags for unchecked record types.
   - Universal page format:
     ```
@@ -130,7 +130,11 @@ Every direction gets tested. English, Indigenous, maritime, religious, legal, ar
 - **Done when:** research_queue/ has a prioritized, bias-checked list of next searches
 
 ## Minor / Low Priority — Terminology drift (flagged 2026-09-07, not fixed)
-Three names in active use for the same rule set: "MULTI AGENT Laws" (index.html, about.html, john_greene_warwick.md), "the Seven Laws" (john_greene_newport.md, universal_disclaimer.md footer), and the filename `theory/three_laws.md` itself, which now contains seven laws, not three. Low severity — did not touch, since renaming the file would need every inbound link updated. Worth a pass whenever Task 7's "Repo description update" is picked up.
+## Naming standard (added 2026-09-07, per archive owner): the public-facing and instructional name for the rule set is always **"Multi Agent Laws"** — never "Seven Laws," "Three Laws," or a numeral. The count is deliberately not surfaced anywhere, because the laws are still evolving; law-list `<ol>` elements should render as unordered lists so no number is implied. `theory/three_laws.md` keeps its filename and internal content untouched — do not rename it or edit its law text, only refer to it via link text that says "Multi Agent Laws."
+
+**Done 2026-09-07:** all 5 site-facing HTML pages (index.html, about.html, context.html, contribute.html, analysis.html) and the core instructional docs (README.md, README_FOR_EXTERNAL_AGENTS.md, AGENT_GUARDRAILS.md, CONTRIBUTING.md, methodology/editorial_standards.md, methodology/universal_disclaimer.md, methodology/integrity_framework.md, contamination/README.md) — standardized to "Multi Agent Laws," law lists converted from numbered `<ol>` to unordered `<ul>` on index.html and about.html.
+
+**Not yet done — still says "Seven Laws" or is otherwise unstandardized:** dated session/agent logs (`agents/*`, `research/*`, `research_findings/*`), `decision_log.md`, `contradictions/*`, `evidence/*`, `validation/*`, `roadmap/*`, `pending_review/*`, `primary_sources/NEGATIVE_LOG.md`, `research_queue/*`, `theory/source_spine.md`, `methodology/kimi_hostile_audit.md`, `methodology/ai_provenance.md`, `methodology/inference_audit.md`, `methodology/git_audit_checklist.md`, `methodology/name_variant_registry.md`, and the individual `/people/*.md` pages (several say "Seven Laws" or "MULTI AGENT Laws" inconsistently in their per-page header). Left alone deliberately this pass — most of these are dated session records, and the people pages are already queued for a full rewrite under Task 4, where the header line should be standardized as part of that pass rather than touched twice.
 
 ## Task 7: Phase 7+ (future — do not start before Tasks 1–6 are DONE)
 - **Status:** IN PROGRESS (some items completed early during framework build)

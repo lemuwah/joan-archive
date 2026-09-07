@@ -3,7 +3,7 @@
 **Status:** Active — all agents (Migoo, Devin, Kimi, Claude, Gemini, any AI) must read this file before producing output.  
 **Added:** 2026-09-03  
 **Last updated:** 2026-09-06 — Model H added, §9 added, cross-cutting factor added, stale patch applied  
-**Authority:** Equal to the Seven Laws. Violations are treated the same as Law 1 violations.
+**Authority:** Equal to the Multi Agent Laws. Violations are treated the same as Law 1 violations.
 
 ---
 
@@ -75,9 +75,9 @@ Any record that says "Joan" at Wickford/Cocumscussoc/Narragansett without a surn
 
 ---
 
-## 7. The MULTI AGENT Laws Are Supreme
+## 7. The Multi Agent Laws Are Supreme
 
-No agent output may contradict, override, or selectively apply the MULTI AGENT Laws. If a finding conflicts with a Law, the Law wins and the finding is flagged for review.
+No agent output may contradict, override, or selectively apply the Multi Agent Laws. If a finding conflicts with a Law, the Law wins and the finding is flagged for review.
 
 The Laws are defined in `theory/three_laws.md` and summarized in `methodology/agent_orientation.md`.
 
@@ -113,5 +113,5 @@ A model is not "exhausted" until its specific record types have been actually se
 
 ---
 
-*Agent Guardrails — equal authority to the MULTI AGENT Laws.*  
-*Maintained under the Seven Laws of the Joan Archive.*
+*Agent Guardrails — equal authority to the Multi Agent Laws.*  
+*Maintained under the Multi Agent Laws of the Joan Archive.*
