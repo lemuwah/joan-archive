@@ -30,6 +30,9 @@ jobs:
       - name: Run four-agent daily review
         run: python tools/multi_agent_daily/orchestrate.py
 
+      - name: Build outward document-ecology search bundle
+        run: python tools/document_ecology/build_search_bundle.py
+
       - name: Open review pull request
         uses: peter-evans/create-pull-request@v7
         with:
@@ -49,6 +52,7 @@ jobs:
           add-paths: |
             research_queue/daily_sweep/**
             research_queue/agent_runs/**
+            research_queue/document_ecology/**
             agents/Explorer/daily_logic.md
             agents/Archivist/daily_logic.md
             agents/Synthesizer/daily_logic.md
