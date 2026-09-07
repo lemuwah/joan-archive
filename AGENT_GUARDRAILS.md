@@ -75,9 +75,9 @@ Any record that says "Joan" at Wickford/Cocumscussoc/Narragansett without a surn
 
 ---
 
-## 7. The Seven Laws Are Supreme
+## 7. The MULTI AGENT Laws Are Supreme
 
-No agent output may contradict, override, or selectively apply the Seven Laws. If a finding conflicts with a Law, the Law wins and the finding is flagged for review.
+No agent output may contradict, override, or selectively apply the MULTI AGENT Laws. If a finding conflicts with a Law, the Law wins and the finding is flagged for review.
 
 The Laws are defined in `theory/three_laws.md` and summarized in `methodology/agent_orientation.md`.
 
@@ -113,5 +113,5 @@ A model is not "exhausted" until its specific record types have been actually se
 
 ---
 
-*Agent Guardrails — equal authority to the Seven Laws.*  
+*Agent Guardrails — equal authority to the MULTI AGENT Laws.*  
 *Maintained under the Seven Laws of the Joan Archive.*
