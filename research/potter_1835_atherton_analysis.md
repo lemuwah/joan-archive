@@ -1,4 +1,7 @@
-# Potter 1835 Read — Atherton Purchase Signer Analysis
+> > This archive documents lives lived between approximately 1600–1750 in Narragansett country (present-day Rhode Island). All records from this period were created within colonial legal systems and reflect their biases, categories, and blind spots. Every name found here — English, Narragansett, Niantic, mixed-heritage, unknown — represents a real person whose full story these records were not designed to capture. Content may include references to war, captivity, enslavement, displacement, legal coercion, and loss. These are documented realities of the period, not abstractions.
+>
+> All cultural and genealogical content is included for research purposes in the quest to identify Joan Unknown Greene and will be revised or removed if requested by descendant communities or tribal representatives. Search direction bias check: When an agent recommends "where to look next," ask: is this recommendation biased toward digitized, English-language, colonial-framework sources? What record types exist that this agent might not know to suggest? What would a Narragansett historian, a maritime historian, an archaeologist, a linguist look for that a genealogist wouldn't?
+> # Potter 1835 Read — Atherton Purchase Signer Analysis
 **Date:** 2026-09-02
 **Source:** Elisha R. Potter, *Early History of Narragansett* (1835), pp. 58–61
 **Archive.org:** https://archive.org/details/earlyhistoryofna00pott
@@ -6,7 +9,7 @@
 
 ---
 
-## The Seven Laws apply throughout this document.
+## Multi agent Laws apply throughout this document.
 
 ---
 
