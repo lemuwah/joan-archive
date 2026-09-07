@@ -15,7 +15,7 @@ Version v2: [10.5281/zenodo.21729961](https://doi.org/10.5281/zenodo.21729961)
 
 ## What This Is
 
-Joan, wife of John Greene of Quidnessett, appears in exactly one verified document: a March 1682 land deed in which John Greene conveys land to his sons Daniel and James. Joan is named as his wife and as the beneficiary of a life annuity (amount under review — Worth abstract says 30 shillings; manuscript read may differ) (Worth abstract, *RI Land Evidences* Vol. I, p. 122).
+Joan, wife of John Greene of Quidnessett, appears in exactly one verified document: a March 1682 land deed in which John Greene conveys land to his sons Daniel and James. Joan is named as his wife and as the beneficiary of a life annuity (amount under review — Worth abstract says amount under review; manuscript read may differ) (Worth abstract, *RI Land Evidences* Vol. I, p. 122).
 
 No other record of Joan has been located. No birth, baptism, marriage, death, burial, probate, church, court, or land record. Her maiden name is unknown. Her ancestry is unknown. Eight competing models (A–H) attempt to explain who she was. One (G) has been eliminated. None of the others has been proven.
 
