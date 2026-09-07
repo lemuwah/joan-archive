@@ -39,7 +39,7 @@ Do not produce output about Joan without reading the onboarding sequence first. 
 ## Repository Structure
 
 ```
-theory/              — The Seven Laws, ancestry models, hypothesis tests
+theory/              — The MULTI AGENT Laws, ancestry models, hypothesis tests
 methodology/         — Agent orientation, editorial standards, integrity framework,
                        AI provenance, git audit checklist
 evidence/            — Verified facts, suspended items, children evidence grid
@@ -66,7 +66,7 @@ validation/          — Claim snapshots for audit
 
 ---
 
-## The Seven Laws
+## The MULTI AGENT Laws
 
 1. **No Narrative Smoothing** — if a document doesn't say it, we don't say it
 2. **Follow the Rivers** — trace every claim to its source
