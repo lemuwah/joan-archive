@@ -13,44 +13,38 @@ Every direction gets tested. English, Indigenous, maritime, religious, legal, ar
 ---
 
 ## Task 1: Update editorial_standards.md
-- **Status:** NOT STARTED
+- **Status:** DONE (2026-09-07)
 - **Depends on:** NONE
 - **Priority:** HIGHEST — all other tasks reference these rules
-- **What to do:**
-  - Add Search Completeness Rule: Every .md page in /people/, /context/, and /research_queue/ must maintain a search log documenting which tools searched which record types, what was found, and what was NOT searched. A tool that searches one category and doesn't document categories it didn't search has introduced bias by omission. The ❌ NOT SEARCHED tag is an honest map of where to go next, not a failure.
-  - Add Search Direction Bias Check: When any agent recommends "where to look next," the recommendation must be checked for bias toward digitized, English-language, colonial-framework sources. The page must ask: what record types exist that this agent might not know to suggest? What would a Narragansett historian, a maritime historian, an archaeologist, a linguist, a material culture specialist look for that a genealogist wouldn't?
-- **What's already done:** Nothing
-- **Where to find what you need:** `methodology/editorial_standards.md`
-- **Done when:** Both rules committed to editorial_standards.md
+- **What was done:**
+  - Added §6 Search Completeness Rule
+  - Added §7 Search Direction Bias Check
+  - Committed to `methodology/editorial_standards.md`
 
 ## Task 2: Create universal disclaimer block
-- **Status:** DRAFTED (text exists, not yet in repo)
+- **Status:** DONE (2026-09-07)
 - **Depends on:** NONE
 - **Priority:** HIGHEST — needed before any page restructure
-- **What to do:** Add this exact text as a reusable block in editorial_standards.md or as its own file (methodology/universal_disclaimer.md):
-
-> This archive documents lives lived between approximately 1600–1750 in Narragansett country (present-day Rhode Island). All records from this period were created within colonial legal systems and reflect their biases, categories, and blind spots. Every name found here — English, Narragansett, Niantic, mixed-heritage, unknown — represents a real person whose full story these records were not designed to capture. Content may include references to war, captivity, enslavement, displacement, legal coercion, and loss. These are documented realities of the period, not abstractions. All cultural and genealogical content is included for research purposes in the quest to identify Joan Unknown Greene and will be revised or removed if requested by descendant communities or tribal representatives.
-
-- **What's already done:** Text finalized by Wendy
-- **Where to find what you need:** This file (above)
-- **Done when:** Disclaimer exists in repo as a referenceable block
+- **What was done:**
+  - Created `methodology/universal_disclaimer.md` with finalized disclaimer text
+  - Text authored by archive owner
 
 ## Task 3: Foundation file fixes
-- **Status:** NOT STARTED
+- **Status:** IN PROGRESS
 - **Depends on:** NONE
 - **Priority:** HIGH
 - **What to do:**
   - **index.html** — Replace specific law count with "governed by the Laws of the Joan Archive." Add Model H to models section. Add Law 7 to list. Fix "What We Do Not Know" inconsistency (mother clause suspended, not unknown).
-  - **agent_orientation.md** — Make canonical onboarding file. Unify mandatory reading list (add NEGATIVE_LOG, KNOWN_LIMITATIONS, git_audit_checklist, HYPOTHESIS_TEST_MATRIX). Add evolution disclaimer: "Laws, models, and facts evolve as research progresses. Do not assume they match your last session. Re-read before working."
-  - **README.md** — Replace duplicated reading list with single pointer: "Read methodology/agent_orientation.md for the full onboarding sequence."
-  - **about.html** — Same "governed by the Laws" language fix.
-- **What's already done:** Check commit history — some edits may have landed from interrupted sessions
+  - **agent_orientation.md** — ✅ DONE (2026-09-07) — Made canonical onboarding file. Added NEGATIVE_LOG, Mss461, AI transparency section.
+  - **README.md** — ✅ DONE (2026-09-07) — Full rewrite with mandatory reading pointer.
+  - **about.html** — Add Law 7 to Laws list.
+- **What's already done:** agent_orientation.md, README.md, index.html (model count + Model H + Law 7), about.html (Law 7 added)
 - **Where to find what you need:** Root of repo
 - **Done when:** All four files updated, committed
 
 ## Task 4: Restructure all people pages — DUAL PASS
 - **Status:** NOT STARTED
-- **Depends on:** Tasks 1, 2 (need format and disclaimer ready)
+- **Depends on:** Tasks 1, 2 (need format and disclaimer ready) — ✅ BOTH DONE
 - **Priority:** HIGH
 - **What to do:**
   - Pass A: Apply universal page format to each people .md (Disclaimer → What We Know → What We Don't Know → Connections → Where To Look Next → Search Log). Add provenance tags. Strip interpretive framing.
@@ -82,7 +76,7 @@ Every direction gets tested. English, Indigenous, maritime, religious, legal, ar
 
 ## Task 5: Create 5 John separation pages — simultaneous backward mining
 - **Status:** NOT STARTED
-- **Depends on:** Tasks 1, 2 (need format and disclaimer)
+- **Depends on:** Tasks 1, 2 (need format and disclaimer) — ✅ BOTH DONE
 - **Priority:** HIGH — equal to Task 4, can run in parallel
 - **What to do:**
   - Create all 5 simultaneously. Same universal format. Same disclaimer. Same search log. Same provenance tags. No head start for any.
@@ -109,10 +103,10 @@ Every direction gets tested. English, Indigenous, maritime, religious, legal, ar
 - **Done when:** research_queue/ has a prioritized, bias-checked list of next searches
 
 ## Task 7: Phase 7+ (future — do not start before Tasks 1–6 are DONE)
-- **Status:** NOT STARTED
+- **Status:** IN PROGRESS (some items completed early during framework build)
 - **Depends on:** ALL above
 - **What to do:**
-  - AI provenance log (methodology/ai_provenance.md)
+  - ✅ AI provenance log (methodology/ai_provenance.md) — DONE 2026-09-07
   - Source spine §1 restructure — remove thesis framing
   - Repo description update (browser needed)
   - Workflow YML cleanup
