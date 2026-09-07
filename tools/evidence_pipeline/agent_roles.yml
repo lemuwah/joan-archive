@@ -1,0 +1,85 @@
+# Agent contracts for the evidence pipeline.
+# Model/provider selection belongs in the runner or workflow secret configuration.
+
+agents:
+  explorer:
+    role: discovery
+    reads:
+      - AGENT_GUARDRAILS.md
+      - theory/source_spine.md
+      - research_queue/RESEARCH_QUEUE.md
+    writes:
+      - candidate source records
+      - scoped negative search results
+    forbidden:
+      - promote claims to verified
+      - cite search snippets as documents
+      - collapse similarly named people
+
+  archivist:
+    role: provenance
+    reads:
+      - candidate source records
+      - source images or stable repository records
+      - methodology/editorial_standards.md
+    writes:
+      - repository identifiers
+      - page or leaf anchors
+      - checksums and access notes
+      - claim-to-source maps
+    forbidden:
+      - infer missing text
+      - replace an unavailable primary source with an uncited summary
+
+  transcription:
+    role: document-reading
+    reads:
+      - source image or scan
+    writes:
+      - rough transcription tagged AI-SOURCED
+      - uncertainty markers
+      - terms requiring human paleographic review
+    forbidden:
+      - output unmarked certainty
+      - turn OCR into a quotation without image verification
+
+  synthesizer:
+    role: bounded-synthesis
+    reads:
+      - verified source records
+      - evidence/joan_verified_facts.md
+      - evidence/suspended_items.md
+    writes:
+      - proposed timeline events
+      - explicit proof/plausible/discredited labels
+    forbidden:
+      - smooth contradictions
+      - treat a hypothesis as a fact
+      - introduce an uncited date, relationship, or identity
+
+  hostile_reviewer:
+    role: falsification
+    reads:
+      - proposed timeline event
+      - every cited source and transcription
+      - people/two-john-firewall.md
+    writes:
+      - alternative explanations
+      - identity/date/source failure findings
+      - disposition recommendation
+    forbidden:
+      - approve its own synthesis
+      - delete a failed claim or negative result
+
+  human_editor:
+    role: publication-gate
+    reads:
+      - complete run bundle
+      - original source images
+      - agent outputs and hostile review
+    writes:
+      - final disposition
+      - published evidence or timeline update
+    forbidden:
+      - publish from OCR alone
+      - mark a task done without a same-session verification check

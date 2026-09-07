@@ -1,0 +1,87 @@
+name: Ingest Primary Source Evidence
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  issues: read
+  pull-requests: write
+
+jobs:
+  download-for-review:
+    if: github.event.label.name == 'ingest-evidence'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract and validate source URL
+        id: source
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          set -euo pipefail
+          url=$(printf '%s' "$ISSUE_BODY" | grep -oE 'https?://[^[:space:]>)\"]+' | head -n 1 || true)
+          if [ -z "$url" ]; then
+            echo "No HTTP(S) URL found in issue #${{ github.event.issue.number }}." >&2
+            exit 1
+          fi
+          case "$url" in
+            https://*|http://*) ;;
+            *) echo "Unsupported URL scheme." >&2; exit 1 ;;
+          esac
+          printf 'url=%s\n' "$url" >> "$GITHUB_OUTPUT"
+
+      - name: Download source into pending review
+        id: download
+        env:
+          IMAGE_URL: ${{ steps.source.outputs.url }}
+        run: |
+          set -euo pipefail
+          mkdir -p images/_pending_review
+          filename="evidence_issue_${{ github.event.issue.number }}_$(date -u +%Y%m%dT%H%M%SZ).jpg"
+          output="images/_pending_review/$filename"
+          curl --fail --location --silent --show-error --max-time 120 \
+            --proto '=https,http' --proto-redir '=https,http' \
+            -o "$output" "$IMAGE_URL"
+          test -s "$output"
+          file "$output"
+          printf 'filename=%s\n' "$filename" >> "$GITHUB_OUTPUT"
+          printf 'sha256=%s\n' "$(sha256sum "$output" | cut -d ' ' -f 1)" >> "$GITHUB_OUTPUT"
+
+      - name: Write evidence metadata
+        env:
+          IMAGE_URL: ${{ steps.source.outputs.url }}
+          IMAGE_FILENAME: ${{ steps.download.outputs.filename }}
+          IMAGE_SHA256: ${{ steps.download.outputs.sha256 }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+        run: |
+          set -euo pipefail
+          metadata="images/_pending_review/${IMAGE_FILENAME%.jpg}.json"
+          jq -n \
+            --arg filename "$IMAGE_FILENAME" \
+            --arg source_url "$IMAGE_URL" \
+            --arg repository "$ISSUE_TITLE" \
+            --arg date_retrieved "$(date -u +%F)" \
+            --arg sha256 "$IMAGE_SHA256" \
+            --arg issue "https://github.com/${{ github.repository }}/issues/${{ github.event.issue.number }}" \
+            '{filename: $filename, source_url: $source_url, repository: $repository, date_retrieved: $date_retrieved, sha256: $sha256, submitted_issue: $issue, review_status: "PENDING_HUMAN_REVIEW"}' \
+            > "$metadata"
+
+      - name: Open review pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "evidence: stage source from issue #${{ github.event.issue.number }}"
+          title: "Evidence submission #${{ github.event.issue.number }}: needs human review"
+          body: |
+            This PR stages an image submitted through issue #${{ github.event.issue.number }}.
+
+            Nothing here is trusted or published yet. Verify the original source, citation,
+            image integrity, and relevance before merging. Add the archival citation and any
+            IIIF manifest to the metadata sidecar, then promote the image from
+            `images/_pending_review/` only after human review.
+          branch: evidence-ingest/${{ github.event.issue.number }}-${{ github.run_id }}
+          add-paths: |
+            images/_pending_review/**
