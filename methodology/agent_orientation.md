@@ -1,6 +1,6 @@
 # Agent Orientation — Where We Are and What's Next
 
-**Last updated:** 2026-09-06  
+**Last updated:** 2026-09-07  
 **Purpose:** Any agent (human or AI) reads this file to understand the current state of the archive and what to do next.
 
 ---
@@ -83,10 +83,17 @@ Read these files in this order before producing any output:
 ## Current Research Priorities
 
 1. **Paleographic verification** of Image 10 AI transcription
-2. **C-2 resolution** — locate and read Jamestown Town Records for 1685 Clark-to-Brinley deed
-3. **Image 10 left page** — enhanced imaging for C-1 and C-3 final resolution
-4. **James instrument** — find recording page in the 444-image volume
-5. **People pages hostile review** — colonial lens disclaimers, source verification, multi-lens notes on all 19 people pages
+2. **RIHS Mss 461** — "will complaint" — physical pull target, may contain Joan reference post-1682
+3. **C-2 resolution** — locate and read Jamestown Town Records for 1685 Clark-to-Brinley deed
+4. **Image 10 left page** — enhanced imaging for C-1 and C-3 final resolution
+5. **James instrument** — find recording page in the 444-image volume
+6. **People pages hostile review** — colonial lens disclaimers, source verification, multi-lens notes on all 19 people pages
+
+---
+
+## AI Transparency
+
+This archive has been tested against 17 AI tools. Results are logged in `agents/Archivist/ai_litmus_scorecard.md`. Any AI can self-test using `TEST_THIS_AI.md` at the repo root. AI provenance for all tools used is tracked in `methodology/ai_provenance.md`.
 
 ---
 
