@@ -1,0 +1,47 @@
+name: Daily multi-perspective research sweep
+
+on:
+  schedule:
+    - cron: "17 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run daily multi-perspective sweep
+        run: python tools/daily_research/sweep.py
+
+      - name: Open review pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "research: daily multi-perspective source sweep"
+          title: "Daily research sweep: ${{ github.run_id }}"
+          body: |
+            Automated candidate search across every page in `people/`.
+
+            Perspectives include Irish/Scottish migration, servant and indentured status,
+            enslavement/captivity, Narragansett and Indigenous context, legal/property
+            records, maritime networks, church/civil registration, and regional geography.
+
+            This PR contains candidates and negative results only. Nothing is verified,
+            and no people page or published evidence was modified. Human review must inspect
+            the original document before any candidate becomes a claim.
+          branch: daily-research/${{ github.run_id }}
+          add-paths: |
+            research_queue/daily_sweep/**
