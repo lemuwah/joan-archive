@@ -53,3 +53,4 @@ jobs:
             agents/Archivist/daily_logic.md
             agents/Synthesizer/daily_logic.md
             agents/hostile_reviewer/daily_logic.md
+            agents/models/**

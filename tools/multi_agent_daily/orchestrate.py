@@ -17,6 +17,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_SWEEP = ROOT / "research_queue" / "daily_sweep"
 DEFAULT_OUTPUT = ROOT / "research_queue" / "agent_runs"
+MODEL_PROFILES = Path(__file__).with_name("model_profiles.json")
 ROLE_DIRS = {
     "explorer": ROOT / "agents" / "Explorer",
     "archivist": ROOT / "agents" / "Archivist",
@@ -44,6 +45,63 @@ def result_rows(records: list[dict]) -> list[dict]:
 def lead_key(row: dict) -> tuple[str, str, str]:
     result = row["result"]
     return (row["person_name"], row["lens"], result.get("url") or result.get("record_id") or "")
+
+
+def model_leads(profile: dict, leads: list[dict]) -> list[dict]:
+    terms = [term.lower() for term in profile["search_terms"]]
+    matching = []
+    for lead in leads:
+        haystack = " ".join([
+            lead.get("person_name", ""), lead.get("lens", ""), lead.get("query", ""),
+            json.dumps(lead.get("result", {}), ensure_ascii=True),
+        ]).lower()
+        if any(term in haystack for term in terms):
+            matching.append(lead)
+    return matching
+
+
+def write_model_report(model_id: str, profile: dict, date: str, leads: list[dict], output_dir: Path, role_output: Path) -> Path:
+    output_dir.mkdir(parents=True, exist_ok=True)
+    path = output_dir / f"model_{model_id.lower()}.md"
+    lines = [
+        f"# Model {model_id} Agent — {profile['name']} — {date}",
+        "",
+        f"**Status:** {profile['status']}",
+        "**Evidence state:** AI-assisted working report; all leads remain `PENDING_HUMAN_REVIEW`.",
+        "",
+        "## 1. Document pass",
+        "Read the original page/image before treating any catalog result as evidence. Record repository, stable identifier, page/leaf, access date, and exact wording.",
+        "",
+        "## 2. Historian context pass",
+        f"**Repositories and record families:** {', '.join(profile['repositories'])}.",
+        f"**What could confirm this model:** {profile['confirm']}",
+        f"**Context caution:** {profile['caution']}",
+        "",
+        "## 3. Hostile facts-only pass",
+        f"**What could disconfirm this model:** {profile['disconfirm']}",
+        "Test identity, date, place, status wording, and citation independence separately. Do not infer a result from silence.",
+        "",
+        "## 4. Continuing conflict/context layer",
+        "Record parties, witnesses, jurisdiction, legal setting, Indigenous and non-English context, competing Johns, and every unresolved contradiction. Preserve the strongest alternative explanation.",
+        "",
+        f"## Leads matching this model's search vocabulary ({len(leads)})",
+    ]
+    if leads:
+        for lead in leads[:100]:
+            result = lead["result"]
+            lines.append(
+                f"- **{lead['person_name']}** / `{lead['lens']}` — "
+                f"{result.get('title') or result.get('record_id') or 'untitled'}; "
+                f"{result.get('url') or 'no URL'}. Original-document review required."
+            )
+    else:
+        lines.append("- No matching catalog lead in this run. Keep the model open or eliminated only according to its documented status and continue the scoped search.")
+    content = "\n".join(lines) + "\n"
+    path.write_text(content)
+    model_path = role_output / "agents" / "models" / f"model_{model_id.lower()}_daily_logic.md"
+    model_path.parent.mkdir(parents=True, exist_ok=True)
+    model_path.write_text(content)
+    return path
 
 
 def write_logic(
@@ -142,6 +200,13 @@ def run(date: str, sweep_path: Path, output_root: Path, role_output: Path) -> Pa
             role_leads = [lead for lead in leads if lead["result"].get("url") or lead["result"].get("record_id")]
         generated.append(write_logic(role, date, records, role_leads, output_dir, role_output))
 
+    profiles = json.loads(MODEL_PROFILES.read_text())["models"]
+    model_counts = {}
+    for model_id, profile in profiles.items():
+        matching = model_leads(profile, leads)
+        model_counts[model_id] = len(matching)
+        generated.append(write_model_report(model_id, profile, date, matching, output_dir / "models", role_output))
+
     try:
         input_name = str(sweep_path.relative_to(ROOT))
     except ValueError:
@@ -153,6 +218,7 @@ def run(date: str, sweep_path: Path, output_root: Path, role_output: Path) -> Pa
         "unique_catalog_leads": len(leads),
         "statuses": dict(Counter(record.get("status") for record in records)),
         "roles": [path.stem for path in generated],
+        "model_leads": model_counts,
         "status": "PENDING_HUMAN_REVIEW",
         "note": "Reports generate leads and review logic only; they do not update facts or role READMEs.",
     }
