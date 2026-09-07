@@ -5,20 +5,26 @@ Individual profile pages for documented persons in the Joan Archive. Each profil
 
 ---
 
-## The Seven Laws apply throughout this directory.
+## The Multi Agent Laws apply throughout this directory.
 
 ---
 
-## The Three John Greenes
+## The Many John Greenes
 
-The single most damaging confusion in Greene genealogy is the conflation of three contemporaries named John Greene in colonial Rhode Island. La Mance (1904) treated the Quidnessett John as the Surgeon's son. This is **not supported by primary evidence** and is contradicted by:
+The single most damaging confusion in Greene genealogy is the conflation of multiple contemporaries named John Greene in colonial Rhode Island. La Mance (1904) treated the Quidnessett John as the Surgeon's son. This is **not supported by primary evidence** and is contradicted by:
 - Different wives (Ann Almy vs. Joan)
 - Different children (completely non-overlapping lists)
 - Different freeman records (Warwick 1647 vs. Acquidnessett 1671)
 - Different offices (Deputy Governor vs. none established)
 - Y-DNA divergence (Irish Sea cluster vs. expected English modal)
 
-The RI State Archives has confirmed the three-John structure is "evident from the records."
+The RI State Archives has confirmed the Multi-John structure is "evident from the records."
+
+
+[`john_greene_occupessuatuxet.md`](john_greene_occupessuatuxet.md)
+[`john_greene_potowomut.md`](john_greene_potowomut.md)
+
+[`john_greene_son_of_john.md`](john_greene_son_of_john.md)
 
 - [`john_greene_warwick.md`](john_greene_warwick.md) — Major John Greene, Deputy Governor. Son of the Surgeon. Best documented.
 - [`john_greene_newport.md`](john_greene_newport.md) — John Greene of Newport / Green End. Thinnest record.
