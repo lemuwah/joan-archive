@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/lemuwah/joan-archive/source.schema.json",
+  "title": "Joan Archive candidate source",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "candidate_id",
+    "status",
+    "source_url",
+    "repository",
+    "document_type",
+    "people_or_terms",
+    "retrieved_at",
+    "ai_outputs",
+    "proposed_claims",
+    "negative_result",
+    "human_disposition"
+  ],
+  "properties": {
+    "candidate_id": {
+      "type": "string",
+      "pattern": "^CAND-[0-9]{4}-[0-9]{4,}$"
+    },
+    "status": {
+      "enum": [
+        "PENDING_HUMAN_REVIEW",
+        "VERIFIED_PRIMARY",
+        "VERIFIED_SECONDARY",
+        "REJECTED",
+        "SUSPENDED"
+      ]
+    },
+    "source_url": { "type": "string", "format": "uri" },
+    "repository": { "type": "string", "minLength": 1 },
+    "repository_id": { "type": "string" },
+    "document_type": {
+      "enum": ["deed", "court", "letter", "map", "church", "probate", "military", "maritime", "genealogy", "secondary", "other"]
+    },
+    "date_range": { "type": "string" },
+    "jurisdiction": { "type": "string" },
+    "people_or_terms": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "retrieved_at": { "type": "string", "format": "date-time" },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[A-Fa-f0-9]{64}$"
+    },
+    "image_or_page": { "type": "string" },
+    "access_notes": { "type": "string" },
+    "ai_outputs": { "type": "array" },
+    "proposed_claims": { "type": "array" },
+    "negative_result": { "type": "boolean" },
+    "query": { "type": "string" },
+    "searched_repository": { "type": "string" },
+    "searched_scope": { "type": "string" },
+    "human_disposition": {
+      "type": ["string", "null"],
+      "enum": ["VERIFIED", "REJECTED", "SUSPENDED", null]
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "negative_result": { "const": true } } },
+      "then": {
+        "required": ["query", "searched_repository", "searched_scope"],
+        "properties": {
+          "query": { "type": "string", "minLength": 1 },
+          "searched_repository": { "type": "string", "minLength": 1 },
+          "searched_scope": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "status": { "enum": ["VERIFIED_PRIMARY", "VERIFIED_SECONDARY"] } } },
+      "then": {
+        "required": ["repository_id", "image_or_page", "human_disposition"]
+      }
+    }
+  ]
+}

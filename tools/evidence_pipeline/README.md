@@ -102,6 +102,16 @@ Store machine-generated candidates in `data/research/sources.jsonl` or a pending
 
 Do not use `VERIFIED_PRIMARY` merely because an AI found a URL, produced OCR, or matched a name.
 
+## Automated checks
+
+- `data/research/source.schema.json` defines the candidate-record shape.
+- `tools/evidence_pipeline/validate_records.py` validates candidate JSONL files, rejects
+  duplicate IDs, requires scoped fields for negative searches, and requires human anchors
+  before a record can be marked verified.
+- `.github/workflows/validate-evidence-records.yml` runs the validator on pull requests that
+  change research data or the evidence tooling. It deliberately ignores the legacy
+  `sources.jsonl` catalog until those records are migrated to the candidate contract.
+
 ## Search strategy
 
 Run collectors against independent source families, not only Google-style web search:
