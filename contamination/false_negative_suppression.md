@@ -1,3 +1,7 @@
+> > This archive documents lives lived between approximately 1600–1750 in Narragansett country (present-day Rhode Island). All records from this period were created within colonial legal systems and reflect their biases, categories, and blind spots. Every name found here — English, Narragansett, Niantic, mixed-heritage, unknown — represents a real person whose full story these records were not designed to capture. Content may include references to war, captivity, enslavement, displacement, legal coercion, and loss. These are documented realities of the period, not abstractions.
+>
+> All cultural and genealogical content is included for research purposes in the quest to identify Joan Unknown Greene and will be revised or removed if requested by descendant communities or tribal representatives. Search direction bias check: When an agent recommends "where to look next," ask: is this recommendation biased toward digitized, English-language, colonial-framework sources? What record types exist that this agent might not know to suggest? What would a Narragansett historian, a maritime historian, an archaeologist, a linguist look for that a genealogist wouldn't?
+> 
 # False-Negative Suppression Log
 ## AI Tools Returning "No Results" on Known Primary Sources
 
@@ -108,7 +112,7 @@ The pattern — search failure → false negative logged as finding → offer to
 
 3. **Verify against the archive's own holdings.** Before accepting any AI research result — positive or negative — check it against the source spine and the archive's existing files. If the tool says "no 1672 land transfers" and the archive holds the 1672 Fones Purchase deed, the tool is wrong.
 
-4. **The Seven Laws apply to AI tools the same as to secondary sources.** Law 1: no narrative smoothing (including smoothing by omission). Law 2: no unverified claims presented as fact (including false negatives presented as research conclusions). Law 4: no algorithmic contamination (including AI-generated false negatives entering the archive as data).
+4. **The MULTI AGENT apply to AI tools the same as to secondary sources.** Law 1: no narrative smoothing (including smoothing by omission). Law 2: no unverified claims presented as fact (including false negatives presented as research conclusions). Law 4: no algorithmic contamination (including AI-generated false negatives entering the archive as data).
 
 ---
 
