@@ -1,6 +1,6 @@
 # Suspended Items — Master List
 
-**Status:** Active — no suspended item may appear on a public page without its ⚫ tag.  
+**Status:** Active — no suspended item may appear on a public page without its ⚠️ tag.  
 **Added:** 2026-09-03  
 **Authority:** `methodology/editorial_standards.md` §2, `AGENT_GUARDRAILS.md` §1  
 **Resolution path:** All items resolve via the manuscript (FamilySearch DGS 008204949, images 9–12) unless noted otherwise.
@@ -10,7 +10,7 @@
 ## S-001: "Joan signed with a mark"
 
 **Previously stated:** Joan signed the March 1682 deed with her mark.  
-**Why suspended:** No source says this for the March 1682 deed. Worth's abstract does not mention Joan signing. Bates's "and his wife Joan deeded" is summary language, not a description of a mark. The May 1682 Pawtuxet deed (where "her mark" was claimed) is itself ⚫ SUSPENDED per CORRECTIONS.md #1.  
+**Why suspended:** No source says this for the March 1682 deed. Worth's abstract does not mention Joan signing. Bates's "and his wife Joan deeded" is summary language, not a description of a mark. The May 1682 Pawtuxet deed (where "her mark" was claimed) is itself ⚠️ SUSPENDED per CORRECTIONS.md #1.  
 **Resolution:** Manuscript examination (images 9–12).  
 **Date suspended:** 2026-09-02  
 **Decision:** D-001
