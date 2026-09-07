@@ -55,7 +55,7 @@
 **Beggarly Footnote (Apr 20):**
 - Records of Colony of RI & PP, Vol 1, p18 of 554 (p16 of book)
 - Footnote by John Winthrop: John Greene of Warwick Sr. was disenfranchised for marrying Alice Daniels Beggarly and living in adultery — acknowledged and paid for.
-- ⚠️ **This is John of WARWICK, not John of Quidnessett.** The Beggarly connection is to the wrong John. Luann independently reached this conclusion.
+- ⚠️ **This is John of WARWICK, not John of Quidnessett.** The Beggarly connection is to the wrong John. she independently reached this conclusion.
 
 **Timeline for John Greene of Quidnessett (Feb 23):**
 - b. 1599? (from deed to Edward referencing father "in 96th year")
