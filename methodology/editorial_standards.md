@@ -2,6 +2,7 @@
 
 **Status:** Active — governs all public-facing content and analysis pages.  
 **Restored:** 2026-09-06 (was missing/404 per Kimi audit)  
+**Last updated:** 2026-09-07 — added §6 Search Completeness Rule, §7 Search Direction Bias Check (Task 1)  
 **Companion files:** `AGENT_GUARDRAILS.md`, `methodology/Epistemology.md`, `CORRECTIONS.md`
 
 ---
@@ -59,10 +60,49 @@ Legacy tags in older files (PROVEN/PROBABLE/UNVERIFIED/NULL/SUSPENDED) are recog
 | Page | What goes here |
 |---|---|
 | `index.html` | Four verified facts only. No interpretation. No hypotheses. |
-| `analysis.html` | Open hypotheses (Models A–G), evidence mapping, stress tests |
+| `analysis.html` | Open hypotheses (Models A–H), evidence mapping, stress tests |
 | `context.html` | Timeline, geography, colonial jurisdiction. Facts only, tagged. |
 | `contribute.html` | How to help, negative space log, what hasn't been searched |
 | `about.html` | Methodology, Seven Laws, corrections, AI checklist |
+
+---
+
+## 6. Search Completeness Rule
+
+**Added:** 2026-09-07 (Task 1)
+
+Every `.md` page in `/people/`, `/context/`, and `/research_queue/` must maintain a search log documenting:
+- Which tools searched which record types
+- What was found
+- What was NOT searched
+
+A tool that searches one category and doesn't document categories it didn't search has introduced bias by omission. The ❌ NOT SEARCHED tag is an honest map of where to go next, not a failure.
+
+**Format:**
+
+```
+## Search Log
+| Date | Tool/Agent | What was searched | What was found | What was NOT searched |
+|------|------------|-------------------|----------------|----------------------|
+```
+
+Every page must include this table. An empty "What was NOT searched" column is a red flag — every search has blind spots.
+
+---
+
+## 7. Search Direction Bias Check
+
+**Added:** 2026-09-07 (Task 1)
+
+When any agent recommends "where to look next," the recommendation must be checked for bias toward digitized, English-language, colonial-framework sources.
+
+The page must ask:
+- What record types exist that this agent might not know to suggest?
+- What would a Narragansett historian, a maritime historian, an archaeologist, a linguist, a material culture specialist look for that a genealogist wouldn't?
+
+This check applies to all recommendations in `/research_queue/`, all "Where To Look Next" sections in `/people/` pages, and all agent session logs that suggest next steps.
+
+**Rule:** A recommendation list composed entirely of English-language colonial archives is not wrong, but it IS incomplete, and the incompleteness must be flagged.
 
 ---
 
