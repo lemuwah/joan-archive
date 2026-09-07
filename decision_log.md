@@ -37,6 +37,8 @@ Decisions are not reversible by agents. Only the archive owner can reverse a log
 **What changed:** `AGENT_GUARDRAILS.md` §2–3, `theory/three_laws.md` (Law 6), `README_FOR_EXTERNAL_AGENTS.md`  
 **Authority:** Archive owner
 
+**⚠️ Superseded in part (2026-09-07):** Model count is now **eight** (A–H). Model H (mixed-heritage) added 2026-09-04. The equal-treatment principle is unchanged. See `theory/joan_ancestry_shadow_models.md` for current list.
+
 ---
 
 ## D-003: Add Law 6 — No Centering
@@ -86,6 +88,8 @@ Decisions are not reversible by agents. Only the archive owner can reverse a log
 **Reasoning:** Every other claim about Joan — consent, mark, mother clause, co-grantor status, legal agency — either came from summary language or from the suspended Pawtuxet deed. Stripping to verified facts is the only honest starting point.  
 **What changed:** `AGENT_GUARDRAILS.md` §4, `methodology/editorial_standards.md` §1, live site pending rebuild  
 **Authority:** Archive owner
+
+**⚠️ Superseded in part (2026-09-07):** Verified facts are now **four** (Fact 3 added Sep 2026: Joan does not sign or mark the deed). The annuity amount is now an **open question** (Worth says 30 shillings; manuscript read may disagree — do not state "30 shillings" as verified). See `evidence/joan_verified_facts.md` for the current authoritative list. Runable (Claude Sonnet 4.5) audit identified this staleness.
 
 ---
 
