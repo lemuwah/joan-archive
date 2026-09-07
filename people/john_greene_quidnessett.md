@@ -1,3 +1,10 @@
+> > This archive documents lives lived between approximately 1600–1750 in Narragansett country (present-day Rhode Island). All records from this period were created within colonial legal systems and reflect their biases, categories, and blind spots. Every name found here — English, Narragansett, Niantic, mixed-heritage, unknown — represents a real person whose full story these records were not designed to capture. Content may include references to war, captivity, enslavement, displacement, legal coercion, and loss. These are documented realities of the period, not abstractions.
+>
+> All cultural and genealogical content is included for research purposes in the quest to identify Joan Unknown Greene and will be revised or removed if requested by descendant communities or tribal representatives. Search direction bias check: When an agent recommends "where to look next," ask: is this recommendation biased toward digitized, English-language, colonial-framework sources? What record types exist that this agent might not know to suggest? What would a Narragansett historian, a maritime historian, an archaeologist, a linguist look for that a genealogist wouldn't?
+
+Status: 
+##UNRESOLVED PERSON SLOT — we want to know everything about this John Greene. Husband of Joan Unknown Greene. #Never resolved, continuous search for new findings. Men are more documented than women Historically. We need to follow the men the women are found with. And the People the Men were found with to potentially sideways logic, opposite lens, and alternative ideas zoom in/out time wise and perspective wise to find the person we are looking for, we have plenty of evidence, we are tracing the logic to find who we need to trace Joan Unknown Greene 1682 Wife of John Greene.
+action needs continuous updated defining logic.
 # John Greene of Quidnessett
 **Profile created:** 2026-08-28
 **Last updated:** 2026-08-29
@@ -5,24 +12,24 @@
 
 ---
 
-## The Seven Laws apply throughout this document.
+## MultiAgent Laws apply throughout this document.
 
 ---
 
 ## Identity
 
-- **Designation:** John Greene of Quidnessett (Aquidneset); later styled John Greene, Senior
-- **Born:** c. 1606, probably England; exact place and date unproved
-- **Immigration:** Traditionally said to have arrived 1635, possibly on the *Matthew*; traditional, not proven
-- **Died:** After 24 March 1681/82 (last documented appearance in the home-place deed). Death "about 1695" is a traditional date, not firmly documented. A deed of **25 Sept 1685** refers to "John Greene Sr. now deceased" (Bates 1918–19); if confirmed against the primary source, this would narrow death to between March 1682 and Sept 1685
-- **Wife:** **Joan Greene** — maiden name unknown. "Joan Beggarly" is La Mance (1904) only. **Alice Beggarly's death before 1682 (proved via Benedict Arnold letter + Winthrop Papers) makes the La Mance identification timeline-impossible.** See `research/legal_danger_framework.md` for why the maiden name question is more complex than genealogists assumed
-- **Marriage:** Probably c. 1642; no marriage record located
+- **Designation:** John Greene of Quidnessett (Aquidneset); later styled John Greene, Senior 1682 image 10 008204949-10.md 
+- **Born:** Unknown; 
+- **Immigration:** Unknown; Traditionally said to have arrived 1635, possibly on the *Matthew*; traditional, not proven
+- **Died:** After 24 March 1681/82 (last documented appearance in the home-place deed). Death "about 1695" is a traditional date, not firmly documented.May have conflicted with another John Greene will. needs analysis to decide which John Greene to resolve. A deed of **25 Sept 1685** refers to "John Greene Sr. now deceased" (Bates 1918–19); if confirmed against the primary source, this would narrow death to between March 1682 and Sept 1685
+- **Wife:** **Joan Greene** — maiden name unknown. "Joan Beggarly" is La Mance (1904) only, then multi compilations still cite her work today. I could not trace her references, the methods for compiling then were vastly more limited than todays technology. Let's help her set the records straight. **Alice Beggarly's death before 1682 (proved via Benedict Arnold letter + Winthrop Papers) makes the La Mance identification timeline-impossible.** See `research/legal_danger_framework.md` for why the maiden name question is more complex than genealogists assumed. Ps. Alice Beggarly Died before Joan Unknown Signed 1682.
+- **Marriage:** Probably c. 1642; no marriage record located yet.
 
 **Sources:** Bates, *RIHS Collections* XI–XII (1918–19); F.L. Greene 1894 (p. 10); 1682 deed (NK Land Evidence)
 
 ## Children (compiled list — not all proven by birth records)
 
-The strongest documentary evidence is for **Daniel and James** (named in the 1682 deed).
+The strongest documentary evidence is for **Daniel and James** (named in the 1682 deed). Beny Found as well. Pending professional eyes. AI Interpretation off digital Archive available online. 
 
 1. Edward (c. 1643–1711) — m. Mary Tibbitts. Dutchess Co., NY. (Hildenbrand 1941; Doherty Vol. 5, p. 753)
 2. Daniel (c. 1647–1729) — named in 1682 deed, received 120 acres ✅
@@ -50,7 +57,7 @@ The strongest documentary evidence is for **Daniel and James** (named in the 168
 - Freeman of Rhode Island — oath at Acquidnessett, 20 May 1671
 - Quidnessett inhabitant/proprietor — named among inhabitants whose possessions RI agreed not to disturb
 - Fones Purchase proprietor — named purchaser, 1 January 1671/72
-- **Conservator of the Peace** — sworn 1679 (NOT "Commissioner" — corrected per primary source terminology)
+- **Conservator of the Peace** — sworn 1679 (NOT "Commissioner" — corrected per primary source terminology)see Corrections.md for all found errors. [corrections.md]
 - **No elected colonial office established from the records located**
 - **No military title documented** — distinct from Lieut. John² and from Major John Greene of Warwick
 
