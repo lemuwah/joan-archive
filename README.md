@@ -13,98 +13,71 @@ Version v2: [10.5281/zenodo.21729961](https://doi.org/10.5281/zenodo.21729961)
 
 Joan, wife of John Greene of Quidnessett, appears in exactly one verified document: a March 1682 land deed in which John Greene conveys land to his sons Daniel and James. Joan is named as his wife and as the beneficiary of a life annuity (amount under review — Worth abstract says 30 shillings; manuscript read may differ) (Worth abstract, *RI Land Evidences* Vol. I, p. 122).
 
-No other record of Joan has been located. No birth, baptism, marriage, death, burial, probate, church, or court record. Her maiden name is unknown. Her origins are unknown. Her death date is unknown.
+No other record of Joan has been located. No birth, baptism, marriage, death, burial, probate, church, court, or land record. Her maiden name is unknown. Her ancestry is unknown. Eight competing models (A–H) attempt to explain who she was. One (G) has been eliminated. None of the others has been proven.
 
-This archive exists because one woman should not disappear from history just because she was only written down once.
-
----
-
-## Four Verified Facts
-
-These are the only statements about Joan that can be made from the evidence currently held:
-
-1. **Joan is named as wife of John Greene** in a March 1682 land deed (Worth abstract + Image 10 AI transcription)
-2. **A life annuity is reserved to her** after John's death (amount under review — Worth says 30 shillings; manuscript may differ)
-3. **Joan does not sign or mark the deed** — John Greene is the sole signatory (Image 10, 🟢 PROOF — AI TRANSCRIPTION)
-4. **No other record of Joan has been located** across any colonial jurisdiction searched (RI, CT, MA, Plymouth, Crown)
-
-Everything else — her origins, her ancestry, her identity — is an open question explored through eight competing models. See `theory/joan_ancestry_shadow_models.md`.
+This archive exists to find out who Joan was — transparently, with primary sources, under rules that prevent narrative smoothing and contamination.
 
 ---
 
-## The Laws of the Joan Archive
+## For AI Agents and Collaborators
 
-This archive is governed by the Laws of the Joan Archive. They are not guidelines. They are absolute. **The Laws evolve as our process improves — do not assume the count or content is the same as the last time you read them.** Always refer to the current full text.
+**Read `methodology/agent_orientation.md` for the full onboarding sequence.** It contains:
+- The four verified facts
+- The eight competing models
+- The Five-John Firewall
+- The mandatory reading list (10 files, in order)
+- Current research priorities
 
-Full text: `theory/three_laws.md`
-
----
-
-## Eight Competing Models
-
-No primary source confirms Joan's ancestry. The archive maintains eight shadow models:
-
-- **A** — Narragansett sachem-line woman (🟡 PLAUSIBLE)
-- **B** — English woman, undocumented (🟡 PLAUSIBLE)
-- **C** — Irish origin (🟡 PLAUSIBLE)
-- **D** — Indentured servant (🟡 PLAUSIBLE)
-- **E** — Enslaved person (🟡 PLAUSIBLE)
-- **F** — Widow of prior marriage (🟡 PLAUSIBLE)
-- **G** — Joan Beggarly / Alice Daniels (🔴 ELIMINATED — La Mance error)
-- **H** — Mixed-heritage (English/Narragansett parentage) (🟡 PLAUSIBLE)
-
-All open models remain ⚠️ UNVERIFIED. The archive does not collapse uncertainty into narrative.
-
-Full analysis: `theory/joan_ancestry_shadow_models.md`
+Do not produce output about Joan without reading the onboarding sequence first. The Laws of the Joan Archive evolve as research progresses — do not assume they match your last session.
 
 ---
 
 ## Repository Structure
 
-### Mandatory Reading
-
-⚠️ **The Laws and methodology evolve. Do not assume they are the same as last time.** Start with `methodology/agent_orientation.md` — it contains the full onboarding sequence and will always point to the current canonical reading list.
-
-### Evidence & Sources
-- `primary_sources/` — source intake queue, negative log, manuscript references
-- `evidence/` — verified facts, suspended items, children evidence grid
-- `images/` — manuscript images, Bates pages, F.L. Greene pages
-
-### Theory & Analysis
-- `theory/` — the Laws, source spine, shadow models, proof pieces
-- `contradictions/` — held-open contradictions with status tracking (see `contradictions/index.md`)
-- `contamination/` — La Mance chain, AI contamination log
-
-### Methodology
-- `methodology/` — editorial standards, inference audit, epistemology, agent orientation, Kimi audit
-- `CORRECTIONS.md` — public corrections log
-- `decision_log.md` — numbered research decisions with rationale
-- `KNOWN_LIMITATIONS.md` — honest boundaries of this archive
-
-### Research
-- `research_queue/` — hypothesis test matrix, research targets, search queue
-
-### Agents
-- `agents/Archivist/` — research sweep documents for hostile review
+```
+theory/              — The Seven Laws, ancestry models, hypothesis tests
+methodology/         — Agent orientation, editorial standards, integrity framework,
+                       AI provenance, git audit checklist
+evidence/            — Verified facts, suspended items, children evidence grid
+primary_sources/     — Negative evidence log, source images, transcriptions
+contamination/       — Contamination index, known false claims, kill files
+contradictions/      — Held-open contradictions with status tracking
+people/              — Individual pages for each documented person
+research/            — Deep dives, elimination matrices, source trails
+research_queue/      — Hypothesis test matrix, backward search plan
+agents/              — Agent session logs, AI litmus test scorecard
+validation/          — Claim snapshots for audit
+```
 
 ---
 
-## How to Contribute
+## Key Files
 
-1. Read `methodology/agent_orientation.md` first
-2. Check `primary_sources/NEGATIVE_LOG.md` before searching — don't re-search dead ends
-3. Follow the Laws
-4. If you find an error, report it via [GitHub Issues](https://github.com/lemuwah/joan-archive/issues)
-
----
-
-## Project Status
-
-**Active.** Independent research, no institutional affiliation, no funding.  
-**Contact:** Wendy Green (archive owner)  
-**License:** Open access. Cite this archive when referencing its findings.
+- `TEST_THIS_AI.md` — Self-contained litmus test for any AI
+- `AGENT_GUARDRAILS.md` — Rules for AI agents working on this archive
+- `CORRECTIONS.md` — Public corrections log
+- `KNOWN_LIMITATIONS.md` — Honest boundaries of this archive
+- `TASK_QUEUE.md` — Current work queue with status tracking
+- `decision_log.md` — Every significant framework decision with reasoning
 
 ---
 
-*The Joan Archive — maintained under the Laws of the Joan Archive.*  
+## The Seven Laws
+
+1. **No Narrative Smoothing** — if a document doesn't say it, we don't say it
+2. **Follow the Rivers** — trace every claim to its source
+3. **No Premature Elimination** — a model dies by its own evidence failing
+4. **No Planting** — contamination caught is contamination stopped
+5. **No Jurisdictional Assumption** — check all record jurisdictions before concluding absence
+6. **No Centering** — investigate who Joan was, not a preferred theory
+7. **No Trust Without Evidence** — every claim carries a tag; no tag = unprocessed
+
+---
+
+## License
+
+All original research content is © Wendy Green 2026. Source documents are in the public domain. The archive's methodology and framework are open for educational use with attribution.
+
+---
+
 *"There is no room for ego or fabrication — this is a quest for the truth."*

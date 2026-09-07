@@ -1,87 +1,65 @@
 # Git Audit Checklist
 
-**Status:** Active  
-**Last updated:** 2026-09-06  
-**Purpose:** Post-commit verification protocol. Run after every multi-file commit session.
+**Purpose:** A mechanical checklist to run after every batch commit. Catches the failure modes the archive has already encountered: false completions, stale counts, tag drift, and orphaned references.
+
+**When to run:** After every batch of 3+ commits, or before any release/tag.
 
 ---
 
-## When to Run
+## 1. Completion Claims
 
-- After any session with 3+ file changes
-- After any sed/sandbox-based text replacements
-- After any session that touches authority files (README, AGENT_GUARDRAILS, three_laws, editorial_standards, verified_facts, agent_orientation)
-- Before declaring a commit session "done"
+- [ ] Every `[x]` checkbox in `TASK_QUEUE.md` has a corresponding file in the repo
+- [ ] Every "Status: DONE" or "Status: COMPLETE" matches actual file existence
+- [ ] No task claims completion for files that don't exist
 
----
+## 2. Count Consistency
 
-## Step 1: Verify Commit Landed
+- [ ] `evidence/joan_verified_facts.md` fact count matches `validation/claim_snapshot_sep2026.md`
+- [ ] `evidence/suspended_items.md` item count matches `validation/claim_snapshot_sep2026.md`
+- [ ] `methodology/agent_orientation.md` model count matches `theory/joan_ancestry_shadow_models.md`
+- [ ] `decision_log.md` references to fact/model counts are marked superseded if outdated
+- [ ] All inline prose counts ("three facts", "seven models") match their authoritative source file
 
-- [ ] Confirm commit URL is valid and accessible
-- [ ] Confirm file count in commit matches expected changes
-- [ ] Spot-check one file's content via `github__get-file` to confirm it matches what was written
+## 3. Tag Consistency
 
-## Step 2: Known-Bad String Grep
+- [ ] Suspended items use ⚠️ consistently (not ⚫ in headers vs ⚠️ in body)
+- [ ] No public-facing page uses a suspended claim without its ⚠️ tag
+- [ ] DISCREDITED items use 🔴 consistently
+- [ ] PROOF items use 🟢 consistently
 
-Search for strings that SHOULD NOT exist if all fixes landed:
+## 4. Cross-Reference Integrity
 
-- [ ] "Five Laws" (should be "Seven Laws" everywhere)
-- [ ] "Six Laws" (should be "Seven Laws" everywhere)
-- [ ] "Three facts" or "three verified" (should be "four" everywhere)
-- [ ] "Model C Eliminated" without the "La Mance error" qualifier
-- [ ] "Joan signed with a mark" stated as fact (should be RESOLVED — she didn't sign)
-- [ ] "co-grantor" stated as fact about Joan (should be "beneficiary" or "leaning beneficiary")
-- [ ] "30 shillings" stated as VERIFIED (amount is under review)
-- [ ] Any bare "John Greene" without a qualifier in a claim about a specific John
+- [ ] Every file referenced in `methodology/agent_orientation.md` mandatory reading list exists
+- [ ] Every file referenced in `contradictions/index.md` exists
+- [ ] Every source in `evidence/joan_verified_facts.md` has a corresponding entry in `primary_sources/NEGATIVE_LOG.md` or `primary_sources/`
 
-## Step 3: Cross-File Consistency
+## 5. Known-Bad String Grep
 
-Pull these 6 authority files and confirm they agree:
+Search the entire repo for these strings. If found outside a clearly labeled DISCREDITED/ELIMINATED context, that's a contamination leak:
 
-1. `README.md`
-2. `AGENT_GUARDRAILS.md`
-3. `theory/three_laws.md`
-4. `evidence/joan_verified_facts.md`
-5. `methodology/editorial_standards.md`
-6. `methodology/agent_orientation.md`
+- [ ] `Joan Tibbitts` (maiden name — discredited)
+- [ ] `Joan Beggarly` or `Joan Beggerly` (outside contamination folder)
+- [ ] `daughter of a sachem` (Clarke 1903 AI hallucination)
+- [ ] `bow and arrow mark` (AI contamination — discredited)
+- [ ] `Joan signed` (outside suspended_items.md)
+- [ ] `Joan consented` (outside suspended_items.md)
+- [ ] `Joan's mother` as a distinct person (S-004 suspended)
 
-Check for agreement on:
-- [ ] Number of verified facts (currently: 4)
-- [ ] Annuity language (currently: "amount under review")
-- [ ] Number of laws (currently: 7)
-- [ ] Model labels (A through G; G = ELIMINATED)
-- [ ] Joan's role (currently: beneficiary, leaning resolved)
+## 6. Stale Decision Check
 
-## Step 4: Stale Reference Check
-
-- [ ] Every file referenced by path in README → confirm it exists
-- [ ] Every file referenced by path in editorial_standards → confirm it exists
-- [ ] Every file referenced by path in agent_orientation → confirm it exists
-- [ ] `contradictions/index.md` → every file it points to exists
-
-## Step 5: People Pages Spot Check (if touched)
-
-- [ ] Every claim on a people page has a source cited
-- [ ] No claim is marked as PROOF or VERIFIED that relies on web search alone
-- [ ] Status markers match the evidence level: ⚠️ UNVERIFIED for web-only, 🟡 SECONDARY for published abstracts, 🟢 for primary source reads
-- [ ] "Where to Look" sections have specific archives/volumes, not just "look for more"
-
-## Step 6: Log Results
-
-- [ ] Note any issues found in `CORRECTIONS.md` or the relevant file
-- [ ] If clean, note "Git audit passed [date]" in commit message or session log
+- [ ] Every decision in `decision_log.md` that references a count (facts, models, laws) either matches the current count or has a superseded-by note
 
 ---
 
-## Common Failure Modes
+## How to Run This
 
-1. **Sed pattern mismatch** — pattern doesn't match because file changed since pattern was written. Look for "0 replacements" in sandbox output.
-2. **Partial commit** — session commits 3 of 5 files before running out of points or erroring. Compare intended file list vs. actual commit diff.
-3. **Merge shadow** — two sessions edit the same file; second overwrites first. Check git blame on recently edited files.
-4. **Stale cross-reference** — file A references file B by old name/path. B was moved or renamed but A wasn't updated.
-5. **Propagation miss** — a fact is corrected in one file but not all files that state it. The known-bad string grep (Step 2) catches the most common ones.
+**For humans:** Walk through each checkbox manually.
+
+**For AI agents:** Clone the repo, run grep checks programmatically, report any failures. Skywork Code and Runable have demonstrated this capability in the 2026-09-07 AI litmus test.
+
+**Automated (future):** This checklist can be converted to a GitHub Action that runs on every PR.
 
 ---
 
-*Maintained under Law 7: No Trust Without Evidence.*  
-*Applies to the archive itself — we verify our own work.*
+*Maintained under the Seven Laws of the Joan Archive.*
+*"The quest for the truth remains."*
