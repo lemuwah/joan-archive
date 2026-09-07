@@ -49,6 +49,13 @@
 
 ---
 
+## Failed AI Claims Log
+
+| Date | AI / Tool | Claim | Reality | Likely mechanism |
+|---|---|---|---|---|
+| 2026-09-06 | DeepSeek (repo audit) | "5 John separation files do not exist in the repo" | 4 of 5 already exist (john_greene_warwick.md, john_greene_quidnessett.md, john_greene_potowomut.md, john_greene_son_of_john.md all present; only the exact filename `john_greene_warwick_surgeon.md` was missing) | Searched for one literal filename, got a miss, generalized the miss across the whole list. Classic false-negative from a filename mismatch — see `contamination/false_negative_suppression.md`. |
+| 2026-09-07 (recorded 2026-09-07, unknown origin session) | Unattributed | TASK_QUEUE.md Task 3 marked index.html and about.html as done: "model count + Model H + Law 7," "Law 7 added" | Neither Model H nor Law 7 was present in either file as of 2026-09-07 audit | Status recorded from intent (what was meant to be done) rather than from re-reading the file after editing. Fixed same day — see Task 3 in TASK_QUEUE.md. |
+
 ## Key Finding from AI Provenance
 
 **The wrapper matters more than the model.** Claude via Runable = Tier 1. Claude via Migoo = Tier 3. Gemini direct = Tier 1. Gemini via Jetkite = Tier 4. Same underlying models, different tool access and methodology chains, completely different results. This is documented in `agents/Archivist/ai_litmus_scorecard.md`.
