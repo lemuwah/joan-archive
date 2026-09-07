@@ -1,3 +1,6 @@
+> > This archive documents lives lived between approximately 1600–1750 in Narragansett country (present-day Rhode Island). All records from this period were created within colonial legal systems and reflect their biases, categories, and blind spots. Every name found here — English, Narragansett, Niantic, mixed-heritage, unknown — represents a real person whose full story these records were not designed to capture. Content may include references to war, captivity, enslavement, displacement, legal coercion, and loss. These are documented realities of the period, not abstractions.
+>
+> All cultural and genealogical content is included for research purposes in the quest to identify Joan Unknown Greene and will be revised or removed if requested by descendant communities or tribal representatives. Search direction bias check: When an agent recommends "where to look next," ask: is this recommendation biased toward digitized, English-language, colonial-framework sources? What record types exist that this agent might not know to suggest? What would a Narragansett historian, a maritime historian, an archaeologist, a linguist look for that a genealogist wouldn't?
 # Joan Priority Search — Worthington Deep Read
 **Date:** 2026-09-05 (round 3)
 **Purpose:** Joan is always the priority. Read every Worthington abstract that could mention her.
@@ -119,7 +122,7 @@ Bates is a real, identified, citable researcher (Louisa Prosser Bates, RIHS). He
 
 ### Where to Find the Local Records
 
-1. **NK Town Clerk** — Land Evidence Book 1. Ken Carlson confirmed the State Archives hold early NK records. Contact: kcarlson@sos.ri.gov
+1. **NK Town Clerk** — Land Evidence Book 1. Ken Carlson confirmed the State Archives hold early NK records. Contact:hidden@sos.ri.gov
 2. **Jamestown Town Clerk** — Land Evidence Records start 1680. On FamilySearch (DGS needed from catalog). Also physically at Jamestown Town Hall.
 3. **RIHS Manuscript Collections** — Bates may have used RIHS manuscripts. Worth checking if her papers survive there.
 
@@ -147,7 +150,7 @@ These are two different people. But every compiled genealogy treats "James Green
 
 ## UPDATED PRIORITY QUEUE — Joan First
 
-1. **NK Town Clerk records / RI State Archives** — the local deed books where Bates found her citations. This is where Joan might appear after 1682. PHYSICAL VISIT or Ken Carlson email.
+1. **NK Town Clerk records / RI State Archives** — the local deed books where Bates found her citations. This is where Joan might appear after 1682. PHYSICAL VISIT or ri contact email.
 2. **Jamestown Land Evidence Records on FamilySearch** — the Clark-to-Brinley "now deceased" deed. Check DGS availability.
 3. **Bates's RIHS Collections articles — full read on Internet Archive** — we have volume and page numbers. Read Bates's actual article text for context and additional Joan references.
 4. **The two-James separation** — audit every "James Greene" reference in the archive for which James is meant.
@@ -156,6 +159,6 @@ These are two different people. But every compiled genealogy treats "James Green
 ---
 
 *Joan Archive — research_findings/2026-09-05_joan_priority_search.md*
-*Maintained under the Seven Laws of the Joan Archive*
+*Maintained under the MULTI AGENT Laws of the Joan Archive*
 *Law 7: No Trust Without Evidence*
 *Joan is always the priority.*
