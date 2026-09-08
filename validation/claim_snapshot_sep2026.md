@@ -53,10 +53,10 @@
 - Verified facts: 4
 - Suspended items: 8
 - Competing models: 8
-- Laws: 7
+- Laws: see multi agent laws at threelaws.md evolves with learning and logic
 
 ---
 
 *If any count in the repo doesn't match this snapshot, that's drift — investigate before committing.*
 
-*Maintained under the Seven Laws of the Joan Archive.*
+*Maintained under the multi agent Laws of the Joan Archive.*
