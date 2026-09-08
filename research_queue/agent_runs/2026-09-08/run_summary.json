@@ -1,0 +1,37 @@
+{
+  "run_date": "2026-09-08",
+  "input": "research_queue/daily_sweep/2026-09-08.jsonl",
+  "records": 242,
+  "unique_catalog_leads": 509,
+  "statuses": {
+    "NO_RESULTS": 136,
+    "FOUND": 68,
+    "ERROR": 38
+  },
+  "roles": [
+    "explorer",
+    "archivist",
+    "synthesizer",
+    "hostile_review",
+    "model_a",
+    "model_b",
+    "model_c",
+    "model_d",
+    "model_e",
+    "model_f",
+    "model_g",
+    "model_h"
+  ],
+  "model_leads": {
+    "A": 232,
+    "B": 127,
+    "C": 204,
+    "D": 167,
+    "E": 143,
+    "F": 55,
+    "G": 3,
+    "H": 214
+  },
+  "status": "PENDING_HUMAN_REVIEW",
+  "note": "Reports generate leads and review logic only; they do not update facts or role READMEs."
+}
