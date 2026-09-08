@@ -1,22 +1,29 @@
 name: Fetch next archive page(s)
 
-# Manual trigger only — this never runs automatically. Chasing the next page is a
-# deliberate research action, and every result (found or not) needs a human look
-# before it's trusted, per the archive's own Law 7 / no-trust-without-evidence rule.
+# Runs automatically on a schedule to chase the next page in seeded volumes.
+# Also supports manual dispatch for ad-hoc volume chasing.
 #
-# It never pushes to main and never merges its own PR. It opens a PR with:
-#   - any newly fetched page(s) in images/_pending_review/
-#   - an AI triage sidecar per image (rough transcription + term-match flag, tagged AI-SOURCED)
-#   - the updated research_queue/next_page_fetch_log.md (found AND not-found results both logged)
-# A human reviews the PR, promotes anything real into images/ with a descriptive name and
-# a proper Search Log entry on the relevant people/ page, and updates that volume's
-# last_known_seq in tools/next_page/sources.yml before merging.
+# Manual trigger: leave volume_id blank to run every volume with a non-null last_known_seq,
+# or specify a single volume_id to chase just that one.
+#
+# Automatic schedule: chases all seeded volumes (last_known_seq is not null).
+#
+# Every result (found or not) gets logged to research_queue/next_page_fetch_log.md.
+# Newly fetched images land in images/_pending_review/ and get an AI triage sidecar
+# if ANTHROPIC_API_KEY is available. A human must review before anything is promoted
+# to images/ with a descriptive name and Search Log entry.
+#
+# This workflow does NOT automatically update sources.yml — that's a deliberate
+# human step after review, so a bad fetch can't silently ratchet the registry forward.
 
 on:
+  schedule:
+    # Run every 6 hours to chase the next page in active volumes
+    - cron: "0 */6 * * *"
   workflow_dispatch:
     inputs:
       volume_id:
-        description: "Internet Archive identifier to chase (leave blank to run every volume in sources.yml with a non-null last_known_seq)"
+        description: "Internet Archive identifier to chase (leave blank to run every volume with a non-null last_known_seq)"
         required: false
         default: ""
 
@@ -37,53 +44,116 @@ jobs:
       - name: Install dependencies
         run: pip install requests pyyaml
 
+      - name: Capture run metadata
+        id: meta
+        run: |
+          echo "run_date=$(date -u +%Y-%m-%d)" >> $GITHUB_OUTPUT
+          echo "run_time=$(date -u +%H:%M:%S)" >> $GITHUB_OUTPUT
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            echo "trigger=automatic" >> $GITHUB_OUTPUT
+          else
+            echo "trigger=manual" >> $GITHUB_OUTPUT
+          fi
+
       - name: Fetch next page(s)
+        id: fetch
         run: |
           if [ -n "${{ github.event.inputs.volume_id }}" ]; then
+            echo "Fetching single volume: ${{ github.event.inputs.volume_id }}"
             python tools/next_page/fetch_next_ia_page.py --id "${{ github.event.inputs.volume_id }}"
           else
+            echo "Fetching all seeded volumes with non-null last_known_seq"
             python tools/next_page/fetch_next_ia_page.py
+          fi
+          
+          # Count what was actually fetched
+          if [ -d "images/_pending_review" ]; then
+            NEW_IMAGES=$(find images/_pending_review -type f \( -name "*.jpg" -o -name "*.JPG" \) -mmin -5 | wc -l)
+            echo "newly_fetched=$NEW_IMAGES" >> $GITHUB_OUTPUT
+          else
+            echo "newly_fetched=0" >> $GITHUB_OUTPUT
           fi
 
       - name: AI triage of anything newly fetched
+        id: triage
+        if: steps.fetch.outputs.newly_fetched > 0
+        continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           if [ -n "$ANTHROPIC_API_KEY" ]; then
+            echo "Running AI triage on ${{ steps.fetch.outputs.newly_fetched }} newly fetched image(s)..."
             python tools/next_page/triage_pending_images.py
+            TRIAGE_STATUS="completed"
           else
-            echo "No ANTHROPIC_API_KEY secret set — skipping AI triage. Fetched images and the fetch log still get a PR; a human will need to look at them cold."
+            echo "No ANTHROPIC_API_KEY secret set — skipping AI triage."
+            echo "Fetched images and the fetch log still get a PR; human will review them cold."
+            TRIAGE_STATUS="skipped"
           fi
+          echo "triage_status=$TRIAGE_STATUS" >> $GITHUB_OUTPUT
+
+      - name: Stage fetch log
+        run: |
+          # Always stage the fetch log (it records both successes and failures)
+          if [ -f "research_queue/next_page_fetch_log.md" ]; then
+            git add research_queue/next_page_fetch_log.md
+          fi
+          # Stage any new images and their triage sidecars
+          git add -A images/_pending_review/ || true
 
       - name: Check for changes
         id: check_changes
         run: |
-          if git diff --quiet; then
+          if git diff --cached --quiet; then
             echo "has_changes=false" >> $GITHUB_OUTPUT
-            echo "No changes detected"
+            echo "No staged changes detected"
           else
             echo "has_changes=true" >> $GITHUB_OUTPUT
-            echo "Changes detected, PR will be created"
+            echo "Staged changes detected, PR will be created"
           fi
 
       - name: Open PR if anything changed
         if: steps.check_changes.outputs.has_changes == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
-          commit-message: "Next-page fetch: automated pull for review"
-          title: "Next-page fetch results — needs human review before merge"
+          commit-message: "Next-page fetch: ${{ steps.meta.outputs.run_date }} — ${{ steps.fetch.outputs.newly_fetched }} image(s), ${{ steps.triage.outputs.triage_status }}"
+          title: "Next-page fetch results — ${{ steps.meta.outputs.run_date }} (${{ steps.meta.outputs.trigger }})"
           body: |
-            Automated by `fetch-next-page.yml`. Nothing here is trusted yet.
+            Automated next-page fetch by `fetch-next-page.yml`.
+            
+            **When:** ${{ steps.meta.outputs.run_date }} ${{ steps.meta.outputs.run_time }} UTC
+            **Trigger:** ${{ steps.meta.outputs.trigger }}
+            **Images fetched:** ${{ steps.fetch.outputs.newly_fetched }}
+            **AI triage:** ${{ steps.triage.outputs.triage_status }}
+            **Run ID:** ${{ github.run_id }}
 
-            - Any image in `images/_pending_review/` needs to be either promoted into
-              `images/` with a descriptive name + a Search Log entry on the relevant
-              `people/` page, or discarded if it's not actually relevant.
-            - `research_queue/next_page_fetch_log.md` has one line per attempt, found or not.
-            - `.triage.md` sidecars (if present) are AI-SOURCED rough reads only — verify
-              before citing anything from them.
-            - Update `tools/next_page/sources.yml`'s `last_known_seq` for any volume this
-              PR advanced, before merging — the script does not do this itself.
+            Nothing here is trusted yet.
+
+            ## What to do with this PR
+
+            1. **Review images:** Each image in `images/_pending_review/` needs either:
+               - Promotion to `images/` with a descriptive name (e.g., `potter_early_history_p42_narragansett_bounds.jpg`)
+               - A Search Log entry on the relevant `people/` page documenting the source and page number
+               - Or discard if it's not actually relevant to the archive
+
+            2. **Verify triage sidecars:** If `.triage.md` files are present (AI-SOURCED rough reads):
+               - Check them against the actual image before citing anything
+               - They are working notes only, not paleographic verification
+
+            3. **Update the source registry:** Before merging, update `tools/next_page/sources.yml`:
+               - Change the `last_known_seq` for any volume this PR advanced
+               - This is a deliberate manual step so a bad fetch can't silently ratchet the registry
+
+            4. **Keep the fetch log:** `research_queue/next_page_fetch_log.md` records ALL attempts (found and not-found).
+               - Do NOT delete lines for failed or end-of-volume attempts — negative results are evidence too
+               - See methodology/editorial_standards.md, Law 7
+
+            See `tools/next_page/README.md` for the full methodology.
           branch: next-page-fetch/${{ github.run_id }}
-          add-paths: |
-            images/_pending_review/**
-            research_queue/next_page_fetch_log.md
+          labels: "next-page-fetch,automated,pending-review"
+
+      - name: Report fetch completion
+        if: steps.check_changes.outputs.has_changes == 'false'
+        run: |
+          echo "::notice::Fetch-next-page completed with no new images or changes."
+          echo "Check research_queue/next_page_fetch_log.md for details (end-of-volume or already-fetched entries)."
