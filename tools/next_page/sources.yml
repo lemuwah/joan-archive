@@ -38,7 +38,7 @@ volumes:
     last_known_seq: null
   - id: earlyhistoryofna00pott
     label: "Potter, Early History of Narragansett"
-    last_known_seq: null
+    last_known_seq: 1
   - id: earlyhistoryofna00pott_0
     label: "Potter, Early History of Narragansett (alt scan)"
     last_known_seq: null
