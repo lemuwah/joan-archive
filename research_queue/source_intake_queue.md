@@ -26,7 +26,7 @@ These can be requested by email or online.
 
 | # | Source | Contact | What We're Looking For | Status |
 |---|---|---|---|---|
-| 1 | NK Town Clerk Land Evidence Volumes | Kenneth Carlson, RI State Archives (kcarlson@sos.ri.gov) | Custody confirmation for earliest volumes. Already contacted. | Awaiting response |
+| 1 | NK Town Clerk Land Evidence Volumes | contact, RI State Archives (contact@sos.ri.gov) | Custody confirmation for earliest volumes. Already contacted. | Awaiting response |
 | 2 | Clarke 1903 full text | Internet Archive (already downloaded) | Searched Sep 2026 — zero hits for Joan of Quidnessett. Clarke covers Warwick Greenes only. | ✅ COMPLETED — NULL |
 
 ## Priority 3: Future Targets
@@ -42,4 +42,4 @@ These can be requested by email or online.
 
 *A source in this queue is a direction, not a destination. Follow it. See where it leads.*
 
-*Maintained under the Seven Laws of the Joan Archive.*
+*Maintained under the multi agent Laws of the Joan Archive.*
