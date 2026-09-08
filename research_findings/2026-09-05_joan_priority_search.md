@@ -122,7 +122,7 @@ Bates is a real, identified, citable researcher (Louisa Prosser Bates, RIHS). He
 
 ### Where to Find the Local Records
 
-1. **NK Town Clerk** — Land Evidence Book 1. Ken Carlson confirmed the State Archives hold early NK records. Contact:hidden@sos.ri.gov
+1. **NK Town Clerk** — Land Evidence Book 1. contact confirmed the State Archives hold early NK records. Contact:hidden@sos.ri.gov
 2. **Jamestown Town Clerk** — Land Evidence Records start 1680. On FamilySearch (DGS needed from catalog). Also physically at Jamestown Town Hall.
 3. **RIHS Manuscript Collections** — Bates may have used RIHS manuscripts. Worth checking if her papers survive there.
 
