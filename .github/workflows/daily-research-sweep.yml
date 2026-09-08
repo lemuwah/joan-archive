@@ -22,39 +22,80 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install requests
+        run: pip install requests pyyaml
+
+      - name: Capture run date
+        id: run_date
+        run: echo "date=$(date -u +%Y-%m-%d)" >> $GITHUB_OUTPUT
 
       - name: Run daily multi-perspective sweep
-        run: python tools/daily_research/sweep.py
-        continue-on-error: true
+        id: sweep
+        run: |
+          python tools/daily_research/sweep.py --date "${{ steps.run_date.outputs.date }}"
+          # Verify sweep output exists before proceeding
+          if [ ! -f "research_queue/daily_sweep/${{ steps.run_date.outputs.date }}.jsonl" ]; then
+            echo "ERROR: Sweep did not produce output file"
+            exit 1
+          fi
+          echo "sweep_completed=true" >> $GITHUB_OUTPUT
 
       - name: Run four-agent daily review
-        run: python tools/multi_agent_daily/orchestrate.py
-        continue-on-error: true
+        id: orchestrate
+        if: steps.sweep.outputs.sweep_completed == 'true'
+        run: |
+          python tools/multi_agent_daily/orchestrate.py \
+            --date "${{ steps.run_date.outputs.date }}" \
+            --sweep "research_queue/daily_sweep/${{ steps.run_date.outputs.date }}.jsonl"
+          # Verify orchestrate output exists
+          if [ ! -d "research_queue/agent_runs/${{ steps.run_date.outputs.date }}" ]; then
+            echo "ERROR: Orchestrate did not produce output directory"
+            exit 1
+          fi
+          echo "orchestrate_completed=true" >> $GITHUB_OUTPUT
 
       - name: Build outward document-ecology search bundle
-        run: python tools/document_ecology/build_search_bundle.py
-        continue-on-error: true
+        id: ecology
+        if: steps.orchestrate.outputs.orchestrate_completed == 'true'
+        run: |
+          python tools/document_ecology/build_search_bundle.py \
+            --date "${{ steps.run_date.outputs.date }}"
+          # Verify ecology output exists
+          if [ ! -d "research_queue/document_ecology" ]; then
+            echo "ERROR: Document ecology did not produce output"
+            exit 1
+          fi
+          echo "ecology_completed=true" >> $GITHUB_OUTPUT
+
+      - name: Stage research queue outputs
+        if: steps.ecology.outputs.ecology_completed == 'true'
+        run: |
+          # Add all new/modified research queue files
+          git add -A research_queue/ || true
+          # Add all agent daily logic and model reports
+          git add -A agents/*/daily_logic.md agents/*/models/ || true
 
       - name: Check for changes
         id: check_changes
         run: |
-          if git diff --quiet; then
+          if git diff --cached --quiet; then
             echo "has_changes=false" >> $GITHUB_OUTPUT
-            echo "No changes detected"
+            echo "No staged changes detected"
           else
             echo "has_changes=true" >> $GITHUB_OUTPUT
-            echo "Changes detected, PR will be created"
+            echo "Staged changes detected, PR will be created"
           fi
 
       - name: Open review pull request
         if: steps.check_changes.outputs.has_changes == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
-          commit-message: "research: daily multi-perspective source sweep"
-          title: "Daily research sweep: ${{ github.run_id }}"
+          commit-message: "research: daily multi-perspective source sweep — ${{ steps.run_date.outputs.date }}"
+          title: "Daily research sweep: ${{ steps.run_date.outputs.date }}"
           body: |
             Automated candidate search across every page in `people/`.
+
+            **Date:** ${{ steps.run_date.outputs.date }}
+            **Run ID:** ${{ github.run_id }}
 
             Perspectives include Irish/Scottish migration, servant and indentured status,
             enslavement/captivity, Narragansett and Indigenous context, legal/property
@@ -63,13 +104,20 @@ jobs:
             This PR contains candidates and negative results only. Nothing is verified,
             and no people page or published evidence was modified. Human review must inspect
             the original document before any candidate becomes a claim.
+
+            ## Included in this sweep
+            - **Sweep results:** `research_queue/daily_sweep/${{ steps.run_date.outputs.date }}.jsonl` + summary
+            - **Agent logic reports:** Four review perspectives (Explorer, Archivist, Synthesizer, Hostile Reviewer)
+            - **Model candidate leads:** All 8 open investigative models (A–H)
+            - **Document ecology bundle:** Outward search map for the network
+
+            All outputs remain `PENDING_HUMAN_REVIEW`. See agents/*/daily_logic.md for methodology.
           branch: daily-research/${{ github.run_id }}
-          add-paths: |
-            research_queue/daily_sweep/**
-            research_queue/agent_runs/**
-            research_queue/document_ecology/**
-            agents/Explorer/daily_logic.md
-            agents/Archivist/daily_logic.md
-            agents/Synthesizer/daily_logic.md
-            agents/hostile_reviewer/daily_logic.md
-            agents/models/**
+          labels: "research,automated,pending-review"
+
+      - name: Report sweep failure
+        if: failure()
+        run: |
+          echo "::error::Daily research sweep pipeline failed. Check logs above for details."
+          echo "::notice::Common causes: network timeouts (IA/LoC), missing Python deps, or malformed sweep/orchestrate output."
+          exit 1
