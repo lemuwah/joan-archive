@@ -1,0 +1,24 @@
+name: Validate legacy synthesis records
+
+on:
+  pull_request:
+    paths:
+      - "people/*.md"
+      - "data/research/legacy_observations.jsonl"
+      - "data/research/synthesis_proposals.jsonl"
+      - "data/research/synthesis_proposal.schema.json"
+      - "tools/synthesis_workflow/**"
+      - ".github/workflows/validate-synthesis-records.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Check generated synthesis records
+        run: python3 tools/synthesis_workflow/synthesize_legacy_pages.py --check

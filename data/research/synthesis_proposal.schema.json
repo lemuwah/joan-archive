@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/lemuwah/joan-archive/synthesis-proposal.schema.json",
+  "title": "Joan Archive legacy-page synthesis proposal",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "proposal_id",
+    "status",
+    "proposal_type",
+    "observation_ids",
+    "source_path",
+    "subject",
+    "proposed_action",
+    "summary",
+    "indicators",
+    "promotion_allowed",
+    "human_disposition"
+  ],
+  "properties": {
+    "proposal_id": { "type": "string", "pattern": "^SYNTH-PEOPLE-[a-f0-9]{12}$" },
+    "status": { "const": "PENDING_HUMAN_REVIEW" },
+    "proposal_type": { "const": "LEGACY_PAGE_RECONCILIATION" },
+    "observation_ids": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "source_path": { "type": "string", "pattern": "^people/.+\\.md$" },
+    "subject": { "type": "string", "minLength": 1 },
+    "proposed_action": { "const": "RETAIN_AS_LEGACY_NOTE" },
+    "summary": { "type": "string", "minLength": 1 },
+    "indicators": { "type": "object" },
+    "promotion_allowed": { "const": false },
+    "human_disposition": { "type": ["string", "null"], "enum": ["APPROVED_NOTE", "REJECTED", null] }
+  }
+}
