@@ -38,6 +38,8 @@
 | 2026-09-06 | FamilySearch DGS 008204949 | Images 9–12 (manuscript) | Joan's mark or signature | NOT EXAMINED — images not accessed; no mark claim can be verified | Kimi (hostile search) | Access restriction |
 | 2026-09-06 | MA Bay court records (Shurtleff) | Full published volumes | Joan Greene | NULL — confirmed independently from Sep 5 search | Kimi (hostile search) | Independent confirmation |
 | 2026-09-06 | Primary sources for "Joan Beggarly" | All available databases | Joan Beggarly as a distinct person | NULL — "Beggarly" is a husband's surname from Winthrop's journal, never a maiden name | Kimi (hostile search) | Confirms La Mance error chain |
+| 2026-09-08 | Internet Archive | Exact searches for RI Land Evidences, Peirce Manuscripts, Jamestown land evidence, RIHS Mss 461; broad Joan/John Greene searches | Missing original deed books, Peirce Manuscripts, Jamestown records, and Mss 461 | NULL — only Worthington abstract scans returned; those are already held | Copilot | Public metadata search; no new primary scan located |
+| 2026-09-08 | Rhode Island State Archives Digital Archive / public web indexes | Land Evidence, Mss 461, Peirce Manuscripts, FamilySearch DGS 008204949 | Official portal and catalog discovery paths | NULL — no directly downloadable missing source located; portal may require interactive search or access request | Copilot | Scoped public-web check; not proof the holdings are undigitized |
 
 ---
 
