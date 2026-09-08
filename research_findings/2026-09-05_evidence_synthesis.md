@@ -183,7 +183,7 @@ Earlier today I stated this was **Benjamin to James**. That was wrong. Bates say
 
 ### PRIORITY 4 — Physical Visits
 
-11. **NK Town Clerk — Land Evidence Book 1** (Ken Carlson confirmed custody)
+11. **NK Town Clerk — Land Evidence Book 1** (contact confirmed custody)
 12. **MA Archives Collection 30** — Kings Province jurisdiction
 13. **Jamestown Town Clerk** — Land Evidence Records, 1680+
 14. **RIHS MSS collections** — manuscript deeds
@@ -206,5 +206,5 @@ These are cited as if they are birth registers or primary compilations. They are
 ---
 
 *Joan Archive — research_findings/2026-09-05_evidence_synthesis.md*
-*Maintained under the Seven Laws of the Joan Archive*
+*Maintained under the multi agent Laws of the Joan Archive*
 *Law 7: No Trust Without Evidence — nothing is marked verified until we hold the image to back it up.*
