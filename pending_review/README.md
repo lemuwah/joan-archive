@@ -27,4 +27,4 @@ Agent produces output
 
 ---
 
-*Maintained under the Seven Laws of the Joan Archive.*
+*Maintained under the Multi agent Laws of the Joan Archive.*
