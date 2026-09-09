@@ -212,4 +212,22 @@ regions:
       - { form: "London", type: port, status: external-reference }
       - { form: "Bristol", type: port, status: external-reference, note: "Servant registers - Task 6.75 rank 5" }
 
+  - id: goulds_island
+    modern_name: Gould's Island, Narragansett Bay (off Jamestown/Aquidneck)
+    active_range: [1657, 1750]
+    variants:
+      - { form: "Gould's Island", type: standard, status: anchored-in-repo, attested_in: ["people/thomas_gould.md"] }
+      - { form: Aquopimokuk, type: indigenous-name, status: anchored-in-repo, attested_in: ["people/thomas_gould.md (1657 purchase from sachem Koskotap)"] }
+      - { form: Aquopimokuck, type: scribe-drift, status: search-target }
+    record_anchors: ["1657 Gould purchase from Koskotap"]
+
+  - id: tibbitts_1686_rivers
+    modern_name: Potowomut River area, Warwick/East Greenwich, RI
+    active_range: [1686, 1750]
+    variants:
+      - { form: Pasatut, type: scribal, status: anchored-in-repo, attested_in: ["people/henry_tibbitts.md (18 Oct 1686 purchase)"] }
+      - { form: Masquechuaug, type: scribal, status: anchored-in-repo, attested_in: ["people/henry_tibbitts.md (18 Oct 1686 purchase)"] }
+      - { form: "Potowome River", type: scribal, status: anchored-in-repo, attested_in: ["people/henry_tibbitts.md (18 Oct 1686 purchase)"], note: "relationship to Potowomut place name held open" }
+    record_anchors: ["1686 Tibbitts/Greene purchase deed (unread original)"]
+
 name_variant_rule: "Person-name variants live in methodology/name_variant_registry.md; place names live here. Both are searched in full for every query."

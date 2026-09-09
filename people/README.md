@@ -1,7 +1,9 @@
 # People Directory
-**Last updated:** 2026-08-30
+**Last updated:** 2026-09-09
 
 Individual profile pages for documented persons in the Joan Archive. Each profile contains only verified facts with inline source citations. La Mance-derived claims are excluded per Law 2 unless independently corroborated.
+
+**As of 2026-09-09 every person page carries a `## Discovery Key` block** (name variants, activity window, place anchors, documented associates, record anchors, identity status) so external and internal search bots can match records to the right person slot — see [collection_policy.md](../methodology/collection_policy.md) §5. Each page also carries a `## Search Log` with at least one extracted, unsearched lead (Task 4 Pass B).
 
 ---
 

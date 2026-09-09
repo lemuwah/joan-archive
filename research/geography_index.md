@@ -119,6 +119,20 @@ Modern: North Kingstown + South Kingstown (one town until the 1722/23 split)
 | Allen's Harbor | 1682 deed boundary (Daniel's 120 acres) | ✅ |
 | Devil's Foot / Fones Purchase | 1672 purchase from Anashuecot (Fones Record p. 90) | ✅ |
 
+### 13. Gould's Island / Aquopimokuk
+| Form | Who wrote it down | Status |
+|---|---|---|
+| Gould's Island | standard (Thomas Gould, 1657) | ✅ |
+| Aquopimokuk | 1657 purchase record (sachem Koskotap, grantor) | ✅ |
+| Aquopimokuck | drift | 🎯 |
+
+### 14. The 1686 Tibbitts/Greene purchase rivers
+| Form | Who wrote it down | Status |
+|---|---|---|
+| Pasatut / Masquechuaug / Potowome River | 18 Oct 1686 purchase deed, per [henry_tibbitts.md](../people/henry_tibbitts.md) | ✅ |
+
+⚠️ "Potowome River" vs. the Potowomut place name: relationship held open. The 1686 deed itself is unread — these forms come through secondary report.
+
 ---
 
 ## Ring 2 — Jurisdictions that could hold the missing record (Law 5)

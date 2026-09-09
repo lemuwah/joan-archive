@@ -4,13 +4,26 @@
 **Last restructured:** 2026-09-07 (Task 4, universal page format)
 **Status:** UNRESOLVED PERSON SLOT — husband of Joan Unknown Greene. Central figure of the Joan Archive. Permanently open to new findings.
 
-The MULTI AGENT Laws apply throughout this document.
+The Multi Agent Laws apply throughout this document.
 
 ---
 
 ## Disclaimer
 
 > This archive documents lives lived between approximately 1600–1750 in Narragansett country (present-day Rhode Island). All records from this period were created within colonial legal systems and reflect their biases, categories, and blind spots. Every name found here — English, Narragansett, Niantic, mixed-heritage, unknown — represents a real person whose full story these records were not designed to capture. Content may include references to war, captivity, enslavement, displacement, legal coercion, and loss. These are documented realities of the period, not abstractions. All cultural and genealogical content is included for research purposes in the quest to identify Joan Unknown Greene and will be revised or removed if requested by descendant communities or tribal representatives.
+
+---
+
+## Discovery Key (search-bot surface)
+
+*Machine-readable matching surface per [collection_policy.md](../methodology/collection_policy.md) §5. Tags state confidence honestly — discoverability never inflates it.*
+
+- **Name variants:** John Greene of Quidnessett; **"John Greene Sen'r"** / "John Greene Sr." (firewall-critical qualifier); John Green of Narragansett (1676 court martial form); Jon/Jn°/Iohn Green(e); surname cluster Greene/Green/Grene/Greane ([name_variant_registry.md](../methodology/name_variant_registry.md))
+- **Documented activity window:** residence at Cocumscussoc "forty years and more" as of 1679 (implies c. 1639–1642) – 24 Mar 1681/82 (1682 deed, last documented appearance). Death between Mar 1682 and 25 Sep 1685 IF the C-2 Jamestown deed is confirmed against the original
+- **Place anchors:** Quidnessett (variants: Aquidneset, Acquidnessett, Quidneset, Aquednesit, Quckeset — [geography_index.md](../research/geography_index.md)); Cocumscussoc; Allen's Harbor / "Greene's Harbor" (1651); Devil's Foot / Fones Purchase; East Greenwich (1679 lot); possibly Newport (Bates alias — OPEN)
+- **Documented associates:** **Joan Greene (wife — the archive's target)**; sons Daniel, James (1682 deed), Edward, Benjamin, John Jr.; Anashuecot (1672 grantor) 📖; John Fones, Henry Tibbitts, John Andrews, John Briggs, Thomas Waterman (1672 co-purchasers); Richard Smith Sr./Jr.; Thomas Gould; Edward Greenman
+- **Record anchors:** FamilySearch DGS 008204949 Images 9–12 (March 1681/82 deed); Fones Record p. 90 (1672); 1679 affidavit; 19–20 May 1671 Acquidnessett court/oath; 1666 Quidnessett plat; 1679 East Greenwich division; 25 Sep 1685 Clark→Brinley deed (C-2, unread)
+- **Identity status:** 🟢 OUR JOHN — Firewall II. Do NOT merge with the Surgeon (I), Major John of Warwick/Occupasuetuxet (III), Newport (IV, open alias), or Kingstown (V, open alias)
 
 ---
 

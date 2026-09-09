@@ -4,13 +4,26 @@
 **Last restructured:** 2026-09-07 (Task 4, universal page format + first backward mining pass)
 **Status:** UNRESOLVED PERSON SLOT — and now, on tertiary evidence, **possibly not a valid 17th-century slot at all.** See What We Know.
 
-The MULTI AGENT Laws apply throughout this document.
+The Multi Agent Laws apply throughout this document.
 
 ---
 
 ## Disclaimer
 
 > This archive documents lives lived between approximately 1600–1750 in Narragansett country (present-day Rhode Island). All records from this period were created within colonial legal systems and reflect their biases, categories, and blind spots. Every name found here — English, Narragansett, Niantic, mixed-heritage, unknown — represents a real person whose full story these records were not designed to capture. Content may include references to war, captivity, enslavement, displacement, legal coercion, and loss. These are documented realities of the period, not abstractions. All cultural and genealogical content is included for research purposes in the quest to identify Joan Unknown Greene and will be revised or removed if requested by descendant communities or tribal representatives.
+
+---
+
+## Discovery Key (search-bot surface)
+
+*Machine-readable matching surface per [collection_policy.md](../methodology/collection_policy.md) §5. Tags state confidence honestly — discoverability never inflates it.*
+
+- **Name variants:** "John Greene of Potowomut" (compiled genealogies); the epithet more properly attaches to **James Greene "of Potowomut"** (bapt. 1626 Salisbury, Surgeon line); Potowomut / Petawhomett / Coheassuck place variants — [geography_index.md](../research/geography_index.md)
+- **Documented activity window:** no verified 17th-century window for a John of Potowomut; the compiled John of Potowomut was b. 1685 or 1691, d. 1757 🌐 TERTIARY
+- **Place anchors:** Potowomut Neck, Warwick/East Greenwich line (purchased 1654 from sachem Taccomanan by Warwick men)
+- **Documented associates:** James Greene "of Potowomut" (probable true epithet-holder); Surgeon John Greene line (burial lot); Taccomanan (1654 grantor) 📖 EXTERNAL INTERPRETATION context
+- **Record anchors:** none primary for a 17th-c. John of Potowomut; WikiTree Greene-739 / Greene-1980 (conflicting compiled entries); 1654 Potowomut Neck purchase (purchaser list unread)
+- **Identity status:** ⚠️ probably a mislabeled slot — likely Surgeon-line locality label, NOT a sixth John and NOT a candidate for Joan's husband (a man born in the 1680s cannot be a peer of the five Johns)
 
 ---
 
