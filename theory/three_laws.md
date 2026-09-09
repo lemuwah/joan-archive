@@ -9,6 +9,14 @@
 **Companion files:** `AGENT_GUARDRAILS.md`, `methodology/editorial_standards.md`
 
 ---
+The Multi Agent Laws
+1 No Narrative Smoothing — if a document doesn't say it, we don't say it
+2 Follow the Rivers — trace every claim to its source (le mance law)
+3 No Premature Elimination — a model dies by its own evidence failing
+4 No Planting — contamination caught is contamination stopped
+5 No Jurisdictional Assumption — check all record jurisdictions before concluding absence
+6 No Centering — investigate who Joan was, not a preferred theory
+7 No Trust Without Evidence — every claim carries a tag; no tag = unprocessed
 
 ## Law 1 — No Narrative Smoothing
 
