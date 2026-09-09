@@ -97,18 +97,20 @@ eliminate any of models A–H. No premature elimination, no centering. ✓
 | # | Bounded claim | Status |
 |---|---|---|
 | 1 | Joan's deed is located in the original manuscript at RI State Archives Land Records No. 1, folios 259–260 (image `_133`). | 🟢 PROOF (location) |
-| 2 | Joan = wife of John Greene, named as life-annuity beneficiary ("after his decease to Joane Greene his wife for and Dureing her naturall life"); she does not sign/mark. | 🟡 AI-READ, pending paleography |
-| 3 | No "or to her mother if she survive" / matrilineal reverter clause in this instrument. | 🟡 AI-READ, pending paleography |
-| 4 | No bow-and-arrow mark on this deed; the only mark is Henry Tibbitts's "H." | 🟡 AI-READ, pending paleography |
+| 2 | Joan = wife of John Greene, named as life-annuity beneficiary ("after his decease to Joane Greene his wife for and Dureing her naturall life"); she does not sign/mark. | 🟢 Joan's non-signature / no mark CONFIRMED by owner (2026-09-09); verbatim wording still 🟡 AI-read |
+| 3 | No "or to her mother if she survive" / matrilineal reverter clause in this instrument. | 🟢 CONFIRMED by owner (2026-09-09) — no mother clause (matches AI read) |
+| 4 | No bow-and-arrow mark on this deed; the only mark is Henry Tibbitts's "H." | 🟡 AI-read (Joan's *absence* of a mark is confirmed; the exact shape of Tibbetts's mark remains AI-read) |
 | 5 | Daniel (120 ac) instrument absent from the colony volume (folio-index sweep). | 🟢 NEGATIVE-pending-visual-confirm |
-| 6 | Recording authorities: acknowledged before John Fones (Warden), entered by John Sanford (Recorder). | 🟡 AI-READ, pending paleography |
+| 6 | Recording authorities: acknowledged before John Fones (Warden), entered by John Sanford (Recorder). | 🟡 AI-read; Fones/Tibbetts/John Greene *visible* confirmed by owner (2026-09-09); the Warden/Recorder *roles* remain AI-read |
 
-**Preserved contradiction (OPEN):** the "or to her mother if she survive" clause
-appears in some secondary traditions but NOT in this AI read of the primary
-manuscript. This is **not resolved.** Do not treat the secondary as wrong on the
-strength of an AI read — the vision model could have missed a clause. Tag:
-🟡 OPEN — close only after human paleography of folios 259–260. Per Law 3 (No
-Premature Elimination), neither side is eliminated pending the owner's read.
+**Preserved contradiction (PARTIALLY RESOLVED):** the "or to her mother if she
+survive" clause is now **owner-confirmed ABSENT** from the colony original
+(folios 259–260, 2026-09-09). The phrase remains unattributed to any primary or
+secondary source, so as an *evidence claim* it is effectively killed. What is
+**not** resolved: the NK town-book copy (Image 10) AI read yielded "him or his
+Wife" — that separate manuscript has **not** been paleographed, so its wording
+remains 🟡 AI-read. The colony original and the NK copy are different physical
+documents; do not conflate them.
 
 **Identity scope:** this finding advances Joan's **document location and
 reading**, NOT her identity (models A–H unaffected). Correctly bounded. ✓
@@ -175,9 +177,14 @@ bow-and-arrow tradition is a separate attestation, not this deed.
 
 ## Sign-off status
 
-**Status:** PENDING_HUMAN_REVIEW. This round packaged the findings, calibrated
-the source image (full-res + provenance + SHA-256), passed the router's image
-gate, and performed the four-stage review. **Nothing is signed off.** Per the
-safety rules, a human (the owner) must inspect the original document before
-anything updates `evidence/`, `people/`, or public pages. The owner's
-paleography of folios 259–260 is the gating step for claims 2–4 and 6.
+**Status:** PENDING_HUMAN_REVIEW (partially advanced). The owner (Wendy Green)
+paleographically confirmed three points against the colony original on
+2026-09-09 — (1) Joan does not sign and makes no mark; (2) no "or to her mother"
+clause; (3) Fones, Tibbetts, and John Greene are visible. Those three are now
+🟢 owner-confirmed. The verbatim secretary-hand **wording** of the annuity clause,
+the exact shape of Tibbetts's mark ("H"), and the recording authorities'
+**roles** (Warden / Recorder) remain 🟡 AI-read, pending the owner's separate
+confirmation. The NK town-book copy (Image 10) is a separate, still-unverified
+manuscript. Per the safety rules, a human must inspect the original before
+anything updates `evidence/`, `people/`, or public pages; the owner's
+paleography of the remaining transcription tokens is the next gating step.

@@ -40,6 +40,36 @@ This phrasing, which treats "her mother" as a THIRD PARTY (Joan's own mother, no
 
 **Status: The phrase "or to her mother if she survive" is now flagged as ⚠️ SUSPENDED pending identification of a source.**
 
+## Owner paleographic confirmation (2026-09-09)
+
+The archive owner (Wendy Green, the project's only paleographer) checked the
+**colony original** — RI State Archives Land Records No. 1, folios 259–260
+(image `_133`) — against the AI read and confirmed:
+
+- There is **no "or to her mother" clause** on the colony original. The AI
+  read's description of the mother clause (absent) is correct.
+- Joan **does not sign and makes no mark** on this deed.
+- John Fones, Henry Tibbetts, and John Greene are **visible** on the deed.
+
+This settles, for the colony original, that the matrilineal reverter phrase is
+**not present**. The phrase "or to her mother if she survive" remains
+**unattributed to any primary or secondary source** the archive has examined.
+
+What is **not** settled by this confirmation: the NK town-book copy (FamilySearch
+DGS 008204949, Image 10) is a *separate* manuscript whose AI read yielded "him
+or his Wife or during her natural life." That NK wording has **not** been
+paleographically verified — the owner confirmed the colony original, not the NK
+copy. The NK read's "him or his Wife" therefore remains 🟡 AI-read. The two
+manuscripts are different physical documents; a future paleography of the NK
+copy may or may not match the colony original's confirmed absence of a mother
+clause.
+
+**Status (updated): C-3 remains 🟡 PARTIALLY RESOLVED.**
+- F.L. Greene's "father or mother" = paraphrase of manuscript's "him or his Wife" → RESOLVED (analytical)
+- "Or to her mother if she survive" = absent from the colony original (owner-confirmed, 2026-09-09) + unattributed to any source → SUSPENDED / effectively killed as an evidence claim
+- NK town-book copy wording ("him or his Wife") → still 🟡 AI-unverified
+- Full resolution requires paleographic verification of the NK copy (Image 10)
+
 ## Impact on Ancestry Models
 
 The "mother clause" was previously cited as potential evidence for Model A (Narragansett sachem-line) — the argument being that naming Joan's mother as an alternate beneficiary reflected matrilineal kinship logic.
@@ -53,7 +83,8 @@ This does NOT eliminate Model A. It eliminates ONE piece of evidence that was ci
 **C-3: 🟡 PARTIALLY RESOLVED.**
 - F.L. Greene's "father or mother" = paraphrase of manuscript's "him or his Wife" → RESOLVED
 - "Or to her mother if she survive" = UNATTRIBUTED, SUSPENDED → source needed or claim killed
-- Full resolution requires paleographic verification of the manuscript text (Image 10 left page)
+- Colony original (folios 259–260): "or to her mother" clause confirmed ABSENT by owner paleography (2026-09-09)
+- NK town-book copy (Image 10): "him or his Wife" wording still 🟡 AI-unverified
 
 ---
 

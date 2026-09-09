@@ -1,6 +1,6 @@
 # AI-Assisted Paleographic Transcript — Home-Place Deed (John Greene → James Greene), 24 March 1681/2
 
-> **🟡 AI-READ TRANSCRIPT — pending human paleography (Law 7).** This is a
+> **🟡 AI-READ TRANSCRIPT — partially paleography-confirmed (Law 7).** This is a
 > vision-model line-by-line read of the 600-DPI scan of RI State Archives Land
 > Records No. 1, folios 259–260 (image `_133`, Preservica
 > `IO_6f6b6c51-8275-4e3a-95d9-c1e205f459f7`). It is a working transcript to speed
@@ -9,6 +9,15 @@
 > a people page, the index, or the site until the owner (the project's only
 > paleographer) confirms. AI transcription may produce leads; it may not serve as
 > a genealogical citation.
+>
+> **Owner paleographic confirmation (Wendy Green, 2026-09-09):** the following
+> points were checked against the original and confirmed — (1) Joan does **not**
+> sign and makes **no mark** on this deed; (2) there is **no "or to her mother"
+> clause** (the AI read's description of the mother clause is correct); (3) John
+> Fones, Henry Tibbetts, and John Greene are **visible** on the deed. The verbatim
+> secretary-hand **wording** of the annuity clause, the exact shape of Tibbetts's
+> mark ("H"), and the recording authorities' **roles** (Warden / Recorder)
+> remain 🟡 AI-read until separately confirmed.
 >
 > Source image: `images/1682_homeplace_james_instrument_manuscript_folios259-260_RIStateArchives.jpg`
 > (full 600-DPI); enhanced grayscale crops in same folder.
@@ -180,8 +189,18 @@ Anashuecot threads), not to this deed.
 ## What the transcript settles (for the Synthesizer, pending review)
 1. **Verbatim life-annuity clause** now in hand from the original: "after his
    decease, to Joane Greene his wife for and Dureing her naturall life."
+   — 🟡 AI-read wording (the *substance* — Joan named as wife/life beneficiary —
+   is consistent with the owner's confirmed absence of a mother clause).
 2. **C-1 (Joan's role):** beneficiary only; not a signatory, not a co-grantor.
+   — 🟢 **Confirmed by owner (2026-09-09):** Joan does not sign and makes no mark.
 3. **C-3 ("or to her mother if she survive"):** not present in this instrument.
+   — 🟢 **Confirmed by owner (2026-09-09):** no mother clause (matches AI read).
 4. **Mark analysis:** no bow-and-arrow mark on this deed; only Tibbitts's "H."
+   — 🟡 AI-read (Joan's *absence* of a mark is confirmed; the exact shape of
+   Tibbetts's mark remains AI-read).
 5. **Boundaries confirmed:** 60 ac at Aquednessett; N by John Greene; E by
    Quidnessett harbour; S by a river/brook & Daniell Greene; W by a highway.
+   — 🟡 AI-read.
+6. **Visible parties (confirmed by owner, 2026-09-09):** John Fones, Henry
+   Tibbetts, and John Greene are present on the deed. Their *roles* (Fones =
+   acknowledging Warden; John Sanford = Recorder) remain 🟡 AI-read.

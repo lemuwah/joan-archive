@@ -8,9 +8,17 @@
 > every clause below is **🟡 AI-READ, pending human paleography** until her eyes
 > confirm. AI transcription may produce new leads; it may not serve as a
 > genealogical citation. Do not cite the verbatim wording as PROOF until reviewed.
+>
+> **Owner paleographic confirmation (Wendy Green, 2026-09-09):** three points
+> checked against the original and confirmed — (1) Joan does **not** sign and
+> makes **no mark** on this deed; (2) there is **no "or to her mother" clause**
+> (the AI read's description of the mother clause is correct); (3) John Fones,
+> Henry Tibbetts, and John Greene are **visible** on the deed. The verbatim
+> secretary-hand **wording**, the exact shape of Tibbetts's mark ("H"), and the
+> recording authorities' **roles** (Warden / Recorder) remain 🟡 AI-read.
 
-**Status:** 🟢 LOCATION CONFIRMED (manuscript + folio index agree) / 🟡 TRANSCRIPTION AI-PENDING-PALEOGRAPHY
-**Date:** 2026-09-09
+**Status:** 🟢 LOCATION CONFIRMED (manuscript + folio index agree) / 🟡 TRANSCRIPTION AI-PENDING-PALEOGRAPHY — with three points 🟢 owner-confirmed (see below)
+**Date:** 2026-09-09 (owner paleographic confirmation 2026-09-09)
 **Filed by:** Perplexity Computer session (breadcrumb follow from `digital_access_map.md` + `road_to_joan.md` Stage 1)
 **Finding ID:** JF-2026-09-09-RISTATE-MANUSCRIPT
 
@@ -117,12 +125,14 @@ Witnesses: `Henry H Tibbitts his marke` (mark = capital `H`);
 2. **C-1 (Joan's role): confirmed beneficiary, not signatory.** Joan is the
    life-annuity beneficiary ("after his decease to Joane Greene his wife for
    and Dureing her naturall life"). She does not sign or mark. The "co-grantor"
-   reading is not supported by the manuscript.
+   reading is not supported by the manuscript. — 🟢 **Joan's non-signature / no
+   mark confirmed by owner (2026-09-09).** The verbatim clause wording remains
+   🟡 AI-read.
 3. **C-3 (the "or to her mother if she survive" clause): not present in this
    AI read of the manuscript.** The manuscript gives the annuity to Joan "for and
    Dureing her naturall life" with no matrilineal reverter; the AI read matches
-   Worth, which also lacks such a clause. Pending human paleography before this
-   is stated as proven.
+   Worth, which also lacks such a clause. — 🟢 **Confirmed by owner (2026-09-09):**
+   no mother clause (matches AI read).
 4. **Recording clerk:** the colony manuscript records the acknowledgment before
    **John Fones (Warden)** and the entry by **John Sanford (Recorder)**. Worth
    and F.L. Greene give John Fones as the recording authority; the manuscript
