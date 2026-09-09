@@ -101,7 +101,9 @@ def stage_text(record: dict, stage: tuple[str, str, str], finding_text: str) -> 
 
 
 def route(run_date: str, check: bool) -> int:
-    findings = sorted(path for path in FINDINGS.glob("*.md") if path.name != "README.md")
+    findings = sorted(
+        path for path in FINDINGS.glob("*.md") if path.name.lower() != "readme.md"
+    )
     output = QUEUE / run_date
     expected: dict[str, str] = {}
     for finding in findings:
