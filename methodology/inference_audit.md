@@ -131,7 +131,7 @@ This file catalogs claims currently on the site or in the repo that **feel** doc
 | 5 | Awashouse = Anashuecot | Move to analysis, 🟡 | ⬜ |
 | 6 | Tacommannan = Tocomminon | Move to analysis, 🟡 | ⬜ |
 | 7 | Greene-Potuck relationship | Rewritten to transport fact on context.html | ✅ 2026-09-04 |
-| 8 | Mother clause anomalous | Move to analysis, pending baseline | ⬜ |
+| 8 | Mother clause anomalous | Move to analysis, pending further evidence | Current evidence does not have clause.
 | 9 | Cocumscussoc burned | Find primary citation | ⬜ |
 | 10 | Conservator title | Verify primary vs Bates | ⬜ |
 | 11 | Surviving line | analysis.html only, Model A framing | ⬜ |
@@ -141,4 +141,4 @@ This file catalogs claims currently on the site or in the repo that **feel** doc
 ---
 
 *This file is referenced in `methodology/editorial_standards.md`.  
-Maintained under the Seven Laws of the Joan Archive.*
+Maintained under the Multi Agent Laws of the Joan Archive.*
