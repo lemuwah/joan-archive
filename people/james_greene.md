@@ -76,6 +76,7 @@ The Multi Agent Laws apply throughout this document.
 |------|------------|-------------------|----------------|----------------------|
 | 2026-09-09 | Kimi (Copilot) | Repo-internal restructure to universal format + discovery key; no new source research | No new genealogical findings | ❌ All record sets above remain unchecked |
 | 2026-09-09 | Kimi (Copilot) | Pass B lead extraction | Lead: the James instrument recording page (somewhere in DGS 008204949's 444 images) may word the Joan clauses differently than Daniel's — archive priority #5 | ❌ volume sweep incomplete (4 of 444 read) |
+| 2026-09-09 | Kimi (Copilot) | R2 in-house hunt: read all four existing transcriptions (Images 9–12) + the index on Image 9 | **(a)** The volume's grantor/grantee INDEX is at Image 9 left — the Greene rows would give the James page number directly, but no Greene/Green name is unambiguously legible at current scan resolution (the row ending "...10" plausibly = the Daniel instrument on p.10; unconfirmed). **(b)** The Worth 1921 pp. 173–174 abstract of the James instrument is the only James text the archive holds; its read is already on file (beneficiary, not co-grantor — digitization/transcriptions/008204949-10.md). **(c)** Images 11–12 ruled out as the James instrument (Havens acknowledgment + Paine/Rochester instruments) | ❌ Hi-res Image 9 index read; ❌ images 13+ (the volume's actual page sequence); ❌ any index-for-pages-173/174 lookup |
 
 ---
 
