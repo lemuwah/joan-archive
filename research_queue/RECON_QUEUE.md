@@ -10,7 +10,7 @@
 
 | # | Lead | Question it settles | Repository | Status |
 |---|---|---|---|---|
-| R1 | **25 Sep 1685 Clark→Brinley deed, full text** (from joseph_clark_francis_brinley.md) | C-2 death date; may name who held the Greene land in 1685 — if "his widow," Joan gains a second appearance | Jamestown Town Records / RI State Archives / FamilySearch Jamestown books | ❌ NOT SEARCHED |
+| R1 | **25 Sep 1685 Clark→Brinley deed, full text** (from joseph_clark_francis_brinley.md) | C-2 death date; may name who held the Greene land in 1685 — if "his widow," Joan gains a second appearance | **Custody located 2026-09-09:** originals = Jamestown Town Clerk; microfilm = RI State Archives. Digitized route: FamilySearch RI deed series (two DGS numbers reported ⚠️ UNVERIFIED — must be confirmed at a FamilySearch center; no full 1680s Jamestown transcription found online, scoped negative). Human step required | 🟡 LOCATOR DONE — document itself still unread |
 | R2 | **The James instrument recording page** inside DGS 008204949 (444 images, 4 read) | James's deed may word the Joan clauses differently than Daniel's | FamilySearch, in-hand | ❌ IN PROGRESS (archive priority #5) |
 | R3 | **1658 Pawtuxet co-signing cluster, full deed text** (RESEARCH_QUEUE P1-B) | Which John witnesses "John Greene Junr Warwick" → Carpenter — firewall evidence | RI Land Evidences / Warwick records | ❌ NOT SEARCHED |
 | R4 | **18 Oct 1686 purchase deed** "in association with John Greene and others" (from henry_tibbitts.md) | Which John (firewall); names the full associate set | NK/Kingstown land records | ❌ NOT SEARCHED |

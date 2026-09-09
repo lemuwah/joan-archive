@@ -70,6 +70,7 @@ The Multi Agent Laws apply throughout this document.
 |------|------------|-------------------|----------------|----------------------|
 | 2026-09-09 | Kimi (Copilot) | Repo-internal restructure to universal format + discovery key; no new source research | No new genealogical findings | ❌ All record sets above remain unchecked |
 | 2026-09-09 | Kimi (Copilot) | Pass B lead extraction | Lead: pulling the deed itself settles C-2 and may name the land's 1685 holder — if "his widow," Joan gains a second appearance 3+ years after the 1682 deed | ❌ Jamestown deed not yet pulled |
+| 2026-09-09 | Kimi (Copilot) | Digitized-locator hunt for the 1685 deed's original (R1 of RECON_QUEUE) | Custody path confirmed by RIHS/State Archives finding aids: **originals stay with the Jamestown Town Clerk; the RI State Archives holds microfilm copies**. Two FamilySearch series were *reported* by a research agent as plausibly containing it — "Rhode Island Deeds 1648–1960" (DGS 1542410) and a Newport County/Jamestown series (DGS 1449619) — **both ⚠️ UNVERIFIED: DGS numbers not confirmed to resolve; do not cite until checked at a FamilySearch center or against the live catalog**. No published full transcription of 1680s Jamestown deeds located on Internet Archive/HathiTrust (scoped negative) | ❌ FamilySearch catalog not directly browsed (login wall); ❌ Town Clerk not contacted; ❌ State Archives microfilm index not checked |
 
 ---
 
