@@ -6,7 +6,7 @@ Three secondary sources describe the life-estate clause of the March 24, 1682 ho
 
 | Source | Wording | Type |
 |---|---|---|
-| **NK Manuscript (Image 10, AI read ⚠️)** | "until such time as God Almighty has Required it of **him or his Wife** or during her natural life" | Manuscript text (AI-transcribed, UNVERIFIED) |
+| **NK Manuscript (Image 10, AI read ⚠️ — re-read 2026-09-09 contradicts earlier read)** | Earlier read: "until such time as God Almighty has Required it of **him or his Wife** or during her natural life". Careful re-read (2026-09-09): clause reads in the standard form — "aforsd John Green duering his naturall life and [Joane] Green his Wife for and dureing her naturall life [to Daniell] son of John & Joane Green." No "him or his Wife", no "God Almighty", no "or to her mother". | Manuscript text (AI-transcribed, UNVERIFIED — two AI reads conflict; owner paleography needed) |
 | **Worth 1921 abstract (James instrument)** | "unto John Green... and after his decease to **Joane Greene, his wife**" | Abstractor's summary of manuscript |
 | **F.L. Greene 1894 p. 10** | "as long as their **father or mother** should live" | Paraphrase of deed |
 | **Various genealogy sites / AI outputs** | "or to **her mother** if she survive" | Unattributed — NO primary or secondary source found |
@@ -18,7 +18,16 @@ F.L. Greene 1894 p. 10 reads verbatim:
 
 > "March 24th, 1682, he deeded his son Daniel 120 acres bordering on Allen's Harbor, and to his son James 60 acres adjoining, each of said sons to pay thirty shillings annually as long as their **father or mother** should live. The land was bounded partly by land of son John."
 
-The NK manuscript (Image 10, AI read) has: "until such time as God Almighty has Required it of **him or his Wife** or during her natural life."
+### Earlier NK read vs. re-read (2026-09-09)
+The NK manuscript (Image 10) was first AI-read as: "until such time as God Almighty has
+Required it of **him or his Wife** or during her natural life." A careful re-read of the
+damaged leaf on 2026-09-09 (see
+`research_findings/2026-09-09_nk_daniel_instrument_transcript_AI.md`) does **not**
+support that phrasing — the clause reads in the standard "John during his life and
+Joan his wife during her natural life, then the son" form, consistent with the colony
+original. The earlier "him or his Wife" / "God Almighty" wording was likely a
+misread of the garbled, water-damaged text. The two AI reads conflict; only the
+owner's paleography of Image 10 can settle the exact NK wording.
 
 These describe the SAME clause. F.L. Greene modernized "him or his Wife" to "father or mother." The meaning is identical: the annuity continues until both parents have died.
 
@@ -63,6 +72,16 @@ copy. The NK read's "him or his Wife" therefore remains 🟡 AI-read. The two
 manuscripts are different physical documents; a future paleography of the NK
 copy may or may not match the colony original's confirmed absence of a mother
 clause.
+
+**Update (2026-09-09):** a careful AI re-read of the NK Image 10 leaf now
+**contradicts** the earlier "him or his Wife" attribution — the re-read finds the
+standard "John during his life and Joan his wife during her natural life" form,
+with no "him or his Wife", no "God Almighty", and no "or to her mother" (see
+`research_findings/2026-09-09_nk_daniel_instrument_transcript_AI.md`). The two
+AI reads conflict; the owner's paleography of Image 10 is the gating step to
+settle the exact NK wording. The NK copy is the **Daniel** instrument (120 acres),
+a sibling to the colony **James** instrument (60 acres) — different physical
+documents and different grantees, same grantor and date.
 
 **Status (updated): C-3 remains 🟡 PARTIALLY RESOLVED.**
 - F.L. Greene's "father or mother" = paraphrase of manuscript's "him or his Wife" → RESOLVED (analytical)
