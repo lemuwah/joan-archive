@@ -1,7 +1,6 @@
 > This archive documents lives lived between approximately 1600–1750 in Narragansett country (present-day Rhode Island). All records from this period were created within colonial legal systems and reflect their biases, categories, and blind spots. Every name found here — English, Narragansett, Niantic, mixed-heritage, unknown — represents a real person whose full story these records were not designed to capture. Content may include references to war, captivity, enslavement, displacement, legal coercion, and loss. These are documented realities of the period, not abstractions.
 >
-> All cultural and genealogical content is included for research purposes in the quest to identify Joan Unknown Greene and will be revised or removed if requested by descendant communities or tribal representatives. Search direction bias check: When an agent recommends "where to look next," ask: is this recommendation biased toward digitized, English-language, colonial-framework sources? What record types exist that this agent might not know to suggest? What would a Narragansett historian, a maritime historian, an archaeologist, a linguist look for that a genealogist wouldn't?
->
+
 > ---
 layout: page
 title: Contamination Index
@@ -52,7 +51,7 @@ This is a pure algorithmic guess created by tree-merging.
 
 ### 🟡 Claim: "Anashuecot used a bow-and-arrow mark." — RECLASSIFIED 2026-07-17
 **Status:** ⚪ UNVERIFIED (was ⚫ NULL)
-**Why the change:** This was logged as a 2023–2024 AI hallucination with no colonial deed support. That's no longer the full picture — `images/absolom-affidavit.jpg` (the 1677/8 Absolom affidavit itself, see anchor below) shows a torn/damaged section directly over the mark location in the signature block, with a shape at least consistent with a bow-and-arrow pictograph. The tear itself is real; what it depicts is not confirmed. Not treated as fabrication anymore. Not treated as proven either — needs the physical document or a higher-resolution scan before any status upgrade past UNVERIFIED.
+**Why the change:** This was logged as a 2023–2024 AI hallucination with no colonial deed support. That's no longer the full picture — `images/absolom-affidavit.jpg` (the 1677/8 Absolom affidavit itself, see anchor below) shows a torn/damaged section directly over the mark location in the signature block, with a shape at least consistent with a bow-and-arrow pictograph. The tear itself is real; what it depicts is not confirmed. Not treated as fabrication anymore. Not treated as proven either — needs the physical document or a higher-resolution scan before any status upgrade past UNVERIFIED. 
 
 ---
 
@@ -74,31 +73,33 @@ This is a misreading of Narragansett leadership lists.
 **Why:** This is contamination from La Mance (1904), who fabricated Greene genealogy to fill gaps.
 
 ---
+### ❌ Claim: **1682 Pawtuxet sale** “Joan” gives **“free & voluntary consent”** and signs **“her marke.”**
+**Status:**  — RECLASSIFIED 09/09/2026 officially ⚪ UNVERIFIED Unable to follow source trail. source broken. 
+
+
+- **1703 Fones Record entry**  **Status:**  — RECLASSIFIED 09/09/2026 officially ⚪ UNVERIFIED
+  Re-enters the 1672 deed and 1677/8 affidavit 31 years later. The Transfer is Dated March 1681(82)
+  
+---
 
 ## 🟩 3. What the Primary Sources Actually Say
 
 These are the **PROVEN** anchors from the documentary record:
 
-- **1672 Fones Purchase deed**  
+- **1672 Fones Purchase deed** 
   Names **Anashuecot** as “chiefe Sachem and heire properly.”
 
 - **1677/8 Absolom affidavit**  
   States she was “**conveyed out of the country**,” father **Tocomminon**, brother **Washaucutt**. Scan (`images/absolom-affidavit.jpg`, pp.22–23) shows tear damage over the mark area next to Anashuecot's name — see UNVERIFIED bow-and-arrow entry above; not confirmed, not fabricated.
 
-- **1682 Pawtuxet sale**  
-  “Joan” gives **“free & voluntary consent”** and signs **“her marke.”**
-
 - **1682 home-place deed**  
-  Life-estate clause: “as long as their **father or mother** should live.”
-
-- **1703 Fones Record entry**  
-  Re-enters the 1672 deed and 1677/8 affidavit 31 years later.
+  Life-estate clause: “as long as their **father or mother** should live.” Joane Does NOT sign. 
 
 None of these documents mention:
 - Alice Daniels  
 - Cojonoquond  
 - English maternal lines  
-- any English birth identity for Joan
+- any English birth identity for Joane Greene. 
 
 ---
 
@@ -113,7 +114,7 @@ Genealogy platforms:
 
 This is structural erasure.
 
-Your site exists to correct it.
+This site exists to correct it.
 
 ---
 
@@ -143,7 +144,7 @@ This index protects your research from:
 ---
 
 ## Final Note
-
+> All cultural and genealogical content is included for research purposes in the quest to identify Joan Unknown Greene and will be revised or removed if requested by descendant communities or tribal representatives. Search direction bias check: When an agent recommends "where to look next," ask: is this recommendation biased toward digitized, English-language, colonial-framework sources? What record types exist that this agent might not know to suggest? What would a Narragansett historian, a maritime historian, an archaeologist, a linguist look for that a genealogist wouldn't?
 This site uses **structural reconstruction**, not narrative genealogy.  
 Every claim must survive:
 - the MULTI AGENT Laws,
