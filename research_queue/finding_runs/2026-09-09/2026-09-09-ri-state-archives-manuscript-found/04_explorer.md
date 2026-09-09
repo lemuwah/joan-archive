@@ -1,3 +1,24 @@
+# Explorer Queue Packet — research_findings/2026-09-09_ri_state_archives_manuscript_found.md
+
+**Finding ID:** `FINDING-415110461f87`
+**Status:** `PENDING_HUMAN_REVIEW`
+**Source SHA-256:** `7c7cedc1818afa44a935eb0af94d1dfccb64542c779675eb2514a75001b3bf32`
+**Stage purpose:** expand sideways context and identify where evidence may be hiding in plain sight.
+**Publication rule:** This is a review packet, not evidence and not an approval.
+
+## Required action
+Process this finding as stage `04_explorer`. Preserve the exact source path and hash.
+Do not edit the source finding or promote any claim to PROOF.
+
+## Image gate
+Referenced images: 1682_homeplace_james_instrument_manuscript_folios259-260_RIStateArchives.jpg, 1682_homeplace_james_instrument_manuscript_folios259-260_view.jpg.
+Images already staged in `images/_pending_review/`: 1682_homeplace_james_instrument_manuscript_folios259-260_RIStateArchives.jpg, 1682_homeplace_james_instrument_manuscript_folios259-260_view.jpg.
+Referenced images already elsewhere in `images/` and not pending: none.
+Referenced images not found in the archive: none.
+Any newly supplied image belongs in `images/_pending_review/` until a human reviews and promotes it.
+
+## Finding text
+```markdown
 # Finding: Joan's Deed Located in the Original Manuscript — RI State Archives Land Records No. 1, Folios 259–260
 
 > **AI-sourced working read (Law 7 — No Trust Without Evidence).** The
@@ -176,3 +197,17 @@ Witnesses: `Henry H Tibbitts his marke` (mark = capital `H`);
 4. Optional: fetch the "Complete Volume PDF" (`IO_3d98349c`) to confirm folio
    pagination end-to-end and check whether the Daniel instrument appears anywhere
    in the colony volume (expected: no).
+```
+
+## Required output
+Record source anchors, uncertainty, contradictions, and next actions. Keep person identity separate from name similarity.
+
+## Required sideways-context checklist
+- Map household people, witnesses, neighbors, in-laws, buyers, sellers, and officials.
+- Expand across land, probate, court, church, militia, servant, captivity, shipping, and Indigenous-centered records.
+- Test Rhode Island, Massachusetts, Connecticut, Plymouth, New York, Crown, port, and local town repositories.
+- Search EVERY variant of EVERY name in the finding — full clusters from methodology/name_variant_registry.md (standard, scribe drift, OCR-plausible, phonetic) — in EVERY repository searched, and log which variants were queried. A name missed for spelling is a name lost.
+- Track every John Greene appearance 1600-1750 across English, Irish/Ulster, Scottish, port-book, and local-town paperwork — each is a firewall-relevant capture per methodology/collection_policy.md (the Greene Net).
+- Search relationship descriptions ('wife of', 'Goodwife', 'widow', 'son of', 'his marke'), not only the target person's name.
+- Follow where the leads point, including jurisdictions and languages the finding does not name.
+- For each proposed edge, state the source anchor that would prove it and the record that would disprove it.

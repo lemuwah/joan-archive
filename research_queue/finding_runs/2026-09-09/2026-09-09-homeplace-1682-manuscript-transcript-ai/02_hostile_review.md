@@ -1,3 +1,24 @@
+# Hostile Review Queue Packet — research_findings/2026-09-09_homeplace_1682_manuscript_transcript_AI.md
+
+**Finding ID:** `FINDING-1e67fe6d171d`
+**Status:** `PENDING_HUMAN_REVIEW`
+**Source SHA-256:** `ddbb0859c164ac910e26563a1c2db19f151251bc17e87278c98aa2cf1a1d507c`
+**Stage purpose:** attack identity collisions, circular citations, OCR error, and unsupported inference.
+**Publication rule:** This is a review packet, not evidence and not an approval.
+
+## Required action
+Process this finding as stage `02_hostile_review`. Preserve the exact source path and hash.
+Do not edit the source finding or promote any claim to PROOF.
+
+## Image gate
+Referenced images: 1682_homeplace_james_instrument_manuscript_folios259-260_RIStateArchives.jpg.
+Images already staged in `images/_pending_review/`: 1682_homeplace_james_instrument_manuscript_folios259-260_RIStateArchives.jpg.
+Referenced images already elsewhere in `images/` and not pending: none.
+Referenced images not found in the archive: none.
+Any newly supplied image belongs in `images/_pending_review/` until a human reviews and promotes it.
+
+## Finding text
+```markdown
 # AI-Assisted Paleographic Transcript — Home-Place Deed (John Greene → James Greene), 24 March 1681/2
 
 > **🟡 AI-READ TRANSCRIPT — pending human paleography (Law 7).** This is a
@@ -185,3 +206,7 @@ Anashuecot threads), not to this deed.
 4. **Mark analysis:** no bow-and-arrow mark on this deed; only Tibbitts's "H."
 5. **Boundaries confirmed:** 60 ac at Aquednessett; N by John Greene; E by
    Quidnessett harbour; S by a river/brook & Daniell Greene; W by a highway.
+```
+
+## Required output
+Record source anchors, uncertainty, contradictions, and next actions. Keep person identity separate from name similarity.

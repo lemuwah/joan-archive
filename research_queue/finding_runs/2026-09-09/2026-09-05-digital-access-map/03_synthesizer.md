@@ -1,8 +1,8 @@
 # Synthesizer Queue Packet — research_findings/2026-09-05_digital_access_map.md
 
-**Finding ID:** `FINDING-b5ee62047ae6`
+**Finding ID:** `FINDING-3d5a099677c8`
 **Status:** `PENDING_HUMAN_REVIEW`
-**Source SHA-256:** `be34847e50cc1eabd4cd8aa18a107625c8e55044712bb2206bda76b2231ab5d6`
+**Source SHA-256:** `8e8ecba4563c858edc44a222cf25a94fd60ba180fe92d869a53374305fcf5c84`
 **Stage purpose:** propose bounded claims while preserving contradictions and status tags.
 **Publication rule:** This is a review packet, not evidence and not an approval.
 
@@ -39,12 +39,14 @@ Any newly supplied image belongs in `images/_pending_review/` until a human revi
 **Tag:** 🟡 UNREAD — high potential.
 
 ### 2. RI State Digital Archives — Land and Public Notary Records Vol. 1 (1648–1696)
-**Status:** Online at sosri.access.preservica.com
-**What it is:** The ORIGINAL colony-level land evidence volume that Worthington abstracted.
-**Why it matters:** If digitized images are available, we can read the MANUSCRIPT pages, not just Worthington's abstracts. Page 173 = Joan's deed in the original hand.
-**Where:** https://sosri.access.preservica.com/uncategorized/SO_34511b06-2694-4cbf-8833-645ddd7384c2/
-**Action:** Check if manuscript images are browsable.
-**Tag:** 🟡 UNREAD — could provide PROOF-level evidence.
+**Status:** Online at sosri.access.preservica.com — FULLY DIGITIZED (no login).
+**What it is:** The ORIGINAL colony-level land evidence volume that Worthington abstracted (RILE-I). ~230 individual 600-DPI folio images + a "Complete Volume PDF" + a modern typed "Name Index" (27 pp) + a typed "Volume 1 Index" (22-pp folio-by-folio index of the manuscript).
+**Why it matters:** We can now read the MANUSCRIPT pages, not just Worthington's abstracts. Joan's deed is on **manuscript folios 259–260 (image `_133`, Preservica IO_6f6b6c51-8275-4e3a-95d9-c1e205f459f7)** — NOT folio 173. (Earlier note "Page 173 = Joan's deed" conflated Worth's *printed* abstract page 173–174 with the manuscript folio; corrected 2026-09-09.)
+**Where:** Volume 1 folder https://sosri.access.preservica.com/uncategorized/SO_55976674-e8f4-44ab-b872-592c9ce4002e/ (parent Colony Records folder SO_34511b06-2694-4cbf-8833-645ddd7384c2). Download pattern: `https://sosri.access.preservica.com/download/file/IO_{uuid}`.
+**Image↔folio offset:** folio = 2 × image − 7 (e.g. _128 = 249–250; _133 = 259–260).
+**Finding:** See `research_findings/2026-09-09_ri_state_archives_manuscript_found.md`. Verbatim life-annuity clause AI-read and pending paleography.
+**Action:** DONE (located + read). Next: owner paleography of folios 259–260.
+**Tag:** 🟢 LOCATED + AI-READ (manuscript in hand; transcription pending paleography).
 
 ### 3. FamilySearch — North Kingstown Land Evidence Records, 1686–1921
 **Status:** Cataloged. At least one DGS identified: 008204949.

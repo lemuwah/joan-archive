@@ -1,0 +1,15 @@
+{
+  "finding_id": "FINDING-1e67fe6d171d",
+  "image_references": [
+    "1682_homeplace_james_instrument_manuscript_folios259-260_RIStateArchives.jpg"
+  ],
+  "images_not_pending": [],
+  "missing_image_references": [],
+  "pending_review_images": [
+    "1682_homeplace_james_instrument_manuscript_folios259-260_RIStateArchives.jpg"
+  ],
+  "run_date": "2026-09-09",
+  "source_path": "research_findings/2026-09-09_homeplace_1682_manuscript_transcript_AI.md",
+  "source_sha256": "ddbb0859c164ac910e26563a1c2db19f151251bc17e87278c98aa2cf1a1d507c",
+  "status": "PENDING_HUMAN_REVIEW"
+}

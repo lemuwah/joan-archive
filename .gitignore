@@ -1,2 +1,11 @@
 __pycache__/
-*.py[cod]images/_preservica/
+*.py[cod]
+
+# Preservica working downloads (large binaries + re-fetchable; IDs recorded in
+# images/_pending_review/MANIFEST.md). Text extractions are copied to repo root.
+images/_preservica/
+
+# Derivative reading-aid crops (regenerable from the canonical full-res image
+# in images/_pending_review/). Not primary sources.
+images/_pending_review/folio*_enh*.jpg
+images/_pending_review/signatures_block_enh*.jpg

@@ -1,0 +1,17 @@
+{
+  "finding_id": "FINDING-415110461f87",
+  "image_references": [
+    "1682_homeplace_james_instrument_manuscript_folios259-260_RIStateArchives.jpg",
+    "1682_homeplace_james_instrument_manuscript_folios259-260_view.jpg"
+  ],
+  "images_not_pending": [],
+  "missing_image_references": [],
+  "pending_review_images": [
+    "1682_homeplace_james_instrument_manuscript_folios259-260_RIStateArchives.jpg",
+    "1682_homeplace_james_instrument_manuscript_folios259-260_view.jpg"
+  ],
+  "run_date": "2026-09-09",
+  "source_path": "research_findings/2026-09-09_ri_state_archives_manuscript_found.md",
+  "source_sha256": "7c7cedc1818afa44a935eb0af94d1dfccb64542c779675eb2514a75001b3bf32",
+  "status": "PENDING_HUMAN_REVIEW"
+}

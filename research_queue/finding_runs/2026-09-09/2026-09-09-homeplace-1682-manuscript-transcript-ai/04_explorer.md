@@ -1,3 +1,24 @@
+# Explorer Queue Packet — research_findings/2026-09-09_homeplace_1682_manuscript_transcript_AI.md
+
+**Finding ID:** `FINDING-1e67fe6d171d`
+**Status:** `PENDING_HUMAN_REVIEW`
+**Source SHA-256:** `ddbb0859c164ac910e26563a1c2db19f151251bc17e87278c98aa2cf1a1d507c`
+**Stage purpose:** expand sideways context and identify where evidence may be hiding in plain sight.
+**Publication rule:** This is a review packet, not evidence and not an approval.
+
+## Required action
+Process this finding as stage `04_explorer`. Preserve the exact source path and hash.
+Do not edit the source finding or promote any claim to PROOF.
+
+## Image gate
+Referenced images: 1682_homeplace_james_instrument_manuscript_folios259-260_RIStateArchives.jpg.
+Images already staged in `images/_pending_review/`: 1682_homeplace_james_instrument_manuscript_folios259-260_RIStateArchives.jpg.
+Referenced images already elsewhere in `images/` and not pending: none.
+Referenced images not found in the archive: none.
+Any newly supplied image belongs in `images/_pending_review/` until a human reviews and promotes it.
+
+## Finding text
+```markdown
 # AI-Assisted Paleographic Transcript — Home-Place Deed (John Greene → James Greene), 24 March 1681/2
 
 > **🟡 AI-READ TRANSCRIPT — pending human paleography (Law 7).** This is a
@@ -185,3 +206,17 @@ Anashuecot threads), not to this deed.
 4. **Mark analysis:** no bow-and-arrow mark on this deed; only Tibbitts's "H."
 5. **Boundaries confirmed:** 60 ac at Aquednessett; N by John Greene; E by
    Quidnessett harbour; S by a river/brook & Daniell Greene; W by a highway.
+```
+
+## Required output
+Record source anchors, uncertainty, contradictions, and next actions. Keep person identity separate from name similarity.
+
+## Required sideways-context checklist
+- Map household people, witnesses, neighbors, in-laws, buyers, sellers, and officials.
+- Expand across land, probate, court, church, militia, servant, captivity, shipping, and Indigenous-centered records.
+- Test Rhode Island, Massachusetts, Connecticut, Plymouth, New York, Crown, port, and local town repositories.
+- Search EVERY variant of EVERY name in the finding — full clusters from methodology/name_variant_registry.md (standard, scribe drift, OCR-plausible, phonetic) — in EVERY repository searched, and log which variants were queried. A name missed for spelling is a name lost.
+- Track every John Greene appearance 1600-1750 across English, Irish/Ulster, Scottish, port-book, and local-town paperwork — each is a firewall-relevant capture per methodology/collection_policy.md (the Greene Net).
+- Search relationship descriptions ('wife of', 'Goodwife', 'widow', 'son of', 'his marke'), not only the target person's name.
+- Follow where the leads point, including jurisdictions and languages the finding does not name.
+- For each proposed edge, state the source anchor that would prove it and the record that would disprove it.
