@@ -41,9 +41,9 @@ Compiled genealogies on Geni, WikiTree, RootsWeb, and Ancestry REGULARLY merge t
 
 | Child | Evidence | Document | Tag |
 |-------|----------|----------|-----|
-| **James** | "the natural son of John and Joan Greene" | 1682 homeplace deed, Image 10 | 🟢 PROOF — AI TRANSCRIPTION |
-| **Benjamin** | "Beni Green of Kingstown" — buyer | 1682 homeplace deed, Image 10 | 🟢 PROOF — AI TRANSCRIPTION |
-| **Daniel** | Adjoining landowner in boundary description | 1682 homeplace deed, Image 10 | 🟢 PROOF — AI TRANSCRIPTION |
+| **James** | Proposed in the surrounding 1682 deed material; exact Image 10 wording remains paleography-pending | 1682 homeplace deed, Image 10 | 🟡 SOURCE VERIFIED / PALEOGRAPHY PENDING |
+| **Benjamin** | AI-assisted proposed reading: "Beni Green of Kingstown" — possible buyer | Image 10, bottom transaction | 🟡 SOURCE VERIFIED / PALEOGRAPHY PENDING |
+| **Daniel** | AI-assisted proposed reading: adjoining landowner/grantee context | 1682 homeplace deed, Image 10 | 🟡 SOURCE VERIFIED / PALEOGRAPHY PENDING |
 | **Edward** | "his brother Edward" in boundary | 1695/96 Benjamin-to-James deed | 🟢 PROOF — deed record |
 | **Edward** | Married Mary Tibbitts (Henry's daughter) | Henry Tibbitts probate (compilation) | 🟡 PLAUSIBLE |
 
@@ -69,7 +69,7 @@ These are cited as if they are birth registers. They are NOT.
 - **F.L. Greene** — Separates Warwick from other branches. Uses Salisbury parish for founder. For Quidnessett, uses inferred kinship.
 - **Bates (1918)** — NK town history. Contains claims about Joan (mark, consent) that have been 🔴 DISCREDITED by Image 10.
 
-**Rule:** A name in a compilation = 🟡 PLAUSIBLE. A name on a manuscript image = 🟢 PROOF — AI TRANSCRIPTION. No exceptions.
+**Rule:** A name in a compilation = 🟡 PLAUSIBLE. A name visibly recognized on a manuscript image may be SOURCE VERIFIED, but the exact reading and identity remain PALEOGRAPHY PENDING until professionally checked. No AI reading becomes PROOF by agreement alone.
 
 ---
 
@@ -132,7 +132,7 @@ Specific merging errors documented and flagged:
 
 1. **1695/96 Benjamin-to-James deed — full text.** Does it mention Joan? Most important unread document for Joan's life timeline.
 2. **September 1685 "now deceased" deed — full text.** Which deed? Who are the parties? May mention Joan as widow.
-3. **NK / Kings Province probate for John Greene Sr.** — Ken Carlson at RI State Archives. If a will exists, it would name Joan.
+3. **NK / Kings Province probate for John Greene Sr.** — Rhode Island State Archives custody or finding aids. If a will exists, it would name Joan.
 4. **Edward Greene's marriage record to Mary Tibbitts** — where and when? Henry Tibbitts's probate text.
 5. **Any deed mentioning Joan after 1682** — annuity transfer, property claim, death reference.
 

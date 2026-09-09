@@ -46,15 +46,15 @@ Every AI transcription in the archive gets this footer:
 
 | Claim | Tag | Basis |
 |---|---|---|
-| Joan named as wife in 1682 deed | PROOF — AI TRANSCRIPTION | Image 10, DGS 008204949 |
-| 30-shilling life annuity | PROOF — AI TRANSCRIPTION | Image 10 |
-| "John Green Senr" designation | PROOF — AI TRANSCRIPTION | Image 10 |
+| Joan named as wife in 1682 deed | SOURCE VERIFIED / PALEOGRAPHY PENDING | Worth abstract + human-verified Image 10, DGS 008204949 |
+| 30-shilling life annuity | SOURCE VERIFIED / PALEOGRAPHY PENDING | Worth abstract + Image 10 source; exact manuscript reading open |
+| "John Green Senr" designation | AI-SOURCED WORKING READ / PALEOGRAPHY PENDING | Image 10; human source check confirms the image, not the expansion |
 | John lived 40+ years in Narragansett | PROOF | 1679 affidavit text |
 | Cocumscussoc burned 1676 | PROOF | Multiple primary sources |
-| Benjamin as property buyer | PROOF — AI TRANSCRIPTION | Image 10 bottom |
-| Joan signed with mark | **DISCREDITED** | Image 10 — Joan does not sign |
-| Joan as co-grantor | **DISCREDITED** | Image 10 — John alone in granting clause |
-| "Or to her mother if she survive" | **DISCREDITED** | Image 10 reads "him or his Wife or during her natural life" |
+| Benjamin as property buyer | AI-SOURCED WORKING READ / PALEOGRAPHY PENDING | Image 10 bottom; name and role require expert review |
+| Joan signature or mark visible in checked crop | SOURCE VERIFIED / PALEOGRAPHY PENDING | Human visual check of Image 10 crop; full instrument review remains open |
+| Joan as co-grantor | **OPEN / AI-ASSISTED READING** | Image 10 crop is human-source-verified; granting-clause reading requires professional paleography |
+| "Or to her mother if she survive" | **UNVERIFIED** | Not visible in the checked crop or existing Worth/F.L. Greene texts; full manuscript reading remains open |
 | Joan = Anashuecot | PLAUSIBLE | Hypothesis, no document equates them |
 | Pawtuxet deed (May 1682) | PLAUSIBLE | Citation chain broken but deed details consistent across secondary sources |
 | Vol. VII pp. 177-178 citation | **DISCREDITED** | Searched, contains 1773 Gaspee records |

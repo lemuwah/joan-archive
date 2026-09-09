@@ -42,9 +42,9 @@ La Mance (1904) conflated two John Greenes and created a phantom maiden name ("J
 
 Four facts. Everything else is open. Every model starts from these four facts and nowhere else.
 
-1. Joan is named as wife of John Greene in a March 1682 land deed (Worth abstract + Image 10 AI transcription)
+1. Joan is named as wife of John Greene in a March 1682 land deed (Worth abstract + human-verified Image 10 source; detailed manuscript reading remains paleography-pending)
 2. A life annuity is reserved to her (amount under review — Worth says 30 shillings; manuscript read may differ)
-3. Joan does not sign or mark the 1682 deed (Image 10, 🟢 PROOF — AI TRANSCRIPTION)
+3. The human-checked Image 10 crop shows a John Green/Greene signature and a Tibbits mark; no Joan signature or mark is visible in that crop. Full-instrument paleographic confirmation remains pending.
 4. No other record of Joan has been located — no birth, baptism, marriage, death, burial, probate, church, or court record
 
 Do not add to this list without a primary source image. Do not subtract from it without documenting the withdrawal in `CORRECTIONS.md`.

@@ -11,8 +11,8 @@
 ## Fact 1
 
 **Statement:** Joan is named as wife of John Greene in a March 1682 land deed.
-**Source:** Worth abstract, *Rhode Island Land Evidences* Vol. I, p. 122 (Abstracts, 1921 ed.) + FamilySearch DGS 008204949, Image 10 (AI transcription)
-**Tag:** 🟢 PROOF — AI TRANSCRIPTION
+**Source:** Worth abstract, *Rhode Island Land Evidences* Vol. I, p. 122 (Abstracts, 1921 ed.) + human-verified source image: FamilySearch DGS 008204949, North Kingstown Land Records, Image 10 of 444; detailed transcription remains AI-assisted and paleography-pending.
+**Tag:** 🟡 SOURCE VERIFIED / PALEOGRAPHY PENDING
 **Notes:** Worth describes John Greene of Quidnessett conveying land. Joan is named as "Joane Greene, his wife." Image 10 AI transcription confirms the name. Full paleographic verification pending.
 
 *Transcribed by AI from manuscript image (FamilySearch DGS 008204949, Image 10). Working research read — not an expert paleographic verification. Verify against the original. This archive does not claim transcription authority.*
@@ -22,7 +22,7 @@
 ## Fact 2
 
 **Statement:** A life annuity is reserved to Joan, payable during her natural life.
-**Tag:** 🟢 PROOF — AI TRANSCRIPTION (amount is 🟡 OPEN QUESTION)
+**Tag:** 🟡 SOURCE VERIFIED / PALEOGRAPHY PENDING (amount is 🟡 OPEN QUESTION)
 **Source:** Worth abstract + Image 10 AI transcription
 **Notes:** Worth records a 30-shilling life annuity. The Image 10 AI transcription reads "dureing her naturall life" but the exact amount is under review — Worth and the direct manuscript read may disagree. The EXISTENCE of the annuity is verified. The AMOUNT is an open question. Do not state "30 shillings" as a verified fact on the live site.
 
@@ -31,9 +31,9 @@
 ## Fact 3
 
 **Statement:** Joan does not sign or mark the 1682 deed.
-**Tag:** 🟢 PROOF — AI TRANSCRIPTION
-**Source:** Image 10 — only John Greene Sr. signs
-**Notes:** Added Sep 2026. Joan is not a co-grantor. She receives a provision. She does not convey. The "bow and arrow mark" claim is 🔴 DISCREDITED (AI contamination from researcher brainstorming, not from any primary or secondary source).
+**Tag:** 🟡 SOURCE VERIFIED / PALEOGRAPHY PENDING
+**Source:** Human-verified Image 10 crop shows a John Green/Greene signature and a Tibbits mark; the crop does not show a Joan signature or mark.
+**Notes:** Added Sep 2026. This is a human visual observation of the crop, not a professional paleographic certification of the complete instrument. The "bow and arrow mark" claim is 🔴 DISCREDITED (AI contamination from researcher brainstorming, not from any primary or secondary source).
 
 ---
 

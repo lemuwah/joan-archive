@@ -18,7 +18,7 @@ The archive does not collapse uncertainty into narrative. It does not center one
 Every open model starts from the same verified facts (see `evidence/joan_verified_facts.md`):
 1. Joan is named as wife of John Greene in a March 1682 land deed
 2. A life annuity is reserved to her (amount is an open question)
-3. Joan does not sign or mark the deed (Image 10, 🟢 PROOF — AI TRANSCRIPTION)
+3. No Joan signature or mark is visible in the human-checked Image 10 crop; full-instrument paleographic confirmation remains pending.
 4. No other record of Joan has been located
 
 ---

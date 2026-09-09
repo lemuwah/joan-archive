@@ -1,0 +1,11 @@
+{
+  "finding_id": "FINDING-b5ee62047ae6",
+  "image_references": [],
+  "images_not_pending": [],
+  "missing_image_references": [],
+  "pending_review_images": [],
+  "run_date": "2026-09-09",
+  "source_path": "research_findings/2026-09-05_digital_access_map.md",
+  "source_sha256": "be34847e50cc1eabd4cd8aa18a107625c8e55044712bb2206bda76b2231ab5d6",
+  "status": "PENDING_HUMAN_REVIEW"
+}

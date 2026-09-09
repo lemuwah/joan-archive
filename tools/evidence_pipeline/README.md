@@ -8,12 +8,12 @@ The pipeline separates **finding** a source from **trusting** a source. Agents m
 
 ```text
 seed questions
-    -> collectors
-    -> candidate source records
-    -> archivist provenance pass
-    -> document verification pass
-    -> hostile review
-    -> human decision
+  -> research_findings intake
+  -> archivist provenance pass
+  -> hostile review
+  -> synthesizer bounded proposal
+  -> explorer sideways-context action
+  -> human decision
     -> evidence/ and timeline update
 ```
 
@@ -63,6 +63,13 @@ upgrade a candidate to verified evidence.
 Compares verified source records across the timeline and proposes a bounded statement. It must separate `PROOF`, `PLAUSIBLE`, and `DISCREDITED`, and preserve contradictions rather than resolve them by narrative smoothing.
 
 Output: proposed timeline event with source references.
+
+### Explorer follow-up
+
+Explorer runs after synthesis for every finding. It does not reopen a claim as
+fact. It expands the context sideways: associated people, witnesses, neighbors,
+institutions, jurisdictions, material records, Indigenous or non-English record
+families, and other places the evidence may be hiding in plain sight.
 
 ### Hostile reviewer
 
@@ -147,6 +154,10 @@ Use one issue or research question per run. Give every agent the same immutable 
 - the current research queue item
 - prior candidate records for deduplication
 
-Agents should write new outputs to a run-specific workspace first. A final consolidation job may produce a PR, but it must never auto-merge or write directly to `images/`, `evidence/`, `people/`, or published timeline pages.
+Agents should write new findings to `research_findings/` and new images to
+`images/_pending_review/`. The ordered queue writes review packets to a
+run-specific workspace first. A final consolidation job may produce a PR, but
+it must never auto-merge or write directly to `evidence/`, `people/`, or
+published timeline pages.
 
 The existing `tools/next_page/` workflow is the first collector implementation. Its images belong in `images/_pending_review/` and its results require the same gates above.

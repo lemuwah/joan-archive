@@ -13,9 +13,9 @@ This is the complete list. Nothing else qualifies.
 
 | # | Fact | Source | Tag |
 |---|------|--------|-----|
-| 1 | Joan is named as wife of John Greene in a March 1682 land deed | Worth abstract + Image 10 AI transcription | PROOF — AI TRANSCRIPTION |
-| 2 | A life annuity is reserved to her (amount unverified — Worth says 30 shillings, manuscript read may differ) | Worth abstract + Image 10 AI transcription | PROOF — AI TRANSCRIPTION (amount OPEN QUESTION) |
-| 3 | Joan does not sign or mark the 1682 deed | Image 10 AI transcription | PROOF — AI TRANSCRIPTION |
+| 1 | Joan is named as wife of John Greene in a March 1682 land deed | Worth abstract + human-verified Image 10 source; detailed reading paleography-pending | SOURCE VERIFIED / PALEOGRAPHY PENDING |
+| 2 | A life annuity is reserved to her (amount unverified — Worth says 30 shillings, manuscript read may differ) | Worth abstract + human-verified Image 10 source; detailed reading paleography-pending | SOURCE VERIFIED / PALEOGRAPHY PENDING (amount OPEN QUESTION) |
+| 3 | No Joan signature or mark is visible in the checked Image 10 crop | Human visual check of Image 10 crop; full instrument requires expert review | SOURCE VERIFIED / PALEOGRAPHY PENDING |
 | 4 | No other record of Joan has been located | Negative search result (as of Sep 2026) | Methodological |
 
 **Rule:** Only these four facts may appear on `index.html` as statements about Joan. Everything else belongs on `analysis.html` with appropriate status tags.

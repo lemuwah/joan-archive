@@ -11,15 +11,15 @@ permalink: /primary/homeplace-1682/
 </div>
 
 # 1682 Home-Place Deed
-**Status:** 🟢 PROVEN (deed exists; Joan named as beneficiary) / ⚠️ "or to her mother if she survive" wording UNVERIFIED — see [`contradictions/mother-clause-wording.md`](../contradictions/mother-clause-wording.md)
+**Status:** 🟡 SOURCE VERIFIED BY HUMAN EYES (deed image and broad anchors) / ⚠️ full paleography pending / ⚠️ "or to her mother if she survive" wording unverified — see [`contradictions/mother-clause-wording.md`](../contradictions/mother-clause-wording.md)
 
 This deed confirms **Joan** as John's living wife and as **beneficiary** of the annuity after his death.
 
-## What the manuscript says (AI-transcribed, ⚠️ UNVERIFIED)
+## What the manuscript may say (AI-assisted working read, paleography pending)
 
-Image 10 of the NK Land Records (FamilySearch DGS 008204949) preserves the **Daniel instrument** — John Green Senr's deed of 120 acres to son Daniel. Four independent AI reads (Claude + Migoo ×3) of the FamilySearch full-resolution scan reveal:
+Image 10 of the NK Land Records (FamilySearch DGS 008204949) is a real online source image, confirmed by human eyes as **Image 10 of 444**. The local crop is `images/008204949-10green-fones-tibbits-march-1682.JPG`. It visibly contains a John Green/Greene context, an H. Tibbits mark, John Fones, and a March 1681/82 date fragment. Four AI reads propose that it preserves the **Daniel instrument** — that identification and the word-for-word reading remain subject to professional paleography.
 
-- **Grantor:** "the Said **John Green Senr**" — Five-John Firewall confirmed from manuscript
+- **Grantor:** AI reads propose "the Said **John Green Senr**"; professional paleographic confirmation is pending
 - **Joan's role:** Joan appears in the **annuity/life-estate clause**, NOT in the granting clause. The phrasing reads: "*until such time as God Almighty has Required it of him or his Wife or during her natural life... of John & Joane Greene*"
 - **Joan is a BENEFICIARY**, not a co-grantor. John alone acts in the "Know all People" clause. Only John signs.
 - **Annual payment:** Thirty shillings, paid yearly — matches F.L. Greene 1894 paraphrase
@@ -57,10 +57,10 @@ The Worth 1921 abstract of the James instrument reads: *"...unto John Green... a
 None of these claims are supported by the manuscript text.
 
 ## Evidence Status
-🟢 **PROVEN** — The deed is paraphrased in F.L. Greene 1894, p.10, abstracted (James instrument only) in Worth 1921 pp. 173–174, and survives as a post-1686 record copy (Daniel instrument) in NK Land Records (FamilySearch DGS 008204949, img 10). ⚠️ The "or to her mother" wording is **not** in any of these.
+🟡 **SOURCE VERIFIED BY HUMAN EYES / PALEOGRAPHY PENDING** — The image is from the real North Kingstown Land Evidence source, and its broad visible anchors are confirmed. The complete deed reading and legal interpretation remain open. The "or to her mother" wording is **not** in the Worth abstract or F.L. Greene paraphrase.
 
 ## Also on Image 10: Start of George Havens Deed
-The bottom of Image 10's right page begins a new instrument — George Havens selling land, with **"Beni Green of Kingstown"** identified as the BUYER paying thirty pounds. This is Benjamin² Greene's **first independent documentary appearance outside the Bates roster**, confirmed from manuscript. Full details in the transcription file.
+The bottom of Image 10's right page begins a new instrument — AI reads propose that **"Beni Green of Kingstown"** is the BUYER paying thirty pounds. This is a lead toward an independent Benjamin² Greene appearance, not a professionally confirmed identification. Full details and the uncertainty are in the transcription file.
 
 ## Transcription (Worth 1921 abstract, pp. 173–174 — James instrument only; ellipses are Worth's)
 

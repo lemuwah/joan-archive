@@ -37,7 +37,7 @@
 
 | AI | What It Read | Status | Notes |
 |---|---|---|---|
-| Claude (via Migoo) | FamilySearch DGS 008204949, Image 10 | PROOF — AI TRANSCRIPTION | Working research read. NOT paleographic verification. All claims from this read carry the AI TRANSCRIPTION tag. |
+| Claude (via Migoo) | FamilySearch DGS 008204949, Image 10 | AI-SOURCED working read only | Human eyes now verify the online source image and broad visible anchors; AI did not provide paleographic verification. Detailed claims remain paleography-pending. |
 | Kimi | FamilySearch DGS 008204949, Image 10 | Cross-check | Independent read attempted, access restricted. |
 
 ## Other AI Tools Used

@@ -55,7 +55,7 @@ Every identified contamination — AI hallucination, fabricated source, algorith
 Contamination is never silently deleted or quietly corrected in place — it is held on record with the same rigor as proven evidence, so any agent or reader can see not just what is true, but what was tested, where it came from, and why it failed.
 
 **Expanded (Sep 5, 2026):**
-- The "bow and arrow mark" claim is an example of Law 4 contamination. No primary or secondary source describes Joan’s mark as a bow and arrow. The claim originated in researcher brainstorming and was echoed by AI sessions as if it were sourced. Image 10 (DGS 008204949) confirms Joan does not sign the deed at all. This is logged as a contamination vector: **AI echo of unstructured discussion misinterpreted as citation.**
+- The "bow and arrow mark" claim is an example of Law 4 contamination. No primary or secondary source describes Joan’s mark as a bow and arrow. The claim originated in researcher brainstorming and was echoed by AI sessions as if it were sourced. The human-checked Image 10 crop shows a John Green/Greene signature and a Tibbits mark; no Joan signature or mark is visible in that crop. Full-instrument paleographic confirmation remains pending. This is logged as a contamination vector: **AI echo of unstructured discussion misinterpreted as citation.**
 
 ---
 
@@ -81,9 +81,9 @@ The archive investigates **who Joan was** — not a preferred theory about who J
 No identity model receives more visual space, more confident language, or more prominent placement than its evidence warrants. The absence of English records is not evidence for Narragansett identity — it is evidence of absence from English records, consistent with multiple models.
 
 Every open model starts from the same four verified facts:
-1. Joan is named as wife of John Greene in a March 1682 land deed (Worth abstract + Image 10 AI transcription)
+1. Joan is named as wife of John Greene in a March 1682 land deed (Worth abstract + human-verified Image 10 source; detailed manuscript reading remains paleography-pending)
 2. A life annuity is reserved to her (amount under review — Worth says 30 shillings; manuscript read may differ)
-3. Joan does not sign or mark the deed (Image 10, 🟢 PROOF — AI TRANSCRIPTION)
+3. The human-checked Image 10 crop shows a John Green/Greene signature and a Tibbits mark; no Joan signature or mark is visible in that crop. Full-instrument paleographic confirmation remains pending.
 4. No other record of Joan has been located
 
 See `AGENT_GUARDRAILS.md` §2–3 for implementation rules.

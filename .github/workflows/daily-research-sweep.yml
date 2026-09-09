@@ -36,6 +36,9 @@ jobs:
         run: python tools/document_ecology/build_search_bundle.py
         continue-on-error: true
 
+      - name: Route completed research findings
+        run: python tools/findings_pipeline/route_findings.py
+
       - name: Check for changes
         id: check_changes
         run: |
@@ -68,6 +71,7 @@ jobs:
             research_queue/daily_sweep/**
             research_queue/agent_runs/**
             research_queue/document_ecology/**
+            research_queue/finding_runs/**
             agents/Explorer/daily_logic.md
             agents/Archivist/daily_logic.md
             agents/Synthesizer/daily_logic.md

@@ -51,7 +51,7 @@ Joan's truth — if it exists in any document — is in the LOCAL TOWN RECORDS:
 - **Jamestown Land Evidence Records** — the Clark-to-Brinley 1685 deed. "Now deceased." Can we see the original?
 - **Newport Town Records** — births, marriages. Were any of Joan's children recorded?
 
-These records exist. They are held at the RI State Archives (Kenneth Carlson) and/or the respective town clerks. Some may be on FamilySearch microfilm.
+These records exist. They are held at the RI State Archives and/or the respective town clerks. Some may be on FamilySearch microfilm.
 
 The archive is clean. The laws are holding. The system caught three errors today. The honest state is this: we know Joan's name, her husband, and her provision. Everything else requires documents we haven't read yet.
 

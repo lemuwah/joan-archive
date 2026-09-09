@@ -15,7 +15,7 @@ These require visiting an archive or requesting a scan.
 | # | Source | Location | What We're Looking For | Priority | Status |
 |---|---|---|---|---|---|
 | 1 | RIHS Mss 461 — "will complaint" | Rhode Island Historical Society, Providence | Possible Joan reference in a legal complaint related to John Greene's will. May contain information about Joan's status after 1682. | **HIGHEST** | ⚫ NOT EXAMINED |
-| 2 | FamilySearch DGS 008204949, Images 9–12 | Online (FamilySearch) but requires paleographic skill | The manuscript original of the March 1682 deed. Resolves all 8 suspended items (S-001–S-008 except S-007 and S-008). AI transcription done; human paleographic verification pending. | **HIGHEST** | 🟡 AI READ, HUMAN VERIFICATION PENDING |
+| 2 | FamilySearch DGS 008204949, Images 9–12 | Online (FamilySearch) but requires paleographic skill | The manuscript original of the March 1682 deed. Image 10 provenance and broad visible anchors are human-verified; complete transcription, exact identity, legal role, and damaged wording still require professional paleography. | **HIGHEST** | 🟡 SOURCE VERIFIED / PALEOGRAPHY PENDING |
 | 3 | Jamestown Town Records | FamilySearch (Land Evidence Records 1680–1899) | 1685 Clark-to-Brinley deed referencing John Greene as "now deceased" — resolves C-2 death date contradiction. | HIGH | ⚫ NOT EXAMINED |
 | 4 | NK Land Evidence Records 1686–1921 | FamilySearch | 1695/96 Wightman deed; Benjamin-to-James deed. Resolves Joan's timeline post-1682. | HIGH | ⚫ NOT EXAMINED |
 | 5 | First Baptist Church, Providence | Physical archive (fragmentary) | 1640s–1680s membership rolls — possible church record for Joan if English (Model B). | HIGH | ⚫ NOT SEARCHED |

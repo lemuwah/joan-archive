@@ -1,11 +1,13 @@
 # Daily Four-Agent Review
 
-`orchestrate.py` is the second stage of the daily research workflow. It consumes the dated JSONL output from `tools/daily_research/sweep.py` and creates four independent, review-gated outputs:
+`orchestrate.py` is the discovery-report stage of the daily research workflow. It consumes the dated JSONL output from `tools/daily_research/sweep.py`. Completed findings use `tools/findings_pipeline/route_findings.py` for the ordered queue below.
 
-- `Explorer` — preserves discovery queries, catalog results, and scoped misses.
+The canonical findings order is **Archivist -> Hostile Review -> Synthesizer -> Explorer**.
+
 - `Archivist` — queues stable identifiers, page/image anchors, and deduplication checks.
-- `Synthesizer` — groups results into bounded lead proposals; it does not create facts.
 - `Hostile Review` — attacks identity, date, OCR, circular-citation, and access assumptions.
+- `Synthesizer` — groups results into bounded lead proposals; it does not create facts.
+- `Explorer` — follows each finding with sideways context and new places to search.
 
 After those role passes, the runner applies the same four layers to every origin model A–H:
 

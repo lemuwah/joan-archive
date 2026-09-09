@@ -18,7 +18,7 @@
 | 2026-09-05 | Bartlett, Colony Records Vols I–III | RI colony records 1636–1706 | Joan Greene, Joane Greene | NULL — Joan absent from all colony-level records | Web search | John appears at pp. 45, 51, 255–263, 391–393 (Vol II) |
 | 2026-09-05 | Austin, Genealogical Dict. of RI | RI genealogies | Joan Greene, wife of John | NULL — no maiden name entry | Web search | |
 | 2026-09-05 | Savage, Gen. Dict. of New England | Four-colony genealogies | Joan Greene | NULL — not in Savage | Web search | |
-| 2026-09-05 | NK Town Clerk / RI State Archives | Land Evidence Records | Joan Greene | DGS 008204949 identified but images not yet examined | Web search | Kenneth Carlson confirmed custody |
+| 2026-09-05 | NK Town Clerk / RI State Archives | Land Evidence Records | Joan Greene | DGS 008204949 identified but images not yet examined | Web search | Rhode Island State Archives confirmed custody |
 | 2026-09-05 | CT Colonial Records (Trumbull) | 1663–1665 jurisdiction disputes | Joan Greene, John Greene | NULL for Joan; NULL for John in CT records | Web search | John's CT adherence documented via Bartlett II p. 51 pardon |
 | 2026-09-05 | MA Bay Colony Records (Shurtleff) | Commissioners of United Colonies, Atherton, KPW | Joan Greene, John Greene of Quidnessett | NULL for both | Web search | |
 | 2026-09-05 | Royal Commission 1664–1665 | Narragansett boundary depositions | Joan Greene, Greene household | NULL | Web search | |

@@ -35,7 +35,7 @@
 |--------|-----------|----------|
 | George S. Greene Papers (NYHS?) | Family genealogy notes, possible oral tradition about Joan | 🟡 LOW |
 | RIHS Manuscript Collections | Bates's working papers? | 🟡 LOW |
-| RI State Archives (Ken Carlson) | Early NK records custody | 🟡 MEDIUM |
+| RI State Archives | Early NK records custody | 🟡 MEDIUM |
 
 ---
 
