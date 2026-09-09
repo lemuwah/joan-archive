@@ -100,18 +100,26 @@ Benj. Green).
    of John & Joane Green." — 🟡 AI-read. The *structure* matches the colony James
    instrument (annuity to John during his life, then to Joan his wife during her
    natural life, then to the son). Verbatim wording pending the owner.
-2. **C-3 ("or to her mother if she survive"):** NOT present in the NK Daniel copy
-   either. Both the colony original (owner-confirmed) and this NK copy (AI read)
-   lack the matrilineal reverter. — 🟡 AI-read for the NK copy.
-3. **The earlier "him or his Wife" / "God Almighty" attribution is NOT supported
-   by this re-read.** The earlier AI read attributed "until such time as God
-   Almighty has Required it of him or his Wife or during her natural life" to
-   this NK Image 10 (recorded in `contradictions/mother-clause-wording.md`). A
-   careful re-read of the damaged leaf does not support that phrasing — the NK
-   clause reads in the standard "John during his life and Joan his wife during
-   her natural life" form, consistent with the colony original. The earlier read
-   was likely a misread of the damaged/garbled text. — 🟡 AI-read; the owner's
-   paleography of Image 10 is the gating step to confirm which read is correct.
+2. **C-3 ("or to her mother if she survive"):** not present in **either** NK AI
+   read (Read A has "him or his Wife"; Read B has the standard form — neither
+   contains "or to her mother"). The colony original's absence of the clause is
+   owner-confirmed; the NK copy's absence rests on two conflicting AI reads. —
+   🟡 AI-read for the NK copy; PENDING HUMAN REVIEW.
+3. **TWO CONFLICTING AI READS of the NK leaf — PENDING HUMAN REVIEW.** The NK
+   Image 10 leaf has been AI-read twice with conflicting results:
+   - **Read A (earlier):** "until such time as God Almighty has Required it of him
+     or his Wife or during her natural life."
+   - **Read B (this re-read, 2026-09-09):** "aforsd John Green duering his
+     naturall life and [Joane] Green his Wife for and dureing her naturall life
+     [to Daniell] son of John & Joane Green" — no "him or his Wife", no "God
+     Almighty", no "or to her mother".
+   Both reads are AI (Law 7); **neither is privileged**, and neither has been
+   paleographically verified. The leaf is water-damaged with heavy bleed-through,
+   which plausibly explains the divergence, but the cause is not established.
+   **Both reads are retained as conflicting, pending the owner's paleography of
+   Image 10.** The owner's eyes are the only authority that can settle which (if
+   either) is correct, or whether a third reading is needed. — 🟡 PENDING HUMAN
+   REVIEW.
 4. **Marks (Daniel instrument, NK copy):** John Greene signs as grantor (with
    seal); Joan does NOT sign or make a mark; Henry Tibbetts's mark is a capital
    letter **H** (not a cross, not a bow-and-arrow pictograph); a second witness
@@ -131,14 +139,14 @@ Benj. Green).
 
 ## Implications for C-3
 
-Both physical manuscripts of the 1681/2 Greene home-place instruments — the
-colony original James deed (owner-confirmed) and the NK town-book Daniel copy
-(AI re-read) — read the annuity in the standard "John during his life, then Joan
-his wife during her natural life, then the son" form. Neither contains an "or to
-her mother if she survive" clause. The "him or his Wife" / "God Almighty" wording
-previously attributed to the NK copy is not supported by this re-read and was
-likely a misread of the damaged leaf. Full resolution of C-3 now requires the
-owner's paleography of the NK Image 10 leaf to confirm the exact wording.
+The NK Image 10 leaf now carries **two conflicting AI reads** (Read A "him or his
+Wife"; Read B standard form). **Both are retained as conflicting and PENDING
+HUMAN REVIEW; neither is privileged.** Neither read contains an "or to her
+mother if she survive" clause — but that absence rests on AI reads, so it stays
+🟡 until the owner paleographs the leaf. The colony original's absence of the
+mother clause is owner-confirmed (2026-09-09). Full resolution of C-3 requires
+the owner's paleography of the NK Image 10 leaf to settle which (if either) AI
+read is correct.
 
 ---
 

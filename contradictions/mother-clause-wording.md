@@ -6,7 +6,7 @@ Three secondary sources describe the life-estate clause of the March 24, 1682 ho
 
 | Source | Wording | Type |
 |---|---|---|
-| **NK Manuscript (Image 10, AI read ⚠️ — re-read 2026-09-09 contradicts earlier read)** | Earlier read: "until such time as God Almighty has Required it of **him or his Wife** or during her natural life". Careful re-read (2026-09-09): clause reads in the standard form — "aforsd John Green duering his naturall life and [Joane] Green his Wife for and dureing her naturall life [to Daniell] son of John & Joane Green." No "him or his Wife", no "God Almighty", no "or to her mother". | Manuscript text (AI-transcribed, UNVERIFIED — two AI reads conflict; owner paleography needed) |
+| **NK Manuscript (Image 10) — TWO CONFLICTING AI READS ⚠️ PENDING HUMAN REVIEW** | Read A (earlier): "until such time as God Almighty has Required it of **him or his Wife** or during her natural life." Read B (re-read, 2026-09-09): "aforsd John Green duering his naturall life and [Joane] Green his Wife for and dureing her naturall life [to Daniell] son of John & Joane Green." Read B finds no "him or his Wife", no "God Almighty", no "or to her mother". The two reads conflict; neither is privileged. | Manuscript text (AI-transcribed, UNVERIFIED — two AI reads conflict; owner paleography needed) |
 | **Worth 1921 abstract (James instrument)** | "unto John Green... and after his decease to **Joane Greene, his wife**" | Abstractor's summary of manuscript |
 | **F.L. Greene 1894 p. 10** | "as long as their **father or mother** should live" | Paraphrase of deed |
 | **Various genealogy sites / AI outputs** | "or to **her mother** if she survive" | Unattributed — NO primary or secondary source found |
@@ -18,18 +18,15 @@ F.L. Greene 1894 p. 10 reads verbatim:
 
 > "March 24th, 1682, he deeded his son Daniel 120 acres bordering on Allen's Harbor, and to his son James 60 acres adjoining, each of said sons to pay thirty shillings annually as long as their **father or mother** should live. The land was bounded partly by land of son John."
 
-### Earlier NK read vs. re-read (2026-09-09)
-The NK manuscript (Image 10) was first AI-read as: "until such time as God Almighty has
-Required it of **him or his Wife** or during her natural life." A careful re-read of the
-damaged leaf on 2026-09-09 (see
-`research_findings/2026-09-09_nk_daniel_instrument_transcript_AI.md`) does **not**
-support that phrasing — the clause reads in the standard "John during his life and
-Joan his wife during her natural life, then the son" form, consistent with the colony
-original. The earlier "him or his Wife" / "God Almighty" wording was likely a
-misread of the garbled, water-damaged text. The two AI reads conflict; only the
-owner's paleography of Image 10 can settle the exact NK wording.
+### Two conflicting AI reads of NK Image 10 (2026-09-09) — PENDING HUMAN REVIEW
+The NK manuscript (Image 10) has been AI-read twice with **conflicting** results:
 
-These describe the SAME clause. F.L. Greene modernized "him or his Wife" to "father or mother." The meaning is identical: the annuity continues until both parents have died.
+- **Read A (earlier):** "until such time as God Almighty has Required it of **him or his Wife** or during her natural life."
+- **Read B (re-read, 2026-09-09):** "aforsd John Green duering his naturall life and [Joane] Green his Wife for and dureing her naturall life [to Daniell] son of John & Joane Green" — which finds **no** "him or his Wife", **no** "God Almighty", and **no** "or to her mother" (see `research_findings/2026-09-09_nk_daniel_instrument_transcript_AI.md`).
+
+Both reads are AI (Law 7); **neither is privileged**, and neither has been paleographically verified. The leaf is water-damaged with heavy bleed-through, which plausibly explains the divergence — but the cause is not yet established. **Both reads are retained as conflicting, pending the owner's paleography of Image 10.** The owner's eyes are the only authority that can settle which (if either) is correct, or whether a third reading is needed.
+
+These describe the SAME clause — *if* Read A is correct. F.L. Greene modernized "him or his Wife" to "father or mother," and the meaning is identical: the annuity continues until both parents have died. **But this analytical resolution depends on Read A, which is now contested by Read B.** Per the instruction to keep both reads conflicting and pending, this resolution is re-tagged 🟡 PENDING HUMAN REVIEW: it holds only if the owner's paleography confirms Read A's "him or his Wife" wording.
 
 ### "Mother" in F.L. Greene = Joan (the wife), NOT Joan's mother
 F.L. Greene's "mother" refers to Joan as the MOTHER OF THE SONS (Daniel and James), not to Joan's own mother. This is a standard paraphrase: "pay thirty shillings as long as their father [John] or mother [Joan] should live."
@@ -65,29 +62,29 @@ This settles, for the colony original, that the matrilineal reverter phrase is
 **unattributed to any primary or secondary source** the archive has examined.
 
 What is **not** settled by this confirmation: the NK town-book copy (FamilySearch
-DGS 008204949, Image 10) is a *separate* manuscript whose AI read yielded "him
-or his Wife or during her natural life." That NK wording has **not** been
-paleographically verified — the owner confirmed the colony original, not the NK
-copy. The NK read's "him or his Wife" therefore remains 🟡 AI-read. The two
-manuscripts are different physical documents; a future paleography of the NK
-copy may or may not match the colony original's confirmed absence of a mother
-clause.
+DGS 008204949, Image 10) is a *separate* manuscript that has been AI-read **twice
+with conflicting results** (Read A: "him or his Wife"; Read B: standard "John
+then Joan his wife" form). Neither NK read has been paleographically verified — the
+owner confirmed the colony original, not the NK copy. **Both NK reads are retained
+as conflicting and PENDING HUMAN REVIEW.** The two manuscripts are different
+physical documents; the NK copy is the **Daniel** instrument (120 acres), a sibling
+to the colony **James** instrument (60 acres) — different grantees, same grantor
+and date.
 
-**Update (2026-09-09):** a careful AI re-read of the NK Image 10 leaf now
-**contradicts** the earlier "him or his Wife" attribution — the re-read finds the
-standard "John during his life and Joan his wife during her natural life" form,
-with no "him or his Wife", no "God Almighty", and no "or to her mother" (see
-`research_findings/2026-09-09_nk_daniel_instrument_transcript_AI.md`). The two
-AI reads conflict; the owner's paleography of Image 10 is the gating step to
-settle the exact NK wording. The NK copy is the **Daniel** instrument (120 acres),
-a sibling to the colony **James** instrument (60 acres) — different physical
-documents and different grantees, same grantor and date.
+**Update (2026-09-09):** a second AI read of the NK Image 10 leaf (Read B)
+conflicts with the earlier read (Read A). Read B finds the standard "John during
+his life and Joan his wife during her natural life" form, with no "him or his
+Wife", no "God Almighty", and no "or to her mother" (see
+`research_findings/2026-09-09_nk_daniel_instrument_transcript_AI.md`). **Both
+reads are AI (Law 7); neither is privileged, and both are retained as
+conflicting, PENDING HUMAN REVIEW.** The owner's paleography of Image 10 is the
+gating step to settle which (if either) is correct.
 
 **Status (updated): C-3 remains 🟡 PARTIALLY RESOLVED.**
-- F.L. Greene's "father or mother" = paraphrase of manuscript's "him or his Wife" → RESOLVED (analytical)
+- F.L. Greene's "father or mother" = paraphrase of manuscript's "him or his Wife" → 🟡 PENDING HUMAN REVIEW (depends on Read A, which is contested by Read B)
 - "Or to her mother if she survive" = absent from the colony original (owner-confirmed, 2026-09-09) + unattributed to any source → SUSPENDED / effectively killed as an evidence claim
-- NK town-book copy wording ("him or his Wife") → still 🟡 AI-unverified
-- Full resolution requires paleographic verification of the NK copy (Image 10)
+- NK town-book copy wording: TWO CONFLICTING AI READS (Read A "him or his Wife"; Read B standard form) → both 🟡 PENDING HUMAN REVIEW, neither privileged
+- Full resolution requires the owner's paleography of the NK copy (Image 10)
 
 ## Impact on Ancestry Models
 
@@ -100,10 +97,10 @@ This does NOT eliminate Model A. It eliminates ONE piece of evidence that was ci
 ## Resolution Status
 
 **C-3: 🟡 PARTIALLY RESOLVED.**
-- F.L. Greene's "father or mother" = paraphrase of manuscript's "him or his Wife" → RESOLVED
+- F.L. Greene's "father or mother" = paraphrase of manuscript's "him or his Wife" → 🟡 PENDING HUMAN REVIEW (depends on contested Read A)
 - "Or to her mother if she survive" = UNATTRIBUTED, SUSPENDED → source needed or claim killed
 - Colony original (folios 259–260): "or to her mother" clause confirmed ABSENT by owner paleography (2026-09-09)
-- NK town-book copy (Image 10): "him or his Wife" wording still 🟡 AI-unverified
+- NK town-book copy (Image 10): TWO CONFLICTING AI READS (Read A "him or his Wife"; Read B standard form) → both 🟡 PENDING HUMAN REVIEW, neither privileged
 
 ---
 

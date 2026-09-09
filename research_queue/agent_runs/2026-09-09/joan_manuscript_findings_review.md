@@ -104,13 +104,14 @@ eliminate any of models A–H. No premature elimination, no centering. ✓
 | 6 | Recording authorities: acknowledged before John Fones (Warden), entered by John Sanford (Recorder). | 🟡 AI-read; Fones/Tibbetts/John Greene *visible* confirmed by owner (2026-09-09); the Warden/Recorder *roles* remain AI-read |
 
 **Preserved contradiction (PARTIALLY RESOLVED):** the "or to her mother if she
-survive" clause is now **owner-confirmed ABSENT** from the colony original
-(folios 259–260, 2026-09-09). The phrase remains unattributed to any primary or
+survive" clause is **owner-confirmed ABSENT** from the colony original (folios
+259–260, 2026-09-09). The phrase remains unattributed to any primary or
 secondary source, so as an *evidence claim* it is effectively killed. What is
-**not** resolved: the NK town-book copy (Image 10) AI read yielded "him or his
-Wife" — that separate manuscript has **not** been paleographed, so its wording
-remains 🟡 AI-read. The colony original and the NK copy are different physical
-documents; do not conflate them.
+**not** resolved: the NK town-book copy (Image 10) has been AI-read **twice with
+conflicting results** (Read A: "him or his Wife"; Read B: standard "John then
+Joan his wife" form). **Both NK reads are retained as conflicting and PENDING
+HUMAN REVIEW; neither is privileged.** The colony original and the NK copy are
+different physical documents; do not conflate them.
 
 **Identity scope:** this finding advances Joan's **document location and
 reading**, NOT her identity (models A–H unaffected). Correctly bounded. ✓
