@@ -49,6 +49,24 @@ Search the entire repo for these strings. If found outside a clearly labeled DIS
 
 - [ ] Every decision in `decision_log.md` that references a count (facts, models, laws) either matches the current count or has a superseded-by note
 
+## 7. Confidentiality & Consent Scan (standing — required before any merge to the public site)
+
+Per [collection_policy.md](collection_policy.md) §4: living people appear at institution level only, absent written consent. Run before merging:
+
+```bash
+# Known unconsented-helper names (add to this list as needed):
+grep -rn -i "carlson" --include="*.md" --include="*.html" --include="*.yml" --include="*.json" .
+# Personal emails (allow only institutional contacts like contact@sos.ri.gov):
+grep -rn -E "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}" --include="*.md" --include="*.html" --include="*.yml" .
+# Phone numbers:
+grep -rn -E "[0-9]{3}[-. ][0-9]{3}[-. ][0-9]{4}" --include="*.md" --include="*.html" .
+```
+
+- [ ] Zero unconsented personal names (institution-level wording only)
+- [ ] Zero personal emails (institutional contacts only)
+- [ ] Zero phone numbers / addresses
+- [ ] Any half-redacted contact (e.g., `hidden@`) normalized to institution-level form
+
 ---
 
 ## How to Run This
@@ -61,5 +79,5 @@ Search the entire repo for these strings. If found outside a clearly labeled DIS
 
 ---
 
-*Maintained under the Seven Laws of the Joan Archive.*
+*Maintained under the Multi Agent Laws of the Joan Archive.*
 *"The quest for the truth remains."*
