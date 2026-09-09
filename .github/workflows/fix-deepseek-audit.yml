@@ -33,11 +33,11 @@ jobs:
           og_tags = {
               'about.html': {
                   'title': 'About — The Joan Archive',
-                  'description': 'Methodology, Seven Laws, corrections, and AI hallucination checklist for the Joan Archive research project.',
+                  'description': 'Methodology, Multi Agent Laws, corrections, and AI hallucination checklist for the Joan Archive research project.',
               },
               'analysis.html': {
                   'title': 'Analysis — The Joan Archive',
-                  'description': 'Open hypotheses about Joan Greene tested against primary sources. Seven competing models, equal treatment, no centering.',
+                  'description': 'Open hypotheses about Joan Greene tested against primary sources. Multiple competing models, equal treatment, no centering.',
               },
               'context.html': {
                   'title': 'Context — The Joan Archive',
