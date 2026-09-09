@@ -107,13 +107,12 @@ The 1682 deed is primary evidence for **Daniel** and **James** only. All other e
 |---|---|---|---|
 | 1 | Edward (c. 1643–1711) | m. Mary Tibbitts; Dutchess Co., NY | 🌐 TERTIARY — Hildenbrand 1941; Doherty Vol. 5 p. 753 |
 | 2 | **Daniel** (c. 1647–1729) | Named in 1682 deed, received 120 acres | 📔 PRIMARY |
-| 3 | Joan (c. 1649–1715) | daughter | 🌐 TERTIARY |
 | 4 | Henry (c. 1650–1694) | Shrewsbury, Monmouth Co., NJ | 🌐 TERTIARY — Doherty Vol. 5 p. 752 |
 | 5 | John Jr. (c. 1651–1729) | Land referenced in 1682 deed boundary description | 📔 PRIMARY (land only, not parentage) |
-| 6 | Robert (c. 1653–?) | Virginia records | ⚠️ UNVERIFIED |
 | 7 | **James** (c. 1655–1728) | Named in 1682 deed as "natural son of John and Joan Greene," received 60 acres | 📔 PRIMARY |
-| 8 | Enfield (c. 1656–1698) | — | 🌐 TERTIARY |
 | 9 | Benjamin (c. 1657–1719) | "Beny Green" appears in the 1682 image; identification as son is a lead, not a fact | ⚠️ AI-SOURCED / 🌐 TERTIARY |
+
+**⚫ Ghost names suspended (2026-09-09):** compiled-list rows 3 (Joan, "daughter"), 6 (Robert), and 8 (Enfield) have **no located evidence trail** — no primary record, no page-cited secondary source, only unsourced compiled lists. Per owner directive they are removed from this table and held — separately, transparently, and as live search targets — in the **Ghost Name Register** (`evidence/ghost_names.md`, G-001–G-003). We do not know whether any of them is the same person as a documented family member; no merging. Numbering above preserves the original compiled-list order; the gaps point to the register.
 
 **Birth years** derive from *Records of the Colony of RI* as compiled by a fellow researcher, not independently verified against originals. 🌐 TERTIARY
 

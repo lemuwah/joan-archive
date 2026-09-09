@@ -1,8 +1,8 @@
 # Explorer Queue Packet — research_findings/2026-09-05_joan_priority_search.md
 
-**Finding ID:** `FINDING-65f3a81d2e5a`
+**Finding ID:** `FINDING-7d5bc8f7d635`
 **Status:** `PENDING_HUMAN_REVIEW`
-**Source SHA-256:** `f99a8e1381ab11039caec039973f31dccaac918149149cfa02739038e8ce684a`
+**Source SHA-256:** `e5f9e7e360a2a9f96922f594f3b829a6721f4858de8298dbe4586d8884c3fc7c`
 **Stage purpose:** expand sideways context and identify where evidence may be hiding in plain sight.
 **Publication rule:** This is a review packet, not evidence and not an approval.
 
@@ -192,5 +192,8 @@ Record source anchors, uncertainty, contradictions, and next actions. Keep perso
 - Map household people, witnesses, neighbors, in-laws, buyers, sellers, and officials.
 - Expand across land, probate, court, church, militia, servant, captivity, shipping, and Indigenous-centered records.
 - Test Rhode Island, Massachusetts, Connecticut, Plymouth, New York, Crown, port, and local town repositories.
-- Search spelling variants and relationship descriptions, not only the target person's name.
+- Search EVERY variant of EVERY name in the finding — full clusters from methodology/name_variant_registry.md (standard, scribe drift, OCR-plausible, phonetic) — in EVERY repository searched, and log which variants were queried. A name missed for spelling is a name lost.
+- Track every John Greene appearance 1600-1750 across English, Irish/Ulster, Scottish, port-book, and local-town paperwork — each is a firewall-relevant capture per methodology/collection_policy.md (the Greene Net).
+- Search relationship descriptions ('wife of', 'Goodwife', 'widow', 'son of', 'his marke'), not only the target person's name.
+- Follow where the leads point, including jurisdictions and languages the finding does not name.
 - For each proposed edge, state the source anchor that would prove it and the record that would disprove it.

@@ -71,7 +71,7 @@ Every direction gets tested. English, Indigenous, maritime, religious, legal, ar
   - **If interrupted:** Each page is its own sub-task. Status as of 2026-09-09:
     - [x] All 20 person pages in /people/ (benjamin, daniel, edward, edward_greenman, elizabeth_wife_of_james, george_havens, george_vaughan, henry_greene, henry_tibbitts, james, John_Nawham, john_greene_newport, john_greene_occupessuatuxet, john_greene_potowomut, john_greene_quidnessett, john_greene_son_of_john, john_greene_warwick, joseph_clark_francis_brinley, sarah_greene_flounders, thomas_gould)
     - [ ] joan_unknown_greene.md — **file does not exist; owner question from 2026-09-07 audit still open (deliberate vs. gap)**
-    - [ ] anashuecot.md — **file does not exist; same open owner question**
+    - [x] anashuecot.md — **created 2026-09-09** (owner confirmed: Anashuecot was part of our John Greene's documented network; universal format + Discovery Key + full verified variant cluster)
 - **What's already done (corrected 2026-09-07 — was recorded as "Nothing," which was false):** Compliance audit across the 23 files in /people/ (20 person pages + README.md, two-john-firewall.md, five_john_primary_source_trail.md) found:
 
   | Required section | Files conforming |

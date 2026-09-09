@@ -55,11 +55,12 @@ Later genealogical analysis considers this "plausible but unresolved." Multiple 
 
 See also: [`research/anashuecot_kin_group_mapping.md`](../research/anashuecot_kin_group_mapping.md) for the full 1672 kin group and Coginaquand succession analysis.
 
-- Anashuecot / Awashouse — Chief Sachem of Quidnessett. See `notes/2026-08-28_anashuecot_phonetic_variants.md` and `research/anashuecot_kin_group_mapping.md`
-- Tocomminon — Anashuecot's father (Absolom affidavit, ⚠️ UNVERIFIED)
+- [`anashuecot.md`](anashuecot.md) — Anashuecot / Awashouse — Chief Sachem of Quidnessett, grantor of the 1672 Fones Purchase to John Greene and five others. Part of our John Greene's documented network. See also `notes/2026-08-28_anashuecot_phonetic_variants.md` and `research/anashuecot_kin_group_mapping.md`
+- ~~Tocomminon~~ — moved to the **Ghost Name Register** (`evidence/ghost_names.md` G-004, 2026-09-09): rests on the unverified Absolom affidavit citation. Kept as a live search target, not listed as a person until the affidavit is read.
 - Coginaquand / Cachaquant / Coquinquant — 1659 Atherton Purchase grantor. Quaiapen's cousin. See `notes/2026-08-27_coginiquant_name_cluster_expanded.md`
-- Wampkegge — Anashuecot's brother (1672 deed)
-- Ompamiatt — Anashuecot's brother (1672 deed)
+- Wampkegge — Anashuecot's brother (named in the 1672 deed)
+- Ompamiatt — Anashuecot's brother (named in the 1672 deed)
+- Seecomp, Tyecuecsha, Nammeash — Anashuecot's sons (named in the 1672 deed)
 - Seecomp — Anashuecot's son (1672 deed)
 - Tyecuecsha — Anashuecot's son (1672 deed)
 - Nammeash — Anashuecot's son (1672 deed)

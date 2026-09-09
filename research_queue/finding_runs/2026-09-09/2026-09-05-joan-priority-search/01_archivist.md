@@ -1,8 +1,8 @@
 # Archivist Queue Packet — research_findings/2026-09-05_joan_priority_search.md
 
-**Finding ID:** `FINDING-65f3a81d2e5a`
+**Finding ID:** `FINDING-7d5bc8f7d635`
 **Status:** `PENDING_HUMAN_REVIEW`
-**Source SHA-256:** `f99a8e1381ab11039caec039973f31dccaac918149149cfa02739038e8ce684a`
+**Source SHA-256:** `e5f9e7e360a2a9f96922f594f3b829a6721f4858de8298dbe4586d8884c3fc7c`
 **Stage purpose:** establish provenance, stable identifiers, page/image anchors, and checksum needs.
 **Publication rule:** This is a review packet, not evidence and not an approval.
 

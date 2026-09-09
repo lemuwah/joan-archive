@@ -24,7 +24,7 @@ All six described as **"sole heires & proprietors"** of Quidnessett.
 ### Family Structure
 
 **Generation 0 (ancestor):**
-- **Tocomminon** — Anashuecot's father (Absolom affidavit). ⚠️ Affidavit NOT confirmed in *Narragansett Historical Register*. Requires verification against original manuscript.
+- **Tocomminon** — Anashuecot's father (Absolom affidavit). ⚠️ Affidavit NOT confirmed in *Narragansett Historical Register*. Requires verification against original manuscript. → Suspended to the Ghost Name Register (`evidence/ghost_names.md` G-004, 2026-09-09) until the affidavit is read.
 - **Possibly = Tomanick** (1644 Narragansett submission) — see §Tomanick Investigation. Phonetically plausible, documentarily unproven.
 
 **Generation 1 (siblings):**

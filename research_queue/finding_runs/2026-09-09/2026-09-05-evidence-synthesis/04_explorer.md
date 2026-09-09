@@ -238,5 +238,8 @@ Record source anchors, uncertainty, contradictions, and next actions. Keep perso
 - Map household people, witnesses, neighbors, in-laws, buyers, sellers, and officials.
 - Expand across land, probate, court, church, militia, servant, captivity, shipping, and Indigenous-centered records.
 - Test Rhode Island, Massachusetts, Connecticut, Plymouth, New York, Crown, port, and local town repositories.
-- Search spelling variants and relationship descriptions, not only the target person's name.
+- Search EVERY variant of EVERY name in the finding — full clusters from methodology/name_variant_registry.md (standard, scribe drift, OCR-plausible, phonetic) — in EVERY repository searched, and log which variants were queried. A name missed for spelling is a name lost.
+- Track every John Greene appearance 1600-1750 across English, Irish/Ulster, Scottish, port-book, and local-town paperwork — each is a firewall-relevant capture per methodology/collection_policy.md (the Greene Net).
+- Search relationship descriptions ('wife of', 'Goodwife', 'widow', 'son of', 'his marke'), not only the target person's name.
+- Follow where the leads point, including jurisdictions and languages the finding does not name.
 - For each proposed edge, state the source anchor that would prove it and the record that would disprove it.
