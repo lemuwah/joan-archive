@@ -19,6 +19,7 @@
 
 - **Appeared as:** Row 3 of the compiled children table in [john_greene_quidnessett.md](../people/john_greene_quidnessett.md) — "Joan (c. 1649–1715), daughter, 🌐 TERTIARY"
 - **Evidence trail:** None located. No primary record. No secondary source with a page citation names a daughter Joan. Compiled online lists only.
+- **Origin traced (2026-09-09, La Mance 1904 full-text sweep):** La Mance contains **no daughter Joan of Quidnessett at all** — the only daughter Joan in the book is the Surgeon's, who died young. The compiled "daughter Joan" does not even have La Mance behind her. She has no source at any tier.
 - **Kept separate from:** Joan Greene the wife (1682 deed — the archive's target). A daughter named after the mother is plausible in the abstract and completely undocumented here. **We do not know if this name reflects a real person.**
 - **Still a live search target:** Yes — NK/Kingstown vital, probate, church, and deed records 1665–1720 for any "Joan Green(e)" other than the wife.
 - **Resolution path:** A dated record naming her, or a scoped negative logged in [primary_sources/NEGATIVE_LOG.md](../primary_sources/NEGATIVE_LOG.md).
@@ -27,19 +28,20 @@
 ## G-002: "Robert Greene" (Virginia claim)
 
 - **Appeared as:** Row 6 of the compiled children table — "Robert (c. 1653–?), Virginia records, ⚠️ UNVERIFIED"
-- **Evidence trail:** None located. The phrase "Virginia records" cites no record, volume, or repository. No Virginia document naming a Robert Greene of this family has been produced.
+- **Evidence trail:** The phrase "Virginia records" cites no record, volume, or repository. No Virginia document naming a Robert Greene of this family has been produced.
+- **Origin traced (2026-09-09, La Mance 1904 full-text sweep):** "then came **Robert, born in 1653, for he was a freeman in 1674**" — that is La Mance's entire basis: an uncited freeman list, attributed to a son. The "Virginia" flavoring does not appear in La Mance; it is later compiled decoration. (La Mance adds "Robert is supposed to have gone [to New Jersey]" — *supposed*, no record.)
 - **Kept separate from:** All documented sons. No record ties this name to the Quidnessett household.
-- **Still a live search target:** Yes — Virginia colonial deed/order books (York, Rappahannock, and Lower Norfolk counties are the usual 1650s–80s New England migration destinations) for "Robert Green(e)."
+- **Still a live search target:** Yes — the actual 1674 freeman list should be checked for ANY Robert Green(e); then VA/NJ colonial records if the freeman claim verifies.
 - **Resolution path:** A dated record naming him with a family anchor, or scoped negative.
 - **Date suspended:** 2026-09-09
 
 ## G-003: "Enfield Greene" (compiled lists)
 
 - **Appeared as:** Row 8 of the compiled children table — "Enfield (c. 1656–1698), 🌐 TERTIARY"
-- **Evidence trail:** None located. No primary record. No cited secondary source. Compiled lists only. (Note: "Enfield" is also a Connecticut place name — the possibility that a place label migrated into a children list is itself untested.)
-- **Kept separate from:** All documented sons. Also kept separate from the town of Enfield, CT — we do not know if the name is a person at all.
-- **Still a live search target:** Yes — NK/Kingstown/East Greenwich and Hartford County CT records for "Enfield Green(e)" as a PERSON.
-- **Resolution path:** A dated record naming him as a person with a family anchor, or scoped negative.
+- **Origin traced (2026-09-09, La Mance 1904 full-text sweep) — mechanism found, word for word:** La Mance writes that John of Quidnessett "probably his home was at **Enfield**, one of the suburb towns of the great city" (his hedge), then: "He was a man given to commemorating family events by the names of his children… **A daughter was Enfield, a most singular name for a girl, but understandable if given in honor of the dear old English home.**" Elsewhere: "almost certainly a daughter Enfield." **He guessed a hometown, then invented a daughter named after it.** No record exists at any step.
+- **Kept separate from:** All documented sons. Also kept separate from the town of Enfield, CT — we now know the name entered the family tree AS a place.
+- **Still a live search target:** Only in the negative sense — if any primary record ever names an Enfield Green(e) as a person, the register wants to know. Otherwise the La Mance mechanism stands as the documented origin.
+- **Resolution path:** Effectively resolved as La Mance-manufactured; promotion path permanently closed barring a primary record.
 - **Date suspended:** 2026-09-09
 
 ## G-004: "Tocomminon" (Absolom affidavit claim)
@@ -60,16 +62,26 @@
 - **Resolution path:** None required beyond the Nawham sourcing effort; entry retained so the artifact is never re-imported.
 - **Date suspended:** 2026-09-09
 
+## G-006: "Welthian Greene" (La Mance's other invented daughter — preemptive)
+
+- **Appeared as:** Never in this archive — caught at the door. La Mance 1904 (line ~4060): "Probably there was a **Welthian** also. It was a Gillingham family name…"
+- **Evidence trail:** None — "probably" doing all the work again. No record, no citation.
+- **Why registered:** compiled trees downstream of La Mance may carry her; if a "Welthian Greene" ever arrives via a compiled tree, this entry is the standing explanation.
+- **Kept separate from:** everyone. The name belongs to the Gillingham (Surgeon-line) naming stock, not to any documented Quidnessett person.
+- **Resolution path:** None — registered as a known La Mance construction.
+- **Date registered:** 2026-09-09
+
 ---
 
 ## Register log
 
 | ID | Name string | Origin | Status | Suspended |
 |---|---|---|---|---|
-| G-001 | Joan Greene, "daughter" | Compiled children lists | ⚫ GHOST — live search target | 2026-09-09 |
-| G-002 | Robert Greene ("Virginia") | Compiled children lists | ⚫ GHOST — live search target | 2026-09-09 |
-| G-003 | Enfield Greene | Compiled children lists | ⚫ GHOST — live search target | 2026-09-09 |
+| G-001 | Joan Greene, "daughter" | Compiled children lists — **2026-09-09: not even in La Mance; no source at any tier** | ⚫ GHOST — live search target | 2026-09-09 |
+| G-002 | Robert Greene ("Virginia") | Compiled lists — **traced: La Mance's "freeman in 1674" inference, uncited** | ⚫ GHOST — check the actual 1674 list first | 2026-09-09 |
+| G-003 | Enfield Greene | Compiled lists — **traced: La Mance invented a daughter named for his guessed hometown** | ⚫ GHOST — mechanism documented; promotion closed | 2026-09-09 |
 | G-004 | Tocomminon | Absolom affidavit claim (unverified) | ⚫ GHOST — affidavit read queued | 2026-09-09 |
 | G-005 | "Nawham (wife)" | List artifact | ⚫ GHOST — retained against re-import | 2026-09-09 |
+| G-006 | Welthian Greene | La Mance 1904 ("probably... a Gillingham family name") | ⚫ GHOST — preemptive; never enter a person list | 2026-09-09 |
 
 *New ghost names are added here whenever a name is found floating without a trail. Removal from this register requires a record or a scoped negative — never a judgment call.*

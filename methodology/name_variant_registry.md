@@ -95,6 +95,7 @@ Used as the search key for every repository, every record type, every search.
 - **Phonetic:** Anashweecot, Anashwicot, Annashuecot
 - **Full variant list:** see notes/2026-08-28_anashuecot_phonetic_variants.md
 - **⚠️ TAG:** 📖 EXTERNAL INTERPRETATION when appearing in colonial records of Indigenous persons
+- **⚠️ OPEN VARIANT QUESTION (2026-09-09, Potter full-text sweep):** **"Awashequin"** appears in Potter 1835 as a *Niantic deputy* at the 27 Aug 1645 Boston treaty (with Pessicus and Mixanno). Phonetically adjacent to this cluster but documented in a different role and people-group. Do NOT merge into the Anashuecot cluster; treat as a separate-person hypothesis until a document links them.
 
 ### Narragansett Leaders (Fones Purchase signatories)
 - Canonicus, Miantonomi, Canonchet (Nanuntenoo), Quaiapen, Magnus, Matantuck, Pessicus, Ninigret
