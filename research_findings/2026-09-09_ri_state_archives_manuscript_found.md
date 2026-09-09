@@ -42,14 +42,16 @@ digitization "the single most valuable digitization ask." It is now read.
    *printed* abstract page (1921 book, pp. 173–174, abstract [260]) with the
    *manuscript folio*. Worth's bracketed numbers [259]/[260]/[261] are his own
    sequential abstract numbers; he does **not** cite a manuscript folio.
-5. Downloaded the "Volume 1 Index" (22-pp typed folio-by-folio index of the
-   manuscript). The entry for Joan's deed reads:
+5. Downloaded the RI State Archives **typed "Volume 1 Index"** asset (22-pp,
+   folio-by-folio index of the manuscript, modern typed compilation — not the
+   contemporary secretary-hand index). The entry for Joan's deed reads:
    > "Deed - John Greene, Acquedneset [& Joan Greene wife] to James Greene,
    > Acquedneset, March 24, 1681/2. Wit. Henry Tibbits, Arthur Aylsworth, John
    > Nutsn — **259, 260**"
-6. Derived the image↔folio offset from three known pages
+6. Derived the image↔folio **navigation offset** from three known pages
    (_127 = 247–248; _128 = 249–250; _129 = 251–252 → folio = 2 × image − 7).
-   Folios 259–260 → image `_133`.
+   This is a navigation aid, not proof. The proof is: folio index says 259–260
+   + image `_133` visibly shows folios 259–260 + deed content matches Worth.
 7. Downloaded image `_133` and read it. **Confirmed: folios 259–260, the John
    Greene → James Greene deed, 24 March 1681/2.** Content matches the Worth
    1921 abstract exactly.
@@ -116,11 +118,11 @@ Witnesses: `Henry H Tibbitts his marke` (mark = capital `H`);
    life-annuity beneficiary ("after his decease to Joane Greene his wife for
    and Dureing her naturall life"). She does not sign or mark. The "co-grantor"
    reading is not supported by the manuscript.
-3. **C-3 (the "or to her mother if she survive" clause): NOT in the manuscript.**
-   The manuscript gives the annuity to Joan "for and Dureing her naturall life"
-   with no matrilineal reverter. The "or to her mother if she survive" wording
-   is absent from the primary source (as `contradictions/mother-clause-wording.md`
-   already suspected). Pending paleographer confirmation.
+3. **C-3 (the "or to her mother if she survive" clause): not present in this
+   AI read of the manuscript.** The manuscript gives the annuity to Joan "for and
+   Dureing her naturall life" with no matrilineal reverter; the AI read matches
+   Worth, which also lacks such a clause. Pending human paleography before this
+   is stated as proven.
 4. **Recording clerk:** the colony manuscript records the acknowledgment before
    **John Fones (Warden)** and the entry by **John Sanford (Recorder)**. Worth
    and F.L. Greene give John Fones as the recording authority; the manuscript
@@ -129,15 +131,31 @@ Witnesses: `Henry H Tibbitts his marke` (mark = capital `H`);
    conflation** (Worth's printed page ↔ manuscript folio). Correct folio is
    259–260. The archive should correct this so future agents don't fetch folio
    173 (which is an unrelated 1684–88 deed cluster).
-6. **Daniel instrument (120 ac) is NOT in this colony volume** — Worth abstracts
-   only the James (60 ac) deed from RILE-I. The Daniel instrument remains in the
-   NK town records (DGS 008204949, Image 10), consistent with `joan_priority_search.md`.
+6. **The Daniel instrument (120 ac) is CONFIRMED ABSENT from this colony
+   volume.** The RI State Archives "Complete Volume PDF"
+   (`IO_3d98349c`, 222 pp, fetched 2026-09-09) is the full assembled
+   manuscript; its text layer is garbled OCR (not searchable), so the
+   authoritative check is the typed "Volume 1 Index" folio index
+   (`IO_5628068c`, 22 pp), which lists every deed in the volume by
+   grantor/grantee + folio. A comprehensive sweep of that index shows the only
+   Greene grantor instruments in Land Records No. 1 are: the 1654 John Greene
+   → Thomas Lawton deed; the 1658 John Greene Jr. → William Carpenter deed
+   (Pawtuxet); the 1675 John Greene → James & Thomas Greene deed (brothers);
+   the 1682 John Greene [& Joan] → James Greene deed (folios 259–260,
+   Joan's deed); and a 1690s John Greene → George Sisson deed. **There is no
+   John Greene → Daniel Greene 120-acre instrument.** Every "Daniel Greene"
+   reference in the volume is as a boundary neighbor (in the James deed), not a
+   grantee. The Daniel (120 ac) instrument therefore lives in the NK town
+   records (DGS 008204949, Image 10), consistent with `joan_priority_search.md`.
+   Worth abstracted only the James (60 ac) deed from RILE-I because that is the
+   only Greene home-place instrument in this colony volume.
 7. **The modern "Name Index" personal-name entry "Joan ux/Henry [Brightman]
-   p.173" is almost certainly a misindexing.** The manuscript's own folio index
-   and the manuscript itself show Joan = wife of **John** Greene at 259–260; the
-   "Henry Brightman" deed (George Sisson → Henry Brightman, 3 March 1681/2) at
-   folios 257–258 names no Joan. Visual confirmation of that index line is still
-   warranted, but no second Joan is supported.
+   p.173" is a likely index error, pending visual confirmation.** The manuscript
+   itself and the folio index show Joan = wife of **John** Greene at 259–260;
+   the "Henry Brightman" deed (George Sisson → Henry Brightman, 3 March 1681/2)
+   at folios 257–258 names no Joan. A second Joan is not supported, but the
+   Name Index line is OCR-garbled and should be eyeballed before being called
+   an error.
 
 ## Provenance / images saved
 - `images/_pending_review/1682_homeplace_james_instrument_manuscript_folios259-260_RIStateArchives.jpg`
