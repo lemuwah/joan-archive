@@ -113,6 +113,16 @@ Decisions are not reversible by agents. Only the archive owner can reverse a log
 
 ---
 
+## D-010: The Greene Net — collection policy, geography sorting, discovery pages
+
+**Date:** 2026-09-09
+**Decision:** (1) Adopt `methodology/collection_policy.md`: any record naming Greene in any spelling, dated 1600–1750, from any geography or repository, is captured as a tagged lead — no pre-filtering by plausibility; capture ≠ claim. (2) Sort all leads geography-first via `data/geography.yml` / `research/geography_index.md`, with each region carrying every attested scribal spelling variant, attributed to who wrote it down where known. (3) Every person page carries a `## Discovery Key` block (name variants, activity window, place anchors, associates, record anchors, honest status) so AI search bots and our own agents can match new records to person slots — discoverability never inflates confidence. (4) `research/scribes_of_the_great_migration.md` created: the writers/record-keepers of the period (and the unidentified scribes of our own records) as digitized-artifact search targets. (5) Confidentiality: living people at institution level only; standing consent scan codified in `methodology/git_audit_checklist.md` §7.
+**Reasoning:** Owner directive 2026-09-09: "if it says greene, 1600-1750 we want to see it, no matter where it's from" — sorted by geography with scribe-variant spellings — and every .md made useful to a search bot hunting primary sources. Joan has one verified appearance; the way to find her is a wider, better-filed net, not a narrower one.
+**What changed:** `methodology/collection_policy.md` (new), `data/geography.yml` (new), `research/geography_index.md` (new), `research/scribes_of_the_great_migration.md` (new), all 20 `people/*.md` pages (Discovery Key + universal format), `methodology/git_audit_checklist.md` §7 (new), `people/README.md`.
+**Authority:** Archive owner
+
+---
+
 ## Template for Future Decisions
 
 ```
@@ -128,4 +138,4 @@ Decisions are not reversible by agents. Only the archive owner can reverse a log
 ---
 
 *This file is part of the Joan Archive methodology.  
-Maintained under the Seven Laws of the Joan Archive.*
+Maintained under the Multi Agent Laws of the Joan Archive.*
