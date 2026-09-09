@@ -136,11 +136,15 @@ Every direction gets tested. English, Indigenous, maritime, religious, legal, ar
 
 **Not yet done — still says "Seven Laws" or is otherwise unstandardized:** dated session/agent logs (`agents/*`, `research/*`, `research_findings/*`), `decision_log.md`, `contradictions/*`, `evidence/*`, `validation/*`, `roadmap/*`, `pending_review/*`, `primary_sources/NEGATIVE_LOG.md`, `research_queue/*`, `theory/source_spine.md`, `methodology/kimi_hostile_audit.md`, `methodology/ai_provenance.md`, `methodology/inference_audit.md`, `methodology/git_audit_checklist.md`, `methodology/name_variant_registry.md`, and the individual `/people/*.md` pages (several say "Seven Laws" or "MULTI AGENT Laws" inconsistently in their per-page header). Left alone deliberately this pass — most of these are dated session records, and the people pages are already queued for a full rewrite under Task 4, where the header line should be standardized as part of that pass rather than touched twice.
 
+## Work modes (added 2026-09-09, owner directive)
+- **All edits land in the repo** — nothing lives only in chat. Commit and push as we go; the tree should never hold unsaved work at the end of a session.
+- **The funnel is mandatory for findings:** new research lands in `research_findings/`, the router generates the four-stage review packets (Archivist → Hostile Review → Synthesizer → Explorer) into `research_queue/finding_runs/`, and nothing promotes to a people page, the index, or the site until it has passed the steps. Direct page edits are for format/structure/provenance work only — never for new claims.
+- **No-credit mode exists and is deep:** in-house sweeps of downloaded public-domain texts (the IA `_djvu.txt` method), cross-referencing repo holdings, formatting/verification passes, queue maintenance, geography and variant work, and writing human-checklists for the gated repositories. When credits run low, switch there without stopping.
+
 ## Task 6.5: Next-page fetch tooling (added 2026-09-07)
 - **Status:** BUILT, UNTESTED — needs a first real run before it's trusted
 - **Depends on:** NONE
-- **Priority:** MEDIUM — accelerates ongoing research, doesn't gate other tasks
-- **What was done:** Built `tools/next_page/` — automated "next page" fetching for the 17
+- **Priority:** MEDIUM — accelerates ongoing research, doesn't gate other tasks- **What was done:** Built `tools/next_page/` — automated "next page" fetching for the 17
   Internet Archive volumes already cited in the repo (Track A), plus documentation of why
   the FamilySearch deed-book images (008204949-*) can't be automated the same way and what
   to do instead (Track B). GitHub Action at `.github/workflows/fetch-next-page.yml`, manual

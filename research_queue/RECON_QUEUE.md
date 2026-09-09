@@ -1,8 +1,10 @@
 # Compiled Recon Queue — Every Extracted Lead, Prioritized
 
 **Status:** ACTIVE — compiled 2026-09-09 (Task 6) from the Search Logs of all 21 people pages, [scribes_of_the_great_migration.md](../research/scribes_of_the_great_migration.md), [geography_index.md](../research/geography_index.md), and the 2026-09-09 funnel runs
+**📍 We are here (2026-09-09):** Stage 1 of [the road](../research/road_to_joan.md) is open; the sideways lanes and the printed-book/colony-record sweeps have begun (findings of 2026-09-09). Every new sweep routes its results into the relevant R-row below — nothing floats free.
 **Relationship to other queues:** [RESEARCH_QUEUE.md](RESEARCH_QUEUE.md) holds the standing Pawtuxet/firewall priorities and is NOT replaced; TASK_QUEUE.md Task 6.75 holds the ten ranked model-testing searches. This file is the **consolidated lead list** those queues draw from.
 **Execution rule:** every search runs with **all name variants** from [name_variant_registry.md](../methodology/name_variant_registry.md) and **all place variants** from [geography_index.md](../research/geography_index.md); results log to the source page's `## Search Log`, and nulls log to [primary_sources/NEGATIVE_LOG.md](../primary_sources/NEGATIVE_LOG.md) with repository, query, dates, and record type.
+**Candidate rule (added 2026-09-09):** any surfaced "Joane/Joan" anywhere gets the geographic test, not a dismissal — see [research/joane_swyft_test.md](../research/joane_swyft_test.md) for the standing example and the test battery format.
 
 ---
 
@@ -85,6 +87,7 @@
 | R48 | **Archaeology/material culture** — Quidnessett home place + Allen's Harbor boundary survey status; RI Slave History Medallions Potowomut file | Non-documentary evidence | ❌ |
 | R49 | **1666 plat scribe / NHR "Notes on Quidnessett" full series** — who drew it, where filed | Scribe program | ❌ |
 | R50 | **Women's-record sideways sweep** — neighbor-wives calibration: are other Quidnessett-area wives as invisible as Joan? | Historiography check — calibrates what her silence means | 🟡 PARTIAL 2026-09-09 — [neighbor_wives_comparison.md](../research/neighbor_wives_comparison.md). After the Austin sweep: **5 of 10 peer wives now visible** (Stanton primary; Fones/Andrew/Carr/Gould via Austin abstracts), 5 unresolved. Early leaning: Joan's silence trends DISTINCTIVE — counterweight logged (her husband's will is the lost one) |
+| R51 | **Joane Swyft of Sandwich — geographic test** (Plymouth records: widow, administratrix 1642, witness) | A surfaced Joane — tested, not dismissed, per owner rule. Five-test battery staged in [joane_swyft_test.md](../research/joane_swyft_test.md); T1/T2 runnable from texts already downloaded | 🟡 TEST OPEN 2026-09-09 |
 
 ---
 
