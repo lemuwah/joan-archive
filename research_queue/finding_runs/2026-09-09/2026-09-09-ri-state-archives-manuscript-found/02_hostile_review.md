@@ -12,8 +12,8 @@ Do not edit the source finding or promote any claim to PROOF.
 
 ## Image gate
 Referenced images: 1682_homeplace_james_instrument_manuscript_folios259-260_RIStateArchives.jpg, 1682_homeplace_james_instrument_manuscript_folios259-260_view.jpg.
-Images already staged in `images/_pending_review/`: 1682_homeplace_james_instrument_manuscript_folios259-260_RIStateArchives.jpg, 1682_homeplace_james_instrument_manuscript_folios259-260_view.jpg.
-Referenced images already elsewhere in `images/` and not pending: none.
+Images already staged in `images/_pending_review/`: none.
+Referenced images already elsewhere in `images/` and not pending: 1682_homeplace_james_instrument_manuscript_folios259-260_RIStateArchives.jpg, 1682_homeplace_james_instrument_manuscript_folios259-260_view.jpg.
 Referenced images not found in the archive: none.
 Any newly supplied image belongs in `images/_pending_review/` until a human reviews and promotes it.
 

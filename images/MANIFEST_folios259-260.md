@@ -1,9 +1,13 @@
-# Image Provenance Manifest — `images/_pending_review/`
+# Image Provenance Manifest — folios 259–260 (home-place deed, 24 March 1681/2)
 
-> Archivist-stage provenance for images staged for human review. Per the
-> findings pipeline, no image here is public evidence until a human reviews and
-> promotes it. SHA-256 anchors are recorded so any later alteration is
-> detectable.
+> **Status: APPROVED SOURCE.** Human-reviewed by Wendy Green (archive owner);
+> image caliber golden. Promoted from `images/_pending_review/` to the public
+> archive (`images/`) on 2026-09-09. SHA-256 anchors recorded so any later
+> alteration is detectable.
+>
+> What this approval covers: the **image is an approved primary source**.
+> It does **not** certify the AI-assisted transcription of the secretary hand —
+> per Law 7 that remains a lead pending the owner's paleography.
 
 ## Primary source (canonical)
 
@@ -47,8 +51,8 @@ do not cite as independent sources.
   OCR text at `worth_djvu.txt` in repo root.
 - **Typed folio index** (`Volume 1 Index`, 22 pp, lists every deed in the
   volume by grantor/grantee + folio): Preservica
-  `IO_5628068c-c8fa-486c-bdb8-4ed969f46f61`; text extraction at
-  `images/_preservica/vol1_index.txt`.
+  `IO_5628068c-c8fa-486c-bdb8-4ed969f46f61`; text extraction at repo root
+  `preservica_vol1_folio_index.txt`.
 - **Modern name index** (27 pp, personal-name index to Worth's printed
   abstracts): Preservica `IO_2416b89e-6f8d-4510-b585-c762f4f1b338`.
 - **Complete Volume PDF** (222 pp, full assembled manuscript): Preservica
