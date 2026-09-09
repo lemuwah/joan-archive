@@ -122,13 +122,12 @@ Every direction gets tested. English, Indigenous, maritime, religious, legal, ar
 - **Done when:** All 5 Firewall identities have pages in universal format with initial backward mining notes; naming/identity collision above resolved by Lem first.
 
 ## Task 6: Compile recon queue from Tasks 4–5
-- **Status:** NOT STARTED
-- **Depends on:** Tasks 4, 5
+- **Status:** DONE (2026-09-09) — verified by grep this session
+- **Depends on:** Tasks 4, 5 — Task 4 ✅ DONE; Task 5 file list still awaits owner decision, but the existing John pages' leads were compiled anyway (R3/R4/R9 feed the Task 5 decision without waiting for it)
 - **Priority:** MEDIUM — this is the bridge to active research sessions
-- **What to do:** Collect all search leads extracted during Tasks 4–5. Organize into a prioritized research queue. Apply bias check: are these all English-language colonial-framework leads? What's missing?
-- **What's already done:** Nothing
-- **Where to find what you need:** Search logs on every restructured page
-- **Done when:** research_queue/ has a prioritized, bias-checked list of next searches
+- **What was done:** Compiled `research_queue/RECON_QUEUE.md` — 50 leads in six tiers: (1) deed originals resolving live contradictions, (2) sideways network records, (3) court/probate/tax/vital, (4) writers & scribes' digitized papers, (5) origin-side & non-English paperwork, (6) community-governed & non-colonial lenses. Sources: all 21 people-page Search Logs (Pass B leads), the scribes document's 7 standing items, the geography index, and Task 6.75. Every lead tagged ❌ NOT SEARCHED except R2 (James instrument sweep, in progress). Bias check included: queue is strongest on digitized English colonial records; Indigenous community-governed, material culture, origin-side, women's-record, maritime, and scribe-identification weaknesses are each named with their barrier.
+- **Verification:** `grep -c "^| R[0-9]" research_queue/RECON_QUEUE.md` = 50 (run 2026-09-09, this session)
+- **Done when:** research_queue/ has a prioritized, bias-checked list of next searches — met by RECON_QUEUE.md
 
 ## Minor / Low Priority — Terminology drift (flagged 2026-09-07, not fixed)
 ## Naming standard (added 2026-09-07, per archive owner): the public-facing and instructional name for the rule set is always **"Multi Agent Laws"** — never "Seven Laws," "Three Laws," or a numeral. The count is deliberately not surfaced anywhere, because the laws are still evolving; law-list `<ol>` elements should render as unordered lists so no number is implied. `theory/three_laws.md` keeps its filename and internal content untouched — do not rename it or edit its law text, only refer to it via link text that says "Multi Agent Laws."

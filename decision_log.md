@@ -123,6 +123,16 @@ Decisions are not reversible by agents. Only the archive owner can reverse a log
 
 ---
 
+## D-011: Ghost names — suspended, separate, never erased
+
+**Date:** 2026-09-09
+**Decision:** Names with no located evidence trail (no primary record, no page-cited secondary source) are removed from person lists and public-facing pages into `evidence/ghost_names.md` — the Ghost Name Register. They are suspended, not deleted: each kept separate (no merging — we do not know if they are the same), each remains a live search target, and each graduates only via a dated record or a scoped negative. First entries: G-001 Joan "daughter", G-002 Robert, G-003 Enfield, G-004 Tocomminon, G-005 "Nawham (wife)". Same owner directive: funnel searches must run every name variant from `methodology/name_variant_registry.md` in every repository, track every John Greene appearance 1600–1750 across English, Irish/Ulster, Scottish, port, and local-town paperwork, and follow leads across jurisdictions. Anashuecot confirmed by the owner as part of our John Greene's documented network and given a people page.
+**Reasoning:** Owner directive: "we don't want to invent narrative, suspend it for now but keep the transparency honest... we are not minimizing any names. we are writing what we find, and we are testing all theories."
+**What changed:** `evidence/ghost_names.md` (new), `people/john_greene_quidnessett.md` (children table rows 3/6/8), `people/README.md`, `research/anashuecot_kin_group_mapping.md`, `people/anashuecot.md` (new), `tools/findings_pipeline/route_findings.py` (Explorer checklist), 10 regenerated funnel packets, `TASK_QUEUE.md` Task 4 checklist.
+**Authority:** Archive owner
+
+---
+
 ## Template for Future Decisions
 
 ```
