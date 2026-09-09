@@ -32,6 +32,7 @@ The Multi Agent Laws apply throughout this document.
 - **Bates 1918 pp. 169–171:** Listed among John Sr.'s children.
 - **F.L. Greene 1894 p. 10:** "Henry² b. ——."
 - **1672 Fones Purchase deed:** "Henry Greene his marke" — a witness. (This is a different generation's document — connects the Greene family to Narragansett sachem-land transactions.)
+- **NEW 2026-09-09 (Bartlett RICR Vol. 3, machine-verified):** a **"Henry Green"** appears in a freemen-admitted list under a William-Wanton-speaker Assembly (early 1700s). No qualifier attaches him to Quidnessett — **could be our Henry (the compiled son), a Surgeon-line Henry, or a third man. Held open; firewall applies.** Also new: a **Charles Greene** held a deed with John Fones in the East Greenwich/Quidnessett complex (1708 enactment) — a Greene this archive has never catalogued; see research_findings/2026-09-09_bartlett-savage-sweeps.md. 📚 SECONDARY.
 
 ## What We Don't Know
 

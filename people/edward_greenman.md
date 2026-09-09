@@ -32,6 +32,7 @@ The Multi Agent Laws apply throughout this document.
 - **Image 10 (NK Land Records):** Named as witness alongside H. Tibbits.
 - **Bates 1918 p. 76:** "On February 4, 1682, Edward Greenman acknowledged, for himself and brother David, the deed he had given Greene to land in Newport in 1647."
 - **1682 deed:** Greenman witnessed the home-place conveyance to Daniel and James.
+- **Bartlett RICR Vol. 3 (1721, machine-verified 2026-09-09):** "Joseph Hauxey and Benjamin Peckham hath delivered into the hands of the general treasurer, the sum of £494 in public bills of credit upon the account of **Edward Greenman and his son**" — colony action against Greenman abated. The Greenman household still had colony-level financial dealings in 1721, and Edward had a son of account age. 📚 SECONDARY (printed colony record).
 
 ## What We Don't Know
 
