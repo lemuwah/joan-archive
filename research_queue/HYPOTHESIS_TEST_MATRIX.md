@@ -22,7 +22,7 @@
 | RI Land Evidences Vol. I — all women named in deeds 1648–1696 | 🟡 PARTIAL | 2026-09-03 | Image 10 read (Joan). Other images not systematically searched for comparable women. |
 | Potter 1835 — Narragansett sachems' family trees | 🟡 PARTIAL | 2026-08-30 | Tomanick/Awashousse investigated. No Joan equivalent found. |
 | Fones Record — all named women | 🟡 PARTIAL | 2026-08-30 | Awassuocitt cluster investigated. No direct Joan link. |
-| Church records (Baptist, Quaker) — Narragansett country 1660–1700 | ⬜ NOT STARTED | — | Quaker meetings may have recorded Indigenous wives. |
+| Church records (Baptist, Quaker) — Narragansett country 1660–1700 | 🟡 PARTIAL | 2026-09-09 | Quaker meetings DID name wives — Sarah Stanton (m. Henry Tibbitts, Kingston, Dec 1661) verified. No Joan in any Quaker/church record located. Full Friends-records sweep not yet run. |
 | Comparative deed analysis — "his wife" clauses 1660–1690 | ⬜ NOT STARTED | — | Are other Narragansett-area deeds structured like the 1682 deed? |
 | Ninigret II / Narragansett sachem genealogy — named women | ⬜ NOT STARTED | — | Cross-reference with known sachem-line women. |
 
@@ -33,7 +33,7 @@
 | Ship passenger lists 1640–1670 — "Joan" arrivals to RI/CT/MA | ⬜ NOT STARTED | — | Hotten, Banks, Coldham compilations. |
 | English parish records — Joan + Greene marriage | ⬜ NOT STARTED | — | Would need to know which parish. Broad search impractical without leads. |
 | CT/MA vital records — Joan marriages 1650–1675 | ⬜ NOT STARTED | — | If she came through another colony first. |
-| Wickford/Cocumscussoc English settler women — named wives | ⬜ NOT STARTED | — | Are other English wives in the area similarly undocumented? |
+| Wickford/Cocumscussoc English settler women — named wives | 🟡 PARTIAL | 2026-09-09 | Neighbor-wives calibration study: 1 of 10 peer wives verified visible (Sarah Stanton Tibbitts, via Quaker records); 9 unresolved pending probate pulls. See research/neighbor_wives_comparison.md. |
 
 ## Model C — Irish Origin
 
