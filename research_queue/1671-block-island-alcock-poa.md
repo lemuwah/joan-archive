@@ -35,9 +35,11 @@ The deed names "John Greene" with NO town, NO suffix (Jr./Sr.), NO generational 
 - **Corrections applied:** Rerun under Three Laws / multi-agent quarantine logic. Final verdict: identity remains unresolved.
 
 ## Disclaimer
-[standard archive disclaimer block]
+>This archive documents lives lived between approximately 1600–1750 in Narragansett country (present-day Rhode Island). All records from this period were created within colonial legal systems and reflect their biases, categories, and blind spots. Every name found here — English, Narragansett, Niantic, mixed-heritage, unknown — represents a real person whose full story these records were not designed to capture. Content may include references to war, captivity, enslavement, displacement, legal coercion, and loss. These are documented realities of the period, not abstractions. All cultural and genealogical content is included for research purposes in the quest to identify Joan Unknown Greene and will be revised or removed if requested by descendant communities or tribal representatives.
 
 ## Search Direction Bias Check
+>Search direction bias check: When an agent recommends "where to look next," ask: is this recommendation biased toward digitized, English-language, colonial-framework sources? What record types exist that this agent might not know to suggest? What would a Narragansett historian, a maritime historian, an archaeologist, a linguist look for that a genealogist wouldn't?
+---
 This source was found in digitized colonial English-language records. What record types might also illuminate this transaction?
 - Narragansett sachem deeds involving the same Block Island shoreline
 - Maritime shipping logs between Point Judith and Block Island (1660s-70s)
