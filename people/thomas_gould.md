@@ -86,6 +86,7 @@ The "Mr." honorific and his settlement Lieutenant title confirm his status. He a
 3. Birth/death dates?
 4. Family connections?
 5. ❌ Did the Connecticut records of his prisoner transport name other Narragansett-country men — possibly including John Greene?
+6. 🟡 NEW LEAD (2026-09-09, Austin full-text sweep): Austin records a **Thomas Gould whose wife Elizabeth** received "£10 a year for life, in lieu of all her claims of land in Narragansett," with an uncle Thomas Gould in the same transaction chain; another Austin line gives a Thomas & Elizabeth (Mott) Gould. Whether the Narragansett-claims Thomas is OUR Thomas of Quidnessett is unresolved — two Thomas Goulds (uncle/nephew) are in the record. If it is him: his wife's name is Elizabeth, and her settlement was an annuity against Narragansett land claims — structurally identical to Joan's 1682 annuity. **Do not assign yet**; queued in the study's search log.
 
 ## Connections
 

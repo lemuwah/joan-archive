@@ -33,6 +33,7 @@ The Multi Agent Laws apply throughout this document.
 - **Bates 1918 p. 76:** One of two sons receiving Quidnessett home-place land.
 - **F.L. Greene 1894 p. 10:** "James² b. ——; m. ——."
 - **Feb 15, 1695/6 deed:** "James Greene his brother, 18¾ acres, bounded in part by Edward Greene his brother." Record badly damaged.
+- **The Wightman chain (Austin, GREENE entry, added 2026-09-09):** Austin abstracts the 1696 James Greene → George Wightman sale with the provenance recital intact: the land was "bounded south by land of his brother Edward Greene," and "having been received from grantor's brother **Benjamin**, who had received it from his brother **John Greene**." 📚 SECONDARY — this partially repairs the damaged-record problem (R12): the family land chain John → Benjamin → James → Wightman is now documented from a published abstract, original still unread.
 - **Post-1700 deed:** James Greene and Elizabeth Greene (his wife) to John Corey.
 
 ## What We Don't Know

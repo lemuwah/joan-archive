@@ -1,0 +1,11 @@
+{
+  "finding_id": "FINDING-390c4db8a879",
+  "image_references": [],
+  "images_not_pending": [],
+  "missing_image_references": [],
+  "pending_review_images": [],
+  "run_date": "2026-09-09",
+  "source_path": "research_findings/2026-09-09_sideways-lanes-first-runs.md",
+  "source_sha256": "20e7c5685a06bd4456b20a0f662eb68b51319f6b6ba5349921b6f7a433fadc36",
+  "status": "PENDING_HUMAN_REVIEW"
+}

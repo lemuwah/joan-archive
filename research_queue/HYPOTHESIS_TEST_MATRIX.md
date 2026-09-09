@@ -33,7 +33,7 @@
 | Ship passenger lists 1640–1670 — "Joan" arrivals to RI/CT/MA | ⬜ NOT STARTED | — | Hotten, Banks, Coldham compilations. |
 | English parish records — Joan + Greene marriage | ⬜ NOT STARTED | — | Would need to know which parish. Broad search impractical without leads. |
 | CT/MA vital records — Joan marriages 1650–1675 | ⬜ NOT STARTED | — | If she came through another colony first. |
-| Wickford/Cocumscussoc English settler women — named wives | 🟡 PARTIAL | 2026-09-09 | Neighbor-wives calibration study: 1 of 10 peer wives verified visible (Sarah Stanton Tibbitts, via Quaker records); 9 unresolved pending probate pulls. See research/neighbor_wives_comparison.md. |
+| Wickford/Cocumscussoc English settler women — named wives | 🟡 PARTIAL | 2026-09-09 | Neighbor-wives calibration: after Austin sweep, 5 of 10 peer wives visible (Stanton primary; Fones/Andrew/Carr/Gould via Austin). Joan trending DISTINCTIVE but counterweight noted (John's will is the lost one). research/neighbor_wives_comparison.md |
 
 ## Model C — Irish Origin
 

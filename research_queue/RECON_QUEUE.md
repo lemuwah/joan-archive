@@ -26,7 +26,7 @@
 | R9 | 1651 Caleb Carr deed full text — "John Greene of Newport, husbandman" (Bates identity test) | john_greene_newport.md | Newport land evidences | ❌ |
 | R10 | NK grantor/grantee sweep for **George Havens** — any land "formerly John Greene's" | george_havens.md | DGS 008204949 index | ❌ |
 | R11 | James & Elizabeth Greene → **John Corey** deed, full text | james_greene.md / elizabeth_wife_of_james.md | NK land records | ❌ |
-| R12 | 15 Feb 1695/6 damaged deed — full read attempt (Daniel/James/Edward bounds) | daniel_greene.md / james_greene.md | DGS 008204949 | ❌ |
+| R12 | 15 Feb 1695/6 damaged deed — full read attempt (Daniel/James/Edward bounds) | daniel_greene.md / james_greene.md | DGS 008204949 | 🟡 PARTIAL REPAIR 2026-09-09 — Austin's GREENE entry supplies the chain from a published abstract: John → Benjamin → James → George Wightman, bounded south by Edward Greene. Original still unread |
 | R13 | 1672 Fones Purchase **original** — Henry's mark, full witness list | henry_greene.md / anashuecot.md | Fones Record p. 90, RI State Archives | ❌ original unread |
 | R14 | **1654 Potowomut Neck purchaser list** — does any John Greene appear | john_greene_potowomut.md | Warwick town records | ❌ |
 | R15 | **1666 Quidnessett plat original** — NHR treats it as extant | john_greene_son_of_john.md | RI State Archives / RIHS | ❌ |
@@ -51,12 +51,12 @@
 
 | # | Lead | Why | Status |
 |---|---|---|---|
-| R27 | **Winthrop Jr. medical casebooks** — Greene/Green variants, Narragansett/Wickford/Quidnessett, "wife of" entries, 1650–1670 | Best sideways net for a woman with no deeds | ❌ |
+| R27 | **Winthrop Jr. medical casebooks** — Greene/Green variants, Narragansett/Wickford/Quidnessett, "wife of" entries, 1650–1670 | Best sideways net for a woman with no deeds | 🟡 ACCESS MAPPED 2026-09-09 — casebooks physically at MHS (Winthrop Family Papers); no name-searchable digitized edition verified. Path: MHS Ask-a-Librarian directed query (request text staged in the 2026-09-09 sideways-lanes finding). Search itself not run |
 | R28 | **Aspinwall Notarial Records** (Boston, all-New England reach) — Greene-variant sweep | Notaries record people official records miss | ❌ |
 | R29 | **Kings Province Commission testimony (1664–65)** — who testified from Quidnessett/Cocumscussoc; originals TNA CO 1 | Sworn testimony names residents | ❌ |
 | R30 | **MHS Winthrop Papers** — original of the 14 May 1664 Richard Smith letter | Print-only source; original may say more | ❌ |
 | R31 | **Ezra Stiles diary + itineraries** — RI family traditions touching Greene/Joan/Quidnessett | Within living memory of Joan's grandchildren | ❌ |
-| R32 | **Thomas Minor diary (Stonington, 1653–1684)** — Greene-variant sweep | Border-town diarist naming travelers/servants | ❌ |
+| R32 | **Thomas Minor diary (Stonington, 1653–1684)** — Greene-variant sweep | Border-town diarist naming travelers/servants | ✅ SCOPED NULL 2026-09-09 — full text grepped locally (IA `diaryofthomasmin00mino_0`): zero Greene/Green/Grene, zero Joan, zero Cocumscussoc/Quidnessett/Wickford. Scope note: east-of-the-bay diarist. Logged in NEGATIVE_LOG |
 | R33 | **Samuel Hubbard journal** (Newport, c.1641–1688) — verify manuscript location first | Newport religious network names wives | ❌ |
 | R34 | **Sidney S. Rider manuscript notes, RIHS** — pre-fire NK records access | Collector read what burned | ❌ |
 | R35 | **RIHS Mss 461 "will complaint"** — physical pull target (agent_orientation priority) | May contain a post-1682 Joan reference | ❌ |
@@ -80,11 +80,11 @@
 
 | # | Lead | Lens | Status |
 |---|---|---|---|
-| R46 | **Native Northeast Portal full variant sweep** — all 11 verified Anashuecot spellings + Coginaquand cluster + Awassuocitt | Indigenous-deed corpus, digitized | ❌ |
+| R46 | **Native Northeast Portal full variant sweep** — all 11 verified Anashuecot spellings + Coginaquand cluster + Awassuocitt | Indigenous-deed corpus, digitized | ❌ BLOCKED 2026-09-09 — portal is JS-rendered; no agent could query it this session. The 11-variant search list is staged and ready for a human browser session |
 | R47 | **Tomaquag Museum / Narragansett community-governed sources** — Quidnessett grants, kin structure | Community knowledge | ❌ — by request and protocol only (contribute.html consent language) |
 | R48 | **Archaeology/material culture** — Quidnessett home place + Allen's Harbor boundary survey status; RI Slave History Medallions Potowomut file | Non-documentary evidence | ❌ |
 | R49 | **1666 plat scribe / NHR "Notes on Quidnessett" full series** — who drew it, where filed | Scribe program | ❌ |
-| R50 | **Women's-record sideways sweep** — neighbor-wives calibration: are other Quidnessett-area wives as invisible as Joan? | Historiography check — calibrates what her silence means | 🟡 PARTIAL 2026-09-09 — study started: [neighbor_wives_comparison.md](../research/neighbor_wives_comparison.md). 1 verified visible wife (Sarah Stanton, Quaker records); 9 households unresolved pending probate pulls |
+| R50 | **Women's-record sideways sweep** — neighbor-wives calibration: are other Quidnessett-area wives as invisible as Joan? | Historiography check — calibrates what her silence means | 🟡 PARTIAL 2026-09-09 — [neighbor_wives_comparison.md](../research/neighbor_wives_comparison.md). After the Austin sweep: **5 of 10 peer wives now visible** (Stanton primary; Fones/Andrew/Carr/Gould via Austin abstracts), 5 unresolved. Early leaning: Joan's silence trends DISTINCTIVE — counterweight logged (her husband's will is the lost one) |
 
 ---
 

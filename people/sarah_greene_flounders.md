@@ -45,6 +45,9 @@ The Multi Agent Laws apply throughout this document.
 - Edward Greenman = same witness on the 1682 deed.
 - No complete inventory, will, or distribution located.
 
+### The Estate Petition — full mechanism (Austin, FLOUNDERS entry, 2026-09-09)
+Austin's abstract of the colony record adds the operative detail the archive lacked: upon execution, **Thomas's estate was forfeited to the King**. Edward Greenman and **John Greene, of Newport** petitioned the Assembly (26 Oct 1670) asking that the estate go to "his late wife **Sarah**" after the charges of the execution were paid. The Assembly — quoted as "commiserating the solitary and poor estate and condition of Sarah, the late wife of the aforenamed Thomas Flounders" — granted the petition; the widow received "all bedding and household stuff, a cow and hog, together with the corn." Austin also records the killing's circumstances: House, holding up his arm, fell backward and struck his head on a rafter — Flounders was in the shop; the death may have been a fall, yet the execution followed. 📚 SECONDARY (Austin's abstract; the Assembly record original not yet pulled). **Firewall note:** the petitioner is styled "of Newport" — this feeds both the Newport/Quidnessett alias question and the which-John paternity question; it does not settle either.
+
 ### From Bates 1918 p. 78
 - Sarah² listed as child of John Greene and wife Joan, married Thomas Flounders about 1668.
 
