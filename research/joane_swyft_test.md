@@ -44,10 +44,21 @@ A candidate Joane fails only if geography, chronology, or network makes her impo
 
 | # | Test | Answers | Where | Status |
 |---|---|---|---|---|
-| T1 | Does "Joane Swyft" still appear under that name in Plymouth records 1651–1668? | Endpoint: if yes → fails | Plymouth vols. 3–4 (`recordsofcolonyo0102newp` continues; same download covers into 1668) | ❌ queued — text already in hand |
-| T2 | Any Swyft/Wing/Barnes in Narragansett-country records | Network collision | Bartlett RI vols. 1–3 (already downloaded) | ❌ queued — text in hand |
+| T1 | Does "Joane Swyft" still appear under that name in Plymouth records 1651–1668? | Endpoint: if yes → fails | Plymouth vols. 3–4 (`recordsofcolonyo0102newp` continues; same download covers into 1668) | ✅ RUN 2026-09-09 — see below |
+| T2 | Any Swyft/Wing/Barnes in Narragansett-country records | Network collision | Bartlett RI vols. 1–3 (already downloaded) | ✅ RUN 2026-09-09 — see below |
 | T3 | William Swyft's identity & the estate inventory — children named? | Family shape | Plymouth vols. 1–2 deep read + Sandwich town records | ❌ queued |
 | T4 | Any "Joane/Joan" remarriage record, Plymouth/RI/CT 1643–1655 | The window | Savage vol. 2 + NEHGS (human) | ❌ queued |
 | T5 | Sandwich vital records (published) — Swyft family entries | Family shape | IA published Sandwich VRs | ❌ queued |
+
+## T1/T2 results (2026-09-09, both run in-house, texts already downloaded)
+
+**T1 — INCONCLUSIVE, leaning negative for the candidate.** The Plymouth scan in hand covers only 1633–1651, and its last Swyft is the 1640s witness summons. The 1651–1668 continuation lives in the *next* Shurtleff volume (`...newp_0` or v.3–4 scan — not yet downloaded). What T1 did establish: **through 1651 she is still "Joane Swyft, widdow"** — nine years after 1642, no remarriage on record. Every year that holds, the window for her becoming "Joan Greene by ~1643–1650" narrows further. The decisive volume is queued.
+
+**T2 — NO COLLISION in RI records, with one adjacency flagged.** Bartlett RI vols. 1–3: **Swyft/Swift = 0** (no Swyft ever surfaces in the RI colony record 1636–1706). Wing/Barnes hits are mostly common nouns ("wing of your Royall protection," "barnes having corne"). The real surnames that do appear:
+- **John Wing** and **Jonathan Fish** — admitted freemen *together in the same Portsmouth list* (RI vol. 3, p. 420-era). The Fish surname is in Joane's own witness cluster (Jonathan Fish and Mary his wife). Portsmouth is Aquidneck Island — her network touches the bay, but **Portsmouth ≠ Newport ≠ Quidnessett**, and a John Wing of Portsmouth is not Daniell Wing of Sandwich. ⚠️ Adjacency logged; not a collision. What WOULD upgrade it: any record putting a Wing or Fish in *North Kingstown/Kingstown/Quidnessett*.
+- Barneses in RI vol. 3 (Peter of Providence, John of Providence/Newport) — same-town-as-network, not same-network.
+- **Collision verdict: none.** The Sandwich cluster and the Quidnessett cluster do not touch in any record read to date.
+
+**Test standing:** she remains UNDER TEST (T3–T5 + the Plymouth vols. 3–4 endpoint read are still open), leaning strongly toward *Sandwich widow, unrelated*. Her calibration value is already banked.
 
 *Hostile note: the likeliest outcome is that she's exactly what she appears to be — a Sandwich widow who never left the record. The archive runs the test anyway because the cost is low and the rule is the rule: surfaced Joans get tested, not vibes.*

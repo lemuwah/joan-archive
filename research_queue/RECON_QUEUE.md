@@ -87,7 +87,7 @@
 | R48 | **Archaeology/material culture** — Quidnessett home place + Allen's Harbor boundary survey status; RI Slave History Medallions Potowomut file | Non-documentary evidence | ❌ |
 | R49 | **1666 plat scribe / NHR "Notes on Quidnessett" full series** — who drew it, where filed | Scribe program | ❌ |
 | R50 | **Women's-record sideways sweep** — neighbor-wives calibration: are other Quidnessett-area wives as invisible as Joan? | Historiography check — calibrates what her silence means | 🟡 PARTIAL 2026-09-09 — [neighbor_wives_comparison.md](../research/neighbor_wives_comparison.md). After the Austin sweep: **5 of 10 peer wives now visible** (Stanton primary; Fones/Andrew/Carr/Gould via Austin abstracts), 5 unresolved. Early leaning: Joan's silence trends DISTINCTIVE — counterweight logged (her husband's will is the lost one) |
-| R51 | **Joane Swyft of Sandwich — geographic test** (Plymouth records: widow, administratrix 1642, witness) | A surfaced Joane — tested, not dismissed, per owner rule. Five-test battery staged in [joane_swyft_test.md](../research/joane_swyft_test.md); T1/T2 runnable from texts already downloaded | 🟡 TEST OPEN 2026-09-09 |
+| R51 | **Joane Swyft of Sandwich — geographic test** (Plymouth records: widow, administratrix 1642, witness) | A surfaced Joane — tested, not dismissed, per owner rule. Five-test battery staged in [joane_swyft_test.md](../research/joane_swyft_test.md); T1/T2 runnable from texts already downloaded | 🟡 T1+T2 RUN 2026-09-09 — still "Swyft, widdow" through 1651 (window narrowing); ZERO Swyft/Wing/Barnes collision with the Quidnessett network in RI vols. 1–3 (Wing/Fish adjacency in Portsmouth logged, not a collision). Leaning Sandwich-widow-unrelated; T3–T5 open |
 
 ---
 

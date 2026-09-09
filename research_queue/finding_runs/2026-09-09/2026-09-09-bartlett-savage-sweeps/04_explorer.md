@@ -1,8 +1,8 @@
 # Explorer Queue Packet — research_findings/2026-09-09_bartlett-savage-sweeps.md
 
-**Finding ID:** `FINDING-1f3b6d3f927f`
+**Finding ID:** `FINDING-da4cc6a2c49a`
 **Status:** `PENDING_HUMAN_REVIEW`
-**Source SHA-256:** `2c9df6123d8733a11d9734ba05b5dd47ca2f49e7b726d6563a168d8a13ced423`
+**Source SHA-256:** `24204182be8f9c157b935f371efb39ed1cbd522b5517c54ba5b755eaabc58610`
 **Stage purpose:** expand sideways context and identify where evidence may be hiding in plain sight.
 **Publication rule:** This is a review packet, not evidence and not an approval.
 
@@ -55,6 +55,7 @@ My first variant grep used `\bgreen` word-anchors and found "0 Quidnessett varia
 ### Added on the line-level pass (same session)
 - **The Charles Greene + John Fones deed (Bartlett Vol. 3, 1708 session, pp. 51–52 of the print).** The Assembly, disposing of East Greenwich land petitions, enacts that lands in "the deeds of **Cojanaquant** to Capt. Cranston and company" were already confirmed "to the township of East Greenwich, and **John Fones and partners**" — and rules likewise on "the deed of **Charles Greene** and John Fones and partners," citing a plat by Capt. Peleg Sanford and Mr. John Smith, surveyor. Three things fall out: (1) a **Greene we have never catalogued — Charles** — held a deed with John Fones in the East Greenwich/Quidnessett land complex; (2) this is the **second** Greene+Fones land partnership on record (the other is 1672); (3) **Cojanaquant/Coginaquand's grant chain is confirmed into East Greenwich by a colony act**, not just by Potter. ⚠️ Which Charles, and whether he belongs to the Quidnessett line, the Surgeon line, or neither: UNRESOLVED, firewall rules apply.
 - **"Henry Green" admitted freeman** (Vol. 3, a William-Wanton-speaker Assembly, freemen list): sits in a Newport/Portsmouth-heavy list (Caseys, Carrs, Shearmans, Clarkes). No identifier attaches him to Quidnessett — **could be ours (the compiled Henry), the Warwick line, or a third man. Flagged, not assigned.** This is exactly the class of record La Mance turned into "Robert, freeman 1674" — this time we keep the man and the list honest and separate.
+- **Second line-level pass (Swyft T2 spin-off):** Vol. 3's freemen lists also yielded **"John Greene, son of James Greene, deceased," of Warwick** — a clean Surgeon-line datapoint (the Major's son, third generation); and the **John Wing + Jonathan Fish adjacency** in a Portsmouth list, logged to the Swyft test file as a non-collision. No Quidnessett-line Greene appears anywhere in Vol. 3's freemen lists — consistent with the record that our line never sought colony freemanship after 1671.
 
 ### Savage Vol. 1 — N/A by construction + a method note
 Vol. 1 covers surnames A–B; the Greene entry is Vol. 2. The 41 "Joan" hits are other families' Joans. **Scoped no-result, not a negative** — Vol. 2 remains unsearched and is queued.
@@ -71,6 +72,24 @@ Vol. 1 covers surnames A–B; the Greene entry is Vol. 2. The 41 "Joan" hits are
 | Bartlett Vols. 4+ (1706+) | ❌ queued |
 | Bates vols. XI–XII correct scan (the 1918–19 Greene articles) | ❌ still not identified on IA |
 | OCR-hygiene rule added to sweep method: search the full registry cluster + subtract "Greenwich" collisions | ✅ applied from this run forward |
+
+---
+
+## Second wave (same session, 2026-09-09 late): Savage Vol. 2 + Swyft T1/T2 + the Swyft network's own corridor
+
+### Savage Vol. 2 (D–G surnames — the GREENE volume), IA `agenealogicaldi02unkngoog`
+- **Joan: 46 hits, zero co-occurring with Greene.** Quidnessett/Cocumscussoc variants: 0. **The strongest genealogist of the period knew nothing of our John or Joan.** The 2026-09-05 web-search NULL is now machine-verified.
+- **The Warwick corridor is confirmed as Surgeon-line territory in print:** Savage's GORTON entry — Samuel Gorton "in 1643, with Holden, **Greene**, and others, made the great movem. to purchase of Warwick from the Ind." — and his daughter Mary "m. perhaps, **Peter Greene**, first, and, next, John Sanford." Peter Greene = Surgeon's son; the Gorton–Greene intermarriage documented here is all Warwick-line.
+- One John Greene in vol. 2 is a **Boston mariner taken by the Turks, 1681** (per Roadiah Russell's diary, Gen. Reg. VII.54) — a *fifth* colonial John Greene for the firewall's census, noted so nobody mistakes him for ours.
+
+### Swyft T1/T2 — run, in-house, free
+Results written into [../research/joane_swyft_test.md](../research/joane_swyft_test.md). Headlines: still "Joane Swyft, widdow" through 1651 (window narrowing); **zero Swyft/Wing/Barnes collision with the Quidnessett network** in RI vols. 1–3; one Portsmouth Wing–Fish adjacency logged as NOT a collision. Candidate remains open, leaning unrelated.
+
+### Swyft network check (the follow-the-truth leg)
+Her documented associates — Daniell Wing and John Barnes — are **Sandwich** men (Wing: town-founder stock; Barnes: Plymouth-Sandwich corridor). No Narragansett tie located. Where they *do* intersect RI records is Portsmouth (Aquidneck) freemen lists of the 1690s — interesting geography, wrong town, wrong decade, no deed.
+
+### Firewall ledger, updated
+Colonial John Greenes now on the board: I Surgeon · II Quidnessett (ours) · III Major John of Warwick · IV Newport · V Kingstown · **VI the Boston mariner (taken by Turks 1681, Savage v2)** · Charles Greene of the Fones deed (uncatalogued line). Each kept separate. Each is a door.
 
 *Bias check: these are the colony's own printed records — the system least likely to name a woman like Joan by design. Verifying her absence here is calibration (how far the silence extends), not discovery. The discovery lanes remain the household/sideways records queued in the road.*
 ```

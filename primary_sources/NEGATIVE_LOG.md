@@ -46,6 +46,7 @@
 | 2026-09-09 | Savage, Gen. Dict. Vol. 1 (A–B surnames) | Joan cluster | N/A by construction — Greene entry is Vol. 2 | Kimi (Copilot) | Scoped no-result, not a negative; Vol. 2 queued |
 | 2026-09-09 | Bartlett RICR Vol. 2 (1663–1677), IA `recordsofcolonyo02rhod` | Full variant clusters | Joan: 0. Our John appears (1664 warrant via Smith letter — original at RIHS per Bartlett footnote). Other Greenes are Surgeon-line officeholders. Fones: 0 | Kimi (Copilot) | Machine-verified; the volume where our John was EXPECTED — he appears, Joan doesn't |
 | 2026-09-09 | Plymouth Colony Records vols. 1–2 (1633–1651), IA `recordsofcolonyo0102newp` | Full variant clusters | Joan: 10 hits, all other women (Joane Swyft of Sandwich = visible-widow calibration case). Greene-person: NULL — 70+ "Green" hits are the PLACE Green's Harbor. Quidnessett cluster: 0 | Kimi (Copilot) | Pulled under a misleading identifier (title says RI, book is Plymouth) — self-correction logged in research_findings/2026-09-09_bartlett-vol2-smith-letter.md |
+| 2026-09-09 | Savage, Gen. Dict. Vol. 2 (D–G), IA `agenealogicaldi02unkngoog` | Joan cluster; Joan+Greene co-occurrence; Quidnessett/Cocumscussoc clusters; Fones/Tibbit/Swyft/Wing | Joan: 46 hits, NONE with Greene. Quidnessett variants: 0. Swyft: 0 in the RI sections. Greene content is all Surgeon-line/Warwick + a Boston mariner John Greene (Turks, 1681) | Kimi (Copilot) | Machine-verifies the 2026-09-05 web-search NULL for Savage |
 
 ---
 
