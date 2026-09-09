@@ -45,7 +45,7 @@
 | R23 | 1700 Kingstown riot/prisoner-rescue case (Edward Green + Tibbitts sons) | henry_tibbitts.md / edward_greene.md | Kingstown court records | ❌ |
 | R24 | Quaker meeting records — Henry Tibbitts & Sarah Stanton's 1661 Kingston marriage circle (meetings named women) | henry_tibbitts.md | NEHGS / Friends records | ❌ |
 | R25 | Wickford/Narragansett petitions 1663 & 1668 — full signer lists | sarah_greene_flounders.md | RI State Archives / CT archives (petitions sought CT protection) | ❌ |
-| R26 | Connecticut Colony records — 1663 declaration AND Gould's prisoner transport to Hartford | thomas_gould.md / john_greene_quidnessett.md | Public Records of the Colony of CT | ❌ |
+| R26 | Connecticut Colony records — 1663 declaration AND Gould's prisoner transport to Hartford | thomas_gould.md / john_greene_quidnessett.md | Public Records of the Colony of CT | 🟡 NEW SPECIFIC TARGET 2026-09-09 — the Hutchinson & Hudson packet (incl. the Smith letter) was forwarded to the Governor of Connecticut in May 1664 (Bartlett Vol. 2). CT archives may hold the copy. Also new from Vol. 2: Gould's 1664 bond/appearance documented in the same packet |
 
 ## Tier 4 — Writers and scribes (digitized personal papers; see [scribes_of_the_great_migration.md](../research/scribes_of_the_great_migration.md))
 
@@ -54,7 +54,7 @@
 | R27 | **Winthrop Jr. medical casebooks** — Greene/Green variants, Narragansett/Wickford/Quidnessett, "wife of" entries, 1650–1670 | Best sideways net for a woman with no deeds | 🟡 ACCESS MAPPED 2026-09-09 — casebooks physically at MHS (Winthrop Family Papers); no name-searchable digitized edition verified. Path: MHS Ask-a-Librarian directed query (request text staged in the 2026-09-09 sideways-lanes finding). Search itself not run |
 | R28 | **Aspinwall Notarial Records** (Boston, all-New England reach) — Greene-variant sweep | Notaries record people official records miss | ❌ |
 | R29 | **Kings Province Commission testimony (1664–65)** — who testified from Quidnessett/Cocumscussoc; originals TNA CO 1 | Sworn testimony names residents | ❌ |
-| R30 | **MHS Winthrop Papers** — original of the 14 May 1664 Richard Smith letter | Print-only source; original may say more | ❌ |
+| R30 | **Smith 14 May 1664 letter** — original manuscript | Print-only source; original may say more | 🟡 REPOSITORY FOUND 2026-09-09 — Bartlett RICR Vol. 2 prints the letter with the footnote "Collection of manuscripts in the Library of the Rhode Island Historical Society." Original is at **RIHS** (not MHS as previously guessed). Joins Mss 461 on the RIHS physical-pull list. Bonus: the packet was copied to the Governor of Connecticut via Hutchinson & Hudson — a CT-side copy may survive |
 | R31 | **Ezra Stiles diary + itineraries** — RI family traditions touching Greene/Joan/Quidnessett | Within living memory of Joan's grandchildren | ❌ |
 | R32 | **Thomas Minor diary (Stonington, 1653–1684)** — Greene-variant sweep | Border-town diarist naming travelers/servants | ✅ SCOPED NULL 2026-09-09 — full text grepped locally (IA `diaryofthomasmin00mino_0`): zero Greene/Green/Grene, zero Joan, zero Cocumscussoc/Quidnessett/Wickford. Scope note: east-of-the-bay diarist. Logged in NEGATIVE_LOG |
 | R33 | **Samuel Hubbard journal** (Newport, c.1641–1688) — verify manuscript location first | Newport religious network names wives | ❌ |

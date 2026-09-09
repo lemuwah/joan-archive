@@ -41,6 +41,7 @@ Joan has no Quaker record, no church record, no surviving husband's will naming 
 - **Counterweight, honestly stated:** all five newly-visible wives surface through *published secondary abstracts* (Austin). None has a pulled original yet. And three of the visible five are named only in their husband's estate documents — the exact class of document that is *lost* for John Greene (his will is reported burned). If John's will had survived like Carr's and Tibbitts's did, Joan might be as "visible" as any of them. The comparison must therefore be read as: **Joan is invisible in the records THAT SURVIVE for her household** — which mixes her actual record-visibility with the 1869 fire's selection effect.
 - The **religious-affiliation pattern holds**: the one wife visible outside estate documents is the Quaker-married one.
 - Bonus structural find: **Elizabeth Gould's settlement was an annuity** — £10/year for life in lieu of Narragansett land claims — the same instrument family as Joan's 30-shilling life annuity. A direct comparison case now exists for Stage 2 of the road.
+- **Genre calibration from Plymouth (2026-09-09):** Plymouth Colony court orders 1633–1651 (swept accidentally — wrong scan, right lesson) name women routinely: wives in morals cases, widows administering estates (e.g., **Joane Swyft of Sandwich, administratrix 1642, giving evidence 1640s**). Colonial record systems *can* name women; the Quidnessett corridor's systems simply never name Joan.
 
 ## The searches that fill the table (queued)
 
