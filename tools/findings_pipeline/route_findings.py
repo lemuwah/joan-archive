@@ -55,7 +55,7 @@ def finding_record(path: Path, run_date: str) -> dict:
 def stage_text(record: dict, stage: tuple[str, str, str], finding_text: str) -> str:
     directory, title, purpose = stage
     image_note = ", ".join(record["image_references"]) if record["image_references"] else "none detected"
-    return "\n".join([
+    lines = [
         f"# {title} Queue Packet — {record['source_path']}",
         "",
         f"**Finding ID:** `{record['finding_id']}`",
@@ -82,8 +82,19 @@ def stage_text(record: dict, stage: tuple[str, str, str], finding_text: str) -> 
         "",
         "## Required output",
         "Record source anchors, uncertainty, contradictions, and next actions. Keep person identity separate from name similarity.",
-        "",
-    ])
+    ]
+    if title == "Explorer":
+        lines.extend([
+            "",
+            "## Required sideways-context checklist",
+            "- Map household people, witnesses, neighbors, in-laws, buyers, sellers, and officials.",
+            "- Expand across land, probate, court, church, militia, servant, captivity, shipping, and Indigenous-centered records.",
+            "- Test Rhode Island, Massachusetts, Connecticut, Plymouth, New York, Crown, port, and local town repositories.",
+            "- Search spelling variants and relationship descriptions, not only the target person's name.",
+            "- For each proposed edge, state the source anchor that would prove it and the record that would disprove it.",
+        ])
+    lines.append("")
+    return "\n".join(lines)
 
 
 def route(run_date: str, check: bool) -> int:

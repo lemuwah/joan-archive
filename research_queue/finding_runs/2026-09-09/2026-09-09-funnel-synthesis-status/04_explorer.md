@@ -138,3 +138,10 @@ genealogy tree or another repetition of La Mance.
 
 ## Required output
 Record source anchors, uncertainty, contradictions, and next actions. Keep person identity separate from name similarity.
+
+## Required sideways-context checklist
+- Map household people, witnesses, neighbors, in-laws, buyers, sellers, and officials.
+- Expand across land, probate, court, church, militia, servant, captivity, shipping, and Indigenous-centered records.
+- Test Rhode Island, Massachusetts, Connecticut, Plymouth, New York, Crown, port, and local town repositories.
+- Search spelling variants and relationship descriptions, not only the target person's name.
+- For each proposed edge, state the source anchor that would prove it and the record that would disprove it.
