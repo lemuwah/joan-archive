@@ -1,1 +1,4 @@
 occurrence_id,name_as_written,date,town,document_type,husband,children,witnesses,neighbors_adjacent_owners,land_parcel,land_boundaries,indigenous_place_name,role,previous_owner,next_owner,later_appearance,contradiction,identity_status,notes,source_reference
+HANNAH-001,"my Daughter Hannah Wilbore alias Hannah Clarke",1666/1671,,deed,Latham Clarke,,,,,,,,,,,,RESOLVED_EXTERNALLY,"father Samuel Wilbore named; alias form confirms maiden name",RI Land Evidences Vol I doc 58/59
+HANNAH-002,"Hannah Clarke wife of... Walter Clarke",1674,Newport,dower release,Walter Clarke,,,,,,,,,,,,UNRESOLVED,"distinct woman from Hannah Wilbore/Clarke above; different husband (Walter not Latham)",RI Land Evidences Vol I doc 112/113
+HANNAH-003,"Hannah wife of William Haviland... Release my Right of Dowry",1675,,dower release,William Haviland,,,,,,,,,,,,UNRESOLVED,dower release,RI Land Evidences Vol I doc 105

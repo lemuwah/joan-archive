@@ -39,6 +39,32 @@ Variants kept separate to measure divergence:
 | 11 | Hester | Low/medium | Does spelling hide identity continuity? |
 | 12 | Mercy/Patience/Prudence | Special case | Puritan naming cluster vs actual identity |
 
+## Methodological Notes (added during experiment)
+
+### Names outside the 12 buckets
+
+The Gorton deed (27 Nov 1677) surfaced **Susannah** and **Mahershalalhashbaz** — neither fits the current 12 buckets. Susannah is common enough in this corpus that its exclusion may be an accidental omission. **Decision needed before more data enters:** is the 12-name list a deliberate sample (and exclusions are noted) or should it expand? For now, names outside the 12 are logged in this README under "Overflow Names" and will be assigned buckets if the experiment expands.
+
+### In-corpus vs external resolution
+
+**"No maiden name in Land Evidences Vol. I" ≠ "no maiden name ever found."** Frances (Latham) Clarke/Vaughan appears in this corpus only as "mrs Francis Vahan" / "Frances Vahan" — no maiden name anywhere in the land record — but her maiden name (Latham) is well documented externally. If the variance report only tracks in-corpus resolution, it will overcount "unresolved" women who are actually fine, just not resolved by this specific source. The `identity_status` field uses three values to handle this:
+
+- **RESOLVED_IN_CORPUS** — the land record itself provides enough to uniquely identify the woman
+- **RESOLVED_EXTERNALLY** — identity is known from other primary sources, but this corpus alone would not resolve her
+- **UNRESOLVED** — no resolution from any source
+
+The experiment measures the land evidences' resolving power, not the women's overall identifiability.
+
+### Fully-known women go in controls, not data CSVs
+
+Women with fully documented maiden names (like the six Gorton daughters) do NOT belong in the data CSVs — putting them there would inflate the "resolved" rate with women who were never actually unknown. They belong in `controls/` as baseline comparisons showing what maximum achievable relational density looks like.
+
+### Overflow Names (outside the 12 buckets)
+
+- **Susannah** — Gorton deed, 27 Nov 1677: Susannah Barton (née Gorton). Common enough to warrant its own bucket.
+- **Mahershalalhashbaz** — Gorton deed: Mahershalalhashbaz Cole (née Gorton). Rare Puritan name. Logged, not bucketed.
+- **Frances** — Frances (Latham) Clarke/Vaughan. At least one occurrence in docs 1–118.
+
 ## Three Types of Ambiguity Being Measured
 
 1. **Variant ambiguity** — Esther ↔ Hester (same linguistic name, different rendering)
@@ -72,7 +98,7 @@ For every time one of these names appears in the corpus:
 - **Role** → wife / widow / grantor / grantee / witness / releasor of dower
 - **Later appearance** → same woman in another record?
 - **Contradiction** → evidence AGAINST a merge
-- **Identity status** → UNIQUE / AMBIGUOUS / MERGED (with evidence) / UNRESOLVED
+- **Identity status** → RESOLVED_IN_CORPUS / RESOLVED_EXTERNALLY / UNRESOLVED
 
 ## What We're Measuring
 
@@ -82,18 +108,13 @@ For every time one of these names appears in the corpus:
 - **Variant divergence** — do Ann and Anne, Esther and Hester, behave as one population or two?
 - **Joan's position** — does her lower frequency actually give her more identifying power, or is that an assumption?
 
-## The Control Case
+## The Control Cases
 
-Esther Smith, wife of Richard Smith Jr., is our first control. Her name alone isn't particularly useful. But her network signature is:
+### Control 1: Esther Smith
+See `controls/esther-smith.md`. Known identity with strong network signature in Narragansett country. Single woman, single document cluster.
 
-- husband (Richard Smith Jr.)
-- property (Cocumscussoc/Wickford estate)
-- location (Narragansett country)
-- kinship language ("cousin" of Richard, sends love to "her uncle" William Barton)
-- correspondence (wrote to John Winthrop Jr.)
-- later estate participation (1690/91 probate)
-
-That's an identifiable node even though "Esther Smith" is not unique. The experiment tests whether we can build equivalent signatures for the other 11 names.
+### Control 2: The Gorton Daughters
+See `controls/gorton-daughters.md`. Six related women in one document with full relational density (sisters, husbands, father, date, land). Shows what maximum achievable resolution looks like structurally.
 
 ## The Spelling Split Experiment
 
@@ -161,8 +182,14 @@ methodology/12-name-experiment/
 ├── analysis/
 │   └── variance-report.md ← results when populated
 └── controls/
-    └── esther-smith.md    ← known identity as control
+    ├── esther-smith.md    ← known identity as control
+    └── gorton-daughters.md ← six-sister control set
 ```
+
+## Progress Log
+
+- **2026-09-09** — Experiment designed (Wendy + ChatGPT), committed (Migoo). CSV templates created.
+- **2026-09-09** — Claude stress test: docs 1–118 (26% of corpus). 9 relevant rows across 5 name buckets. Zero hits for Joan, Esther, Hester, Margaret, Mercy/Patience/Prudence. Gorton daughters identified as control set. Methodology fixes applied: in-corpus vs external resolution, overflow names, controls separation.
 
 ---
 
@@ -174,4 +201,4 @@ This experiment uses a colonial English-language legal corpus by design — it's
 
 *Joan Archive — methodology/12-name-experiment/README.md*
 *Nothing is proven until original proof images are on the archive.*
-*Created: 2026-09-09 — Wendy Green + ChatGPT (experiment design) + Migoo (documentation)*
+*Created: 2026-09-09 — Wendy Green + ChatGPT (experiment design) + Migoo (documentation) + Claude (stress test)*

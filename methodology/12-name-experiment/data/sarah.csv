@@ -1,1 +1,3 @@
 occurrence_id,name_as_written,date,town,document_type,husband,children,witnesses,neighbors_adjacent_owners,land_parcel,land_boundaries,indigenous_place_name,role,previous_owner,next_owner,later_appearance,contradiction,identity_status,notes,source_reference
+SARAH-001,"my wife Sarah Knight",1648,Newport,deed/entail,Richard Knight,,,,,,,,,,,,UNRESOLVED,entail provision,RI Land Evidences Vol I doc 2
+SARAH-002,"upon marriage with Sarah Parker",1669,Prudence Island,grant,John Paine,,,,,,Prudence Island,,wife,,,,RESOLVED_EXTERNALLY,"father Richard Parker named in doc; connected to Prudence Island grant, not Ann Clarke",RI Land Evidences Vol I doc 50
