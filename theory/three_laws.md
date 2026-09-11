@@ -2,10 +2,12 @@
 >
 > All cultural and genealogical content is included for research purposes in the quest to identify Joan Unknown Greene and will be revised or removed if requested by descendant communities or tribal representatives. Search direction bias check: When an agent recommends "where to look next," ask: is this recommendation biased toward digitized, English-language, colonial-framework sources? What record types exist that this agent might not know to suggest? What would a Narragansett historian, a maritime historian, an archaeologist, a linguist look for that a genealogist wouldn't?
 >
-> # The EVOLVING Laws of the Joan Archive as We learn the Road to Find Her. It started with 3 Laws, now we have more. ##MULTI AGENT LAWS
+> # The Multi Agent Laws of the Joan Archive
+>
+> These Laws evolve as we learn the road to find her. They started with 3, and grow as needed. There is no fixed number — the method shapes itself to the evidence.
 
 **Status:** Active — supreme authority over all agent and human output.  
-**Last updated:** 2026-09-06  
+**Last updated:** 2026-09-11  
 **Companion files:** `AGENT_GUARDRAILS.md`, `methodology/editorial_standards.md`
 
 ---
@@ -48,7 +50,7 @@ No claim traceable to La Mance (1904) accepted without independent primary corro
 No hypothesis eliminated until thoroughly tested against primary sources. Even outlandish and wild ideas need thorough proof of nonexistence before eliminating as an option.
 
 **Expanded (Sep 3, 2026):**
-- This applies to ALL competing models about Joan’s identity (A–G), not just the ones we find compelling. Model B (English woman) requires the same exhaustive search before elimination as Model A (Narragansett). Model D (indentured servant) and Model E (enslaved person) require the same as Model C (Irish origin).
+- This applies to ALL competing models about Joan’s identity (A–H), not just the ones we find compelling. Model B (English woman) requires the same exhaustive search before elimination as Model A (Narragansett). Model D (indentured servant) and Model E (enslaved person) require the same as Model C (Irish origin).
 - A model is not eliminated by the strength of another model. It is eliminated by its own evidence failing.
 - See `AGENT_GUARDRAILS.md` §3 for the full model list.
 

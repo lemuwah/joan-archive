@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Build four daily, review-gated agent reports from one source sweep.
+"""Build four daily, Laws-filtered agent reports from one source sweep.
 
 This runner is deliberately deterministic. It does not turn search results into facts,
 call one agent to approve another, or edit role READMEs. It produces dated operational
-logic files that humans can review and use as the next run's input.
+logic files filtered through the Multi Agent Laws, with periodic human review.
 """
 
 from __future__ import annotations
@@ -67,7 +67,7 @@ def write_model_report(model_id: str, profile: dict, date: str, leads: list[dict
         f"# Model {model_id} Agent — {profile['name']} — {date}",
         "",
         f"**Status:** {profile['status']}",
-        "**Evidence state:** AI-assisted working report; all leads remain `PENDING_HUMAN_REVIEW`.",
+        "**Evidence state:** AI-assisted working report; all leads are `LAWS_FILTERED`. Periodic human review applies.",
         "",
         "## 1. Document pass",
         "Read the original page/image before treating any catalog result as evidence. Record repository, stable identifier, page/leaf, access date, and exact wording.",
@@ -120,7 +120,7 @@ def write_logic(
         f"# {role_title} Daily Logic — {date}",
         "",
         "**Status:** AI-assisted working report. Not a source, citation, or approval.",
-        "**Input:** One daily multi-perspective sweep; all outputs remain `PENDING_HUMAN_REVIEW`.",
+        "**Input:** One daily multi-perspective sweep; all outputs are `LAWS_FILTERED`.",
         "",
     ]
     if role == "explorer":
@@ -219,8 +219,8 @@ def run(date: str, sweep_path: Path, output_root: Path, role_output: Path) -> Pa
         "statuses": dict(Counter(record.get("status") for record in records)),
         "roles": [path.stem for path in generated],
         "model_leads": model_counts,
-        "status": "PENDING_HUMAN_REVIEW",
-        "note": "Reports generate leads and review logic only; they do not update facts or role READMEs.",
+        "status": "LAWS_FILTERED",
+        "note": "Reports generate leads and review logic only, filtered through the Multi Agent Laws. They do not update facts or role READMEs. Periodic human review applies.",
     }
     (output_dir / "run_summary.json").write_text(json.dumps(summary, indent=2) + "\n")
     return output_dir
