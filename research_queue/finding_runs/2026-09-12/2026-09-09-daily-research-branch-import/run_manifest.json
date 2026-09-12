@@ -1,0 +1,11 @@
+{
+  "finding_id": "FINDING-3a716547cc65",
+  "image_references": [],
+  "images_not_pending": [],
+  "missing_image_references": [],
+  "pending_review_images": [],
+  "run_date": "2026-09-12",
+  "source_path": "research_findings/2026-09-09_daily-research-branch-import.md",
+  "source_sha256": "935606766fed235a3da6cb03fcf9edd1e6b6da930062c953fd8e2fd928855224",
+  "status": "LAWS_FILTERED"
+}

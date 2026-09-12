@@ -1,0 +1,2268 @@
+{
+  "run_date": "2026-09-12",
+  "nodes": [
+    "Anashuecot",
+    "Awawsunks",
+    "Benjamin Greene",
+    "Cakochawhunt",
+    "Daniel Greene",
+    "Edward Greene",
+    "H. Tibbits",
+    "Havens",
+    "Henry Tibbitts",
+    "James Greene",
+    "Joan Greene",
+    "John Greene",
+    "John Greene Sr.",
+    "John Wickes",
+    "Mary Tibbitts",
+    "Richard Smith",
+    "Roger Williams",
+    "Samuel Gorton",
+    "William Carpenter"
+  ],
+  "bundles": [
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L0_document",
+      "node": "Anashuecot",
+      "question": "What exactly is on the page?",
+      "record_families": [
+        "original manuscript image",
+        "verbatim transcription",
+        "abstract",
+        "AI transcription",
+        "scribal marks",
+        "witnesses",
+        "bounds",
+        "recording metadata"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L0_document",
+      "node": "Awawsunks",
+      "question": "What exactly is on the page?",
+      "record_families": [
+        "original manuscript image",
+        "verbatim transcription",
+        "abstract",
+        "AI transcription",
+        "scribal marks",
+        "witnesses",
+        "bounds",
+        "recording metadata"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L0_document",
+      "node": "Benjamin Greene",
+      "question": "What exactly is on the page?",
+      "record_families": [
+        "original manuscript image",
+        "verbatim transcription",
+        "abstract",
+        "AI transcription",
+        "scribal marks",
+        "witnesses",
+        "bounds",
+        "recording metadata"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L0_document",
+      "node": "Cakochawhunt",
+      "question": "What exactly is on the page?",
+      "record_families": [
+        "original manuscript image",
+        "verbatim transcription",
+        "abstract",
+        "AI transcription",
+        "scribal marks",
+        "witnesses",
+        "bounds",
+        "recording metadata"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L0_document",
+      "node": "Daniel Greene",
+      "question": "What exactly is on the page?",
+      "record_families": [
+        "original manuscript image",
+        "verbatim transcription",
+        "abstract",
+        "AI transcription",
+        "scribal marks",
+        "witnesses",
+        "bounds",
+        "recording metadata"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L0_document",
+      "node": "Edward Greene",
+      "question": "What exactly is on the page?",
+      "record_families": [
+        "original manuscript image",
+        "verbatim transcription",
+        "abstract",
+        "AI transcription",
+        "scribal marks",
+        "witnesses",
+        "bounds",
+        "recording metadata"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L0_document",
+      "node": "H. Tibbits",
+      "question": "What exactly is on the page?",
+      "record_families": [
+        "original manuscript image",
+        "verbatim transcription",
+        "abstract",
+        "AI transcription",
+        "scribal marks",
+        "witnesses",
+        "bounds",
+        "recording metadata"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L0_document",
+      "node": "Havens",
+      "question": "What exactly is on the page?",
+      "record_families": [
+        "original manuscript image",
+        "verbatim transcription",
+        "abstract",
+        "AI transcription",
+        "scribal marks",
+        "witnesses",
+        "bounds",
+        "recording metadata"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L0_document",
+      "node": "Henry Tibbitts",
+      "question": "What exactly is on the page?",
+      "record_families": [
+        "original manuscript image",
+        "verbatim transcription",
+        "abstract",
+        "AI transcription",
+        "scribal marks",
+        "witnesses",
+        "bounds",
+        "recording metadata"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L0_document",
+      "node": "James Greene",
+      "question": "What exactly is on the page?",
+      "record_families": [
+        "original manuscript image",
+        "verbatim transcription",
+        "abstract",
+        "AI transcription",
+        "scribal marks",
+        "witnesses",
+        "bounds",
+        "recording metadata"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L0_document",
+      "node": "Joan Greene",
+      "question": "What exactly is on the page?",
+      "record_families": [
+        "original manuscript image",
+        "verbatim transcription",
+        "abstract",
+        "AI transcription",
+        "scribal marks",
+        "witnesses",
+        "bounds",
+        "recording metadata"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L0_document",
+      "node": "John Greene",
+      "question": "What exactly is on the page?",
+      "record_families": [
+        "original manuscript image",
+        "verbatim transcription",
+        "abstract",
+        "AI transcription",
+        "scribal marks",
+        "witnesses",
+        "bounds",
+        "recording metadata"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L0_document",
+      "node": "John Greene Sr.",
+      "question": "What exactly is on the page?",
+      "record_families": [
+        "original manuscript image",
+        "verbatim transcription",
+        "abstract",
+        "AI transcription",
+        "scribal marks",
+        "witnesses",
+        "bounds",
+        "recording metadata"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L0_document",
+      "node": "John Wickes",
+      "question": "What exactly is on the page?",
+      "record_families": [
+        "original manuscript image",
+        "verbatim transcription",
+        "abstract",
+        "AI transcription",
+        "scribal marks",
+        "witnesses",
+        "bounds",
+        "recording metadata"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L0_document",
+      "node": "Mary Tibbitts",
+      "question": "What exactly is on the page?",
+      "record_families": [
+        "original manuscript image",
+        "verbatim transcription",
+        "abstract",
+        "AI transcription",
+        "scribal marks",
+        "witnesses",
+        "bounds",
+        "recording metadata"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L0_document",
+      "node": "Richard Smith",
+      "question": "What exactly is on the page?",
+      "record_families": [
+        "original manuscript image",
+        "verbatim transcription",
+        "abstract",
+        "AI transcription",
+        "scribal marks",
+        "witnesses",
+        "bounds",
+        "recording metadata"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L0_document",
+      "node": "Roger Williams",
+      "question": "What exactly is on the page?",
+      "record_families": [
+        "original manuscript image",
+        "verbatim transcription",
+        "abstract",
+        "AI transcription",
+        "scribal marks",
+        "witnesses",
+        "bounds",
+        "recording metadata"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L0_document",
+      "node": "Samuel Gorton",
+      "question": "What exactly is on the page?",
+      "record_families": [
+        "original manuscript image",
+        "verbatim transcription",
+        "abstract",
+        "AI transcription",
+        "scribal marks",
+        "witnesses",
+        "bounds",
+        "recording metadata"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L0_document",
+      "node": "William Carpenter",
+      "question": "What exactly is on the page?",
+      "record_families": [
+        "original manuscript image",
+        "verbatim transcription",
+        "abstract",
+        "AI transcription",
+        "scribal marks",
+        "witnesses",
+        "bounds",
+        "recording metadata"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L1_household",
+      "node": "Anashuecot",
+      "question": "Who shares Joan's household, property, legal benefits, and obligations?",
+      "record_families": [
+        "deeds",
+        "annuity payments",
+        "probate",
+        "guardianship",
+        "dower",
+        "creditors",
+        "servant contracts",
+        "enslavement/captivity/disposal",
+        "church",
+        "children"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L1_household",
+      "node": "Awawsunks",
+      "question": "Who shares Joan's household, property, legal benefits, and obligations?",
+      "record_families": [
+        "deeds",
+        "annuity payments",
+        "probate",
+        "guardianship",
+        "dower",
+        "creditors",
+        "servant contracts",
+        "enslavement/captivity/disposal",
+        "church",
+        "children"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L1_household",
+      "node": "Benjamin Greene",
+      "question": "Who shares Joan's household, property, legal benefits, and obligations?",
+      "record_families": [
+        "deeds",
+        "annuity payments",
+        "probate",
+        "guardianship",
+        "dower",
+        "creditors",
+        "servant contracts",
+        "enslavement/captivity/disposal",
+        "church",
+        "children"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L1_household",
+      "node": "Cakochawhunt",
+      "question": "Who shares Joan's household, property, legal benefits, and obligations?",
+      "record_families": [
+        "deeds",
+        "annuity payments",
+        "probate",
+        "guardianship",
+        "dower",
+        "creditors",
+        "servant contracts",
+        "enslavement/captivity/disposal",
+        "church",
+        "children"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L1_household",
+      "node": "Daniel Greene",
+      "question": "Who shares Joan's household, property, legal benefits, and obligations?",
+      "record_families": [
+        "deeds",
+        "annuity payments",
+        "probate",
+        "guardianship",
+        "dower",
+        "creditors",
+        "servant contracts",
+        "enslavement/captivity/disposal",
+        "church",
+        "children"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L1_household",
+      "node": "Edward Greene",
+      "question": "Who shares Joan's household, property, legal benefits, and obligations?",
+      "record_families": [
+        "deeds",
+        "annuity payments",
+        "probate",
+        "guardianship",
+        "dower",
+        "creditors",
+        "servant contracts",
+        "enslavement/captivity/disposal",
+        "church",
+        "children"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L1_household",
+      "node": "H. Tibbits",
+      "question": "Who shares Joan's household, property, legal benefits, and obligations?",
+      "record_families": [
+        "deeds",
+        "annuity payments",
+        "probate",
+        "guardianship",
+        "dower",
+        "creditors",
+        "servant contracts",
+        "enslavement/captivity/disposal",
+        "church",
+        "children"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L1_household",
+      "node": "Havens",
+      "question": "Who shares Joan's household, property, legal benefits, and obligations?",
+      "record_families": [
+        "deeds",
+        "annuity payments",
+        "probate",
+        "guardianship",
+        "dower",
+        "creditors",
+        "servant contracts",
+        "enslavement/captivity/disposal",
+        "church",
+        "children"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L1_household",
+      "node": "Henry Tibbitts",
+      "question": "Who shares Joan's household, property, legal benefits, and obligations?",
+      "record_families": [
+        "deeds",
+        "annuity payments",
+        "probate",
+        "guardianship",
+        "dower",
+        "creditors",
+        "servant contracts",
+        "enslavement/captivity/disposal",
+        "church",
+        "children"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L1_household",
+      "node": "James Greene",
+      "question": "Who shares Joan's household, property, legal benefits, and obligations?",
+      "record_families": [
+        "deeds",
+        "annuity payments",
+        "probate",
+        "guardianship",
+        "dower",
+        "creditors",
+        "servant contracts",
+        "enslavement/captivity/disposal",
+        "church",
+        "children"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L1_household",
+      "node": "Joan Greene",
+      "question": "Who shares Joan's household, property, legal benefits, and obligations?",
+      "record_families": [
+        "deeds",
+        "annuity payments",
+        "probate",
+        "guardianship",
+        "dower",
+        "creditors",
+        "servant contracts",
+        "enslavement/captivity/disposal",
+        "church",
+        "children"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L1_household",
+      "node": "John Greene",
+      "question": "Who shares Joan's household, property, legal benefits, and obligations?",
+      "record_families": [
+        "deeds",
+        "annuity payments",
+        "probate",
+        "guardianship",
+        "dower",
+        "creditors",
+        "servant contracts",
+        "enslavement/captivity/disposal",
+        "church",
+        "children"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L1_household",
+      "node": "John Greene Sr.",
+      "question": "Who shares Joan's household, property, legal benefits, and obligations?",
+      "record_families": [
+        "deeds",
+        "annuity payments",
+        "probate",
+        "guardianship",
+        "dower",
+        "creditors",
+        "servant contracts",
+        "enslavement/captivity/disposal",
+        "church",
+        "children"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L1_household",
+      "node": "John Wickes",
+      "question": "Who shares Joan's household, property, legal benefits, and obligations?",
+      "record_families": [
+        "deeds",
+        "annuity payments",
+        "probate",
+        "guardianship",
+        "dower",
+        "creditors",
+        "servant contracts",
+        "enslavement/captivity/disposal",
+        "church",
+        "children"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L1_household",
+      "node": "Mary Tibbitts",
+      "question": "Who shares Joan's household, property, legal benefits, and obligations?",
+      "record_families": [
+        "deeds",
+        "annuity payments",
+        "probate",
+        "guardianship",
+        "dower",
+        "creditors",
+        "servant contracts",
+        "enslavement/captivity/disposal",
+        "church",
+        "children"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L1_household",
+      "node": "Richard Smith",
+      "question": "Who shares Joan's household, property, legal benefits, and obligations?",
+      "record_families": [
+        "deeds",
+        "annuity payments",
+        "probate",
+        "guardianship",
+        "dower",
+        "creditors",
+        "servant contracts",
+        "enslavement/captivity/disposal",
+        "church",
+        "children"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L1_household",
+      "node": "Roger Williams",
+      "question": "Who shares Joan's household, property, legal benefits, and obligations?",
+      "record_families": [
+        "deeds",
+        "annuity payments",
+        "probate",
+        "guardianship",
+        "dower",
+        "creditors",
+        "servant contracts",
+        "enslavement/captivity/disposal",
+        "church",
+        "children"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L1_household",
+      "node": "Samuel Gorton",
+      "question": "Who shares Joan's household, property, legal benefits, and obligations?",
+      "record_families": [
+        "deeds",
+        "annuity payments",
+        "probate",
+        "guardianship",
+        "dower",
+        "creditors",
+        "servant contracts",
+        "enslavement/captivity/disposal",
+        "church",
+        "children"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L1_household",
+      "node": "William Carpenter",
+      "question": "Who shares Joan's household, property, legal benefits, and obligations?",
+      "record_families": [
+        "deeds",
+        "annuity payments",
+        "probate",
+        "guardianship",
+        "dower",
+        "creditors",
+        "servant contracts",
+        "enslavement/captivity/disposal",
+        "church",
+        "children"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L2_associates",
+      "node": "Anashuecot",
+      "question": "Who repeatedly appears with the household?",
+      "record_families": [
+        "witnesses",
+        "neighbors",
+        "interpreters",
+        "trading-post workers",
+        "land bounds",
+        "court parties",
+        "merchants",
+        "ship associates",
+        "godparents",
+        "creditors"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L2_associates",
+      "node": "Awawsunks",
+      "question": "Who repeatedly appears with the household?",
+      "record_families": [
+        "witnesses",
+        "neighbors",
+        "interpreters",
+        "trading-post workers",
+        "land bounds",
+        "court parties",
+        "merchants",
+        "ship associates",
+        "godparents",
+        "creditors"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L2_associates",
+      "node": "Benjamin Greene",
+      "question": "Who repeatedly appears with the household?",
+      "record_families": [
+        "witnesses",
+        "neighbors",
+        "interpreters",
+        "trading-post workers",
+        "land bounds",
+        "court parties",
+        "merchants",
+        "ship associates",
+        "godparents",
+        "creditors"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L2_associates",
+      "node": "Cakochawhunt",
+      "question": "Who repeatedly appears with the household?",
+      "record_families": [
+        "witnesses",
+        "neighbors",
+        "interpreters",
+        "trading-post workers",
+        "land bounds",
+        "court parties",
+        "merchants",
+        "ship associates",
+        "godparents",
+        "creditors"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L2_associates",
+      "node": "Daniel Greene",
+      "question": "Who repeatedly appears with the household?",
+      "record_families": [
+        "witnesses",
+        "neighbors",
+        "interpreters",
+        "trading-post workers",
+        "land bounds",
+        "court parties",
+        "merchants",
+        "ship associates",
+        "godparents",
+        "creditors"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L2_associates",
+      "node": "Edward Greene",
+      "question": "Who repeatedly appears with the household?",
+      "record_families": [
+        "witnesses",
+        "neighbors",
+        "interpreters",
+        "trading-post workers",
+        "land bounds",
+        "court parties",
+        "merchants",
+        "ship associates",
+        "godparents",
+        "creditors"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L2_associates",
+      "node": "H. Tibbits",
+      "question": "Who repeatedly appears with the household?",
+      "record_families": [
+        "witnesses",
+        "neighbors",
+        "interpreters",
+        "trading-post workers",
+        "land bounds",
+        "court parties",
+        "merchants",
+        "ship associates",
+        "godparents",
+        "creditors"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L2_associates",
+      "node": "Havens",
+      "question": "Who repeatedly appears with the household?",
+      "record_families": [
+        "witnesses",
+        "neighbors",
+        "interpreters",
+        "trading-post workers",
+        "land bounds",
+        "court parties",
+        "merchants",
+        "ship associates",
+        "godparents",
+        "creditors"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L2_associates",
+      "node": "Henry Tibbitts",
+      "question": "Who repeatedly appears with the household?",
+      "record_families": [
+        "witnesses",
+        "neighbors",
+        "interpreters",
+        "trading-post workers",
+        "land bounds",
+        "court parties",
+        "merchants",
+        "ship associates",
+        "godparents",
+        "creditors"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L2_associates",
+      "node": "James Greene",
+      "question": "Who repeatedly appears with the household?",
+      "record_families": [
+        "witnesses",
+        "neighbors",
+        "interpreters",
+        "trading-post workers",
+        "land bounds",
+        "court parties",
+        "merchants",
+        "ship associates",
+        "godparents",
+        "creditors"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L2_associates",
+      "node": "Joan Greene",
+      "question": "Who repeatedly appears with the household?",
+      "record_families": [
+        "witnesses",
+        "neighbors",
+        "interpreters",
+        "trading-post workers",
+        "land bounds",
+        "court parties",
+        "merchants",
+        "ship associates",
+        "godparents",
+        "creditors"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L2_associates",
+      "node": "John Greene",
+      "question": "Who repeatedly appears with the household?",
+      "record_families": [
+        "witnesses",
+        "neighbors",
+        "interpreters",
+        "trading-post workers",
+        "land bounds",
+        "court parties",
+        "merchants",
+        "ship associates",
+        "godparents",
+        "creditors"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L2_associates",
+      "node": "John Greene Sr.",
+      "question": "Who repeatedly appears with the household?",
+      "record_families": [
+        "witnesses",
+        "neighbors",
+        "interpreters",
+        "trading-post workers",
+        "land bounds",
+        "court parties",
+        "merchants",
+        "ship associates",
+        "godparents",
+        "creditors"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L2_associates",
+      "node": "John Wickes",
+      "question": "Who repeatedly appears with the household?",
+      "record_families": [
+        "witnesses",
+        "neighbors",
+        "interpreters",
+        "trading-post workers",
+        "land bounds",
+        "court parties",
+        "merchants",
+        "ship associates",
+        "godparents",
+        "creditors"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L2_associates",
+      "node": "Mary Tibbitts",
+      "question": "Who repeatedly appears with the household?",
+      "record_families": [
+        "witnesses",
+        "neighbors",
+        "interpreters",
+        "trading-post workers",
+        "land bounds",
+        "court parties",
+        "merchants",
+        "ship associates",
+        "godparents",
+        "creditors"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L2_associates",
+      "node": "Richard Smith",
+      "question": "Who repeatedly appears with the household?",
+      "record_families": [
+        "witnesses",
+        "neighbors",
+        "interpreters",
+        "trading-post workers",
+        "land bounds",
+        "court parties",
+        "merchants",
+        "ship associates",
+        "godparents",
+        "creditors"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L2_associates",
+      "node": "Roger Williams",
+      "question": "Who repeatedly appears with the household?",
+      "record_families": [
+        "witnesses",
+        "neighbors",
+        "interpreters",
+        "trading-post workers",
+        "land bounds",
+        "court parties",
+        "merchants",
+        "ship associates",
+        "godparents",
+        "creditors"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L2_associates",
+      "node": "Samuel Gorton",
+      "question": "Who repeatedly appears with the household?",
+      "record_families": [
+        "witnesses",
+        "neighbors",
+        "interpreters",
+        "trading-post workers",
+        "land bounds",
+        "court parties",
+        "merchants",
+        "ship associates",
+        "godparents",
+        "creditors"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L2_associates",
+      "node": "William Carpenter",
+      "question": "Who repeatedly appears with the household?",
+      "record_families": [
+        "witnesses",
+        "neighbors",
+        "interpreters",
+        "trading-post workers",
+        "land bounds",
+        "court parties",
+        "merchants",
+        "ship associates",
+        "godparents",
+        "creditors"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L3_locality",
+      "node": "Anashuecot",
+      "question": "What did the Quidnessett/Cocumscussoc/Pawtuxet community record?",
+      "record_families": [
+        "town records",
+        "land evidence",
+        "church and meeting records",
+        "court records",
+        "militia",
+        "tax and rate lists",
+        "Indian deeds",
+        "surveys",
+        "archaeology",
+        "oral/community history"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L3_locality",
+      "node": "Awawsunks",
+      "question": "What did the Quidnessett/Cocumscussoc/Pawtuxet community record?",
+      "record_families": [
+        "town records",
+        "land evidence",
+        "church and meeting records",
+        "court records",
+        "militia",
+        "tax and rate lists",
+        "Indian deeds",
+        "surveys",
+        "archaeology",
+        "oral/community history"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L3_locality",
+      "node": "Benjamin Greene",
+      "question": "What did the Quidnessett/Cocumscussoc/Pawtuxet community record?",
+      "record_families": [
+        "town records",
+        "land evidence",
+        "church and meeting records",
+        "court records",
+        "militia",
+        "tax and rate lists",
+        "Indian deeds",
+        "surveys",
+        "archaeology",
+        "oral/community history"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L3_locality",
+      "node": "Cakochawhunt",
+      "question": "What did the Quidnessett/Cocumscussoc/Pawtuxet community record?",
+      "record_families": [
+        "town records",
+        "land evidence",
+        "church and meeting records",
+        "court records",
+        "militia",
+        "tax and rate lists",
+        "Indian deeds",
+        "surveys",
+        "archaeology",
+        "oral/community history"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L3_locality",
+      "node": "Daniel Greene",
+      "question": "What did the Quidnessett/Cocumscussoc/Pawtuxet community record?",
+      "record_families": [
+        "town records",
+        "land evidence",
+        "church and meeting records",
+        "court records",
+        "militia",
+        "tax and rate lists",
+        "Indian deeds",
+        "surveys",
+        "archaeology",
+        "oral/community history"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L3_locality",
+      "node": "Edward Greene",
+      "question": "What did the Quidnessett/Cocumscussoc/Pawtuxet community record?",
+      "record_families": [
+        "town records",
+        "land evidence",
+        "church and meeting records",
+        "court records",
+        "militia",
+        "tax and rate lists",
+        "Indian deeds",
+        "surveys",
+        "archaeology",
+        "oral/community history"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L3_locality",
+      "node": "H. Tibbits",
+      "question": "What did the Quidnessett/Cocumscussoc/Pawtuxet community record?",
+      "record_families": [
+        "town records",
+        "land evidence",
+        "church and meeting records",
+        "court records",
+        "militia",
+        "tax and rate lists",
+        "Indian deeds",
+        "surveys",
+        "archaeology",
+        "oral/community history"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L3_locality",
+      "node": "Havens",
+      "question": "What did the Quidnessett/Cocumscussoc/Pawtuxet community record?",
+      "record_families": [
+        "town records",
+        "land evidence",
+        "church and meeting records",
+        "court records",
+        "militia",
+        "tax and rate lists",
+        "Indian deeds",
+        "surveys",
+        "archaeology",
+        "oral/community history"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L3_locality",
+      "node": "Henry Tibbitts",
+      "question": "What did the Quidnessett/Cocumscussoc/Pawtuxet community record?",
+      "record_families": [
+        "town records",
+        "land evidence",
+        "church and meeting records",
+        "court records",
+        "militia",
+        "tax and rate lists",
+        "Indian deeds",
+        "surveys",
+        "archaeology",
+        "oral/community history"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L3_locality",
+      "node": "James Greene",
+      "question": "What did the Quidnessett/Cocumscussoc/Pawtuxet community record?",
+      "record_families": [
+        "town records",
+        "land evidence",
+        "church and meeting records",
+        "court records",
+        "militia",
+        "tax and rate lists",
+        "Indian deeds",
+        "surveys",
+        "archaeology",
+        "oral/community history"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L3_locality",
+      "node": "Joan Greene",
+      "question": "What did the Quidnessett/Cocumscussoc/Pawtuxet community record?",
+      "record_families": [
+        "town records",
+        "land evidence",
+        "church and meeting records",
+        "court records",
+        "militia",
+        "tax and rate lists",
+        "Indian deeds",
+        "surveys",
+        "archaeology",
+        "oral/community history"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L3_locality",
+      "node": "John Greene",
+      "question": "What did the Quidnessett/Cocumscussoc/Pawtuxet community record?",
+      "record_families": [
+        "town records",
+        "land evidence",
+        "church and meeting records",
+        "court records",
+        "militia",
+        "tax and rate lists",
+        "Indian deeds",
+        "surveys",
+        "archaeology",
+        "oral/community history"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L3_locality",
+      "node": "John Greene Sr.",
+      "question": "What did the Quidnessett/Cocumscussoc/Pawtuxet community record?",
+      "record_families": [
+        "town records",
+        "land evidence",
+        "church and meeting records",
+        "court records",
+        "militia",
+        "tax and rate lists",
+        "Indian deeds",
+        "surveys",
+        "archaeology",
+        "oral/community history"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L3_locality",
+      "node": "John Wickes",
+      "question": "What did the Quidnessett/Cocumscussoc/Pawtuxet community record?",
+      "record_families": [
+        "town records",
+        "land evidence",
+        "church and meeting records",
+        "court records",
+        "militia",
+        "tax and rate lists",
+        "Indian deeds",
+        "surveys",
+        "archaeology",
+        "oral/community history"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L3_locality",
+      "node": "Mary Tibbitts",
+      "question": "What did the Quidnessett/Cocumscussoc/Pawtuxet community record?",
+      "record_families": [
+        "town records",
+        "land evidence",
+        "church and meeting records",
+        "court records",
+        "militia",
+        "tax and rate lists",
+        "Indian deeds",
+        "surveys",
+        "archaeology",
+        "oral/community history"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L3_locality",
+      "node": "Richard Smith",
+      "question": "What did the Quidnessett/Cocumscussoc/Pawtuxet community record?",
+      "record_families": [
+        "town records",
+        "land evidence",
+        "church and meeting records",
+        "court records",
+        "militia",
+        "tax and rate lists",
+        "Indian deeds",
+        "surveys",
+        "archaeology",
+        "oral/community history"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L3_locality",
+      "node": "Roger Williams",
+      "question": "What did the Quidnessett/Cocumscussoc/Pawtuxet community record?",
+      "record_families": [
+        "town records",
+        "land evidence",
+        "church and meeting records",
+        "court records",
+        "militia",
+        "tax and rate lists",
+        "Indian deeds",
+        "surveys",
+        "archaeology",
+        "oral/community history"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L3_locality",
+      "node": "Samuel Gorton",
+      "question": "What did the Quidnessett/Cocumscussoc/Pawtuxet community record?",
+      "record_families": [
+        "town records",
+        "land evidence",
+        "church and meeting records",
+        "court records",
+        "militia",
+        "tax and rate lists",
+        "Indian deeds",
+        "surveys",
+        "archaeology",
+        "oral/community history"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L3_locality",
+      "node": "William Carpenter",
+      "question": "What did the Quidnessett/Cocumscussoc/Pawtuxet community record?",
+      "record_families": [
+        "town records",
+        "land evidence",
+        "church and meeting records",
+        "court records",
+        "militia",
+        "tax and rate lists",
+        "Indian deeds",
+        "surveys",
+        "archaeology",
+        "oral/community history"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L4_jurisdiction",
+      "node": "Anashuecot",
+      "question": "Which authority could have created or retained the missing record?",
+      "record_families": [
+        "Rhode Island",
+        "Massachusetts",
+        "Connecticut",
+        "Plymouth",
+        "New York",
+        "Crown/Colonial Office",
+        "port customs",
+        "military dispatches",
+        "intercolonial correspondence"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L4_jurisdiction",
+      "node": "Awawsunks",
+      "question": "Which authority could have created or retained the missing record?",
+      "record_families": [
+        "Rhode Island",
+        "Massachusetts",
+        "Connecticut",
+        "Plymouth",
+        "New York",
+        "Crown/Colonial Office",
+        "port customs",
+        "military dispatches",
+        "intercolonial correspondence"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L4_jurisdiction",
+      "node": "Benjamin Greene",
+      "question": "Which authority could have created or retained the missing record?",
+      "record_families": [
+        "Rhode Island",
+        "Massachusetts",
+        "Connecticut",
+        "Plymouth",
+        "New York",
+        "Crown/Colonial Office",
+        "port customs",
+        "military dispatches",
+        "intercolonial correspondence"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L4_jurisdiction",
+      "node": "Cakochawhunt",
+      "question": "Which authority could have created or retained the missing record?",
+      "record_families": [
+        "Rhode Island",
+        "Massachusetts",
+        "Connecticut",
+        "Plymouth",
+        "New York",
+        "Crown/Colonial Office",
+        "port customs",
+        "military dispatches",
+        "intercolonial correspondence"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L4_jurisdiction",
+      "node": "Daniel Greene",
+      "question": "Which authority could have created or retained the missing record?",
+      "record_families": [
+        "Rhode Island",
+        "Massachusetts",
+        "Connecticut",
+        "Plymouth",
+        "New York",
+        "Crown/Colonial Office",
+        "port customs",
+        "military dispatches",
+        "intercolonial correspondence"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L4_jurisdiction",
+      "node": "Edward Greene",
+      "question": "Which authority could have created or retained the missing record?",
+      "record_families": [
+        "Rhode Island",
+        "Massachusetts",
+        "Connecticut",
+        "Plymouth",
+        "New York",
+        "Crown/Colonial Office",
+        "port customs",
+        "military dispatches",
+        "intercolonial correspondence"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L4_jurisdiction",
+      "node": "H. Tibbits",
+      "question": "Which authority could have created or retained the missing record?",
+      "record_families": [
+        "Rhode Island",
+        "Massachusetts",
+        "Connecticut",
+        "Plymouth",
+        "New York",
+        "Crown/Colonial Office",
+        "port customs",
+        "military dispatches",
+        "intercolonial correspondence"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L4_jurisdiction",
+      "node": "Havens",
+      "question": "Which authority could have created or retained the missing record?",
+      "record_families": [
+        "Rhode Island",
+        "Massachusetts",
+        "Connecticut",
+        "Plymouth",
+        "New York",
+        "Crown/Colonial Office",
+        "port customs",
+        "military dispatches",
+        "intercolonial correspondence"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L4_jurisdiction",
+      "node": "Henry Tibbitts",
+      "question": "Which authority could have created or retained the missing record?",
+      "record_families": [
+        "Rhode Island",
+        "Massachusetts",
+        "Connecticut",
+        "Plymouth",
+        "New York",
+        "Crown/Colonial Office",
+        "port customs",
+        "military dispatches",
+        "intercolonial correspondence"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L4_jurisdiction",
+      "node": "James Greene",
+      "question": "Which authority could have created or retained the missing record?",
+      "record_families": [
+        "Rhode Island",
+        "Massachusetts",
+        "Connecticut",
+        "Plymouth",
+        "New York",
+        "Crown/Colonial Office",
+        "port customs",
+        "military dispatches",
+        "intercolonial correspondence"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L4_jurisdiction",
+      "node": "Joan Greene",
+      "question": "Which authority could have created or retained the missing record?",
+      "record_families": [
+        "Rhode Island",
+        "Massachusetts",
+        "Connecticut",
+        "Plymouth",
+        "New York",
+        "Crown/Colonial Office",
+        "port customs",
+        "military dispatches",
+        "intercolonial correspondence"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L4_jurisdiction",
+      "node": "John Greene",
+      "question": "Which authority could have created or retained the missing record?",
+      "record_families": [
+        "Rhode Island",
+        "Massachusetts",
+        "Connecticut",
+        "Plymouth",
+        "New York",
+        "Crown/Colonial Office",
+        "port customs",
+        "military dispatches",
+        "intercolonial correspondence"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L4_jurisdiction",
+      "node": "John Greene Sr.",
+      "question": "Which authority could have created or retained the missing record?",
+      "record_families": [
+        "Rhode Island",
+        "Massachusetts",
+        "Connecticut",
+        "Plymouth",
+        "New York",
+        "Crown/Colonial Office",
+        "port customs",
+        "military dispatches",
+        "intercolonial correspondence"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L4_jurisdiction",
+      "node": "John Wickes",
+      "question": "Which authority could have created or retained the missing record?",
+      "record_families": [
+        "Rhode Island",
+        "Massachusetts",
+        "Connecticut",
+        "Plymouth",
+        "New York",
+        "Crown/Colonial Office",
+        "port customs",
+        "military dispatches",
+        "intercolonial correspondence"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L4_jurisdiction",
+      "node": "Mary Tibbitts",
+      "question": "Which authority could have created or retained the missing record?",
+      "record_families": [
+        "Rhode Island",
+        "Massachusetts",
+        "Connecticut",
+        "Plymouth",
+        "New York",
+        "Crown/Colonial Office",
+        "port customs",
+        "military dispatches",
+        "intercolonial correspondence"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L4_jurisdiction",
+      "node": "Richard Smith",
+      "question": "Which authority could have created or retained the missing record?",
+      "record_families": [
+        "Rhode Island",
+        "Massachusetts",
+        "Connecticut",
+        "Plymouth",
+        "New York",
+        "Crown/Colonial Office",
+        "port customs",
+        "military dispatches",
+        "intercolonial correspondence"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L4_jurisdiction",
+      "node": "Roger Williams",
+      "question": "Which authority could have created or retained the missing record?",
+      "record_families": [
+        "Rhode Island",
+        "Massachusetts",
+        "Connecticut",
+        "Plymouth",
+        "New York",
+        "Crown/Colonial Office",
+        "port customs",
+        "military dispatches",
+        "intercolonial correspondence"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L4_jurisdiction",
+      "node": "Samuel Gorton",
+      "question": "Which authority could have created or retained the missing record?",
+      "record_families": [
+        "Rhode Island",
+        "Massachusetts",
+        "Connecticut",
+        "Plymouth",
+        "New York",
+        "Crown/Colonial Office",
+        "port customs",
+        "military dispatches",
+        "intercolonial correspondence"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L4_jurisdiction",
+      "node": "William Carpenter",
+      "question": "Which authority could have created or retained the missing record?",
+      "record_families": [
+        "Rhode Island",
+        "Massachusetts",
+        "Connecticut",
+        "Plymouth",
+        "New York",
+        "Crown/Colonial Office",
+        "port customs",
+        "military dispatches",
+        "intercolonial correspondence"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L5_region_atlantic",
+      "node": "Anashuecot",
+      "question": "What migration, trade, war, language, and kinship systems could place Joan here?",
+      "record_families": [
+        "English parish",
+        "Irish/Ulster parish",
+        "Scottish migration",
+        "servant/indenture",
+        "transportation",
+        "enslavement/captivity",
+        "Atlantic ports",
+        "shipping",
+        "diaspora networks",
+        "Indigenous-authored history",
+        "material culture"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L5_region_atlantic",
+      "node": "Awawsunks",
+      "question": "What migration, trade, war, language, and kinship systems could place Joan here?",
+      "record_families": [
+        "English parish",
+        "Irish/Ulster parish",
+        "Scottish migration",
+        "servant/indenture",
+        "transportation",
+        "enslavement/captivity",
+        "Atlantic ports",
+        "shipping",
+        "diaspora networks",
+        "Indigenous-authored history",
+        "material culture"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L5_region_atlantic",
+      "node": "Benjamin Greene",
+      "question": "What migration, trade, war, language, and kinship systems could place Joan here?",
+      "record_families": [
+        "English parish",
+        "Irish/Ulster parish",
+        "Scottish migration",
+        "servant/indenture",
+        "transportation",
+        "enslavement/captivity",
+        "Atlantic ports",
+        "shipping",
+        "diaspora networks",
+        "Indigenous-authored history",
+        "material culture"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L5_region_atlantic",
+      "node": "Cakochawhunt",
+      "question": "What migration, trade, war, language, and kinship systems could place Joan here?",
+      "record_families": [
+        "English parish",
+        "Irish/Ulster parish",
+        "Scottish migration",
+        "servant/indenture",
+        "transportation",
+        "enslavement/captivity",
+        "Atlantic ports",
+        "shipping",
+        "diaspora networks",
+        "Indigenous-authored history",
+        "material culture"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L5_region_atlantic",
+      "node": "Daniel Greene",
+      "question": "What migration, trade, war, language, and kinship systems could place Joan here?",
+      "record_families": [
+        "English parish",
+        "Irish/Ulster parish",
+        "Scottish migration",
+        "servant/indenture",
+        "transportation",
+        "enslavement/captivity",
+        "Atlantic ports",
+        "shipping",
+        "diaspora networks",
+        "Indigenous-authored history",
+        "material culture"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L5_region_atlantic",
+      "node": "Edward Greene",
+      "question": "What migration, trade, war, language, and kinship systems could place Joan here?",
+      "record_families": [
+        "English parish",
+        "Irish/Ulster parish",
+        "Scottish migration",
+        "servant/indenture",
+        "transportation",
+        "enslavement/captivity",
+        "Atlantic ports",
+        "shipping",
+        "diaspora networks",
+        "Indigenous-authored history",
+        "material culture"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L5_region_atlantic",
+      "node": "H. Tibbits",
+      "question": "What migration, trade, war, language, and kinship systems could place Joan here?",
+      "record_families": [
+        "English parish",
+        "Irish/Ulster parish",
+        "Scottish migration",
+        "servant/indenture",
+        "transportation",
+        "enslavement/captivity",
+        "Atlantic ports",
+        "shipping",
+        "diaspora networks",
+        "Indigenous-authored history",
+        "material culture"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L5_region_atlantic",
+      "node": "Havens",
+      "question": "What migration, trade, war, language, and kinship systems could place Joan here?",
+      "record_families": [
+        "English parish",
+        "Irish/Ulster parish",
+        "Scottish migration",
+        "servant/indenture",
+        "transportation",
+        "enslavement/captivity",
+        "Atlantic ports",
+        "shipping",
+        "diaspora networks",
+        "Indigenous-authored history",
+        "material culture"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L5_region_atlantic",
+      "node": "Henry Tibbitts",
+      "question": "What migration, trade, war, language, and kinship systems could place Joan here?",
+      "record_families": [
+        "English parish",
+        "Irish/Ulster parish",
+        "Scottish migration",
+        "servant/indenture",
+        "transportation",
+        "enslavement/captivity",
+        "Atlantic ports",
+        "shipping",
+        "diaspora networks",
+        "Indigenous-authored history",
+        "material culture"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L5_region_atlantic",
+      "node": "James Greene",
+      "question": "What migration, trade, war, language, and kinship systems could place Joan here?",
+      "record_families": [
+        "English parish",
+        "Irish/Ulster parish",
+        "Scottish migration",
+        "servant/indenture",
+        "transportation",
+        "enslavement/captivity",
+        "Atlantic ports",
+        "shipping",
+        "diaspora networks",
+        "Indigenous-authored history",
+        "material culture"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L5_region_atlantic",
+      "node": "Joan Greene",
+      "question": "What migration, trade, war, language, and kinship systems could place Joan here?",
+      "record_families": [
+        "English parish",
+        "Irish/Ulster parish",
+        "Scottish migration",
+        "servant/indenture",
+        "transportation",
+        "enslavement/captivity",
+        "Atlantic ports",
+        "shipping",
+        "diaspora networks",
+        "Indigenous-authored history",
+        "material culture"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L5_region_atlantic",
+      "node": "John Greene",
+      "question": "What migration, trade, war, language, and kinship systems could place Joan here?",
+      "record_families": [
+        "English parish",
+        "Irish/Ulster parish",
+        "Scottish migration",
+        "servant/indenture",
+        "transportation",
+        "enslavement/captivity",
+        "Atlantic ports",
+        "shipping",
+        "diaspora networks",
+        "Indigenous-authored history",
+        "material culture"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L5_region_atlantic",
+      "node": "John Greene Sr.",
+      "question": "What migration, trade, war, language, and kinship systems could place Joan here?",
+      "record_families": [
+        "English parish",
+        "Irish/Ulster parish",
+        "Scottish migration",
+        "servant/indenture",
+        "transportation",
+        "enslavement/captivity",
+        "Atlantic ports",
+        "shipping",
+        "diaspora networks",
+        "Indigenous-authored history",
+        "material culture"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L5_region_atlantic",
+      "node": "John Wickes",
+      "question": "What migration, trade, war, language, and kinship systems could place Joan here?",
+      "record_families": [
+        "English parish",
+        "Irish/Ulster parish",
+        "Scottish migration",
+        "servant/indenture",
+        "transportation",
+        "enslavement/captivity",
+        "Atlantic ports",
+        "shipping",
+        "diaspora networks",
+        "Indigenous-authored history",
+        "material culture"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L5_region_atlantic",
+      "node": "Mary Tibbitts",
+      "question": "What migration, trade, war, language, and kinship systems could place Joan here?",
+      "record_families": [
+        "English parish",
+        "Irish/Ulster parish",
+        "Scottish migration",
+        "servant/indenture",
+        "transportation",
+        "enslavement/captivity",
+        "Atlantic ports",
+        "shipping",
+        "diaspora networks",
+        "Indigenous-authored history",
+        "material culture"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L5_region_atlantic",
+      "node": "Richard Smith",
+      "question": "What migration, trade, war, language, and kinship systems could place Joan here?",
+      "record_families": [
+        "English parish",
+        "Irish/Ulster parish",
+        "Scottish migration",
+        "servant/indenture",
+        "transportation",
+        "enslavement/captivity",
+        "Atlantic ports",
+        "shipping",
+        "diaspora networks",
+        "Indigenous-authored history",
+        "material culture"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L5_region_atlantic",
+      "node": "Roger Williams",
+      "question": "What migration, trade, war, language, and kinship systems could place Joan here?",
+      "record_families": [
+        "English parish",
+        "Irish/Ulster parish",
+        "Scottish migration",
+        "servant/indenture",
+        "transportation",
+        "enslavement/captivity",
+        "Atlantic ports",
+        "shipping",
+        "diaspora networks",
+        "Indigenous-authored history",
+        "material culture"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L5_region_atlantic",
+      "node": "Samuel Gorton",
+      "question": "What migration, trade, war, language, and kinship systems could place Joan here?",
+      "record_families": [
+        "English parish",
+        "Irish/Ulster parish",
+        "Scottish migration",
+        "servant/indenture",
+        "transportation",
+        "enslavement/captivity",
+        "Atlantic ports",
+        "shipping",
+        "diaspora networks",
+        "Indigenous-authored history",
+        "material culture"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    },
+    {
+      "run_date": "2026-09-12",
+      "zoom_level": "L5_region_atlantic",
+      "node": "William Carpenter",
+      "question": "What migration, trade, war, language, and kinship systems could place Joan here?",
+      "record_families": [
+        "English parish",
+        "Irish/Ulster parish",
+        "Scottish migration",
+        "servant/indenture",
+        "transportation",
+        "enslavement/captivity",
+        "Atlantic ports",
+        "shipping",
+        "diaspora networks",
+        "Indigenous-authored history",
+        "material culture"
+      ],
+      "status": "PENDING_HUMAN_REVIEW",
+      "search_scope": "Repository, date range, jurisdiction, and exact record family must be recorded before a negative result is accepted."
+    }
+  ]
+}

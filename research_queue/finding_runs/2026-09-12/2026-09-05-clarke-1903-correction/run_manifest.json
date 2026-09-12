@@ -1,0 +1,11 @@
+{
+  "finding_id": "FINDING-16d615cbcbfc",
+  "image_references": [],
+  "images_not_pending": [],
+  "missing_image_references": [],
+  "pending_review_images": [],
+  "run_date": "2026-09-12",
+  "source_path": "research_findings/2026-09-05_clarke_1903_correction.md",
+  "source_sha256": "7f408c703824f46c5c139f8b0097b327c8462700ea6792a38fb2e8ba57b45379",
+  "status": "LAWS_FILTERED"
+}

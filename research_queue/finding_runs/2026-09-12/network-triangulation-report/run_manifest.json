@@ -1,0 +1,11 @@
+{
+  "finding_id": "FINDING-6b74fce0ba56",
+  "image_references": [],
+  "images_not_pending": [],
+  "missing_image_references": [],
+  "pending_review_images": [],
+  "run_date": "2026-09-12",
+  "source_path": "research_findings/network_triangulation_report.md",
+  "source_sha256": "96ee7c21bae11bd3c0393dd8e760abcc993e66608768533000ef4bd473917ac0",
+  "status": "LAWS_FILTERED"
+}
