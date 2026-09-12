@@ -165,14 +165,408 @@ Recommended tests: Run Laws 1–7. Search for any primary source containing "Beg
 
 ---
 
+### Anashuecot — Claims (extracted from people/anashuecot.md)
+
+**CLAIM-016** | Anashuecot was Chief Sachem of Quidnessett  
+Source: 1672 Fones Purchase deed — "chiefe Sachem and heire properly of ye land called quckeset"  
+Prior status: PRIMARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Fones Record p. 90, RI State Archives  
+Recommended tests: Verify Fones Record directly. Law 5: check all jurisdictions.
+
+**CLAIM-017** | Anashuecot conveyed Devil's Foot/Fones tract to six English buyers, 1 Jan 1671/72  
+Source: Fones Record p. 90  
+Prior status: PRIMARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Fones Record p. 90 — grantees include John Greene and Henry Tibbits  
+Recommended tests: Verify original. Confirm all six grantee names.
+
+**CLAIM-018** | Anashuecot had two brothers (Wampkegge, Ompamiatt) and three sons (Seecomp, Tyecuecsha, Nammeash)  
+Source: 1672 Fones deed names them  
+Prior status: PRIMARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Fones Record p. 90  
+Recommended tests: Verify exact names in original. Cross-reference any other appearances of these individuals.
+
+**CLAIM-019** | Anashuecot active 1654–1677/78  
+Source: Multiple record anchors (1654 Petawhomett deed, 1661 declarations, 1672 Fones deed)  
+Prior status: MIXED PRIMARY/SECONDARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: 1654 appearance as Awassuocitt UNPROVEN identification. 1661 and 1672 stronger.  
+Recommended tests: Law 3 — is the 1654 Awassuocitt really Anashuecot? Verify independently.
+
+**CLAIM-020** | Anashuecot's father was named Tocomminon  
+Source: Unverified Absolom affidavit citation  
+Prior status: GHOST — moved to ghost_names.md (D-005)  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: No verified primary source  
+Recommended tests: Locate the Absolom affidavit. Does it actually name Tocomminon as father?
+
+### Daniel² Greene — Claims (extracted from people/daniel_greene.md)
+
+**CLAIM-021** | Daniel named as grantee of ~120 acres in 1682 deed  
+Source: Image 10, NK Land Records  
+Prior status: PRIMARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: FamilySearch DGS 008204949 Image 10  
+Recommended tests: Paleographic verification of acreage and boundary language.
+
+**CLAIM-022** | Daniel obligated to pay 30 shillings annually to John Sr. or Joan  
+Source: 1682 deed  
+Prior status: PRIMARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Image 10  
+Recommended tests: Verify exact annuity language. Cross-reference with CLAIM-002.
+
+**CLAIM-023** | Daniel witnessed 1676 Newport court martial for Awaswin/Anaftiawin  
+Source: Hough 1858 p. 181  
+Prior status: SECONDARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Published transcription  
+Recommended tests: Law 2 — verify Hough against original court martial records.
+
+**CLAIM-024** | Daniel's birth c. 1647  
+Source: F.L. Greene 1894 p. 10  
+Prior status: TERTIARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Compiled genealogy. No primary birth record located.  
+Recommended tests: Search for any primary birth/baptism record. Note: if accurate, Joan married John by mid-1640s.
+
+### James² Greene — Claims (extracted from people/james_greene.md)
+
+**CLAIM-025** | James called "natural son of John and Joan Greene" in 1682 deed  
+Source: Image 10, NK Land Records  
+Prior status: PRIMARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: FamilySearch DGS 008204949 Image 10  
+Recommended tests: Paleographic verification of exact phrase. What does "natural son" mean in 1682 RI legal usage?
+
+**CLAIM-026** | James named as grantee of ~60 acres in 1682 deed  
+Source: Image 10  
+Prior status: PRIMARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Image 10  
+Recommended tests: Paleographic verification of acreage.
+
+**CLAIM-027** | James married Elizabeth (maiden name unknown)  
+Source: Post-1700 Corey deed  
+Prior status: PRIMARY (deed context)  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Genealogical compilation cites deed — original NOT personally read  
+Recommended tests: Locate and read the James/Elizabeth-to-Corey deed.
+
+**CLAIM-028** | 1682 deed bounds include land of "their brother John"  
+Source: Image 10  
+Prior status: PRIMARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Image 10 boundary language  
+Recommended tests: Paleographic verification. Which John? Five-John firewall engaged.
+
+### Edward² Greene — Claims (extracted from people/edward_greene.md)
+
+**CLAIM-029** | Edward married Mary Tibbitts, daughter of Henry Tibbitts  
+Source: F.L. Greene 1894 p. 10 + Tibbitts will 1708  
+Prior status: MIXED (TERTIARY genealogy + PRIMARY will)  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Tibbitts will says "wife of Edward Greene of Aquidneset" = "eldest daughter"  
+Recommended tests: Read Tibbitts will directly. Confirm "eldest daughter" + Edward connection.
+
+**CLAIM-030** | Edward received NO land in 1682 deed  
+Source: Image 10 — only Daniel and James granted  
+Prior status: PRIMARY (absence)  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Image 10 names Daniel and James only  
+Recommended tests: Confirm full deed text. Why excluded? Already provided for?
+
+**CLAIM-031** | Edward sold land citing "fell to me by will of my honored father, lately deceased" (Mar 1695)  
+Source: Edward-to-Vaughan deed, 8 Mar 1695  
+Prior status: SECONDARY (deed not personally read)  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Reported deed language — original NOT read  
+Recommended tests: Locate and read the Edward-to-Vaughan deed. "Lately deceased" = when? Contradicts CLAIM-011?
+
+### Henry² Greene — Claims (extracted from people/henry_greene.md)
+
+**CLAIM-032** | Henry witnessed 1672 Fones Purchase deed by mark  
+Source: 1672 deed — "Henry Greene his marke"  
+Prior status: PRIMARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Fones Record  
+Recommended tests: Verify in Fones Record original. Cross-reference with CLAIM-017.
+
+**CLAIM-033** | Henry died c. 1694 Shrewsbury, NJ  
+Source: Compiled genealogies  
+Prior status: TERTIARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: No primary source cited  
+Recommended tests: Search Monmouth County NJ records for Henry Greene/Green death/probate.
+
+### Benjamin² Greene — Claims (extracted from people/benjamin_greene.md)
+
+**CLAIM-034** | Benjamin appears as "Beni Green of Kingstown" in Image 10 bottom  
+Source: FamilySearch DGS 008204949, Image 10  
+Prior status: PRIMARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Image 10 bottom text  
+Recommended tests: Paleographic verification. What transaction? George Havens deed.
+
+**CLAIM-035** | Benjamin paid thirty pounds to George Havens  
+Source: Image 10, NK Land Records  
+Prior status: PRIMARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Image 10 bottom  
+Recommended tests: Paleographic verification of amount and parties.
+
+### Sarah Greene alias Flounders — Claims (extracted from people/sarah_greene_flounders.md)
+
+**CLAIM-036** | Sarah is daughter of "John Greene" (WHICH John = Five-John firewall)  
+Source: 1668 RI court record  
+Prior status: PRIMARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Court record names father as "John Greene" without qualifier  
+Recommended tests: Law 3 — test both attributions (Quidnessett John vs Major John of Warwick). Neither proven.
+
+**CLAIM-037** | Thomas Flounders executed by hanging, 2 Nov 1670, Newport  
+Source: Court/colony records  
+Prior status: SECONDARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Colony record  
+Recommended tests: Verify in primary court records.
+
+**CLAIM-038** | Edward Greenman and "John Greene of Newport" petitioned for Sarah's estate  
+Source: Assembly record (Austin abstract)  
+Prior status: SECONDARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Austin abstract of Assembly record  
+Recommended tests: Find original Assembly record. The "John Greene of Newport" designation = firewall-relevant.
+
+### Henry Tibbitts — Claims (extracted from people/henry_tibbitts.md)
+
+**CLAIM-039** | Tibbitts married Sarah Stanton, Dec 1661, Kingston (Quaker record)  
+Source: Quaker marriage record  
+Prior status: PRIMARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Quaker meeting record  
+Recommended tests: Verify original meeting record.
+
+**CLAIM-040** | Tibbitts will 1708 names daughter Mary as wife of Edward Greene of Aquidneset  
+Source: Tibbitts will 1708, proved 1713  
+Prior status: PRIMARY (abstract)  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Multiple abstracts (Austin, Beaman, RI Gen Register). Original fire-damaged.  
+Recommended tests: Cross-reference abstracts. Note: fire-damaged original limits verification.
+
+**CLAIM-041** | Tibbitts will says Edward Greene's sons "provided for" (excluded from land)  
+Source: Tibbitts will 1708  
+Prior status: PRIMARY (abstract)  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Will abstract language  
+Recommended tests: These are Joan's grandsons. Cross-reference CLAIM-012.
+
+**CLAIM-042** | Tibbitts will names granddaughter Anne Fones (daughter of Samuel Fones)  
+Source: Tibbitts will 1708  
+Prior status: PRIMARY (abstract)  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Will abstract  
+Recommended tests: Fones family connection to Fones Purchase? Same family?
+
+### Edward Greenman — Claims (extracted from people/edward_greenman.md)
+
+**CLAIM-043** | Greenman witnessed 1682 deed alongside H. Tibbits  
+Source: Image 10, NK Land Records  
+Prior status: PRIMARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Image 10  
+Recommended tests: Paleographic verification of Greenman name/mark on deed.
+
+**CLAIM-044** | Greenman and brother David acknowledged 1647 Newport deed to John Greene (acknowledged 4 Feb 1682)  
+Source: Bates 1918–19 p. 76  
+Prior status: SECONDARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Bates abstract. 35-year gap between original deed and acknowledgment.  
+Recommended tests: Find original Newport deed. Why acknowledged same month as home-place deed?
+
+### Thomas Gould — Claims (extracted from people/thomas_gould.md)
+
+**CLAIM-045** | Gould was neighboring proprietor to John Greene on 1666 Quidnessett plat  
+Source: Narragansett Historical Register  
+Prior status: SECONDARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Published quote from plat  
+Recommended tests: Verify plat directly if accessible.
+
+**CLAIM-046** | Gould testified at 1676 Anaftiawin court martial with Daniel Green  
+Source: Hough 1858 p. 181  
+Prior status: SECONDARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Published transcription of court martial  
+Recommended tests: Cross-reference CLAIM-023. Both Daniel and Gould testified.
+
+### George Havens — Claims (extracted from people/george_havens.md)
+
+**CLAIM-047** | Havens sold land to Benjamin Greene (Image 10 bottom)  
+Source: Image 10, NK Land Records  
+Prior status: PRIMARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Image 10  
+Recommended tests: Paleographic verification. Cross-reference CLAIM-034 and CLAIM-035.
+
+### Elizabeth (wife of James² Greene) — Claims
+
+**CLAIM-048** | Elizabeth was wife of James Greene  
+Source: Post-1700 Corey deed  
+Prior status: TERTIARY (compilation-sourced)  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Genealogical compilation cites deed — NOT read from primary  
+Recommended tests: Locate and read original Corey deed.
+
+### John Greene of Quidnessett — Additional Claims
+
+**CLAIM-049** | John was Conservator of the Peace, 1679  
+Source: 1679 affidavit  
+Prior status: PRIMARY (corrected from "Commissioner")  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: 1679 affidavit text  
+Recommended tests: Verify title in affidavit. What does "Conservator" mean vs "Commissioner"?
+
+**CLAIM-050** | John was Fones Purchase proprietor, 1 Jan 1671/72  
+Source: Fones Record p. 90  
+Prior status: PRIMARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Fones Record p. 90. Cross-reference CLAIM-017.  
+Recommended tests: Verify in Fones Record directly.
+
+**CLAIM-051** | "John Greene and Son" assigned 151 acres on 1666 plat (son unnamed)  
+Source: Narragansett Historical Register p. 61  
+Prior status: SECONDARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Published quote from plat. Son's identity = Five-John firewall question.  
+Recommended tests: Verify plat. Is father Quidnessett John or Surgeon's-line John? Who is the unnamed son?
+
+**CLAIM-052** | John was East Greenwich proprietor, 1679 (9th lot + 90-acre farm)  
+Source: Bates 1918–19  
+Prior status: SECONDARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Bates abstract  
+Recommended tests: Verify in East Greenwich proprietor records.
+
+**CLAIM-053** | John declared for Connecticut with Richard Smith and others, 1663  
+Source: Records of the Colony of RI  
+Prior status: SECONDARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Colonial records  
+Recommended tests: Verify in Bartlett. What does this mean for jurisdictional authority over his land?
+
+**CLAIM-054** | Y-DNA R-FTB79899/R-BY186325 does NOT match expected English Greene patriline  
+Source: Researcher's Kit B2778  
+Prior status: SECONDARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: FTDNA results. Irish Sea cluster (Uí Dúnlainge modal) = different patriline from Surgeon's family.  
+Recommended tests: Verify test results. Note: patrilineal only, does NOT apply to Joan. Relevant to John's origin only.
+
+### John Greene of Newport — Claims (extracted from people/john_greene_newport.md)
+
+**CLAIM-055** | John of Newport purchased 100 acres from Caleb Carr near Allen's Harbor, Quidnessett, 1651  
+Source: Newport land evidences; Bates  
+Prior status: PRIMARY (deed)  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Creates Newport/Quidnessett geographic overlap  
+Recommended tests: Find original deed. Does this prove or disprove Newport John = Quidnessett John?
+
+**CLAIM-056** | John of Newport = John of Quidnessett (same man, per Bates)  
+Source: Bates 1918–19  
+Prior status: TERTIARY — held open per Law 1  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Bates theory only. No disambiguating primary source located.  
+Recommended tests: Law 8 convergence test required. Is there a primary record that proves or disproves they are the same person?
+
+**CLAIM-057** | Newport John's wife attributed as Mary Jefferay  
+Source: Austin, Genealogical Dictionary RI  
+Prior status: TERTIARY — disputed  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Austin only. If Newport John = Quidnessett John, then who is Joan? Two wives?  
+Recommended tests: Search for primary marriage/baptism record. Does any primary source name Mary Jefferay as wife of a John Greene?
+
+### John Greene of Warwick — Firewall Claims (extracted from people/john_greene_warwick.md)
+
+**CLAIM-058** | Major John Greene baptized 15 Aug 1620, Salisbury, Wiltshire, England  
+Source: Church record  
+Prior status: PRIMARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Parish register  
+Recommended tests: Verify parish register. Distinguishes from Quidnessett John (no known baptism).
+
+**CLAIM-059** | Major John's wife was Ann Almy (NOT Joan)  
+Source: Warwick records  
+Prior status: PRIMARY  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Warwick town records  
+Recommended tests: Verify directly. Critical firewall: Joan ≠ Ann.
+
+**CLAIM-060** | No documented co-appearance between Major John and Quidnessett John  
+Source: Extensive secondary sources examined  
+Prior status: SEARCHED, NOT FOUND  
+Spine status: ⬜ **UNTESTED**  
+Date entered spine: 2026-09-12  
+Evidence chain: Negative search result  
+Recommended tests: Continue searching. Any co-appearance would be significant.
+
+---
+
 ## Seeding Notes
 
 This spine was seeded from the integrity framework's master tag list (2026-09-05) plus key claims from the contamination index. **All claims entered as ⬜ UNTESTED regardless of prior status.** The spine does not trust the repo. The spine tests the repo.
 
+**Pass 2 (2026-09-12):** Extracted 45 claims from 21 people files in `people/`. Each person file was reviewed for discrete factual claims with their sources and confidence levels. Claims entered as CLAIM-016 through CLAIM-060.
+
 Claims not yet on the spine:
-- Individual people file claims (22+ people files in `people/`) — to be extracted and added as individual claim rows in subsequent passes
 - 12-name experiment findings — to be added as they produce convergence claims
 - Research queue leads — to be added when they produce testable claims
+- John Nawham claims — all source trails currently broken (⚠️ SOURCE NEEDED). Will be added when any source is verified.
 
 The spine grows as the archive grows. Nothing is removed.
 

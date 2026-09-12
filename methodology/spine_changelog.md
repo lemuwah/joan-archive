@@ -1,29 +1,50 @@
-> This archive documents lives lived between approximately 1600–1750 in Narragansett country (present-day Rhode Island). All records from this period were created within colonial legal systems and reflect their biases, categories, and blind spots. Every name found here — English, Narragansett, Niantic, mixed-heritage, unknown — represents a real person whose full story these records were not designed to capture. Content may include references to war, captivity, enslavement, displacement, legal coercion, and loss. These are documented realities of the period, not abstractions. All cultural and genealogical content is included for research purposes in the quest to identify Joan Unknown Greene and will be revised or removed if requested by descendant communities or tribal representatives.
+> This archive documents lives lived between approximately 1600–1750 in Narragansett country (present-day Rhode Island).
 
 # Spine Changelog
 
-Every status change on the Source Spine is logged here with date, reason, and evidence. Git history gives diffs. This changelog gives reasoning.
+**Rule:** Every status change, addition, or structural edit to the source spine is logged here with date, actor, and reasoning.
 
 ---
 
-## 2026-09-12 — Initial Seed
+## 2026-09-12 — Seed
 
-**Action:** Spine created. 15 claims seeded from integrity framework master tag list + contamination index.  
-**Rule applied:** All claims enter as ⬜ UNTESTED regardless of prior status.  
-**Reason:** Previous status tags (PROOF, PLAUSIBLE, DISCREDITED, SOURCE VERIFIED, etc.) were assigned under the old binary system before Law 8 existed. The spine does not inherit opinions — it tests claims fresh under Laws 1–8.  
-**Scope:** Initial seed covers Joan direct claims (CLAIM-001 through CLAIM-006), Joan identity claims (CLAIM-007), John Greene claims (CLAIM-008 through CLAIM-011), cross-document claims (CLAIM-012), and citation kills imported from contamination index (CLAIM-013 through CLAIM-015).  
-**Not yet seeded:** Individual people file claims (22+ files), 12-name experiment findings, research queue leads. These will be extracted in subsequent passes.
+**Actor:** Migoo/Claude + DeepSeek (methodology design)  
+**What:** Initial seed of 15 claims (CLAIM-001 through CLAIM-015) from integrity framework master tag list + contamination index.  
+**Why:** The old system had multiple incompatible tag vocabularies (PROOF, PLAUSIBLE, DISCREDITED vs. PROVEN, PROBABLE, UNVERIFIED vs. 🟢/🟡/⚪/⚫). The spine replaces all of them with a single vocabulary and tests every claim fresh. Nothing inherits status from the old system.  
+**Law 8 evolution:** In the same batch, Law 8 was evolved from a binary "convergence confirmed" gate to The Recursive Pass — convergence is now a new claim tested by Laws 1–7 recursively, with four falsification tests (8a source independence, 8b alternative target, 8c environmental noise, 8d breaking evidence). See `methodology/reconstruction_principle.md`.
 
-**Law 8 evolution committed in same batch:**  
-- `methodology/reconstruction_principle.md` replaced with evolved Law 8 — The Recursive Pass  
-- Previous version: convergence = confirmed  
-- New version: convergence = new claim, tested by Laws 1–7 recursive pass + 4 falsification tests (8a source independence, 8b alternative target, 8c environmental noise, 8d breaking evidence)  
-- Evolution driven by: Claude stress-test feedback (Martin Guerre + Anne Frank Cold Case failure modes), Pawtuxet citation walkback, Ripper negative control  
-- Anti-theory protocol added: for every convergence theory, construct strongest alternative  
-- Multi-agent bias check added: log which agent built vs tested each convergence
+## 2026-09-12 — Pass 2: People file extraction
+
+**Actor:** Migoo/Claude  
+**What:** Extracted 45 claims from 21 people files in `people/`. Added as CLAIM-016 through CLAIM-060. All enter as ⬜ UNTESTED.  
+**Coverage:**
+- Anashuecot: 5 claims (CLAIM-016 through CLAIM-020)
+- Daniel² Greene: 4 claims (CLAIM-021 through CLAIM-024)
+- James² Greene: 4 claims (CLAIM-025 through CLAIM-028)
+- Edward² Greene: 3 claims (CLAIM-029 through CLAIM-031)
+- Henry² Greene: 2 claims (CLAIM-032 through CLAIM-033)
+- Benjamin² Greene: 2 claims (CLAIM-034 through CLAIM-035)
+- Sarah Greene/Flounders: 3 claims (CLAIM-036 through CLAIM-038)
+- Henry Tibbitts: 4 claims (CLAIM-039 through CLAIM-042)
+- Edward Greenman: 2 claims (CLAIM-043 through CLAIM-044)
+- Thomas Gould: 2 claims (CLAIM-045 through CLAIM-046)
+- George Havens: 1 claim (CLAIM-047)
+- Elizabeth (wife of James): 1 claim (CLAIM-048)
+- John Greene of Quidnessett: 6 additional claims (CLAIM-049 through CLAIM-054)
+- John Greene of Newport: 3 claims (CLAIM-055 through CLAIM-057)
+- John Greene of Warwick: 3 firewall claims (CLAIM-058 through CLAIM-060)
+
+**Excluded:** John Nawham — all source trails currently broken (⚠️ SOURCE NEEDED). Claims will be added when any source is verified. John Greene of Occupessuatuxet and Potowomut — both are duplicate slots (Occupessuatuxet = Major John of Warwick; Potowomut = James Greene's son, not a 17th-century John).
+
+**Key firewalls engaged:**
+- CLAIM-036 (Sarah's paternity): Five-John firewall — father is "John Greene" without qualifier
+- CLAIM-051 (1666 plat): "John Greene and Son" — which John?
+- CLAIM-056 (Newport = Quidnessett?): Bates theory, held open
+- CLAIM-057 (Mary Jefferay): If Newport = Quidnessett, who is Joan?
+- CLAIM-060 (no co-appearance): Warwick John vs Quidnessett John separation
+
+**Total spine claims after this pass:** 60
 
 ---
 
-*Joan Archive — methodology/spine_changelog.md*  
-*Nothing is proven until original proof images are on the archive.*  
-*Created: 2026-09-12 — Wendy Green + Migoo*
+*Nothing is deleted from the changelog. Every edit shows its work.*
