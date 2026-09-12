@@ -1,0 +1,12 @@
+person,total_documents,actor_roles,structural_roles,presence_ratio,tier
+john-greene-capt,3,3,0,1.0,Tier 1
+daniel-greene,1,1,0,1.0,Tier 1
+james-greene,1,1,0,1.0,Tier 1
+henry-tibbitts,1,1,0,1.0,Tier 1
+john-nutsn,1,1,0,1.0,Tier 1
+joane-greene,2,0,1,0.0,Tier 1
+anashuecot,1,0,1,0.0,Tier 3
+richard-fones,1,0,0,0.0,Tier 1
+elizabeth-tibbitts,2,2,0,1.0,Tier 1
+mary-holden,1,1,0,1.0,Tier 1
+awashonks,2,1,1,0.5,Tier 2

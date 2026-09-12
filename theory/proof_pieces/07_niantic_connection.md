@@ -73,5 +73,5 @@ Joan's invisibility matches this pattern exactly.
 ---
 
 *Joan Archive — theory/proof_pieces/07_niantic_connection.md*
-*Maintained under the 5 Laws of the Joan Archive*
+*Maintained under the 7 Laws of the Joan Archive*
 *Status: REVISED 2026-08-31 — deaths corrected, Weunquesh 1679 added, hostile review caveats applied*

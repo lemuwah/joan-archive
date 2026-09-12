@@ -1,0 +1,144 @@
+diff --git a/AGENT_GUARDRAILS.md b/AGENT_GUARDRAILS.md
+index 9811710..9e44edb 100644
+--- a/AGENT_GUARDRAILS.md
++++ b/AGENT_GUARDRAILS.md
+@@ -113,5 +113,22 @@ A model is not "exhausted" until its specific record types have been actually se
+ 
+ ---
+ 
++## 10. AI Provenance Logging Is Mandatory
++
++*(Added 2026-09-06)*
++
++Every AI model that completes a task in this archive must log the completion in `methodology/ai_provenance.md` before marking the task DONE. This is a universal rule, not a list of named tools — model names change, get renamed, get deprecated. Any current or future agent onboards through `README_FOR_EXTERNAL_AGENTS.md`, which points here.
++
++The log exists so that:
++- Any later agent or human can trace which model's reasoning produced a given change, instead of an anonymous commit.
++- If that reasoning later turns out to be wrong, the failure is traceable to a specific entry — not lost.
++- Patterns in where different models' logic tends to break down become visible over time, instead of each model repeating the same blind spot.
++
++A task is not complete without a provenance entry. An entry that later proves wrong is never deleted — the correction goes in `CORRECTIONS.md` with a link back to it, per Law 4 (No Algorithmic Contamination): errors are logged and held on record, never quietly erased.
++
++**Interrupted tasks:** if a model is cut off mid-task (session limit, timeout, quota), it logs a partial entry with status `IN PROGRESS`, documenting what was done and what remains. The next model picks up from that entry — not from scratch.
++
++---
++
+ *Agent Guardrails — equal authority to MULTI AGENT Laws.*  
+ *Maintained under MULTI AGENT Laws of the Joan Archive.*
+diff --git a/README_FOR_EXTERNAL_AGENTS.md b/README_FOR_EXTERNAL_AGENTS.md
+index 7b04a22..899e7cc 100644
+--- a/README_FOR_EXTERNAL_AGENTS.md
++++ b/README_FOR_EXTERNAL_AGENTS.md
+@@ -105,9 +105,10 @@ But you must never break the structure.
+ 
+ After you produce your output:
+ 
+-1. Add new questions or contradictions to the research queue.  
+-2. Suggest which agent should handle the next step.  
+-3. Maintain the project's iterative rhythm.
++1. Log your completion in `methodology/ai_provenance.md` — see `AGENT_GUARDRAILS.md` §10. This applies to every model working in this system, not just Claude.
++2. Add new questions or contradictions to the research queue.  
++3. Suggest which agent should handle the next step.  
++4. Maintain the project's iterative rhythm.
+ 
+ This organism evolves through cycles:
+ - Explorer → Hostile Reviewer → Archivist → Synthesizer → Queue → Repeat
+diff --git a/TASK_QUEUE.md b/TASK_QUEUE.md
+index 001fba5..480bcc7 100644
+--- a/TASK_QUEUE.md
++++ b/TASK_QUEUE.md
+@@ -3,6 +3,8 @@
+ ## How to use this file
+ Any AI helper working on this archive: read `methodology/agent_orientation.md` first. Then come here. Pick the highest-priority NOT STARTED task whose dependencies are DONE. Execute it. Update the status when finished. If interrupted mid-task, update "What's already done" before stopping.
+ 
++Before marking any task DONE, append a completion entry to `methodology/ai_provenance.md` (see `AGENT_GUARDRAILS.md` §10). A task without a provenance entry is not finished.
++
+ Laws, models, and facts evolve as research progresses. Do not assume they match your last session. Re-read before working.
+ 
+ ---
+@@ -13,7 +15,7 @@ Every direction gets tested. English, Indigenous, maritime, religious, legal, ar
+ ---
+ 
+ ## Task 1: Update editorial_standards.md
+-- **Status:** NOT STARTED
++- **Status:** DONE — see `methodology/ai_provenance.md` PROV-001
+ - **Depends on:** NONE
+ - **Priority:** HIGHEST — all other tasks reference these rules
+ - **What to do:**
+diff --git a/methodology/ai_provenance.md b/methodology/ai_provenance.md
+new file mode 100644
+index 0000000..3ba5b0e
+--- /dev/null
++++ b/methodology/ai_provenance.md
+@@ -0,0 +1,38 @@
++# AI Provenance Log
++
++**Purpose:** Track which AI model completed which task, when, and under what reasoning — so any future agent or Wendy can trace a change back to the model that made it, check whether that model's logic still holds, and log a fix if it doesn't.
++**Companion files:** `decision_log.md` (framework decisions), `CORRECTIONS.md` (errors caught after the fact)
++**Applies to:** every AI model working in this archive. See `README_FOR_EXTERNAL_AGENTS.md`.
++
++---
++
++## How to Use This File
++
++When any task in `TASK_QUEUE.md` is marked DONE, the completing model appends an entry here before moving on. Entries are **append-only** — never edit or delete a prior entry, even your own.
++
++If a later session finds an earlier entry's reasoning was wrong, the correction goes in `CORRECTIONS.md`, with a link back to the entry number here. The entry itself stays on record. This mirrors Law 4 (No Algorithmic Contamination): errors are logged and held on record, never quietly erased.
++
++## Entry Format
++
++```
++### PROV-XXX: [Task name]
++- **Task:** [Task # from TASK_QUEUE.md]
++- **Completed by:** [Model name + version]
++- **Date:** YYYY-MM-DD
++- **What was done:** [1-3 sentences]
++- **Reasoning / assumptions made:** [anything a future reader should sanity-check]
++- **Files touched:** [list]
++- **Flag for re-check:** [Yes/No — did this rely on a judgment call rather than a hard rule?]
++```
++
++---
++
++## PROV-001: Task 1 — Editorial Standards additions
++
++- **Task:** Task 1 (Update editorial_standards.md)
++- **Completed by:** Claude (Sonnet 5, claude.ai) — self-reported; verify against session metadata if available
++- **Date:** 2026-09-06
++- **What was done:** Added §6 "Search Documentation Standards" to `editorial_standards.md` — the Search Completeness Rule (6.1) and the Search Direction Bias Check (6.2).
++- **Reasoning / assumptions made:** TASK_QUEUE.md specified the Completeness Rule apply to `/people/`, `/context/`, and `/research_queue/`. No `/context/` directory exists in the repo (only `context.html` at root) — scoped the rule to `/people/` and `/research_queue/` instead, since that's where the structured Search Log table format actually applies. The Bias Check rule was scoped broader, to any "Where To Look Next" recommendation on any page type (.md or .html), since it's a review question rather than a table format, and `contribute.html` was already doing an informal version of this under Law 5. This scoping was a judgment call, flagged to Wendy in conversation before writing — she can override it in `decision_log.md` if the narrower Completeness scope turns out to be wrong.
++- **Files touched:** `methodology/editorial_standards.md`
++- **Flag for re-check:** Yes — the `/context/` scoping decision was inferred from repo structure, not stated explicitly in the queue text.
+diff --git a/methodology/editorial_standards.md b/methodology/editorial_standards.md
+index 9a8e51b..eba18eb 100644
+--- a/methodology/editorial_standards.md
++++ b/methodology/editorial_standards.md
+@@ -66,4 +66,28 @@ Legacy tags in older files (PROVEN/PROBABLE/UNVERIFIED/NULL/SUSPENDED) are recog
+ 
+ ---
+ 
++## 6. Search Documentation Standards
++
++*(Added 2026-09-06)*
++
++### 6.1 Search Completeness Rule
++
++Every `.md` page in `/people/` and `/research_queue/` must maintain a Search Log documenting which tools searched which record types, what was found, and what was NOT searched. A tool that searches one category and doesn't document categories it didn't search has introduced bias by omission. The ❌ NOT SEARCHED tag is an honest map of where to go next, not a failure.
++
++Format (full page template in `TASK_QUEUE.md` Task 4):
++
++`Date | Tool/Agent | What was searched | What was found | What was NOT searched`
++
++### 6.2 Search Direction Bias Check
++
++Before publishing any "Where To Look Next" recommendation — on a `/people/` page, in `/research_queue/`, or on a public-facing page (`contribute.html`, `analysis.html`, `context.html`) — the recommendation must be checked against this question: what record types exist that this agent might not know to suggest? What would a Narragansett historian, a maritime historian, an archaeologist, a linguist, or a material-culture specialist look for that a genealogist wouldn't?
++
++If the recommendation is entirely digitized, English-language, colonial-framework sources, it has not passed this check. Flag the gap explicitly rather than presenting the list as thorough.
++
++---
++
++*See `methodology/ai_provenance.md` PROV-001 for authorship and reasoning.*
++
++---
++
+ *Maintained under MULTI AGENT Laws of the Joan Archive.*

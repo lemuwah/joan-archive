@@ -1,0 +1,15 @@
+{
+  "finding_id": "FINDING-9c2bd1cd4d64",
+  "image_references": [
+    "008204949-10green-fones-tibbits-march-1682.JPG"
+  ],
+  "images_not_pending": [
+    "008204949-10green-fones-tibbits-march-1682.JPG"
+  ],
+  "missing_image_references": [],
+  "pending_review_images": [],
+  "run_date": "2026-09-09",
+  "source_path": "research_findings/2026-09-09_funnel_synthesis_status.md",
+  "source_sha256": "25f46917bf930318067b9c7963af5a10ba7e4868946421e7128d5a761c1b2df0",
+  "status": "PENDING_HUMAN_REVIEW"
+}

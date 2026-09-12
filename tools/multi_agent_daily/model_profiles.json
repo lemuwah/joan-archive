@@ -1,0 +1,76 @@
+{
+  "models": {
+    "A": {
+      "name": "Narragansett sachem-line woman",
+      "status": "OPEN",
+      "search_terms": ["Narragansett", "Niantic", "sachem", "kin", "mark", "interpreter", "Indian"],
+      "repositories": ["Indigenous-authored histories", "RI land evidence", "language and name studies", "archaeology and material-culture collections"],
+      "confirm": "A contemporaneous document securely connects Joan or her household to an Indigenous person, community, kin group, or name tradition.",
+      "disconfirm": "A primary record securely identifies Joan elsewhere, or a comparable frontier-wife baseline explains the silence without this model.",
+      "caution": "Absence from English records is not evidence of Indigenous identity. Respect community access protocols."
+    },
+    "B": {
+      "name": "English woman, undocumented",
+      "status": "OPEN",
+      "search_terms": ["Joan", "Joane", "Jane", "wife of John Greene", "widow", "parish", "baptism", "marriage"],
+      "repositories": ["English parish registers", "New England town and church records", "migration and passenger lists", "frontier-wife comparison cases"],
+      "confirm": "A dated parish, migration, marriage, or colonial record links an English Joan to this household and place.",
+      "disconfirm": "A secure record identifies a non-English origin or status, or the candidate fails the date/place/household test.",
+      "caution": "The English name Joan is not proof of English origin."
+    },
+    "C": {
+      "name": "Irish origin",
+      "status": "OPEN",
+      "search_terms": ["Irish", "Ireland", "Ulster", "Donegal", "Cork", "servant", "transported", "parish"],
+      "repositories": ["Irish and Ulster parish records", "Scottish/Irish migration records", "servant and transportation lists", "port books and shipping records"],
+      "confirm": "A contemporaneous record links Joan or a secure household associate to Ireland, Ulster, or an Irish migration route.",
+      "disconfirm": "A documented alternative origin is established or every candidate fails identity, date, and place anchors.",
+      "caution": "Y-DNA of a male line cannot identify Joan's origin."
+    },
+    "D": {
+      "name": "Indentured servant",
+      "status": "OPEN",
+      "search_terms": ["servant", "indentured", "bond servant", "apprentice", "master", "term", "court"],
+      "repositories": ["RI, Massachusetts, Connecticut, and Plymouth court records", "servant registers", "apprenticeship bonds", "probate and household inventories"],
+      "confirm": "A record names Joan or a secure alias as servant, indentured, apprenticed, or released from a term.",
+      "disconfirm": "A contemporaneous record establishes a different status or the proposed person fails the household and date anchors.",
+      "caution": "Occupation, poverty, or missing parents do not prove servitude."
+    },
+    "E": {
+      "name": "Enslaved person",
+      "status": "OPEN",
+      "search_terms": ["enslaved", "slave", "captive", "Negro", "Indian", "mulatto", "disposal", "manumission"],
+      "repositories": ["King Philip's War captivity records", "RI, Massachusetts, and Connecticut disposal records", "probate inventories", "court, church, and manumission records"],
+      "confirm": "A contemporaneous record uses status language for Joan or securely identifies her in an enslaved/captive household context.",
+      "disconfirm": "A reliable record establishes free status before marriage or securely identifies another person.",
+      "caution": "Colonial labels must be quoted and contextualized; race, name, and absence cannot establish status."
+    },
+    "F": {
+      "name": "Widow of prior marriage",
+      "status": "OPEN",
+      "search_terms": ["widow", "relict", "dower", "probate", "guardianship", "administratrix", "Joan"],
+      "repositories": ["Probate and estate records", "widowhood and dower records", "church and marriage registers", "guardianship and creditor records"],
+      "confirm": "A dated probate, marriage, dower, or guardianship record links a Joan with a prior husband to John Greene's household.",
+      "disconfirm": "A record identifies Joan's first marriage or maiden identity without a prior husband, or the candidate fails the anchors.",
+      "caution": "Legal standing alone does not prove widowhood."
+    },
+    "G": {
+      "name": "Joan Beggarly / Alice Daniels (La Mance)",
+      "status": "ELIMINATED",
+      "search_terms": ["Joan Beggarly", "Alice Daniels", "Beggerly", "La Mance"],
+      "repositories": ["Original chronology and death records", "La Mance source trail", "Surgeon John and Warwick records"],
+      "confirm": "Only reopen if a primary record overturns the chronology and identifies the 1682 Joan as this person.",
+      "disconfirm": "Chronological mismatch, wrong John, or wrong town remains documented.",
+      "caution": "This is an audit target for citation contamination, not a preferred live hypothesis."
+    },
+    "H": {
+      "name": "Mixed-heritage English/Narragansett parentage",
+      "status": "OPEN",
+      "search_terms": ["mixed", "Indian", "English", "Narragansett", "interpreter", "kin", "sachem", "household"],
+      "repositories": ["Land and court records", "Indigenous-authored histories", "interpreter and trading-post records", "church, probate, and material-culture evidence"],
+      "confirm": "A contemporaneous record links Joan's household to an English–Narragansett family, kin group, interpreter, or documented parentage.",
+      "disconfirm": "A secure alternative identity is established or the proposed connection depends only on geography or silence.",
+      "caution": "Mixed heritage is not inferred from location, name, appearance, or documentary absence."
+    }
+  }
+}

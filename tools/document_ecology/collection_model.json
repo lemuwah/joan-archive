@@ -1,0 +1,44 @@
+{
+  "name": "Joan document ecology and zoom model",
+  "version": "1.0",
+  "principle": "Move outward from the exact Joan document while preserving the same identity and provenance tests at every scale.",
+  "zoom_levels": [
+    {
+      "id": "L0_document",
+      "question": "What exactly is on the page?",
+      "record_families": ["original manuscript image", "verbatim transcription", "abstract", "AI transcription", "scribal marks", "witnesses", "bounds", "recording metadata"]
+    },
+    {
+      "id": "L1_household",
+      "question": "Who shares Joan's household, property, legal benefits, and obligations?",
+      "record_families": ["deeds", "annuity payments", "probate", "guardianship", "dower", "creditors", "servant contracts", "enslavement/captivity/disposal", "church", "children"]
+    },
+    {
+      "id": "L2_associates",
+      "question": "Who repeatedly appears with the household?",
+      "record_families": ["witnesses", "neighbors", "interpreters", "trading-post workers", "land bounds", "court parties", "merchants", "ship associates", "godparents", "creditors"]
+    },
+    {
+      "id": "L3_locality",
+      "question": "What did the Quidnessett/Cocumscussoc/Pawtuxet community record?",
+      "record_families": ["town records", "land evidence", "church and meeting records", "court records", "militia", "tax and rate lists", "Indian deeds", "surveys", "archaeology", "oral/community history"]
+    },
+    {
+      "id": "L4_jurisdiction",
+      "question": "Which authority could have created or retained the missing record?",
+      "record_families": ["Rhode Island", "Massachusetts", "Connecticut", "Plymouth", "New York", "Crown/Colonial Office", "port customs", "military dispatches", "intercolonial correspondence"]
+    },
+    {
+      "id": "L5_region_atlantic",
+      "question": "What migration, trade, war, language, and kinship systems could place Joan here?",
+      "record_families": ["English parish", "Irish/Ulster parish", "Scottish migration", "servant/indenture", "transportation", "enslavement/captivity", "Atlantic ports", "shipping", "diaspora networks", "Indigenous-authored history", "material culture"]
+    }
+  ],
+  "record_rules": [
+    "A catalog hit is a lead, not a document.",
+    "A document is not a Joan identification without date, place, identity, and source anchors.",
+    "Colonial status words must be quoted and contextualized, never inferred from race, surname, or silence.",
+    "A negative result is scoped to repository, query, dates, jurisdiction, and record family.",
+    "Every node and edge remains PENDING_HUMAN_REVIEW until the original or authoritative record is inspected."
+  ]
+}

@@ -1,0 +1,62 @@
+name: Daily multi-perspective research sweep
+
+on:
+  schedule:
+    - cron: "17 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests pyyaml
+
+      - name: Run daily multi-perspective sweep
+        run: python tools/daily_research/sweep.py
+        continue-on-error: true
+
+      - name: Run four-agent orchestration
+        run: |
+          SWEEP_FILE="research_queue/daily_sweep/$(date -u +%Y-%m-%d).jsonl"
+          if [ -f "$SWEEP_FILE" ]; then
+            python tools/multi_agent_daily/orchestrate.py
+          else
+            echo "No sweep output found — skipping orchestration"
+          fi
+        continue-on-error: true
+
+      - name: Build outward document-ecology search bundle
+        run: python tools/document_ecology/build_search_bundle.py
+        continue-on-error: true
+
+      - name: Route completed research findings
+        run: python tools/findings_pipeline/route_findings.py
+        continue-on-error: true
+
+      - name: Commit results directly to main
+        run: |
+          git config user.name "joan-archive-bot"
+          git config user.email "joan-archive-bot@users.noreply.github.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "research: daily automated sweep — AI-SOURCED, Laws-filtered
+
+          All outputs are AI-assisted working reports filtered through the
+          Multi Agent Laws. No claim is promoted to PROOF without primary
+          source verification. Periodic human review applies."
+            git push
+          fi

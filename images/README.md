@@ -30,7 +30,7 @@ These are retained for completeness but flagged in filenames.
 ## How to Use
 Images are organized flat in the root directory. Use your browser's find function or clone the repo and search filenames by keyword (date, surname, place name, or document type).
 ## Contributing
-This is a personal research archive. For corrections, improved scans, or source identifications, open an issue or pull request.
+This is a personal research archive. For corrections, improved scans, or source identifications, open an issue or pull request. Newly supplied images must go to `images/_pending_review/` first with repository, collection, stable identifier, image/page number, access date, and any available checksum. Promotion into the public image set requires human review.
 License
 MIT License — see LICENSE for full text.
 ## Image Index

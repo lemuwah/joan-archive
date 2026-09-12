@@ -1,0 +1,233 @@
+version: 1
+updated: 2026-09-09
+purpose: >
+  Machine-readable geographic index for the Greene Net (methodology/collection_policy.md).
+  Every captured lead is filed under every region it touches. Each region lists every
+  spelling variant found in period records, attributed to who wrote it down and when
+  where known. status values:
+    anchored-in-repo   = variant appears in a document inside this repository (see attested_in)
+    external-reference = variant is standard in period literature but not yet anchored in-repo
+    search-target      = plausible scribe-drift / OCR form; search it, log it, but never cite it as attested
+  Human-readable companion: research/geography_index.md
+
+regions:
+
+  - id: quidnessett
+    modern_name: Quidnessett Neck, North Kingstown, Washington County, Rhode Island
+    active_range: [1635, 1750]
+    jurisdiction_note: >
+      Narragansett country; contested RI / Connecticut / Atherton Company claims;
+      Kings Province 1665; under Rhode Island after the 1670s settlements.
+      Records may sit in RI, CT, MA, or Crown repositories.
+    variants:
+      - { form: Quidnessett, type: standard-modern, status: anchored-in-repo }
+      - { form: Quidneset, type: scribal, attested_in: ["Bates 1918-19, RIHS Collections XII p.15"], status: anchored-in-repo }
+      - { form: Aquednesit, type: scribal, attested_in: ["Bates 1918-19, RIHS Collections XII p.15"], status: anchored-in-repo }
+      - { form: Aquidneset, type: scribal, attested_in: ["people/john_greene_quidnessett.md (1671 court context)"], status: anchored-in-repo }
+      - { form: Acquidnessett, type: scribal, attested_in: ["people/john_greene_quidnessett.md (19-20 May 1671 court)"], status: anchored-in-repo }
+      - { form: "Quidnesset Neck", type: scribal, attested_in: ["1666 proprietors plat, via Narragansett Historical Register 'Notes on Quidnessett No. 2' p.61"], status: anchored-in-repo }
+      - { form: Quidnessetneck, type: scribal, attested_in: ["1666 plat quotation, people/john_greene_quidnessett.md"], status: anchored-in-repo }
+      - { form: Quckeset, type: scribal, attested_in: ["theory/proof_pieces/01_kin_group_mapping.md"], status: anchored-in-repo }
+      - { form: "Greene's Harbor", type: alias-label, attested_in: ["1651 Caleb Carr deed via Bates 1918-19, theory/source_spine.md ('abutting on Quidnessett or Greene''s Harbor')"], status: anchored-in-repo, note: "Same-place claim vs Allen's Harbor is an OPEN QUESTION - do not merge silently" }
+      - { form: Quidnick, type: modern, status: search-target }
+      - { form: Quidnessit, type: ocr-plausible, status: search-target }
+      - { form: Quidnessett, type: ocr-plausible, status: search-target, note: "OCR often drops doubles: Quidnesett/Quidnesset/Quidnesselt" }
+    record_anchors: ["1672 Fones Purchase (Fones Record p.90)", "1682 deed DGS 008204949 img 9-12", "1666 plat", "1659 Atherton Purchase", "1679 affidavit"]
+
+  - id: cocumscussoc
+    modern_name: Cocumscussoc / Smith's Castle area, Wickford village, North Kingstown, RI
+    active_range: [1635, 1750]
+    jurisdiction_note: Same contest as Quidnessett; Richard Smith trading post site.
+    variants:
+      - { form: Cocumscussoc, type: standard, status: anchored-in-repo, attested_in: ["1679 affidavit per people/john_greene_quidnessett.md"] }
+      - { form: Cocumcussoc, type: scribe-drift, status: search-target }
+      - { form: Cocumscusset, type: scribe-drift, status: search-target }
+      - { form: Cacumscussoc, type: ocr-plausible, status: search-target }
+      - { form: "Smith's trading post", type: functional-label, status: anchored-in-repo }
+    record_anchors: ["1679 affidavit ('forty years and more')", "Richard Smith 1664 letter"]
+
+  - id: wickford
+    modern_name: Wickford, village of North Kingstown, RI
+    active_range: [1635, 1750]
+    variants:
+      - { form: Wickford, type: standard, status: anchored-in-repo, attested_in: ["Richard Smith letter 'Wickford, 14 May 1664' per people/john_greene_quidnessett.md"] }
+      - { form: Wickford Harbor, type: standard, status: anchored-in-repo }
+    record_anchors: ["1664 Smith letter"]
+
+  - id: kingstown
+    modern_name: North Kingstown and South Kingstown, RI (single town until 1722-23 split)
+    active_range: [1674, 1750]
+    jurisdiction_note: >
+      Incorporated as Kingstowne 1674; split 1722/23. A record dated before the split
+      that says 'Kingstown(e)' could be either modern town. 'North Kingstown' in a
+      pre-1723 citation is a modern catalog convenience, not period usage.
+    variants:
+      - { form: Kingstown, type: period-standard, status: anchored-in-repo, attested_in: ["'Beni Green of Kingstown' per 2026-09-05 evidence synthesis finding"] }
+      - { form: Kingstowne, type: scribal, status: search-target }
+      - { form: "Kings Towne", type: scribal, status: search-target }
+      - { form: "North Kingstown", type: catalog-modern, status: anchored-in-repo, attested_in: ["FamilySearch DGS 008204949 catalog title"] }
+      - { form: Rochester, type: alias-label, status: external-reference, note: "1686-89 Kings Province name for Kingstown - short-lived, appears in few records" }
+    record_anchors: ["NK Land Records DGS 008204949", "Fones Record"]
+
+  - id: warwick
+    modern_name: Warwick, Kent County, RI
+    active_range: [1642, 1750]
+    variants:
+      - { form: Warwick, type: standard, status: anchored-in-repo }
+      - { form: Shawomet, type: original-name, status: anchored-in-repo, attested_in: ["theory/ (Gorton purchase context)"] }
+      - { form: Shawomett, type: scribal, status: search-target }
+      - { form: Warwicke, type: scribal, status: search-target }
+    record_anchors: ["Surgeon John Greene will 1658", "Gorton/Holden correspondence"]
+
+  - id: pawtuxet
+    modern_name: Pawtuxet village, Warwick/Cranston line, Kent County, RI
+    active_range: [1638, 1750]
+    variants:
+      - { form: Pawtuxet, type: standard, status: anchored-in-repo }
+      - { form: Patuxet, type: scribal, status: external-reference, note: "Standard form in Williams 1643 Key; verify against repo before citing" }
+      - { form: Pawtuxett, type: scribal, status: search-target }
+      - { form: Patuxett, type: scribal, status: search-target }
+      - { form: Pawtuxit, type: ocr-plausible, status: search-target }
+    record_anchors: ["SUSPENDED 19 May 1682 deed claim - see contradictions/ and CORRECTIONS.md", "1658 Pawtuxet signing cluster"]
+    caution: "The 'Vol. VII pp. 177-178' citation is invalid (1770s Gaspee records). Any Pawtuxet hit must be re-anchored from scratch."
+
+  - id: occupasuetuxet
+    modern_name: Occupasuetuxet, Warwick (near Potowomut), Kent County, RI
+    active_range: [1640, 1750]
+    variants:
+      - { form: Occupasuetuxet, type: standard, status: anchored-in-repo }
+      - { form: Occupessuatuxet, type: scribal, status: anchored-in-repo, attested_in: ["repo filename people/john_greene_occupessuatuxet.md"] }
+      - { form: Occupasnetuxet, type: scribal, status: anchored-in-repo, attested_in: ["theory/proof_pieces/10_independent_john.md (Surgeon will context)"] }
+      - { form: Occupasuetuxit, type: scribe-drift, status: search-target }
+      - { form: Occupasuetuxett, type: scribe-drift, status: search-target }
+      - { form: Apponaug, type: distinct-neighbor, status: external-reference, note: "Separate place; do not merge" }
+    caution: "Surgeon's 1658 will conveys Occupasnetuxet - 'a different property' from Quidnessett. Keep identity-of-place claims separate from spelling variants."
+
+  - id: potowomut
+    modern_name: Potowomut, Warwick/East Greenwich line, RI (Goddard Park area)
+    active_range: [1650, 1750]
+    variants:
+      - { form: Potowomut, type: standard, status: anchored-in-repo }
+      - { form: Petawhomett, type: scribal, status: anchored-in-repo, attested_in: ["1654 deed witness Awassuocitt, theory/source_spine.md"] }
+      - { form: Coheassuck, type: alias-label, status: anchored-in-repo, attested_in: ["theory/source_spine.md 'Potowomut/Coheassuck'"], note: "Same-place claim is HELD OPEN - verify before merging" }
+      - { form: Potowomutt, type: scribe-drift, status: search-target }
+      - { form: Petowomet, type: scribe-drift, status: search-target }
+    record_anchors: ["1654 Petawhomett deed (witness cluster incl. Awassuocitt)"]
+
+  - id: newport
+    modern_name: Newport, Newport County, RI (Aquidneck Island)
+    active_range: [1639, 1750]
+    variants:
+      - { form: Newport, type: standard, status: anchored-in-repo }
+      - { form: New-port, type: scribal, status: search-target }
+      - { form: Aquidneck, type: island-name, status: external-reference, note: "Period records often use island name; also 'the Rhode Island' = the ISLAND, not the state - classic misread" }
+      - { form: Aquetnet, type: scribal, status: search-target }
+      - { form: "Rhode Island", type: period-ambiguous, status: external-reference, caution: "In 17th-c usage frequently means Aquidneck Island only" }
+      - { form: "Green End", type: locality-label, status: anchored-in-repo, note: "John Greene of Newport's locality per people/README.md" }
+    record_anchors: ["1651 Carr-to-Greene deed ('John Greene of Newport, husbandman')", "Newport freeman lists"]
+
+  - id: east_greenwich
+    modern_name: East Greenwich, Kent County, RI
+    active_range: [1677, 1750]
+    variants:
+      - { form: "East Greenwich", type: standard, status: anchored-in-repo, attested_in: ["1679 proprietors lot draw per people/john_greene_quidnessett.md"] }
+      - { form: "East Greenwitch", type: scribal, status: search-target }
+    record_anchors: ["1677 proprietors records", "1679 first division (John Greene Sr. ninth house lot)"]
+
+  - id: providence
+    modern_name: Providence, Providence County, RI
+    active_range: [1636, 1750]
+    variants:
+      - { form: Providence, type: standard, status: anchored-in-repo }
+      - { form: "Providence Plantations", type: formal-label, status: anchored-in-repo }
+      - { form: "New Providence", type: early-label, status: external-reference }
+    record_anchors: ["Providence Early Records (21 vols)", "Providence Vol. 14 (deed books)", "disposal committee records Vol. 15 pp.151-154"]
+
+  - id: allens_harbor
+    modern_name: Allen's Harbor, North Kingstown, RI
+    active_range: [1650, 1750]
+    variants:
+      - { form: "Allen's Harbor", type: standard, status: anchored-in-repo, attested_in: ["1682 deed boundary per people/john_greene_quidnessett.md"] }
+      - { form: "Allens Harbor", type: scribal, status: search-target }
+      - { form: "Allen's Harbour", type: scribal, status: search-target }
+    caution: "Relationship to 1651 'Greene''s Harbor' is an OPEN QUESTION. Record both, merge neither."
+
+  - id: devils_foot_fones
+    modern_name: Devil's Foot / Fones Purchase tract, Quidnessett, North Kingstown, RI
+    active_range: [1672, 1750]
+    variants:
+      - { form: "Devil's Foot", type: label, status: anchored-in-repo, attested_in: ["1672 Fones Purchase per people/john_greene_quidnessett.md"] }
+      - { form: "Fones Purchase", type: label, status: anchored-in-repo }
+      - { form: "Devils Foot", type: scribal, status: search-target }
+    record_anchors: ["Fones Record p.90 (RI State Archives confirmed)"]
+
+  # --- Outer ring: jurisdictions that could hold the missing record (Law 5) ---
+
+  - id: mass_bay
+    modern_name: Massachusetts Bay (Boston, Suffolk, Middlesex, Essex counties)
+    active_range: [1628, 1750]
+    variants:
+      - { form: Boston, type: standard, status: external-reference }
+      - { form: "New England", type: umbrella-label, status: external-reference, caution: "Period 'New England' is not a jurisdiction; always resolve to the actual record keeper" }
+    record_anchors: ["Winthrop Papers (MHS)", "Mass Bay records (Shurtleff ed.)", "Aspinwall notarial records", "Middlesex/Suffolk court files"]
+
+  - id: plymouth_colony
+    modern_name: Plymouth Colony (Plymouth, Bristol, Barnstable counties)
+    active_range: [1620, 1692]
+    variants:
+      - { form: Plymouth, type: standard, status: external-reference }
+      - { form: Plimouth, type: scribal, status: search-target }
+      - { form: "New Plymouth", type: formal-label, status: external-reference }
+    record_anchors: ["Plymouth Colony Records (Shurtleff ed.)", "Nathaniel Morton records"]
+
+  - id: connecticut
+    modern_name: Connecticut (Hartford, New Haven, New London, Stonington)
+    active_range: [1633, 1750]
+    jurisdiction_note: "RI/CT boundary contest is the archive's core conflict; CT records may hold Quidnessett material filed under CT jurisdiction."
+    variants:
+      - { form: Connecticut, type: standard, status: external-reference }
+      - { form: Conecticut, type: scribal, status: search-target }
+      - { form: Quonecticut, type: scribal, status: search-target }
+      - { form: "Narragansett Country", type: umbrella-label, status: anchored-in-repo, caution: "Jurisdictional label, not a town; used by both RI and CT claimants" }
+    record_anchors: ["Public Records of the Colony of Connecticut", "Winthrop Jr. papers (New London)", "Thomas Minor diary (Stonington)"]
+
+  - id: new_amsterdam_ny
+    modern_name: New Amsterdam / New York
+    active_range: [1624, 1750]
+    jurisdiction_note: "Atherton Company had NY connections; coastal trade ran through NY/NJ. Greene children later appear in Dutchess Co. NY and Monmouth Co. NJ per tertiary sources."
+    variants:
+      - { form: "New Amsterdam", type: standard, status: external-reference }
+      - { form: "New York", type: standard-post-1664, status: external-reference }
+      - { form: "Dutchess County", type: standard, status: external-reference, note: "Edward Greene per Hildenbrand 1941 (tertiary)" }
+      - { form: "Monmouth County", type: standard, status: external-reference, note: "Henry Greene, Shrewsbury NJ per Doherty (tertiary)" }
+
+  - id: atlantic_england
+    modern_name: England, Ireland, Scotland, Caribbean ports
+    active_range: [1600, 1750]
+    jurisdiction_note: "Origin-side records: parishes, port books, servant registers, transportation lists."
+    variants:
+      - { form: "Gillingham, Dorset", type: standard, status: anchored-in-repo, note: "Surgeon John Greene origin - a DIFFERENT family line per firewall" }
+      - { form: "Salisbury, Wiltshire", type: standard, status: anchored-in-repo, note: "Traditional English Greene patriline per Y-DNA comparison - does not match our John's line" }
+      - { form: "St. Christopher's", type: destination-label, status: anchored-in-repo, note: "1635 Matthew passenger destination per two-john-firewall" }
+      - { form: "London", type: port, status: external-reference }
+      - { form: "Bristol", type: port, status: external-reference, note: "Servant registers - Task 6.75 rank 5" }
+
+  - id: goulds_island
+    modern_name: Gould's Island, Narragansett Bay (off Jamestown/Aquidneck)
+    active_range: [1657, 1750]
+    variants:
+      - { form: "Gould's Island", type: standard, status: anchored-in-repo, attested_in: ["people/thomas_gould.md"] }
+      - { form: Aquopimokuk, type: indigenous-name, status: anchored-in-repo, attested_in: ["people/thomas_gould.md (1657 purchase from sachem Koskotap)"] }
+      - { form: Aquopimokuck, type: scribe-drift, status: search-target }
+    record_anchors: ["1657 Gould purchase from Koskotap"]
+
+  - id: tibbitts_1686_rivers
+    modern_name: Potowomut River area, Warwick/East Greenwich, RI
+    active_range: [1686, 1750]
+    variants:
+      - { form: Pasatut, type: scribal, status: anchored-in-repo, attested_in: ["people/henry_tibbitts.md (18 Oct 1686 purchase)"] }
+      - { form: Masquechuaug, type: scribal, status: anchored-in-repo, attested_in: ["people/henry_tibbitts.md (18 Oct 1686 purchase)"] }
+      - { form: "Potowome River", type: scribal, status: anchored-in-repo, attested_in: ["people/henry_tibbitts.md (18 Oct 1686 purchase)"], note: "relationship to Potowomut place name held open" }
+    record_anchors: ["1686 Tibbitts/Greene purchase deed (unread original)"]
+
+name_variant_rule: "Person-name variants live in methodology/name_variant_registry.md; place names live here. Both are searched in full for every query."

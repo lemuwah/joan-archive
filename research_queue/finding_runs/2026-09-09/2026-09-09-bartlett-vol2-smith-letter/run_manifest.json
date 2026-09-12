@@ -1,0 +1,11 @@
+{
+  "finding_id": "FINDING-f65d4e86cacf",
+  "image_references": [],
+  "images_not_pending": [],
+  "missing_image_references": [],
+  "pending_review_images": [],
+  "run_date": "2026-09-09",
+  "source_path": "research_findings/2026-09-09_bartlett-vol2-smith-letter.md",
+  "source_sha256": "ef45a568125f89d23e5c62ea8ebe33c3073f6f74195812c441376f848a3185c9",
+  "status": "PENDING_HUMAN_REVIEW"
+}

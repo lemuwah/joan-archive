@@ -1,0 +1,15 @@
+{
+  "finding_id": "FINDING-953c2f924e7a",
+  "image_references": [
+    "008204949-10green-fones-tibbits-march-1682.JPG"
+  ],
+  "images_not_pending": [
+    "008204949-10green-fones-tibbits-march-1682.JPG"
+  ],
+  "missing_image_references": [],
+  "pending_review_images": [],
+  "run_date": "2026-09-09",
+  "source_path": "research_findings/2026-09-09_network-roadmap.md",
+  "source_sha256": "c930aef5e15a489bd1379663558cbebe02edf6db754025994d42487e59e6d7c7",
+  "status": "PENDING_HUMAN_REVIEW"
+}

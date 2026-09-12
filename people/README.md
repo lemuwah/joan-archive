@@ -1,24 +1,32 @@
 # People Directory
-**Last updated:** 2026-08-30
+**Last updated:** 2026-09-09
 
 Individual profile pages for documented persons in the Joan Archive. Each profile contains only verified facts with inline source citations. La Mance-derived claims are excluded per Law 2 unless independently corroborated.
 
----
-
-## The Five Laws apply throughout this directory.
+**As of 2026-09-09 every person page carries a `## Discovery Key` block** (name variants, activity window, place anchors, documented associates, record anchors, identity status) so external and internal search bots can match records to the right person slot — see [collection_policy.md](../methodology/collection_policy.md) §5. Each page also carries a `## Search Log` with at least one extracted, unsearched lead (Task 4 Pass B).
 
 ---
 
-## The Three John Greenes
+## The Multi Agent Laws apply throughout this directory.
 
-The single most damaging confusion in Greene genealogy is the conflation of three contemporaries named John Greene in colonial Rhode Island. La Mance (1904) treated the Quidnessett John as the Surgeon's son. This is **not supported by primary evidence** and is contradicted by:
+---
+
+## The Many John Greenes
+
+The single most damaging confusion in Greene genealogy is the conflation of multiple contemporaries named John Greene in colonial Rhode Island. La Mance (1904) treated the Quidnessett John as the Surgeon's son. This is **not supported by primary evidence** and is contradicted by:
 - Different wives (Ann Almy vs. Joan)
 - Different children (completely non-overlapping lists)
 - Different freeman records (Warwick 1647 vs. Acquidnessett 1671)
 - Different offices (Deputy Governor vs. none established)
 - Y-DNA divergence (Irish Sea cluster vs. expected English modal)
 
-The RI State Archives has confirmed the three-John structure is "evident from the records."
+The RI State Archives has confirmed the Multi-John structure is "evident from the records."
+
+
+[`john_greene_occupessuatuxet.md`](john_greene_occupessuatuxet.md)
+[`john_greene_potowomut.md`](john_greene_potowomut.md)
+
+[`john_greene_son_of_john.md`](john_greene_son_of_john.md)
 
 - [`john_greene_warwick.md`](john_greene_warwick.md) — Major John Greene, Deputy Governor. Son of the Surgeon. Best documented.
 - [`john_greene_newport.md`](john_greene_newport.md) — John Greene of Newport / Green End. Thinnest record.
@@ -47,11 +55,12 @@ Later genealogical analysis considers this "plausible but unresolved." Multiple 
 
 See also: [`research/anashuecot_kin_group_mapping.md`](../research/anashuecot_kin_group_mapping.md) for the full 1672 kin group and Coginaquand succession analysis.
 
-- Anashuecot / Awashouse — Chief Sachem of Quidnessett. See `notes/2026-08-28_anashuecot_phonetic_variants.md` and `research/anashuecot_kin_group_mapping.md`
-- Tocomminon — Anashuecot's father (Absolom affidavit, ⚠️ UNVERIFIED)
+- [`anashuecot.md`](anashuecot.md) — Anashuecot / Awashouse — Chief Sachem of Quidnessett, grantor of the 1672 Fones Purchase to John Greene and five others. Part of our John Greene's documented network. See also `notes/2026-08-28_anashuecot_phonetic_variants.md` and `research/anashuecot_kin_group_mapping.md`
+- ~~Tocomminon~~ — moved to the **Ghost Name Register** (`evidence/ghost_names.md` G-004, 2026-09-09): rests on the unverified Absolom affidavit citation. Kept as a live search target, not listed as a person until the affidavit is read.
 - Coginaquand / Cachaquant / Coquinquant — 1659 Atherton Purchase grantor. Quaiapen's cousin. See `notes/2026-08-27_coginiquant_name_cluster_expanded.md`
-- Wampkegge — Anashuecot's brother (1672 deed)
-- Ompamiatt — Anashuecot's brother (1672 deed)
+- Wampkegge — Anashuecot's brother (named in the 1672 deed)
+- Ompamiatt — Anashuecot's brother (named in the 1672 deed)
+- Seecomp, Tyecuecsha, Nammeash — Anashuecot's sons (named in the 1672 deed)
 - Seecomp — Anashuecot's son (1672 deed)
 - Tyecuecsha — Anashuecot's son (1672 deed)
 - Nammeash — Anashuecot's son (1672 deed)

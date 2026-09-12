@@ -30,5 +30,5 @@ Requires **3–4 independent anomalies** to all coincidentally apply to one woma
 *[Full Tomaquag alignment analysis, evidence table, and methodology preserved from original — see git history for complete version]*
 
 *Joan Archive — theory/proof_pieces/08_tomaquag_alignment.md*
-*Maintained under the 5 Laws of the Joan Archive*
+*Maintained under the 7 Laws of the Joan Archive*
 *Status: REVISED 2026-08-31 — Model B recount applied*

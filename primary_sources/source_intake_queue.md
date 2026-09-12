@@ -49,6 +49,13 @@ These deeds prove the world that made her 1682 consent necessary.
     - **Status:** 🟡 UNVERIFIED — HIGH PRIORITY ACTION
     - **Need:** Pull original image from Land Evidences, not abstract.
 
+- [ ] **1695/96 Deed — Benjamin Greene to James Greene (Wightman bounds)**
+    - **Status:** 🟡 UNVERIFIED — **HIGH PRIORITY**
+    - **Why Joane:** The single most important unread document for Joan's timeline. If it mentions Joan (alive or deceased), it extends or closes her chronological window 13 years past the homeplace deed. Cited in `theory/joan_ancestry_shadow_models.md`.
+    - **Where:** NK Land Evidence Records (FamilySearch DGS 008204949). Edward Greene's land bounds referenced.
+    - **Need:** Pull original image. Full transcription. Check for any mention of Joan, "his mother," "their mother," or "deceased."
+    - **Added:** 2026-09-06 per Kimi audit #14 (was undocumented in tracking files).
+
 - [ ] **1677 East Greenwich — 48 Grantees**
     - **Status:** 🔵 PROBABLE
     - **Why Joane:** Who got land around Quidnessett? Shows speculator pressure.
@@ -64,7 +71,7 @@ These deeds prove the world that made her 1682 consent necessary.
 
 > These are finding aids + images from FamilySearch Catalog. Use to locate originals.
 
-- [ ] **1648-1696 RI Land Evidences Vol I — Abstracts & Index (Dougine / Worthington)**
+- [ ] **1648-1696 RI Land Evidences Vol I — Abstracts & Index (Douguine / Worthington)**
     - **Source:** FamilySearch Catalog — index & images
     - **Use:** Finding aid for all deeds above. Do NOT cite abstracts as primary. Use to get Book.Page for original pull.
 

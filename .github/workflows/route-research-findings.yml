@@ -1,0 +1,22 @@
+name: Route research findings
+
+on:
+  pull_request:
+    paths:
+      - "research_findings/*.md"
+      - "images/_pending_review/**"
+      - "tools/findings_pipeline/**"
+      - ".github/workflows/route-research-findings.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  route:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Build ordered finding packets
+        run: python3 tools/findings_pipeline/route_findings.py --check

@@ -6,7 +6,7 @@
 
 ---
 
-## The 5 Laws apply throughout this document.
+## The 7 Laws apply throughout this document.
 
 ---
 

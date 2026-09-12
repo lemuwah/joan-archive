@@ -177,5 +177,5 @@ theory/
 ---
 
 *Joan Archive — theory/joan_reconstruction_roadmap.md*
-*Maintained under the 5 Laws of the Joan Archive*
+*Maintained under the 7 Laws of the Joan Archive*
 *Status: DRAFT — pending proof piece completion*

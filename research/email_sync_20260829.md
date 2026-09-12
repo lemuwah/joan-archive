@@ -1,11 +1,11 @@
 # Email Sync — Forwarded Yahoo Research Correspondence
 **Synced:** 2026-08-29
-**Source:** 16 threads forwarded from wendyleagreen@yahoo.com → lemuwah@gmail.com (Aug 28, 2026)
+**Source:** 16 threads forwarded from @yahoo.com → @gmail.com (Aug 28, 2026)
 **Period covered:** February – April 2026
 
 ---
 
-## The Five Laws apply throughout this document.
+## Multi Agent Laws apply throughout this document.
 
 ---
 
@@ -18,15 +18,15 @@
 - **Action taken:** Sent v4.2 packet. Asked for high-res manuscript images of 1672 and 1682 marks. No response to image request.
 - ⚠️ **Forwarding incident:** Researcher's email was forwarded without permission. Documented as methodology note on institutional ethics, not a complaint.
 
-### NYU — Prof. Kupperman (Feb 2026)
-- **Feb 8:** "Your project is interesting and potentially very important." Directed to Tomaquag Museum and Prof. Patricia Rubertone at Brown.
+### NYU — Professor, no permission given. 
+- **Feb 8:** "Your project is interesting and potentially very important." Directed to Tomaquag Museum and Prof. at Brown.
 - **Feb 19:** DNA follow-up: "This is even more outside my areas of expertise than your first request. Sorry, but I cannot comment on this."
-- **Status:** Closed. Kupperman's role was referral, not review.
+- **Status:** Closed. role was referral, not review.
 
-### Brown University — Prof. Rubertone (Mar 2026)
-- **Mar 10:** "I will try my best to look at your research packet over Brown's spring break at the end of the month."
+### Brown University
+- **Mar 10:** "I will try my best"
 - **Status as of Aug 28:** "Have not heard anything back as yet. Not closed, just not responded yet."
-- ⚠️ **Ethics note:** Researcher does NOT have permission to reference Rubertone's involvement. Name does not appear on public git. Bridge protected.
+- ⚠️ **Ethics note:** Researcher does NOT have permission to reference's involvement. Name does not appear on public git. Status Unknown. Research Continues. 
 
 ### Surrey History Centre (Mar 2026)
 - **Mar 18:** Southwark parish records (P71/GEO) are NOT held by Surrey. "St George's records are held at the London Archives."
@@ -34,17 +34,17 @@
 - **Context:** Searching for burial of Mary Greene/Mary Jefferay, Jan–Jun 1675, Blackman Street, Southwark. Chancery case C78/846 no. 4 (Jun 21, 1675) confirms she was deceased by that date.
 - **Status:** Lead open. London Archives not yet contacted.
 
-### Trinity College Dublin — Prof. Bradley (Feb 2026)
+### Trinity College Dublin —(Feb 2026)
 - **Feb 21:** "I am afraid that I am not up to date with the genetic genealogy databases. I suggest try to connect with the surname groups eg at FTDNA."
 - **Status:** Closed. Redirected to FTDNA.
 
 ---
 
-## 2. Fellow Researcher Correspondence — Luann Seamons (LBS)
+## 2. Fellow Researcher Correspondence — 
 
-**Context:** Luann (lubose66@gmail.com) is a fellow descendant researcher. She does not want credit due to health. She does not trust La Mance without proof.
+**Context:**She is a fellow descendant researcher. She does not want credit due to health. She does not trust La Mance without proof.
 
-### Key Findings from Luann:
+### Key Findings from Her:
 
 **Freeman Records (Mar 14):**
 - onerhodeislandfamily.com → Free RI Resources → Records of the Colony of RI:
@@ -55,7 +55,7 @@
 **Beggarly Footnote (Apr 20):**
 - Records of Colony of RI & PP, Vol 1, p18 of 554 (p16 of book)
 - Footnote by John Winthrop: John Greene of Warwick Sr. was disenfranchised for marrying Alice Daniels Beggarly and living in adultery — acknowledged and paid for.
-- ⚠️ **This is John of WARWICK, not John of Quidnessett.** The Beggarly connection is to the wrong John. Luann independently reached this conclusion.
+- ⚠️ **This is John of WARWICK, not John of Quidnessett.** The Beggarly connection is to the wrong John. she independently reached this conclusion.
 
 **Timeline for John Greene of Quidnessett (Feb 23):**
 - b. 1599? (from deed to Edward referencing father "in 96th year")
@@ -74,7 +74,7 @@
 - ⚠️ Birth year 1599 conflicts with other evidence. Some items unverified. Held open per Law 1.
 
 **Bates Critique (Mar 5–20):**
-- Luann working on comparison timeline for the Johns
+- She is working on comparison timeline for the Johns
 - Found Jamestown/Conanicut Island records: two John Greenes bought in (1/40th and 1/200th)
 - Trying to disprove Bates's claim that Newport and Quidnessett Johns were the same person
 - "It is becoming quite evident to me that she is in error in her assumption of only one man for both places."
@@ -87,13 +87,13 @@
   - pp242–244: Dec 21, 1696 freemen
 
 **Canonchet Discussion (Feb 19):**
-- Luann noticed the "two brothers and three sons" in the Fones deed and independently suggested that a daughter of that kin group could have married John Greene 30–40 years earlier
+- She noticed the "two brothers and three sons" in the Fones deed and independently suggested that a daughter of that kin group could have married John Greene 30–40 years earlier
 - Researcher clarified: Canonchet's line is central Narragansett royal line (Miantonomi), NOT the local Niantic-rooted sachem family controlling Quidnessett
 - The Fones kin group is Anashuecot's local line, distinct from Canonchet
 
 ---
 
-## 3. Researcher's Own Early Notes (Feb 18 — to Luann)
+## 3. Researcher's Own Early Notes (Feb 18 — to Her)
 
 **Evaluation of Sources (sent with 28 image attachments):**
 - Stated with confidence: Anashuecot existed (RI primary), was Narragansett, had land authority, sold to John Greene, Alice Beggarly ≠ Joan (chronologically impossible), Joan's identity undocumented
@@ -116,7 +116,7 @@
 - **Pilgrim Hall Museum:** Holds a separate 1683/4 Absalom deposition (Hog Island) where Absalom is independently called "an Indian formerly belonging to Cohasset in the Narragansett Country and sometimes Counselor unto the Narragansett Sachem." Second institution, second document confirming the title.
 - **Rocky David Farm:** RI General Assembly outlawed direct Narragansett land purchases before 1672 — Fones Purchase technically illegal; purchasers kept small farms as compromise
 
-## 6. New Source Leads (from Claude research + Luann)
+## 6. New Source Leads (from Claude research + her)
 
 - **Native Northeast Portal** (nativenortheastportal.com) — academic digitization of Indigenous-English deeds with annotations. Comparison set for six-signatures baseline.
 - **RIHS Mss 350** — finding aid listing Narragansett-area Indian deed collection by box/folder. Comparison corpus.
@@ -126,4 +126,4 @@
 
 ---
 
-*This document catalogs the forwarded email corpus for the Joan Archive. All institutional responses are cited by institution only, no personal names. All claims from AI assistants are flagged as unverified per Law 4. Luann's contributions are acknowledged privately per her request.*
+*This document catalogs the forwarded email corpus for the Joan Archive. All institutional responses are cited by institution only, no personal names. All claims from AI assistants are flagged as unverified per Law 4. Her's contributions are acknowledged privately per her request.*

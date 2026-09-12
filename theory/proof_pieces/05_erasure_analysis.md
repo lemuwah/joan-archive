@@ -238,5 +238,5 @@ Each explanation is individually possible. Together they require **five independ
 ---
 
 *Joan Archive — theory/proof_pieces/05_erasure_analysis.md*
-*Maintained under the 5 Laws of the Joan Archive*
+*Maintained under the 7 Laws of the Joan Archive*
 *Status: REVISED — neighbor comparison complete, "or to her mother" clause analyzed, Model B severely weakened*

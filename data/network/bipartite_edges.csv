@@ -1,0 +1,17 @@
+source,target,role,tier,contamination
+john-greene-capt,doc-1682-deed,grantor,Tier 1,Five-John Firewall Clear
+daniel-greene,doc-1682-deed,grantee,Tier 1,Five-John Firewall Clear
+james-greene,doc-1682-deed,grantee,Tier 1,Five-John Firewall Clear
+henry-tibbitts,doc-1682-deed,witness_signer,Tier 1,None
+john-nutsn,doc-1682-deed,witness_signer,Tier 1,None
+joane-greene,doc-1682-deed,structural_annuity_anchor,Tier 1,Five-John Firewall Clear
+john-greene-capt,doc-1672-deed,grantor,Tier 2,Transcription Gap
+anashuecot,doc-1672-deed,grantor_implied,Tier 3,Hypothesis Link
+richard-fones,doc-1672-deed,recorder_1703,Tier 1,None
+john-greene-capt,doc-1679-affidavit,deponent,Tier 1,None
+joane-greene,doc-1679-affidavit,named_wife,Tier 1,None
+elizabeth-tibbitts,doc-1682-deed,comparator_wife,Tier 1,None
+elizabeth-tibbitts,doc-1679-affidavit,comparator_actor,Tier 1,None
+mary-holden,doc-1679-affidavit,comparator_actor,Tier 1,None
+awashonks,doc-drake-book,sunksquaw_actor,Tier 2,External Precedent
+awashonks,doc-church-narrative,named_joan_alias,Tier 2,External Precedent

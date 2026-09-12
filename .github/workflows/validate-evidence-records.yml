@@ -1,0 +1,29 @@
+name: Validate evidence records
+
+on:
+  pull_request:
+    paths:
+      - "data/research/**"
+      - "tools/evidence_pipeline/**"
+      - ".github/workflows/validate-evidence-records.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate candidate JSONL files
+        run: |
+          set -euo pipefail
+          files=$(find data/research -type f -name '*candidates*.jsonl' -o -name 'candidates.jsonl' | sort || true)
+          if [ -z "$files" ]; then
+            echo "No candidate JSONL files found; schema validator is ready for the first agent run."
+            exit 0
+          fi
+          python3 tools/evidence_pipeline/validate_records.py $files

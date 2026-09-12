@@ -1,0 +1,11 @@
+{
+  "finding_id": "FINDING-30659fa70897",
+  "image_references": [],
+  "images_not_pending": [],
+  "missing_image_references": [],
+  "pending_review_images": [],
+  "run_date": "2026-09-12",
+  "source_path": "research_findings/2026-09-05_evidence_synthesis.md",
+  "source_sha256": "0fc4a53e8cba5480d17075e1faca63911055f78d8031714fc60c6e210a5953b9",
+  "status": "LAWS_FILTERED"
+}

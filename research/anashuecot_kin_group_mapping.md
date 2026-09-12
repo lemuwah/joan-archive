@@ -1,3 +1,6 @@
+> This archive documents lives lived between approximately 1600–1750 in Narragansett country (present-day Rhode Island). All records from this period were created within colonial legal systems and reflect their biases, categories, and blind spots. Every name found here — English, Narragansett, Niantic, mixed-heritage, unknown — represents a real person whose full story these records were not designed to capture. Content may include references to war, captivity, enslavement, displacement, legal coercion, and loss. These are documented realities of the period, not abstractions.
+>
+> All cultural and genealogical content is included for research purposes in the quest to identify Joan Unknown Greene and will be revised or removed if requested by descendant communities or tribal representatives. Search direction bias check: When an agent recommends "where to look next," ask: is this recommendation biased toward digitized, English-language, colonial-framework sources? What record types exist that this agent might not know to suggest? What would a Narragansett historian, a maritime historian, an archaeologist, a linguist look for that a genealogist wouldn't?
 # Anashuecot Kin Group — 1672 Fones Purchase Deed
 **Created:** 2026-08-30
 **Last updated:** 2026-08-30 (chase 4)
@@ -6,7 +9,7 @@
 
 ---
 
-## The Five Laws apply throughout this document.
+## The Seven Laws apply throughout this document.
 
 ---
 
@@ -21,7 +24,7 @@ All six described as **"sole heires & proprietors"** of Quidnessett.
 ### Family Structure
 
 **Generation 0 (ancestor):**
-- **Tocomminon** — Anashuecot's father (Absolom affidavit). ⚠️ Affidavit NOT confirmed in *Narragansett Historical Register*. Requires verification against original manuscript.
+- **Tocomminon** — Anashuecot's father (Absolom affidavit). ⚠️ Affidavit NOT confirmed in *Narragansett Historical Register*. Requires verification against original manuscript. → Suspended to the Ghost Name Register (`evidence/ghost_names.md` G-004, 2026-09-09) until the affidavit is read.
 - **Possibly = Tomanick** (1644 Narragansett submission) — see §Tomanick Investigation. Phonetically plausible, documentarily unproven.
 
 **Generation 1 (siblings):**

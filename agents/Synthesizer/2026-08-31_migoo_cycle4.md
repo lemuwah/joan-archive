@@ -113,5 +113,5 @@ Model A is more parsimonious. Model B is not impossible but requires more specia
 ---
 
 *Joan Archive — agents/Synthesizer/2026-08-31_migoo_cycle4.md*
-*Maintained under the 5 Laws of the Joan Archive*
+*Maintained under the 7 Laws of the Joan Archive*
 *Cycle #4 complete. Next cycle when new primary evidence surfaces.*
