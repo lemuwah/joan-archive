@@ -1,0 +1,20 @@
+{
+  "finding_id": "FINDING-f2027d26c24d",
+  "image_references": [
+    "johntodaniel.jpg",
+    "nk_daniel_annuity_clause.jpg",
+    "nk_daniel_signatures_block.jpg"
+  ],
+  "images_not_pending": [
+    "johntodaniel.jpg"
+  ],
+  "missing_image_references": [],
+  "pending_review_images": [
+    "nk_daniel_annuity_clause.jpg",
+    "nk_daniel_signatures_block.jpg"
+  ],
+  "run_date": "2026-09-13",
+  "source_path": "research_findings/2026-09-09_nk_daniel_instrument_transcript_AI.md",
+  "source_sha256": "c85d903363197f7767d35a46545ea0d5a372215515a46cb155322ead56df5343",
+  "status": "LAWS_FILTERED"
+}

@@ -1,0 +1,11 @@
+{
+  "finding_id": "FINDING-3666ba387117",
+  "image_references": [],
+  "images_not_pending": [],
+  "missing_image_references": [],
+  "pending_review_images": [],
+  "run_date": "2026-09-13",
+  "source_path": "research_findings/2026-09-09_printed-book-sweeps.md",
+  "source_sha256": "67f3391eff55e728818ae2b587bd9409d09b0cfacc5e82bad89eedfa78196c60",
+  "status": "LAWS_FILTERED"
+}
