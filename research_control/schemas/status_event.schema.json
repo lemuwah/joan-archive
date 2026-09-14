@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "joan-archive/research-control/status-event.schema.json",
+  "title": "Joan Archive Status Change Event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "status_id",
+    "timestamp",
+    "target_ref",
+    "previous_status",
+    "new_status",
+    "reason",
+    "evidence_refs",
+    "review_refs",
+    "provenance"
+  ],
+  "properties": {
+    "status_id": {
+      "type": "string",
+      "pattern": "^STATUS-[0-9]{6}$"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "target_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "previous_status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "new_status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "review_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "contradiction_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actor_type",
+        "actor",
+        "platform",
+        "recorded_at"
+      ],
+      "properties": {
+        "actor_type": {
+          "type": "string",
+          "enum": [
+            "HUMAN",
+            "AI",
+            "SYSTEM"
+          ]
+        },
+        "actor": {
+          "type": "string",
+          "minLength": 1
+        },
+        "platform": {
+          "type": "string",
+          "minLength": 1
+        },
+        "session": {
+          "type": "string"
+        },
+        "recorded_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "next_test": {
+      "type": "string"
+    }
+  }
+}

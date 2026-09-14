@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "joan-archive/research-control/evidence-event.schema.json",
+  "title": "Joan Archive Evidence Event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "evidence_id",
+    "timestamp",
+    "source",
+    "source_status",
+    "literal_observation",
+    "claim_refs",
+    "provenance"
+  ],
+  "properties": {
+    "evidence_id": {
+      "type": "string",
+      "pattern": "^EVID-[0-9]{6}$"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "locator",
+        "access_method"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1
+        },
+        "repository": {
+          "type": "string"
+        },
+        "collection": {
+          "type": "string"
+        },
+        "page_or_image": {
+          "type": "string"
+        },
+        "access_method": {
+          "type": "string",
+          "enum": [
+            "DIGITAL_IMAGE",
+            "DIGITAL_TEXT",
+            "PHYSICAL",
+            "SECONDARY_REFERENCE",
+            "AI_TRANSCRIPTION",
+            "OTHER"
+          ]
+        }
+      }
+    },
+    "source_status": {
+      "type": "string",
+      "enum": [
+        "LOCATED_UNREAD",
+        "READ",
+        "PRIMARY_READ",
+        "PRIMARY_VERIFIED",
+        "SOURCE_MISMATCH",
+        "SECONDARY_ONLY",
+        "CONFLICT"
+      ]
+    },
+    "literal_observation": {
+      "type": "string",
+      "minLength": 1
+    },
+    "transcription": {
+      "type": "string"
+    },
+    "interpretation": {
+      "type": "string"
+    },
+    "claim_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^CLAIM-[0-9]{6}$"
+      }
+    },
+    "contradiction_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "contamination_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actor_type",
+        "actor",
+        "platform",
+        "recorded_at"
+      ],
+      "properties": {
+        "actor_type": {
+          "type": "string",
+          "enum": [
+            "HUMAN",
+            "AI",
+            "SYSTEM"
+          ]
+        },
+        "actor": {
+          "type": "string",
+          "minLength": 1
+        },
+        "platform": {
+          "type": "string",
+          "minLength": 1
+        },
+        "session": {
+          "type": "string"
+        },
+        "recorded_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "next_test": {
+      "type": "string"
+    }
+  }
+}

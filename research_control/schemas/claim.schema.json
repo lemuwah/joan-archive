@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "joan-archive/research-control/claim.schema.json",
+  "title": "Joan Archive Research Claim",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "claim_id",
+    "created_at",
+    "claim_text",
+    "source_status",
+    "status",
+    "observation",
+    "true_test",
+    "false_test",
+    "provenance"
+  ],
+  "properties": {
+    "claim_id": {
+      "type": "string",
+      "pattern": "^CLAIM-[0-9]{6}$"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "claim_text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_status": {
+      "type": "string",
+      "enum": [
+        "UNLOCATED",
+        "LOCATED_UNREAD",
+        "READ",
+        "PRIMARY_READ",
+        "PRIMARY_VERIFIED",
+        "SOURCE_MISMATCH",
+        "SECONDARY_ONLY",
+        "CONFLICT"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "UNTESTED",
+        "OPEN",
+        "SEARCHING",
+        "PARTIAL",
+        "EVIDENCE_LOCATED",
+        "SOURCE_UNREAD",
+        "SOURCE_MISMATCH",
+        "NEGATIVE_SEARCH",
+        "CONFLICT",
+        "SUSPENDED",
+        "PROPOSED",
+        "PROVISIONALLY_SUPPORTED",
+        "VERIFIED",
+        "DISCOUNTED",
+        "REJECTED"
+      ]
+    },
+    "observation": {
+      "type": "string",
+      "minLength": 1
+    },
+    "true_test": {
+      "type": "string",
+      "minLength": 1
+    },
+    "false_test": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actor_type",
+        "actor",
+        "platform",
+        "recorded_at"
+      ],
+      "properties": {
+        "actor_type": {
+          "type": "string",
+          "enum": [
+            "HUMAN",
+            "AI",
+            "SYSTEM"
+          ]
+        },
+        "actor": {
+          "type": "string",
+          "minLength": 1
+        },
+        "platform": {
+          "type": "string",
+          "minLength": 1
+        },
+        "session": {
+          "type": "string"
+        },
+        "recorded_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "alternative_hypotheses": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "contradiction_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "contamination_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "next_test": {
+      "type": "string"
+    }
+  }
+}

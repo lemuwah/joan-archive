@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "joan-archive/research-control/review-event.schema.json",
+  "title": "Joan Archive Research Review Event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "review_id",
+    "timestamp",
+    "target_refs",
+    "review_type",
+    "findings",
+    "recommendation",
+    "provenance"
+  ],
+  "properties": {
+    "review_id": {
+      "type": "string",
+      "pattern": "^REVIEW-[0-9]{6}$"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "target_refs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "review_type": {
+      "type": "string",
+      "enum": [
+        "HOSTILE_REVIEW",
+        "SOURCE_REVIEW",
+        "CONTRADICTION_REVIEW",
+        "LAW_REVIEW",
+        "AI_VALIDATION",
+        "HUMAN_REVIEW",
+        "BIAS_REVIEW",
+        "REPLICATION"
+      ]
+    },
+    "findings": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "finding",
+          "severity"
+        ],
+        "properties": {
+          "finding": {
+            "type": "string",
+            "minLength": 1
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "INFO",
+              "LOW",
+              "MEDIUM",
+              "HIGH",
+              "CRITICAL"
+            ]
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "recommendation": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status_proposed": {
+      "type": "string"
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actor_type",
+        "actor",
+        "platform",
+        "recorded_at"
+      ],
+      "properties": {
+        "actor_type": {
+          "type": "string",
+          "enum": [
+            "HUMAN",
+            "AI",
+            "SYSTEM"
+          ]
+        },
+        "actor": {
+          "type": "string",
+          "minLength": 1
+        },
+        "platform": {
+          "type": "string",
+          "minLength": 1
+        },
+        "session": {
+          "type": "string"
+        },
+        "recorded_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "next_test": {
+      "type": "string"
+    }
+  }
+}

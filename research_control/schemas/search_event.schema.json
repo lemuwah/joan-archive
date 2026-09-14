@@ -1,0 +1,196 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "joan-archive/research-control/search-event.schema.json",
+  "title": "Joan Archive Research Search Event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "search_id",
+    "timestamp",
+    "question",
+    "scope",
+    "query",
+    "source",
+    "result",
+    "visibility",
+    "provenance"
+  ],
+  "properties": {
+    "search_id": {
+      "type": "string",
+      "pattern": "^SEARCH-[0-9]{6}$"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "repository",
+        "record_type"
+      ],
+      "properties": {
+        "repository": {
+          "type": "string"
+        },
+        "collection": {
+          "type": "string"
+        },
+        "jurisdiction": {
+          "type": "string"
+        },
+        "date_range": {
+          "type": "string"
+        },
+        "record_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "page_or_image": {
+          "type": "string"
+        }
+      }
+    },
+    "query": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "terms"
+      ],
+      "properties": {
+        "terms": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "variants": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "access_method"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "access_method": {
+          "type": "string",
+          "enum": [
+            "DIGITAL_IMAGE",
+            "DIGITAL_TEXT",
+            "DATABASE",
+            "CATALOG",
+            "PHYSICAL",
+            "SECONDARY_REFERENCE",
+            "AI_RETRIEVAL",
+            "OTHER"
+          ]
+        },
+        "locator": {
+          "type": "string"
+        }
+      }
+    },
+    "result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "outcome"
+      ],
+      "properties": {
+        "outcome": {
+          "type": "string",
+          "enum": [
+            "NO_RESULT_LOCATED",
+            "RESULT_LOCATED",
+            "PARTIAL_RESULT",
+            "CONFLICTING_RESULTS",
+            "SOURCE_INACCESSIBLE",
+            "SEARCH_ERROR"
+          ]
+        },
+        "description": {
+          "type": "string"
+        },
+        "artifact_ref": {
+          "type": "string"
+        }
+      }
+    },
+    "visibility": {
+      "type": "string",
+      "enum": [
+        "NOT_SEARCHED",
+        "SEARCHED",
+        "PARTIAL",
+        "INACCESSIBLE",
+        "NEGATIVE",
+        "POSITIVE",
+        "CONFLICT",
+        "ERROR"
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actor_type",
+        "actor",
+        "platform",
+        "recorded_at"
+      ],
+      "properties": {
+        "actor_type": {
+          "type": "string",
+          "enum": [
+            "HUMAN",
+            "AI",
+            "SYSTEM"
+          ]
+        },
+        "actor": {
+          "type": "string",
+          "minLength": 1
+        },
+        "platform": {
+          "type": "string",
+          "minLength": 1
+        },
+        "session": {
+          "type": "string"
+        },
+        "recorded_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "blind_spots": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "next_test": {
+      "type": "string"
+    }
+  }
+}
