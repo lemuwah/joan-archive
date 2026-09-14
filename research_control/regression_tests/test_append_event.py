@@ -57,6 +57,20 @@ def main():
     result = run(bad)
     assert result.returncode != 0, "UNKNOWN FIELD WAS ACCEPTED"
 
+    legacy = dict(VALID_CLAIM)
+    legacy["claim_id"] = "CLAIM-999998"
+    legacy["legacy_history"] = {
+        "authority": "HISTORICAL_ONLY",
+        "source_file": "methodology/source_spine.md",
+        "historical_status": "PROVEN",
+        "historical_reasoning": "Synthetic historical label; not current evidence.",
+        "historical_expected_outcome": "Synthetic only.",
+    }
+    result = run(legacy)
+    assert result.returncode == 0, "VALID HISTORICAL RECORD WAS REJECTED"
+    assert legacy["status"] == "UNTESTED", "HISTORICAL STATUS PROMOTED CURRENT STATUS"
+    assert legacy["legacy_history"]["historical_status"] == "PROVEN"
+
     print("REGRESSION TESTS PASSED")
     print("Valid synthetic record accepted by validator.")
     print("Invalid ID rejected.")

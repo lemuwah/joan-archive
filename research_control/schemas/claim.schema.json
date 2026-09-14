@@ -73,6 +73,35 @@
       "type": "string",
       "minLength": 1
     },
+    "legacy_history": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "authority",
+        "source_file",
+        "historical_status"
+      ],
+      "properties": {
+        "authority": {
+          "type": "string",
+          "const": "HISTORICAL_ONLY"
+        },
+        "source_file": {
+          "type": "string",
+          "minLength": 1
+        },
+        "historical_status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "historical_reasoning": {
+          "type": "string"
+        },
+        "historical_expected_outcome": {
+          "type": "string"
+        }
+      }
+    },
     "provenance": {
       "type": "object",
       "additionalProperties": false,
