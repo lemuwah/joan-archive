@@ -13,7 +13,7 @@ from event_spine import record_event
 
 TARGET_FILE = ROOT / "research_queue" / "SEARCH_TARGETS.yml"
 
-def add_target(question, reason, origin_event="", target_type="DOCUMENT", person_slots=None, jurisdictions=None, record_families=None, date_range=None, name_variants=None, laws=None, disproof_record=""):
+def add_target(question, reason, origin_event="", target_type="DOCUMENT", person_slots=None, jurisdictions=None, record_families=None, date_range=None, name_variants=None, laws=None, disproof_record="", source_identifier=""):
     payload = {
         "question": question,
         "reason": reason,
@@ -26,6 +26,7 @@ def add_target(question, reason, origin_event="", target_type="DOCUMENT", person
         "name_variants": name_variants or [],
         "laws": laws or [],
         "disproof_record": disproof_record,
+        "source_identifier": source_identifier,
     }
 
     identity_payload = {
@@ -36,6 +37,7 @@ def add_target(question, reason, origin_event="", target_type="DOCUMENT", person
         "record_families": record_families or [],
         "date_range": date_range or {},
         "name_variants": name_variants or [],
+        "source_identifier": source_identifier or "",
     }
 
     raw = json.dumps(

@@ -246,6 +246,7 @@ def generate_search_targets(
             record_families=[lens] if lens else [],
             date_range={},
             name_variants=[person] if person else [],
+            source_identifier=source_ref,
             laws=laws,
             disproof_record=(
                 "Discard or redirect this target if the underlying source "
