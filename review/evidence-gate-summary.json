@@ -1,0 +1,15 @@
+[
+  {
+    "event": "EVIDENCE_GATE",
+    "source_id": "008204949-10",
+    "status": "PASSED_WITH_CAUTION",
+    "violations": [],
+    "rules_checked": [
+      "legacy status firewall",
+      "observation/inference separation",
+      "source-to-claim caution",
+      "uncertainty preservation"
+    ],
+    "important_limit": "A passing gate does not prove a historical claim."
+  }
+]
