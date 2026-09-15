@@ -40,19 +40,21 @@ def main():
 
         violations = []
 
-        for item in atoms.get("observations", []):
-            text = item.get("text", "")
-            upper = text.upper()
+        for layer in ("observations", "inferences"):
+            for item in atoms.get(layer, []):
+                text = item.get("text", "")
+                upper = text.upper()
 
-            for old, new in FORBIDDEN_AUTO_PROMOTIONS.items():
-                pattern = r"(?<![A-Z0-9_])" + re.escape(old) + r"(?![A-Z0-9_])"
-                if re.search(pattern, upper):
-                    violations.append({
-                        "rule": "LEGACY_VOCABULARY_FIREWALL",
-                        "legacy_label": old,
-                        "forbidden_promotion": new,
-                        "action": "FLAG_FOR_REVIEW"
-                    })
+                for old, new in FORBIDDEN_AUTO_PROMOTIONS.items():
+                    pattern = r"(?<![A-Z0-9_])" + re.escape(old) + r"(?![A-Z0-9_])"
+                    if re.search(pattern, upper):
+                        violations.append({
+                            "rule": "LEGACY_VOCABULARY_FIREWALL",
+                            "layer": layer,
+                            "legacy_label": old,
+                            "forbidden_promotion": new,
+                            "action": "FLAG_FOR_REVIEW"
+                        })
 
         report = {
             "event": "EVIDENCE_GATE",
