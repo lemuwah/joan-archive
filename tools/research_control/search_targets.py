@@ -1,9 +1,16 @@
 from pathlib import Path
 import json
 import hashlib
+import sys
 import yaml
 
 ROOT = Path(__file__).resolve().parents[2]
+CONTROL_DIR = ROOT / "tools" / "research_control"
+if str(CONTROL_DIR) not in sys.path:
+    sys.path.insert(0, str(CONTROL_DIR))
+
+from event_spine import record_event
+
 TARGET_FILE = ROOT / "research_queue" / "SEARCH_TARGETS.yml"
 
 def add_target(question, reason, origin_event="", target_type="DOCUMENT", person_slots=None, jurisdictions=None, record_families=None, date_range=None, name_variants=None, laws=None, disproof_record=""):
@@ -36,8 +43,35 @@ def add_target(question, reason, origin_event="", target_type="DOCUMENT", person
 
     data.setdefault("targets", [])
 
-    if not any(x.get("target_id") == target["target_id"] for x in data["targets"]):
+    target_exists = any(
+        x.get("target_id") == target["target_id"]
+        for x in data["targets"]
+    )
+
+    if not target_exists:
         data["targets"].append(target)
+
+        record_event(
+            agent="SEARCH_TARGET_GENERATOR",
+            action="NEW_SEARCH_TARGET",
+            target=target["target_id"],
+            laws=target["laws"],
+            search_scope={
+                "target_type": target["target_type"],
+                "person_slots": target["person_slots"],
+                "jurisdictions": target["jurisdictions"],
+                "record_families": target["record_families"],
+                "date_range": target["date_range"],
+                "name_variants": target["name_variants"],
+            },
+            evidence=target["reason"],
+            result=target["question"],
+            status=target["status"],
+            contradiction=target["disproof_record"],
+            next_action="Execute target search when target status is promoted from READY_SHADOW.",
+            parent_event=target["origin_event"],
+            event_class="RESEARCH",
+        )
 
     TARGET_FILE.parent.mkdir(parents=True, exist_ok=True)
     TARGET_FILE.write_text(yaml.safe_dump(data, sort_keys=False, allow_unicode=True), encoding="utf-8")
