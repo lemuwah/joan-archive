@@ -295,10 +295,11 @@ def main() -> None:
             encoding="utf-8",
         )
 
-        mark_target_executed(
-            target["target_id"],
-            target_file=targets_file,
-        )
+        if result.get("result_status") in {"FOUND", "NO_RESULTS"}:
+            mark_target_executed(
+                target["target_id"],
+                target_file=targets_file,
+            )
 
         print(f"EXECUTED {target['target_id']} -> {output_path}")
 
