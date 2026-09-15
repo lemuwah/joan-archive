@@ -9,11 +9,25 @@ def main():
     parser.add_argument("--source", required=True)
     args = parser.parse_args()
 
-    manifest_path = Path(args.source)
+    repo_root = Path.cwd().resolve()
+    manifest_path = (repo_root / args.source).resolve()
+
+    try:
+        manifest_path.relative_to(repo_root)
+    except ValueError:
+        raise SystemExit(f"SOURCE_MANIFEST_OUTSIDE_REPOSITORY: {args.source}")
+
     manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
 
     source_id = manifest["source_id"]
-    repo_path = Path(manifest["repository_path"])
+    repo_path = (repo_root / manifest["repository_path"]).resolve()
+
+    try:
+        repo_path.relative_to(repo_root)
+    except ValueError:
+        raise SystemExit(
+            f"SOURCE_PATH_OUTSIDE_REPOSITORY: {manifest['repository_path']}"
+        )
     outdir = Path("corpus") / source_id
     outdir.mkdir(parents=True, exist_ok=True)
 
