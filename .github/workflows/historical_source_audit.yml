@@ -1,0 +1,63 @@
+name: Historical Source Audit
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_file:
+        description: "Source manifest"
+        required: true
+        default: "research/sources/north-kingstown-008204949-10.yml"
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout archive
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install -r tools/requirements.txt
+
+      - name: Fetch source
+        run: |
+          python tools/fetch_source.py --source "${{ inputs.source_file }}"
+
+      - name: Hash source
+        run: |
+          python tools/hash_source.py
+
+      - name: Vision transcription
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python tools/transcribe.py --source "${{ inputs.source_file }}"
+
+      - name: Atomize
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python tools/atomize.py --source "${{ inputs.source_file }}"
+
+      - name: Evidence gate
+        run: |
+          python tools/evidence_gate.py
+
+      - name: Build evidence report
+        run: |
+          python tools/build_report.py
+
+      - name: Upload audit artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: historical-source-audit
+          path: |
+            corpus/
+            reports/
+            review/
