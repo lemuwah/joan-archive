@@ -28,7 +28,21 @@ def add_target(question, reason, origin_event="", target_type="DOCUMENT", person
         "disproof_record": disproof_record,
     }
 
-    raw = json.dumps(payload, sort_keys=True, ensure_ascii=False)
+    identity_payload = {
+        "question": question,
+        "target_type": target_type,
+        "person_slots": person_slots or [],
+        "jurisdictions": jurisdictions or [],
+        "record_families": record_families or [],
+        "date_range": date_range or {},
+        "name_variants": name_variants or [],
+    }
+
+    raw = json.dumps(
+        identity_payload,
+        sort_keys=True,
+        ensure_ascii=False,
+    )
 
     target = {
         "target_id": "ST-" + hashlib.sha256(raw.encode("utf-8")).hexdigest()[:12],
