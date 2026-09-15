@@ -77,3 +77,39 @@ def add_target(question, reason, origin_event="", target_type="DOCUMENT", person
     TARGET_FILE.write_text(yaml.safe_dump(data, sort_keys=False, allow_unicode=True), encoding="utf-8")
 
     return target
+
+def mark_target_executed(target_id, target_file=None):
+    path = Path(target_file) if target_file else TARGET_FILE
+
+    if not path.exists():
+        raise ValueError(f"TARGET_FILE_NOT_FOUND: {path}")
+
+    data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    targets = data.setdefault("targets", [])
+
+    for target in targets:
+        if target.get("target_id") != target_id:
+            continue
+
+        current_status = target.get("status")
+
+        if current_status != "READY":
+            raise ValueError(
+                f"TARGET_STATUS_TRANSITION_BLOCKED: "
+                f"{target_id} status={current_status}"
+            )
+
+        target["status"] = "EXECUTED"
+
+        path.write_text(
+            yaml.safe_dump(
+                data,
+                sort_keys=False,
+                allow_unicode=True,
+            ),
+            encoding="utf-8",
+        )
+
+        return target
+
+    raise ValueError(f"TARGET_NOT_FOUND: {target_id}")
