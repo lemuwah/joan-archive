@@ -11,10 +11,17 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
+import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+CONTROL_DIR = ROOT / "tools" / "research_control"
+if str(CONTROL_DIR) not in sys.path:
+    sys.path.insert(0, str(CONTROL_DIR))
+
+from event_spine import record_event
+
 DEFAULT_SWEEP = ROOT / "research_queue" / "daily_sweep"
 DEFAULT_OUTPUT = ROOT / "research_queue" / "agent_runs"
 MODEL_PROFILES = Path(__file__).with_name("model_profiles.json")
@@ -194,11 +201,60 @@ def run(date: str, sweep_path: Path, output_root: Path, role_output: Path) -> Pa
     output_dir.mkdir(parents=True, exist_ok=True)
 
     generated = []
-    for role in ROLE_DIRS:
+    event_parent = ""
+    event_laws = [
+        "No Narrative Smoothing",
+        "La Mance Law / Follow the Rivers",
+        "No Premature Elimination",
+        "No Algorithmic Contamination",
+        "No Jurisdictional Assumption",
+        "No Centering",
+        "No Trust Without Evidence",
+    ]
+
+    role_order = [
+        ("explorer", "EXPLORER"),
+        ("archivist", "ARCHIVIST"),
+        ("hostile_review", "HOSTILE_REVIEW"),
+        ("synthesizer", "SYNTHESIZER"),
+    ]
+
+    for role, agent_name in role_order:
         role_leads = leads
         if role == "archivist":
-            role_leads = [lead for lead in leads if lead["result"].get("url") or lead["result"].get("record_id")]
-        generated.append(write_logic(role, date, records, role_leads, output_dir, role_output))
+            role_leads = [
+                lead for lead in leads
+                if lead["result"].get("url") or lead["result"].get("record_id")
+            ]
+
+        generated_path = write_logic(
+            role,
+            date,
+            records,
+            role_leads,
+            output_dir,
+            role_output,
+        )
+        generated.append(generated_path)
+
+        event = record_event(
+            agent=agent_name,
+            action="AGENT_ROLE_RUN",
+            target=f"DAILY-SWEEP-{date}",
+            laws=event_laws,
+            search_scope={
+                "input": str(sweep_path),
+                "date": date,
+                "lead_count": len(role_leads),
+            },
+            evidence=str(generated_path),
+            result=f"{agent_name} completed daily role report",
+            status="LAWS_FILTERED",
+            next_action="Continue to next agent in four-agent chain.",
+            parent_event=event_parent,
+            event_class="RESEARCH",
+        )
+        event_parent = event["event_id"]
 
     profiles = json.loads(MODEL_PROFILES.read_text())["models"]
     model_counts = {}
