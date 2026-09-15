@@ -4,8 +4,8 @@
   "lenses": 11,
   "queries_run": 253,
   "dry_run": false,
-  "found_queries": 52,
-  "no_result_queries": 35,
-  "error_queries": 166,
+  "found_queries": 72,
+  "no_result_queries": 171,
+  "error_queries": 10,
   "note": "Candidates and negative results require human review; no claim is verified by this sweep."
 }

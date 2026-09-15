@@ -9,3 +9,7 @@ images/_preservica/
 # in images/_pending_review/). Not primary sources.
 images/_pending_review/folio*_enh*.jpg
 images/_pending_review/signatures_block_enh*.jpg
+
+# Python generated files
+__pycache__/
+*.py[cod]

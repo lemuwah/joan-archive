@@ -11,10 +11,18 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
+import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+CONTROL_DIR = ROOT / "tools" / "research_control"
+if str(CONTROL_DIR) not in sys.path:
+    sys.path.insert(0, str(CONTROL_DIR))
+
+from event_spine import record_event
+from search_targets import add_target
+
 DEFAULT_SWEEP = ROOT / "research_queue" / "daily_sweep"
 DEFAULT_OUTPUT = ROOT / "research_queue" / "agent_runs"
 MODEL_PROFILES = Path(__file__).with_name("model_profiles.json")
@@ -183,6 +191,73 @@ def write_logic(
     return path
 
 
+def generate_search_targets(
+    leads: list[dict],
+    origin_event: str,
+    laws: list[str],
+) -> list[dict]:
+    """Convert structured research leads into bounded next-search actions.
+
+    This creates research targets, not historical claims. Every target remains
+    READY_SHADOW until a later execution layer explicitly promotes it.
+    """
+    generated = []
+
+    for lead in leads[:100]:
+        result = lead.get("result", {})
+        person = lead.get("person_name", "").strip()
+        lens = lead.get("lens", "").strip()
+        query = lead.get("query", "").strip()
+        title = (
+            result.get("title")
+            or result.get("record_id")
+            or "untitled source"
+        )
+        source_ref = result.get("url") or result.get("record_id") or ""
+
+        question = (
+            f"Investigate the source lead '{title}' for {person}"
+            if person
+            else f"Investigate the source lead '{title}'"
+        )
+
+        reason_parts = [
+            f"Generated from the {lens or 'research'} lens.",
+        ]
+
+        if query:
+            reason_parts.append(f"Original search query: {query}.")
+
+        if source_ref:
+            reason_parts.append(f"Source lead: {source_ref}.")
+        else:
+            reason_parts.append(
+                "No stable source identifier was returned; preserve this "
+                "as a lead rather than treating it as evidence."
+            )
+
+        target = add_target(
+            question=question,
+            reason=" ".join(reason_parts),
+            origin_event=origin_event,
+            target_type="DOCUMENT",
+            person_slots=[person] if person else [],
+            jurisdictions=[],
+            record_families=[lens] if lens else [],
+            date_range={},
+            name_variants=[person] if person else [],
+            source_identifier=source_ref,
+            laws=laws,
+            disproof_record=(
+                "Discard or redirect this target if the underlying source "
+                "concerns a different person, place, date, or record family."
+            ),
+        )
+        generated.append(target)
+
+    return generated
+
+
 def run(date: str, sweep_path: Path, output_root: Path, role_output: Path) -> Path:
     records = load_records(sweep_path)
     leads = result_rows(records)
@@ -194,11 +269,66 @@ def run(date: str, sweep_path: Path, output_root: Path, role_output: Path) -> Pa
     output_dir.mkdir(parents=True, exist_ok=True)
 
     generated = []
-    for role in ROLE_DIRS:
+    event_parent = ""
+    event_laws = [
+        "No Narrative Smoothing",
+        "La Mance Law / Follow the Rivers",
+        "No Premature Elimination",
+        "No Algorithmic Contamination",
+        "No Jurisdictional Assumption",
+        "No Centering",
+        "No Trust Without Evidence",
+    ]
+
+    role_order = [
+        ("explorer", "EXPLORER"),
+        ("archivist", "ARCHIVIST"),
+        ("hostile_review", "HOSTILE_REVIEW"),
+        ("synthesizer", "SYNTHESIZER"),
+    ]
+
+    for role, agent_name in role_order:
         role_leads = leads
         if role == "archivist":
-            role_leads = [lead for lead in leads if lead["result"].get("url") or lead["result"].get("record_id")]
-        generated.append(write_logic(role, date, records, role_leads, output_dir, role_output))
+            role_leads = [
+                lead for lead in leads
+                if lead["result"].get("url") or lead["result"].get("record_id")
+            ]
+
+        generated_path = write_logic(
+            role,
+            date,
+            records,
+            role_leads,
+            output_dir,
+            role_output,
+        )
+        generated.append(generated_path)
+
+        event = record_event(
+            agent=agent_name,
+            action="AGENT_ROLE_RUN",
+            target=f"DAILY-SWEEP-{date}",
+            laws=event_laws,
+            search_scope={
+                "input": str(sweep_path),
+                "date": date,
+                "lead_count": len(role_leads),
+            },
+            evidence=str(generated_path),
+            result=f"{agent_name} completed daily role report",
+            status="LAWS_FILTERED",
+            next_action="Continue to next agent in four-agent chain.",
+            parent_event=event_parent,
+            event_class="RESEARCH",
+        )
+        event_parent = event["event_id"]
+
+    search_targets = generate_search_targets(
+        leads=leads,
+        origin_event=event_parent,
+        laws=event_laws,
+    )
 
     profiles = json.loads(MODEL_PROFILES.read_text())["models"]
     model_counts = {}
@@ -219,6 +349,7 @@ def run(date: str, sweep_path: Path, output_root: Path, role_output: Path) -> Pa
         "statuses": dict(Counter(record.get("status") for record in records)),
         "roles": [path.stem for path in generated],
         "model_leads": model_counts,
+        "search_targets_generated": len(search_targets),
         "status": "LAWS_FILTERED",
         "note": "Reports generate leads and review logic only, filtered through the Multi Agent Laws. They do not update facts or role READMEs. Periodic human review applies.",
     }

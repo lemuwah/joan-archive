@@ -1,0 +1,18 @@
+{
+  "source_id": "008204949-10",
+  "source_type": "manuscript_image_with_working_transcription",
+  "repository_path": "research/008204949-10.md",
+  "image_reference": "FamilySearch DGS 008204949, image 10 of 444",
+  "record_label": "North Kingstown Land Records",
+  "status": "SOURCE_VERIFIED_BY_HUMAN_EYES / PALEOGRAPHY_PENDING",
+  "provenance": {
+    "human_source_check": "2026-09-09",
+    "working_transcription": "research/008204949-10.md",
+    "transcription_status": "AI-assisted working lead; not professional paleography"
+  },
+  "notes": [
+    "Do not treat the working transcription as a verbatim transcription.",
+    "Preserve uncertainty and source boundaries.",
+    "Compare against the March 24, 1682 Daniel/James Green deed before treating this as a distinct instrument."
+  ]
+}

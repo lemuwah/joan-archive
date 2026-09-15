@@ -1,0 +1,18 @@
+targets:
+- target_id: ST-e3c83ff028ff
+  question: CONTROL PLANE TEST
+  reason: Testing Event Spine to Search Target connection.
+  origin_event: EVT-dcd4bf582ed4
+  target_type: SYSTEM_TEST
+  person_slots:
+  - SYSTEM_TEST
+  jurisdictions:
+  - TEST
+  record_families:
+  - TEST
+  date_range: {}
+  name_variants: []
+  laws:
+  - Seven Laws
+  disproof_record: Failed registry write invalidates this test.
+  status: READY_SHADOW
