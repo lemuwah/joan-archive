@@ -13,7 +13,7 @@ from event_spine import record_event
 
 TARGET_FILE = ROOT / "research_queue" / "SEARCH_TARGETS.yml"
 
-def add_target(question, reason, origin_event="", target_type="DOCUMENT", person_slots=None, jurisdictions=None, record_families=None, date_range=None, name_variants=None, laws=None, disproof_record="", source_identifier=""):
+def add_target(question, reason, origin_event="", target_type="DOCUMENT", person_slots=None, jurisdictions=None, record_families=None, date_range=None, name_variants=None, laws=None, disproof_record="", source_identifier="", target_file=None, event_file=None):
     payload = {
         "question": question,
         "reason": reason,
@@ -52,8 +52,10 @@ def add_target(question, reason, origin_event="", target_type="DOCUMENT", person
         "status": "READY_SHADOW",
     }
 
-    if TARGET_FILE.exists():
-        data = yaml.safe_load(TARGET_FILE.read_text(encoding="utf-8")) or {}
+    path = Path(target_file) if target_file else TARGET_FILE
+
+    if path.exists():
+        data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
     else:
         data = {}
 
@@ -87,10 +89,14 @@ def add_target(question, reason, origin_event="", target_type="DOCUMENT", person
             next_action="Execute target search when target status is promoted from READY_SHADOW.",
             parent_event=target["origin_event"],
             event_class="RESEARCH",
+            event_file=event_file,
         )
 
-    TARGET_FILE.parent.mkdir(parents=True, exist_ok=True)
-    TARGET_FILE.write_text(yaml.safe_dump(data, sort_keys=False, allow_unicode=True), encoding="utf-8")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        yaml.safe_dump(data, sort_keys=False, allow_unicode=True),
+        encoding="utf-8",
+    )
 
     return target
 

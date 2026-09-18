@@ -21,6 +21,7 @@ def record_event(
     next_action="",
     parent_event="",
     event_class="RESEARCH",
+    event_file=None,
 ):
     event = {
         "event_id": "EVT-" + uuid.uuid4().hex[:12],
@@ -40,9 +41,10 @@ def record_event(
         "parent_event": parent_event,
     }
 
-    EVENT_FILE.parent.mkdir(parents=True, exist_ok=True)
+    path = Path(event_file) if event_file else EVENT_FILE
+    path.parent.mkdir(parents=True, exist_ok=True)
 
-    with EVENT_FILE.open("a", encoding="utf-8") as f:
+    with path.open("a", encoding="utf-8") as f:
         f.write(json.dumps(event, ensure_ascii=False, sort_keys=True) + "\n")
 
     return event

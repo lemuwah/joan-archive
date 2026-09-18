@@ -11,13 +11,13 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-
 LEDGERS = {
     "claim": ROOT / "research_control/claims.jsonl",
     "search": ROOT / "research_control/search_events.jsonl",
     "evidence": ROOT / "research_control/evidence_events.jsonl",
     "review": ROOT / "research_control/review_events.jsonl",
     "status": ROOT / "research_control/status_events.jsonl",
+    "relationship": ROOT / "research_control/relationships.jsonl",
 }
 
 SCHEMAS = {
@@ -26,6 +26,7 @@ SCHEMAS = {
     "evidence": ROOT / "research_control/schemas/evidence_event.schema.json",
     "review": ROOT / "research_control/schemas/review_event.schema.json",
     "status": ROOT / "research_control/schemas/status_event.schema.json",
+    "relationship": ROOT / "research_control/schemas/claim_evidence_relationship.schema.json",
 }
 
 ID_FIELDS = {
@@ -34,6 +35,7 @@ ID_FIELDS = {
     "evidence": "evidence_id",
     "review": "review_id",
     "status": "status_id",
+    "relationship": "relationship_id",
 }
 
 ID_PATTERNS = {
@@ -42,6 +44,7 @@ ID_PATTERNS = {
     "evidence": re.compile(r"^EVID-[0-9]{6}$"),
     "review": re.compile(r"^REVIEW-[0-9]{6}$"),
     "status": re.compile(r"^STATUS-[0-9]{6}$"),
+    "relationship": re.compile(r"^REL-[0-9]{6}$"),
 }
 
 

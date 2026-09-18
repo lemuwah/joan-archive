@@ -195,15 +195,24 @@ def generate_search_targets(
     leads: list[dict],
     origin_event: str,
     laws: list[str],
-) -> list[dict]:
-    """Convert structured research leads into bounded next-search actions.
+    target_file: Path | None = None,
+    event_file: Path | None = None,
+) -> dict:
+    """Convert discovered leads into bounded targets while preserving overflow.
 
-    This creates research targets, not historical claims. Every target remains
-    READY_SHADOW until a later execution layer explicitly promotes it.
+    The processing budget limits target generation, not discovery preservation.
+
+    Leads within the current processing budget become READY_SHADOW research
+    targets. Leads beyond that budget are explicitly preserved as deferred
+    research leads. Deferred leads have not been searched, rejected, or
+    evaluated negatively.
     """
     generated = []
+    deferred = []
 
-    for lead in leads[:100]:
+    processing_budget = 100
+
+    for lead in leads[:processing_budget]:
         result = lead.get("result", {})
         person = lead.get("person_name", "").strip()
         lens = lead.get("lens", "").strip()
@@ -246,6 +255,8 @@ def generate_search_targets(
             record_families=[lens] if lens else [],
             date_range={},
             name_variants=[person] if person else [],
+            target_file=target_file,
+            event_file=event_file,
             source_identifier=source_ref,
             laws=laws,
             disproof_record=(
@@ -255,10 +266,30 @@ def generate_search_targets(
         )
         generated.append(target)
 
-    return generated
+    for lead in leads[processing_budget:]:
+        preserved = dict(lead)
+        preserved["preservation_status"] = "DEFERRED"
+        preserved["preservation_reason"] = (
+            "Discovered lead was not processed into a search target during "
+            "this run because the bounded target-generation budget was reached."
+        )
+        preserved["preservation_origin_event"] = origin_event
+        deferred.append(preserved)
+
+    return {
+        "generated": generated,
+        "deferred": deferred,
+    }
 
 
-def run(date: str, sweep_path: Path, output_root: Path, role_output: Path) -> Path:
+def run(
+    date: str,
+    sweep_path: Path,
+    output_root: Path,
+    role_output: Path,
+    target_file: Path | None = None,
+    event_file: Path | None = None,
+) -> Path:
     records = load_records(sweep_path)
     leads = result_rows(records)
     unique = {}
@@ -321,13 +352,23 @@ def run(date: str, sweep_path: Path, output_root: Path, role_output: Path) -> Pa
             next_action="Continue to next agent in four-agent chain.",
             parent_event=event_parent,
             event_class="RESEARCH",
+            event_file=event_file,
         )
         event_parent = event["event_id"]
 
-    search_targets = generate_search_targets(
+    target_result = generate_search_targets(
         leads=leads,
         origin_event=event_parent,
         laws=event_laws,
+        target_file=target_file,
+        event_file=event_file,
+    )
+    search_targets = target_result["generated"]
+    deferred_leads = target_result["deferred"]
+
+    deferred_path = output_dir / "deferred_leads.json"
+    deferred_path.write_text(
+        json.dumps(deferred_leads, indent=2) + "\n"
     )
 
     profiles = json.loads(MODEL_PROFILES.read_text())["models"]
@@ -350,6 +391,8 @@ def run(date: str, sweep_path: Path, output_root: Path, role_output: Path) -> Pa
         "roles": [path.stem for path in generated],
         "model_leads": model_counts,
         "search_targets_generated": len(search_targets),
+        "leads_deferred": len(deferred_leads),
+        "deferred_leads_artifact": str(deferred_path.relative_to(output_dir)),
         "status": "LAWS_FILTERED",
         "note": "Reports generate leads and review logic only, filtered through the Multi Agent Laws. They do not update facts or role READMEs. Periodic human review applies.",
     }
