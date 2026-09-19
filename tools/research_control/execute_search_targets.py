@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
+import random
 import time
 from pathlib import Path
 
@@ -13,6 +14,7 @@ import requests
 import yaml
 
 from event_spine import record_event
+from record_search_arrivals import append_unique, build_arrival
 from search_targets import mark_target_executed
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -21,6 +23,70 @@ RESULT_DIR = ROOT / "research_queue" / "search_results"
 
 IA_ENDPOINT = "https://archive.org/advancedsearch.php"
 LOC_ENDPOINT = "https://www.loc.gov/search/"
+
+MAX_RETRIES = 3
+INITIAL_BACKOFF = 1.0
+MAX_BACKOFF = 30.0
+
+
+def request_with_retry(
+    session: requests.Session,
+    url: str,
+    *,
+    params: dict,
+    timeout: int = 30,
+) -> requests.Response:
+    """Perform a bounded HTTP request with transient-error backoff.
+
+    Search failures remain failures after the retry budget is exhausted.
+    They are never converted into NO_RESULTS.
+    """
+    last_error = None
+
+    for attempt in range(MAX_RETRIES + 1):
+        try:
+            response = session.get(url, params=params, timeout=timeout)
+
+            if response.status_code == 429 or 500 <= response.status_code < 600:
+                if attempt == MAX_RETRIES:
+                    response.raise_for_status()
+
+                retry_after = response.headers.get("Retry-After")
+                if retry_after:
+                    try:
+                        wait = min(float(retry_after), MAX_BACKOFF)
+                    except ValueError:
+                        wait = min(
+                            INITIAL_BACKOFF * (2 ** attempt),
+                            MAX_BACKOFF,
+                        )
+                else:
+                    wait = min(
+                        INITIAL_BACKOFF * (2 ** attempt),
+                        MAX_BACKOFF,
+                    )
+
+                wait += random.uniform(0, 0.25)
+                time.sleep(wait)
+                continue
+
+            response.raise_for_status()
+            return response
+
+        except requests.RequestException as error:
+            last_error = error
+
+            if attempt == MAX_RETRIES:
+                raise
+
+            wait = min(
+                INITIAL_BACKOFF * (2 ** attempt),
+                MAX_BACKOFF,
+            )
+            wait += random.uniform(0, 0.25)
+            time.sleep(wait)
+
+    raise last_error or RuntimeError("SEARCH_REQUEST_FAILED")
 
 
 def load_targets(path: Path) -> dict:
@@ -63,7 +129,8 @@ def build_query(target: dict) -> str:
 
 
 def ia_search(session: requests.Session, query: str, rows: int) -> list[dict]:
-    response = session.get(
+    response = request_with_retry(
+        session,
         IA_ENDPOINT,
         params={
             "q": query,
@@ -72,9 +139,7 @@ def ia_search(session: requests.Session, query: str, rows: int) -> list[dict]:
             "page": 1,
             "output": "json",
         },
-        timeout=30,
     )
-    response.raise_for_status()
 
     docs = response.json().get("response", {}).get("docs", [])
 
@@ -97,12 +162,11 @@ def ia_search(session: requests.Session, query: str, rows: int) -> list[dict]:
 
 
 def loc_search(session: requests.Session, query: str, rows: int) -> list[dict]:
-    response = session.get(
+    response = request_with_retry(
+        session,
         LOC_ENDPOINT,
         params={"q": query, "fo": "json", "c": rows},
-        timeout=30,
     )
-    response.raise_for_status()
 
     return [
         {
@@ -138,6 +202,7 @@ def execute_target(
         "query": query,
         "results": [],
         "errors": [],
+        "source_results": {},
         "note": (
             "Search output is a source lead only. It does not establish "
             "historical proof, identity, or certainty."
@@ -159,13 +224,23 @@ def execute_target(
         ("internet_archive", ia_search),
         ("library_of_congress", loc_search),
     ):
+        source_record = {
+            "results": [],
+            "error": None,
+        }
+
         try:
-            record["results"].extend(search(session, query, rows))
+            source_results = search(session, query, rows)
+            source_record["results"] = source_results
+            record["results"].extend(source_results)
         except Exception as error:
+            source_record["error"] = str(error)
             record["errors"].append({
                 "source": source_name,
                 "error": str(error),
             })
+
+        record["source_results"][source_name] = source_record
         time.sleep(delay)
 
     if record["results"]:
@@ -294,6 +369,21 @@ def main() -> None:
             json.dumps(result, indent=2, ensure_ascii=False) + "\n",
             encoding="utf-8",
         )
+
+        # Record one schema-compatible research arrival per source.
+        # Source errors remain SEARCH_ERROR; they are never converted
+        # into negative search results.
+        for source_name, source_record in result["source_results"].items():
+            arrival = build_arrival(
+                target=target,
+                execution=result,
+                source_name=source_name,
+                source_results=source_record["results"],
+                source_error=source_record["error"],
+                artifact_ref=str(output_path),
+                execution_event_id=event["event_id"],
+            )
+            append_unique(arrival)
 
         if result.get("result_status") in {"FOUND", "NO_RESULTS"}:
             mark_target_executed(
