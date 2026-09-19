@@ -1,0 +1,14 @@
+{
+  "event": "SOURCE_LIBRARY_INTEGRITY",
+  "algorithm": "SHA-256",
+  "source_count": 1,
+  "sources": [
+    {
+      "source_id": "008204949-10",
+      "manifest_path": "research/sources/north-kingstown-008204949-10.yml",
+      "manifest_sha256": "96714adca4d5a200bc4f26299b19914ed37ba50afa3783f41372df70825e4935",
+      "repository_path": "research/008204949-10.md",
+      "repository_sha256": "f648877067454f4d627539d3ce2f93555cb7a7d55cc0aa42e40a414cbb1ad8c4"
+    }
+  ]
+}
