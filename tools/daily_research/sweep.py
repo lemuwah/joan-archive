@@ -59,23 +59,98 @@ IA_ENDPOINT = "https://archive.org/advancedsearch.php"
 LOC_ENDPOINT = "https://www.loc.gov/search/"
 
 
+DISCOVERY_KEY_FIELDS = (
+    "Name variants",
+    "Documented activity window",
+    "Place anchors",
+    "Documented associates",
+    "Record anchors",
+)
+
+
+def parse_discovery_key(text: str) -> dict[str, str]:
+    """Extract only explicitly labeled Discovery Key search fields."""
+    if "## Discovery Key" not in text:
+        return {}
+
+    block = text.split("## Discovery Key", 1)[1]
+    block = block.split("\n## ", 1)[0]
+
+    fields: dict[str, str] = {}
+
+    lines = block.splitlines()
+    current_field = None
+    collected: list[str] = []
+
+    def save_current() -> None:
+        if current_field is not None and collected:
+            fields[current_field] = "\n".join(collected).strip()
+
+    for line in lines:
+        match = re.match(r"- \*\*(.+?):\*\*\s*(.*)$", line)
+
+        if match:
+            save_current()
+            current_field = None
+            collected = []
+
+            label = match.group(1).strip()
+            value = match.group(2).strip()
+
+            for field in DISCOVERY_KEY_FIELDS:
+                if label == field or label.startswith(field + " ") or label.startswith(field + "("):
+                    current_field = field
+                    if value:
+                        collected.append(value)
+                    break
+            continue
+
+        if current_field is not None:
+            stripped = line.strip()
+            if stripped:
+                collected.append(stripped)
+
+    save_current()
+    return fields
+
+
 def person_names() -> list[dict[str, str]]:
     people = []
     for path in sorted(PEOPLE_DIR.glob("*.md")):
         if path.name == "README.md":
             continue
+
+        page_text = path.read_text(errors="replace")
         title = next(
-            (line.removeprefix("# ").strip() for line in path.read_text(errors="replace").splitlines()
+            (line.removeprefix("# ").strip() for line in page_text.splitlines()
              if line.startswith("# ")),
             path.stem.replace("_", " ").replace("-", " "),
         )
-        people.append({"page": str(path.relative_to(ROOT)), "name": title})
+
+        people.append({
+            "page": str(path.relative_to(ROOT)),
+            "name": title,
+            "text": page_text,
+        })
     return people
 
 
 def query_text(name: str, terms: list[str]) -> str:
     # Quotes keep multi-word names together while the lens terms broaden the search.
     return f'"{name}" ("' + '" OR "'.join(terms) + '")'
+
+
+def discovery_name_atoms(person: dict[str, str]):
+    """Return searchable Discovery Key name atoms, excluding EXCLUDED values."""
+    from discovery_key import EXCLUDED, normalize_field_value
+
+    atoms = normalize_field_value(
+        person["name"],
+        "Name variants",
+        parse_discovery_key(person["text"]).get("Name variants", ""),
+    )
+
+    return [atom for atom in atoms if atom.status != EXCLUDED]
 
 
 def ia_search(session: requests.Session, query: str, rows: int) -> list[dict]:
@@ -146,30 +221,35 @@ def run(args: argparse.Namespace) -> tuple[Path, Path]:
 
     with result_path.open("w") as output:
         for person in people:
-            for lens, terms in lenses:
-                if args.max_queries and query_count >= args.max_queries:
-                    break
-                query = query_text(person["name"], terms)
-                base = {
-                    "run_date": run_date,
-                    "person_page": person["page"],
-                    "person_name": person["name"],
-                    "lens": lens,
-                    "query": query,
-                    "status": "DRY_RUN" if args.dry_run else "PENDING_HUMAN_REVIEW",
-                    "results": [],
-                }
-                if not args.dry_run:
-                    for source_name, search in (("internet_archive", ia_search), ("library_of_congress", loc_search)):
-                        try:
-                            base["results"].extend(search(session, query, args.rows))
-                        except Exception as error:  # keep the full sweep auditable if one catalog fails
-                            base.setdefault("errors", []).append({"source": source_name, "error": str(error)})
-                        time.sleep(args.delay)
-                    base["status"] = "FOUND" if base["results"] else ("ERROR" if base.get("errors") else "NO_RESULTS")
-                output.write(json.dumps(base, ensure_ascii=True) + "\n")
-                records.append(base)
-                query_count += 1
+            discovery_atoms = discovery_name_atoms(person)
+
+            for atom in discovery_atoms:
+                for lens, terms in lenses:
+                    if args.max_queries and query_count >= args.max_queries:
+                        break
+                    query = query_text(atom.value, terms)
+                    base = {
+                        "run_date": run_date,
+                        "person_page": person["page"],
+                        "person_name": person["name"],
+                        "discovery_atom": atom.value,
+                        "discovery_status": atom.status,
+                        "lens": lens,
+                        "query": query,
+                        "status": "DRY_RUN" if args.dry_run else "PENDING_HUMAN_REVIEW",
+                        "results": [],
+                    }
+                    if not args.dry_run:
+                        for source_name, search in (("internet_archive", ia_search), ("library_of_congress", loc_search)):
+                            try:
+                                base["results"].extend(search(session, query, args.rows))
+                            except Exception as error:  # keep the full sweep auditable if one catalog fails
+                                base.setdefault("errors", []).append({"source": source_name, "error": str(error)})
+                            time.sleep(args.delay)
+                        base["status"] = "FOUND" if base["results"] else ("ERROR" if base.get("errors") else "NO_RESULTS")
+                    output.write(json.dumps(base, ensure_ascii=True) + "\n")
+                    records.append(base)
+                    query_count += 1
             if args.max_queries and query_count >= args.max_queries:
                 break
 
