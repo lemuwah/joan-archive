@@ -55,6 +55,60 @@ def lead_key(row: dict) -> tuple[str, str, str]:
     return (row["person_name"], row["lens"], result.get("url") or result.get("record_id") or "")
 
 
+def allocate_fair_leads(
+    leads: list[dict],
+    budget: int,
+) -> tuple[list[dict], list[dict]]:
+    """Allocate a bounded processing budget fairly across people.
+
+    Each person's leads retain their existing order. The global budget is
+    consumed round-robin across people so that one person's lead volume
+    cannot consume the entire processing budget before another person is
+    considered.
+
+    The returned lists form an exhaustive partition of the input: selected
+    leads are processed now; deferred leads remain preserved for later.
+    """
+    if budget < 0:
+        raise ValueError("budget must be non-negative")
+
+    by_person: dict[str, list[dict]] = defaultdict(list)
+    person_order: list[str] = []
+
+    for lead in leads:
+        person = lead.get("person_name", "").strip()
+        if person not in by_person:
+            person_order.append(person)
+        by_person[person].append(lead)
+
+    selected: list[dict] = []
+    positions = {person: 0 for person in person_order}
+
+    while len(selected) < budget:
+        made_progress = False
+
+        for person in person_order:
+            pos = positions[person]
+            person_leads = by_person[person]
+
+            if pos >= len(person_leads):
+                continue
+
+            selected.append(person_leads[pos])
+            positions[person] = pos + 1
+            made_progress = True
+
+            if len(selected) >= budget:
+                break
+
+        if not made_progress:
+            break
+
+    selected_keys = {id(lead) for lead in selected}
+    deferred = [lead for lead in leads if id(lead) not in selected_keys]
+
+    return selected, deferred
+
 def model_leads(profile: dict, leads: list[dict]) -> list[dict]:
     terms = [term.lower() for term in profile["search_terms"]]
     matching = []
@@ -208,11 +262,14 @@ def generate_search_targets(
     evaluated negatively.
     """
     generated = []
-    deferred = []
 
     processing_budget = 100
+    selected_leads, deferred_leads = allocate_fair_leads(
+        leads=leads,
+        budget=processing_budget,
+    )
 
-    for lead in leads[:processing_budget]:
+    for lead in selected_leads:
         result = lead.get("result", {})
         person = lead.get("person_name", "").strip()
         lens = lead.get("lens", "").strip()
@@ -266,7 +323,8 @@ def generate_search_targets(
         )
         generated.append(target)
 
-    for lead in leads[processing_budget:]:
+    deferred = []
+    for lead in deferred_leads:
         preserved = dict(lead)
         preserved["preservation_status"] = "DEFERRED"
         preserved["preservation_reason"] = (
