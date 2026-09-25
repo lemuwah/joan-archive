@@ -15,6 +15,10 @@ import yaml
 
 from event_spine import record_event
 from record_search_arrivals import append_unique, build_arrival
+from record_found_artifacts import (
+    append_unique as append_found_artifact,
+    build_found_artifacts,
+)
 from search_targets import mark_target_executed
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -384,6 +388,13 @@ def main() -> None:
                 execution_event_id=event["event_id"],
             )
             append_unique(arrival)
+
+            found_artifacts = build_found_artifacts(
+                arrival=arrival,
+                source_results=source_record["results"],
+            )
+            for artifact in found_artifacts:
+                append_found_artifact(artifact)
 
         if result.get("result_status") in {"FOUND", "NO_RESULTS"}:
             mark_target_executed(

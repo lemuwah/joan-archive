@@ -97,6 +97,7 @@ def main():
         assert found["result"]["outcome"] == "RESULT_LOCATED"
         assert found["visibility"] == "POSITIVE"
         assert found["source"]["name"] == "internet_archive"
+        assert found["provenance"]["execution_event_id"] == "EVT-ARRIVAL-TEST"
         assert_schema_valid(found)
         assert append_unique(found, ledger=ledger) is True
 

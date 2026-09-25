@@ -227,6 +227,9 @@ targets:
             assert arrival["provenance"]["actor_type"] == "SYSTEM"
             assert arrival["provenance"]["actor"] == "SEARCH_EXECUTOR"
             assert arrival["provenance"]["session"] == "ST-EXEC-ARRIVAL"
+            assert arrival["provenance"]["execution_event_id"] == (
+                "EVT-EXEC-ARRIVAL-001"
+            )
             assert arrival["result"]["artifact_ref"].endswith(
                 "ST-EXEC-ARRIVAL.json"
             )

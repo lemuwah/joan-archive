@@ -18,6 +18,7 @@ LEDGERS = {
     "review": ROOT / "research_control/review_events.jsonl",
     "status": ROOT / "research_control/status_events.jsonl",
     "relationship": ROOT / "research_control/relationships.jsonl",
+    "artifact": ROOT / "research_control/found_artifacts.jsonl",
 }
 
 SCHEMAS = {
@@ -27,6 +28,7 @@ SCHEMAS = {
     "review": ROOT / "research_control/schemas/review_event.schema.json",
     "status": ROOT / "research_control/schemas/status_event.schema.json",
     "relationship": ROOT / "research_control/schemas/claim_evidence_relationship.schema.json",
+    "artifact": ROOT / "research_control/schemas/found_artifact.schema.json",
 }
 
 ID_FIELDS = {
@@ -36,6 +38,7 @@ ID_FIELDS = {
     "review": "review_id",
     "status": "status_id",
     "relationship": "relationship_id",
+    "artifact": "artifact_id",
 }
 
 ID_PATTERNS = {
@@ -45,6 +48,7 @@ ID_PATTERNS = {
     "review": re.compile(r"^REVIEW-[0-9]{6}$"),
     "status": re.compile(r"^STATUS-[0-9]{6}$"),
     "relationship": re.compile(r"^REL-[0-9]{6}$"),
+    "artifact": re.compile(r"^ARTIFACT-[0-9]{6}$"),
 }
 
 

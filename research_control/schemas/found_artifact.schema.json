@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Found Artifact",
+  "description": "A neutral preservation record for something encountered during research discovery. A Found Artifact records discovery and provenance only; it does not assert identity, evidence, claims, promotion, ranking, or historical status.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "artifact_id",
+    "found_at",
+    "search_ref",
+    "source",
+    "locator",
+    "discovery",
+    "person_slots",
+    "provenance"
+  ],
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "pattern": "^ARTIFACT-[A-Za-z0-9_-]+$"
+    },
+    "found_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "search_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "search_id",
+        "target_id",
+        "execution_event_id"
+      ],
+      "properties": {
+        "search_id": {
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "execution_event_id": {
+          "type": "string"
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "access_method"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "access_method": {
+          "type": "string"
+        }
+      }
+    },
+    "locator": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "url": {
+          "type": "string"
+        },
+        "collection": {
+          "type": "string"
+        },
+        "volume": {
+          "type": "string"
+        },
+        "page": {
+          "type": "string"
+        },
+        "record_identifier": {
+          "type": "string"
+        }
+      }
+    },
+    "discovery": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "matched_terms",
+        "title",
+        "description"
+      ],
+      "properties": {
+        "matched_terms": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "raw_reference": {
+          "type": "string"
+        }
+      }
+    },
+    "person_slots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "role"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actor_type",
+        "actor",
+        "platform",
+        "recorded_at"
+      ],
+      "properties": {
+        "actor_type": {
+          "type": "string"
+        },
+        "actor": {
+          "type": "string"
+        },
+        "platform": {
+          "type": "string"
+        },
+        "recorded_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  }
+}

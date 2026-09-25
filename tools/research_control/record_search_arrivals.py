@@ -116,6 +116,7 @@ def build_arrival(
             "actor": "SEARCH_EXECUTOR",
             "platform": "joan-archive",
             "session": target["target_id"],
+            "execution_event_id": execution_event_id,
             "recorded_at": timestamp,
         },
         "blind_spots": [],
