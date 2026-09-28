@@ -141,16 +141,150 @@ def query_text(name: str, terms: list[str]) -> str:
 
 
 def discovery_name_atoms(person: dict[str, str]):
-    """Return searchable Discovery Key name atoms, excluding EXCLUDED values."""
-    from discovery_key import EXCLUDED, normalize_field_value
+    """
+    Return conservative corpus-derived searchable person atoms.
+
+    Search inputs may come only from:
+    - the page subject;
+    - explicitly structured Discovery Key Name variants;
+    - explicitly structured Discovery Key Documented associates.
+
+    Ordinary prose is deliberately not mined for names. A corpus mention
+    becomes a search input only; it does not establish identity or a
+    relationship.
+    """
+    from discovery_key import (
+        EXPLICIT,
+        EXCLUDED,
+        DiscoveryAtom,
+        normalize_field_value,
+    )
+
+    discovery_key = parse_discovery_key(person["text"])
 
     atoms = normalize_field_value(
         person["name"],
         "Name variants",
-        parse_discovery_key(person["text"]).get("Name variants", ""),
+        discovery_key.get("Name variants", ""),
     )
 
-    return [atom for atom in atoms if atom.status != EXCLUDED]
+    associates = _parse_documented_associates(
+        person["name"],
+        discovery_key.get("Documented associates", ""),
+    )
+    atoms.extend(associates)
+
+    # The page subject is always a searchable corpus person atom.
+    subject = person["name"].strip()
+    if subject:
+        atoms.append(
+            DiscoveryAtom(
+                person=person["name"],
+                field="Page subject",
+                value=subject,
+                status=EXPLICIT,
+            )
+        )
+
+    seen: set[tuple[str, str]] = set()
+    unique = []
+
+    for atom in atoms:
+        if atom.status == EXCLUDED:
+            continue
+
+        key = (atom.field, atom.value.casefold())
+        if key in seen:
+            continue
+
+        seen.add(key)
+        unique.append(atom)
+
+    return unique
+
+
+def _parse_documented_associates(
+    person: str,
+    value: str,
+):
+    """
+    Extract names only from explicitly structured associate entries.
+
+    Supported forms are deliberately narrow:
+      Person Name (role)
+      Person Name — role
+      Person Name - role
+      **Person Name** (role)
+
+    Relationship wording is not interpreted or converted into identity.
+    """
+    from discovery_key import EXPLICIT, DiscoveryAtom
+
+    atoms: list[DiscoveryAtom] = []
+
+    for raw_line in value.splitlines():
+        line = raw_line.strip().lstrip("-").strip()
+        if not line:
+            continue
+
+        # Strip optional markdown emphasis without mining surrounding prose.
+        line = line.replace("**", "").strip()
+
+        # A semicolon-delimited associate list is already an explicit
+        # structured field. Each segment is treated as one search atom.
+        for segment in line.split(";"):
+            candidate = segment.strip()
+            if not candidate:
+                continue
+
+            # Remove relationship descriptions from the end only.
+            # The name itself remains untouched.
+            candidate = re.split(r"\s+(?:\(|—|–|-)", candidate, maxsplit=1)[0].strip()
+
+            if not candidate:
+                continue
+
+            # Reject only clearly collective/contextual expressions.
+            # This filter applies to Documented associates, not page subjects.
+            if _is_non_person_associate(candidate):
+                continue
+
+            atoms.append(
+                DiscoveryAtom(
+                    person=person,
+                    field="Documented associates",
+                    value=candidate,
+                    status=EXPLICIT,
+                )
+            )
+
+    return atoms
+
+
+def _is_non_person_associate(value: str) -> bool:
+    """Return True only for clearly non-person associate expressions."""
+    lowered = value.strip().casefold()
+
+    if lowered.startswith(("the ", "his ", "her ", "none ")):
+        return True
+
+    if lowered.startswith(("sons ", "son ", "daughters ", "daughter ",
+                            "brothers ", "brother ", "sisters ", "sister ")):
+        return True
+
+    if " network" in lowered:
+        return True
+
+    if " household" in lowered:
+        return True
+
+    if lowered.startswith("the estate of "):
+        return True
+
+    if lowered.endswith(" line"):
+        return True
+
+    return False
 
 
 def ia_search(session: requests.Session, query: str, rows: int) -> list[dict]:
