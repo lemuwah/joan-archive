@@ -13,9 +13,9 @@ VALID_CLAIM = {
     "claim_id": "CLAIM-999999",
     "created_at": "2026-09-14T00:00:00Z",
     "claim_text": "Synthetic regression-test claim; not research evidence.",
+    "claim_type": "FACTUAL",
     "source_status": "UNLOCATED",
     "status": "UNTESTED",
-    "observation": "Synthetic test fixture only.",
     "true_test": "Synthetic true-test target.",
     "false_test": "Synthetic false-test target.",
     "provenance": {
@@ -56,6 +56,12 @@ def main():
     bad["unexpected"] = "contamination"
     result = run(bad)
     assert result.returncode != 0, "UNKNOWN FIELD WAS ACCEPTED"
+
+    bad = dict(VALID_CLAIM)
+    bad["claim_id"] = "CLAIM-999997"
+    bad["observation"] = "Synthetic observation that belongs in an evidence event."
+    result = run(bad)
+    assert result.returncode != 0, "CLAIM ACCEPTED AN OBSERVATION FIELD"
 
     legacy = dict(VALID_CLAIM)
     legacy["claim_id"] = "CLAIM-999998"

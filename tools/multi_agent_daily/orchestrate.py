@@ -11,10 +11,18 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
+import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+CONTROL_DIR = ROOT / "tools" / "research_control"
+if str(CONTROL_DIR) not in sys.path:
+    sys.path.insert(0, str(CONTROL_DIR))
+
+from event_spine import record_event
+from search_targets import add_target
+
 DEFAULT_SWEEP = ROOT / "research_queue" / "daily_sweep"
 DEFAULT_OUTPUT = ROOT / "research_queue" / "agent_runs"
 MODEL_PROFILES = Path(__file__).with_name("model_profiles.json")
@@ -46,6 +54,60 @@ def lead_key(row: dict) -> tuple[str, str, str]:
     result = row["result"]
     return (row["person_name"], row["lens"], result.get("url") or result.get("record_id") or "")
 
+
+def allocate_fair_leads(
+    leads: list[dict],
+    budget: int,
+) -> tuple[list[dict], list[dict]]:
+    """Allocate a bounded processing budget fairly across people.
+
+    Each person's leads retain their existing order. The global budget is
+    consumed round-robin across people so that one person's lead volume
+    cannot consume the entire processing budget before another person is
+    considered.
+
+    The returned lists form an exhaustive partition of the input: selected
+    leads are processed now; deferred leads remain preserved for later.
+    """
+    if budget < 0:
+        raise ValueError("budget must be non-negative")
+
+    by_person: dict[str, list[dict]] = defaultdict(list)
+    person_order: list[str] = []
+
+    for lead in leads:
+        person = lead.get("person_name", "").strip()
+        if person not in by_person:
+            person_order.append(person)
+        by_person[person].append(lead)
+
+    selected: list[dict] = []
+    positions = {person: 0 for person in person_order}
+
+    while len(selected) < budget:
+        made_progress = False
+
+        for person in person_order:
+            pos = positions[person]
+            person_leads = by_person[person]
+
+            if pos >= len(person_leads):
+                continue
+
+            selected.append(person_leads[pos])
+            positions[person] = pos + 1
+            made_progress = True
+
+            if len(selected) >= budget:
+                break
+
+        if not made_progress:
+            break
+
+    selected_keys = {id(lead) for lead in selected}
+    deferred = [lead for lead in leads if id(lead) not in selected_keys]
+
+    return selected, deferred
 
 def model_leads(profile: dict, leads: list[dict]) -> list[dict]:
     terms = [term.lower() for term in profile["search_terms"]]
@@ -183,7 +245,109 @@ def write_logic(
     return path
 
 
-def run(date: str, sweep_path: Path, output_root: Path, role_output: Path) -> Path:
+def generate_search_targets(
+    leads: list[dict],
+    origin_event: str,
+    laws: list[str],
+    target_file: Path | None = None,
+    event_file: Path | None = None,
+) -> dict:
+    """Convert discovered leads into bounded targets while preserving overflow.
+
+    The processing budget limits target generation, not discovery preservation.
+
+    Leads within the current processing budget become READY_SHADOW research
+    targets. Leads beyond that budget are explicitly preserved as deferred
+    research leads. Deferred leads have not been searched, rejected, or
+    evaluated negatively.
+    """
+    generated = []
+
+    processing_budget = 100
+    selected_leads, deferred_leads = allocate_fair_leads(
+        leads=leads,
+        budget=processing_budget,
+    )
+
+    for lead in selected_leads:
+        result = lead.get("result", {})
+        person = lead.get("person_name", "").strip()
+        lens = lead.get("lens", "").strip()
+        query = lead.get("query", "").strip()
+        title = (
+            result.get("title")
+            or result.get("record_id")
+            or "untitled source"
+        )
+        source_ref = result.get("url") or result.get("record_id") or ""
+
+        question = (
+            f"Investigate the source lead '{title}' for {person}"
+            if person
+            else f"Investigate the source lead '{title}'"
+        )
+
+        reason_parts = [
+            f"Generated from the {lens or 'research'} lens.",
+        ]
+
+        if query:
+            reason_parts.append(f"Original search query: {query}.")
+
+        if source_ref:
+            reason_parts.append(f"Source lead: {source_ref}.")
+        else:
+            reason_parts.append(
+                "No stable source identifier was returned; preserve this "
+                "as a lead rather than treating it as evidence."
+            )
+
+        target = add_target(
+            question=question,
+            reason=" ".join(reason_parts),
+            origin_event=origin_event,
+            target_type="DOCUMENT",
+            person_slots=[person] if person else [],
+            jurisdictions=[],
+            record_families=[lens] if lens else [],
+            date_range={},
+            name_variants=[person] if person else [],
+            target_file=target_file,
+            event_file=event_file,
+            source_identifier=source_ref,
+            laws=laws,
+            disproof_record=(
+                "Discard or redirect this target if the underlying source "
+                "concerns a different person, place, date, or record family."
+            ),
+        )
+        generated.append(target)
+
+    deferred = []
+    for lead in deferred_leads:
+        preserved = dict(lead)
+        preserved["preservation_status"] = "DEFERRED"
+        preserved["preservation_reason"] = (
+            "Discovered lead was not processed into a search target during "
+            "this run because the bounded target-generation budget was reached."
+        )
+        preserved["preservation_origin_event"] = origin_event
+        deferred.append(preserved)
+
+    return {
+        "generated": generated,
+        "deferred": deferred,
+    }
+
+
+def run(
+    date: str,
+    sweep_path: Path,
+    output_root: Path,
+    role_output: Path,
+    target_file: Path | None = None,
+    event_file: Path | None = None,
+) -> Path:
     records = load_records(sweep_path)
     leads = result_rows(records)
     unique = {}
@@ -194,11 +358,76 @@ def run(date: str, sweep_path: Path, output_root: Path, role_output: Path) -> Pa
     output_dir.mkdir(parents=True, exist_ok=True)
 
     generated = []
-    for role in ROLE_DIRS:
+    event_parent = ""
+    event_laws = [
+        "No Narrative Smoothing",
+        "La Mance Law / Follow the Rivers",
+        "No Premature Elimination",
+        "No Algorithmic Contamination",
+        "No Jurisdictional Assumption",
+        "No Centering",
+        "No Trust Without Evidence",
+    ]
+
+    role_order = [
+        ("explorer", "EXPLORER"),
+        ("archivist", "ARCHIVIST"),
+        ("hostile_review", "HOSTILE_REVIEW"),
+        ("synthesizer", "SYNTHESIZER"),
+    ]
+
+    for role, agent_name in role_order:
         role_leads = leads
         if role == "archivist":
-            role_leads = [lead for lead in leads if lead["result"].get("url") or lead["result"].get("record_id")]
-        generated.append(write_logic(role, date, records, role_leads, output_dir, role_output))
+            role_leads = [
+                lead for lead in leads
+                if lead["result"].get("url") or lead["result"].get("record_id")
+            ]
+
+        generated_path = write_logic(
+            role,
+            date,
+            records,
+            role_leads,
+            output_dir,
+            role_output,
+        )
+        generated.append(generated_path)
+
+        event = record_event(
+            agent=agent_name,
+            action="AGENT_ROLE_RUN",
+            target=f"DAILY-SWEEP-{date}",
+            laws=event_laws,
+            search_scope={
+                "input": str(sweep_path),
+                "date": date,
+                "lead_count": len(role_leads),
+            },
+            evidence=str(generated_path),
+            result=f"{agent_name} completed daily role report",
+            status="LAWS_FILTERED",
+            next_action="Continue to next agent in four-agent chain.",
+            parent_event=event_parent,
+            event_class="RESEARCH",
+            event_file=event_file,
+        )
+        event_parent = event["event_id"]
+
+    target_result = generate_search_targets(
+        leads=leads,
+        origin_event=event_parent,
+        laws=event_laws,
+        target_file=target_file,
+        event_file=event_file,
+    )
+    search_targets = target_result["generated"]
+    deferred_leads = target_result["deferred"]
+
+    deferred_path = output_dir / "deferred_leads.json"
+    deferred_path.write_text(
+        json.dumps(deferred_leads, indent=2) + "\n"
+    )
 
     profiles = json.loads(MODEL_PROFILES.read_text())["models"]
     model_counts = {}
@@ -219,6 +448,9 @@ def run(date: str, sweep_path: Path, output_root: Path, role_output: Path) -> Pa
         "statuses": dict(Counter(record.get("status") for record in records)),
         "roles": [path.stem for path in generated],
         "model_leads": model_counts,
+        "search_targets_generated": len(search_targets),
+        "leads_deferred": len(deferred_leads),
+        "deferred_leads_artifact": str(deferred_path.relative_to(output_dir)),
         "status": "LAWS_FILTERED",
         "note": "Reports generate leads and review logic only, filtered through the Multi Agent Laws. They do not update facts or role READMEs. Periodic human review applies.",
     }

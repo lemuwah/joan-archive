@@ -18,5 +18,7 @@ Test identity, date, place, status wording, and citation independence separately
 ## 4. Continuing conflict/context layer
 Record parties, witnesses, jurisdiction, legal setting, Indigenous and non-English context, competing Johns, and every unresolved contradiction. Preserve the strongest alternative explanation.
 
-## Leads matching this model's search vocabulary (0)
-- No matching catalog lead in this run. Keep the model open or eliminated only according to its documented status and continue the scoped search.
+## Leads matching this model's search vocabulary (3)
+- **John Greene "of Potowomut"** / `church_civil_registration` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
+- **John Greene of Quidnessett** / `maritime_trade_network` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
+- **John Greene of Quidnessett** / `church_civil_registration` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.

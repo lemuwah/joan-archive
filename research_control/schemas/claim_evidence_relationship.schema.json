@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Claim–Evidence Relationship",
+  "description": "Explicit, auditable relationship between a structured evidence event and a structured claim.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "relationship_id",
+    "evidence_id",
+    "claim_id",
+    "relation",
+    "scope",
+    "provenance"
+  ],
+  "properties": {
+    "relationship_id": {
+      "type": "string",
+      "pattern": "^REL-[0-9]{6}$"
+    },
+    "evidence_id": {
+      "type": "string",
+      "pattern": "^EVID-[0-9]{6}$"
+    },
+    "claim_id": {
+      "type": "string",
+      "pattern": "^CLAIM-[0-9]{6}$"
+    },
+    "relation": {
+      "type": "string",
+      "enum": [
+        "DIRECTLY_SUPPORTS",
+        "CONTEXT_ONLY",
+        "DOES_NOT_ESTABLISH",
+        "CONTRADICTS"
+      ]
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actor_type",
+        "actor",
+        "platform",
+        "recorded_at"
+      ],
+      "properties": {
+        "actor_type": {
+          "type": "string",
+          "enum": [
+            "HUMAN",
+            "AI",
+            "SYSTEM"
+          ]
+        },
+        "actor": {
+          "type": "string",
+          "minLength": 1
+        },
+        "platform": {
+          "type": "string",
+          "minLength": 1
+        },
+        "recorded_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  }
+}

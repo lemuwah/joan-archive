@@ -1,0 +1,33 @@
+{
+  "change_count": 1,
+  "changes": [
+    {
+      "affected_historical_bearing_content": true,
+      "artifact_path": "research/008204949-10.md",
+      "change_type": "source_library_referenced_record_change",
+      "contradictions_affected": [],
+      "detection_date": "2026-09-18",
+      "event": "CORPUS_CHANGE_ROUTING",
+      "event_id": "CCR-e6d573041dcb",
+      "historical_status_authority": false,
+      "new_hash": "f648877067454f4d627539d3ce2f93555cb7a7d55cc0aa42e40a414cbb1ad8c4",
+      "next_action": "Run the routed specialized audit/review process; do not infer historical status from this routing event.",
+      "old_hash": "f648877067454f4d627539d3ce2f93555cb7a7d55cc0aa42e40a414cbb1ad8c4",
+      "population": "research",
+      "preservation_result": "PRESERVED",
+      "referencing_manifests": [
+        "research/sources/north-kingstown-008204949-10.yml"
+      ],
+      "required_test": "source_library_integrity_audit",
+      "review_status": "PENDING_REVIEW",
+      "routing_destination": "source_library_integrity_audit",
+      "source_or_run_identifier": "",
+      "upstream_dependency": "source-library manifest declaration"
+    }
+  ],
+  "event": "CORPUS_CHANGE_ROUTING_RUN",
+  "failure_principle": "PRESERVE -> FLAG -> ROUTE FOR REVIEW",
+  "historical_status_authority": false,
+  "router_version": "1",
+  "run_date": "2026-09-18"
+}

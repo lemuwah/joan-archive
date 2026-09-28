@@ -11,13 +11,14 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-
 LEDGERS = {
     "claim": ROOT / "research_control/claims.jsonl",
     "search": ROOT / "research_control/search_events.jsonl",
     "evidence": ROOT / "research_control/evidence_events.jsonl",
     "review": ROOT / "research_control/review_events.jsonl",
     "status": ROOT / "research_control/status_events.jsonl",
+    "relationship": ROOT / "research_control/relationships.jsonl",
+    "artifact": ROOT / "research_control/found_artifacts.jsonl",
 }
 
 SCHEMAS = {
@@ -26,6 +27,8 @@ SCHEMAS = {
     "evidence": ROOT / "research_control/schemas/evidence_event.schema.json",
     "review": ROOT / "research_control/schemas/review_event.schema.json",
     "status": ROOT / "research_control/schemas/status_event.schema.json",
+    "relationship": ROOT / "research_control/schemas/claim_evidence_relationship.schema.json",
+    "artifact": ROOT / "research_control/schemas/found_artifact.schema.json",
 }
 
 ID_FIELDS = {
@@ -34,6 +37,8 @@ ID_FIELDS = {
     "evidence": "evidence_id",
     "review": "review_id",
     "status": "status_id",
+    "relationship": "relationship_id",
+    "artifact": "artifact_id",
 }
 
 ID_PATTERNS = {
@@ -42,6 +47,8 @@ ID_PATTERNS = {
     "evidence": re.compile(r"^EVID-[0-9]{6}$"),
     "review": re.compile(r"^REVIEW-[0-9]{6}$"),
     "status": re.compile(r"^STATUS-[0-9]{6}$"),
+    "relationship": re.compile(r"^REL-[0-9]{6}$"),
+    "artifact": re.compile(r"^ARTIFACT-[0-9]{6}$"),
 }
 
 
@@ -161,17 +168,72 @@ def existing_ids(path: Path, id_field: str) -> set[str]:
     return ids
 
 
+def append_record(
+    kind: str,
+    record: dict,
+    *,
+    ledger: Path | None = None,
+) -> None:
+    """Validate and append one record through the authoritative event path."""
+    if kind not in LEDGERS:
+        raise ValueError(f"Unknown ledger kind: {kind}")
+
+    target_ledger = ledger if ledger is not None else LEDGERS[kind]
+    schema = load_schema(kind)
+    id_field = ID_FIELDS[kind]
+
+    errors = validate(record, schema)
+
+    if not isinstance(record, dict):
+        errors.append("record: expected object")
+
+    event_id = record.get(id_field) if isinstance(record, dict) else None
+
+    if not isinstance(event_id, str):
+        errors.append(f"record.{id_field}: missing or not a string")
+    elif not ID_PATTERNS[kind].fullmatch(event_id):
+        errors.append(
+            f"record.{id_field}: invalid ID {event_id!r}"
+        )
+
+    if errors:
+        raise ValueError(
+            "REFUSING TO APPEND: " + "; ".join(errors)
+        )
+
+    ids = existing_ids(target_ledger, id_field)
+
+    if event_id in ids:
+        raise ValueError(
+            f"REFUSING TO APPEND: duplicate {id_field} {event_id}"
+        )
+
+    target_ledger.parent.mkdir(parents=True, exist_ok=True)
+
+    with target_ledger.open("a", encoding="utf-8") as handle:
+        handle.write(
+            json.dumps(
+                record,
+                ensure_ascii=False,
+                sort_keys=True,
+            )
+        )
+        handle.write("\n")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("kind", choices=LEDGERS)
     parser.add_argument("json_file")
-    parser.add_argument("--dry-run", action="store_true", help="validate without modifying the ledger")
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="validate without modifying the ledger",
+    )
     args = parser.parse_args()
 
     kind = args.kind
     ledger = LEDGERS[kind]
-    schema = load_schema(kind)
-    id_field = ID_FIELDS[kind]
 
     try:
         record = json.loads(
@@ -190,51 +252,46 @@ def main() -> int:
         )
         return 1
 
-    errors = validate(record, schema)
-
-    if not isinstance(record, dict):
-        errors.append("record: expected object")
-
-    event_id = record.get(id_field) if isinstance(record, dict) else None
-
-    if not isinstance(event_id, str):
-        errors.append(f"record.{id_field}: missing or not a string")
-    elif not ID_PATTERNS[kind].fullmatch(event_id):
-        errors.append(
-            f"record.{id_field}: invalid ID {event_id!r}"
-        )
-
-    if errors:
-        print("REFUSING TO APPEND:", file=sys.stderr)
-        for error in errors:
-            print(f"  - {error}", file=sys.stderr)
-        return 1
-
-    ids = existing_ids(ledger, id_field)
-
-    if event_id in ids:
-        print(
-            f"REFUSING TO APPEND: duplicate {id_field} {event_id}",
-            file=sys.stderr,
-        )
-        return 1
-
-    ledger.parent.mkdir(parents=True, exist_ok=True)
-
     if args.dry_run:
-        print(f"DRY-RUN OK: {event_id} would append -> {ledger.relative_to(ROOT)}")
-        return 0
+        try:
+            schema = load_schema(kind)
+            errors = validate(record, schema)
 
-    with ledger.open("a", encoding="utf-8") as handle:
-        handle.write(
-            json.dumps(
-                record,
-                ensure_ascii=False,
-                sort_keys=True,
+            if not isinstance(record, dict):
+                errors.append("record: expected object")
+
+            id_field = ID_FIELDS[kind]
+            event_id = record.get(id_field) if isinstance(record, dict) else None
+
+            if not isinstance(event_id, str):
+                errors.append(f"record.{id_field}: missing or not a string")
+            elif not ID_PATTERNS[kind].fullmatch(event_id):
+                errors.append(
+                    f"record.{id_field}: invalid ID {event_id!r}"
+                )
+
+            if errors:
+                raise ValueError(
+                    "REFUSING TO APPEND: " + "; ".join(errors)
+                )
+
+            print(
+                f"DRY-RUN OK: {event_id} would append -> "
+                f"{ledger.relative_to(ROOT)}"
             )
-        )
-        handle.write("\n")
+            return 0
 
+        except ValueError as exc:
+            print(str(exc), file=sys.stderr)
+            return 1
+
+    try:
+        append_record(kind, record, ledger=ledger)
+    except ValueError as exc:
+        print(str(exc), file=sys.stderr)
+        return 1
+
+    event_id = record[ID_FIELDS[kind]]
     print(
         f"APPENDED {event_id} -> {ledger.relative_to(ROOT)}"
     )
