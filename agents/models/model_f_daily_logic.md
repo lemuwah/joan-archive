@@ -1,4 +1,4 @@
-# Model F Agent — Widow of prior marriage — 2026-09-15
+# Model F Agent — Widow of prior marriage — 2026-09-28
 
 **Status:** OPEN
 **Evidence state:** AI-assisted working report; all leads are `LAWS_FILTERED`. Periodic human review applies.
@@ -18,7 +18,7 @@ Test identity, date, place, status wording, and citation independence separately
 ## 4. Continuing conflict/context layer
 Record parties, witnesses, jurisdiction, legal setting, Indigenous and non-English context, competing Johns, and every unresolved contradiction. Preserve the strongest alternative explanation.
 
-## Leads matching this model's search vocabulary (60)
+## Leads matching this model's search vocabulary (80)
 - **Benjamin² Greene** / `legal_property_records` — First-[fifth] report of the Record Commisssioners relative to the early town records.; http://www.loc.gov/item/06021253/. Original-document review required.
 - **Benjamin² Greene** / `legal_property_records` — State of Rhode Island and Providence Plantations at the end of the century : a history; http://www.loc.gov/item/02013122/. Original-document review required.
 - **Benjamin² Greene** / `archival_access_gaps` — A farewell discourse to the First church and society in Medway. Delivered March 17th, 1793. By Benjamin Greene, ... 1793; https://archive.org/details/bim_eighteenth-century_a-farewell-discourse-to-_greene-benjamin_1793. Original-document review required.
@@ -79,3 +79,23 @@ Record parties, witnesses, jurisdiction, legal setting, Indigenous and non-Engli
 - **John Greene "of Potowomut"** / `legal_property_records` — [Copy 3; Volume 1] History of the state of Rhode Island and Providence plantations; http://www.loc.gov/item/02018842/resource/gdcmassbookdig.historyofstateof03arno. Original-document review required.
 - **John Greene "of Potowomut"** / `legal_property_records` — State of Rhode Island and Providence Plantations at the end of the century : a history; http://www.loc.gov/item/02013122/. Original-document review required.
 - **John Greene "of Potowomut"** / `legal_property_records` — Descriptive catalogue of the government publications of the United States, September 5, 1774 -- March 4, 1881. Compiled by order of Congress by Ben. Perley Poore, clerk of printing records; http://www.loc.gov/item/2024804766/. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — Mr Death: Fred A. Leuchter; https://archive.org/details/MrDeathFredA.Leuchter. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — 1994 - Ernst Zuendel - Another Voice of Freedom xx - Interview with Fred Leuchter (EN, 28m 09s, 320x240); https://archive.org/details/1994-Ernst-Zuendel-Another-Voice-of-Freedom-xx-Interview-with-Fred-Leuchter. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — 1989 - 9th IHR - Fred Leuchter (EN, 10m 20s, 320x240); https://archive.org/details/1989-9th-IHR-Fred-Leuchter. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — LA LEGGENDA DI AUSCHWITZ - Fred Leuchter; https://archive.org/details/FredLeuchterTheLegendOfAuschwitz. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — 1990 - 10th IHR - Fred Leuchter - The Second Leuchter Report (EN, 16m 33s, 320x240); https://archive.org/details/1990-10th-IHR-Fred-Leuchter-The-Second. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — 6 Millions Le Sont Ils Réellement Harwood; https://archive.org/details/6MillionsLeSontIlsReellement. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — Mr. Death: The Rise and Fall of Fred A. Leuchter, Jr. (1999); https://archive.org/details/Mr.Death.The.Rise.and.Fall.of.Fred.A.Leuchter.Jr.DVDRip. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — Leuchter, Fred and Faurisson, Robert and Rudolf, Germar - The Leuchter Reports - Critical Edition (2005); https://archive.org/details/LeuchterFredAndFaurissonRobertAndRudolfGermarTheLeuchterReportsCriticalEditionEN2005234P.. Original-document review required.
+- **Edward² Greene** / `legal_property_records` — Rhode Island land evidences, vol. I, 1648-1696, abstracts.; http://www.loc.gov/item/21018384/. Original-document review required.
+- **George Vaughan** / `legal_property_records` — CIA Reading Room cia-rdp89-00244r000701330015-7: LETTER TO HARRY E. FITZWATER FROM HAROLD C. KING; https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701330015-7. Original-document review required.
+- **George Vaughan** / `legal_property_records` — CIA Reading Room cia-rdp89-00244r000300160025-0: LETTER TO DANIEL C. KING FROM H. M. SHAVER, JR.; https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000300160025-0. Original-document review required.
+- **George Vaughan** / `legal_property_records` — CIA Reading Room cia-rdp85b01152r000600780068-5: LETTER TO LARRY K. MYERS FROM H. M. SHAVER JR.; https://archive.org/details/cia-readingroom-document-cia-rdp85b01152r000600780068-5. Original-document review required.
+- **George Vaughan** / `legal_property_records` — CIA Reading Room cia-rdp89-00244r000701330035-5: LETTER TO LARRY MYERS FROM H. M. SHAVER, JR; https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701330035-5. Original-document review required.
+- **George Vaughan** / `legal_property_records` — CIA Reading Room cia-rdp89-00244r000701350002-9: MEMORANDUM OF AGREEMENT BETWEEN THE CENTRAL INTELLIGENCE AGENCY AND THE VIRGINIA DEPARTMENT OF HIGHWAYS AND TRANSPORTATION; https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701350002-9. Original-document review required.
+- **George Vaughan** / `legal_property_records` — CIA Reading Room cia-rdp89-00244r001002280015-8: LETTER TO (SANITIZED) FROM H. M. SHAVER, JR., STATE; https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r001002280015-8. Original-document review required.
+- **George Vaughan** / `legal_property_records` — CIA Reading Room cia-rdp89-00244r000300160024-1: LETTER TO VERNON R. GINGELL FROM H. M. SHAVER, JR.; https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000300160024-1. Original-document review required.
+- **George Vaughan** / `legal_property_records` — Rhode Island land evidences, vol. I, 1648-1696, abstracts.; http://www.loc.gov/item/21018384/. Original-document review required.
+- **George Vaughan** / `legal_property_records` — The Baxter manuscripts; http://www.loc.gov/item/06007664/. Original-document review required.
+- **Henry² Greene** / `legal_property_records` — State of Rhode Island and Providence Plantations at the end of the century : a history; http://www.loc.gov/item/02013122/. Original-document review required.
+- **Henry² Greene** / `legal_property_records` — Maryland; the land of sanctuary.; http://www.loc.gov/item/08000316/. Original-document review required.

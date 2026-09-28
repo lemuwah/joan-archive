@@ -1,4 +1,4 @@
-# Model H Agent — Mixed-heritage English/Narragansett parentage — 2026-09-15
+# Model H Agent — Mixed-heritage English/Narragansett parentage — 2026-09-28
 
 **Status:** OPEN
 **Evidence state:** AI-assisted working report; all leads are `LAWS_FILTERED`. Periodic human review applies.
@@ -18,7 +18,7 @@ Test identity, date, place, status wording, and citation independence separately
 ## 4. Continuing conflict/context layer
 Record parties, witnesses, jurisdiction, legal setting, Indigenous and non-English context, competing Johns, and every unresolved contradiction. Preserve the strongest alternative explanation.
 
-## Leads matching this model's search vocabulary (245)
+## Leads matching this model's search vocabulary (111)
 - **Benjamin² Greene** / `irish_scottish_migration` — Genealogical and family history of southern New York and the Hudson River Valley : a record of the achievements of her people in the making of a commonwealth and the building of a nation; http://www.loc.gov/item/14020396/. Original-document review required.
 - **Benjamin² Greene** / `irish_scottish_migration` — The county families of the United kingdom; http://www.loc.gov/item/unk81054391/. Original-document review required.
 - **Benjamin² Greene** / `irish_scottish_migration` — Genealogical and family history of central New York : a record of the achievements of her people in the making of a commonwealth and the building of a nation; http://www.loc.gov/item/12013659/. Original-document review required.
@@ -119,3 +119,14 @@ Record parties, witnesses, jurisdiction, legal setting, Indigenous and non-Engli
 - **George Havens** / `narragansett_indigenous_context` — Norwich bulletin (Norwich, Conn.), December 18, 1913; http://www.loc.gov/item/sn82014086/1913-12-18/ed-1/. Original-document review required.
 - **George Havens** / `narragansett_indigenous_context` — Norwich bulletin (Norwich, Conn.), March 30, 1921; http://www.loc.gov/item/sn82014086/1921-03-30/ed-1/. Original-document review required.
 - **George Havens** / `narragansett_indigenous_context` — A modern history of New London County, Connecticut;; http://www.loc.gov/item/25014226/. Original-document review required.
+- **Daniel² Greene** / `narragansett_indigenous_context` — The early history of Narragansett; with an appendix of original documents, many of which are now for the first time published.; http://www.loc.gov/item/rc01002950/. Original-document review required.
+- **Daniel² Greene** / `narragansett_indigenous_context` — Norwich bulletin (Norwich, Conn.), July 14, 1914; http://www.loc.gov/item/sn82014086/1914-07-14/ed-1/. Original-document review required.
+- **Daniel² Greene** / `narragansett_indigenous_context` — Norwich bulletin (Norwich, Conn.), March 5, 1910; http://www.loc.gov/item/sn82014086/1910-03-05/ed-1/. Original-document review required.
+- **Daniel² Greene** / `narragansett_indigenous_context` — The life and times of Samuel Gorton;; http://www.loc.gov/item/08010307/. Original-document review required.
+- **Daniel² Greene** / `narragansett_indigenous_context` — State of Rhode Island and Providence Plantations at the end of the century : a history; http://www.loc.gov/item/02013122/. Original-document review required.
+- **Daniel² Greene** / `narragansett_indigenous_context` — A modern history of New London County, Connecticut;; http://www.loc.gov/item/25014226/. Original-document review required.
+- **Daniel² Greene** / `narragansett_indigenous_context` — The Biographical cyclopedia of representative men of Rhode Island.; http://www.loc.gov/item/03018891/. Original-document review required.
+- **Daniel² Greene** / `narragansett_indigenous_context` — History of Bristol County, Massachusetts,; http://www.loc.gov/item/01012138/. Original-document review required.
+- **Daniel² Greene** / `narragansett_indigenous_context` — [Copy 1; Volume 5] The history of the state of Rhode Island and Providence Plantations,; http://www.loc.gov/item/20009789/resource/gdcmassbookdig.historyofstateof08bick. Original-document review required.
+- **Daniel² Greene** / `narragansett_indigenous_context` — History of the city of New Haven to the present time.; http://www.loc.gov/item/01016754/. Original-document review required.
+- **Edward² Greene** / `narragansett_indigenous_context` — The modern world; https://archive.org/details/modernworld00hill. Original-document review required.

@@ -1,0 +1,37 @@
+{
+  "run_date": "2026-09-16",
+  "input": "research_queue/daily_sweep/2026-09-16.jsonl",
+  "records": 253,
+  "unique_catalog_leads": 596,
+  "statuses": {
+    "NO_RESULTS": 172,
+    "FOUND": 75,
+    "ERROR": 6
+  },
+  "roles": [
+    "explorer",
+    "archivist",
+    "synthesizer",
+    "hostile_review",
+    "model_a",
+    "model_b",
+    "model_c",
+    "model_d",
+    "model_e",
+    "model_f",
+    "model_g",
+    "model_h"
+  ],
+  "model_leads": {
+    "A": 282,
+    "B": 132,
+    "C": 207,
+    "D": 179,
+    "E": 191,
+    "F": 65,
+    "G": 4,
+    "H": 265
+  },
+  "status": "LAWS_FILTERED",
+  "note": "Reports generate leads and review logic only, filtered through the Multi Agent Laws. They do not update facts or role READMEs. Periodic human review applies."
+}

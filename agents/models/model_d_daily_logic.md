@@ -1,4 +1,4 @@
-# Model D Agent — Indentured servant — 2026-09-15
+# Model D Agent — Indentured servant — 2026-09-28
 
 **Status:** OPEN
 **Evidence state:** AI-assisted working report; all leads are `LAWS_FILTERED`. Periodic human review applies.
@@ -18,7 +18,7 @@ Test identity, date, place, status wording, and citation independence separately
 ## 4. Continuing conflict/context layer
 Record parties, witnesses, jurisdiction, legal setting, Indigenous and non-English context, competing Johns, and every unresolved contradiction. Preserve the strongest alternative explanation.
 
-## Leads matching this model's search vocabulary (175)
+## Leads matching this model's search vocabulary (118)
 - **Benjamin² Greene** / `irish_scottish_migration` — A genealogical and heraldic dictionary of the landed gentry of Great Britain & Ireland, for 1853: comprising particulars of upwards of 100,000 individuals; http://www.loc.gov/item/18007580/. Original-document review required.
 - **Benjamin² Greene** / `irish_scottish_migration` — Genealogical and family history of southern New York and the Hudson River Valley : a record of the achievements of her people in the making of a commonwealth and the building of a nation; http://www.loc.gov/item/14020396/. Original-document review required.
 - **Benjamin² Greene** / `irish_scottish_migration` — The county families of the United kingdom; http://www.loc.gov/item/unk81054391/. Original-document review required.
@@ -119,3 +119,21 @@ Record parties, witnesses, jurisdiction, legal setting, Indigenous and non-Engli
 - **George Vaughan** / `legal_property_records` — CIA Reading Room cia-rdp89-00244r000701330018-4: LETTER TO HARRY E. FITZWATER FROM HAROLD C. KING; https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701330018-4. Original-document review required.
 - **George Vaughan** / `legal_property_records` — CIA Reading Room cia-rdp89-00244r000701510010-2: LETTER TO HARRY E. FITZWATER FROM HAROLD C. KING; https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701510010-2. Original-document review required.
 - **George Vaughan** / `legal_property_records` — CIA Reading Room cia-rdp88g00186r000800920001-6: LETTER TO HARRY E. FITZWATER FROM HAROLD C. KING; https://archive.org/details/cia-readingroom-document-cia-rdp88g00186r000800920001-6. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — Mr Death: Fred A. Leuchter; https://archive.org/details/MrDeathFredA.Leuchter. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — 1994 - Ernst Zuendel - Another Voice of Freedom xx - Interview with Fred Leuchter (EN, 28m 09s, 320x240); https://archive.org/details/1994-Ernst-Zuendel-Another-Voice-of-Freedom-xx-Interview-with-Fred-Leuchter. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — 1989 - 9th IHR - Fred Leuchter (EN, 10m 20s, 320x240); https://archive.org/details/1989-9th-IHR-Fred-Leuchter. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — LA LEGGENDA DI AUSCHWITZ - Fred Leuchter; https://archive.org/details/FredLeuchterTheLegendOfAuschwitz. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — 1990 - 10th IHR - Fred Leuchter - The Second Leuchter Report (EN, 16m 33s, 320x240); https://archive.org/details/1990-10th-IHR-Fred-Leuchter-The-Second. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — 6 Millions Le Sont Ils Réellement Harwood; https://archive.org/details/6MillionsLeSontIlsReellement. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — Mr. Death: The Rise and Fall of Fred A. Leuchter, Jr. (1999); https://archive.org/details/Mr.Death.The.Rise.and.Fall.of.Fred.A.Leuchter.Jr.DVDRip. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — Leuchter, Fred and Faurisson, Robert and Rudolf, Germar - The Leuchter Reports - Critical Edition (2005); https://archive.org/details/LeuchterFredAndFaurissonRobertAndRudolfGermarTheLeuchterReportsCriticalEditionEN2005234P.. Original-document review required.
+- **Edward² Greene** / `legal_property_records` — Rhode Island land evidences, vol. I, 1648-1696, abstracts.; http://www.loc.gov/item/21018384/. Original-document review required.
+- **George Vaughan** / `legal_property_records` — CIA Reading Room cia-rdp89-00244r000701330015-7: LETTER TO HARRY E. FITZWATER FROM HAROLD C. KING; https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701330015-7. Original-document review required.
+- **George Vaughan** / `legal_property_records` — CIA Reading Room cia-rdp89-00244r000300160025-0: LETTER TO DANIEL C. KING FROM H. M. SHAVER, JR.; https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000300160025-0. Original-document review required.
+- **George Vaughan** / `legal_property_records` — CIA Reading Room cia-rdp85b01152r000600780068-5: LETTER TO LARRY K. MYERS FROM H. M. SHAVER JR.; https://archive.org/details/cia-readingroom-document-cia-rdp85b01152r000600780068-5. Original-document review required.
+- **George Vaughan** / `legal_property_records` — CIA Reading Room cia-rdp89-00244r000701330035-5: LETTER TO LARRY MYERS FROM H. M. SHAVER, JR; https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701330035-5. Original-document review required.
+- **George Vaughan** / `legal_property_records` — CIA Reading Room cia-rdp89-00244r000701350002-9: MEMORANDUM OF AGREEMENT BETWEEN THE CENTRAL INTELLIGENCE AGENCY AND THE VIRGINIA DEPARTMENT OF HIGHWAYS AND TRANSPORTATION; https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701350002-9. Original-document review required.
+- **George Vaughan** / `legal_property_records` — CIA Reading Room cia-rdp89-00244r001002280015-8: LETTER TO (SANITIZED) FROM H. M. SHAVER, JR., STATE; https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r001002280015-8. Original-document review required.
+- **George Vaughan** / `legal_property_records` — CIA Reading Room cia-rdp89-00244r000300160024-1: LETTER TO VERNON R. GINGELL FROM H. M. SHAVER, JR.; https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000300160024-1. Original-document review required.
+- **George Vaughan** / `legal_property_records` — CIA Reading Room cia-rdp89-00244r000701510005-8: LETTER TO HARRY E. FITZWATER FROM HAROLD C. KING; https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701510005-8. Original-document review required.
+- **George Vaughan** / `legal_property_records` — CIA Reading Room cia-rdp89-00244r000701520011-0: LETTER TO HARRY E. FITZWATER FROM HAROLD C. KING; https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701520011-0. Original-document review required.

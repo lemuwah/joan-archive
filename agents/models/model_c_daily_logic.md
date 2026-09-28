@@ -1,4 +1,4 @@
-# Model C Agent — Irish origin — 2026-09-15
+# Model C Agent — Irish origin — 2026-09-28
 
 **Status:** OPEN
 **Evidence state:** AI-assisted working report; all leads are `LAWS_FILTERED`. Periodic human review applies.
@@ -18,7 +18,7 @@ Test identity, date, place, status wording, and citation independence separately
 ## 4. Continuing conflict/context layer
 Record parties, witnesses, jurisdiction, legal setting, Indigenous and non-English context, competing Johns, and every unresolved contradiction. Preserve the strongest alternative explanation.
 
-## Leads matching this model's search vocabulary (218)
+## Leads matching this model's search vocabulary (121)
 - **Benjamin² Greene** / `irish_scottish_migration` — A genealogical and heraldic dictionary of the landed gentry of Great Britain & Ireland, for 1853: comprising particulars of upwards of 100,000 individuals; http://www.loc.gov/item/18007580/. Original-document review required.
 - **Benjamin² Greene** / `irish_scottish_migration` — Genealogical and family history of southern New York and the Hudson River Valley : a record of the achievements of her people in the making of a commonwealth and the building of a nation; http://www.loc.gov/item/14020396/. Original-document review required.
 - **Benjamin² Greene** / `irish_scottish_migration` — The county families of the United kingdom; http://www.loc.gov/item/unk81054391/. Original-document review required.
@@ -119,3 +119,24 @@ Record parties, witnesses, jurisdiction, legal setting, Indigenous and non-Engli
 - **George Havens** / `irish_scottish_migration` — Norwich bulletin (Norwich, Conn.), March 17, 1922; http://www.loc.gov/item/sn82014086/1922-03-17/ed-1/. Original-document review required.
 - **George Havens** / `servant_indentured_status` — New-York tribune (New York [N.Y.]), April 4, 1897; http://www.loc.gov/item/sn83030214/1897-04-04/ed-1/. Original-document review required.
 - **George Havens** / `church_civil_registration` — Lillian Johnson Scrapbook, 1929-1972, Volume 1 of 2; https://archive.org/details/camcclpa_000033. Original-document review required.
+- **George Havens** / `church_civil_registration` — Historical papers on Shelter Island and its Presbyterian church, with genealogical tables ...; http://www.loc.gov/item/99004263/. Original-document review required.
+- **George Havens** / `church_civil_registration` — Walt Whitman Papers in the Charles E. Feinberg Collection: Miscellany, 1834-1918; Printed matter; Marginalia; 1891-1892; http://www.loc.gov/item/mss1863001592/. Original-document review required.
+- **George Havens** / `church_civil_registration` — History of Scituate, Massachusetts, from its first settlement to 1831.; http://www.loc.gov/item/01011611/. Original-document review required.
+- **George Havens** / `church_civil_registration` — Evening star (Washington, D.C.), April 4, 1953; http://www.loc.gov/item/sn83045462/1953-04-04/ed-1/. Original-document review required.
+- **George Havens** / `church_civil_registration` — The citizen (Honesdale, Pa.), June 14, 1912; http://www.loc.gov/item/sn87078082/1912-06-14/ed-1/. Original-document review required.
+- **George Havens** / `church_civil_registration` — [Vol. 2] Records and papers of the New London county historical society ...; http://www.loc.gov/item/07003681/resource/gdcmassbookdig.recordspapersofn03newl. Original-document review required.
+- **George Havens** / `church_civil_registration` — [Vol. 2] Records and papers of the New London county historical society ...; http://www.loc.gov/item/07003681/resource/gdcmassbookdig.recordspapersofn02newl. Original-document review required.
+- **George Havens** / `church_civil_registration` — The daily morning journal and courier (New Haven, Conn.), December 26, 1906; http://www.loc.gov/item/sn84020358/1906-12-26/ed-1/. Original-document review required.
+- **George Havens** / `church_civil_registration` — Norwich bulletin (Norwich, Conn.), April 3, 1915; http://www.loc.gov/item/sn82014086/1915-04-03/ed-1/. Original-document review required.
+- **George Havens** / `church_civil_registration` — Norwich bulletin (Norwich, Conn.), December 11, 1916; http://www.loc.gov/item/sn82014086/1916-12-11/ed-1/. Original-document review required.
+- **George Vaughan** / `irish_scottish_migration` — A memoir explanatory of the chart and survey of the county of London-Derry, Ireland; https://archive.org/details/amemoirexplanat00sampgoog. Original-document review required.
+- **George Vaughan** / `irish_scottish_migration` — A genealogical and heraldic dictionary of the landed gentry of Great Britain & Ireland, for 1853: comprising particulars of upwards of 100,000 individuals; http://www.loc.gov/item/18007580/. Original-document review required.
+- **George Vaughan** / `irish_scottish_migration` — Limerick; its history and antiquities, ecclesiastical, civil, and military, from the earliest ages, with copious ... notes and illustrations ... Comp. from the ancient annals, the most authentic MS. and printed records, recent researches, etc., etc. ...; http://www.loc.gov/item/04002460/. Original-document review required.
+- **George Vaughan** / `irish_scottish_migration` — Derriana, consisting of a history of the siege of Londonderry and defence of Enniskillen in 1688 and 1689 with historical poetry and biographical notes, &c.; http://www.loc.gov/item/48033593/. Original-document review required.
+- **George Vaughan** / `irish_scottish_migration` — Little Falls herald (Little Falls, Morrison County, Minn.), January 21, 1916; http://www.loc.gov/item/sn89064515/1916-01-21/ed-1/. Original-document review required.
+- **George Vaughan** / `irish_scottish_migration` — The new tablet of memory : or, Chronicle of remarkable events; with the dates of inventions and discoveries in the arts and sciences; and biographical notices of the most distinguished persons of every age and nation. Forming a complete epitome of universal history.; http://www.loc.gov/item/47042022/. Original-document review required.
+- **George Vaughan** / `irish_scottish_migration` — The county families of the United kingdom; http://www.loc.gov/item/unk81054391/. Original-document review required.
+- **George Vaughan** / `irish_scottish_migration` — Biographical history of Crawford, Ida and Sac counties, Iowa.; http://www.loc.gov/item/rc01000946/. Original-document review required.
+- **George Vaughan** / `irish_scottish_migration` — Saco Valley settlements and families. Historical, biographical, genealogical, traditional, and legendary ...; http://www.loc.gov/item/01008917/. Original-document review required.
+- **George Vaughan** / `irish_scottish_migration` — The athenaeum; http://www.loc.gov/item/87647096/. Original-document review required.
+- **George Vaughan** / `irish_scottish_migration` — Genealogical and family history of the state of Maine;; http://www.loc.gov/item/09022211/. Original-document review required.
