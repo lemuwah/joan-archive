@@ -16,3 +16,2832 @@ targets:
   - Seven Laws
   disproof_record: Failed registry write invalidates this test.
   status: READY_SHADOW
+- target_id: ST-772237c0302a
+  question: 'Investigate the source lead ''Squawk Box : CNBC : April 30, 2010 6:00am-9:00am
+    EDT'' for John Nawham ("Stonewall John")'
+  reason: 'Generated from the irish_scottish_migration lens. Original search query:
+    "Richard Smith" ("Irish" OR "Ireland" OR "Ulster" OR "Scotland" OR "Scottish"
+    OR "Donegal" OR "servant"). Source lead: https://archive.org/details/CNBC_20100430_100000_Squawk_Box.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - John Nawham ("Stonewall John")
+  jurisdictions: []
+  record_families:
+  - irish_scottish_migration
+  date_range: {}
+  name_variants:
+  - John Nawham ("Stonewall John")
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/CNBC_20100430_100000_Squawk_Box
+  status: READY_SHADOW
+- target_id: ST-e3d9da8eaf79
+  question: Investigate the source lead 'Pegasus 5.0' for Anashuecot (Awashouse) —
+    Chief Sachem of Quidnessett
+  reason: 'Generated from the servant_indentured_status lens. Original search query:
+    "Nucom" ("servant" OR "indentured" OR "bond servant" OR "redemptioner" OR "apprentice"
+    OR "master"). Source lead: https://archive.org/details/pegasus_5.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Anashuecot (Awashouse) — Chief Sachem of Quidnessett
+  jurisdictions: []
+  record_families:
+  - servant_indentured_status
+  date_range: {}
+  name_variants:
+  - Anashuecot (Awashouse) — Chief Sachem of Quidnessett
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/pegasus_5
+  status: READY_SHADOW
+- target_id: ST-cd0f0463506c
+  question: 'Investigate the source lead ''Science Notebook #075 Super Telescope in
+    Chile; New Communications Satellite; Anatomy of a Storm; The Reading Machine;
+    An Ancient Ozone Story'' for Benjamin² Greene'
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "George Havens" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/science-notebook_1976-075.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Benjamin² Greene
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - Benjamin² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/science-notebook_1976-075
+  status: READY_SHADOW
+- target_id: ST-b0f634a159ba
+  question: Investigate the source lead 'Christian Talk That Rocks with Richie L.
+    Ep. 7/1/2022' for Daniel² Greene
+  reason: 'Generated from the irish_scottish_migration lens. Original search query:
+    "Daniel Green" ("Irish" OR "Ireland" OR "Ulster" OR "Scotland" OR "Scottish" OR
+    "Donegal" OR "servant"). Source lead: https://archive.org/details/Ad_Durar_Al_Bahiyyah-christian_talk_that_rocks_with_richie_l_ep_7_1_2022.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Daniel² Greene
+  jurisdictions: []
+  record_families:
+  - irish_scottish_migration
+  date_range: {}
+  name_variants:
+  - Daniel² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/Ad_Durar_Al_Bahiyyah-christian_talk_that_rocks_with_richie_l_ep_7_1_2022
+  status: READY_SHADOW
+- target_id: ST-d1a0614c6f47
+  question: Investigate the source lead 'A memoir explanatory of the chart and survey
+    of the county of London-Derry, Ireland' for Edward² Greene
+  reason: 'Generated from the irish_scottish_migration lens. Original search query:
+    "George Vaughan" ("Irish" OR "Ireland" OR "Ulster" OR "Scotland" OR "Scottish"
+    OR "Donegal" OR "servant"). Source lead: https://archive.org/details/amemoirexplanat00sampgoog.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Edward² Greene
+  jurisdictions: []
+  record_families:
+  - irish_scottish_migration
+  date_range: {}
+  name_variants:
+  - Edward² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/amemoirexplanat00sampgoog
+  status: READY_SHADOW
+- target_id: ST-5b1459bfada7
+  question: Investigate the source lead 'David Greenman notes on Materia Medica lectures
+    delivered by Adam Kuhn at the University of Pennsylvania Medical School' for Edward
+    Greenman
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "David Greenman" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/mscodex1866.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Edward Greenman
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - Edward Greenman
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/mscodex1866
+  status: READY_SHADOW
+- target_id: ST-ec4157ce7b7e
+  question: Investigate the source lead 'Maurice Leitch Swan Song 4 The Nightingale'
+    for Elizabeth (wife of James² Greene)
+  reason: 'Generated from the irish_scottish_migration lens. Original search query:
+    "James Greene" ("Irish" OR "Ireland" OR "Ulster" OR "Scotland" OR "Scottish" OR
+    "Donegal" OR "servant"). Source lead: https://archive.org/details/maurice-leitch-swan-song-for-the-nightingale.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Elizabeth (wife of James² Greene)
+  jurisdictions: []
+  record_families:
+  - irish_scottish_migration
+  date_range: {}
+  name_variants:
+  - Elizabeth (wife of James² Greene)
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/maurice-leitch-swan-song-for-the-nightingale
+  status: READY_SHADOW
+- target_id: ST-b59da710dcfb
+  question: Investigate the source lead 'Handel's Messiah - The Walker Lecture Series
+    and Concord Community Chorus - Part 1' for George Havens
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Benjamin Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR
+    "mark" OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/cocnh-Handel_s_Messiah_-_The_Walker_Lecture_Series_and_Concord_Community_Chorus_-_Part_1.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - George Havens
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - George Havens
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/cocnh-Handel_s_Messiah_-_The_Walker_Lecture_Series_and_Concord_Community_Chorus_-_Part_1
+  status: READY_SHADOW
+- target_id: ST-b7e8885a0fdc
+  question: Investigate the source lead 'A child's history of the world' for George
+    Vaughan
+  reason: 'Generated from the irish_scottish_migration lens. Original search query:
+    "Edward Greene" ("Irish" OR "Ireland" OR "Ulster" OR "Scotland" OR "Scottish"
+    OR "Donegal" OR "servant"). Source lead: https://archive.org/details/childshistoryofw00hill.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - George Vaughan
+  jurisdictions: []
+  record_families:
+  - irish_scottish_migration
+  date_range: {}
+  name_variants:
+  - George Vaughan
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/childshistoryofw00hill
+  status: READY_SHADOW
+- target_id: ST-26e9d4636fb3
+  question: Investigate the source lead 'Nineteenth Century America Furniture and
+    Other Decorative Arts' for Henry² Greene
+  reason: 'Generated from the servant_indentured_status lens. Original search query:
+    "Henry² Greene" ("servant" OR "indentured" OR "bond servant" OR "redemptioner"
+    OR "apprentice" OR "master"). Source lead: https://archive.org/details/metmuseum-Nineteenth_Century_America_Furniture_and_Other_Decorative_Arts.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Henry² Greene
+  jurisdictions: []
+  record_families:
+  - servant_indentured_status
+  date_range: {}
+  name_variants:
+  - Henry² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/metmuseum-Nineteenth_Century_America_Furniture_and_Other_Decorative_Arts
+  status: READY_SHADOW
+- target_id: ST-05b957ea849e
+  question: Investigate the source lead 'Reminiscences about Abraham Lincoln' for
+    Henry Tibbitts (H. Tibbits)
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "H Tibbits" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/reminiscencesathomstilinc.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Henry Tibbitts (H. Tibbits)
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - Henry Tibbitts (H. Tibbits)
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/reminiscencesathomstilinc
+  status: READY_SHADOW
+- target_id: ST-c73ca905038b
+  question: Investigate the source lead 'Maurice Leitch Swan Song 4 The Nightingale'
+    for James² Greene
+  reason: 'Generated from the irish_scottish_migration lens. Original search query:
+    "James² Greene" ("Irish" OR "Ireland" OR "Ulster" OR "Scotland" OR "Scottish"
+    OR "Donegal" OR "servant"). Source lead: https://archive.org/details/maurice-leitch-swan-song-for-the-nightingale.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - James² Greene
+  jurisdictions: []
+  record_families:
+  - irish_scottish_migration
+  date_range: {}
+  name_variants:
+  - James² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/maurice-leitch-swan-song-for-the-nightingale
+  status: READY_SHADOW
+- target_id: ST-e22ebab56717
+  question: 'Investigate the source lead ''The Great Occasion: Noah’s Legacy and God’s
+    Covenant (Genesis 9:18-29)'' for John Greene of Newport'
+  reason: 'Generated from the irish_scottish_migration lens. Original search query:
+    "husbandman" ("Irish" OR "Ireland" OR "Ulster" OR "Scotland" OR "Scottish" OR
+    "Donegal" OR "servant"). Source lead: https://archive.org/details/lifepoint-service-09-07-25-Sunday-17.52.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - John Greene of Newport
+  jurisdictions: []
+  record_families:
+  - irish_scottish_migration
+  date_range: {}
+  name_variants:
+  - John Greene of Newport
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/lifepoint-service-09-07-25-Sunday-17.52
+  status: READY_SHADOW
+- target_id: ST-a88d40c13e8a
+  question: 'Investigate the source lead ''ERIC ED310898: Cherokees.'' for John Greene
+    of Quidnessett'
+  reason: 'Generated from the servant_indentured_status lens. Original search query:
+    "Joan Greene" ("servant" OR "indentured" OR "bond servant" OR "redemptioner" OR
+    "apprentice" OR "master"). Source lead: https://archive.org/details/ERIC_ED310898.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - John Greene of Quidnessett
+  jurisdictions: []
+  record_families:
+  - servant_indentured_status
+  date_range: {}
+  name_variants:
+  - John Greene of Quidnessett
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/ERIC_ED310898
+  status: READY_SHADOW
+- target_id: ST-d8f788a31f9c
+  question: Investigate the source lead 'Newport City Council Meeting Summary - June
+    10, 2026' for John Greene of Warwick (Major John Greene / Deputy Governor)
+  reason: 'Generated from the servant_indentured_status lens. Original search query:
+    "Miantonomi" ("servant" OR "indentured" OR "bond servant" OR "redemptioner" OR
+    "apprentice" OR "master"). Source lead: https://archive.org/details/openpublica-newport-rhode_island-1537aac3-e02b-4c61-af47-d2b727b01f2a.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - John Greene of Warwick (Major John Greene / Deputy Governor)
+  jurisdictions: []
+  record_families:
+  - servant_indentured_status
+  date_range: {}
+  name_variants:
+  - John Greene of Warwick (Major John Greene / Deputy Governor)
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/openpublica-newport-rhode_island-1537aac3-e02b-4c61-af47-d2b727b01f2a
+  status: READY_SHADOW
+- target_id: ST-7e82736258a5
+  question: 'Investigate the source lead ''The Life Of Philip Thomas Howard, O.P.
+    : Cardinal of Norfolk, Grand Almoner to Catherine of Braganza, Queen-consort of
+    King Charles II., and restorer of the English province of Friar-Preachers or Dominicans,
+    compiled from original manuscripts, with a sketch of the rise, missions, and influence
+    of the Dominican order, and of its early history in England'' for Joseph Clark
+    & Francis Brinley'
+  reason: 'Generated from the irish_scottish_migration lens. Original search query:
+    "John Greene" ("Irish" OR "Ireland" OR "Ulster" OR "Scotland" OR "Scottish" OR
+    "Donegal" OR "servant"). Source lead: https://archive.org/details/TheLifeOfPhilipThomasHoward.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Joseph Clark & Francis Brinley
+  jurisdictions: []
+  record_families:
+  - irish_scottish_migration
+  date_range: {}
+  name_variants:
+  - Joseph Clark & Francis Brinley
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/TheLifeOfPhilipThomasHoward
+  status: READY_SHADOW
+- target_id: ST-0b4cf7dcede8
+  question: Investigate the source lead 'Echo Chamber - August 27, 2014' for Sarah²
+    Greene (alias Flounders)
+  reason: 'Generated from the servant_indentured_status lens. Original search query:
+    "Walter House" ("servant" OR "indentured" OR "bond servant" OR "redemptioner"
+    OR "apprentice" OR "master"). Source lead: https://archive.org/details/EchoChamber-August272014.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Sarah² Greene (alias Flounders)
+  jurisdictions: []
+  record_families:
+  - servant_indentured_status
+  date_range: {}
+  name_variants:
+  - Sarah² Greene (alias Flounders)
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/EchoChamber-August272014
+  status: READY_SHADOW
+- target_id: ST-a50e8282e99a
+  question: Investigate the source lead 'Brewtal Battle Beer Mail Episode 16' for
+    John Nawham ("Stonewall John")
+  reason: 'Generated from the irish_scottish_migration lens. Original search query:
+    "Richard Smith" ("Irish" OR "Ireland" OR "Ulster" OR "Scotland" OR "Scottish"
+    OR "Donegal" OR "servant"). Source lead: https://archive.org/details/brewtal-battle-beer-mail-episode-16.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - John Nawham ("Stonewall John")
+  jurisdictions: []
+  record_families:
+  - irish_scottish_migration
+  date_range: {}
+  name_variants:
+  - John Nawham ("Stonewall John")
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/brewtal-battle-beer-mail-episode-16
+  status: READY_SHADOW
+- target_id: ST-6e3832a24bce
+  question: 'Investigate the source lead ''CIA Reading Room cia-rdp80t00246a030100320001-1:
+    ROCKET LAUNCHING MOUNT "2P6" AND LIQUID FUEL ROCKET "3R7" (KORSHUN)'' for Anashuecot
+    (Awashouse) — Chief Sachem of Quidnessett'
+  reason: 'Generated from the servant_indentured_status lens. Original search query:
+    "Nucom" ("servant" OR "indentured" OR "bond servant" OR "redemptioner" OR "apprentice"
+    OR "master"). Source lead: https://archive.org/details/cia-readingroom-document-cia-rdp80t00246a030100320001-1.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Anashuecot (Awashouse) — Chief Sachem of Quidnessett
+  jurisdictions: []
+  record_families:
+  - servant_indentured_status
+  date_range: {}
+  name_variants:
+  - Anashuecot (Awashouse) — Chief Sachem of Quidnessett
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp80t00246a030100320001-1
+  status: READY_SHADOW
+- target_id: ST-941b99490c73
+  question: Investigate the source lead 'Lillian Johnson Scrapbook, 1929-1972, Volume
+    1 of 2' for Benjamin² Greene
+  reason: 'Generated from the maritime_trade_network lens. Original search query:
+    "George Havens" ("ship" OR "vessel" OR "seaman" OR "merchant" OR "Newport" OR
+    "Boston" OR "London"). Source lead: https://archive.org/details/camcclpa_000033.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Benjamin² Greene
+  jurisdictions: []
+  record_families:
+  - maritime_trade_network
+  date_range: {}
+  name_variants:
+  - Benjamin² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/camcclpa_000033
+  status: READY_SHADOW
+- target_id: ST-c96f9a0592c5
+  question: Investigate the source lead 'Christian Talk That Rocks with Richie L.
+    Ep. 7/1/2022' for Daniel² Greene
+  reason: 'Generated from the servant_indentured_status lens. Original search query:
+    "Daniel Green" ("servant" OR "indentured" OR "bond servant" OR "redemptioner"
+    OR "apprentice" OR "master"). Source lead: https://archive.org/details/Ad_Durar_Al_Bahiyyah-christian_talk_that_rocks_with_richie_l_ep_7_1_2022.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Daniel² Greene
+  jurisdictions: []
+  record_families:
+  - servant_indentured_status
+  date_range: {}
+  name_variants:
+  - Daniel² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/Ad_Durar_Al_Bahiyyah-christian_talk_that_rocks_with_richie_l_ep_7_1_2022
+  status: READY_SHADOW
+- target_id: ST-78af8f3ab45e
+  question: 'Investigate the source lead ''CIA Reading Room cia-rdp89-00244r001403260014-6:
+    LETTER TO JAMES H. MCDONALD FROM D.E. KEITH'' for Edward² Greene'
+  reason: 'Generated from the servant_indentured_status lens. Original search query:
+    "George Vaughan" ("servant" OR "indentured" OR "bond servant" OR "redemptioner"
+    OR "apprentice" OR "master"). Source lead: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r001403260014-6.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Edward² Greene
+  jurisdictions: []
+  record_families:
+  - servant_indentured_status
+  date_range: {}
+  name_variants:
+  - Edward² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r001403260014-6
+  status: READY_SHADOW
+- target_id: ST-816c07e06e90
+  question: Investigate the source lead 'Jane's Merchant Ships' for Edward Greenman
+  reason: 'Generated from the maritime_trade_network lens. Original search query:
+    "David Greenman" ("ship" OR "vessel" OR "seaman" OR "merchant" OR "Newport" OR
+    "Boston" OR "London"). Source lead: https://archive.org/details/janesmerchantshi0000davi.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Edward Greenman
+  jurisdictions: []
+  record_families:
+  - maritime_trade_network
+  date_range: {}
+  name_variants:
+  - Edward Greenman
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/janesmerchantshi0000davi
+  status: READY_SHADOW
+- target_id: ST-c994121e9e7a
+  question: Investigate the source lead 'Stewart Parker - Pratt's Fall' for Elizabeth
+    (wife of James² Greene)
+  reason: 'Generated from the irish_scottish_migration lens. Original search query:
+    "James Greene" ("Irish" OR "Ireland" OR "Ulster" OR "Scotland" OR "Scottish" OR
+    "Donegal" OR "servant"). Source lead: https://archive.org/details/stewart-parker-pratts-fall.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Elizabeth (wife of James² Greene)
+  jurisdictions: []
+  record_families:
+  - irish_scottish_migration
+  date_range: {}
+  name_variants:
+  - Elizabeth (wife of James² Greene)
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/stewart-parker-pratts-fall
+  status: READY_SHADOW
+- target_id: ST-5af0f0e03464
+  question: Investigate the source lead 'Handel's Messiah - The Walker Lecture Series
+    and Concord Community Chorus - Part 2' for George Havens
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Benjamin Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR
+    "mark" OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/cocnh-Handel_s_Messiah_-_The_Walker_Lecture_Series_and_Concord_Community_Chorus_-_Part_2.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - George Havens
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - George Havens
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/cocnh-Handel_s_Messiah_-_The_Walker_Lecture_Series_and_Concord_Community_Chorus_-_Part_2
+  status: READY_SHADOW
+- target_id: ST-9773b440e25b
+  question: Investigate the source lead 'A child's history of the world' for George
+    Vaughan
+  reason: 'Generated from the servant_indentured_status lens. Original search query:
+    "Edward Greene" ("servant" OR "indentured" OR "bond servant" OR "redemptioner"
+    OR "apprentice" OR "master"). Source lead: https://archive.org/details/childshistoryofw00hill.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - George Vaughan
+  jurisdictions: []
+  record_families:
+  - servant_indentured_status
+  date_range: {}
+  name_variants:
+  - George Vaughan
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/childshistoryofw00hill
+  status: READY_SHADOW
+- target_id: ST-ee78a8283e51
+  question: 'Investigate the source lead ''William Webb, September 19, 1746-September
+    23, 1832 : his war service from Long Island and Connecticut'' for Henry² Greene'
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Henry² Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/williamwebbsepte00byugree.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Henry² Greene
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - Henry² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/williamwebbsepte00byugree
+  status: READY_SHADOW
+- target_id: ST-4e7bd343bcf2
+  question: Investigate the source lead 'FYI 1107' for Henry Tibbitts (H. Tibbits)
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Sarah Stanton" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/ctnaa-FYI_1107.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Henry Tibbitts (H. Tibbits)
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - Henry Tibbitts (H. Tibbits)
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/ctnaa-FYI_1107
+  status: READY_SHADOW
+- target_id: ST-75660c4b5903
+  question: Investigate the source lead 'Stewart Parker - Pratt's Fall' for James²
+    Greene
+  reason: 'Generated from the irish_scottish_migration lens. Original search query:
+    "James² Greene" ("Irish" OR "Ireland" OR "Ulster" OR "Scotland" OR "Scottish"
+    OR "Donegal" OR "servant"). Source lead: https://archive.org/details/stewart-parker-pratts-fall.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - James² Greene
+  jurisdictions: []
+  record_families:
+  - irish_scottish_migration
+  date_range: {}
+  name_variants:
+  - James² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/stewart-parker-pratts-fall
+  status: READY_SHADOW
+- target_id: ST-a2e3d514dcd0
+  question: Investigate the source lead 'The words of the Lord Jesus' for John Greene
+    of Newport
+  reason: 'Generated from the irish_scottish_migration lens. Original search query:
+    "husbandman" ("Irish" OR "Ireland" OR "Ulster" OR "Scotland" OR "Scottish" OR
+    "Donegal" OR "servant"). Source lead: https://archive.org/details/wordsoflordjesus0000stie.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - John Greene of Newport
+  jurisdictions: []
+  record_families:
+  - irish_scottish_migration
+  date_range: {}
+  name_variants:
+  - John Greene of Newport
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/wordsoflordjesus0000stie
+  status: READY_SHADOW
+- target_id: ST-d3a032233942
+  question: 'Investigate the source lead ''ERIC ED310898: Cherokees.'' for John Greene
+    of Quidnessett'
+  reason: 'Generated from the enslavement_captivity_status lens. Original search query:
+    "Joan Greene" ("enslaved" OR "slave" OR "captive" OR "Negro" OR "Indian" OR "mulatto"
+    OR "redemption"). Source lead: https://archive.org/details/ERIC_ED310898.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - John Greene of Quidnessett
+  jurisdictions: []
+  record_families:
+  - enslavement_captivity_status
+  date_range: {}
+  name_variants:
+  - John Greene of Quidnessett
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/ERIC_ED310898
+  status: READY_SHADOW
+- target_id: ST-1eeb69a03dfd
+  question: 'Investigate the source lead ''Newport City Council Meeting: Capital Improvement
+    Plan and Budget Priorities - February 11, 2026'' for John Greene of Warwick (Major
+    John Greene / Deputy Governor)'
+  reason: 'Generated from the servant_indentured_status lens. Original search query:
+    "Miantonomi" ("servant" OR "indentured" OR "bond servant" OR "redemptioner" OR
+    "apprentice" OR "master"). Source lead: https://archive.org/details/openpublica-newport-rhode_island-e71aa661-81f1-41c0-a702-1fdbaddcf420.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - John Greene of Warwick (Major John Greene / Deputy Governor)
+  jurisdictions: []
+  record_families:
+  - servant_indentured_status
+  date_range: {}
+  name_variants:
+  - John Greene of Warwick (Major John Greene / Deputy Governor)
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/openpublica-newport-rhode_island-e71aa661-81f1-41c0-a702-1fdbaddcf420
+  status: READY_SHADOW
+- target_id: ST-ae30809e951a
+  question: Investigate the source lead 'An oifig chum ceart fhrithealadh an comuin
+    naomh, do reir gnathachadh eaglais na h'alba. 1797' for Joseph Clark & Francis
+    Brinley
+  reason: 'Generated from the irish_scottish_migration lens. Original search query:
+    "John Greene" ("Irish" OR "Ireland" OR "Ulster" OR "Scotland" OR "Scottish" OR
+    "Donegal" OR "servant"). Source lead: https://archive.org/details/bim_eighteenth-century_an-oifig-chum-ceart-fhri_episcopal-church-in-scot_1797.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Joseph Clark & Francis Brinley
+  jurisdictions: []
+  record_families:
+  - irish_scottish_migration
+  date_range: {}
+  name_variants:
+  - Joseph Clark & Francis Brinley
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/bim_eighteenth-century_an-oifig-chum-ceart-fhri_episcopal-church-in-scot_1797
+  status: READY_SHADOW
+- target_id: ST-f96616f8a990
+  question: Investigate the source lead 'פרק 107 - דוד בוטביניק - אימון גופני ושיתוק
+    מוחין' for Sarah² Greene (alias Flounders)
+  reason: 'Generated from the servant_indentured_status lens. Original search query:
+    "Walter House" ("servant" OR "indentured" OR "bond servant" OR "redemptioner"
+    OR "apprentice" OR "master"). Source lead: https://archive.org/details/UUSM_Connections-b7164bed_6059_46a8_8375_c63130d4fb51.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Sarah² Greene (alias Flounders)
+  jurisdictions: []
+  record_families:
+  - servant_indentured_status
+  date_range: {}
+  name_variants:
+  - Sarah² Greene (alias Flounders)
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/UUSM_Connections-b7164bed_6059_46a8_8375_c63130d4fb51
+  status: READY_SHADOW
+- target_id: ST-02e17db8065d
+  question: Investigate the source lead 'Brewtal Battle Episode 202' for John Nawham
+    ("Stonewall John")
+  reason: 'Generated from the irish_scottish_migration lens. Original search query:
+    "Richard Smith" ("Irish" OR "Ireland" OR "Ulster" OR "Scotland" OR "Scottish"
+    OR "Donegal" OR "servant"). Source lead: https://archive.org/details/BrewtalBattleEpisode202.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - John Nawham ("Stonewall John")
+  jurisdictions: []
+  record_families:
+  - irish_scottish_migration
+  date_range: {}
+  name_variants:
+  - John Nawham ("Stonewall John")
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/BrewtalBattleEpisode202
+  status: READY_SHADOW
+- target_id: ST-8a4036854a68
+  question: Investigate the source lead 'Pegasus 5.0' for Anashuecot (Awashouse) —
+    Chief Sachem of Quidnessett
+  reason: 'Generated from the enslavement_captivity_status lens. Original search query:
+    "Nucom" ("enslaved" OR "slave" OR "captive" OR "Negro" OR "Indian" OR "mulatto"
+    OR "redemption"). Source lead: https://archive.org/details/pegasus_5.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Anashuecot (Awashouse) — Chief Sachem of Quidnessett
+  jurisdictions: []
+  record_families:
+  - enslavement_captivity_status
+  date_range: {}
+  name_variants:
+  - Anashuecot (Awashouse) — Chief Sachem of Quidnessett
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/pegasus_5
+  status: READY_SHADOW
+- target_id: ST-d934f27b19a9
+  question: Investigate the source lead 'Lillian Johnson Scrapbook, 1929-1972, Volume
+    1 of 2' for Benjamin² Greene
+  reason: 'Generated from the church_civil_registration lens. Original search query:
+    "George Havens" ("church" OR "baptism" OR "marriage" OR "burial" OR "parish" OR
+    "Quaker" OR "meeting"). Source lead: https://archive.org/details/camcclpa_000033.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Benjamin² Greene
+  jurisdictions: []
+  record_families:
+  - church_civil_registration
+  date_range: {}
+  name_variants:
+  - Benjamin² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/camcclpa_000033
+  status: READY_SHADOW
+- target_id: ST-7c5e626ea651
+  question: Investigate the source lead 'Christian Talk That Rocks with Richie L.
+    Ep. 7/1/2022' for Daniel² Greene
+  reason: 'Generated from the enslavement_captivity_status lens. Original search query:
+    "Daniel Green" ("enslaved" OR "slave" OR "captive" OR "Negro" OR "Indian" OR "mulatto"
+    OR "redemption"). Source lead: https://archive.org/details/Ad_Durar_Al_Bahiyyah-christian_talk_that_rocks_with_richie_l_ep_7_1_2022.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Daniel² Greene
+  jurisdictions: []
+  record_families:
+  - enslavement_captivity_status
+  date_range: {}
+  name_variants:
+  - Daniel² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/Ad_Durar_Al_Bahiyyah-christian_talk_that_rocks_with_richie_l_ep_7_1_2022
+  status: READY_SHADOW
+- target_id: ST-58af03ac3301
+  question: 'Investigate the source lead ''CIA Reading Room cia-rdp89-00244r000701330003-0:
+    LETTER TO JOHN P. FOWLER, II FROM H. M. SHAVER, JR..'' for Edward² Greene'
+  reason: 'Generated from the legal_property_records lens. Original search query:
+    "George Vaughan" ("deed" OR "land evidence" OR "probate" OR "will" OR "court"
+    OR "testimony" OR "dower"). Source lead: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701330003-0.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Edward² Greene
+  jurisdictions: []
+  record_families:
+  - legal_property_records
+  date_range: {}
+  name_variants:
+  - Edward² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701330003-0
+  status: READY_SHADOW
+- target_id: ST-9a562702cd9f
+  question: Investigate the source lead 'Reminiscences about Abraham Lincoln' for
+    Edward Greenman
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "H. Tibbits" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/reminiscencesathomstilinc.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Edward Greenman
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - Edward Greenman
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/reminiscencesathomstilinc
+  status: READY_SHADOW
+- target_id: ST-10c9176ff073
+  question: Investigate the source lead 'TMI Focus - Table of Contents' for Elizabeth
+    (wife of James² Greene)
+  reason: 'Generated from the servant_indentured_status lens. Original search query:
+    "James Greene" ("servant" OR "indentured" OR "bond servant" OR "redemptioner"
+    OR "apprentice" OR "master"). Source lead: https://archive.org/details/tmi-focus-toc.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Elizabeth (wife of James² Greene)
+  jurisdictions: []
+  record_families:
+  - servant_indentured_status
+  date_range: {}
+  name_variants:
+  - Elizabeth (wife of James² Greene)
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/tmi-focus-toc
+  status: READY_SHADOW
+- target_id: ST-97c0f8ab8880
+  question: Investigate the source lead 'Brownson's quarterly review' for George Havens
+  reason: 'Generated from the maritime_trade_network lens. Original search query:
+    "Benjamin Greene" ("ship" OR "vessel" OR "seaman" OR "merchant" OR "Newport" OR
+    "Boston" OR "London"). Source lead: https://archive.org/details/brownsonsquarte00greegoog.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - George Havens
+  jurisdictions: []
+  record_families:
+  - maritime_trade_network
+  date_range: {}
+  name_variants:
+  - George Havens
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/brownsonsquarte00greegoog
+  status: READY_SHADOW
+- target_id: ST-1ef78b7309e3
+  question: Investigate the source lead 'The life and works of Edward Greene Malbone,
+    1777-1807' for George Vaughan
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Edward Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/edwar00tolm.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - George Vaughan
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - George Vaughan
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/edwar00tolm
+  status: READY_SHADOW
+- target_id: ST-99982ce6d3ae
+  question: Investigate the source lead 'Critical survey of long fiction. English
+    language series' for Henry² Greene
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Henry² Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/criticalsurveyof0002unse_i0r9.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Henry² Greene
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - Henry² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/criticalsurveyof0002unse_i0r9
+  status: READY_SHADOW
+- target_id: ST-60ebe76df9ed
+  question: 'Investigate the source lead ''A Celebration of Young Poets: Summer 02004''
+    for Henry Tibbitts (H. Tibbits)'
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Sarah Stanton" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/a-celebration-of-young-poets-summer-02004.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Henry Tibbitts (H. Tibbits)
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - Henry Tibbitts (H. Tibbits)
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/a-celebration-of-young-poets-summer-02004
+  status: READY_SHADOW
+- target_id: ST-7dcc34d8db3c
+  question: Investigate the source lead 'TMI Focus - Table of Contents' for James²
+    Greene
+  reason: 'Generated from the servant_indentured_status lens. Original search query:
+    "James² Greene" ("servant" OR "indentured" OR "bond servant" OR "redemptioner"
+    OR "apprentice" OR "master"). Source lead: https://archive.org/details/tmi-focus-toc.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - James² Greene
+  jurisdictions: []
+  record_families:
+  - servant_indentured_status
+  date_range: {}
+  name_variants:
+  - James² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/tmi-focus-toc
+  status: READY_SHADOW
+- target_id: ST-12cfe0d55374
+  question: 'Investigate the source lead ''The practical husbandman: being a collection
+    of miscellaneous papers on husbandry, etc'' for John Greene of Newport'
+  reason: 'Generated from the irish_scottish_migration lens. Original search query:
+    "husbandman" ("Irish" OR "Ireland" OR "Ulster" OR "Scotland" OR "Scottish" OR
+    "Donegal" OR "servant"). Source lead: https://archive.org/details/b3051969x.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - John Greene of Newport
+  jurisdictions: []
+  record_families:
+  - irish_scottish_migration
+  date_range: {}
+  name_variants:
+  - John Greene of Newport
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/b3051969x
+  status: READY_SHADOW
+- target_id: ST-08dd6a6c032c
+  question: Investigate the source lead 'The mystery of the bog forest' for John Greene
+    of Quidnessett
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Joan Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/mysteryofbogfore00miln.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - John Greene of Quidnessett
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - John Greene of Quidnessett
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/mysteryofbogfore00miln
+  status: READY_SHADOW
+- target_id: ST-954fdcd65ab0
+  question: Investigate the source lead '[Marcella (Bark) of New Bedford, Mass., mastered
+    by Pardon C. Winslow and then John Rounds, keeper John Rounds, on voyage 12 June
+    1850 - 6 December 1852],' for John Greene of Warwick (Major John Greene / Deputy
+    Governor)
+  reason: 'Generated from the enslavement_captivity_status lens. Original search query:
+    "Miantonomi" ("enslaved" OR "slave" OR "captive" OR "Negro" OR "Indian" OR "mulatto"
+    OR "redemption"). Source lead: https://archive.org/details/marcellabarkofne00marc_1.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - John Greene of Warwick (Major John Greene / Deputy Governor)
+  jurisdictions: []
+  record_families:
+  - enslavement_captivity_status
+  date_range: {}
+  name_variants:
+  - John Greene of Warwick (Major John Greene / Deputy Governor)
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/marcellabarkofne00marc_1
+  status: READY_SHADOW
+- target_id: ST-e6b0afe72f28
+  question: 'Investigate the source lead ''The Life Of Philip Thomas Howard, O.P.
+    : Cardinal of Norfolk, Grand Almoner to Catherine of Braganza, Queen-consort of
+    King Charles II., and restorer of the English province of Friar-Preachers or Dominicans,
+    compiled from original manuscripts, with a sketch of the rise, missions, and influence
+    of the Dominican order, and of its early history in England'' for Joseph Clark
+    & Francis Brinley'
+  reason: 'Generated from the servant_indentured_status lens. Original search query:
+    "John Greene" ("servant" OR "indentured" OR "bond servant" OR "redemptioner" OR
+    "apprentice" OR "master"). Source lead: https://archive.org/details/TheLifeOfPhilipThomasHoward.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Joseph Clark & Francis Brinley
+  jurisdictions: []
+  record_families:
+  - servant_indentured_status
+  date_range: {}
+  name_variants:
+  - Joseph Clark & Francis Brinley
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/TheLifeOfPhilipThomasHoward
+  status: READY_SHADOW
+- target_id: ST-518b475c0c80
+  question: 'Investigate the source lead ''CIA Reading Room cia-rdp80r01731r000100030048-6:
+    LETTER TO FRANCIS E. WALTER FROM ALLEN W. DULLES'' for Sarah² Greene (alias Flounders)'
+  reason: 'Generated from the legal_property_records lens. Original search query:
+    "Walter House" ("deed" OR "land evidence" OR "probate" OR "will" OR "court" OR
+    "testimony" OR "dower"). Source lead: https://archive.org/details/cia-readingroom-document-cia-rdp80r01731r000100030048-6.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Sarah² Greene (alias Flounders)
+  jurisdictions: []
+  record_families:
+  - legal_property_records
+  date_range: {}
+  name_variants:
+  - Sarah² Greene (alias Flounders)
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp80r01731r000100030048-6
+  status: READY_SHADOW
+- target_id: ST-51dfe876d18c
+  question: 'Investigate the source lead ''The discovery of the Jesuits'' College
+    at Clerkenwell in March 1627-8: and a letter found in their house, (as asserted,)
+    directed to the Father Rector at Bruxelles'' for John Nawham ("Stonewall John")'
+  reason: 'Generated from the irish_scottish_migration lens. Original search query:
+    "Richard Smith" ("Irish" OR "Ireland" OR "Ulster" OR "Scotland" OR "Scottish"
+    OR "Donegal" OR "servant"). Source lead: https://archive.org/details/discoveryofjesui00nichrich.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - John Nawham ("Stonewall John")
+  jurisdictions: []
+  record_families:
+  - irish_scottish_migration
+  date_range: {}
+  name_variants:
+  - John Nawham ("Stonewall John")
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/discoveryofjesui00nichrich
+  status: READY_SHADOW
+- target_id: ST-4c830fa0deb3
+  question: Investigate the source lead 'Pegasus 5.0' for Anashuecot (Awashouse) —
+    Chief Sachem of Quidnessett
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Nucom" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark" OR
+    "interpreter" OR "Indian"). Source lead: https://archive.org/details/pegasus_5.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Anashuecot (Awashouse) — Chief Sachem of Quidnessett
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - Anashuecot (Awashouse) — Chief Sachem of Quidnessett
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/pegasus_5
+  status: READY_SHADOW
+- target_id: ST-2ae97ba37f0c
+  question: 'Investigate the source lead ''Science Notebook #075 Super Telescope in
+    Chile; New Communications Satellite; Anatomy of a Storm; The Reading Machine;
+    An Ancient Ozone Story'' for Benjamin² Greene'
+  reason: 'Generated from the archival_access_gaps lens. Original search query: "George
+    Havens" ("finding aid" OR "manuscript" OR "land evidence" OR "court records" OR
+    "probate" OR "town records" OR "unindexed" OR "microfilm"). Source lead: https://archive.org/details/science-notebook_1976-075.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Benjamin² Greene
+  jurisdictions: []
+  record_families:
+  - archival_access_gaps
+  date_range: {}
+  name_variants:
+  - Benjamin² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/science-notebook_1976-075
+  status: READY_SHADOW
+- target_id: ST-58cfed0e9697
+  question: Investigate the source lead 'Every Teardrop Is a Waterfall' for Daniel²
+    Greene
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Daniel Green" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/youtube-PYnF66Ssi-A.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Daniel² Greene
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - Daniel² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/youtube-PYnF66Ssi-A
+  status: READY_SHADOW
+- target_id: ST-7c2014aaad51
+  question: 'Investigate the source lead ''CIA Reading Room cia-rdp89-00244r000701520019-2:
+    LETTER TO HARRY E. FITZWATER FROM HAROLD C. KING'' for Edward² Greene'
+  reason: 'Generated from the legal_property_records lens. Original search query:
+    "George Vaughan" ("deed" OR "land evidence" OR "probate" OR "will" OR "court"
+    OR "testimony" OR "dower"). Source lead: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701520019-2.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Edward² Greene
+  jurisdictions: []
+  record_families:
+  - legal_property_records
+  date_range: {}
+  name_variants:
+  - Edward² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701520019-2
+  status: READY_SHADOW
+- target_id: ST-cac84e869c83
+  question: 'Investigate the source lead ''ERIC ED310898: Cherokees.'' for Edward
+    Greenman'
+  reason: 'Generated from the servant_indentured_status lens. Original search query:
+    "Joan Greene" ("servant" OR "indentured" OR "bond servant" OR "redemptioner" OR
+    "apprentice" OR "master"). Source lead: https://archive.org/details/ERIC_ED310898.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Edward Greenman
+  jurisdictions: []
+  record_families:
+  - servant_indentured_status
+  date_range: {}
+  name_variants:
+  - Edward Greenman
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/ERIC_ED310898
+  status: READY_SHADOW
+- target_id: ST-c0fa730765a1
+  question: 'Investigate the source lead ''King of Bath: A BBC Radio Comedy Series''
+    for Elizabeth (wife of James² Greene)'
+  reason: 'Generated from the servant_indentured_status lens. Original search query:
+    "James Greene" ("servant" OR "indentured" OR "bond servant" OR "redemptioner"
+    OR "apprentice" OR "master"). Source lead: https://archive.org/details/kingofbathbbcr4.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Elizabeth (wife of James² Greene)
+  jurisdictions: []
+  record_families:
+  - servant_indentured_status
+  date_range: {}
+  name_variants:
+  - Elizabeth (wife of James² Greene)
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/kingofbathbbcr4
+  status: READY_SHADOW
+- target_id: ST-84d9d9d40b22
+  question: 'Investigate the source lead ''The seaman''s daily assistant, : being
+    a short, easy, and plain method of keeping a journal at sea; in which are contained,
+    rules, shewing how the allowances for lee-way, variation, heave of the sea, set
+    of currents, &c. are to be made, and to correct the dead-reckoning by an observation,
+    in all cases: and also all the tables that are any ways necessary for the seaman''s
+    use in keeping a journal.'' for George Havens'
+  reason: 'Generated from the maritime_trade_network lens. Original search query:
+    "Benjamin Greene" ("ship" OR "vessel" OR "seaman" OR "merchant" OR "Newport" OR
+    "Boston" OR "London"). Source lead: https://archive.org/details/seamansdailyassi00hase_1.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - George Havens
+  jurisdictions: []
+  record_families:
+  - maritime_trade_network
+  date_range: {}
+  name_variants:
+  - George Havens
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/seamansdailyassi00hase_1
+  status: READY_SHADOW
+- target_id: ST-3394a024e9f8
+  question: Investigate the source lead 'Three hundred years of American painting'
+    for George Vaughan
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Edward Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/threehundredyear0000unse_p1b8.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - George Vaughan
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - George Vaughan
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/threehundredyear0000unse_p1b8
+  status: READY_SHADOW
+- target_id: ST-80e5e0f3b116
+  question: Investigate the source lead '1955 The Quiet American (Тихий Американец)'
+    for Henry² Greene
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Henry² Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/1955-The_Quiet_American-Henry_Greene.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Henry² Greene
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - Henry² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/1955-The_Quiet_American-Henry_Greene
+  status: READY_SHADOW
+- target_id: ST-c94c5e7a7b53
+  question: 'Investigate the source lead ''Human-companion animal relationship quality
+    and companion animal owner mental health: A longitudinal study'' for Henry Tibbitts
+    (H. Tibbits)'
+  reason: 'Generated from the legal_property_records lens. Original search query:
+    "Sarah Stanton" ("deed" OR "land evidence" OR "probate" OR "will" OR "court" OR
+    "testimony" OR "dower"). Source lead: https://archive.org/details/osf-registrations-uka5e-v1.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Henry Tibbitts (H. Tibbits)
+  jurisdictions: []
+  record_families:
+  - legal_property_records
+  date_range: {}
+  name_variants:
+  - Henry Tibbitts (H. Tibbits)
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/osf-registrations-uka5e-v1
+  status: READY_SHADOW
+- target_id: ST-6e908793c6b0
+  question: 'Investigate the source lead ''King of Bath: A BBC Radio Comedy Series''
+    for James² Greene'
+  reason: 'Generated from the servant_indentured_status lens. Original search query:
+    "James² Greene" ("servant" OR "indentured" OR "bond servant" OR "redemptioner"
+    OR "apprentice" OR "master"). Source lead: https://archive.org/details/kingofbathbbcr4.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - James² Greene
+  jurisdictions: []
+  record_families:
+  - servant_indentured_status
+  date_range: {}
+  name_variants:
+  - James² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/kingofbathbbcr4
+  status: READY_SHADOW
+- target_id: ST-d950c707538b
+  question: Investigate the source lead 'Orations and speeches on various occasions'
+    for John Greene of Newport
+  reason: 'Generated from the irish_scottish_migration lens. Original search query:
+    "husbandman" ("Irish" OR "Ireland" OR "Ulster" OR "Scotland" OR "Scottish" OR
+    "Donegal" OR "servant"). Source lead: https://archive.org/details/orationsspeeches01inever.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - John Greene of Newport
+  jurisdictions: []
+  record_families:
+  - irish_scottish_migration
+  date_range: {}
+  name_variants:
+  - John Greene of Newport
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/orationsspeeches01inever
+  status: READY_SHADOW
+- target_id: ST-398eef03348c
+  question: 'Investigate the source lead ''The arena of life: the dynamics of ecology''
+    for John Greene of Quidnessett'
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Joan Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/arenaoflifedy00miln.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - John Greene of Quidnessett
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - John Greene of Quidnessett
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/arenaoflifedy00miln
+  status: READY_SHADOW
+- target_id: ST-4831be5fa6ca
+  question: Investigate the source lead '[Marcella (Bark) of New Bedford, Mass., mastered
+    by Pardon C. Winslow and then John Rounds, keeper John Rounds, on voyage 12 June
+    1850 - 6 December 1852],' for John Greene of Warwick (Major John Greene / Deputy
+    Governor)
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Miantonomi" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/marcellabarkofne00marc_1.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - John Greene of Warwick (Major John Greene / Deputy Governor)
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - John Greene of Warwick (Major John Greene / Deputy Governor)
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/marcellabarkofne00marc_1
+  status: READY_SHADOW
+- target_id: ST-2bd7f26597ff
+  question: Investigate the source lead 'Chancery practice, with especial reference
+    to the office and duties of masters in chancery, registers, auditors, commissioners
+    in chancery, court commissioners, master commissioners, referees, etc., including
+    forms of orders of reference, master's reports, objections, exceptions, orders
+    of confirmation, recommmittal, etc.' for Joseph Clark & Francis Brinley
+  reason: 'Generated from the servant_indentured_status lens. Original search query:
+    "John Greene" ("servant" OR "indentured" OR "bond servant" OR "redemptioner" OR
+    "apprentice" OR "master"). Source lead: https://archive.org/details/cu31924020121764.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Joseph Clark & Francis Brinley
+  jurisdictions: []
+  record_families:
+  - servant_indentured_status
+  date_range: {}
+  name_variants:
+  - Joseph Clark & Francis Brinley
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/cu31924020121764
+  status: READY_SHADOW
+- target_id: ST-834437a6b168
+  question: 'Investigate the source lead ''CIA Reading Room cia-rdp63t00245r000100320003-2:
+    LETTER TO HONORABLE FRANCIS E. WALTER FROM ALLEN W. DULLES'' for Sarah² Greene
+    (alias Flounders)'
+  reason: 'Generated from the legal_property_records lens. Original search query:
+    "Walter House" ("deed" OR "land evidence" OR "probate" OR "will" OR "court" OR
+    "testimony" OR "dower"). Source lead: https://archive.org/details/cia-readingroom-document-cia-rdp63t00245r000100320003-2.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Sarah² Greene (alias Flounders)
+  jurisdictions: []
+  record_families:
+  - legal_property_records
+  date_range: {}
+  name_variants:
+  - Sarah² Greene (alias Flounders)
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp63t00245r000100320003-2
+  status: READY_SHADOW
+- target_id: ST-6db54d39de63
+  question: 'Investigate the source lead ''Worldwide Exchange : CNBC : October 4,
+    2017 5:00am-6:00am EDT'' for John Nawham ("Stonewall John")'
+  reason: 'Generated from the irish_scottish_migration lens. Original search query:
+    "Richard Smith" ("Irish" OR "Ireland" OR "Ulster" OR "Scotland" OR "Scottish"
+    OR "Donegal" OR "servant"). Source lead: https://archive.org/details/CNBC_20171004_090000_Worldwide_Exchange.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - John Nawham ("Stonewall John")
+  jurisdictions: []
+  record_families:
+  - irish_scottish_migration
+  date_range: {}
+  name_variants:
+  - John Nawham ("Stonewall John")
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/CNBC_20171004_090000_Worldwide_Exchange
+  status: READY_SHADOW
+- target_id: ST-4582f453d462
+  question: Investigate the source lead 'Pegasus 5.0' for Anashuecot (Awashouse) —
+    Chief Sachem of Quidnessett
+  reason: 'Generated from the legal_property_records lens. Original search query:
+    "Nucom" ("deed" OR "land evidence" OR "probate" OR "will" OR "court" OR "testimony"
+    OR "dower"). Source lead: https://archive.org/details/pegasus_5.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Anashuecot (Awashouse) — Chief Sachem of Quidnessett
+  jurisdictions: []
+  record_families:
+  - legal_property_records
+  date_range: {}
+  name_variants:
+  - Anashuecot (Awashouse) — Chief Sachem of Quidnessett
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/pegasus_5
+  status: READY_SHADOW
+- target_id: ST-1c199a6b1516
+  question: Investigate the source lead 'A child's history of the world' for Benjamin²
+    Greene
+  reason: 'Generated from the irish_scottish_migration lens. Original search query:
+    "Edward Greene" ("Irish" OR "Ireland" OR "Ulster" OR "Scotland" OR "Scottish"
+    OR "Donegal" OR "servant"). Source lead: https://archive.org/details/childshistoryofw00hill.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Benjamin² Greene
+  jurisdictions: []
+  record_families:
+  - irish_scottish_migration
+  date_range: {}
+  name_variants:
+  - Benjamin² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/childshistoryofw00hill
+  status: READY_SHADOW
+- target_id: ST-dd8bd78c5fef
+  question: Investigate the source lead 'Daniel Green To Blue ( Sky Sound.cc)' for
+    Daniel² Greene
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Daniel Green" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/daniel-green-to-blue-sky-sound.cc.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Daniel² Greene
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - Daniel² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/daniel-green-to-blue-sky-sound.cc
+  status: READY_SHADOW
+- target_id: ST-0ac407859694
+  question: 'Investigate the source lead ''CIA Reading Room cia-rdp89-00244r000701330012-0:
+    LETTER TO HARRY E. FITZWATER FROM HAROLD C. KING'' for Edward² Greene'
+  reason: 'Generated from the legal_property_records lens. Original search query:
+    "George Vaughan" ("deed" OR "land evidence" OR "probate" OR "will" OR "court"
+    OR "testimony" OR "dower"). Source lead: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701330012-0.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Edward² Greene
+  jurisdictions: []
+  record_families:
+  - legal_property_records
+  date_range: {}
+  name_variants:
+  - Edward² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701330012-0
+  status: READY_SHADOW
+- target_id: ST-c7b485c1594b
+  question: 'Investigate the source lead ''ERIC ED310898: Cherokees.'' for Edward
+    Greenman'
+  reason: 'Generated from the enslavement_captivity_status lens. Original search query:
+    "Joan Greene" ("enslaved" OR "slave" OR "captive" OR "Negro" OR "Indian" OR "mulatto"
+    OR "redemption"). Source lead: https://archive.org/details/ERIC_ED310898.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Edward Greenman
+  jurisdictions: []
+  record_families:
+  - enslavement_captivity_status
+  date_range: {}
+  name_variants:
+  - Edward Greenman
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/ERIC_ED310898
+  status: READY_SHADOW
+- target_id: ST-99f88f9d7feb
+  question: Investigate the source lead 'Douglas Livingstone Road To Lisdoonvarna'
+    for Elizabeth (wife of James² Greene)
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "James Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/douglas-livingstone-road-to-lisdoonvarna.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Elizabeth (wife of James² Greene)
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - Elizabeth (wife of James² Greene)
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/douglas-livingstone-road-to-lisdoonvarna
+  status: READY_SHADOW
+- target_id: ST-272b39e1e5bf
+  question: Investigate the source lead 'Hong Kong Daily Press 1909-07-29' for George
+    Havens
+  reason: 'Generated from the maritime_trade_network lens. Original search query:
+    "Benjamin Greene" ("ship" OR "vessel" OR "seaman" OR "merchant" OR "Newport" OR
+    "Boston" OR "London"). Source lead: https://archive.org/details/NPDP19090729.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - George Havens
+  jurisdictions: []
+  record_families:
+  - maritime_trade_network
+  date_range: {}
+  name_variants:
+  - George Havens
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/NPDP19090729
+  status: READY_SHADOW
+- target_id: ST-9c06ff0df627
+  question: Investigate the source lead 'The modern world' for George Vaughan
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Edward Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/modernworld00hill.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - George Vaughan
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - George Vaughan
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/modernworld00hill
+  status: READY_SHADOW
+- target_id: ST-67105fd1d7b0
+  question: Investigate the source lead 'The New York genealogical and biographical
+    record' for Henry² Greene
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Henry² Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/bub_gb_jNcUAAAAYAAJ.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Henry² Greene
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - Henry² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/bub_gb_jNcUAAAAYAAJ
+  status: READY_SHADOW
+- target_id: ST-c6de5f51fc69
+  question: 'Investigate the source lead ''Pets and well-being: A replication study''
+    for Henry Tibbitts (H. Tibbits)'
+  reason: 'Generated from the legal_property_records lens. Original search query:
+    "Sarah Stanton" ("deed" OR "land evidence" OR "probate" OR "will" OR "court" OR
+    "testimony" OR "dower"). Source lead: https://archive.org/details/osf-registrations-dn2c9-v1.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Henry Tibbitts (H. Tibbits)
+  jurisdictions: []
+  record_families:
+  - legal_property_records
+  date_range: {}
+  name_variants:
+  - Henry Tibbitts (H. Tibbits)
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/osf-registrations-dn2c9-v1
+  status: READY_SHADOW
+- target_id: ST-e7290791d865
+  question: Investigate the source lead 'Douglas Livingstone Road To Lisdoonvarna'
+    for James² Greene
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "James² Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/douglas-livingstone-road-to-lisdoonvarna.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - James² Greene
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - James² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/douglas-livingstone-road-to-lisdoonvarna
+  status: READY_SHADOW
+- target_id: ST-6be5acf09779
+  question: Investigate the source lead 'The words of the Lord Jesus' for John Greene
+    of Newport
+  reason: 'Generated from the irish_scottish_migration lens. Original search query:
+    "husbandman" ("Irish" OR "Ireland" OR "Ulster" OR "Scotland" OR "Scottish" OR
+    "Donegal" OR "servant"). Source lead: https://archive.org/details/wordsoflordjesus0000stie_t1p5.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - John Greene of Newport
+  jurisdictions: []
+  record_families:
+  - irish_scottish_migration
+  date_range: {}
+  name_variants:
+  - John Greene of Newport
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/wordsoflordjesus0000stie_t1p5
+  status: READY_SHADOW
+- target_id: ST-b1e81e08559b
+  question: Investigate the source lead 'Animal life' for John Greene of Quidnessett
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Joan Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/animallife00miln.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - John Greene of Quidnessett
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - John Greene of Quidnessett
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/animallife00miln
+  status: READY_SHADOW
+- target_id: ST-5d59253e9d4b
+  question: 'Investigate the source lead ''Newport City Council Meeting: Budget Deficit,
+    Parking, and CDBG Grant – July 8, 2026'' for John Greene of Warwick (Major John
+    Greene / Deputy Governor)'
+  reason: 'Generated from the legal_property_records lens. Original search query:
+    "Miantonomi" ("deed" OR "land evidence" OR "probate" OR "will" OR "court" OR "testimony"
+    OR "dower"). Source lead: https://archive.org/details/openpublica-newport-rhode_island-f5adb9fb-1924-4a7b-b248-a18f505380ac.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - John Greene of Warwick (Major John Greene / Deputy Governor)
+  jurisdictions: []
+  record_families:
+  - legal_property_records
+  date_range: {}
+  name_variants:
+  - John Greene of Warwick (Major John Greene / Deputy Governor)
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/openpublica-newport-rhode_island-f5adb9fb-1924-4a7b-b248-a18f505380ac
+  status: READY_SHADOW
+- target_id: ST-63e1e1783d92
+  question: Investigate the source lead 'Chancery practice, with especial reference
+    to the office and duties of masters in chancery, registers, auditors, commissioners
+    in chancery, court commissioners, master commissioners, referees, etc., including
+    forms of orders of reference, master's reports, objections, exceptions, orders
+    of confirmation, recommmittal, etc.' for Joseph Clark & Francis Brinley
+  reason: 'Generated from the servant_indentured_status lens. Original search query:
+    "John Greene" ("servant" OR "indentured" OR "bond servant" OR "redemptioner" OR
+    "apprentice" OR "master"). Source lead: https://archive.org/details/chancerypractic00hendgoog.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Joseph Clark & Francis Brinley
+  jurisdictions: []
+  record_families:
+  - servant_indentured_status
+  date_range: {}
+  name_variants:
+  - Joseph Clark & Francis Brinley
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/chancerypractic00hendgoog
+  status: READY_SHADOW
+- target_id: ST-cc26579dd7bc
+  question: Investigate the source lead 'פרק 107 - דוד בוטביניק - אימון גופני ושיתוק
+    מוחין' for Sarah² Greene (alias Flounders)
+  reason: 'Generated from the legal_property_records lens. Original search query:
+    "Walter House" ("deed" OR "land evidence" OR "probate" OR "will" OR "court" OR
+    "testimony" OR "dower"). Source lead: https://archive.org/details/UUSM_Connections-b7164bed_6059_46a8_8375_c63130d4fb51.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Sarah² Greene (alias Flounders)
+  jurisdictions: []
+  record_families:
+  - legal_property_records
+  date_range: {}
+  name_variants:
+  - Sarah² Greene (alias Flounders)
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/UUSM_Connections-b7164bed_6059_46a8_8375_c63130d4fb51
+  status: READY_SHADOW
+- target_id: ST-3d3507094729
+  question: 'Investigate the source lead ''Victoria Derbyshire : BBCNEWS : December
+    20, 2017 9:00am-11:01am GMT'' for John Nawham ("Stonewall John")'
+  reason: 'Generated from the irish_scottish_migration lens. Original search query:
+    "Richard Smith" ("Irish" OR "Ireland" OR "Ulster" OR "Scotland" OR "Scottish"
+    OR "Donegal" OR "servant"). Source lead: https://archive.org/details/BBCNEWS_20171220_090000_Victoria_Derbyshire.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - John Nawham ("Stonewall John")
+  jurisdictions: []
+  record_families:
+  - irish_scottish_migration
+  date_range: {}
+  name_variants:
+  - John Nawham ("Stonewall John")
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/BBCNEWS_20171220_090000_Victoria_Derbyshire
+  status: READY_SHADOW
+- target_id: ST-2c0cf12489d8
+  question: Investigate the source lead 'Pegasus 5.0' for Anashuecot (Awashouse) —
+    Chief Sachem of Quidnessett
+  reason: 'Generated from the maritime_trade_network lens. Original search query:
+    "Nucom" ("ship" OR "vessel" OR "seaman" OR "merchant" OR "Newport" OR "Boston"
+    OR "London"). Source lead: https://archive.org/details/pegasus_5.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Anashuecot (Awashouse) — Chief Sachem of Quidnessett
+  jurisdictions: []
+  record_families:
+  - maritime_trade_network
+  date_range: {}
+  name_variants:
+  - Anashuecot (Awashouse) — Chief Sachem of Quidnessett
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/pegasus_5
+  status: READY_SHADOW
+- target_id: ST-2567f3128986
+  question: Investigate the source lead 'A child's history of the world' for Benjamin²
+    Greene
+  reason: 'Generated from the servant_indentured_status lens. Original search query:
+    "Edward Greene" ("servant" OR "indentured" OR "bond servant" OR "redemptioner"
+    OR "apprentice" OR "master"). Source lead: https://archive.org/details/childshistoryofw00hill.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Benjamin² Greene
+  jurisdictions: []
+  record_families:
+  - servant_indentured_status
+  date_range: {}
+  name_variants:
+  - Benjamin² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/childshistoryofw00hill
+  status: READY_SHADOW
+- target_id: ST-3ee8fdeea935
+  question: Investigate the source lead 'Stereograph, Daniel Green Felt Shoe Company,
+    Dolgeville NY' for Daniel² Greene
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Daniel Green" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/stereograph_hsvr_20260117aa_DolgevilleNY.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Daniel² Greene
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - Daniel² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/stereograph_hsvr_20260117aa_DolgevilleNY
+  status: READY_SHADOW
+- target_id: ST-dc4119a98007
+  question: 'Investigate the source lead ''CIA Reading Room cia-rdp89-00244r000701330037-3:
+    LETTER TO HAROLD C. KING FROM JAMES H. MCDONALD'' for Edward² Greene'
+  reason: 'Generated from the legal_property_records lens. Original search query:
+    "George Vaughan" ("deed" OR "land evidence" OR "probate" OR "will" OR "court"
+    OR "testimony" OR "dower"). Source lead: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701330037-3.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Edward² Greene
+  jurisdictions: []
+  record_families:
+  - legal_property_records
+  date_range: {}
+  name_variants:
+  - Edward² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701330037-3
+  status: READY_SHADOW
+- target_id: ST-7bacb579c306
+  question: Investigate the source lead 'The mystery of the bog forest' for Edward
+    Greenman
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Joan Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/mysteryofbogfore00miln.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Edward Greenman
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - Edward Greenman
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/mysteryofbogfore00miln
+  status: READY_SHADOW
+- target_id: ST-c6e1bd6dcf86
+  question: Investigate the source lead 'Far From the Madding Crowd - BBC Radio Drama
+    (1989)' for Elizabeth (wife of James² Greene)
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "James Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/miscellaneous_plays_1990-05-04_far_from_the_madding_crowd_-_episode_01_-_fortunes.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Elizabeth (wife of James² Greene)
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - Elizabeth (wife of James² Greene)
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/miscellaneous_plays_1990-05-04_far_from_the_madding_crowd_-_episode_01_-_fortunes
+  status: READY_SHADOW
+- target_id: ST-bda669b03b12
+  question: Investigate the source lead 'A farewell discourse to the First church
+    and society in Medway. Delivered March 17th, 1793. By Benjamin Greene, ... 1793'
+    for George Havens
+  reason: 'Generated from the church_civil_registration lens. Original search query:
+    "Benjamin Greene" ("church" OR "baptism" OR "marriage" OR "burial" OR "parish"
+    OR "Quaker" OR "meeting"). Source lead: https://archive.org/details/bim_eighteenth-century_a-farewell-discourse-to-_greene-benjamin_1793.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - George Havens
+  jurisdictions: []
+  record_families:
+  - church_civil_registration
+  date_range: {}
+  name_variants:
+  - George Havens
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/bim_eighteenth-century_a-farewell-discourse-to-_greene-benjamin_1793
+  status: READY_SHADOW
+- target_id: ST-022e129b9fc3
+  question: Investigate the source lead 'The Americas' for George Vaughan
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Edward Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/theamericas00hill.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - George Vaughan
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - George Vaughan
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/theamericas00hill
+  status: READY_SHADOW
+- target_id: ST-5a98d478aba4
+  question: 'Investigate the source lead ''William Webb, September 19, 1746- September
+    23, 1832 : his war service from Long Island and Connecticut, ancestry and descendants''
+    for Henry² Greene'
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Henry² Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/williamwebbseptem00gree.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Henry² Greene
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - Henry² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/williamwebbseptem00gree
+  status: READY_SHADOW
+- target_id: ST-597627c6ecf1
+  question: 'Investigate the source lead ''The link between the nature of the human-pet
+    relationship and well-being outcomes in pet owners: A longitudinal study'' for
+    Henry Tibbitts (H. Tibbits)'
+  reason: 'Generated from the legal_property_records lens. Original search query:
+    "Sarah Stanton" ("deed" OR "land evidence" OR "probate" OR "will" OR "court" OR
+    "testimony" OR "dower"). Source lead: https://archive.org/details/osf-registrations-n2ypv-v1.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - Henry Tibbitts (H. Tibbits)
+  jurisdictions: []
+  record_families:
+  - legal_property_records
+  date_range: {}
+  name_variants:
+  - Henry Tibbitts (H. Tibbits)
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/osf-registrations-n2ypv-v1
+  status: READY_SHADOW
+- target_id: ST-a1bdfe6397da
+  question: Investigate the source lead 'Far From the Madding Crowd - BBC Radio Drama
+    (1989)' for James² Greene
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "James² Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/miscellaneous_plays_1990-05-04_far_from_the_madding_crowd_-_episode_01_-_fortunes.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - James² Greene
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - James² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/miscellaneous_plays_1990-05-04_far_from_the_madding_crowd_-_episode_01_-_fortunes
+  status: READY_SHADOW
+- target_id: ST-db6c41e2f788
+  question: Investigate the source lead 'The words of the Lord Jesus' for John Greene
+    of Newport
+  reason: 'Generated from the irish_scottish_migration lens. Original search query:
+    "husbandman" ("Irish" OR "Ireland" OR "Ulster" OR "Scotland" OR "Scottish" OR
+    "Donegal" OR "servant"). Source lead: https://archive.org/details/wordsoflordjesus0000stie_f7r2.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - John Greene of Newport
+  jurisdictions: []
+  record_families:
+  - irish_scottish_migration
+  date_range: {}
+  name_variants:
+  - John Greene of Newport
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/wordsoflordjesus0000stie_f7r2
+  status: READY_SHADOW
+- target_id: ST-9d23782fa6f2
+  question: Investigate the source lead 'Understanding radioactivity' for John Greene
+    of Quidnessett
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Joan Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/understandingrad00miln.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - John Greene of Quidnessett
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - John Greene of Quidnessett
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/understandingrad00miln
+  status: READY_SHADOW
+- target_id: ST-c340307c72c4
+  question: Investigate the source lead 'Newport City Council Meeting – April 22,
+    2026' for John Greene of Warwick (Major John Greene / Deputy Governor)
+  reason: 'Generated from the legal_property_records lens. Original search query:
+    "Miantonomi" ("deed" OR "land evidence" OR "probate" OR "will" OR "court" OR "testimony"
+    OR "dower"). Source lead: https://archive.org/details/openpublica-newport-rhode_island-41649974-8229-45f0-93cd-28bfef4a9a84.'
+  origin_event: EVT-0d87a02becdd
+  target_type: DOCUMENT
+  person_slots:
+  - John Greene of Warwick (Major John Greene / Deputy Governor)
+  jurisdictions: []
+  record_families:
+  - legal_property_records
+  date_range: {}
+  name_variants:
+  - John Greene of Warwick (Major John Greene / Deputy Governor)
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/openpublica-newport-rhode_island-41649974-8229-45f0-93cd-28bfef4a9a84
+  status: READY_SHADOW
