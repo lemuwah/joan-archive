@@ -185,6 +185,20 @@ def main() -> None:
             "and origin-event provenance"
         )
 
+        # Deferred leads preserve the individual discovered result, but must
+        # not embed the entire parent search-results collection. The latter
+        # duplicates payload across every deferred lead and can exceed the
+        # repository's file-size limit.
+        if any("results" in lead for lead in deferred):
+            raise SystemExit(
+                "FAIL: deferred lead embeds parent results collection; "
+                "deferred representation must preserve only the individual result"
+            )
+
+        print(
+            "PASS: deferred leads do not duplicate the parent results collection"
+        )
+
         forbidden_statuses = {
             "NO_RESULTS",
             "REJECTED",

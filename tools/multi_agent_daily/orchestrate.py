@@ -326,6 +326,7 @@ def generate_search_targets(
     deferred = []
     for lead in deferred_leads:
         preserved = dict(lead)
+        preserved.pop("results", None)
         preserved["preservation_status"] = "DEFERRED"
         preserved["preservation_reason"] = (
             "Discovered lead was not processed into a search target during "
