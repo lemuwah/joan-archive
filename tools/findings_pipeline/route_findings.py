@@ -100,10 +100,34 @@ def stage_text(record: dict, stage: tuple[str, str, str], finding_text: str) -> 
     return "\n".join(lines)
 
 
-def route(run_date: str, check: bool) -> int:
-    findings = sorted(
-        path for path in FINDINGS.glob("*.md") if path.name.lower() != "readme.md"
-    )
+def route(
+    run_date: str,
+    check: bool,
+    finding_paths: list[str] | None = None,
+) -> int:
+    if finding_paths:
+        findings = []
+        for raw_path in sorted(set(finding_paths)):
+            path = (ROOT / raw_path).resolve()
+            try:
+                relative = path.relative_to(FINDINGS.resolve())
+            except ValueError as exc:
+                raise SystemExit(
+                    f"Finding path must be under research_findings/: {raw_path}"
+                ) from exc
+
+            if path.suffix.lower() != ".md" or relative.name.lower() == "readme.md":
+                raise SystemExit(
+                    f"Finding path must be a non-README .md finding: {raw_path}"
+                )
+            if not path.is_file():
+                raise SystemExit(f"Finding path does not exist: {raw_path}")
+
+            findings.append(path)
+    else:
+        findings = sorted(
+            path for path in FINDINGS.glob("*.md") if path.name.lower() != "readme.md"
+        )
     output = QUEUE / run_date
     expected: dict[str, str] = {}
     for finding in findings:
@@ -137,8 +161,14 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--date", default=dt.date.today().isoformat())
     parser.add_argument("--check", action="store_true")
+    parser.add_argument(
+        "--path",
+        action="append",
+        default=[],
+        help="Route only this research_findings/*.md path; repeat for multiple findings.",
+    )
     args = parser.parse_args()
-    return route(args.date, args.check)
+    return route(args.date, args.check, args.path)
 
 
 if __name__ == "__main__":
