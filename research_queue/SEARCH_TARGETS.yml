@@ -3152,3 +3152,254 @@ targets:
     a different person, place, date, or record family.
   source_identifier: https://archive.org/details/naturescleanupcr00miln
   status: READY_SHADOW
+- target_id: ST-6090ea80a6d9
+  question: 'Investigate the source lead ''CIA Reading Room cia-rdp89-00244r000701510005-8:
+    LETTER TO HARRY E. FITZWATER FROM HAROLD C. KING'' for Edward² Greene'
+  reason: 'Generated from the legal_property_records lens. Original search query:
+    "George Vaughan" ("deed" OR "land evidence" OR "probate" OR "will" OR "court"
+    OR "testimony" OR "dower"). Source lead: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701510005-8.'
+  origin_event: EVT-94869517e97b
+  target_type: DOCUMENT
+  person_slots:
+  - Edward² Greene
+  jurisdictions: []
+  record_families:
+  - legal_property_records
+  date_range: {}
+  name_variants:
+  - Edward² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701510005-8
+  status: READY_SHADOW
+- target_id: ST-a1c20f6dd04c
+  question: 'Investigate the source lead ''LA, lost & found : an architectural history
+    of Los Angeles'' for Henry² Greene'
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Henry² Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/lalostfoundarchi0000kapl.'
+  origin_event: EVT-94869517e97b
+  target_type: DOCUMENT
+  person_slots:
+  - Henry² Greene
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - Henry² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/lalostfoundarchi0000kapl
+  status: READY_SHADOW
+- target_id: ST-135915f8fddd
+  question: Investigate the source lead 'The balance of nature' for John Greene of
+    Quidnessett
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Joan Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/balanceofnature00miln.'
+  origin_event: EVT-94869517e97b
+  target_type: DOCUMENT
+  person_slots:
+  - John Greene of Quidnessett
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - John Greene of Quidnessett
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/balanceofnature00miln
+  status: READY_SHADOW
+- target_id: ST-57d572dad0bd
+  question: 'Investigate the source lead ''CIA Reading Room cia-rdp89-00244r000701520011-0:
+    LETTER TO HARRY E. FITZWATER FROM HAROLD C. KING'' for Edward² Greene'
+  reason: 'Generated from the legal_property_records lens. Original search query:
+    "George Vaughan" ("deed" OR "land evidence" OR "probate" OR "will" OR "court"
+    OR "testimony" OR "dower"). Source lead: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701520011-0.'
+  origin_event: EVT-94869517e97b
+  target_type: DOCUMENT
+  person_slots:
+  - Edward² Greene
+  jurisdictions: []
+  record_families:
+  - legal_property_records
+  date_range: {}
+  name_variants:
+  - Edward² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701520011-0
+  status: READY_SHADOW
+- target_id: ST-220dbf3b5190
+  question: Investigate the source lead 'Brewtal Battle Carton Brewing Showcase Episode'
+    for John Nawham ("Stonewall John")
+  reason: 'Generated from the irish_scottish_migration lens. Original search query:
+    "Richard Smith" ("Irish" OR "Ireland" OR "Ulster" OR "Scotland" OR "Scottish"
+    OR "Donegal" OR "servant"). Source lead: https://archive.org/details/BrewtalBattleCartonBrewingShowcaseEpisode.'
+  origin_event: EVT-94869517e97b
+  target_type: DOCUMENT
+  person_slots:
+  - John Nawham ("Stonewall John")
+  jurisdictions: []
+  record_families:
+  - irish_scottish_migration
+  date_range: {}
+  name_variants:
+  - John Nawham ("Stonewall John")
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/BrewtalBattleCartonBrewingShowcaseEpisode
+  status: READY_SHADOW
+- target_id: ST-924554134d76
+  question: 'Investigate the source lead ''CIA Reading Room cia-rdp89-00244r001002410026-1:
+    LETTER TO HARRY E. FITZWATER FROM HAROLD C. KING'' for Edward² Greene'
+  reason: 'Generated from the legal_property_records lens. Original search query:
+    "George Vaughan" ("deed" OR "land evidence" OR "probate" OR "will" OR "court"
+    OR "testimony" OR "dower"). Source lead: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r001002410026-1.'
+  origin_event: EVT-94869517e97b
+  target_type: DOCUMENT
+  person_slots:
+  - Edward² Greene
+  jurisdictions: []
+  record_families:
+  - legal_property_records
+  date_range: {}
+  name_variants:
+  - Edward² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r001002410026-1
+  status: READY_SHADOW
+- target_id: ST-5d071254c118
+  question: 'Investigate the source lead ''CIA Reading Room cia-rdp89-00244r000300160024-1:
+    LETTER TO VERNON R. GINGELL FROM H. M. SHAVER, JR.'' for Edward² Greene'
+  reason: 'Generated from the legal_property_records lens. Original search query:
+    "George Vaughan" ("deed" OR "land evidence" OR "probate" OR "will" OR "court"
+    OR "testimony" OR "dower"). Source lead: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000300160024-1.'
+  origin_event: EVT-94869517e97b
+  target_type: DOCUMENT
+  person_slots:
+  - Edward² Greene
+  jurisdictions: []
+  record_families:
+  - legal_property_records
+  date_range: {}
+  name_variants:
+  - Edward² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000300160024-1
+  status: READY_SHADOW
+- target_id: ST-aa81e037606b
+  question: Investigate the source lead 'The balance of nature' for Edward Greenman
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Joan Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/balanceofnature00miln.'
+  origin_event: EVT-94869517e97b
+  target_type: DOCUMENT
+  person_slots:
+  - Edward Greenman
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - Edward Greenman
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/balanceofnature00miln
+  status: READY_SHADOW
+- target_id: ST-ff655b164a5a
+  question: Investigate the source lead 'North American birds' for John Greene of
+    Quidnessett
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Joan Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/northamericanbir00miln.'
+  origin_event: EVT-94869517e97b
+  target_type: DOCUMENT
+  person_slots:
+  - John Greene of Quidnessett
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - John Greene of Quidnessett
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/northamericanbir00miln
+  status: READY_SHADOW
