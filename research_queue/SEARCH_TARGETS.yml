@@ -3403,3 +3403,228 @@ targets:
     a different person, place, date, or record family.
   source_identifier: https://archive.org/details/northamericanbir00miln
   status: READY_SHADOW
+- target_id: ST-6308fbdbf90d
+  question: Investigate the source lead 'The early history of Narragansett; with an
+    appendix of original documents, many of which are now for the first time published.'
+    for Anashuecot (Awashouse) — Chief Sachem of Quidnessett
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Awashouse" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: http://www.loc.gov/item/rc01002950/.'
+  origin_event: EVT-d18068f453af
+  target_type: DOCUMENT
+  person_slots:
+  - Anashuecot (Awashouse) — Chief Sachem of Quidnessett
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - Anashuecot (Awashouse) — Chief Sachem of Quidnessett
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: http://www.loc.gov/item/rc01002950/
+  status: READY_SHADOW
+- target_id: ST-99f771314596
+  question: Investigate the source lead 'Rhode Island land evidences, vol. I, 1648-1696,
+    abstracts.' for Anashuecot (Awashouse) — Chief Sachem of Quidnessett
+  reason: 'Generated from the legal_property_records lens. Original search query:
+    "Awashouse" ("deed" OR "land evidence" OR "probate" OR "will" OR "court" OR "testimony"
+    OR "dower"). Source lead: http://www.loc.gov/item/21018384/.'
+  origin_event: EVT-d18068f453af
+  target_type: DOCUMENT
+  person_slots:
+  - Anashuecot (Awashouse) — Chief Sachem of Quidnessett
+  jurisdictions: []
+  record_families:
+  - legal_property_records
+  date_range: {}
+  name_variants:
+  - Anashuecot (Awashouse) — Chief Sachem of Quidnessett
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: http://www.loc.gov/item/21018384/
+  status: READY_SHADOW
+- target_id: ST-97ee159d5d57
+  question: 'Investigate the source lead ''The Americas: [Canada, Mexico, and South
+    America]'' for George Vaughan'
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Edward Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/americascanadamehil00hill.'
+  origin_event: EVT-d18068f453af
+  target_type: DOCUMENT
+  person_slots:
+  - George Vaughan
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - George Vaughan
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/americascanadamehil00hill
+  status: READY_SHADOW
+- target_id: ST-ba69c3df22d5
+  question: 'Investigate the source lead ''CIA Reading Room cia-rdp85b01152r000600780068-5:
+    LETTER TO LARRY K. MYERS FROM H. M. SHAVER JR.'' for Edward² Greene'
+  reason: 'Generated from the legal_property_records lens. Original search query:
+    "George Vaughan" ("deed" OR "land evidence" OR "probate" OR "will" OR "court"
+    OR "testimony" OR "dower"). Source lead: https://archive.org/details/cia-readingroom-document-cia-rdp85b01152r000600780068-5.'
+  origin_event: EVT-d18068f453af
+  target_type: DOCUMENT
+  person_slots:
+  - Edward² Greene
+  jurisdictions: []
+  record_families:
+  - legal_property_records
+  date_range: {}
+  name_variants:
+  - Edward² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp85b01152r000600780068-5
+  status: READY_SHADOW
+- target_id: ST-0b598e09e9bf
+  question: Investigate the source lead 'Christian Talk That Rocks with Richie L.
+    Ep. 7/1/2022' for Daniel² Greene
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Daniel Green" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/Ad_Durar_Al_Bahiyyah-christian_talk_that_rocks_with_richie_l_ep_7_1_2022.'
+  origin_event: EVT-d18068f453af
+  target_type: DOCUMENT
+  person_slots:
+  - Daniel² Greene
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - Daniel² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/Ad_Durar_Al_Bahiyyah-christian_talk_that_rocks_with_richie_l_ep_7_1_2022
+  status: READY_SHADOW
+- target_id: ST-9e9e493e2890
+  question: 'Investigate the source lead ''PBS News Hour : KQED : July 18, 2025 6:00pm-7:00pm
+    PDT'' for Elizabeth (wife of James² Greene)'
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "James Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/KQED_20250719_010000_PBS_News_Hour.'
+  origin_event: EVT-d18068f453af
+  target_type: DOCUMENT
+  person_slots:
+  - Elizabeth (wife of James² Greene)
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - Elizabeth (wife of James² Greene)
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/KQED_20250719_010000_PBS_News_Hour
+  status: READY_SHADOW
+- target_id: ST-25b0ef578106
+  question: Investigate the source lead 'Handel's Messiah - The Walker Lecture Series
+    and Concord Community Chorus - Part 1' for George Havens
+  reason: 'Generated from the church_civil_registration lens. Original search query:
+    "Benjamin Greene" ("church" OR "baptism" OR "marriage" OR "burial" OR "parish"
+    OR "Quaker" OR "meeting"). Source lead: https://archive.org/details/cocnh-Handel_s_Messiah_-_The_Walker_Lecture_Series_and_Concord_Community_Chorus_-_Part_1.'
+  origin_event: EVT-d18068f453af
+  target_type: DOCUMENT
+  person_slots:
+  - George Havens
+  jurisdictions: []
+  record_families:
+  - church_civil_registration
+  date_range: {}
+  name_variants:
+  - George Havens
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/cocnh-Handel_s_Messiah_-_The_Walker_Lecture_Series_and_Concord_Community_Chorus_-_Part_1
+  status: READY_SHADOW
+- target_id: ST-72c9abd69eb3
+  question: Investigate the source lead 'Ancient History - Works In Public Domain
+    (Published Before 1923) Part Three' for John Greene of Newport
+  reason: 'Generated from the irish_scottish_migration lens. Original search query:
+    "husbandman" ("Irish" OR "Ireland" OR "Ulster" OR "Scotland" OR "Scottish" OR
+    "Donegal" OR "servant"). Source lead: https://archive.org/details/AncientHistory-WorksInPublicDomainPublishedBefore1923PartThree.'
+  origin_event: EVT-d18068f453af
+  target_type: DOCUMENT
+  person_slots:
+  - John Greene of Newport
+  jurisdictions: []
+  record_families:
+  - irish_scottish_migration
+  date_range: {}
+  name_variants:
+  - John Greene of Newport
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/AncientHistory-WorksInPublicDomainPublishedBefore1923PartThree
+  status: READY_SHADOW
