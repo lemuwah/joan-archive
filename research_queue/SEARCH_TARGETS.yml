@@ -5708,3 +5708,59 @@ targets:
     a different person, place, date, or record family.
   source_identifier: http://www.loc.gov/item/04002452/
   status: READY_SHADOW
+- target_id: ST-e69be06740cf
+  question: 'Investigate the source lead ''Positive Affirmations Compilation #1''
+    for John Greene of Quidnessett'
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Joan Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/PositiveAffirmationsCompilation1.'
+  origin_event: EVT-054bcac0e03f
+  target_type: DOCUMENT
+  person_slots:
+  - John Greene of Quidnessett
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - John Greene of Quidnessett
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/PositiveAffirmationsCompilation1
+  status: READY_SHADOW
+- target_id: ST-d7e7f5474d36
+  question: 'Investigate the source lead ''Positive Affirmations Compilation #1''
+    for Edward Greenman'
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Joan Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/PositiveAffirmationsCompilation1.'
+  origin_event: EVT-054bcac0e03f
+  target_type: DOCUMENT
+  person_slots:
+  - Edward Greenman
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - Edward Greenman
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/PositiveAffirmationsCompilation1
+  status: READY_SHADOW
