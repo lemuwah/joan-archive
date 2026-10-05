@@ -21,6 +21,7 @@ def record_event(
     next_action="",
     parent_event="",
     event_class="RESEARCH",
+    research_effect="",
     event_file=None,
 ):
     event = {
@@ -39,6 +40,7 @@ def record_event(
         "contradiction": contradiction,
         "next_action": next_action,
         "parent_event": parent_event,
+        "research_effect": research_effect,
     }
 
     path = Path(event_file) if event_file else EVENT_FILE
