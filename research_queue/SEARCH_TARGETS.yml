@@ -5764,3 +5764,420 @@ targets:
     a different person, place, date, or record family.
   source_identifier: https://archive.org/details/PositiveAffirmationsCompilation1
   status: READY_SHADOW
+- target_id: ST-cce17e3bf189
+  question: 'Investigate the source lead ''CIA Reading Room cia-rdp89-00244r000300160025-0:
+    LETTER TO DANIEL C. KING FROM H. M. SHAVER, JR.'' for Edward² Greene'
+  reason: 'Generated from the legal_property_records lens. Original search query:
+    "George Vaughan" ("deed" OR "land evidence" OR "probate" OR "will" OR "court"
+    OR "testimony" OR "dower"). Source lead: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000300160025-0.'
+  origin_event: EVT-40bbb2ba115e
+  target_type: DOCUMENT
+  person_slots:
+  - Edward² Greene
+  jurisdictions: []
+  record_families:
+  - legal_property_records
+  date_range: {}
+  name_variants:
+  - Edward² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000300160025-0
+  status: READY_SHADOW
+- target_id: ST-9d152007fa2c
+  question: Investigate the source lead 'The Americas,United States and its possessions'
+    for George Vaughan
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Edward Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/americasunitedst00hill.'
+  origin_event: EVT-40bbb2ba115e
+  target_type: DOCUMENT
+  person_slots:
+  - George Vaughan
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - George Vaughan
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/americasunitedst00hill
+  status: READY_SHADOW
+- target_id: ST-f72006856fcc
+  question: 'Investigate the source lead ''CIA Reading Room cia-rdp89-00244r001002440004-2:
+    LETTER TO ROBERT R.L. HUNDLEY'' for Edward² Greene'
+  reason: 'Generated from the legal_property_records lens. Original search query:
+    "George Vaughan" ("deed" OR "land evidence" OR "probate" OR "will" OR "court"
+    OR "testimony" OR "dower"). Source lead: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r001002440004-2.'
+  origin_event: EVT-40bbb2ba115e
+  target_type: DOCUMENT
+  person_slots:
+  - Edward² Greene
+  jurisdictions: []
+  record_families:
+  - legal_property_records
+  date_range: {}
+  name_variants:
+  - Edward² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r001002440004-2
+  status: READY_SHADOW
+- target_id: ST-65bd77583329
+  question: Investigate the source lead 'The Capital Dispatch 09-25-2026' for Anashuecot
+    (Awashouse) — Chief Sachem of Quidnessett
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Nucom" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark" OR
+    "interpreter" OR "Indian"). Source lead: https://archive.org/details/UMC_EMANUEL_UNION_CITY-Capital_Dispatch70kkj.'
+  origin_event: EVT-40bbb2ba115e
+  target_type: DOCUMENT
+  person_slots:
+  - Anashuecot (Awashouse) — Chief Sachem of Quidnessett
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - Anashuecot (Awashouse) — Chief Sachem of Quidnessett
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/UMC_EMANUEL_UNION_CITY-Capital_Dispatch70kkj
+  status: READY_SHADOW
+- target_id: ST-e6a73d14364a
+  question: 'Investigate the source lead ''CIA Reading Room cia-rdp89-00244r000701330015-7:
+    LETTER TO HARRY E. FITZWATER FROM HAROLD C. KING'' for Edward² Greene'
+  reason: 'Generated from the legal_property_records lens. Original search query:
+    "George Vaughan" ("deed" OR "land evidence" OR "probate" OR "will" OR "court"
+    OR "testimony" OR "dower"). Source lead: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701330015-7.'
+  origin_event: EVT-40bbb2ba115e
+  target_type: DOCUMENT
+  person_slots:
+  - Edward² Greene
+  jurisdictions: []
+  record_families:
+  - legal_property_records
+  date_range: {}
+  name_variants:
+  - Edward² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701330015-7
+  status: READY_SHADOW
+- target_id: ST-59ebf98fdbf8
+  question: Investigate the source lead 'And the Band Played On [Like-New VHS]' for
+    Elizabeth (wife of James² Greene)
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "James Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/and-the-band-played-on-like-new-vhs.'
+  origin_event: EVT-40bbb2ba115e
+  target_type: DOCUMENT
+  person_slots:
+  - Elizabeth (wife of James² Greene)
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - Elizabeth (wife of James² Greene)
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/and-the-band-played-on-like-new-vhs
+  status: READY_SHADOW
+- target_id: ST-8908d84b096a
+  question: Investigate the source lead 'Africa and Asia' for George Vaughan
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Edward Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/africaasia00hill.'
+  origin_event: EVT-40bbb2ba115e
+  target_type: DOCUMENT
+  person_slots:
+  - George Vaughan
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - George Vaughan
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/africaasia00hill
+  status: READY_SHADOW
+- target_id: ST-20ce431c8e01
+  question: Investigate the source lead 'And the Band Played On [Like-New VHS]' for
+    James² Greene
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "James² Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/and-the-band-played-on-like-new-vhs.'
+  origin_event: EVT-40bbb2ba115e
+  target_type: DOCUMENT
+  person_slots:
+  - James² Greene
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - James² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/and-the-band-played-on-like-new-vhs
+  status: READY_SHADOW
+- target_id: ST-dc24058217ce
+  question: Investigate the source lead 'The words of the Lord Jesus' for John Greene
+    of Newport
+  reason: 'Generated from the irish_scottish_migration lens. Original search query:
+    "husbandman" ("Irish" OR "Ireland" OR "Ulster" OR "Scotland" OR "Scottish" OR
+    "Donegal" OR "servant"). Source lead: https://archive.org/details/wordsoflordjesus0000stie_w7p4.'
+  origin_event: EVT-40bbb2ba115e
+  target_type: DOCUMENT
+  person_slots:
+  - John Greene of Newport
+  jurisdictions: []
+  record_families:
+  - irish_scottish_migration
+  date_range: {}
+  name_variants:
+  - John Greene of Newport
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/wordsoflordjesus0000stie_w7p4
+  status: READY_SHADOW
+- target_id: ST-857cc461d67d
+  question: 'Investigate the source lead ''Insect worlds : a guide for man on making
+    the most of the environment'' for John Greene of Quidnessett'
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Joan Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/insectworldsguid00miln.'
+  origin_event: EVT-40bbb2ba115e
+  target_type: DOCUMENT
+  person_slots:
+  - John Greene of Quidnessett
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - John Greene of Quidnessett
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/insectworldsguid00miln
+  status: READY_SHADOW
+- target_id: ST-448974c3c8f2
+  question: 'Investigate the source lead ''CIA Reading Room cia-rdp89-00244r000701510002-1:
+    LETTER TO HARRY E. FITZWATER FROM HAROLD C. KING'' for Edward² Greene'
+  reason: 'Generated from the legal_property_records lens. Original search query:
+    "George Vaughan" ("deed" OR "land evidence" OR "probate" OR "will" OR "court"
+    OR "testimony" OR "dower"). Source lead: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701510002-1.'
+  origin_event: EVT-40bbb2ba115e
+  target_type: DOCUMENT
+  person_slots:
+  - Edward² Greene
+  jurisdictions: []
+  record_families:
+  - legal_property_records
+  date_range: {}
+  name_variants:
+  - Edward² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701510002-1
+  status: READY_SHADOW
+- target_id: ST-7f61ca212c04
+  question: Investigate the source lead 'TMI Focus - Table of Contents' for Elizabeth
+    (wife of James² Greene)
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "James Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/tmi-focus-toc.'
+  origin_event: EVT-40bbb2ba115e
+  target_type: DOCUMENT
+  person_slots:
+  - Elizabeth (wife of James² Greene)
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - Elizabeth (wife of James² Greene)
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/tmi-focus-toc
+  status: READY_SHADOW
+- target_id: ST-ea630dff4675
+  question: Investigate the source lead 'Brownson's quarterly review' for George Havens
+  reason: 'Generated from the church_civil_registration lens. Original search query:
+    "Benjamin Greene" ("church" OR "baptism" OR "marriage" OR "burial" OR "parish"
+    OR "Quaker" OR "meeting"). Source lead: https://archive.org/details/brownsonsquarte00greegoog.'
+  origin_event: EVT-40bbb2ba115e
+  target_type: DOCUMENT
+  person_slots:
+  - George Havens
+  jurisdictions: []
+  record_families:
+  - church_civil_registration
+  date_range: {}
+  name_variants:
+  - George Havens
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/brownsonsquarte00greegoog
+  status: READY_SHADOW
+- target_id: ST-8df554086868
+  question: Investigate the source lead 'The Americas' for George Vaughan
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Edward Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/americashill00hill.'
+  origin_event: EVT-40bbb2ba115e
+  target_type: DOCUMENT
+  person_slots:
+  - George Vaughan
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - George Vaughan
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/americashill00hill
+  status: READY_SHADOW
+- target_id: ST-f5d145fcad93
+  question: 'Investigate the source lead ''CIA Reading Room cia-rdp87m00539r001602530014-7:
+    MEXICO AND CENTRAL AMERICA'' for James² Greene'
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "James² Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/cia-readingroom-document-cia-rdp87m00539r001602530014-7.'
+  origin_event: EVT-40bbb2ba115e
+  target_type: DOCUMENT
+  person_slots:
+  - James² Greene
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - James² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp87m00539r001602530014-7
+  status: READY_SHADOW
