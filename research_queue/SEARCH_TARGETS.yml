@@ -6181,3 +6181,171 @@ targets:
     a different person, place, date, or record family.
   source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp87m00539r001602530014-7
   status: READY_SHADOW
+- target_id: ST-49cbf3f2f3db
+  question: 'Investigate the source lead ''CIA Reading Room cia-rdp88g00186r000800920001-6:
+    LETTER TO HARRY E. FITZWATER FROM HAROLD C. KING'' for Edward² Greene'
+  reason: 'Generated from the legal_property_records lens. Original search query:
+    "George Vaughan" ("deed" OR "land evidence" OR "probate" OR "will" OR "court"
+    OR "testimony" OR "dower"). Source lead: https://archive.org/details/cia-readingroom-document-cia-rdp88g00186r000800920001-6.'
+  origin_event: EVT-95f6ea34a3d0
+  target_type: DOCUMENT
+  person_slots:
+  - Edward² Greene
+  jurisdictions: []
+  record_families:
+  - legal_property_records
+  date_range: {}
+  name_variants:
+  - Edward² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp88g00186r000800920001-6
+  status: READY_SHADOW
+- target_id: ST-d48d9f3b8c39
+  question: 'Investigate the source lead ''CIA Reading Room cia-rdp89-00244r000701510010-2:
+    LETTER TO HARRY E. FITZWATER FROM HAROLD C. KING'' for Edward² Greene'
+  reason: 'Generated from the legal_property_records lens. Original search query:
+    "George Vaughan" ("deed" OR "land evidence" OR "probate" OR "will" OR "court"
+    OR "testimony" OR "dower"). Source lead: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701510010-2.'
+  origin_event: EVT-95f6ea34a3d0
+  target_type: DOCUMENT
+  person_slots:
+  - Edward² Greene
+  jurisdictions: []
+  record_families:
+  - legal_property_records
+  date_range: {}
+  name_variants:
+  - Edward² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701510010-2
+  status: READY_SHADOW
+- target_id: ST-dfa8f4bba121
+  question: Investigate the source lead 'Newport City Council Meeting Summary - June
+    10, 2026' for John Greene of Warwick (Major John Greene / Deputy Governor)
+  reason: 'Generated from the legal_property_records lens. Original search query:
+    "Miantonomi" ("deed" OR "land evidence" OR "probate" OR "will" OR "court" OR "testimony"
+    OR "dower"). Source lead: https://archive.org/details/openpublica-newport-rhode_island-1537aac3-e02b-4c61-af47-d2b727b01f2a.'
+  origin_event: EVT-95f6ea34a3d0
+  target_type: DOCUMENT
+  person_slots:
+  - John Greene of Warwick (Major John Greene / Deputy Governor)
+  jurisdictions: []
+  record_families:
+  - legal_property_records
+  date_range: {}
+  name_variants:
+  - John Greene of Warwick (Major John Greene / Deputy Governor)
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/openpublica-newport-rhode_island-1537aac3-e02b-4c61-af47-d2b727b01f2a
+  status: READY_SHADOW
+- target_id: ST-c9dc8ef74a4b
+  question: 'Investigate the source lead ''PBS News Hour : KQED : July 18, 2025 6:00pm-7:00pm
+    PDT'' for James² Greene'
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "James² Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/KQED_20250719_010000_PBS_News_Hour.'
+  origin_event: EVT-95f6ea34a3d0
+  target_type: DOCUMENT
+  person_slots:
+  - James² Greene
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - James² Greene
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/KQED_20250719_010000_PBS_News_Hour
+  status: READY_SHADOW
+- target_id: ST-e4da18c90b45
+  question: Investigate the source lead 'The words of the Lord Jesus' for John Greene
+    of Newport
+  reason: 'Generated from the irish_scottish_migration lens. Original search query:
+    "husbandman" ("Irish" OR "Ireland" OR "Ulster" OR "Scotland" OR "Scottish" OR
+    "Donegal" OR "servant"). Source lead: https://archive.org/details/wordsoflordjesus0000stie_l1l3.'
+  origin_event: EVT-95f6ea34a3d0
+  target_type: DOCUMENT
+  person_slots:
+  - John Greene of Newport
+  jurisdictions: []
+  record_families:
+  - irish_scottish_migration
+  date_range: {}
+  name_variants:
+  - John Greene of Newport
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/wordsoflordjesus0000stie_l1l3
+  status: READY_SHADOW
+- target_id: ST-59e5b4e178fe
+  question: 'Investigate the source lead ''Ecology out of joint : new environments
+    and why they happen'' for John Greene of Quidnessett'
+  reason: 'Generated from the narragansett_indigenous_context lens. Original search
+    query: "Joan Greene" ("Narragansett" OR "Niantic" OR "sachem" OR "kin" OR "mark"
+    OR "interpreter" OR "Indian"). Source lead: https://archive.org/details/ecologyoutofjoin00miln.'
+  origin_event: EVT-95f6ea34a3d0
+  target_type: DOCUMENT
+  person_slots:
+  - John Greene of Quidnessett
+  jurisdictions: []
+  record_families:
+  - narragansett_indigenous_context
+  date_range: {}
+  name_variants:
+  - John Greene of Quidnessett
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Discard or redirect this target if the underlying source concerns
+    a different person, place, date, or record family.
+  source_identifier: https://archive.org/details/ecologyoutofjoin00miln
+  status: READY_SHADOW
