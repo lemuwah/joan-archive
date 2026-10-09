@@ -281,21 +281,33 @@ def generate_search_targets(
         )
         source_ref = result.get("url") or result.get("record_id") or ""
 
-        question = (
-            f"Investigate the source lead '{title}' for {person}"
-            if person
-            else f"Investigate the source lead '{title}'"
-        )
+        question = f"Investigate source record '{title}'"
+        if result.get("record_id"):
+            question += f" [record ID: {result['record_id']}]"
 
         reason_parts = [
-            f"Generated from the {lens or 'research'} lens.",
+            "Originating search context is UNVERIFIED and does not establish "
+            "that this source concerns the searched person or belongs to the "
+            "originating research lens."
         ]
 
+        if person:
+            reason_parts.append(
+                f"Searched person (unverified context only): {person}."
+            )
+
+        if lens:
+            reason_parts.append(
+                f"Originating research lens (unverified context only): {lens}."
+            )
+
         if query:
-            reason_parts.append(f"Original search query: {query}.")
+            reason_parts.append(
+                f"Original search query (discovery provenance only): {query}."
+            )
 
         if source_ref:
-            reason_parts.append(f"Source lead: {source_ref}.")
+            reason_parts.append(f"Source identifier: {source_ref}.")
         else:
             reason_parts.append(
                 "No stable source identifier was returned; preserve this "
@@ -307,18 +319,21 @@ def generate_search_targets(
             reason=" ".join(reason_parts),
             origin_event=origin_event,
             target_type="DOCUMENT",
-            person_slots=[person] if person else [],
+            person_slots=[],
             jurisdictions=[],
-            record_families=[lens] if lens else [],
+            record_families=[],
             date_range={},
-            name_variants=[person] if person else [],
+            name_variants=[],
             target_file=target_file,
             event_file=event_file,
             source_identifier=source_ref,
             laws=laws,
             disproof_record=(
-                "Discard or redirect this target if the underlying source "
-                "concerns a different person, place, date, or record family."
+                "Do not attribute this source to the searched person or "
+                "originating research lens based on search context alone. "
+                "Verify the underlying source's content, author, date, place, "
+                "record family, and identity before linking it to a person "
+                "or treating it as evidence."
             ),
         )
         generated.append(target)

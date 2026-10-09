@@ -177,6 +177,38 @@ def main():
         print("PASS: breadcrumb source identifier is preserved")
 
         # ------------------------------------------------------------
+        # F2. Search context must not become source attribution.
+        # ------------------------------------------------------------
+        assert child["person_slots"] == [], (
+            "Routed results must not inherit the searched person's identity"
+        )
+        assert child["name_variants"] == [], (
+            "Search terms must not become verified source name variants"
+        )
+        assert child["record_families"] == [], (
+            "The originating record-family lens must not be assigned "
+            "to the returned source without verification"
+        )
+
+        child_reason = child.get("reason", "").lower()
+        assert "unverified" in child_reason, (
+            "The child must label inherited discovery context as unverified"
+        )
+        assert "joan unknown greene" in child_reason, (
+            "The original searched person must remain traceable as context"
+        )
+        assert "synthetic breadcrumb" in child_reason, (
+            "The original search context must remain traceable"
+        )
+        assert "for joan unknown greene" not in child["question"].lower(), (
+            "The child question must investigate the source, not assume identity"
+        )
+
+        print("PASS: routed result does not inherit person identity")
+        print("PASS: routed result does not inherit record-family attribution")
+        print("PASS: originating search context remains unverified and traceable")
+
+        # ------------------------------------------------------------
         # G. Child remains human-gated.
         # ------------------------------------------------------------
         assert child["status"] == "READY_SHADOW"
