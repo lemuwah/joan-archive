@@ -7031,3 +7031,2389 @@ targets:
     a different person, place, date, or record family.
   source_identifier: https://archive.org/details/patch-adams
   status: READY_SHADOW
+- target_id: ST-ab2ca10d8275
+  question: 'Investigate source record ''Victoria Derbyshire : BBCNEWS : December
+    20, 2017 9:00am-11:01am GMT'' [record ID: BBCNEWS_20171220_090000_Victoria_Derbyshire]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Nawham ("Stonewall John"). Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "Richard Smith" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: https://archive.org/details/BBCNEWS_20171220_090000_Victoria_Derbyshire.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/BBCNEWS_20171220_090000_Victoria_Derbyshire
+  status: READY_SHADOW
+- target_id: ST-5948879ce881
+  question: 'Investigate source record ''The early history of Narragansett; with an
+    appendix of original documents, many of which are now for the first time published.''
+    [record ID: http://www.loc.gov/item/rc01002950/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Anashuecot (Awashouse) — Chief Sachem
+    of Quidnessett. Originating research lens (unverified context only): narragansett_indigenous_context.
+    Original search query (discovery provenance only): "Nucom" ("Narragansett" OR
+    "Niantic" OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source
+    identifier: http://www.loc.gov/item/rc01002950/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/rc01002950/
+  status: READY_SHADOW
+- target_id: ST-894c346e53c7
+  question: 'Investigate source record ''The Washington herald (Washington, D.C.),
+    July 17, 1907'' [record ID: http://www.loc.gov/item/sn83045433/1907-07-17/ed-1/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Benjamin² Greene. Originating research
+    lens (unverified context only): maritime_trade_network. Original search query
+    (discovery provenance only): "Beni Green" ("ship" OR "vessel" OR "seaman" OR "merchant"
+    OR "Newport" OR "Boston" OR "London"). Source identifier: http://www.loc.gov/item/sn83045433/1907-07-17/ed-1/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/sn83045433/1907-07-17/ed-1/
+  status: READY_SHADOW
+- target_id: ST-c433028bb181
+  question: 'Investigate source record ''Christian Talk That Rocks with Richie L.
+    Ep. 7/1/2022'' [record ID: Ad_Durar_Al_Bahiyyah-christian_talk_that_rocks_with_richie_l_ep_7_1_2022]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Daniel² Greene. Originating research
+    lens (unverified context only): irish_scottish_migration. Original search query
+    (discovery provenance only): "Daniel Green" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: https://archive.org/details/Ad_Durar_Al_Bahiyyah-christian_talk_that_rocks_with_richie_l_ep_7_1_2022.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/Ad_Durar_Al_Bahiyyah-christian_talk_that_rocks_with_richie_l_ep_7_1_2022
+  status: READY_SHADOW
+- target_id: ST-8b4e28eae7cf
+  question: 'Investigate source record ''The life and times of Samuel Gorton;'' [record
+    ID: http://www.loc.gov/item/08010307/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Edward² Greene. Originating research
+    lens (unverified context only): narragansett_indigenous_context. Original search
+    query (discovery provenance only): "Henry Tibbitts" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    http://www.loc.gov/item/08010307/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/08010307/
+  status: READY_SHADOW
+- target_id: ST-5740d47be0bb
+  question: 'Investigate source record ''Dun and Bradstreet Reference Book: March,
+    1903; Vol. 140, part 1'' [record ID: http://www.loc.gov/item/mar1903v140p1/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Edward Greenman. Originating research
+    lens (unverified context only): irish_scottish_migration. Original search query
+    (discovery provenance only): "David Greenman" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: http://www.loc.gov/item/mar1903v140p1/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/mar1903v140p1/
+  status: READY_SHADOW
+- target_id: ST-ba2a61e6e5c8
+  question: 'Investigate source record ''Maurice Leitch Swan Song 4 The Nightingale''
+    [record ID: maurice-leitch-swan-song-for-the-nightingale]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Elizabeth (wife of James² Greene).
+    Originating research lens (unverified context only): irish_scottish_migration.
+    Original search query (discovery provenance only): "James Greene" ("Irish" OR
+    "Ireland" OR "Ulster" OR "Scotland" OR "Scottish" OR "Donegal" OR "servant").
+    Source identifier: https://archive.org/details/maurice-leitch-swan-song-for-the-nightingale.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/maurice-leitch-swan-song-for-the-nightingale
+  status: READY_SHADOW
+- target_id: ST-095eca1aefbf
+  question: 'Investigate source record ''A genealogical and heraldic dictionary of
+    the landed gentry of Great Britain & Ireland, for 1853: comprising particulars
+    of upwards of 100,000 individuals'' [record ID: http://www.loc.gov/item/18007580/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): George Havens. Originating research
+    lens (unverified context only): irish_scottish_migration. Original search query
+    (discovery provenance only): "Edward Greene" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: http://www.loc.gov/item/18007580/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/18007580/
+  status: READY_SHADOW
+- target_id: ST-81fa4e23804d
+  question: 'Investigate source record ''A child''s history of the world'' [record
+    ID: childshistoryofw00hill]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): George Vaughan. Originating research
+    lens (unverified context only): irish_scottish_migration. Original search query
+    (discovery provenance only): "Edward Greene" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: https://archive.org/details/childshistoryofw00hill.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/childshistoryofw00hill
+  status: READY_SHADOW
+- target_id: ST-d69ed5fc861f
+  question: 'Investigate source record ''Nineteenth Century America Furniture and
+    Other Decorative Arts'' [record ID: metmuseum-Nineteenth_Century_America_Furniture_and_Other_Decorative_Arts]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Henry² Greene. Originating research
+    lens (unverified context only): servant_indentured_status. Original search query
+    (discovery provenance only): "Henry² Greene" ("servant" OR "indentured" OR "bond
+    servant" OR "redemptioner" OR "apprentice" OR "master"). Source identifier: https://archive.org/details/metmuseum-Nineteenth_Century_America_Furniture_and_Other_Decorative_Arts.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/metmuseum-Nineteenth_Century_America_Furniture_and_Other_Decorative_Arts
+  status: READY_SHADOW
+- target_id: ST-0b02f035b0c3
+  question: 'Investigate source record ''The official Irish travelling guide;'' [record
+    ID: http://www.loc.gov/item/04002452/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Henry Tibbitts (H. Tibbits). Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "H Tibbits" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: http://www.loc.gov/item/04002452/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/04002452/
+  status: READY_SHADOW
+- target_id: ST-c37ee876694f
+  question: 'Investigate source record ''Rhode Island land evidences, vol. I, 1648-1696,
+    abstracts.'' [record ID: http://www.loc.gov/item/21018384/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): James² Greene. Originating research
+    lens (unverified context only): legal_property_records. Original search query
+    (discovery provenance only): "James² Greene" ("deed" OR "land evidence" OR "probate"
+    OR "will" OR "court" OR "testimony" OR "dower"). Source identifier: http://www.loc.gov/item/21018384/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/21018384/
+  status: READY_SHADOW
+- target_id: ST-f977bfcf7ef2
+  question: 'Investigate source record ''[Vol. 15] Vital records of Rhode Island,
+    1636-1850. First series: Births, marriages and deaths'' [record ID: http://www.loc.gov/item/02003733/resource/gdcmassbookdig.vitalrecordsofrh08arno]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Newport. Originating
+    research lens (unverified context only): maritime_trade_network. Original search
+    query (discovery provenance only): "John Greene of Newport" ("ship" OR "vessel"
+    OR "seaman" OR "merchant" OR "Newport" OR "Boston" OR "London"). Source identifier:
+    http://www.loc.gov/item/02003733/resource/gdcmassbookdig.vitalrecordsofrh08arno.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/02003733/resource/gdcmassbookdig.vitalrecordsofrh08arno
+  status: READY_SHADOW
+- target_id: ST-31a4b15de6b5
+  question: 'Investigate source record ''[Copy 1; Volume 5] The history of the state
+    of Rhode Island and Providence Plantations,'' [record ID: http://www.loc.gov/item/20009789/resource/gdcmassbookdig.historyofstateof08bick]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene "of Potowomut". Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "James Greene "of Potowomut"" ("Irish" OR "Ireland"
+    OR "Ulster" OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier:
+    http://www.loc.gov/item/20009789/resource/gdcmassbookdig.historyofstateof08bick.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/20009789/resource/gdcmassbookdig.historyofstateof08bick
+  status: READY_SHADOW
+- target_id: ST-bc4aa88b62c0
+  question: 'Investigate source record ''Sketches of representative women of New England,''
+    [record ID: http://www.loc.gov/item/05011060/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Warwick (Major John
+    Greene / Deputy Governor). Originating research lens (unverified context only):
+    church_civil_registration. Original search query (discovery provenance only):
+    "Surgeon John Greene" ("church" OR "baptism" OR "marriage" OR "burial" OR "parish"
+    OR "Quaker" OR "meeting"). Source identifier: http://www.loc.gov/item/05011060/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/05011060/
+  status: READY_SHADOW
+- target_id: ST-8db55048b03f
+  question: 'Investigate source record ''An oifig chum ceart fhrithealadh an comuin
+    naomh, do reir gnathachadh eaglais na h''alba. 1797'' [record ID: bim_eighteenth-century_an-oifig-chum-ceart-fhri_episcopal-church-in-scot_1797]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Joseph Clark & Francis Brinley. Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "John Greene" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: https://archive.org/details/bim_eighteenth-century_an-oifig-chum-ceart-fhri_episcopal-church-in-scot_1797.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/bim_eighteenth-century_an-oifig-chum-ceart-fhri_episcopal-church-in-scot_1797
+  status: READY_SHADOW
+- target_id: ST-c8a260ec96c3
+  question: 'Investigate source record ''The Greene family and its branches from 861
+    to 1904.'' [record ID: http://www.loc.gov/item/09014502/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Thomas Gould of Narragansett Country.
+    Originating research lens (unverified context only): maritime_trade_network. Original
+    search query (discovery provenance only): "John Greene of Quidnessett" ("ship"
+    OR "vessel" OR "seaman" OR "merchant" OR "Newport" OR "Boston" OR "London"). Source
+    identifier: http://www.loc.gov/item/09014502/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/09014502/
+  status: READY_SHADOW
+- target_id: ST-80056af0fed5
+  question: 'Investigate source record ''Brewtal Battle Beer Mail Episode 16'' [record
+    ID: brewtal-battle-beer-mail-episode-16]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Nawham ("Stonewall John"). Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "Richard Smith" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: https://archive.org/details/brewtal-battle-beer-mail-episode-16.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/brewtal-battle-beer-mail-episode-16
+  status: READY_SHADOW
+- target_id: ST-9adb1d2bb126
+  question: 'Investigate source record ''The Portland daily press (Portland, Me.),
+    August 7, 1877'' [record ID: http://www.loc.gov/item/sn83016025/1877-08-07/ed-1/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Benjamin² Greene. Originating research
+    lens (unverified context only): maritime_trade_network. Original search query
+    (discovery provenance only): "Beni Green" ("ship" OR "vessel" OR "seaman" OR "merchant"
+    OR "Newport" OR "Boston" OR "London"). Source identifier: http://www.loc.gov/item/sn83016025/1877-08-07/ed-1/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/sn83016025/1877-08-07/ed-1/
+  status: READY_SHADOW
+- target_id: ST-16ba4260d763
+  question: 'Investigate source record ''The Chicago citizen (Chicago, Ill.), November
+    16, 1912'' [record ID: http://www.loc.gov/item/sn90053031/1912-11-16/ed-1/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Daniel² Greene. Originating research
+    lens (unverified context only): irish_scottish_migration. Original search query
+    (discovery provenance only): "Daniel Green" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: http://www.loc.gov/item/sn90053031/1912-11-16/ed-1/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/sn90053031/1912-11-16/ed-1/
+  status: READY_SHADOW
+- target_id: ST-eb4ae9fb3e78
+  question: 'Investigate source record ''Register: 1902.'' [record ID: http://www.loc.gov/item/05023364/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Edward² Greene. Originating research
+    lens (unverified context only): maritime_trade_network. Original search query
+    (discovery provenance only): "Mary Tibbitts" ("ship" OR "vessel" OR "seaman" OR
+    "merchant" OR "Newport" OR "Boston" OR "London"). Source identifier: http://www.loc.gov/item/05023364/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/05023364/
+  status: READY_SHADOW
+- target_id: ST-a44e32b67e8a
+  question: 'Investigate source record ''David Greenman notes on Materia Medica lectures
+    delivered by Adam Kuhn at the University of Pennsylvania Medical School'' [record
+    ID: mscodex1866]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Edward Greenman. Originating research
+    lens (unverified context only): narragansett_indigenous_context. Original search
+    query (discovery provenance only): "David Greenman" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/mscodex1866.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/mscodex1866
+  status: READY_SHADOW
+- target_id: ST-cfc852459ee5
+  question: 'Investigate source record ''Stewart Parker - Pratt''s Fall'' [record
+    ID: stewart-parker-pratts-fall]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Elizabeth (wife of James² Greene).
+    Originating research lens (unverified context only): irish_scottish_migration.
+    Original search query (discovery provenance only): "James Greene" ("Irish" OR
+    "Ireland" OR "Ulster" OR "Scotland" OR "Scottish" OR "Donegal" OR "servant").
+    Source identifier: https://archive.org/details/stewart-parker-pratts-fall.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/stewart-parker-pratts-fall
+  status: READY_SHADOW
+- target_id: ST-c932de3f7b5f
+  question: 'Investigate source record ''Genealogical and family history of southern
+    New York and the Hudson River Valley : a record of the achievements of her people
+    in the making of a commonwealth and the building of a nation'' [record ID: http://www.loc.gov/item/14020396/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): George Havens. Originating research
+    lens (unverified context only): irish_scottish_migration. Original search query
+    (discovery provenance only): "Benjamin Greene" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: http://www.loc.gov/item/14020396/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/14020396/
+  status: READY_SHADOW
+- target_id: ST-430c8aaaa9b5
+  question: 'Investigate source record ''The American encyclopaedic dictionary'' [record
+    ID: http://www.loc.gov/item/01005123/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Henry² Greene. Originating research
+    lens (unverified context only): servant_indentured_status. Original search query
+    (discovery provenance only): "Henry² Greene" ("servant" OR "indentured" OR "bond
+    servant" OR "redemptioner" OR "apprentice" OR "master"). Source identifier: http://www.loc.gov/item/01005123/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/01005123/
+  status: READY_SHADOW
+- target_id: ST-309d300b2878
+  question: 'Investigate source record ''The Irish standard (Minneapolis, Minn. ;
+    St. Paul, Minn.), June 3, 1905'' [record ID: http://www.loc.gov/item/sn90059959/1905-06-03/ed-1/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Henry Tibbitts (H. Tibbits). Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "H Tibbits" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: http://www.loc.gov/item/sn90059959/1905-06-03/ed-1/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/sn90059959/1905-06-03/ed-1/
+  status: READY_SHADOW
+- target_id: ST-efa54e0e1f9c
+  question: 'Investigate source record ''History of Providence County, Rhode Island.''
+    [record ID: http://www.loc.gov/item/02004129/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): James² Greene. Originating research
+    lens (unverified context only): enslavement_captivity_status. Original search
+    query (discovery provenance only): "John Greene Sr." ("enslaved" OR "slave" OR
+    "captive" OR "Negro" OR "Indian" OR "mulatto" OR "redemption"). Source identifier:
+    http://www.loc.gov/item/02004129/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/02004129/
+  status: READY_SHADOW
+- target_id: ST-52b3930148bb
+  question: 'Investigate source record ''[Vol. 16] Vital records of Rhode Island,
+    1636-1850. First series: Births, marriages and deaths'' [record ID: http://www.loc.gov/item/02003733/resource/gdcmassbookdig.vitalrecordsofrh10arno]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Newport. Originating
+    research lens (unverified context only): maritime_trade_network. Original search
+    query (discovery provenance only): "John Greene of Newport" ("ship" OR "vessel"
+    OR "seaman" OR "merchant" OR "Newport" OR "Boston" OR "London"). Source identifier:
+    http://www.loc.gov/item/02003733/resource/gdcmassbookdig.vitalrecordsofrh10arno.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/02003733/resource/gdcmassbookdig.vitalrecordsofrh10arno
+  status: READY_SHADOW
+- target_id: ST-ff10a6d7f6b1
+  question: 'Investigate source record ''Biographical sketches of the generals of
+    the Continental army of the revolution.'' [record ID: http://www.loc.gov/item/05036851/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene "of Potowomut". Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "James Greene "of Potowomut" ("Irish" OR "Ireland"
+    OR "Ulster" OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier:
+    http://www.loc.gov/item/05036851/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/05036851/
+  status: READY_SHADOW
+- target_id: ST-241f6c9b19a0
+  question: 'Investigate source record ''The Life Of Philip Thomas Howard, O.P. :
+    Cardinal of Norfolk, Grand Almoner to Catherine of Braganza, Queen-consort of
+    King Charles II., and restorer of the English province of Friar-Preachers or Dominicans,
+    compiled from original manuscripts, with a sketch of the rise, missions, and influence
+    of the Dominican order, and of its early history in England'' [record ID: TheLifeOfPhilipThomasHoward]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Joseph Clark & Francis Brinley. Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "John Greene" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: https://archive.org/details/TheLifeOfPhilipThomasHoward.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/TheLifeOfPhilipThomasHoward
+  status: READY_SHADOW
+- target_id: ST-6be2a663741f
+  question: 'Investigate source record ''[Copy 1; Volume 1] History of the state of
+    Rhode Island and Providence plantations'' [record ID: http://www.loc.gov/item/02018842/resource/gdcmassbookdig.historyofstateof02arnol]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Sarah² Greene (alias Flounders). Originating
+    research lens (unverified context only): narragansett_indigenous_context. Original
+    search query (discovery provenance only): "Thomas Flounders" ("Narragansett" OR
+    "Niantic" OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source
+    identifier: http://www.loc.gov/item/02018842/resource/gdcmassbookdig.historyofstateof02arnol.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/02018842/resource/gdcmassbookdig.historyofstateof02arnol
+  status: READY_SHADOW
+- target_id: ST-1ad9f1c3f499
+  question: 'Investigate source record ''[Volume 8] Encyclopedia of biography of New
+    York, a life record of men and women whose sterling character and energy and industry
+    have made them preëminent in their own and many other states,'' [record ID: http://www.loc.gov/item/17027880/resource/gdcmassbookdig.encyclopediaofbi01fitc]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Thomas Gould of Narragansett Country.
+    Originating research lens (unverified context only): maritime_trade_network. Original
+    search query (discovery provenance only): "John Greene of Quidnessett" ("ship"
+    OR "vessel" OR "seaman" OR "merchant" OR "Newport" OR "Boston" OR "London"). Source
+    identifier: http://www.loc.gov/item/17027880/resource/gdcmassbookdig.encyclopediaofbi01fitc.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/17027880/resource/gdcmassbookdig.encyclopediaofbi01fitc
+  status: READY_SHADOW
+- target_id: ST-c181db8e59b8
+  question: 'Investigate source record ''Brewtal Battle Episode 202'' [record ID:
+    BrewtalBattleEpisode202]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Nawham ("Stonewall John"). Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "Richard Smith" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: https://archive.org/details/BrewtalBattleEpisode202.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/BrewtalBattleEpisode202
+  status: READY_SHADOW
+- target_id: ST-9f998cc2a6db
+  question: 'Investigate source record ''The Portland daily press (Portland, Me.),
+    May 21, 1868'' [record ID: http://www.loc.gov/item/sn83016025/1868-05-21/ed-1/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Benjamin² Greene. Originating research
+    lens (unverified context only): maritime_trade_network. Original search query
+    (discovery provenance only): "Beni Green" ("ship" OR "vessel" OR "seaman" OR "merchant"
+    OR "Newport" OR "Boston" OR "London"). Source identifier: http://www.loc.gov/item/sn83016025/1868-05-21/ed-1/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/sn83016025/1868-05-21/ed-1/
+  status: READY_SHADOW
+- target_id: ST-49f1d2d6c2b2
+  question: 'Investigate source record ''The Chicago citizen (Chicago, Ill.), January
+    8, 1910'' [record ID: http://www.loc.gov/item/sn90053031/1910-01-08/ed-1/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Daniel² Greene. Originating research
+    lens (unverified context only): irish_scottish_migration. Original search query
+    (discovery provenance only): "Daniel Green" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: http://www.loc.gov/item/sn90053031/1910-01-08/ed-1/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/sn90053031/1910-01-08/ed-1/
+  status: READY_SHADOW
+- target_id: ST-0ca53ccdbc55
+  question: 'Investigate source record ''New-York tribune (New York [N.Y.]), September
+    23, 1867'' [record ID: http://www.loc.gov/item/sn83030214/1867-09-23/ed-1/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Edward² Greene. Originating research
+    lens (unverified context only): maritime_trade_network. Original search query
+    (discovery provenance only): "Mary Tibbitts" ("ship" OR "vessel" OR "seaman" OR
+    "merchant" OR "Newport" OR "Boston" OR "London"). Source identifier: http://www.loc.gov/item/sn83030214/1867-09-23/ed-1/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/sn83030214/1867-09-23/ed-1/
+  status: READY_SHADOW
+- target_id: ST-c5410ddedb5b
+  question: 'Investigate source record ''History of Bristol County, Massachusetts,''
+    [record ID: http://www.loc.gov/item/01012138/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Edward Greenman. Originating research
+    lens (unverified context only): narragansett_indigenous_context. Original search
+    query (discovery provenance only): "David Greenman" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    http://www.loc.gov/item/01012138/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/01012138/
+  status: READY_SHADOW
+- target_id: ST-75d752a71d60
+  question: 'Investigate source record ''Kentucky Irish American (Louisville, Ky.),
+    November 1, 1913'' [record ID: http://www.loc.gov/item/sn86069180/1913-11-01/ed-1/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Elizabeth (wife of James² Greene).
+    Originating research lens (unverified context only): irish_scottish_migration.
+    Original search query (discovery provenance only): "James Greene" ("Irish" OR
+    "Ireland" OR "Ulster" OR "Scotland" OR "Scottish" OR "Donegal" OR "servant").
+    Source identifier: http://www.loc.gov/item/sn86069180/1913-11-01/ed-1/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/sn86069180/1913-11-01/ed-1/
+  status: READY_SHADOW
+- target_id: ST-6769651b640f
+  question: 'Investigate source record ''The county families of the United kingdom''
+    [record ID: http://www.loc.gov/item/unk81054391/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): George Havens. Originating research
+    lens (unverified context only): irish_scottish_migration. Original search query
+    (discovery provenance only): "Edward Greene" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: http://www.loc.gov/item/unk81054391/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/unk81054391/
+  status: READY_SHADOW
+- target_id: ST-f821b4497260
+  question: 'Investigate source record ''The New York herald (New York, N.Y.), December
+    19, 1921'' [record ID: http://www.loc.gov/item/sn83045774/1921-12-19/ed-1/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): George Vaughan. Originating research
+    lens (unverified context only): irish_scottish_migration. Original search query
+    (discovery provenance only): "Edward Greene" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: http://www.loc.gov/item/sn83045774/1921-12-19/ed-1/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/sn83045774/1921-12-19/ed-1/
+  status: READY_SHADOW
+- target_id: ST-cf27254e1f0f
+  question: 'Investigate source record ''[Copy 1; Volume 2] The history of the state
+    of Rhode Island and Providence Plantations,'' [record ID: http://www.loc.gov/item/20009789/resource/gdcmassbookdig.historyofstateof02bick]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Henry² Greene. Originating research
+    lens (unverified context only): enslavement_captivity_status. Original search
+    query (discovery provenance only): "Henry² Greene" ("enslaved" OR "slave" OR "captive"
+    OR "Negro" OR "Indian" OR "mulatto" OR "redemption"). Source identifier: http://www.loc.gov/item/20009789/resource/gdcmassbookdig.historyofstateof02bick.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/20009789/resource/gdcmassbookdig.historyofstateof02bick
+  status: READY_SHADOW
+- target_id: ST-6d8bcfe6436c
+  question: 'Investigate source record ''[Copy 1; Volume 1] The history of the state
+    of Rhode Island and Providence Plantations,'' [record ID: http://www.loc.gov/item/20009789/resource/gdcmassbookdig.historyofstateof01bick]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): James² Greene. Originating research
+    lens (unverified context only): narragansett_indigenous_context. Original search
+    query (discovery provenance only): "John Greene Sr." ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    http://www.loc.gov/item/20009789/resource/gdcmassbookdig.historyofstateof01bick.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/20009789/resource/gdcmassbookdig.historyofstateof01bick
+  status: READY_SHADOW
+- target_id: ST-e90432536a18
+  question: 'Investigate source record ''Genealogical and family history of central
+    New York : a record of the achievements of her people in the making of a commonwealth
+    and the building of a nation'' [record ID: http://www.loc.gov/item/12013659/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Newport. Originating
+    research lens (unverified context only): maritime_trade_network. Original search
+    query (discovery provenance only): "John Greene of Newport" ("ship" OR "vessel"
+    OR "seaman" OR "merchant" OR "Newport" OR "Boston" OR "London"). Source identifier:
+    http://www.loc.gov/item/12013659/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/12013659/
+  status: READY_SHADOW
+- target_id: ST-09c84ed13255
+  question: 'Investigate source record ''The New York herald (New York, N.Y.), January
+    8, 1922'' [record ID: http://www.loc.gov/item/sn83045774/1922-01-08/ed-1/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene "of Potowomut". Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "James Greene "of Potowomut" ("Irish" OR "Ireland"
+    OR "Ulster" OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier:
+    http://www.loc.gov/item/sn83045774/1922-01-08/ed-1/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/sn83045774/1922-01-08/ed-1/
+  status: READY_SHADOW
+- target_id: ST-4ca92da100cf
+  question: 'Investigate source record ''The history of Warwick, Rhode Island, from
+    its settlement in 1642 to the present time : including accounts of the early settlement
+    and development of its several villages; sketches of the origin and progress of
+    the different churches of the town., &c., &c.'' [record ID: http://www.loc.gov/item/rc01003054/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Quidnessett. Originating
+    research lens (unverified context only): maritime_trade_network. Original search
+    query (discovery provenance only): "John Greene Sen''r" ("ship" OR "vessel" OR
+    "seaman" OR "merchant" OR "Newport" OR "Boston" OR "London"). Source identifier:
+    http://www.loc.gov/item/rc01003054/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/rc01003054/
+  status: READY_SHADOW
+- target_id: ST-0abcedde2547
+  question: 'Investigate source record ''Pennsylvania genealogies; Scotch-Irish and
+    German.'' [record ID: http://www.loc.gov/item/04011467/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Joseph Clark & Francis Brinley. Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "John Greene" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: http://www.loc.gov/item/04011467/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/04011467/
+  status: READY_SHADOW
+- target_id: ST-c6dde3a53bd7
+  question: 'Investigate source record ''[Copy 2; Volume 1] History of the state of
+    Rhode Island and Providence plantations'' [record ID: http://www.loc.gov/item/02018842/resource/gdcmassbookdig.historyofstateof01arnol]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Sarah² Greene (alias Flounders). Originating
+    research lens (unverified context only): narragansett_indigenous_context. Original
+    search query (discovery provenance only): "Thomas Flounders" ("Narragansett" OR
+    "Niantic" OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source
+    identifier: http://www.loc.gov/item/02018842/resource/gdcmassbookdig.historyofstateof01arnol.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/02018842/resource/gdcmassbookdig.historyofstateof01arnol
+  status: READY_SHADOW
+- target_id: ST-322c7919334a
+  question: 'Investigate source record ''[Volume 4] Encyclopedia of biography of New
+    York, a life record of men and women whose sterling character and energy and industry
+    have made them preëminent in their own and many other states,'' [record ID: http://www.loc.gov/item/17027880/resource/gdcmassbookdig.encyclopediaofbi05fitc]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Thomas Gould of Narragansett Country.
+    Originating research lens (unverified context only): maritime_trade_network. Original
+    search query (discovery provenance only): "John Greene of Quidnessett" ("ship"
+    OR "vessel" OR "seaman" OR "merchant" OR "Newport" OR "Boston" OR "London"). Source
+    identifier: http://www.loc.gov/item/17027880/resource/gdcmassbookdig.encyclopediaofbi05fitc.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/17027880/resource/gdcmassbookdig.encyclopediaofbi05fitc
+  status: READY_SHADOW
+- target_id: ST-9c3026e32726
+  question: 'Investigate source record ''Worldwide Exchange : CNBC : October 4, 2017
+    5:00am-6:00am EDT'' [record ID: CNBC_20171004_090000_Worldwide_Exchange]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Nawham ("Stonewall John"). Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "Richard Smith" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: https://archive.org/details/CNBC_20171004_090000_Worldwide_Exchange.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/CNBC_20171004_090000_Worldwide_Exchange
+  status: READY_SHADOW
+- target_id: ST-cdb46d319a7b
+  question: 'Investigate source record ''Daily national intelligencer (Washington
+    City [D.C.]), February 27, 1856'' [record ID: http://www.loc.gov/item/sn83026172/1856-02-27/ed-1/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Benjamin² Greene. Originating research
+    lens (unverified context only): maritime_trade_network. Original search query
+    (discovery provenance only): "Beni Green" ("ship" OR "vessel" OR "seaman" OR "merchant"
+    OR "Newport" OR "Boston" OR "London"). Source identifier: http://www.loc.gov/item/sn83026172/1856-02-27/ed-1/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/sn83026172/1856-02-27/ed-1/
+  status: READY_SHADOW
+- target_id: ST-52097c9c2be8
+  question: 'Investigate source record ''American Presbyterianism...'' [record ID:
+    http://www.loc.gov/item/unk80013318/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Daniel² Greene. Originating research
+    lens (unverified context only): irish_scottish_migration. Original search query
+    (discovery provenance only): "Daniel Green" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: http://www.loc.gov/item/unk80013318/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/unk80013318/
+  status: READY_SHADOW
+- target_id: ST-3f0c62bf049f
+  question: 'Investigate source record ''The New York herald (New York [N.Y.]), May
+    3, 1877'' [record ID: http://www.loc.gov/item/sn83030313/1877-05-03/ed-1/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Edward² Greene. Originating research
+    lens (unverified context only): maritime_trade_network. Original search query
+    (discovery provenance only): "Mary Tibbitts" ("ship" OR "vessel" OR "seaman" OR
+    "merchant" OR "Newport" OR "Boston" OR "London"). Source identifier: http://www.loc.gov/item/sn83030313/1877-05-03/ed-1/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/sn83030313/1877-05-03/ed-1/
+  status: READY_SHADOW
+- target_id: ST-09659cc72da9
+  question: 'Investigate source record ''Jane''s Merchant Ships'' [record ID: janesmerchantshi0000davi]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Edward Greenman. Originating research
+    lens (unverified context only): maritime_trade_network. Original search query
+    (discovery provenance only): "David Greenman" ("ship" OR "vessel" OR "seaman"
+    OR "merchant" OR "Newport" OR "Boston" OR "London"). Source identifier: https://archive.org/details/janesmerchantshi0000davi.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/janesmerchantshi0000davi
+  status: READY_SHADOW
+- target_id: ST-ceb5caf28785
+  question: 'Investigate source record ''Kentucky Irish American (Louisville, Ky.),
+    January 28, 1911'' [record ID: http://www.loc.gov/item/sn86069180/1911-01-28/ed-1/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Elizabeth (wife of James² Greene).
+    Originating research lens (unverified context only): irish_scottish_migration.
+    Original search query (discovery provenance only): "James Greene" ("Irish" OR
+    "Ireland" OR "Ulster" OR "Scotland" OR "Scottish" OR "Donegal" OR "servant").
+    Source identifier: http://www.loc.gov/item/sn86069180/1911-01-28/ed-1/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/sn86069180/1911-01-28/ed-1/
+  status: READY_SHADOW
+- target_id: ST-6255ce92c6da
+  question: 'Investigate source record ''Colonial and revolutionary families of Pennsylvania;''
+    [record ID: http://www.loc.gov/item/12024181/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): George Havens. Originating research
+    lens (unverified context only): irish_scottish_migration. Original search query
+    (discovery provenance only): "Benjamin Greene" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: http://www.loc.gov/item/12024181/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/12024181/
+  status: READY_SHADOW
+- target_id: ST-e4e214324636
+  question: 'Investigate source record ''[1873] Official register of the United States
+    : containing a list of officers and employees in the civil, military, and naval
+    service ... 1861-1905'' [record ID: http://www.loc.gov/item/04018251/resource/gdc.00531552106]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): George Vaughan. Originating research
+    lens (unverified context only): irish_scottish_migration. Original search query
+    (discovery provenance only): "Edward Greene" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: http://www.loc.gov/item/04018251/resource/gdc.00531552106.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/04018251/resource/gdc.00531552106
+  status: READY_SHADOW
+- target_id: ST-a17418c5e2be
+  question: 'Investigate source record ''[Copy 2; Volume 2] The history of the state
+    of Rhode Island and Providence Plantations,'' [record ID: http://www.loc.gov/item/20009789/resource/gdcmassbookdig.historyofstateof04bick]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Henry² Greene. Originating research
+    lens (unverified context only): enslavement_captivity_status. Original search
+    query (discovery provenance only): "Henry² Greene" ("enslaved" OR "slave" OR "captive"
+    OR "Negro" OR "Indian" OR "mulatto" OR "redemption"). Source identifier: http://www.loc.gov/item/20009789/resource/gdcmassbookdig.historyofstateof04bick.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/20009789/resource/gdcmassbookdig.historyofstateof04bick
+  status: READY_SHADOW
+- target_id: ST-b3267cfbec63
+  question: 'Investigate source record ''Crockford''s clerical directory. A reference
+    book of the clergy of the provinces of Canterbury and York and of other Anglican
+    provinces and dioceses'' [record ID: http://www.loc.gov/item/07024317/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Henry Tibbitts (H. Tibbits). Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "H Tibbits" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: http://www.loc.gov/item/07024317/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/07024317/
+  status: READY_SHADOW
+- target_id: ST-6a444c490750
+  question: 'Investigate source record ''[Copy 2; Volume 1] The history of the state
+    of Rhode Island and Providence Plantations,'' [record ID: http://www.loc.gov/item/20009789/resource/gdcmassbookdig.historyofstateof03bick]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): James² Greene. Originating research
+    lens (unverified context only): narragansett_indigenous_context. Original search
+    query (discovery provenance only): "John Greene Sr." ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    http://www.loc.gov/item/20009789/resource/gdcmassbookdig.historyofstateof03bick.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/20009789/resource/gdcmassbookdig.historyofstateof03bick
+  status: READY_SHADOW
+- target_id: ST-c8c9bde91b9e
+  question: 'Investigate source record ''The Irish standard (Minneapolis, Minn. ;
+    St. Paul, Minn.), March 14, 1908'' [record ID: http://www.loc.gov/item/sn90059959/1908-03-14/ed-1/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Joseph Clark & Francis Brinley. Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "John Greene" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: http://www.loc.gov/item/sn90059959/1908-03-14/ed-1/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/sn90059959/1908-03-14/ed-1/
+  status: READY_SHADOW
+- target_id: ST-011463d39b6e
+  question: 'Investigate source record ''[Copy 3; Volume 1] History of the state of
+    Rhode Island and Providence plantations'' [record ID: http://www.loc.gov/item/02018842/resource/gdcmassbookdig.historyofstateof03arno]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Sarah² Greene (alias Flounders). Originating
+    research lens (unverified context only): narragansett_indigenous_context. Original
+    search query (discovery provenance only): "Thomas Flounders" ("Narragansett" OR
+    "Niantic" OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source
+    identifier: http://www.loc.gov/item/02018842/resource/gdcmassbookdig.historyofstateof03arno.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/02018842/resource/gdcmassbookdig.historyofstateof03arno
+  status: READY_SHADOW
+- target_id: ST-824d559d85a5
+  question: 'Investigate source record ''Brewtal Battle Carton Brewing Showcase Episode''
+    [record ID: BrewtalBattleCartonBrewingShowcaseEpisode]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Nawham ("Stonewall John"). Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "Richard Smith" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: https://archive.org/details/BrewtalBattleCartonBrewingShowcaseEpisode.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/BrewtalBattleCartonBrewingShowcaseEpisode
+  status: READY_SHADOW
+- target_id: ST-1c7256f63a50
+  question: 'Investigate source record ''The San Francisco call (San Francisco [Calif.]),
+    October 22, 1911'' [record ID: http://www.loc.gov/item/sn85066387/1911-10-22/ed-1/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Benjamin² Greene. Originating research
+    lens (unverified context only): maritime_trade_network. Original search query
+    (discovery provenance only): "Beni Green" ("ship" OR "vessel" OR "seaman" OR "merchant"
+    OR "Newport" OR "Boston" OR "London"). Source identifier: http://www.loc.gov/item/sn85066387/1911-10-22/ed-1/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/sn85066387/1911-10-22/ed-1/
+  status: READY_SHADOW
+- target_id: ST-37312d281497
+  question: 'Investigate source record ''A history of the Presbyterian church in America,
+    from its origin until the year 1760.'' [record ID: http://www.loc.gov/item/unk82044024/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Daniel² Greene. Originating research
+    lens (unverified context only): irish_scottish_migration. Original search query
+    (discovery provenance only): "Daniel Green" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: http://www.loc.gov/item/unk82044024/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/unk82044024/
+  status: READY_SHADOW
+- target_id: ST-7e26d9b378eb
+  question: 'Investigate source record ''Zeta psi fraternity of North America,'' [record
+    ID: http://www.loc.gov/item/00002767/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Edward² Greene. Originating research
+    lens (unverified context only): maritime_trade_network. Original search query
+    (discovery provenance only): "Mary Tibbitts" ("ship" OR "vessel" OR "seaman" OR
+    "merchant" OR "Newport" OR "Boston" OR "London"). Source identifier: http://www.loc.gov/item/00002767/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/00002767/
+  status: READY_SHADOW
+- target_id: ST-cdeb6112ff65
+  question: 'Investigate source record ''Documentary history of Rhode Island'' [record
+    ID: http://www.loc.gov/item/16017375/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Edward Greenman. Originating research
+    lens (unverified context only): maritime_trade_network. Original search query
+    (discovery provenance only): "Edward Greenman" ("ship" OR "vessel" OR "seaman"
+    OR "merchant" OR "Newport" OR "Boston" OR "London"). Source identifier: http://www.loc.gov/item/16017375/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/16017375/
+  status: READY_SHADOW
+- target_id: ST-3078448fa626
+  question: 'Investigate source record ''Kentucky Irish American (Louisville, Ky.),
+    March 17, 1906'' [record ID: http://www.loc.gov/item/sn86069180/1906-03-17/ed-1/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Elizabeth (wife of James² Greene).
+    Originating research lens (unverified context only): irish_scottish_migration.
+    Original search query (discovery provenance only): "James Greene" ("Irish" OR
+    "Ireland" OR "Ulster" OR "Scotland" OR "Scottish" OR "Donegal" OR "servant").
+    Source identifier: http://www.loc.gov/item/sn86069180/1906-03-17/ed-1/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/sn86069180/1906-03-17/ed-1/
+  status: READY_SHADOW
+- target_id: ST-12f70c2436bd
+  question: 'Investigate source record ''Annual report'' [record ID: http://www.loc.gov/item/unk81015543/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Henry² Greene. Originating research
+    lens (unverified context only): enslavement_captivity_status. Original search
+    query (discovery provenance only): "Henry² Greene" ("enslaved" OR "slave" OR "captive"
+    OR "Negro" OR "Indian" OR "mulatto" OR "redemption"). Source identifier: http://www.loc.gov/item/unk81015543/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/unk81015543/
+  status: READY_SHADOW
+- target_id: ST-4226632d4595
+  question: 'Investigate source record ''Palmer''s index to "The times" newspaper''
+    [record ID: http://www.loc.gov/item/12025874/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Henry Tibbitts (H. Tibbits). Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "H Tibbits" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: http://www.loc.gov/item/12025874/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/12025874/
+  status: READY_SHADOW
+- target_id: ST-e06f83119e9e
+  question: 'Investigate source record ''The words of the Lord Jesus'' [record ID:
+    wordsoflordjesus0000stie]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Newport. Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "husbandman" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: https://archive.org/details/wordsoflordjesus0000stie.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/wordsoflordjesus0000stie
+  status: READY_SHADOW
+- target_id: ST-94f102280957
+  question: 'Investigate source record ''[Volume 3 - Copy 2] History of Worcester
+    and its people,'' [record ID: http://www.loc.gov/item/24010997/resource/gdcmassbookdig.historyofworcest03nuttc]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene "of Potowomut". Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "James Greene "of Potowomut"" ("Irish" OR "Ireland"
+    OR "Ulster" OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier:
+    http://www.loc.gov/item/24010997/resource/gdcmassbookdig.historyofworcest03nuttc.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/24010997/resource/gdcmassbookdig.historyofworcest03nuttc
+  status: READY_SHADOW
+- target_id: ST-aca4cf2b8620
+  question: 'Investigate source record ''San Antonio light (San Antonio, Tex.), September
+    27, 1936, (LATE MORNING)'' [record ID: http://www.loc.gov/item/sn85060004/1936-09-27/ed-1/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Quidnessett. Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "Joan Greene" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: http://www.loc.gov/item/sn85060004/1936-09-27/ed-1/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/sn85060004/1936-09-27/ed-1/
+  status: READY_SHADOW
+- target_id: ST-6118e8441912
+  question: 'Investigate source record ''[Copy 1; Volume 4] The history of the state
+    of Rhode Island and Providence Plantations,'' [record ID: http://www.loc.gov/item/20009789/resource/gdcmassbookdig.historyofstateof07bick]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Warwick (Major John
+    Greene / Deputy Governor). Originating research lens (unverified context only):
+    church_civil_registration. Original search query (discovery provenance only):
+    "Randall Holden, Samuel Gorton" ("church" OR "baptism" OR "marriage" OR "burial"
+    OR "parish" OR "Quaker" OR "meeting"). Source identifier: http://www.loc.gov/item/20009789/resource/gdcmassbookdig.historyofstateof07bick.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/20009789/resource/gdcmassbookdig.historyofstateof07bick
+  status: READY_SHADOW
+- target_id: ST-f84be6e54dce
+  question: 'Investigate source record ''Towns of New England and old England, Ireland
+    and Scotland ... connecting links between cities and towns of New England and
+    those of the same name in England, Ireland and Scotland; containing narratives,
+    descriptions, and many views, some done from old prints; also much matter pertaining
+    to the founders and settlers of New England and to their memorials on both sides
+    of the Atlantic.'' [record ID: http://www.loc.gov/item/a21001855/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Joseph Clark & Francis Brinley. Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "of Narragansett" ("Irish" OR "Ireland" OR
+    "Ulster" OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier:
+    http://www.loc.gov/item/a21001855/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/a21001855/
+  status: READY_SHADOW
+- target_id: ST-b05e7abb9f6b
+  question: 'Investigate source record ''Genealogical and family history of the state
+    of Connecticut; a record of the achievements of her people in the making of a
+    commonwealth and the founding of a nation.'' [record ID: http://www.loc.gov/item/11024384/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Sarah² Greene (alias Flounders). Originating
+    research lens (unverified context only): narragansett_indigenous_context. Original
+    search query (discovery provenance only): "Thomas Flounders" ("Narragansett" OR
+    "Niantic" OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source
+    identifier: http://www.loc.gov/item/11024384/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/11024384/
+  status: READY_SHADOW
+- target_id: ST-75e4b9ed590d
+  question: 'Investigate source record ''World Business Report : BBCNEWS : November
+    23, 2022 5:30am-6:01am GMT'' [record ID: BBCNEWS_20221123_053000_World_Business_Report]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Nawham ("Stonewall John"). Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "Richard Smith" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: https://archive.org/details/BBCNEWS_20221123_053000_World_Business_Report.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/BBCNEWS_20221123_053000_World_Business_Report
+  status: READY_SHADOW
+- target_id: ST-0dcf87764f61
+  question: 'Investigate source record ''Dun and Bradstreet Reference Book: September,
+    1885; Vol. 70'' [record ID: http://www.loc.gov/item/stbdandb.0022174276A/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Benjamin² Greene. Originating research
+    lens (unverified context only): maritime_trade_network. Original search query
+    (discovery provenance only): "Beni Green" ("ship" OR "vessel" OR "seaman" OR "merchant"
+    OR "Newport" OR "Boston" OR "London"). Source identifier: http://www.loc.gov/item/stbdandb.0022174276A/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/stbdandb.0022174276A/
+  status: READY_SHADOW
+- target_id: ST-29d3e168e8fa
+  question: 'Investigate source record ''The days of Makemie: or, the vine planted,
+    A.D. 1680-1708.'' [record ID: http://www.loc.gov/item/rc01003414/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Daniel² Greene. Originating research
+    lens (unverified context only): irish_scottish_migration. Original search query
+    (discovery provenance only): "Daniel Green" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: http://www.loc.gov/item/rc01003414/.'
+  origin_event: EVT-c11d759f0d5f
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/rc01003414/
+  status: READY_SHADOW
