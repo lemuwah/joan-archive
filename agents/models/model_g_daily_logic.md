@@ -1,4 +1,4 @@
-# Model G Agent — Joan Beggarly / Alice Daniels (La Mance) — 2026-10-11
+# Model G Agent — Joan Beggarly / Alice Daniels (La Mance) — 2026-10-12
 
 **Status:** ELIMINATED
 **Evidence state:** AI-assisted working report; all leads are `LAWS_FILTERED`. Periodic human review applies.
@@ -18,21 +18,5 @@ Test identity, date, place, status wording, and citation independence separately
 ## 4. Continuing conflict/context layer
 Record parties, witnesses, jurisdiction, legal setting, Indigenous and non-English context, competing Johns, and every unresolved contradiction. Preserve the strongest alternative explanation.
 
-## Leads matching this model's search vocabulary (17)
-- **Anashuecot (Awashouse) — Chief Sachem of Quidnessett** / `maritime_trade_network` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
-- **Anashuecot (Awashouse) — Chief Sachem of Quidnessett** / `church_civil_registration` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
-- **Benjamin² Greene** / `maritime_trade_network` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
-- **Edward Greenman** / `maritime_trade_network` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
-- **Edward Greenman** / `church_civil_registration` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
-- **Elizabeth (wife of James² Greene)** / `maritime_trade_network` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
-- **Elizabeth (wife of James² Greene)** / `church_civil_registration` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
-- **John Greene "of Potowomut"** / `legal_property_records` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
-- **John Greene "of Potowomut"** / `maritime_trade_network` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
-- **John Greene "of Potowomut"** / `church_civil_registration` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
-- **John Greene of Quidnessett** / `maritime_trade_network` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
-- **John Greene of Quidnessett** / `church_civil_registration` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
-- **John Greene of Warwick (Major John Greene / Deputy Governor)** / `maritime_trade_network` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
-- **John Greene of Warwick (Major John Greene / Deputy Governor)** / `church_civil_registration` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
-- **Joseph Clark & Francis Brinley** / `church_civil_registration` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
-- **Thomas Gould of Narragansett Country** / `maritime_trade_network` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
-- **Thomas Gould of Narragansett Country** / `church_civil_registration` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
+## Leads matching this model's search vocabulary (0)
+- No matching catalog lead in this run. Keep the model open or eliminated only according to its documented status and continue the scoped search.

@@ -9814,3 +9814,1791 @@ targets:
     or treating it as evidence.
   source_identifier: https://archive.org/details/discoveryofjesui00nichrich
   status: READY_SHADOW
+- target_id: ST-cf0236a07bfa
+  question: 'Investigate source record ''Pegasus 5.0'' [record ID: pegasus_5]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Anashuecot (Awashouse) — Chief Sachem
+    of Quidnessett. Originating research lens (unverified context only): servant_indentured_status.
+    Original search query (discovery provenance only): "Nucom" ("servant" OR "indentured"
+    OR "bond servant" OR "redemptioner" OR "apprentice" OR "master"). Source identifier:
+    https://archive.org/details/pegasus_5.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/pegasus_5
+  status: READY_SHADOW
+- target_id: ST-47b81a7d9e90
+  question: 'Investigate source record ''Science Notebook #075 Super Telescope in
+    Chile; New Communications Satellite; Anatomy of a Storm; The Reading Machine;
+    An Ancient Ozone Story'' [record ID: science-notebook_1976-075]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Benjamin² Greene. Originating research
+    lens (unverified context only): narragansett_indigenous_context. Original search
+    query (discovery provenance only): "George Havens" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/science-notebook_1976-075.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/science-notebook_1976-075
+  status: READY_SHADOW
+- target_id: ST-f2791d829c15
+  question: 'Investigate source record ''A memoir explanatory of the chart and survey
+    of the county of London-Derry, Ireland'' [record ID: amemoirexplanat00sampgoog]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Edward² Greene. Originating research
+    lens (unverified context only): irish_scottish_migration. Original search query
+    (discovery provenance only): "George Vaughan" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: https://archive.org/details/amemoirexplanat00sampgoog.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/amemoirexplanat00sampgoog
+  status: READY_SHADOW
+- target_id: ST-15b79cd093f4
+  question: 'Investigate source record ''Handel''s Messiah - The Walker Lecture Series
+    and Concord Community Chorus - Part 1'' [record ID: cocnh-Handel_s_Messiah_-_The_Walker_Lecture_Series_and_Concord_Community_Chorus_-_Part_1]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): George Havens. Originating research
+    lens (unverified context only): narragansett_indigenous_context. Original search
+    query (discovery provenance only): "Benjamin Greene" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/cocnh-Handel_s_Messiah_-_The_Walker_Lecture_Series_and_Concord_Community_Chorus_-_Part_1.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/cocnh-Handel_s_Messiah_-_The_Walker_Lecture_Series_and_Concord_Community_Chorus_-_Part_1
+  status: READY_SHADOW
+- target_id: ST-4d7ac3de7a32
+  question: 'Investigate source record ''Reminiscences about Abraham Lincoln'' [record
+    ID: reminiscencesathomstilinc]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Henry Tibbitts (H. Tibbits). Originating
+    research lens (unverified context only): narragansett_indigenous_context. Original
+    search query (discovery provenance only): "H Tibbits" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/reminiscencesathomstilinc.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/reminiscencesathomstilinc
+  status: READY_SHADOW
+- target_id: ST-04490ca402d4
+  question: 'Investigate source record ''Airdrop For Jesus'' [record ID: airdrop-for-jesus]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Newport. Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "husbandman" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: https://archive.org/details/airdrop-for-jesus.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/airdrop-for-jesus
+  status: READY_SHADOW
+- target_id: ST-3258668e21b1
+  question: 'Investigate source record ''Newport City Council Meeting: Capital Improvement
+    Plan and Budget Priorities - February 11, 2026'' [record ID: openpublica-newport-rhode_island-e71aa661-81f1-41c0-a702-1fdbaddcf420]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Warwick (Major John
+    Greene / Deputy Governor). Originating research lens (unverified context only):
+    servant_indentured_status. Original search query (discovery provenance only):
+    "Miantonomi" ("servant" OR "indentured" OR "bond servant" OR "redemptioner" OR
+    "apprentice" OR "master"). Source identifier: https://archive.org/details/openpublica-newport-rhode_island-e71aa661-81f1-41c0-a702-1fdbaddcf420.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/openpublica-newport-rhode_island-e71aa661-81f1-41c0-a702-1fdbaddcf420
+  status: READY_SHADOW
+- target_id: ST-a25f6a0d0c14
+  question: 'Investigate source record ''Echo Chamber - August 27, 2014'' [record
+    ID: EchoChamber-August272014]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Sarah² Greene (alias Flounders). Originating
+    research lens (unverified context only): servant_indentured_status. Original search
+    query (discovery provenance only): "Walter House" ("servant" OR "indentured" OR
+    "bond servant" OR "redemptioner" OR "apprentice" OR "master"). Source identifier:
+    https://archive.org/details/EchoChamber-August272014.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/EchoChamber-August272014
+  status: READY_SHADOW
+- target_id: ST-051a8d7e8e50
+  question: 'Investigate source record ''CIA Reading Room cia-rdp80t00246a030100320001-1:
+    ROCKET LAUNCHING MOUNT "2P6" AND LIQUID FUEL ROCKET "3R7" (KORSHUN)'' [record
+    ID: cia-readingroom-document-cia-rdp80t00246a030100320001-1]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Anashuecot (Awashouse) — Chief Sachem
+    of Quidnessett. Originating research lens (unverified context only): servant_indentured_status.
+    Original search query (discovery provenance only): "Nucom" ("servant" OR "indentured"
+    OR "bond servant" OR "redemptioner" OR "apprentice" OR "master"). Source identifier:
+    https://archive.org/details/cia-readingroom-document-cia-rdp80t00246a030100320001-1.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp80t00246a030100320001-1
+  status: READY_SHADOW
+- target_id: ST-d4f622c6d9d8
+  question: 'Investigate source record ''Lillian Johnson Scrapbook, 1929-1972, Volume
+    1 of 2'' [record ID: camcclpa_000033]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Benjamin² Greene. Originating research
+    lens (unverified context only): maritime_trade_network. Original search query
+    (discovery provenance only): "George Havens" ("ship" OR "vessel" OR "seaman" OR
+    "merchant" OR "Newport" OR "Boston" OR "London"). Source identifier: https://archive.org/details/camcclpa_000033.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/camcclpa_000033
+  status: READY_SHADOW
+- target_id: ST-973d6a641e78
+  question: 'Investigate source record ''CIA Reading Room cia-rdp89-00244r001403260014-6:
+    LETTER TO JAMES H. MCDONALD FROM D.E. KEITH'' [record ID: cia-readingroom-document-cia-rdp89-00244r001403260014-6]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Edward² Greene. Originating research
+    lens (unverified context only): servant_indentured_status. Original search query
+    (discovery provenance only): "George Vaughan" ("servant" OR "indentured" OR "bond
+    servant" OR "redemptioner" OR "apprentice" OR "master"). Source identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r001403260014-6.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r001403260014-6
+  status: READY_SHADOW
+- target_id: ST-4d86020e36fe
+  question: 'Investigate source record ''Handel''s Messiah - The Walker Lecture Series
+    and Concord Community Chorus - Part 2'' [record ID: cocnh-Handel_s_Messiah_-_The_Walker_Lecture_Series_and_Concord_Community_Chorus_-_Part_2]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): George Havens. Originating research
+    lens (unverified context only): narragansett_indigenous_context. Original search
+    query (discovery provenance only): "Benjamin Greene" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/cocnh-Handel_s_Messiah_-_The_Walker_Lecture_Series_and_Concord_Community_Chorus_-_Part_2.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/cocnh-Handel_s_Messiah_-_The_Walker_Lecture_Series_and_Concord_Community_Chorus_-_Part_2
+  status: READY_SHADOW
+- target_id: ST-3ed235c7ebda
+  question: 'Investigate source record ''The New York genealogical and biographical
+    record'' [record ID: bub_gb_jNcUAAAAYAAJ]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Henry² Greene. Originating research
+    lens (unverified context only): narragansett_indigenous_context. Original search
+    query (discovery provenance only): "Henry² Greene" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/bub_gb_jNcUAAAAYAAJ.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/bub_gb_jNcUAAAAYAAJ
+  status: READY_SHADOW
+- target_id: ST-80d7e6281c1a
+  question: 'Investigate source record ''FYI 1107'' [record ID: ctnaa-FYI_1107]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Henry Tibbitts (H. Tibbits). Originating
+    research lens (unverified context only): narragansett_indigenous_context. Original
+    search query (discovery provenance only): "Sarah Stanton" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/ctnaa-FYI_1107.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/ctnaa-FYI_1107
+  status: READY_SHADOW
+- target_id: ST-9cd18f400546
+  question: 'Investigate source record ''The words of the Lord Jesus'' [record ID:
+    wordsoflordjesus0000stie_f7v0]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Newport. Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "husbandman" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: https://archive.org/details/wordsoflordjesus0000stie_f7v0.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/wordsoflordjesus0000stie_f7v0
+  status: READY_SHADOW
+- target_id: ST-85a8143fa6e3
+  question: 'Investigate source record ''Newport City Council Meeting Summary - June
+    10, 2026'' [record ID: openpublica-newport-rhode_island-1537aac3-e02b-4c61-af47-d2b727b01f2a]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Warwick (Major John
+    Greene / Deputy Governor). Originating research lens (unverified context only):
+    servant_indentured_status. Original search query (discovery provenance only):
+    "Miantonomi" ("servant" OR "indentured" OR "bond servant" OR "redemptioner" OR
+    "apprentice" OR "master"). Source identifier: https://archive.org/details/openpublica-newport-rhode_island-1537aac3-e02b-4c61-af47-d2b727b01f2a.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/openpublica-newport-rhode_island-1537aac3-e02b-4c61-af47-d2b727b01f2a
+  status: READY_SHADOW
+- target_id: ST-f0a1019a66e2
+  question: 'Investigate source record ''פרק 107 - דוד בוטביניק - אימון גופני ושיתוק
+    מוחין'' [record ID: UUSM_Connections-b7164bed_6059_46a8_8375_c63130d4fb51]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Sarah² Greene (alias Flounders). Originating
+    research lens (unverified context only): servant_indentured_status. Original search
+    query (discovery provenance only): "Walter House" ("servant" OR "indentured" OR
+    "bond servant" OR "redemptioner" OR "apprentice" OR "master"). Source identifier:
+    https://archive.org/details/UUSM_Connections-b7164bed_6059_46a8_8375_c63130d4fb51.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/UUSM_Connections-b7164bed_6059_46a8_8375_c63130d4fb51
+  status: READY_SHADOW
+- target_id: ST-c857824aa249
+  question: 'Investigate source record ''CIA Reading Room cia-rdp89-00244r001002410026-1:
+    LETTER TO HARRY E. FITZWATER FROM HAROLD C. KING'' [record ID: cia-readingroom-document-cia-rdp89-00244r001002410026-1]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Edward² Greene. Originating research
+    lens (unverified context only): legal_property_records. Original search query
+    (discovery provenance only): "George Vaughan" ("deed" OR "land evidence" OR "probate"
+    OR "will" OR "court" OR "testimony" OR "dower"). Source identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r001002410026-1.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r001002410026-1
+  status: READY_SHADOW
+- target_id: ST-fea9bd0d3299
+  question: 'Investigate source record ''King of Bath: A BBC Radio Comedy Series''
+    [record ID: kingofbathbbcr4]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Elizabeth (wife of James² Greene).
+    Originating research lens (unverified context only): servant_indentured_status.
+    Original search query (discovery provenance only): "James Greene" ("servant" OR
+    "indentured" OR "bond servant" OR "redemptioner" OR "apprentice" OR "master").
+    Source identifier: https://archive.org/details/kingofbathbbcr4.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/kingofbathbbcr4
+  status: READY_SHADOW
+- target_id: ST-b5ee83e877f7
+  question: 'Investigate source record ''The seaman''s daily assistant, : being a
+    short, easy, and plain method of keeping a journal at sea; in which are contained,
+    rules, shewing how the allowances for lee-way, variation, heave of the sea, set
+    of currents, &c. are to be made, and to correct the dead-reckoning by an observation,
+    in all cases: and also all the tables that are any ways necessary for the seaman''s
+    use in keeping a journal.'' [record ID: seamansdailyassi00hase_1]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): George Havens. Originating research
+    lens (unverified context only): maritime_trade_network. Original search query
+    (discovery provenance only): "Benjamin Greene" ("ship" OR "vessel" OR "seaman"
+    OR "merchant" OR "Newport" OR "Boston" OR "London"). Source identifier: https://archive.org/details/seamansdailyassi00hase_1.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/seamansdailyassi00hase_1
+  status: READY_SHADOW
+- target_id: ST-7f4cd8a3da34
+  question: 'Investigate source record ''The Americas'' [record ID: americashil00hill]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): George Vaughan. Originating research
+    lens (unverified context only): narragansett_indigenous_context. Original search
+    query (discovery provenance only): "Edward Greene" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/americashil00hill.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/americashil00hill
+  status: READY_SHADOW
+- target_id: ST-a9aa7772ee67
+  question: 'Investigate source record ''William Webb, September 19, 1746- September
+    23, 1832 : his war service from Long Island and Connecticut, ancestry and descendants''
+    [record ID: williamwebbseptem00gree]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Henry² Greene. Originating research
+    lens (unverified context only): narragansett_indigenous_context. Original search
+    query (discovery provenance only): "Henry² Greene" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/williamwebbseptem00gree.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/williamwebbseptem00gree
+  status: READY_SHADOW
+- target_id: ST-e2250ccf0e43
+  question: 'Investigate source record ''A Celebration of Young Poets: Summer 02004''
+    [record ID: a-celebration-of-young-poets-summer-02004]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Henry Tibbitts (H. Tibbits). Originating
+    research lens (unverified context only): narragansett_indigenous_context. Original
+    search query (discovery provenance only): "Sarah Stanton" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/a-celebration-of-young-poets-summer-02004.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/a-celebration-of-young-poets-summer-02004
+  status: READY_SHADOW
+- target_id: ST-3199cc89403e
+  question: 'Investigate source record ''TMI Focus - Table of Contents'' [record ID:
+    tmi-focus-toc]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): James² Greene. Originating research
+    lens (unverified context only): servant_indentured_status. Original search query
+    (discovery provenance only): "James² Greene" ("servant" OR "indentured" OR "bond
+    servant" OR "redemptioner" OR "apprentice" OR "master"). Source identifier: https://archive.org/details/tmi-focus-toc.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/tmi-focus-toc
+  status: READY_SHADOW
+- target_id: ST-c8ac97d32d48
+  question: 'Investigate source record ''The words of the Lord Jesus'' [record ID:
+    wordsoflordjesus0000stie_l1l3]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Newport. Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "husbandman" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: https://archive.org/details/wordsoflordjesus0000stie_l1l3.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/wordsoflordjesus0000stie_l1l3
+  status: READY_SHADOW
+- target_id: ST-959cb956eee9
+  question: 'Investigate source record ''Insect worlds : a guide for man on making
+    the most of the environment'' [record ID: insectworldsguid00miln]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Quidnessett. Originating
+    research lens (unverified context only): narragansett_indigenous_context. Original
+    search query (discovery provenance only): "Joan Greene" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/insectworldsguid00miln.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/insectworldsguid00miln
+  status: READY_SHADOW
+- target_id: ST-1917631c9b4b
+  question: 'Investigate source record ''[Marcella (Bark) of New Bedford, Mass., mastered
+    by Pardon C. Winslow and then John Rounds, keeper John Rounds, on voyage 12 June
+    1850 - 6 December 1852],'' [record ID: marcellabarkofne00marc_1]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Warwick (Major John
+    Greene / Deputy Governor). Originating research lens (unverified context only):
+    enslavement_captivity_status. Original search query (discovery provenance only):
+    "Miantonomi" ("enslaved" OR "slave" OR "captive" OR "Negro" OR "Indian" OR "mulatto"
+    OR "redemption"). Source identifier: https://archive.org/details/marcellabarkofne00marc_1.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/marcellabarkofne00marc_1
+  status: READY_SHADOW
+- target_id: ST-a30348c6838c
+  question: 'Investigate source record ''Chancery practice, with especial reference
+    to the office and duties of masters in chancery, registers, auditors, commissioners
+    in chancery, court commissioners, master commissioners, referees, etc., including
+    forms of orders of reference, master''s reports, objections, exceptions, orders
+    of confirmation, recommmittal, etc.'' [record ID: cu31924020121764]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Joseph Clark & Francis Brinley. Originating
+    research lens (unverified context only): servant_indentured_status. Original search
+    query (discovery provenance only): "John Greene" ("servant" OR "indentured" OR
+    "bond servant" OR "redemptioner" OR "apprentice" OR "master"). Source identifier:
+    https://archive.org/details/cu31924020121764.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/cu31924020121764
+  status: READY_SHADOW
+- target_id: ST-a18712cc2be8
+  question: 'Investigate source record ''Squawk Box : CNBC : April 30, 2010 6:00am-9:00am
+    EDT'' [record ID: CNBC_20100430_100000_Squawk_Box]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Nawham ("Stonewall John"). Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "Richard Smith" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: https://archive.org/details/CNBC_20100430_100000_Squawk_Box.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/CNBC_20100430_100000_Squawk_Box
+  status: READY_SHADOW
+- target_id: ST-f758d17c4fb0
+  question: 'Investigate source record ''Commencement 2025'' [record ID: nvccva-Commencement_2025-20250512]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Daniel² Greene. Originating research
+    lens (unverified context only): narragansett_indigenous_context. Original search
+    query (discovery provenance only): "Daniel Green" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/nvccva-Commencement_2025-20250512.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/nvccva-Commencement_2025-20250512
+  status: READY_SHADOW
+- target_id: ST-b528a0e87b94
+  question: 'Investigate source record ''CIA Reading Room cia-rdp89-00244r000701510005-8:
+    LETTER TO HARRY E. FITZWATER FROM HAROLD C. KING'' [record ID: cia-readingroom-document-cia-rdp89-00244r000701510005-8]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Edward² Greene. Originating research
+    lens (unverified context only): legal_property_records. Original search query
+    (discovery provenance only): "George Vaughan" ("deed" OR "land evidence" OR "probate"
+    OR "will" OR "court" OR "testimony" OR "dower"). Source identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701510005-8.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701510005-8
+  status: READY_SHADOW
+- target_id: ST-a19e4cccf533
+  question: 'Investigate source record ''Brownson''s quarterly review'' [record ID:
+    brownsonsquarte00greegoog]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): George Havens. Originating research
+    lens (unverified context only): maritime_trade_network. Original search query
+    (discovery provenance only): "Benjamin Greene" ("ship" OR "vessel" OR "seaman"
+    OR "merchant" OR "Newport" OR "Boston" OR "London"). Source identifier: https://archive.org/details/brownsonsquarte00greegoog.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/brownsonsquarte00greegoog
+  status: READY_SHADOW
+- target_id: ST-2af72ebbc72d
+  question: 'Investigate source record ''The Americas'' [record ID: americashill00hill]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): George Vaughan. Originating research
+    lens (unverified context only): narragansett_indigenous_context. Original search
+    query (discovery provenance only): "Edward Greene" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/americashill00hill.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/americashill00hill
+  status: READY_SHADOW
+- target_id: ST-2e4d08d98346
+  question: 'Investigate source record ''Critical survey of long fiction. English
+    language series'' [record ID: criticalsurveyof0002unse_i0r9]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Henry² Greene. Originating research
+    lens (unverified context only): narragansett_indigenous_context. Original search
+    query (discovery provenance only): "Henry² Greene" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/criticalsurveyof0002unse_i0r9.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/criticalsurveyof0002unse_i0r9
+  status: READY_SHADOW
+- target_id: ST-c3fdaa764b62
+  question: 'Investigate source record ''The link between the nature of the human-pet
+    relationship and well-being outcomes in pet owners: A longitudinal study'' [record
+    ID: osf-registrations-n2ypv-v1]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Henry Tibbitts (H. Tibbits). Originating
+    research lens (unverified context only): legal_property_records. Original search
+    query (discovery provenance only): "Sarah Stanton" ("deed" OR "land evidence"
+    OR "probate" OR "will" OR "court" OR "testimony" OR "dower"). Source identifier:
+    https://archive.org/details/osf-registrations-n2ypv-v1.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/osf-registrations-n2ypv-v1
+  status: READY_SHADOW
+- target_id: ST-1031ea902203
+  question: 'Investigate source record ''The Great Occasion: Noah’s Legacy and God’s
+    Covenant (Genesis 9:18-29)'' [record ID: lifepoint-service-09-07-25-Sunday-17.52]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Newport. Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "husbandman" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: https://archive.org/details/lifepoint-service-09-07-25-Sunday-17.52.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/lifepoint-service-09-07-25-Sunday-17.52
+  status: READY_SHADOW
+- target_id: ST-a5c75802b110
+  question: 'Investigate source record ''Understanding radioactivity'' [record ID:
+    understandingrad00miln]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Quidnessett. Originating
+    research lens (unverified context only): narragansett_indigenous_context. Original
+    search query (discovery provenance only): "Joan Greene" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/understandingrad00miln.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/understandingrad00miln
+  status: READY_SHADOW
+- target_id: ST-d0e17b6d34b1
+  question: 'Investigate source record ''Chancery practice, with especial reference
+    to the office and duties of masters in chancery, registers, auditors, commissioners
+    in chancery, court commissioners, master commissioners, referees, etc., including
+    forms of orders of reference, master''s reports, objections, exceptions, orders
+    of confirmation, recommmittal, etc.'' [record ID: cu31924084260607]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Joseph Clark & Francis Brinley. Originating
+    research lens (unverified context only): servant_indentured_status. Original search
+    query (discovery provenance only): "John Greene" ("servant" OR "indentured" OR
+    "bond servant" OR "redemptioner" OR "apprentice" OR "master"). Source identifier:
+    https://archive.org/details/cu31924084260607.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/cu31924084260607
+  status: READY_SHADOW
+- target_id: ST-88d5753e6584
+  question: 'Investigate source record ''CIA Reading Room cia-rdp63t00245r000100320003-2:
+    LETTER TO HONORABLE FRANCIS E. WALTER FROM ALLEN W. DULLES'' [record ID: cia-readingroom-document-cia-rdp63t00245r000100320003-2]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Sarah² Greene (alias Flounders). Originating
+    research lens (unverified context only): legal_property_records. Original search
+    query (discovery provenance only): "Walter House" ("deed" OR "land evidence" OR
+    "probate" OR "will" OR "court" OR "testimony" OR "dower"). Source identifier:
+    https://archive.org/details/cia-readingroom-document-cia-rdp63t00245r000100320003-2.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp63t00245r000100320003-2
+  status: READY_SHADOW
+- target_id: ST-821e47df80c7
+  question: 'Investigate source record ''The Capital Dispatch 09-25-2026'' [record
+    ID: UMC_EMANUEL_UNION_CITY-Capital_Dispatch70kkj]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Anashuecot (Awashouse) — Chief Sachem
+    of Quidnessett. Originating research lens (unverified context only): narragansett_indigenous_context.
+    Original search query (discovery provenance only): "Nucom" ("Narragansett" OR
+    "Niantic" OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source
+    identifier: https://archive.org/details/UMC_EMANUEL_UNION_CITY-Capital_Dispatch70kkj.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/UMC_EMANUEL_UNION_CITY-Capital_Dispatch70kkj
+  status: READY_SHADOW
+- target_id: ST-8ed4e39927a5
+  question: 'Investigate source record ''Stereograph, Daniel Green Felt Shoe Company,
+    Dolgeville NY'' [record ID: stereograph_hsvr_20260117aa_DolgevilleNY]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Daniel² Greene. Originating research
+    lens (unverified context only): narragansett_indigenous_context. Original search
+    query (discovery provenance only): "Daniel Green" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/stereograph_hsvr_20260117aa_DolgevilleNY.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/stereograph_hsvr_20260117aa_DolgevilleNY
+  status: READY_SHADOW
+- target_id: ST-73e60ba379ff
+  question: 'Investigate source record ''CIA Reading Room cia-rdp89-00244r000701520011-0:
+    LETTER TO HARRY E. FITZWATER FROM HAROLD C. KING'' [record ID: cia-readingroom-document-cia-rdp89-00244r000701520011-0]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Edward² Greene. Originating research
+    lens (unverified context only): legal_property_records. Original search query
+    (discovery provenance only): "George Vaughan" ("deed" OR "land evidence" OR "probate"
+    OR "will" OR "court" OR "testimony" OR "dower"). Source identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701520011-0.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701520011-0
+  status: READY_SHADOW
+- target_id: ST-a56f7d74dad6
+  question: 'Investigate source record ''Patch Adams (1998)'' [record ID: patch-adams]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Elizabeth (wife of James² Greene).
+    Originating research lens (unverified context only): narragansett_indigenous_context.
+    Original search query (discovery provenance only): "James Greene" ("Narragansett"
+    OR "Niantic" OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source
+    identifier: https://archive.org/details/patch-adams.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/patch-adams
+  status: READY_SHADOW
+- target_id: ST-d7b3780f3684
+  question: 'Investigate source record ''Hong Kong Daily Press 1909-07-29'' [record
+    ID: NPDP19090729]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): George Havens. Originating research
+    lens (unverified context only): maritime_trade_network. Original search query
+    (discovery provenance only): "Benjamin Greene" ("ship" OR "vessel" OR "seaman"
+    OR "merchant" OR "Newport" OR "Boston" OR "London"). Source identifier: https://archive.org/details/NPDP19090729.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/NPDP19090729
+  status: READY_SHADOW
+- target_id: ST-2936c5de0c47
+  question: 'Investigate source record ''The Americas: [Canada, Mexico, and South
+    America]'' [record ID: americascanadame00hill]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): George Vaughan. Originating research
+    lens (unverified context only): narragansett_indigenous_context. Original search
+    query (discovery provenance only): "Edward Greene" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/americascanadame00hill.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/americascanadame00hill
+  status: READY_SHADOW
+- target_id: ST-cb334ee5c7f8
+  question: 'Investigate source record ''1955 The Quiet American (Тихий Американец)''
+    [record ID: 1955-The_Quiet_American-Henry_Greene]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Henry² Greene. Originating research
+    lens (unverified context only): narragansett_indigenous_context. Original search
+    query (discovery provenance only): "Henry² Greene" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/1955-The_Quiet_American-Henry_Greene.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/1955-The_Quiet_American-Henry_Greene
+  status: READY_SHADOW
+- target_id: ST-272d7037abae
+  question: 'Investigate source record ''Nature''s clean-up crew : the burying beetles''
+    [record ID: naturescleanupcr00miln]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Quidnessett. Originating
+    research lens (unverified context only): narragansett_indigenous_context. Original
+    search query (discovery provenance only): "Joan Greene" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/naturescleanupcr00miln.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/naturescleanupcr00miln
+  status: READY_SHADOW
+- target_id: ST-6bbee3acd72f
+  question: 'Investigate source record ''Newport City Council Meeting: Budget Deficit,
+    Parking, and CDBG Grant – July 8, 2026'' [record ID: openpublica-newport-rhode_island-f5adb9fb-1924-4a7b-b248-a18f505380ac]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Warwick (Major John
+    Greene / Deputy Governor). Originating research lens (unverified context only):
+    legal_property_records. Original search query (discovery provenance only): "Miantonomi"
+    ("deed" OR "land evidence" OR "probate" OR "will" OR "court" OR "testimony" OR
+    "dower"). Source identifier: https://archive.org/details/openpublica-newport-rhode_island-f5adb9fb-1924-4a7b-b248-a18f505380ac.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/openpublica-newport-rhode_island-f5adb9fb-1924-4a7b-b248-a18f505380ac
+  status: READY_SHADOW
+- target_id: ST-74402fe69181
+  question: 'Investigate source record ''CIA Reading Room cia-rdp80r01731r000100030048-6:
+    LETTER TO FRANCIS E. WALTER FROM ALLEN W. DULLES'' [record ID: cia-readingroom-document-cia-rdp80r01731r000100030048-6]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Sarah² Greene (alias Flounders). Originating
+    research lens (unverified context only): legal_property_records. Original search
+    query (discovery provenance only): "Walter House" ("deed" OR "land evidence" OR
+    "probate" OR "will" OR "court" OR "testimony" OR "dower"). Source identifier:
+    https://archive.org/details/cia-readingroom-document-cia-rdp80r01731r000100030048-6.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp80r01731r000100030048-6
+  status: READY_SHADOW
+- target_id: ST-959766d1b8e8
+  question: 'Investigate source record ''Daniel Green To Blue ( Sky Sound.cc)'' [record
+    ID: daniel-green-to-blue-sky-sound.cc]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Daniel² Greene. Originating research
+    lens (unverified context only): narragansett_indigenous_context. Original search
+    query (discovery provenance only): "Daniel Green" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/daniel-green-to-blue-sky-sound.cc.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/daniel-green-to-blue-sky-sound.cc
+  status: READY_SHADOW
+- target_id: ST-753cd12d7e99
+  question: 'Investigate source record ''CIA Reading Room cia-rdp89-00244r000701330015-7:
+    LETTER TO HARRY E. FITZWATER FROM HAROLD C. KING'' [record ID: cia-readingroom-document-cia-rdp89-00244r000701330015-7]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Edward² Greene. Originating research
+    lens (unverified context only): legal_property_records. Original search query
+    (discovery provenance only): "George Vaughan" ("deed" OR "land evidence" OR "probate"
+    OR "will" OR "court" OR "testimony" OR "dower"). Source identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701330015-7.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701330015-7
+  status: READY_SHADOW
+- target_id: ST-34ffb054404f
+  question: 'Investigate source record ''Africa and Asia'' [record ID: africaasia00hill]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): George Vaughan. Originating research
+    lens (unverified context only): narragansett_indigenous_context. Original search
+    query (discovery provenance only): "Edward Greene" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/africaasia00hill.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/africaasia00hill
+  status: READY_SHADOW
+- target_id: ST-4e0b156c7361
+  question: 'Investigate source record ''William Webb, September 19, 1746-September
+    23, 1832 : his war service from Long Island and Connecticut'' [record ID: williamwebbsepte00byugree]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Henry² Greene. Originating research
+    lens (unverified context only): narragansett_indigenous_context. Original search
+    query (discovery provenance only): "Henry² Greene" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/williamwebbsepte00byugree.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/williamwebbsepte00byugree
+  status: READY_SHADOW
+- target_id: ST-a38ab331a3f6
+  question: 'Investigate source record ''Human-companion animal relationship quality
+    and companion animal owner mental health: A longitudinal study'' [record ID: osf-registrations-uka5e-v1]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Henry Tibbitts (H. Tibbits). Originating
+    research lens (unverified context only): legal_property_records. Original search
+    query (discovery provenance only): "Sarah Stanton" ("deed" OR "land evidence"
+    OR "probate" OR "will" OR "court" OR "testimony" OR "dower"). Source identifier:
+    https://archive.org/details/osf-registrations-uka5e-v1.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/osf-registrations-uka5e-v1
+  status: READY_SHADOW
+- target_id: ST-4d2768744417
+  question: 'Investigate source record ''CIA Reading Room cia-rdp87m00539r001602530014-7:
+    MEXICO AND CENTRAL AMERICA'' [record ID: cia-readingroom-document-cia-rdp87m00539r001602530014-7]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): James² Greene. Originating research
+    lens (unverified context only): narragansett_indigenous_context. Original search
+    query (discovery provenance only): "James² Greene" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/cia-readingroom-document-cia-rdp87m00539r001602530014-7.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp87m00539r001602530014-7
+  status: READY_SHADOW
+- target_id: ST-50ea59d03284
+  question: 'Investigate source record ''Problems of New Testament translation'' [record
+    ID: problemsofnewtes0000good]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Newport. Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "husbandman" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: https://archive.org/details/problemsofnewtes0000good.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/problemsofnewtes0000good
+  status: READY_SHADOW
+- target_id: ST-d09179302e3e
+  question: 'Investigate source record ''Ecology out of joint : new environments and
+    why they happen'' [record ID: ecologyoutofjoin00miln]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Quidnessett. Originating
+    research lens (unverified context only): narragansett_indigenous_context. Original
+    search query (discovery provenance only): "Joan Greene" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/ecologyoutofjoin00miln.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/ecologyoutofjoin00miln
+  status: READY_SHADOW
+- target_id: ST-7c0b062ebd52
+  question: 'Investigate source record ''Newport City Council Regular Meeting - October
+    8, 2025'' [record ID: openpublica-newport-rhode_island-52cd4f39-87c6-4f70-a55f-629a302cb4aa]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Warwick (Major John
+    Greene / Deputy Governor). Originating research lens (unverified context only):
+    legal_property_records. Original search query (discovery provenance only): "Miantonomi"
+    ("deed" OR "land evidence" OR "probate" OR "will" OR "court" OR "testimony" OR
+    "dower"). Source identifier: https://archive.org/details/openpublica-newport-rhode_island-52cd4f39-87c6-4f70-a55f-629a302cb4aa.'
+  origin_event: EVT-5df73895cf86
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/openpublica-newport-rhode_island-52cd4f39-87c6-4f70-a55f-629a302cb4aa
+  status: READY_SHADOW
