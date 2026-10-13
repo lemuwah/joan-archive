@@ -1,4 +1,4 @@
-# Model G Agent — Joan Beggarly / Alice Daniels (La Mance) — 2026-10-12
+# Model G Agent — Joan Beggarly / Alice Daniels (La Mance) — 2026-10-13
 
 **Status:** ELIMINATED
 **Evidence state:** AI-assisted working report; all leads are `LAWS_FILTERED`. Periodic human review applies.

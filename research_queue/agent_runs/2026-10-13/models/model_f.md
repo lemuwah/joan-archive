@@ -1,0 +1,121 @@
+# Model F Agent — Widow of prior marriage — 2026-10-13
+
+**Status:** OPEN
+**Evidence state:** AI-assisted working report; all leads are `LAWS_FILTERED`. Periodic human review applies.
+
+## 1. Document pass
+Read the original page/image before treating any catalog result as evidence. Record repository, stable identifier, page/leaf, access date, and exact wording.
+
+## 2. Historian context pass
+**Repositories and record families:** Probate and estate records, widowhood and dower records, church and marriage registers, guardianship and creditor records.
+**What could confirm this model:** A dated probate, marriage, dower, or guardianship record links a Joan with a prior husband to John Greene's household.
+**Context caution:** Legal standing alone does not prove widowhood.
+
+## 3. Hostile facts-only pass
+**What could disconfirm this model:** A record identifies Joan's first marriage or maiden identity without a prior husband, or the candidate fails the anchors.
+Test identity, date, place, status wording, and citation independence separately. Do not infer a result from silence.
+
+## 4. Continuing conflict/context layer
+Record parties, witnesses, jurisdiction, legal setting, Indigenous and non-English context, competing Johns, and every unresolved contradiction. Preserve the strongest alternative explanation.
+
+## Leads matching this model's search vocabulary (386)
+- **John Nawham ("Stonewall John")** / `narragansett_indigenous_context` — site_visitors_201510230096986; https://archive.org/details/site_visitors_201510230096986. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — Regular Meeting of Wilmington City Council - 1/16/2025; https://archive.org/details/witnde-Regular_Meeting_of_Wilmington_City_Council_1_16_2025. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — Honda Civic Hatch 10th gen tail light pin (4685862); https://archive.org/details/thingiverse-4685862. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — CIA Reading Room cia-rdp90m00005r000600100025-3: SUBMISSIONS TO DEPARTMENT OF STATE OF LISTINGS OF FOREIGN GIFTS OF MORE THAN MINIMAL VALUE REPORTED TO EMPLOYING AGENCIES IN CALENDAR YEAR 1988; https://archive.org/details/cia-readingroom-document-cia-rdp90m00005r000600100025-3. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — In search of global patterns; https://archive.org/details/insearchofglobal0000unse. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — Contemporary Black biography. Volume 51 : profiles from the international Black community; https://archive.org/details/contemporaryblac0051unse. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — Hollins Student Life (1935 May 1); https://archive.org/details/digitalcommons.hollins.edu_newspapers-1087. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — Donald Hartung Trial - Defense Opening Statement; https://archive.org/details/youtube-2b6-d6s4Xdw. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — Donald Hartung Trial Day 2 - DHS-Brandon Garrison - Walmart Employee & Diva Holland; https://archive.org/details/youtube-HearhJFzjAI. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — Donald Hartung Trial Day 4 - Donald Hartung Jr. - Defendant's Son; https://archive.org/details/youtube-VRfHwGqQ1Jo. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — Communication in question : competing perspectives on controversial issues in communication studies; https://archive.org/details/communicationinq0000unse_w5z0. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — Rhode Island land evidences, vol. I, 1648-1696, abstracts.; http://www.loc.gov/item/21018384/. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — The early records of the town of Providence, V. I-XXI ... Printed under authority of the City council; http://www.loc.gov/item/06021252/. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — First-[fifth] report of the Record Commisssioners relative to the early town records.; http://www.loc.gov/item/06021253/. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — The Olneyville times (Olneyville [Providence, R.I.]), November 12, 1897; http://www.loc.gov/item/sn92064044/1897-11-12/ed-1/. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — [Copy 1; Volume 1] History of the state of Rhode Island and Providence plantations; http://www.loc.gov/item/02018842/resource/gdcmassbookdig.historyofstateof02arnol. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — The history of Malden, Massachusetts, 1633-1785,; http://www.loc.gov/item/98002246/. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — [Copy 2; Volume 1] History of the state of Rhode Island and Providence plantations; http://www.loc.gov/item/02018842/resource/gdcmassbookdig.historyofstateof01arnol. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — [Copy 3; Volume 1] History of the state of Rhode Island and Providence plantations; http://www.loc.gov/item/02018842/resource/gdcmassbookdig.historyofstateof03arno. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — State of Rhode Island and Providence Plantations at the end of the century : a history; http://www.loc.gov/item/02013122/. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — Maryland; the land of sanctuary.; http://www.loc.gov/item/08000316/. Original-document review required.
+- **John Nawham ("Stonewall John")** / `regional_geography_variants` — North Kingstown Town Council Meeting Summary — June 22, 2026; https://archive.org/details/openpublica-north_kingstown-rhode_island-39ab5e70-3420-4b4c-a458-597b7d1c0ecc. Original-document review required.
+- **John Nawham ("Stonewall John")** / `archival_access_gaps` — Bank of the United States, Appellant, versus E. Lee, E. J. Lee, and Richard Smith. 1830: Vol 24; https://archive.org/details/per_scotus_1830_24. Original-document review required.
+- **John Nawham ("Stonewall John")** / `archival_access_gaps` — Report on a new water supply for the city of Winnipeg, Manitoba [microform]; https://archive.org/details/cihm_73224. Original-document review required.
+- **John Nawham ("Stonewall John")** / `archival_access_gaps` — Richard Smith, Lessee of John Lanning, Plaint. versus John Vaughn, et al. 1831: Vol 73; https://archive.org/details/per_scotus_1831_73_0. Original-document review required.
+- **John Nawham ("Stonewall John")** / `archival_access_gaps` — James O'brien, Pl'ff in er., vs. Richard Smith. 1861: Vol 304; https://archive.org/details/per_scotus_james-obrien-plff-in-er-vs-richard-smith_1861_304. Original-document review required.
+- **John Nawham ("Stonewall John")** / `archival_access_gaps` — Richard Smith, Plaintiff in Error, versus Tench Ringgold. 1831: Vol 30; https://archive.org/details/per_scotus_1831_30_0. Original-document review required.
+- **John Nawham ("Stonewall John")** / `archival_access_gaps` — A letter from mr. richard smith, ... 1684; https://archive.org/details/bim_early-english-books-1641-1700_a-letter-from-mr-richar_smith-richard-bp_1684. Original-document review required.
+- **John Nawham ("Stonewall John")** / `archival_access_gaps` — Archaioplutos. Or the riches of elder ages. 1592; https://archive.org/details/bim_early-english-books-1475-1640_archaioplutos-or-the-ri_telin-guillaume_1592. Original-document review required.
+- **John Nawham ("Stonewall John")** / `archival_access_gaps` — Edward Spencer, gent. and Robert Sprakling, gent. appel' Sir James Collet, knt. and John Conold, clerk, respond' The case, against two decrees in the Court of Exchequer, dated the 29th of June last, concerning the right of the tythe of hops, in the county of Kent: the question being, whether the same belong to the appellant Spencer, as parson, or to the respondent Conold, as vicar? 1703; https://archive.org/details/bim_eighteenth-century_edward-spencer-gent-an_spencer-edward-gent_1703. Original-document review required.
+- **John Nawham ("Stonewall John")** / `archival_access_gaps` — The Archbishop of Cambray's pastoral letter concerning the love of God. Together with the opinions of the fathers, on the same subject. Now done into English. To which is added, a circular letter, by George Bull, ... his visitation sermon, and his charge to his diocese. Published by Robert Nelson, Esq;. 1715; https://archive.org/details/bim_eighteenth-century_the-archbishop-of-cambra_1715. Original-document review required.
+- **John Nawham ("Stonewall John")** / `archival_access_gaps` — Phinehas: or, the common duty of all men. ... 1695; https://archive.org/details/bim_early-english-books-1641-1700_phinehas-or-the-common_stephens-edward_1695. Original-document review required.
+- **John Nawham ("Stonewall John")** / `irish_scottish_migration` — CIA Reading Room cia-rdp89g00720r000600850006-6: PRINCETON WEEKLY BULLETIN; https://archive.org/details/cia-readingroom-document-cia-rdp89g00720r000600850006-6. Original-document review required.
+- **John Nawham ("Stonewall John")** / `servant_indentured_status` — CIA Reading Room cia-rdp89g00720r000600850006-6: PRINCETON WEEKLY BULLETIN; https://archive.org/details/cia-readingroom-document-cia-rdp89g00720r000600850006-6. Original-document review required.
+- **John Nawham ("Stonewall John")** / `servant_indentured_status` — CIA Reading Room cia-rdp99-01448r000301310023-6: MACARTHUR AND CARNEGIE FOUNDATIONS SUPPORT CIS/CEES DISARMAMENT STUDY; https://archive.org/details/cia-readingroom-document-cia-rdp99-01448r000301310023-6. Original-document review required.
+- **John Nawham ("Stonewall John")** / `enslavement_captivity_status` — Early American women : a documentary history, 1600-1900; https://archive.org/details/earlyamericanwom0000unse_i7s3. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — Theresa El Amin's Message To SURJ Providence; https://archive.org/details/therese-el-amin-surj-providence. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — The unpopular ones; https://archive.org/details/unpopularones00arch. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — Early American women : a documentary history, 1600-1900; https://archive.org/details/earlyamericanwom0000unse_i7s3. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — Duckie By Roger Williams (Ivor Novello story).; https://archive.org/details/duckie-by-roger-williams-m-00016s-7-original-converted. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — ALERT:Top Conservative in Congress SHOT! Fights for life-Trump Just left Hospital -Pray; https://archive.org/details/youtube-9rLzjjvXS8g. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — TPL: The Amistad Trials: Are Slaves Property?; https://archive.org/details/tewkstvma-TPL_-_The_Amistad_Trials_-_Are_Slaves_Property. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — Separation of church and state : Roger Williams and the birth of an American ideal; https://archive.org/details/mcdla_JamesDavis. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — Autumn Almanac Hangover; https://archive.org/details/AutumnAlmanacHangover. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — Enjoy Highland Park - Dana Reed Designs - City of Highland Park, IL; https://archive.org/details/cohpil-Enjoy_Highland_Park_Dana_Reed_Designs_City_of_Highland_Park_IL. Original-document review required.
+- **John Nawham ("Stonewall John")** / `legal_property_records` — Colonial America; https://archive.org/details/colonialamerica0000unse_b6z3. Original-document review required.
+- **John Nawham ("Stonewall John")** / `archival_access_gaps` — Political equality: religious toleration from Roger Williams to Jefferson; https://archive.org/details/MN41381ucmf_2. Original-document review required.
+- **John Nawham ("Stonewall John")** / `archival_access_gaps` — Indian & English dictionary; https://archive.org/details/indianenglishdic01swan. Original-document review required.
+- **John Nawham ("Stonewall John")** / `archival_access_gaps` — Retiring at Pier 23; https://archive.org/details/retiringatpier23. Original-document review required.
+- **John Nawham ("Stonewall John")** / `archival_access_gaps` — 449 Stealing America: Indigenous Slavery and the American Revolution; https://archive.org/details/YORK_UNITED_METHODIST_CHURCH-337ff634_8fe3_4b91_9c5e_86113caf9c3c. Original-document review required.
+- **John Nawham ("Stonewall John")** / `archival_access_gaps` — CIA Reading Room 06741381: CY 2010 FOIA CASE LOG; https://archive.org/details/cia-readingroom-document-06741381. Original-document review required.
+- **John Nawham ("Stonewall John")** / `archival_access_gaps` — The baptism of Roger Williams [microform]; a review of Rev. Dr. W.H. Whitsitt's inference; https://archive.org/details/baptismofrogerwi00king. Original-document review required.
+- **John Nawham ("Stonewall John")** / `archival_access_gaps` — Queries of highest consideration,... 1644; https://archive.org/details/per_early-baptist_queries-of-highest-consi_roger-williams_1644. Original-document review required.
+- **John Nawham ("Stonewall John")** / `archival_access_gaps` — Indian & English dictionary; https://archive.org/details/indianenglishdic02swan. Original-document review required.
+- **John Nawham ("Stonewall John")** / `archival_access_gaps` — An oration, on the death of Roger Williams, Howell, ... pronounced ... November 22, 1792. By Paul Allen, jun. ... 1792; https://archive.org/details/bim_eighteenth-century_an-oration-on-the-death_allen-paul_1792. Original-document review required.
+- **John Nawham ("Stonewall John")** / `archival_access_gaps` — The continual following of the french king upon the duke pf parma, ...; https://archive.org/details/bim_early-english-books-tract-supplements_the-continual-following-_sir-roger-williams-and-h. Original-document review required.
+- **Anashuecot (Awashouse) — Chief Sachem of Quidnessett** / `legal_property_records` — Rhode Island land evidences, vol. I, 1648-1696, abstracts.; http://www.loc.gov/item/21018384/. Original-document review required.
+- **Anashuecot (Awashouse) — Chief Sachem of Quidnessett** / `legal_property_records` — Pegasus 5.0; https://archive.org/details/pegasus_5. Original-document review required.
+- **Anashuecot (Awashouse) — Chief Sachem of Quidnessett** / `legal_property_records` — The Capital Dispatch 09-25-2026; https://archive.org/details/UMC_EMANUEL_UNION_CITY-Capital_Dispatch70kkj. Original-document review required.
+- **Anashuecot (Awashouse) — Chief Sachem of Quidnessett** / `archival_access_gaps` — The Capital Dispatch 09-25-2026; https://archive.org/details/UMC_EMANUEL_UNION_CITY-Capital_Dispatch70kkj. Original-document review required.
+- **Benjamin² Greene** / `archival_access_gaps` — Science Notebook #075 Super Telescope in Chile; New Communications Satellite; Anatomy of a Storm; The Reading Machine; An Ancient Ozone Story; https://archive.org/details/science-notebook_1976-075. Original-document review required.
+- **Benjamin² Greene** / `servant_indentured_status` — ERIC ED310898: Cherokees.; https://archive.org/details/ERIC_ED310898. Original-document review required.
+- **Benjamin² Greene** / `enslavement_captivity_status` — ERIC ED310898: Cherokees.; https://archive.org/details/ERIC_ED310898. Original-document review required.
+- **Benjamin² Greene** / `narragansett_indigenous_context` — Positive Affirmations Compilation #1; https://archive.org/details/PositiveAffirmationsCompilation1. Original-document review required.
+- **Benjamin² Greene** / `narragansett_indigenous_context` — The mystery of the bog forest; https://archive.org/details/mysteryofbogfore00miln. Original-document review required.
+- **Benjamin² Greene** / `narragansett_indigenous_context` — The balance of nature; https://archive.org/details/balanceofnature00miln. Original-document review required.
+- **Benjamin² Greene** / `narragansett_indigenous_context` — Ecology out of joint : new environments and why they happen; https://archive.org/details/ecologyoutofjoin00miln. Original-document review required.
+- **Benjamin² Greene** / `narragansett_indigenous_context` — Understanding radioactivity; https://archive.org/details/understandingrad00miln. Original-document review required.
+- **Benjamin² Greene** / `narragansett_indigenous_context` — North American birds; https://archive.org/details/northamericanbir00miln. Original-document review required.
+- **Benjamin² Greene** / `narragansett_indigenous_context` — ERIC ED310898: Cherokees.; https://archive.org/details/ERIC_ED310898. Original-document review required.
+- **Benjamin² Greene** / `narragansett_indigenous_context` — The arena of life: the dynamics of ecology; https://archive.org/details/arenaoflifedy00miln. Original-document review required.
+- **Benjamin² Greene** / `narragansett_indigenous_context` — Animal life; https://archive.org/details/animallife00miln. Original-document review required.
+- **Benjamin² Greene** / `narragansett_indigenous_context` — Insect worlds : a guide for man on making the most of the environment; https://archive.org/details/insectworldsguid00miln. Original-document review required.
+- **Benjamin² Greene** / `legal_property_records` — Positive Affirmations Compilation #1; https://archive.org/details/PositiveAffirmationsCompilation1. Original-document review required.
+- **Benjamin² Greene** / `maritime_trade_network` — The mating instinct; https://archive.org/details/matinginstinct00miln. Original-document review required.
+- **Benjamin² Greene** / `archival_access_gaps` — A farewell discourse to the First church and society in Medway. Delivered March 17th, 1793. By Benjamin Greene, ... 1793; https://archive.org/details/bim_eighteenth-century_a-farewell-discourse-to-_greene-benjamin_1793. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — In The Warlords’ Shadow: Special Operations Forces, The Afghans, And Their Fight Against The Taliban; https://archive.org/details/in-the-warlords-shadow. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — Viva La Vida; https://archive.org/details/youtube-3a-q7vPa-UU. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — Tessan 2 Plug Power Strip Wall Mount (4796859); https://archive.org/details/thingiverse-4796859. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — Commencement 2025; https://archive.org/details/nvccva-Commencement_2025-20250512. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — Fitness in 5, Episode 8: Advanced Fitness Court Exercises; https://archive.org/details/jccva-Fitness_in_5_Episode_8_-_Advanced_Fitness_Court_Exercises. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — Dr. Dan Green on Mental Health and Leading Men Well; https://archive.org/details/International_Church_of_Monrovia-NR_Podcast_Dan_GreenR. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — CMB-S4 Science Book, First Edition; https://archive.org/details/arxiv-1610.02743. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — Scattered Light from Close-in Extrasolar Planets: Prospects of Detection with the MOST Satellite; https://archive.org/details/arxiv-astro-ph0309209. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — DVD Transfer 217 (NBA on NBC: 1994 Eastern Conference Semi-Finals - Chicago Bulls at New York Knicks: Game 7 - Partial Recording); https://archive.org/details/dvd-transfer-217. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — Christian Talk That Rocks with Richie L. Ep. 7/1/2022; https://archive.org/details/Ad_Durar_Al_Bahiyyah-christian_talk_that_rocks_with_richie_l_ep_7_1_2022. Original-document review required.
+- **Daniel² Greene** / `archival_access_gaps` — Evelina L. Green, Adm'x of Daniel Green, Dec'd, Appt, vs. Fletcher Creighton, in His Own Right, and as Executor of Jonathan McCaleb, Dec'd. 1859: Vol 120; https://archive.org/details/per_scotus_1859_120. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — Le Rapport Leuchter 1/2; https://archive.org/details/LeRapportFredLeuchter12ErnstZundelEtLExpertEnChambresAGazAmericain360p. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — Mr Death: Fred A. Leuchter; https://archive.org/details/MrDeathFredA.Leuchter. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — The Second Leuchter Report; https://archive.org/details/TheSecondLeuchterReport_201803. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — The Leuchter Report; https://archive.org/details/TheFredLeuchterReportFULL. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — The Leuchter Reports; https://archive.org/details/TheLeuchterReports. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — Fred Leuchter Entrevue Avec Jim Rizoli 2015; https://archive.org/details/FredLeuchterEntrevueAvecJimRizoli2015. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — Fred Leuchter Interviews; https://archive.org/details/FredLeuchterJimRizoliSept2015. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — Mr. Death: The Rise and Fall of Fred A. Leuchter, Jr. (1999); https://archive.org/details/Mr.Death.The.Rise.and.Fall.of.Fred.A.Leuchter.Jr.DVDRip. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — The Fred Leuchter Report; https://archive.org/details/TheFredLeuchterReport. Original-document review required.
+- **Daniel² Greene** / `legal_property_records` — The Fred Leuchter Story; https://archive.org/details/TheFredLeuchterStory. Original-document review required.
+- **Edward² Greene** / `legal_property_records` — CIA Reading Room cia-rdp88g00186r000800920001-6: LETTER TO HARRY E. FITZWATER FROM HAROLD C. KING; https://archive.org/details/cia-readingroom-document-cia-rdp88g00186r000800920001-6. Original-document review required.
+- **Edward² Greene** / `legal_property_records` — CIA Reading Room cia-rdp89-00244r000701510010-2: LETTER TO HARRY E. FITZWATER FROM HAROLD C. KING; https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701510010-2. Original-document review required.
+- **Edward² Greene** / `legal_property_records` — CIA Reading Room cia-rdp89-00244r000701510002-1: LETTER TO HARRY E. FITZWATER FROM HAROLD C. KING; https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701510002-1. Original-document review required.
