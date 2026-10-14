@@ -12150,3 +12150,99 @@ targets:
     or treating it as evidence.
   source_identifier: https://archive.org/details/TheGeniusOfChristianity15thEd
   status: READY_SHADOW
+- target_id: ST-35f21f7efb25
+  question: 'Investigate source record ''Chancery practice, with especial reference
+    to the office and duties of masters in chancery, registers, auditors, commissioners
+    in chancery, court commissioners, master commissioners, referees, etc., including
+    forms of orders of reference, master''s reports, objections, exceptions, orders
+    of confirmation, recommmittal, etc.'' [record ID: chancerypractic00hendgoog]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Joseph Clark & Francis Brinley. Originating
+    research lens (unverified context only): servant_indentured_status. Original search
+    query (discovery provenance only): "John Greene" ("servant" OR "indentured" OR
+    "bond servant" OR "redemptioner" OR "apprentice" OR "master"). Source identifier:
+    https://archive.org/details/chancerypractic00hendgoog.'
+  origin_event: EVT-805ebdc7998d
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/chancerypractic00hendgoog
+  status: READY_SHADOW
+- target_id: ST-4d3035d32989
+  question: 'Investigate source record ''Douglas Livingstone Road To Lisdoonvarna''
+    [record ID: douglas-livingstone-road-to-lisdoonvarna]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Elizabeth (wife of James² Greene).
+    Originating research lens (unverified context only): narragansett_indigenous_context.
+    Original search query (discovery provenance only): "James Greene" ("Narragansett"
+    OR "Niantic" OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source
+    identifier: https://archive.org/details/douglas-livingstone-road-to-lisdoonvarna.'
+  origin_event: EVT-805ebdc7998d
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/douglas-livingstone-road-to-lisdoonvarna
+  status: READY_SHADOW
+- target_id: ST-f03daff89c82
+  question: 'Investigate source record ''And the Band Played On [Like-New VHS]'' [record
+    ID: and-the-band-played-on-like-new-vhs]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Elizabeth (wife of James² Greene).
+    Originating research lens (unverified context only): narragansett_indigenous_context.
+    Original search query (discovery provenance only): "James Greene" ("Narragansett"
+    OR "Niantic" OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source
+    identifier: https://archive.org/details/and-the-band-played-on-like-new-vhs.'
+  origin_event: EVT-805ebdc7998d
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/and-the-band-played-on-like-new-vhs
+  status: READY_SHADOW
