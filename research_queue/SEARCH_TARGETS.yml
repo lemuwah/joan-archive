@@ -12246,3 +12246,187 @@ targets:
     or treating it as evidence.
   source_identifier: https://archive.org/details/and-the-band-played-on-like-new-vhs
   status: READY_SHADOW
+- target_id: ST-fa6d65f75c7d
+  question: 'Investigate source record ''The practical husbandman: being a collection
+    of miscellaneous papers on husbandry, etc'' [record ID: b3051969x]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Newport. Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "husbandman" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: https://archive.org/details/b3051969x.'
+  origin_event: EVT-3a9c1e072cb2
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/b3051969x
+  status: READY_SHADOW
+- target_id: ST-1596986e6a18
+  question: 'Investigate source record ''The words of the Lord Jesus'' [record ID:
+    wordsoflordjesus0000stie_f7r2]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Newport. Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "husbandman" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: https://archive.org/details/wordsoflordjesus0000stie_f7r2.'
+  origin_event: EVT-3a9c1e072cb2
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/wordsoflordjesus0000stie_f7r2
+  status: READY_SHADOW
+- target_id: ST-2555b1af6acd
+  question: 'Investigate source record ''The arena of life: the dynamics of ecology''
+    [record ID: arenaoflifedy00miln]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Quidnessett. Originating
+    research lens (unverified context only): narragansett_indigenous_context. Original
+    search query (discovery provenance only): "Joan Greene" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/arenaoflifedy00miln.'
+  origin_event: EVT-3a9c1e072cb2
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/arenaoflifedy00miln
+  status: READY_SHADOW
+- target_id: ST-ce5e565244d3
+  question: 'Investigate source record ''A farewell discourse to the First church
+    and society in Medway. Delivered March 17th, 1793. By Benjamin Greene, ... 1793''
+    [record ID: bim_eighteenth-century_a-farewell-discourse-to-_greene-benjamin_1793]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): George Havens. Originating research
+    lens (unverified context only): church_civil_registration. Original search query
+    (discovery provenance only): "Benjamin Greene" ("church" OR "baptism" OR "marriage"
+    OR "burial" OR "parish" OR "Quaker" OR "meeting"). Source identifier: https://archive.org/details/bim_eighteenth-century_a-farewell-discourse-to-_greene-benjamin_1793.'
+  origin_event: EVT-3a9c1e072cb2
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/bim_eighteenth-century_a-farewell-discourse-to-_greene-benjamin_1793
+  status: READY_SHADOW
+- target_id: ST-e1f45d24c15d
+  question: 'Investigate source record ''LA, lost & found : an architectural history
+    of Los Angeles'' [record ID: lalostfoundarchi0000kapl]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Henry² Greene. Originating research
+    lens (unverified context only): narragansett_indigenous_context. Original search
+    query (discovery provenance only): "Henry² Greene" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/lalostfoundarchi0000kapl.'
+  origin_event: EVT-3a9c1e072cb2
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/lalostfoundarchi0000kapl
+  status: READY_SHADOW
+- target_id: ST-0d11d475a084
+  question: 'Investigate source record ''Newport City Council Meeting – April 22,
+    2026'' [record ID: openpublica-newport-rhode_island-41649974-8229-45f0-93cd-28bfef4a9a84]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Warwick (Major John
+    Greene / Deputy Governor). Originating research lens (unverified context only):
+    legal_property_records. Original search query (discovery provenance only): "Miantonomi"
+    ("deed" OR "land evidence" OR "probate" OR "will" OR "court" OR "testimony" OR
+    "dower"). Source identifier: https://archive.org/details/openpublica-newport-rhode_island-41649974-8229-45f0-93cd-28bfef4a9a84.'
+  origin_event: EVT-3a9c1e072cb2
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/openpublica-newport-rhode_island-41649974-8229-45f0-93cd-28bfef4a9a84
+  status: READY_SHADOW
