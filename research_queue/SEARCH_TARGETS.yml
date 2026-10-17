@@ -12952,3 +12952,65 @@ targets:
     or treating it as evidence.
   source_identifier: http://www.loc.gov/item/11011569/
   status: READY_SHADOW
+- target_id: ST-8991789e4c44
+  question: 'Investigate source record ''Dun and Bradstreet Reference Book: March,
+    1900; Vol. 128, part 2'' [record ID: http://www.loc.gov/item/mar1900v128p2/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Anashuecot (Awashouse) — Chief Sachem
+    of Quidnessett. Originating research lens (unverified context only): irish_scottish_migration.
+    Original search query (discovery provenance only): "Nucom" ("Irish" OR "Ireland"
+    OR "Ulster" OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier:
+    http://www.loc.gov/item/mar1900v128p2/.'
+  origin_event: EVT-c8854b3ed8b8
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/mar1900v128p2/
+  status: READY_SHADOW
+- target_id: ST-4f0ffe9f8e60
+  question: 'Investigate source record ''Dun and Bradstreet Reference Book: January,
+    1902; Vol. 135, part 2'' [record ID: http://www.loc.gov/item/jan1902v135p2/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Anashuecot (Awashouse) — Chief Sachem
+    of Quidnessett. Originating research lens (unverified context only): irish_scottish_migration.
+    Original search query (discovery provenance only): "Nucom" ("Irish" OR "Ireland"
+    OR "Ulster" OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier:
+    http://www.loc.gov/item/jan1902v135p2/.'
+  origin_event: EVT-c8854b3ed8b8
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/jan1902v135p2/
+  status: READY_SHADOW
