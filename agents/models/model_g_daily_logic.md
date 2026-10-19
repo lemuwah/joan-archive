@@ -1,4 +1,4 @@
-# Model G Agent — Joan Beggarly / Alice Daniels (La Mance) — 2026-10-09
+# Model G Agent — Joan Beggarly / Alice Daniels (La Mance) — 2026-10-17
 
 **Status:** ELIMINATED
 **Evidence state:** AI-assisted working report; all leads are `LAWS_FILTERED`. Periodic human review applies.
@@ -18,9 +18,15 @@ Test identity, date, place, status wording, and citation independence separately
 ## 4. Continuing conflict/context layer
 Record parties, witnesses, jurisdiction, legal setting, Indigenous and non-English context, competing Johns, and every unresolved contradiction. Preserve the strongest alternative explanation.
 
-## Leads matching this model's search vocabulary (5)
-- **Anashuecot (Awashouse) — Chief Sachem of Quidnessett** / `maritime_trade_network` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
+## Leads matching this model's search vocabulary (11)
 - **Anashuecot (Awashouse) — Chief Sachem of Quidnessett** / `church_civil_registration` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
-- **John Greene of Quidnessett** / `maritime_trade_network` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
-- **John Greene of Quidnessett** / `church_civil_registration` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
-- **Sarah² Greene (alias Flounders)** / `church_civil_registration` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
+- **Benjamin² Greene** / `maritime_trade_network` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
+- **Benjamin² Greene** / `church_civil_registration` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
+- **Edward Greenman** / `maritime_trade_network` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
+- **Edward Greenman** / `church_civil_registration` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
+- **Elizabeth (wife of James² Greene)** / `maritime_trade_network` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
+- **Elizabeth (wife of James² Greene)** / `church_civil_registration` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
+- **Henry Tibbitts (H. Tibbits)** / `church_civil_registration` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
+- **John Greene "of Potowomut"** / `legal_property_records` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
+- **John Greene "of Potowomut"** / `maritime_trade_network` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
+- **John Greene "of Potowomut"** / `church_civil_registration` — The Greene family and its branches from 861 to 1904.; http://www.loc.gov/item/09014502/. Original-document review required.
