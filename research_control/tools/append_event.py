@@ -19,6 +19,7 @@ LEDGERS = {
     "status": ROOT / "research_control/status_events.jsonl",
     "relationship": ROOT / "research_control/relationships.jsonl",
     "artifact": ROOT / "research_control/found_artifacts.jsonl",
+    "correction": ROOT / "research_control/corrections.jsonl",
 }
 
 SCHEMAS = {
@@ -29,6 +30,7 @@ SCHEMAS = {
     "status": ROOT / "research_control/schemas/status_event.schema.json",
     "relationship": ROOT / "research_control/schemas/claim_evidence_relationship.schema.json",
     "artifact": ROOT / "research_control/schemas/found_artifact.schema.json",
+    "correction": ROOT / "research_control/schemas/correction_event.schema.json",
 }
 
 ID_FIELDS = {
@@ -39,6 +41,7 @@ ID_FIELDS = {
     "status": "status_id",
     "relationship": "relationship_id",
     "artifact": "artifact_id",
+    "correction": "correction_id",
 }
 
 ID_PATTERNS = {
@@ -49,6 +52,7 @@ ID_PATTERNS = {
     "status": re.compile(r"^STATUS-[0-9]{6}$"),
     "relationship": re.compile(r"^REL-[0-9]{6}$"),
     "artifact": re.compile(r"^ARTIFACT-[0-9]{6}$"),
+    "correction": re.compile(r"^CORR-[0-9]{6}$"),
 }
 
 
