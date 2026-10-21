@@ -13074,3 +13074,185 @@ targets:
     or treating it as evidence.
   source_identifier: https://archive.org/details/animallife00miln
   status: READY_SHADOW
+- target_id: ST-20f280b20182
+  question: 'Investigate source record ''The words of the Lord Jesus'' [record ID:
+    wordsoflordjesus0006stie]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Newport. Originating
+    research lens (unverified context only): irish_scottish_migration. Original search
+    query (discovery provenance only): "husbandman" ("Irish" OR "Ireland" OR "Ulster"
+    OR "Scotland" OR "Scottish" OR "Donegal" OR "servant"). Source identifier: https://archive.org/details/wordsoflordjesus0006stie.'
+  origin_event: EVT-e72035d6baff
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/wordsoflordjesus0006stie
+  status: READY_SHADOW
+- target_id: ST-52998c5932b6
+  question: 'Investigate source record ''The mating instinct'' [record ID: matinginstinct00miln]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Quidnessett. Originating
+    research lens (unverified context only): narragansett_indigenous_context. Original
+    search query (discovery provenance only): "Joan Greene" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/matinginstinct00miln.'
+  origin_event: EVT-e72035d6baff
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/matinginstinct00miln
+  status: READY_SHADOW
+- target_id: ST-d123653b44f4
+  question: 'Investigate source record ''CIA Reading Room cia-rdp89-00244r000300160024-1:
+    LETTER TO VERNON R. GINGELL FROM H. M. SHAVER, JR.'' [record ID: cia-readingroom-document-cia-rdp89-00244r000300160024-1]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Edward² Greene. Originating research
+    lens (unverified context only): legal_property_records. Original search query
+    (discovery provenance only): "George Vaughan" ("deed" OR "land evidence" OR "probate"
+    OR "will" OR "court" OR "testimony" OR "dower"). Source identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000300160024-1.'
+  origin_event: EVT-e72035d6baff
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000300160024-1
+  status: READY_SHADOW
+- target_id: ST-9856a8f8f3f6
+  question: 'Investigate source record ''The Americas: [Canada, Mexico, and South
+    America]'' [record ID: americascanadamehil00hill]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): George Vaughan. Originating research
+    lens (unverified context only): narragansett_indigenous_context. Original search
+    query (discovery provenance only): "Edward Greene" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/americascanadamehil00hill.'
+  origin_event: EVT-e72035d6baff
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/americascanadamehil00hill
+  status: READY_SHADOW
+- target_id: ST-da84713f282a
+  question: 'Investigate source record ''Pets and well-being: A replication study''
+    [record ID: osf-registrations-dn2c9-v1]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Henry Tibbitts (H. Tibbits). Originating
+    research lens (unverified context only): legal_property_records. Original search
+    query (discovery provenance only): "Sarah Stanton" ("deed" OR "land evidence"
+    OR "probate" OR "will" OR "court" OR "testimony" OR "dower"). Source identifier:
+    https://archive.org/details/osf-registrations-dn2c9-v1.'
+  origin_event: EVT-e72035d6baff
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/osf-registrations-dn2c9-v1
+  status: READY_SHADOW
+- target_id: ST-cb726fdbffb9
+  question: 'Investigate source record ''CIA Reading Room cia-rdp89-00244r001002440004-2:
+    LETTER TO ROBERT R.L. HUNDLEY'' [record ID: cia-readingroom-document-cia-rdp89-00244r001002440004-2]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Edward² Greene. Originating research
+    lens (unverified context only): legal_property_records. Original search query
+    (discovery provenance only): "George Vaughan" ("deed" OR "land evidence" OR "probate"
+    OR "will" OR "court" OR "testimony" OR "dower"). Source identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r001002440004-2.'
+  origin_event: EVT-e72035d6baff
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r001002440004-2
+  status: READY_SHADOW
