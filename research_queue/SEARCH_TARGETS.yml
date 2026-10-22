@@ -13256,3 +13256,155 @@ targets:
     or treating it as evidence.
   source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r001002440004-2
   status: READY_SHADOW
+- target_id: ST-42ed9f6f46eb
+  question: 'Investigate source record ''CIA Reading Room cia-rdp89-00244r000701350002-9:
+    MEMORANDUM OF AGREEMENT BETWEEN THE CENTRAL INTELLIGENCE AGENCY AND THE VIRGINIA
+    DEPARTMENT OF HIGHWAYS AND TRANSPORTATION'' [record ID: cia-readingroom-document-cia-rdp89-00244r000701350002-9]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Edward² Greene. Originating research
+    lens (unverified context only): legal_property_records. Original search query
+    (discovery provenance only): "George Vaughan" ("deed" OR "land evidence" OR "probate"
+    OR "will" OR "court" OR "testimony" OR "dower"). Source identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701350002-9.'
+  origin_event: EVT-3ac2f445ea1c
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701350002-9
+  status: READY_SHADOW
+- target_id: ST-8ebd913b2975
+  question: 'Investigate source record ''CIA Reading Room cia-rdp89-00244r000701330012-0:
+    LETTER TO HARRY E. FITZWATER FROM HAROLD C. KING'' [record ID: cia-readingroom-document-cia-rdp89-00244r000701330012-0]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Edward² Greene. Originating research
+    lens (unverified context only): legal_property_records. Original search query
+    (discovery provenance only): "George Vaughan" ("deed" OR "land evidence" OR "probate"
+    OR "will" OR "court" OR "testimony" OR "dower"). Source identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701330012-0.'
+  origin_event: EVT-3ac2f445ea1c
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701330012-0
+  status: READY_SHADOW
+- target_id: ST-e0508a20dac5
+  question: 'Investigate source record ''CIA Reading Room cia-rdp89-00244r001002280015-8:
+    LETTER TO (SANITIZED) FROM H. M. SHAVER, JR., STATE'' [record ID: cia-readingroom-document-cia-rdp89-00244r001002280015-8]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Edward² Greene. Originating research
+    lens (unverified context only): legal_property_records. Original search query
+    (discovery provenance only): "George Vaughan" ("deed" OR "land evidence" OR "probate"
+    OR "will" OR "court" OR "testimony" OR "dower"). Source identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r001002280015-8.'
+  origin_event: EVT-3ac2f445ea1c
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r001002280015-8
+  status: READY_SHADOW
+- target_id: ST-df8ecd6bfbdf
+  question: 'Investigate source record ''The life and works of Edward Greene Malbone,
+    1777-1807'' [record ID: edwar00tolm]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): George Vaughan. Originating research
+    lens (unverified context only): narragansett_indigenous_context. Original search
+    query (discovery provenance only): "Edward Greene" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/edwar00tolm.'
+  origin_event: EVT-3ac2f445ea1c
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/edwar00tolm
+  status: READY_SHADOW
+- target_id: ST-9d3328c4a157
+  question: 'Investigate source record ''CIA Reading Room cia-rdp89-00244r000701330035-5:
+    LETTER TO LARRY MYERS FROM H. M. SHAVER, JR'' [record ID: cia-readingroom-document-cia-rdp89-00244r000701330035-5]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Edward² Greene. Originating research
+    lens (unverified context only): legal_property_records. Original search query
+    (discovery provenance only): "George Vaughan" ("deed" OR "land evidence" OR "probate"
+    OR "will" OR "court" OR "testimony" OR "dower"). Source identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701330035-5.'
+  origin_event: EVT-3ac2f445ea1c
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000701330035-5
+  status: READY_SHADOW
