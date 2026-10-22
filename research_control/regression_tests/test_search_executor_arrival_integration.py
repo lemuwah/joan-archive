@@ -161,7 +161,11 @@ targets:
         # ------------------------------------------------------------
         # A. Executor produced its normal result artifact.
         # ------------------------------------------------------------
-        result_path = result_dir / "ST-EXEC-ARRIVAL.json"
+        result_files = list(result_dir.glob("ST-EXEC-ARRIVAL.*.json"))
+        assert len(result_files) == 1, (
+            f"Expected one unique execution artifact; got {len(result_files)}"
+        )
+        result_path = result_files[0]
         assert result_path.exists(), "Executor result artifact was not written"
 
         result = json.loads(result_path.read_text(encoding="utf-8"))
@@ -230,9 +234,7 @@ targets:
             assert arrival["provenance"]["execution_event_id"] == (
                 "EVT-EXEC-ARRIVAL-001"
             )
-            assert arrival["result"]["artifact_ref"].endswith(
-                "ST-EXEC-ARRIVAL.json"
-            )
+            assert arrival["result"]["artifact_ref"] == str(result_path)
 
         print("PASS: arrivals preserve executor provenance")
 

@@ -234,10 +234,18 @@ def main() -> int:
         action="store_true",
         help="validate without modifying the ledger",
     )
+    parser.add_argument(
+        "--ledger-path",
+        type=Path,
+        help=(
+            "optional ledger path override, intended for isolated tests; "
+            "defaults to the configured production ledger"
+        ),
+    )
     args = parser.parse_args()
 
     kind = args.kind
-    ledger = LEDGERS[kind]
+    ledger = args.ledger_path if args.ledger_path is not None else LEDGERS[kind]
 
     try:
         record = json.loads(
@@ -279,9 +287,14 @@ def main() -> int:
                     "REFUSING TO APPEND: " + "; ".join(errors)
                 )
 
+            display_ledger = (
+                str(ledger.relative_to(ROOT))
+                if ledger.is_relative_to(ROOT)
+                else str(ledger)
+            )
             print(
                 f"DRY-RUN OK: {event_id} would append -> "
-                f"{ledger.relative_to(ROOT)}"
+                f"{display_ledger}"
             )
             return 0
 
@@ -296,9 +309,12 @@ def main() -> int:
         return 1
 
     event_id = record[ID_FIELDS[kind]]
-    print(
-        f"APPENDED {event_id} -> {ledger.relative_to(ROOT)}"
+    display_ledger = (
+        str(ledger.relative_to(ROOT))
+        if ledger.is_relative_to(ROOT)
+        else str(ledger)
     )
+    print(f"APPENDED {event_id} -> {display_ledger}")
     return 0
 
 

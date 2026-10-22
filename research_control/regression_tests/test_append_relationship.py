@@ -29,7 +29,11 @@ VALID_RELATIONSHIP = {
 }
 
 
-def run_append(record: dict, *extra_args: str) -> subprocess.CompletedProcess:
+def run_append(
+    record: dict,
+    ledger: Path,
+    *extra_args: str,
+) -> subprocess.CompletedProcess:
     with tempfile.NamedTemporaryFile(
         mode="w",
         encoding="utf-8",
@@ -47,6 +51,8 @@ def run_append(record: dict, *extra_args: str) -> subprocess.CompletedProcess:
                 "relationship",
                 input_path,
                 *extra_args,
+                "--ledger-path",
+                str(ledger),
             ],
             cwd=ROOT,
             text=True,
@@ -57,64 +63,63 @@ def run_append(record: dict, *extra_args: str) -> subprocess.CompletedProcess:
 
 
 def main() -> None:
-    # The test must not inherit a pre-existing production relationship ledger.
-    if LEDGER.exists():
-        raise AssertionError(
-            f"test requires no pre-existing ledger: {LEDGER}"
+    # Every mutating CLI test uses an isolated temporary ledger.
+    with tempfile.TemporaryDirectory() as tmp:
+        ledger = Path(tmp) / "relationships.jsonl"
+
+        # 1. A structurally valid relationship must pass dry-run validation.
+        result = run_append(VALID_RELATIONSHIP, ledger, "--dry-run")
+        assert result.returncode == 0, result.stderr
+        assert "DRY-RUN OK: REL-999999" in result.stdout
+        assert not ledger.exists(), "dry-run unexpectedly created a ledger"
+
+        # 2. An invalid relationship ID must be rejected.
+        bad_id = dict(VALID_RELATIONSHIP)
+        bad_id["relationship_id"] = "REL-BAD"
+
+        result = run_append(bad_id, ledger, "--dry-run")
+        assert result.returncode != 0
+        assert "invalid ID" in result.stderr
+
+        # 3. An invented relationship type must be rejected.
+        bad_relation = dict(VALID_RELATIONSHIP)
+        bad_relation["relation"] = "AI_THINKS_THIS_IS_TRUE"
+
+        result = run_append(bad_relation, ledger, "--dry-run")
+        assert result.returncode != 0
+        assert "invalid enum value" in result.stderr
+
+        # 4. Missing referenced claim/evidence records must not block append.
+        result = run_append(VALID_RELATIONSHIP, ledger)
+        assert result.returncode == 0, result.stderr
+        assert ledger.exists()
+        assert "APPENDED REL-999999" in result.stdout
+
+        # 5. The same relationship ID must not append twice.
+        before = ledger.read_bytes()
+        result = run_append(VALID_RELATIONSHIP, ledger)
+        assert result.returncode != 0
+        assert "duplicate relationship_id REL-999999" in result.stderr
+        assert ledger.read_bytes() == before, (
+            "duplicate rejection modified existing ledger bytes"
         )
 
-    # 1. A structurally valid relationship must pass dry-run validation.
-    result = run_append(VALID_RELATIONSHIP, "--dry-run")
-    assert result.returncode == 0, result.stderr
-    assert "DRY-RUN OK: REL-999999" in result.stdout
+        # 6. The synthetic ledger must contain exactly one record.
+        lines = ledger.read_text(encoding="utf-8").splitlines()
+        assert len(lines) == 1
 
-    # 2. An invalid relationship ID must be rejected.
-    bad_id = dict(VALID_RELATIONSHIP)
-    bad_id["relationship_id"] = "REL-BAD"
-
-    result = run_append(bad_id, "--dry-run")
-    assert result.returncode != 0
-    assert "invalid ID" in result.stderr
-
-    # 3. An invented relationship type must be rejected.
-    bad_relation = dict(VALID_RELATIONSHIP)
-    bad_relation["relation"] = "AI_THINKS_THIS_IS_TRUE"
-
-    result = run_append(bad_relation, "--dry-run")
-    assert result.returncode != 0
-    assert "invalid enum value" in result.stderr
-
-    # 4. The append boundary must NOT require referenced claim/evidence
-    #    records to exist. Cross-record validation belongs to Provenance Gate.
-    result = run_append(VALID_RELATIONSHIP)
-    assert result.returncode == 0, result.stderr
-    assert LEDGER.exists()
-    assert "APPENDED REL-999999" in result.stdout
-
-    # 5. The same relationship ID must not append twice.
-    result = run_append(VALID_RELATIONSHIP)
-    assert result.returncode != 0
-    assert "duplicate relationship_id REL-999999" in result.stderr
-
-    # 6. The test-created ledger must contain exactly one record.
-    lines = LEDGER.read_text(encoding="utf-8").splitlines()
-    assert len(lines) == 1
-
-    stored = json.loads(lines[0])
-    assert stored["relationship_id"] == "REL-999999"
-    assert stored["evidence_id"] == "EVID-000001"
-    assert stored["claim_id"] == "CLAIM-000001"
-
-    # Cleanup: this regression test must never leave synthetic research data.
-    LEDGER.unlink()
+        stored = json.loads(lines[0])
+        assert stored["relationship_id"] == "REL-999999"
+        assert stored["evidence_id"] == "EVID-000001"
+        assert stored["claim_id"] == "CLAIM-000001"
 
     print("RELATIONSHIP APPEND REGRESSION TESTS PASSED")
-    print("Valid relationship accepted.")
+    print("Valid relationship accepted in temporary ledger.")
     print("Invalid relationship ID rejected.")
     print("Invalid relationship type rejected.")
     print("Missing referenced claim/evidence did not block append.")
-    print("Duplicate relationship ID rejected.")
-    print("Synthetic relationship ledger cleaned up.")
+    print("Duplicate relationship ID rejected without changing history.")
+    print("Production relationship ledger was not used.")
 
 
 if __name__ == "__main__":
