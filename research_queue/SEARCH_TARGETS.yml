@@ -13840,3 +13840,65 @@ targets:
     or treating it as evidence.
   source_identifier: https://archive.org/details/fftmc
   status: READY_SHADOW
+- target_id: ST-fa505dab144c
+  question: 'Investigate source record ''Three hundred years of American painting''
+    [record ID: threehundredyear0000unse_p1b8]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): George Vaughan. Originating research
+    lens (unverified context only): narragansett_indigenous_context. Original search
+    query (discovery provenance only): "Edward Greene" ("Narragansett" OR "Niantic"
+    OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source identifier:
+    https://archive.org/details/threehundredyear0000unse_p1b8.'
+  origin_event: EVT-77cf586b0457
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/threehundredyear0000unse_p1b8
+  status: READY_SHADOW
+- target_id: ST-20daddd6df73
+  question: 'Investigate source record ''Far From the Madding Crowd - BBC Radio Drama
+    (1989)'' [record ID: miscellaneous_plays_1990-05-04_far_from_the_madding_crowd_-_episode_01_-_fortunes]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Elizabeth (wife of James² Greene).
+    Originating research lens (unverified context only): narragansett_indigenous_context.
+    Original search query (discovery provenance only): "James Greene" ("Narragansett"
+    OR "Niantic" OR "sachem" OR "kin" OR "mark" OR "interpreter" OR "Indian"). Source
+    identifier: https://archive.org/details/miscellaneous_plays_1990-05-04_far_from_the_madding_crowd_-_episode_01_-_fortunes.'
+  origin_event: EVT-77cf586b0457
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/miscellaneous_plays_1990-05-04_far_from_the_madding_crowd_-_episode_01_-_fortunes
+  status: READY_SHADOW
