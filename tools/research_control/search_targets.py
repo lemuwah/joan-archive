@@ -1,6 +1,7 @@
 from pathlib import Path
 import json
 import hashlib
+import re
 import sys
 import yaml
 
@@ -9,9 +10,49 @@ CONTROL_DIR = ROOT / "tools" / "research_control"
 if str(CONTROL_DIR) not in sys.path:
     sys.path.insert(0, str(CONTROL_DIR))
 
-from event_spine import record_event
+from event_spine import EVENT_FILE, record_event
 
 TARGET_FILE = ROOT / "research_queue" / "SEARCH_TARGETS.yml"
+EVENT_ID_PATTERN = re.compile(r"^EVT-[0-9a-f]{12}$")
+
+
+def _event_exists(event_file: Path, expected: dict) -> bool:
+    """Find an identical target-creation event without rewriting event history."""
+    if not event_file.exists():
+        return False
+
+    found = False
+    with event_file.open("r", encoding="utf-8") as stream:
+        for line_number, line in enumerate(stream, 1):
+            if not line.strip():
+                continue
+            try:
+                event = json.loads(line)
+            except json.JSONDecodeError as exc:
+                raise ValueError(
+                    f"Invalid event JSON in {event_file} at line {line_number}; "
+                    "refusing to create a target without checking event history."
+                ) from exc
+            if not isinstance(event, dict):
+                raise ValueError(
+                    f"Expected an event object in {event_file} at line "
+                    f"{line_number}; refusing to create a target without "
+                    "checking event history."
+                )
+            event_id = event.get("event_id")
+            if (
+                not isinstance(event_id, str)
+                or not EVENT_ID_PATTERN.fullmatch(event_id)
+            ):
+                continue
+            if all(
+                field in event and event[field] == value
+                for field, value in expected.items()
+            ):
+                found = True
+
+    return found
+
 
 def add_target(question, reason, origin_event="", target_type="DOCUMENT", person_slots=None, jurisdictions=None, record_families=None, date_range=None, name_variants=None, laws=None, disproof_record="", source_identifier="", target_file=None, event_file=None):
     payload = {
@@ -69,12 +110,12 @@ def add_target(question, reason, origin_event="", target_type="DOCUMENT", person
     if not target_exists:
         data["targets"].append(target)
 
-        record_event(
-            agent="SEARCH_TARGET_GENERATOR",
-            action="NEW_SEARCH_TARGET",
-            target=target["target_id"],
-            laws=target["laws"],
-            search_scope={
+        target_event = {
+            "agent": "SEARCH_TARGET_GENERATOR",
+            "action": "NEW_SEARCH_TARGET",
+            "target": target["target_id"],
+            "laws": target["laws"],
+            "search_scope": {
                 "target_type": target["target_type"],
                 "person_slots": target["person_slots"],
                 "jurisdictions": target["jurisdictions"],
@@ -82,15 +123,19 @@ def add_target(question, reason, origin_event="", target_type="DOCUMENT", person
                 "date_range": target["date_range"],
                 "name_variants": target["name_variants"],
             },
-            evidence=target["reason"],
-            result=target["question"],
-            status=target["status"],
-            contradiction=target["disproof_record"],
-            next_action="Execute target search when target status is promoted from READY_SHADOW.",
-            parent_event=target["origin_event"],
-            event_class="RESEARCH",
-            event_file=event_file,
-        )
+            "source": "",
+            "evidence": target["reason"],
+            "result": target["question"],
+            "status": target["status"],
+            "contradiction": target["disproof_record"],
+            "next_action": "Execute target search when target status is promoted from READY_SHADOW.",
+            "parent_event": target["origin_event"],
+            "event_class": "RESEARCH",
+            "research_effect": "",
+        }
+        event_path = Path(event_file) if event_file else EVENT_FILE
+        if not _event_exists(event_path, target_event):
+            record_event(**target_event, event_file=event_file)
 
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(
