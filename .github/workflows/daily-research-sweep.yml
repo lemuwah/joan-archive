@@ -77,15 +77,12 @@ jobs:
 
       - name: Run four-agent orchestration
         run: python tools/multi_agent_daily/orchestrate.py
-        continue-on-error: true
 
       - name: Build outward document-ecology search bundle
         run: python tools/document_ecology/build_search_bundle.py
-        continue-on-error: true
 
       - name: Route completed research findings
         run: python tools/findings_pipeline/route_findings.py
-        continue-on-error: true
 
       - name: Commit results directly to main
         run: |
