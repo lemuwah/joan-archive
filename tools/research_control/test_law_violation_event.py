@@ -1,53 +1,57 @@
 from pathlib import Path
 import json
+import tempfile
 
+import event_spine
 from law_guard import guard_promotion
 
 
-ROOT = Path(__file__).resolve().parents[2]
-EVENT_FILE = ROOT / "research_queue" / "research_events.jsonl"
-
-
 def main():
-    before = EVENT_FILE.read_text(encoding="utf-8").splitlines()
+    original_event_file = event_spine.EVENT_FILE
 
-    event = guard_promotion(
-        agent="SYSTEM_TEST",
-        status="CONFIRMED",
-        evidence_state="AI_WORKING_COPY",
-        target="TEST-LAW-VIOLATION",
-    )
+    with tempfile.TemporaryDirectory() as temp_dir:
+        test_event_file = Path(temp_dir) / "research_events.jsonl"
+        test_event_file.write_text("", encoding="utf-8")
 
-    if event is None:
-        raise SystemExit(
-            "FAIL: blocked promotion did not return an audit event"
-        )
+        try:
+            # Route all test writes to the temporary ledger.
+            event_spine.EVENT_FILE = test_event_file
+            before = test_event_file.read_text(
+                encoding="utf-8"
+            ).splitlines()
 
-    if event["event_class"] != "LAW_VIOLATION":
-        raise SystemExit(
-            "FAIL: blocked promotion was not classified "
-            "as LAW_VIOLATION"
-        )
+            event = guard_promotion(
+                agent="SYSTEM_TEST",
+                status="CONFIRMED",
+                evidence_state="AI_WORKING_COPY",
+                target="TEST-LAW-VIOLATION",
+            )
 
-    after = EVENT_FILE.read_text(encoding="utf-8").splitlines()
+            if event is None:
+                raise SystemExit("FAIL: no audit event returned")
 
-    if len(after) != len(before) + 1:
-        raise SystemExit(
-            "FAIL: exactly one audit event was not appended"
-        )
+            if event["event_class"] != "LAW_VIOLATION":
+                raise SystemExit("FAIL: incorrect event class")
 
-    recorded = json.loads(after[-1])
+            after = test_event_file.read_text(
+                encoding="utf-8"
+            ).splitlines()
 
-    if recorded["event_id"] != event["event_id"]:
-        raise SystemExit(
-            "FAIL: returned event does not match recorded event"
-        )
+            if len(after) != len(before) + 1:
+                raise SystemExit("FAIL: expected exactly one event")
 
-    print("PASS: certainty promotion blocked")
-    print("PASS: LAW_VIOLATION event created")
-    print("PASS: event written to Event Spine")
-    print("PASS: recorded event matches returned event")
-    print("LAW-VIOLATION AUDIT TEST: PASS")
+            recorded = json.loads(after[-1])
+
+            if recorded["event_id"] != event["event_id"]:
+                raise SystemExit("FAIL: returned and recorded events differ")
+
+            print("PASS: certainty promotion blocked")
+            print("PASS: LAW_VIOLATION event written to temporary ledger")
+            print("PASS: recorded event matches returned event")
+            print("LAW-VIOLATION AUDIT TEST: PASS")
+
+        finally:
+            event_spine.EVENT_FILE = original_event_file
 
 
 if __name__ == "__main__":

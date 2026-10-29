@@ -25,25 +25,64 @@ jobs:
 
       - name: Run daily multi-perspective sweep
         run: python tools/daily_research/sweep.py
-        continue-on-error: true
+
+      - name: Validate sweep output before orchestration
+        run: |
+          RUN_DATE="$(date -u +%Y-%m-%d)"
+          SWEEP_FILE="research_queue/daily_sweep/${RUN_DATE}.jsonl"
+          SUMMARY_FILE="research_queue/daily_sweep/${RUN_DATE}.summary.json"
+
+          if [ ! -s "$SWEEP_FILE" ] || [ ! -s "$SUMMARY_FILE" ]; then
+            echo "::error::Sweep output or summary is missing or empty."
+            exit 1
+          fi
+
+          python - "$SWEEP_FILE" "$SUMMARY_FILE" <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+
+          results = Path(sys.argv[1])
+          summary = Path(sys.argv[2])
+
+          with summary.open(encoding="utf-8") as handle:
+              data = json.load(handle)
+          if not isinstance(data, dict):
+              raise SystemExit("Invalid sweep summary: expected a JSON object")
+
+          count = 0
+          with results.open(encoding="utf-8") as handle:
+              for number, line in enumerate(handle, 1):
+                  if not line.strip():
+                      raise SystemExit(f"Empty JSONL record at line {number}")
+                  try:
+                      record = json.loads(line)
+                  except json.JSONDecodeError as exc:
+                      raise SystemExit(
+                          f"Invalid JSONL record at line {number}: {exc}"
+                      ) from exc
+                  if not isinstance(record, dict):
+                      raise SystemExit(
+                          f"Invalid record at line {number}: expected an object"
+                      )
+                  count += 1
+
+          if count != data.get("queries_run"):
+              raise SystemExit(
+                  f"Record count mismatch: found {count}, "
+                  f"summary reports {data.get('queries_run')}"
+              )
+
+          print(f"Validated {count} sweep records and summary.")
 
       - name: Run four-agent orchestration
-        run: |
-          SWEEP_FILE="research_queue/daily_sweep/$(date -u +%Y-%m-%d).jsonl"
-          if [ -f "$SWEEP_FILE" ]; then
-            python tools/multi_agent_daily/orchestrate.py
-          else
-            echo "No sweep output found — skipping orchestration"
-          fi
-        continue-on-error: true
+        run: python tools/multi_agent_daily/orchestrate.py
 
       - name: Build outward document-ecology search bundle
         run: python tools/document_ecology/build_search_bundle.py
-        continue-on-error: true
 
       - name: Route completed research findings
         run: python tools/findings_pipeline/route_findings.py
-        continue-on-error: true
 
       - name: Commit results directly to main
         run: |
