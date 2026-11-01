@@ -13962,3 +13962,65 @@ targets:
     or treating it as evidence.
   source_identifier: https://archive.org/details/wordsoflordjesus0000stie_t1p5
   status: READY_SHADOW
+- target_id: ST-a6e6729f3898
+  question: 'Investigate source record ''History of the church in Burlington, New
+    Jersey; comprising the facts and incidents of nearly two hundred years, from original,
+    contemporaneous sources.'' [record ID: http://www.loc.gov/item/32018153/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Edward Greenman. Originating research
+    lens (unverified context only): church_civil_registration. Original search query
+    (discovery provenance only): "David Greenman" ("church" OR "baptism" OR "marriage"
+    OR "burial" OR "parish" OR "Quaker" OR "meeting"). Source identifier: http://www.loc.gov/item/32018153/.'
+  origin_event: EVT-d69657039000
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/32018153/
+  status: READY_SHADOW
+- target_id: ST-4f8bc29cc990
+  question: 'Investigate source record ''Biographical, genealogical and descriptive
+    history of the first congressional district of New Jersey; illustrated ...'' [record
+    ID: http://www.loc.gov/item/13024516/]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Edward Greenman. Originating research
+    lens (unverified context only): church_civil_registration. Original search query
+    (discovery provenance only): "David Greenman" ("church" OR "baptism" OR "marriage"
+    OR "burial" OR "parish" OR "Quaker" OR "meeting"). Source identifier: http://www.loc.gov/item/13024516/.'
+  origin_event: EVT-d69657039000
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: http://www.loc.gov/item/13024516/
+  status: READY_SHADOW
