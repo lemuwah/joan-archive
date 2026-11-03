@@ -14024,3 +14024,33 @@ targets:
     or treating it as evidence.
   source_identifier: http://www.loc.gov/item/13024516/
   status: READY_SHADOW
+- target_id: ST-8743a880ff07
+  question: 'Investigate source record ''CIA Reading Room cia-rdp85b01152r000600780068-5:
+    LETTER TO LARRY K. MYERS FROM H. M. SHAVER JR.'' [record ID: cia-readingroom-document-cia-rdp85b01152r000600780068-5]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Edward² Greene. Originating research
+    lens (unverified context only): legal_property_records. Original search query
+    (discovery provenance only): "George Vaughan" ("deed" OR "land evidence" OR "probate"
+    OR "will" OR "court" OR "testimony" OR "dower"). Source identifier: https://archive.org/details/cia-readingroom-document-cia-rdp85b01152r000600780068-5.'
+  origin_event: EVT-fc0c9681df93
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp85b01152r000600780068-5
+  status: READY_SHADOW
