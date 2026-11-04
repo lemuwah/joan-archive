@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   sweep:
@@ -76,26 +77,72 @@ jobs:
           print(f"Validated {count} sweep records and summary.")
 
       - name: Run four-agent orchestration
+        id: orchestration
         run: python tools/multi_agent_daily/orchestrate.py
+        continue-on-error: true
 
       - name: Build outward document-ecology search bundle
+        id: document_ecology
         run: python tools/document_ecology/build_search_bundle.py
+        continue-on-error: true
 
       - name: Route completed research findings
+        id: findings
         run: python tools/findings_pipeline/route_findings.py
+        continue-on-error: true
 
-      - name: Commit results directly to main
+      - name: Report downstream stage outcomes
+        id: run_status
+        if: always()
+        env:
+          ORCHESTRATION_OUTCOME: ${{ steps.orchestration.outcome }}
+          DOCUMENT_ECOLOGY_OUTCOME: ${{ steps.document_ecology.outcome }}
+          FINDINGS_OUTCOME: ${{ steps.findings.outcome }}
         run: |
-          git config user.name "joan-archive-bot"
-          git config user.email "joan-archive-bot@users.noreply.github.com"
-          git add -A
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "research: daily automated sweep — AI-SOURCED, Laws-filtered
+          status="COMPLETE"
 
-          All outputs are AI-assisted working reports filtered through the
-          Multi Agent Laws. No claim is promoted to PROOF without primary
-          source verification. Periodic human review applies."
-            git push
+          if [ "$ORCHESTRATION_OUTCOME" != "success" ] ||
+             [ "$DOCUMENT_ECOLOGY_OUTCOME" != "success" ] ||
+             [ "$FINDINGS_OUTCOME" != "success" ]; then
+            status="PARTIAL"
           fi
+
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+
+          {
+            echo "### Automated research run: $status"
+            echo "- Orchestration: $ORCHESTRATION_OUTCOME"
+            echo "- Document ecology: $DOCUMENT_ECOLOGY_OUTCOME"
+            echo "- Findings routing: $FINDINGS_OUTCOME"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Open pull request for automated research outputs
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "research: daily automated sweep — AI working outputs"
+          title: "Automated research outputs — ${{ steps.run_status.outputs.status }}"
+          body: |
+            Run status: **${{ steps.run_status.outputs.status }}**
+
+            - Orchestration: ${{ steps.orchestration.outcome }}
+            - Document ecology: ${{ steps.document_ecology.outcome }}
+            - Findings routing: ${{ steps.findings.outcome }}
+
+            This pull request contains automated research working outputs.
+
+            These outputs are discovery leads and AI-assisted analysis, not
+            verified identity claims or proof. Preserve uncertainty,
+            contradictory leads, and deferred research. Review source
+            provenance before promoting any conclusion.
+
+            This workflow intentionally stages only the listed research
+            output directories. It does not publish directly to main.
+          branch: automated-research/daily-sweep
+          add-paths: |
+            research_queue/daily_sweep/**
+            research_queue/agent_runs/**
+            research_queue/finding_runs/**
+            research_queue/document_ecology/**
+            research_queue/SEARCH_TARGETS.yml
+            research_queue/research_events.jsonl

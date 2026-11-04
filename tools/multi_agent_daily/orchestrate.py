@@ -50,11 +50,6 @@ def result_rows(records: list[dict]) -> list[dict]:
     return rows
 
 
-def lead_key(row: dict) -> tuple[str, str, str]:
-    result = row["result"]
-    return (row["person_name"], row["lens"], result.get("url") or result.get("record_id") or "")
-
-
 def allocate_fair_leads(
     leads: list[dict],
     budget: int,
@@ -366,10 +361,6 @@ def run(
 ) -> Path:
     records = load_records(sweep_path)
     leads = result_rows(records)
-    unique = {}
-    for lead in leads:
-        unique[lead_key(lead)] = lead
-    leads = list(unique.values())
     output_dir = output_root / date
     output_dir.mkdir(parents=True, exist_ok=True)
 
