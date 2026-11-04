@@ -1,0 +1,12 @@
+{
+  "run_date": "2026-11-04",
+  "people_pages": 23,
+  "lenses": 13,
+  "queries_run": 1625,
+  "dry_run": false,
+  "found_queries": 0,
+  "partial_queries": 312,
+  "no_result_queries": 1,
+  "error_queries": 1312,
+  "note": "Candidates and negative results require human review; no claim is verified by this sweep."
+}
