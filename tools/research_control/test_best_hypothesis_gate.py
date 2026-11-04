@@ -4,6 +4,7 @@ from pathlib import Path
 
 import agent_chain
 import best_hypothesis_gate
+import event_spine
 
 
 LAWS = sorted(agent_chain.SEVEN_LAWS)
@@ -44,14 +45,20 @@ def event(event_id, agent, target, parent=""):
 
 
 def with_events(events, function):
-    original = agent_chain.EVENT_FILE
+    original_chain_file = agent_chain.EVENT_FILE
+    original_spine_file = event_spine.EVENT_FILE
+    temp_event_file = write_events(events)
 
     try:
-        agent_chain.EVENT_FILE = write_events(events)
+        # Review and promotion must read/write the same isolated ledger.
+        agent_chain.EVENT_FILE = temp_event_file
+        event_spine.EVENT_FILE = temp_event_file
         return function()
 
     finally:
-        agent_chain.EVENT_FILE = original
+        agent_chain.EVENT_FILE = original_chain_file
+        event_spine.EVENT_FILE = original_spine_file
+        temp_event_file.unlink(missing_ok=True)
 
 
 def expect_blocked(label, events, candidate):

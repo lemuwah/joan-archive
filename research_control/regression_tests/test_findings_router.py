@@ -189,7 +189,19 @@ def test_no_explicit_paths_preserves_all_findings_behavior():
 
 
 def test_corpus_router_finding_change_can_be_handed_to_findings_router():
-    corpus_router = load_router()
+    corpus_router_path = (
+        ROOT / "tools" / "research_control" / "route_corpus_changes.py"
+    )
+    corpus_spec = importlib.util.spec_from_file_location(
+        "route_corpus_changes_for_handoff",
+        corpus_router_path,
+    )
+    if corpus_spec is None or corpus_spec.loader is None:
+        raise RuntimeError("Could not load corpus change router")
+
+    corpus_router = importlib.util.module_from_spec(corpus_spec)
+    corpus_spec.loader.exec_module(corpus_router)
+
     findings_router_path = (
         ROOT / "tools" / "findings_pipeline" / "route_findings.py"
     )

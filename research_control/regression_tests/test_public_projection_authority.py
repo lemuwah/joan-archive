@@ -143,8 +143,24 @@ def assert_allowed_uncertainty_remains_possible(
 
     combined = "\n".join(pages.values())
 
-    if "OPEN HYPOTHESIS" not in combined:
-        fail("public projection no longer permits explicit OPEN HYPOTHESIS state")
+    # Uncertainty may be expressed in plain editorial language rather than
+    # through the old identity-model status labels. Accept multiple clear
+    # formulations so the guard protects the principle, not one exact phrase.
+    uncertainty_patterns = [
+        r"questions,\s*not\s+conclusions",
+        r"not\s+ranked",
+        r"identity\s+remains\s+unresolved",
+        r"uncertainty\s+preserved",
+    ]
+
+    if not any(
+        re.search(pattern, combined, re.IGNORECASE)
+        for pattern in uncertainty_patterns
+    ):
+        fail(
+            "public projection no longer expresses unresolved research "
+            "or explicitly preserves uncertainty"
+        )
 
     if "SUSPENDED" not in combined:
         fail("public projection no longer preserves suspended research")

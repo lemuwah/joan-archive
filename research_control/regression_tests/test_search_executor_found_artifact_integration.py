@@ -147,10 +147,13 @@ def main() -> None:
             sys.argv = original_argv
             record_search_arrivals.SEARCH_LEDGER = original_arrival_ledger
 
+        result_files = list(result_dir.glob("ST-EXEC-ARTIFACT.*.json"))
+        assert len(result_files) == 1, (
+            f"Expected exactly one uniquely named result file, "
+            f"found {len(result_files)}: {result_files}"
+        )
         result = json.loads(
-            (result_dir / "ST-EXEC-ARTIFACT.json").read_text(
-                encoding="utf-8"
-            )
+            result_files[0].read_text(encoding="utf-8")
         )
 
         print("\n=== EXECUTOR RESULT ===")

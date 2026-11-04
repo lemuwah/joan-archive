@@ -19,6 +19,7 @@ LEDGERS = {
     "status": ROOT / "research_control/status_events.jsonl",
     "relationship": ROOT / "research_control/relationships.jsonl",
     "artifact": ROOT / "research_control/found_artifacts.jsonl",
+    "correction": ROOT / "research_control/corrections.jsonl",
 }
 
 SCHEMAS = {
@@ -29,6 +30,7 @@ SCHEMAS = {
     "status": ROOT / "research_control/schemas/status_event.schema.json",
     "relationship": ROOT / "research_control/schemas/claim_evidence_relationship.schema.json",
     "artifact": ROOT / "research_control/schemas/found_artifact.schema.json",
+    "correction": ROOT / "research_control/schemas/correction_event.schema.json",
 }
 
 ID_FIELDS = {
@@ -39,6 +41,7 @@ ID_FIELDS = {
     "status": "status_id",
     "relationship": "relationship_id",
     "artifact": "artifact_id",
+    "correction": "correction_id",
 }
 
 ID_PATTERNS = {
@@ -49,6 +52,7 @@ ID_PATTERNS = {
     "status": re.compile(r"^STATUS-[0-9]{6}$"),
     "relationship": re.compile(r"^REL-[0-9]{6}$"),
     "artifact": re.compile(r"^ARTIFACT-[0-9]{6}$"),
+    "correction": re.compile(r"^CORR-[0-9]{6}$"),
 }
 
 
@@ -230,10 +234,18 @@ def main() -> int:
         action="store_true",
         help="validate without modifying the ledger",
     )
+    parser.add_argument(
+        "--ledger-path",
+        type=Path,
+        help=(
+            "optional ledger path override, intended for isolated tests; "
+            "defaults to the configured production ledger"
+        ),
+    )
     args = parser.parse_args()
 
     kind = args.kind
-    ledger = LEDGERS[kind]
+    ledger = args.ledger_path if args.ledger_path is not None else LEDGERS[kind]
 
     try:
         record = json.loads(
@@ -275,9 +287,14 @@ def main() -> int:
                     "REFUSING TO APPEND: " + "; ".join(errors)
                 )
 
+            display_ledger = (
+                str(ledger.relative_to(ROOT))
+                if ledger.is_relative_to(ROOT)
+                else str(ledger)
+            )
             print(
                 f"DRY-RUN OK: {event_id} would append -> "
-                f"{ledger.relative_to(ROOT)}"
+                f"{display_ledger}"
             )
             return 0
 
@@ -292,9 +309,12 @@ def main() -> int:
         return 1
 
     event_id = record[ID_FIELDS[kind]]
-    print(
-        f"APPENDED {event_id} -> {ledger.relative_to(ROOT)}"
+    display_ledger = (
+        str(ledger.relative_to(ROOT))
+        if ledger.is_relative_to(ROOT)
+        else str(ledger)
     )
+    print(f"APPENDED {event_id} -> {display_ledger}")
     return 0
 
 

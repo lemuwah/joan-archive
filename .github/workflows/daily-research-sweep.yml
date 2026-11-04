@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   sweep:
@@ -25,38 +26,123 @@ jobs:
 
       - name: Run daily multi-perspective sweep
         run: python tools/daily_research/sweep.py
-        continue-on-error: true
+
+      - name: Validate sweep output before orchestration
+        run: |
+          RUN_DATE="$(date -u +%Y-%m-%d)"
+          SWEEP_FILE="research_queue/daily_sweep/${RUN_DATE}.jsonl"
+          SUMMARY_FILE="research_queue/daily_sweep/${RUN_DATE}.summary.json"
+
+          if [ ! -s "$SWEEP_FILE" ] || [ ! -s "$SUMMARY_FILE" ]; then
+            echo "::error::Sweep output or summary is missing or empty."
+            exit 1
+          fi
+
+          python - "$SWEEP_FILE" "$SUMMARY_FILE" <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+
+          results = Path(sys.argv[1])
+          summary = Path(sys.argv[2])
+
+          with summary.open(encoding="utf-8") as handle:
+              data = json.load(handle)
+          if not isinstance(data, dict):
+              raise SystemExit("Invalid sweep summary: expected a JSON object")
+
+          count = 0
+          with results.open(encoding="utf-8") as handle:
+              for number, line in enumerate(handle, 1):
+                  if not line.strip():
+                      raise SystemExit(f"Empty JSONL record at line {number}")
+                  try:
+                      record = json.loads(line)
+                  except json.JSONDecodeError as exc:
+                      raise SystemExit(
+                          f"Invalid JSONL record at line {number}: {exc}"
+                      ) from exc
+                  if not isinstance(record, dict):
+                      raise SystemExit(
+                          f"Invalid record at line {number}: expected an object"
+                      )
+                  count += 1
+
+          if count != data.get("queries_run"):
+              raise SystemExit(
+                  f"Record count mismatch: found {count}, "
+                  f"summary reports {data.get('queries_run')}"
+              )
+
+          print(f"Validated {count} sweep records and summary.")
 
       - name: Run four-agent orchestration
-        run: |
-          SWEEP_FILE="research_queue/daily_sweep/$(date -u +%Y-%m-%d).jsonl"
-          if [ -f "$SWEEP_FILE" ]; then
-            python tools/multi_agent_daily/orchestrate.py
-          else
-            echo "No sweep output found — skipping orchestration"
-          fi
+        id: orchestration
+        run: python tools/multi_agent_daily/orchestrate.py
         continue-on-error: true
 
       - name: Build outward document-ecology search bundle
+        id: document_ecology
         run: python tools/document_ecology/build_search_bundle.py
         continue-on-error: true
 
       - name: Route completed research findings
+        id: findings
         run: python tools/findings_pipeline/route_findings.py
         continue-on-error: true
 
-      - name: Commit results directly to main
+      - name: Report downstream stage outcomes
+        id: run_status
+        if: always()
+        env:
+          ORCHESTRATION_OUTCOME: ${{ steps.orchestration.outcome }}
+          DOCUMENT_ECOLOGY_OUTCOME: ${{ steps.document_ecology.outcome }}
+          FINDINGS_OUTCOME: ${{ steps.findings.outcome }}
         run: |
-          git config user.name "joan-archive-bot"
-          git config user.email "joan-archive-bot@users.noreply.github.com"
-          git add -A
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "research: daily automated sweep — AI-SOURCED, Laws-filtered
+          status="COMPLETE"
 
-          All outputs are AI-assisted working reports filtered through the
-          Multi Agent Laws. No claim is promoted to PROOF without primary
-          source verification. Periodic human review applies."
-            git push
+          if [ "$ORCHESTRATION_OUTCOME" != "success" ] ||
+             [ "$DOCUMENT_ECOLOGY_OUTCOME" != "success" ] ||
+             [ "$FINDINGS_OUTCOME" != "success" ]; then
+            status="PARTIAL"
           fi
+
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+
+          {
+            echo "### Automated research run: $status"
+            echo "- Orchestration: $ORCHESTRATION_OUTCOME"
+            echo "- Document ecology: $DOCUMENT_ECOLOGY_OUTCOME"
+            echo "- Findings routing: $FINDINGS_OUTCOME"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Open pull request for automated research outputs
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "research: daily automated sweep — AI working outputs"
+          title: "Automated research outputs — ${{ steps.run_status.outputs.status }}"
+          body: |
+            Run status: **${{ steps.run_status.outputs.status }}**
+
+            - Orchestration: ${{ steps.orchestration.outcome }}
+            - Document ecology: ${{ steps.document_ecology.outcome }}
+            - Findings routing: ${{ steps.findings.outcome }}
+
+            This pull request contains automated research working outputs.
+
+            These outputs are discovery leads and AI-assisted analysis, not
+            verified identity claims or proof. Preserve uncertainty,
+            contradictory leads, and deferred research. Review source
+            provenance before promoting any conclusion.
+
+            This workflow intentionally stages only the listed research
+            output directories. It does not publish directly to main.
+          branch: automated-research/daily-sweep
+          add-paths: |
+            research_queue/daily_sweep/**
+            research_queue/agent_runs/**
+            research_queue/finding_runs/**
+            research_queue/document_ecology/**
+            research_queue/SEARCH_TARGETS.yml
+            research_queue/research_events.jsonl

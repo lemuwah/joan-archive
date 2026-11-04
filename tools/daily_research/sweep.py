@@ -6,6 +6,9 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
+import os
+import shutil
+import tempfile
 import re
 import time
 from pathlib import Path
@@ -48,6 +51,16 @@ LENSES = {
     ],
     "paleography_scribal_variants": [
         "his marke", "her marke", "signed", "witness", "alias", "otherwise called", "X mark"
+    ],
+    "financial_transaction_network": [
+        "debt", "creditor", "debtor", "account", "payment", "barter",
+        "goods", "inventory", "estate", "land consideration", "merchant",
+        "sloop", "cargo", "freight", "vessel", "Richard Smith", "Welcome"
+    ],
+    "burial_gravestone_trace": [
+        "gravestone", "grave marker", "headstone", "tombstone", "epitaph",
+        "burial", "burial ground", "cemetery", "family burial lot",
+        "removed graves", "relocated cemetery"
     ],
     "archival_access_gaps": [
         "finding aid", "manuscript", "land evidence", "court records", "probate",
@@ -135,9 +148,17 @@ def person_names() -> list[dict[str, str]]:
     return people
 
 
+def _quote_search_phrase(value: str) -> str:
+    """Quote a search phrase without letting embedded quotes break its syntax."""
+    escaped = value.replace("\\", "\\\\").replace('"', '\\"')
+    return f'"{escaped}"'
+
+
 def query_text(name: str, terms: list[str]) -> str:
-    # Quotes keep multi-word names together while the lens terms broaden the search.
-    return f'"{name}" ("' + '" OR "'.join(terms) + '")'
+    # Keep names and lens terms as separate quoted phrases.
+    quoted_name = _quote_search_phrase(name)
+    quoted_terms = " OR ".join(_quote_search_phrase(term) for term in terms)
+    return f"{quoted_name} ({quoted_terms})"
 
 
 def discovery_name_atoms(person: dict[str, str]):
@@ -336,6 +357,29 @@ def loc_search(session: requests.Session, query: str, rows: int) -> list[dict]:
     ]
 
 
+def source_result_status(source_record: dict) -> str:
+    """Classify one catalog without hiding its own search failure."""
+    if source_record.get("results"):
+        return "FOUND"
+    if source_record.get("error"):
+        return "ERROR"
+    return "NO_RESULTS"
+
+
+def aggregate_query_status(source_results: dict) -> str:
+    """Summarize catalog outcomes without hiding partial failures."""
+    statuses = [
+        source_record.get("status")
+        for source_record in source_results.values()
+    ]
+
+    if "FOUND" in statuses:
+        return "PARTIAL" if "ERROR" in statuses else "FOUND"
+    if "ERROR" in statuses:
+        return "ERROR"
+    return "NO_RESULTS"
+
+
 def safe_slug(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")[:80]
 
@@ -346,60 +390,151 @@ def run(args: argparse.Namespace) -> tuple[Path, Path]:
     output_dir.mkdir(parents=True, exist_ok=True)
     result_path = output_dir / f"{run_date}.jsonl"
     summary_path = output_dir / f"{run_date}.summary.json"
-    people = person_names()
-    lenses = list(LENSES.items())
-    session = requests.Session()
-    session.headers.update({"User-Agent": "joan-archive-daily-research/1.0 (research use; contact repository owner)"})
-    records = []
-    query_count = 0
+    existing_outputs = [path for path in (result_path, summary_path) if path.exists()]
+    if existing_outputs:
+        names = ", ".join(str(path) for path in existing_outputs)
+        raise FileExistsError(f"Refusing to overwrite existing research output(s): {names}. Choose a new --date or --output directory.")
+    staging_dir = Path(tempfile.mkdtemp(prefix=f".{run_date}.staging-", dir=output_dir))
+    result_temp_path = staging_dir / "results.jsonl"
+    summary_temp_path = staging_dir / "summary.json"
+    try:
+        people = person_names()
+        lenses = list(LENSES.items())
+        session = requests.Session()
+        session.headers.update({"User-Agent": "joan-archive-daily-research/1.0 (research use; contact repository owner)"})
+        records = []
+        query_count = 0
+        # Pause LOC for this run after rate limiting or service unavailability.
+        loc_paused_reason = None
 
-    with result_path.open("w") as output:
-        for person in people:
-            discovery_atoms = discovery_name_atoms(person)
+        with result_temp_path.open("w", encoding="utf-8") as output:
+            for person in people:
+                discovery_atoms = discovery_name_atoms(person)
 
-            for atom in discovery_atoms:
-                for lens, terms in lenses:
-                    if args.max_queries and query_count >= args.max_queries:
-                        break
-                    query = query_text(atom.value, terms)
-                    base = {
-                        "run_date": run_date,
-                        "person_page": person["page"],
-                        "person_name": person["name"],
-                        "discovery_atom": atom.value,
-                        "discovery_status": atom.status,
-                        "lens": lens,
-                        "query": query,
-                        "status": "DRY_RUN" if args.dry_run else "PENDING_HUMAN_REVIEW",
-                        "results": [],
-                    }
-                    if not args.dry_run:
-                        for source_name, search in (("internet_archive", ia_search), ("library_of_congress", loc_search)):
-                            try:
-                                base["results"].extend(search(session, query, args.rows))
-                            except Exception as error:  # keep the full sweep auditable if one catalog fails
-                                base.setdefault("errors", []).append({"source": source_name, "error": str(error)})
-                            time.sleep(args.delay)
-                        base["status"] = "FOUND" if base["results"] else ("ERROR" if base.get("errors") else "NO_RESULTS")
-                    output.write(json.dumps(base, ensure_ascii=True) + "\n")
-                    records.append(base)
-                    query_count += 1
-            if args.max_queries and query_count >= args.max_queries:
-                break
+                for atom in discovery_atoms:
+                    for lens, terms in lenses:
+                        if args.max_queries and query_count >= args.max_queries:
+                            break
+                        query = query_text(atom.value, terms)
+                        base = {
+                            "run_date": run_date,
+                            "person_page": person["page"],
+                            "person_name": person["name"],
+                            "discovery_atom": atom.value,
+                            "discovery_field": atom.field,
+                            "discovery_status": atom.status,
+                            "lens": lens,
+                            "query": query,
+                            "status": "DRY_RUN" if args.dry_run else "PENDING_HUMAN_REVIEW",
+                            "results": [],
+                        }
+                        if not args.dry_run:
+                            source_results = {}
 
-    summary = {
-        "run_date": run_date,
-        "people_pages": len(people),
-        "lenses": len(lenses),
-        "queries_run": query_count,
-        "dry_run": args.dry_run,
-        "found_queries": sum(item["status"] == "FOUND" for item in records),
-        "no_result_queries": sum(item["status"] == "NO_RESULTS" for item in records),
-        "error_queries": sum(item["status"] == "ERROR" for item in records),
-        "note": "Candidates and negative results require human review; no claim is verified by this sweep.",
-    }
-    summary_path.write_text(json.dumps(summary, indent=2) + "\n")
-    return result_path, summary_path
+                            for source_name, search in (
+                                ("internet_archive", ia_search),
+                                ("library_of_congress", loc_search),
+                            ):
+                                source_record = {"results": []}
+
+                                if source_name == "library_of_congress" and loc_paused_reason:
+                                    error_text = f"Skipped: {loc_paused_reason}"
+                                    source_record["error"] = error_text
+                                    base.setdefault("errors", []).append({
+                                        "source": source_name,
+                                        "error": error_text,
+                                    })
+                                else:
+                                    try:
+                                        source_record["results"] = search(
+                                            session, query, args.rows
+                                        )
+                                    except Exception as error:
+                                        error_text = str(error)
+                                        source_record["error"] = error_text
+                                        base.setdefault("errors", []).append({
+                                            "source": source_name,
+                                            "error": error_text,
+                                        })
+
+                                        if (
+                                            source_name == "library_of_congress"
+                                            and isinstance(error, requests.HTTPError)
+                                            and error.response is not None
+                                            and error.response.status_code in (429, 503)
+                                        ):
+                                            status_code = error.response.status_code
+                                            loc_paused_reason = (
+                                                f"LOC requests paused for the remainder "
+                                                f"of this run after HTTP {status_code}."
+                                            )
+
+                                source_record["status"] = source_result_status(
+                                    source_record
+                                )
+                                source_results[source_name] = source_record
+                                base["results"].extend(source_record["results"])
+                                time.sleep(args.delay)
+
+                            base["source_results"] = source_results
+                            base["status"] = aggregate_query_status(source_results)
+                        output.write(json.dumps(base, ensure_ascii=True) + "\n")
+                        records.append(base)
+                        query_count += 1
+                if args.max_queries and query_count >= args.max_queries:
+                    break
+            output.flush()
+            os.fsync(output.fileno())
+
+        summary = {
+            "run_date": run_date,
+            "people_pages": len(people),
+            "lenses": len(lenses),
+            "queries_run": query_count,
+            "dry_run": args.dry_run,
+            "found_queries": sum(item["status"] == "FOUND" for item in records),
+            "partial_queries": sum(item["status"] == "PARTIAL" for item in records),
+            "no_result_queries": sum(item["status"] == "NO_RESULTS" for item in records),
+            "error_queries": sum(item["status"] == "ERROR" for item in records),
+            "note": "Candidates and negative results require human review; no claim is verified by this sweep.",
+        }
+        # Flush and sync the summary while its writable handle is open.
+        with summary_temp_path.open("w", encoding="utf-8") as summary_output:
+            summary_output.write(json.dumps(summary, indent=2) + "\n")
+            summary_output.flush()
+            os.fsync(summary_output.fileno())
+
+        # Reject malformed staging data before creating either final output.
+        staged_count = 0
+        with result_temp_path.open(encoding="utf-8") as handle:
+            for line_number, line in enumerate(handle, 1):
+                if not line.strip():
+                    raise ValueError(f"Empty staged JSONL record at line {line_number}")
+                record = json.loads(line)
+                if not isinstance(record, dict):
+                    raise ValueError(f"Staged JSONL record {line_number} is not an object")
+                staged_count += 1
+
+        staged_summary = json.loads(summary_temp_path.read_text(encoding="utf-8"))
+        if not isinstance(staged_summary, dict):
+            raise ValueError("Staged summary is not a JSON object")
+        if staged_count != query_count or staged_summary.get("queries_run") != staged_count:
+            raise ValueError("Staged JSONL record count does not match query count")
+
+        # Hard-link publication is exclusive: it fails rather than replacing history.
+        # The dated filenames remain unchanged for existing consumers.
+        os.link(result_temp_path, result_path)
+        try:
+            os.link(summary_temp_path, summary_path)
+        except BaseException:
+            # Roll back only the result link this run created, never another run's file.
+            if result_path.exists() and result_path.stat().st_ino == result_temp_path.stat().st_ino:
+                result_path.unlink()
+            raise
+
+        return result_path, summary_path
+    finally:
+        shutil.rmtree(staging_dir, ignore_errors=True)
 
 
 def main() -> None:

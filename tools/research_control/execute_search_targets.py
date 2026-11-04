@@ -8,6 +8,7 @@ import datetime as dt
 import json
 import random
 import time
+import uuid
 from pathlib import Path
 
 import requests
@@ -337,11 +338,16 @@ def main() -> None:
             dry_run=args.dry_run,
         )
 
-        output_path = RESULT_DIR / f"{target['target_id']}.json"
-        output_path.write_text(
-            json.dumps(result, indent=2, ensure_ascii=False) + "\n",
-            encoding="utf-8",
-        )
+        # Each execution gets its own artifact; never reuse a prior result file.
+        run_id = uuid.uuid4().hex
+        output_path = RESULT_DIR / f"{target['target_id']}.{run_id}.json"
+        result["run_id"] = run_id
+
+        # Publish the result first so a later event never points to a
+        # result artifact that has not been created.
+        with output_path.open("x", encoding="utf-8") as handle:
+            json.dump(result, handle, indent=2, ensure_ascii=False)
+            handle.write("\n")
 
         event = record_event(
             agent="SEARCH_EXECUTOR",
@@ -355,6 +361,7 @@ def main() -> None:
                     "library_of_congress",
                 ],
                 "rows": args.rows,
+                "run_id": run_id,
             },
             evidence=str(output_path),
             result=result.get("result_status", result["execution_status"]),
@@ -369,10 +376,14 @@ def main() -> None:
         )
 
         result["event_id"] = event["event_id"]
-        output_path.write_text(
-            json.dumps(result, indent=2, ensure_ascii=False) + "\n",
-            encoding="utf-8",
-        )
+
+        # Atomically attach the event ID while preserving the published file
+        # if writing the updated version fails.
+        temporary_path = output_path.with_name(output_path.name + ".tmp")
+        with temporary_path.open("x", encoding="utf-8") as handle:
+            json.dump(result, handle, indent=2, ensure_ascii=False)
+            handle.write("\n")
+        temporary_path.replace(output_path)
 
         # Record one schema-compatible research arrival per source.
         # Source errors remain SEARCH_ERROR; they are never converted

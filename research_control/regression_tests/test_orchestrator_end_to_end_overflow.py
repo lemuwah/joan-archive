@@ -16,6 +16,118 @@ from tools.multi_agent_daily import orchestrate
 TEST_DATE = "2099-01-01"
 
 
+def test_run_preserves_colliding_discovery_rows(tmp_path: Path) -> None:
+    """Keep every distinct query/result pair through the real run path."""
+    import yaml
+
+    tmp_path.mkdir(parents=True, exist_ok=True)
+    sweep_path = tmp_path / "colliding-sweep.jsonl"
+    output_root = tmp_path / "colliding-agent-runs"
+    role_output = tmp_path / "colliding-role-output"
+    target_file = tmp_path / "colliding-targets.yml"
+    event_file = tmp_path / "colliding-events.jsonl"
+
+    person = "Synthetic Research Person"
+    lens = "synthetic_network_lens"
+    shared_url = "https://example.invalid/shared-source"
+    records = [
+        {
+            "person_name": person,
+            "lens": lens,
+            "query": '"Synthetic Research Person" witness',
+            "results": [{
+                "title": "Shared Source Result Alpha",
+                "record_id": "SHARED-SOURCE-001",
+                "url": shared_url,
+            }],
+        },
+        {
+            "person_name": person,
+            "lens": lens,
+            "query": '"Synthetic Research Person" land deed',
+            "results": [{
+                "title": "Shared Source Result Beta",
+                "record_id": "SHARED-SOURCE-001",
+                "url": shared_url,
+            }],
+        },
+        {
+            "person_name": person,
+            "lens": lens,
+            "query": '"Synthetic Research Person" meeting notes',
+            "results": [{
+                "title": "Locatorless Result Gamma",
+                "record_id": None,
+                "url": None,
+            }],
+        },
+        {
+            "person_name": person,
+            "lens": lens,
+            "query": '"Synthetic Research Person" household account',
+            "results": [{
+                "title": "Locatorless Result Delta",
+                "record_id": None,
+                "url": None,
+            }],
+        },
+    ]
+    expected_pairs = {
+        ("Shared Source Result Alpha", records[0]["query"]),
+        ("Shared Source Result Beta", records[1]["query"]),
+        ("Locatorless Result Gamma", records[2]["query"]),
+        ("Locatorless Result Delta", records[3]["query"]),
+    }
+
+    sweep_path.write_text(
+        "\n".join(json.dumps(record) for record in records) + "\n",
+        encoding="utf-8",
+    )
+    target_file.write_text("targets: []\n", encoding="utf-8")
+    event_file.write_text("", encoding="utf-8")
+
+    repository_root = Path(__file__).resolve().parents[2]
+    canonical_target_file = repository_root / "research_queue" / "SEARCH_TARGETS.yml"
+    canonical_event_file = repository_root / "research_queue" / "research_events.jsonl"
+    canonical_target_before = canonical_target_file.read_bytes()
+    canonical_event_before = canonical_event_file.read_bytes()
+
+    run_dir = orchestrate.run(
+        date="2099-01-02",
+        sweep_path=sweep_path,
+        output_root=output_root,
+        role_output=role_output,
+        target_file=target_file,
+        event_file=event_file,
+    )
+
+    canonical_target_after = canonical_target_file.read_bytes()
+    canonical_event_after = canonical_event_file.read_bytes()
+    assert canonical_target_after == canonical_target_before
+    assert canonical_event_after == canonical_event_before
+
+    target_data = yaml.safe_load(target_file.read_text(encoding="utf-8")) or {}
+    targets = target_data.get("targets", [])
+    observed_pairs = {
+        (title, query)
+        for target in targets
+        for title, query in expected_pairs
+        if title in target.get("question", "")
+        and query in target.get("reason", "")
+    }
+
+    missing_pairs = expected_pairs - observed_pairs
+    assert not missing_pairs, (
+        "orchestrate.run() lost discovery title/query provenance: "
+        f"{sorted(missing_pairs)}; downstream output: {run_dir}"
+    )
+    assert len(targets) == len(expected_pairs), (
+        f"expected one target per discovery row, got {len(targets)}"
+    )
+    assert all(target.get("status") == "READY_SHADOW" for target in targets)
+    assert all(target.get("person_slots") == [] for target in targets)
+
+
 def make_sweep_record(index: int) -> dict:
     """Create one synthetic sweep record using the production input shape."""
     critical = index == 250
@@ -262,6 +374,9 @@ def main() -> None:
 
         print("PASS: canonical SEARCH_TARGETS.yml remained unchanged")
         print("PASS: canonical research_events.jsonl remained unchanged")
+
+        test_run_preserves_colliding_discovery_rows(tmp / "colliding-leads")
+        print("PASS: colliding and locatorless discovery rows retain provenance")
 
         print()
         print(
