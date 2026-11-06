@@ -20,7 +20,10 @@ class SweepPublicationTests(unittest.TestCase):
             "text": "# John Greene of Quidnessett\\n",
         }]
         self.atom = SimpleNamespace(
-            value="John Greene", field="name", status="TEST_ONLY"
+            value="John Greene",
+            field="Documented associates",
+            status="EXPLICIT",
+            relationship_context="wife — archive target",
         )
 
     def args(self, output, run_date="2099-01-01"):
@@ -136,6 +139,10 @@ class SweepPublicationTests(unittest.TestCase):
             self.assertEqual(len(records), 1)
             self.assertEqual(summary_data["queries_run"], len(records))
             self.assertEqual(records[0]["status"], "DRY_RUN")
+            self.assertEqual(
+                records[0]["relationship_context"],
+                "wife — archive target",
+            )
             self.assertEqual(
                 sorted(p.name for p in output.iterdir()),
                 ["2099-01-01.jsonl", "2099-01-01.summary.json"],

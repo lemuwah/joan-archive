@@ -228,17 +228,7 @@ def _parse_documented_associates(
     person: str,
     value: str,
 ):
-    """
-    Extract names only from explicitly structured associate entries.
-
-    Supported forms are deliberately narrow:
-      Person Name (role)
-      Person Name — role
-      Person Name - role
-      **Person Name** (role)
-
-    Relationship wording is not interpreted or converted into identity.
-    """
+    """Extract associate names while preserving relationship wording."""
     from discovery_key import EXPLICIT, DiscoveryAtom
 
     atoms: list[DiscoveryAtom] = []
@@ -248,36 +238,43 @@ def _parse_documented_associates(
         if not line:
             continue
 
-        # Strip optional markdown emphasis without mining surrounding prose.
         line = line.replace("**", "").strip()
 
-        # A semicolon-delimited associate list is already an explicit
-        # structured field. Each segment is treated as one search atom.
         for segment in line.split(";"):
             candidate = segment.strip()
             if not candidate:
                 continue
 
-            # Remove relationship descriptions from the end only.
-            # The name itself remains untouched.
-            candidate = re.split(r"\s+(?:\(|—|–|-)", candidate, maxsplit=1)[0].strip()
-
-            if not candidate:
-                continue
-
-            # Reject only clearly collective/contextual expressions.
-            # This filter applies to Documented associates, not page subjects.
-            if _is_non_person_associate(candidate):
-                continue
-
-            atoms.append(
-                DiscoveryAtom(
-                    person=person,
-                    field="Documented associates",
-                    value=candidate,
-                    status=EXPLICIT,
+            match = re.match(r"^(.*?)\s*\((.*?)\)\s*$", candidate)
+            if match:
+                name_part = match.group(1).strip()
+                relationship_context = match.group(2).strip()
+            else:
+                parts = re.split(r"\s+(?:—|–|-)", candidate, maxsplit=1)
+                name_part = parts[0].strip()
+                relationship_context = (
+                    parts[1].strip() if len(parts) > 1 else ""
                 )
-            )
+
+            names = [name_part]
+            if re.match(r"^parents(?:\s|$)", relationship_context, re.IGNORECASE):
+                pair = re.match(r"^(.+?)\s+and\s+(.+)$", name_part)
+                if pair:
+                    names = [pair.group(1).strip(), pair.group(2).strip()]
+
+            for name in names:
+                if not name or _is_non_person_associate(name):
+                    continue
+
+                atoms.append(
+                    DiscoveryAtom(
+                        person=person,
+                        field="Documented associates",
+                        value=name,
+                        status=EXPLICIT,
+                        relationship_context=relationship_context,
+                    )
+                )
 
     return atoms
 
@@ -423,6 +420,7 @@ def run(args: argparse.Namespace) -> tuple[Path, Path]:
                             "discovery_atom": atom.value,
                             "discovery_field": atom.field,
                             "discovery_status": atom.status,
+                            "relationship_context": getattr(atom, "relationship_context", ""),
                             "lens": lens,
                             "query": query,
                             "status": "DRY_RUN" if args.dry_run else "PENDING_HUMAN_REVIEW",
