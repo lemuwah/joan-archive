@@ -72,8 +72,15 @@ def test_run_preserves_colliding_discovery_rows(tmp_path: Path) -> None:
             }],
         },
     ]
+    records[0]["results"].append({
+        "title": "Shared Source Result Alpha sibling",
+        "record_id": "SHARED-SOURCE-001",
+        "url": shared_url,
+    })
+
     expected_pairs = {
         ("Shared Source Result Alpha", records[0]["query"]),
+        ("Shared Source Result Alpha sibling", records[0]["query"]),
         ("Shared Source Result Beta", records[1]["query"]),
         ("Locatorless Result Gamma", records[2]["query"]),
         ("Locatorless Result Delta", records[3]["query"]),
@@ -157,6 +164,11 @@ def make_sweep_record(index: int) -> dict:
                 ),
                 "record_id": f"TEST-RECORD-{index:04d}",
                 "url": f"https://example.invalid/test/{index:04d}",
+                "description": (
+                    "Synthetic oversized description; " * 30000
+                    if critical
+                    else f"Synthetic description for {index:04d}"
+                ),
             }
         ],
     }
@@ -281,6 +293,59 @@ def main() -> None:
             )
 
         print("PASS: critical overflow lead is preserved in deferred_leads.json")
+
+        if "description" in critical.get("result", {}):
+            raise SystemExit(
+                "FAIL: oversized description is still embedded in deferred JSON"
+            )
+
+        reference = critical.get("source_reference", {})
+        if (
+            reference.get("source_line") != 250
+            or reference.get("result_index") != 0
+        ):
+            raise SystemExit(
+                "FAIL: critical lead lacks its exact source line/result pointer"
+            )
+
+        recovered = orchestrate.recover_deferred_result(critical)
+        expected_result = make_sweep_record(250)["results"][0]
+        if recovered != expected_result:
+            raise SystemExit(
+                "FAIL: recovered original result does not match source fixture"
+            )
+
+        print(
+            "PASS: complete original result and oversized description "
+            "recover from the verified source"
+        )
+
+        if deferred_path.stat().st_size >= 250_000:
+            raise SystemExit(
+                "FAIL: compact deferred output unexpectedly exceeds 250 KB"
+            )
+
+        print("PASS: deferred JSON remains compact")
+
+        original_sweep = sweep_path.read_bytes()
+        try:
+            sweep_path.write_bytes(original_sweep + b"\n")
+            try:
+                orchestrate.recover_deferred_result(critical)
+            except ValueError as exc:
+                if "hash mismatch" not in str(exc):
+                    raise SystemExit(
+                        "FAIL: source tampering raised the wrong error: "
+                        f"{exc}"
+                    )
+            else:
+                raise SystemExit(
+                    "FAIL: recovery accepted a modified source sweep"
+                )
+        finally:
+            sweep_path.write_bytes(original_sweep)
+
+        print("PASS: recovery rejects a modified source sweep")
 
         if critical.get("preservation_status") != "DEFERRED":
             raise SystemExit(
