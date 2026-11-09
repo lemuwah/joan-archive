@@ -152,6 +152,32 @@ def main():
         print("PASS: SOURCE ERROR -> SEARCH_ERROR / ERROR")
 
         # ------------------------------------------------------------
+        # C2. Executor string-form source error.
+        # ------------------------------------------------------------
+        string_error = build_arrival(
+            target=target(),
+            execution=execution(
+                event_id="EVT-ARRIVAL-STRING-ERROR",
+                status="ERROR",
+            ),
+            source_name="library_of_congress",
+            source_results=[],
+            source_error="Synthetic string-form source failure",
+            artifact_ref="research_queue/search_results/ST-ARRIVAL-TEST.json",
+            execution_event_id="EVT-ARRIVAL-STRING-ERROR",
+        )
+
+        assert string_error["result"]["outcome"] == "SEARCH_ERROR"
+        assert string_error["visibility"] == "ERROR"
+        assert (
+            "Synthetic string-form source failure"
+            in string_error["result"]["description"]
+        )
+        assert_schema_valid(string_error)
+
+        print("PASS: string-form source error is preserved and classified")
+
+        # ------------------------------------------------------------
         # D. Duplicate protection.
         # ------------------------------------------------------------
         assert append_unique(found, ledger=ledger) is False

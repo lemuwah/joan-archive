@@ -38,7 +38,12 @@ def source_access_method(source_name: str) -> str:
     }.get(source_name, "OTHER")
 
 
-def outcome_for(result_status: str, source_results: list, source_error: dict | None) -> tuple[str, str]:
+def outcome_for(
+    result_status: str,
+    source_results: list,
+    source_error: dict | str | None,
+) -> tuple[str, str]:
+    """Classify one source independently of the aggregate execution status."""
     if source_error:
         return "SEARCH_ERROR", "ERROR"
 
@@ -48,13 +53,22 @@ def outcome_for(result_status: str, source_results: list, source_error: dict | N
     return "NO_RESULT_LOCATED", "NEGATIVE"
 
 
+def error_message(source_error: dict | str | None) -> str:
+    """Preserve error text from both legacy dictionary and executor string formats."""
+    if isinstance(source_error, dict):
+        return str(source_error.get("error", ""))
+    if source_error:
+        return str(source_error)
+    return ""
+
+
 def build_arrival(
     *,
     target: dict,
     execution: dict,
     source_name: str,
     source_results: list,
-    source_error: dict | None,
+    source_error: dict | str | None,
     artifact_ref: str,
     execution_event_id: str,
 ) -> dict:
@@ -103,7 +117,7 @@ def build_arrival(
                 f"{len(source_results)} result(s) located."
                 if source_results
                 else (
-                    f"Search error: {source_error.get('error', '')}"
+                    f"Search error: {error_message(source_error)}"
                     if source_error
                     else "No result located in this defined search."
                 )

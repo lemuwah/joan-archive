@@ -17,6 +17,7 @@ import yaml
 from event_spine import record_event
 from record_search_arrivals import append_unique, build_arrival
 from record_found_artifacts import (
+    ARTIFACT_LEDGER as DEFAULT_ARTIFACT_LEDGER,
     append_unique as append_found_artifact,
     build_found_artifacts,
 )
@@ -25,6 +26,7 @@ from search_targets import mark_target_executed
 ROOT = Path(__file__).resolve().parents[2]
 TARGET_FILE = ROOT / "research_queue" / "SEARCH_TARGETS.yml"
 RESULT_DIR = ROOT / "research_queue" / "search_results"
+ARTIFACT_LEDGER = DEFAULT_ARTIFACT_LEDGER
 
 IA_ENDPOINT = "https://archive.org/advancedsearch.php"
 LOC_ENDPOINT = "https://www.loc.gov/search/"
@@ -248,10 +250,15 @@ def execute_target(
         record["source_results"][source_name] = source_record
         time.sleep(delay)
 
-    if record["results"]:
-        record["result_status"] = "FOUND"
-    elif record["errors"]:
+    attempted_sources = len(record["source_results"])
+    failed_sources = len(record["errors"])
+
+    if failed_sources == attempted_sources and attempted_sources:
         record["result_status"] = "ERROR"
+    elif failed_sources:
+        record["result_status"] = "PARTIAL"
+    elif record["results"]:
+        record["result_status"] = "FOUND"
     else:
         record["result_status"] = "NO_RESULTS"
 
@@ -405,7 +412,7 @@ def main() -> None:
                 source_results=source_record["results"],
             )
             for artifact in found_artifacts:
-                append_found_artifact(artifact)
+                append_found_artifact(artifact, ledger=ARTIFACT_LEDGER)
 
         if result.get("result_status") in {"FOUND", "NO_RESULTS"}:
             mark_target_executed(
