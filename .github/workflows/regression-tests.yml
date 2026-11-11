@@ -32,14 +32,8 @@ jobs:
             python "$f"
           done
 
-      - name: Run findings-router pytest tests
-        run: python -m pytest -q research_control/regression_tests/test_findings_router.py
-
-      - name: Run search publication auditor tests
-        run: python -m pytest -q research_control/regression_tests/test_search_execution_publication_audit.py
-
-      - name: Run search execution record completeness tests
-        run: python -m pytest -q research_control/regression_tests/test_search_execution_record_completeness.py
+      - name: Run full regression suite with pytest
+        run: python -m pytest -q research_control/regression_tests/
 
       - name: Run control-plane self-test
         run: python tools/research_control/test_control_plane.py
