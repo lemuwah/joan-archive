@@ -13,6 +13,7 @@ sys.path.insert(0, str(ROOT / "tools" / "research_control"))
 sys.path.insert(0, str(ROOT / "research_control" / "tools"))
 
 import execute_search_targets as executor
+import audit_search_execution_publications as auditor
 
 
 def main() -> None:
@@ -20,6 +21,8 @@ def main() -> None:
         tmp_path = Path(tmp)
         targets_file = tmp_path / "targets.yml"
         result_dir = tmp_path / "results"
+        event_file = tmp_path / "events.jsonl"
+        event_file.write_text("", encoding="utf-8")
 
         targets_file.write_text(
             """
@@ -126,6 +129,35 @@ targets:
             files = list(result_dir.glob("ST-PUBLICATION-FAILURE.*.json"))
             assert files == [observed_artifact], (
                 f"Expected one published result artifact; found {files}"
+            )
+
+            # Audit the actual artifact left by the simulated interruption.
+            before_result = observed_artifact.read_bytes()
+            before_events = event_file.read_bytes()
+
+            report = auditor.audit_result_event(
+                result_path=observed_artifact,
+                event_file=event_file,
+            )
+
+            assert any(
+                finding["code"] == "RESULT_MISSING_EVENT"
+                and finding["target_id"] == "ST-PUBLICATION-FAILURE"
+                for finding in report["findings"]
+            ), report
+
+            assert observed_artifact.read_bytes() == before_result, (
+                "Auditor modified the interrupted result artifact"
+            )
+            assert event_file.read_bytes() == before_events, (
+                "Auditor modified the temporary event ledger"
+            )
+
+            print(
+                "PASS: auditor detects the interrupted publication"
+            )
+            print(
+                "PASS: auditor leaves the result and event ledger unchanged"
             )
 
             print(

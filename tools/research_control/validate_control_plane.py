@@ -1,4 +1,5 @@
 from pathlib import Path
+import argparse
 import json
 import sys
 
@@ -12,14 +13,16 @@ ALLOWED_EVENT_CLASSES = {
 }
 
 
-def load_events():
-    if not EVENT_FILE.exists():
+def load_events(event_file=EVENT_FILE):
+    event_file = Path(event_file)
+
+    if not event_file.exists():
         return []
 
     events = []
 
     for line_number, line in enumerate(
-        EVENT_FILE.read_text(encoding="utf-8").splitlines(),
+        event_file.read_text(encoding="utf-8").splitlines(),
         1,
     ):
         if not line.strip():
@@ -42,9 +45,7 @@ def load_events():
         ]
 
         missing = [
-            field
-            for field in required
-            if field not in event
+            field for field in required if field not in event
         ]
 
         if missing:
@@ -63,8 +64,19 @@ def load_events():
     return events
 
 
-def main():
-    events = load_events()
+def main(argv=None):
+    parser = argparse.ArgumentParser(
+        description="Validate the research control-plane event ledger."
+    )
+    parser.add_argument(
+        "--events",
+        type=Path,
+        default=EVENT_FILE,
+        help="Event JSONL file to validate (defaults to production ledger).",
+    )
+    args = parser.parse_args(argv)
+
+    events = load_events(args.events)
 
     if not events:
         print("CONTROL PLANE: no events yet")

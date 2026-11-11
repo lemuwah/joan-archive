@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import hashlib
 import json
 import sys
 from collections import Counter, defaultdict
@@ -35,19 +36,148 @@ ROLE_DIRS = {
 
 
 def load_records(path: Path) -> list[dict]:
+    """Load sweep records with verifiable source-location provenance."""
+    source_path = path.resolve()
+    source_bytes = source_path.read_bytes()
+    source_hash = hashlib.sha256(source_bytes).hexdigest()
+    source_lines = source_bytes.decode("utf-8").splitlines()
+
+    try:
+        display_path = source_path.relative_to(ROOT).as_posix()
+    except ValueError:
+        display_path = str(source_path)
+
     records = []
-    for line in path.read_text().splitlines():
+    for line_number, line in enumerate(source_lines, 1):
         if line.strip():
-            records.append(json.loads(line))
+            record = json.loads(line)
+            record["_source_provenance"] = {
+                "source_path": display_path,
+                "source_sha256": source_hash,
+                "source_line": line_number,
+            }
+            records.append(record)
     return records
 
 
 def result_rows(records: list[dict]) -> list[dict]:
+    """Expand results while retaining an exact pointer to each source result."""
     rows = []
     for record in records:
-        for result in record.get("results", []):
-            rows.append({**record, "result": result})
+        provenance = record.get("_source_provenance")
+        parent = {
+            key: value
+            for key, value in record.items()
+            if key != "_source_provenance"
+        }
+
+        for result_index, result in enumerate(record.get("results", [])):
+            individual_result = dict(result)
+            row = {**parent, "result": individual_result}
+
+            if provenance:
+                description = individual_result.get("description")
+                description_hash = None
+                description_length = None
+
+                if isinstance(description, str):
+                    description_bytes = description.encode("utf-8")
+                    description_hash = hashlib.sha256(
+                        description_bytes
+                    ).hexdigest()
+                    description_length = len(description)
+
+                row["source_reference"] = {
+                    **provenance,
+                    "result_index": result_index,
+                    "description_sha256": description_hash,
+                    "description_length": description_length,
+                }
+
+            rows.append(row)
     return rows
+
+
+def recover_deferred_result(lead: dict) -> dict:
+    """Recover and verify the complete original result for a deferred lead."""
+    reference = lead.get("source_reference")
+    if not isinstance(reference, dict):
+        raise ValueError("Deferred lead has no source_reference")
+
+    required = (
+        "source_path",
+        "source_sha256",
+        "source_line",
+        "result_index",
+    )
+    missing = [key for key in required if key not in reference]
+    if missing:
+        raise ValueError(
+            f"Deferred lead source_reference is incomplete: {missing}"
+        )
+
+    source_path = Path(reference["source_path"])
+    if not source_path.is_absolute():
+        source_path = ROOT / source_path
+
+    if not source_path.is_file():
+        raise FileNotFoundError(
+            f"Deferred lead source sweep is missing: {source_path}"
+        )
+
+    source_bytes = source_path.read_bytes()
+    actual_source_hash = hashlib.sha256(source_bytes).hexdigest()
+    if actual_source_hash != reference["source_sha256"]:
+        raise ValueError(
+            f"Deferred lead source sweep hash mismatch: {source_path}"
+        )
+
+    lines = source_bytes.decode("utf-8").splitlines()
+    line_number = reference["source_line"]
+    if type(line_number) is not int or not 1 <= line_number <= len(lines):
+        raise ValueError("Deferred lead source line is invalid")
+
+    source_record = json.loads(lines[line_number - 1])
+    results = source_record.get("results", [])
+    result_index = reference["result_index"]
+
+    if (
+        type(result_index) is not int
+        or not 0 <= result_index < len(results)
+    ):
+        raise ValueError("Deferred lead result index is invalid")
+
+    recovered = dict(results[result_index])
+
+    # Ensure the pointer resolves to the same result represented by this
+    # compact deferred lead, not merely another valid result in the source.
+    compact_result = lead.get("result", {})
+    for key, value in compact_result.items():
+        if recovered.get(key) != value:
+            raise ValueError(
+                f"Recovered result does not match deferred lead field: {key}"
+            )
+
+    description = recovered.get("description")
+
+    expected_description_hash = reference.get("description_sha256")
+    expected_description_length = reference.get("description_length")
+
+    if expected_description_hash is not None:
+        if not isinstance(description, str):
+            raise ValueError("Original description is missing or not text")
+
+        actual_description_hash = hashlib.sha256(
+            description.encode("utf-8")
+        ).hexdigest()
+
+        if actual_description_hash != expected_description_hash:
+            raise ValueError("Recovered description hash mismatch")
+
+        if len(description) != expected_description_length:
+            raise ValueError("Recovered description length mismatch")
+
+    return recovered
 
 
 def allocate_fair_leads(
@@ -337,6 +467,13 @@ def generate_search_targets(
     for lead in deferred_leads:
         preserved = dict(lead)
         preserved.pop("results", None)
+
+        # Keep the individual result's identifiers, but retrieve its potentially
+        # enormous description from the original sweep through source_reference.
+        individual_result = dict(preserved.get("result", {}))
+        individual_result.pop("description", None)
+        preserved["result"] = individual_result
+
         preserved["preservation_status"] = "DEFERRED"
         preserved["preservation_reason"] = (
             "Discovered lead was not processed into a search target during "

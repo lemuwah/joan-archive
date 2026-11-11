@@ -31,6 +31,7 @@ sys.path.insert(0, str(ROOT / "research_control" / "tools"))
 
 import execute_search_targets as executor
 import record_search_arrivals
+import record_found_artifacts
 
 
 LAWS = [
@@ -63,6 +64,21 @@ def main():
         result_dir = tmp / "search_results"
         event_file = tmp / "research_events.jsonl"
         search_ledger = tmp / "search_events.jsonl"
+        artifact_ledger = tmp / "found_artifacts.jsonl"
+
+        production_artifact_ledger = record_found_artifacts.ARTIFACT_LEDGER
+        production_artifact_bytes = (
+            production_artifact_ledger.read_bytes()
+            if production_artifact_ledger.exists()
+            else None
+        )
+
+        production_search_ledger = ROOT / "research_control" / "search_events.jsonl"
+        production_search_bytes = (
+            production_search_ledger.read_bytes()
+            if production_search_ledger.exists()
+            else None
+        )
 
         targets_file.write_text(
             """
@@ -131,6 +147,8 @@ targets:
         original_result_dir = executor.RESULT_DIR
         original_record_event = executor.record_event
         original_arrival_ledger = record_search_arrivals.SEARCH_LEDGER
+        original_artifact_ledger = executor.ARTIFACT_LEDGER
+        original_argv = sys.argv
 
         try:
             executor.ia_search = fake_ia
@@ -139,6 +157,7 @@ targets:
             executor.RESULT_DIR = result_dir
             executor.record_event = fake_record_event
             record_search_arrivals.SEARCH_LEDGER = search_ledger
+            executor.ARTIFACT_LEDGER = artifact_ledger
 
             sys.argv = [
                 "execute_search_targets.py",
@@ -157,6 +176,8 @@ targets:
             executor.RESULT_DIR = original_result_dir
             executor.record_event = original_record_event
             record_search_arrivals.SEARCH_LEDGER = original_arrival_ledger
+            executor.ARTIFACT_LEDGER = original_artifact_ledger
+            sys.argv = original_argv
 
         # ------------------------------------------------------------
         # A. Executor produced its normal result artifact.
@@ -239,6 +260,25 @@ targets:
         print("PASS: arrivals preserve executor provenance")
 
         # ------------------------------------------------------------
+        # E2. Found Artifacts are isolated from the production ledger.
+        # ------------------------------------------------------------
+        artifacts = read_jsonl(artifact_ledger)
+        assert len(artifacts) == 1
+        assert artifacts[0]["locator"]["record_identifier"] == "SYNTH-IA-001"
+
+        current_production_bytes = (
+            production_artifact_ledger.read_bytes()
+            if production_artifact_ledger.exists()
+            else None
+        )
+        assert current_production_bytes == production_artifact_bytes, (
+            "Production Found Artifact ledger changed during isolated test"
+        )
+
+        print("PASS: Found Artifact persisted only to temporary ledger")
+        print("PASS: production Found Artifact ledger remained byte-for-byte unchanged")
+
+        # ------------------------------------------------------------
         # F. Arrivals remain research activity, never proof.
         # ------------------------------------------------------------
         import re
@@ -254,13 +294,16 @@ targets:
         # ------------------------------------------------------------
         # G. No production search ledger was touched.
         # ------------------------------------------------------------
-        production_ledger = ROOT / "research_control" / "search_events.jsonl"
-
-        assert not production_ledger.exists() or (
-            production_ledger.read_text(encoding="utf-8").strip() == ""
+        current_production_search_bytes = (
+            production_search_ledger.read_bytes()
+            if production_search_ledger.exists()
+            else None
+        )
+        assert current_production_search_bytes == production_search_bytes, (
+            "Production search-arrival ledger changed during isolated test"
         )
 
-        print("PASS: production search ledger remains untouched")
+        print("PASS: production search-arrival ledger remained byte-for-byte unchanged")
 
         print("SEARCH EXECUTOR ARRIVAL INTEGRATION: PASS")
 

@@ -24,10 +24,16 @@ jobs:
           python-version: "3.12"
 
       - name: Install regression-test dependency
-        run: python -m pip install pyyaml requests
+        run: python -m pip install pyyaml requests pytest
 
       - name: Run regression tests
         run: |
           for f in research_control/regression_tests/test_*.py; do
             python "$f"
           done
+
+      - name: Run full regression suite with pytest
+        run: python -m pytest -q research_control/regression_tests/
+
+      - name: Run control-plane self-test
+        run: python tools/research_control/test_control_plane.py

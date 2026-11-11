@@ -23,6 +23,7 @@ class DiscoveryAtom:
     field: str
     value: str
     status: str
+    relationship_context: str = ""
 
 
 EXPLICIT = "EXPLICIT"
@@ -71,8 +72,15 @@ def normalize_field_value(
         # Multiple bold spans are preserved as separate atoms.
         parts = text.split("**")
         for index in range(1, len(parts), 2):
-            candidate = parts[index].strip()
+            candidate = parts[index].strip().strip('"').strip()
             if not candidate:
+                continue
+
+            # A relationship description is not a personal name variant.
+            if candidate.casefold().startswith((
+                'natural son of ', 'son of ', 'daughter of ',
+                'wife of ', 'husband of ', 'widow of ',
+            )):
                 continue
 
             # Split comma-separated variants without changing their status.

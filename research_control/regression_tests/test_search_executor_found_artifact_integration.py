@@ -46,6 +46,23 @@ def main() -> None:
         arrival_ledger = tmp / "search_events.jsonl"
         artifact_ledger = tmp / "found_artifacts.jsonl"
 
+        # Capture production state before redirecting anything.
+        production_artifact_ledger = artifacts.ARTIFACT_LEDGER
+        production_artifact_bytes = (
+            production_artifact_ledger.read_bytes()
+            if production_artifact_ledger.exists()
+            else None
+        )
+
+        original_targets_file = executor.TARGET_FILE
+        original_result_dir = executor.RESULT_DIR
+        original_artifact_ledger = executor.ARTIFACT_LEDGER
+        original_arrival_ledger = record_search_arrivals.SEARCH_LEDGER
+        original_ia = executor.ia_search
+        original_loc = executor.loc_search
+        original_record_event = executor.record_event
+        original_argv = sys.argv
+
         target = {
             "target_id": "ST-EXEC-ARTIFACT",
             "question": "Joan Greene",
@@ -81,15 +98,6 @@ def main() -> None:
             encoding="utf-8",
         )
 
-        # Redirect all writes to temporary ledgers.
-        executor.TARGETS_FILE = target_file
-        executor.RESULT_DIR = result_dir
-        executor.EVENT_LEDGER = event_ledger
-        artifacts.ARTIFACT_LEDGER = artifact_ledger
-
-        original_arrival_ledger = record_search_arrivals.SEARCH_LEDGER
-        record_search_arrivals.SEARCH_LEDGER = arrival_ledger
-
         # Synthetic source behavior:
         # Internet Archive returns one result.
         # Library of Congress returns no results.
@@ -116,36 +124,59 @@ def main() -> None:
         def fake_loc(session, query, rows):
             return []
 
-        executor.ia_search = fake_ia
-        executor.loc_search = fake_loc
-
         # Keep the existing synthetic event identity deterministic.
         def fake_record_event(**kwargs):
             return {
                 "event_id": "EVT-EXEC-ARTIFACT-001",
             }
 
-        executor.record_event = fake_record_event
-
-        # Execute the real production orchestration.
-        original_argv = sys.argv
-        sys.argv = [
-            "execute_search_targets.py",
-            "--target",
-            "ST-EXEC-ARTIFACT",
-            "--targets-file",
-            str(target_file),
-            "--rows",
-            "5",
-            "--delay",
-            "0",
-        ]
-
+        # Execute the real production orchestration with every patched
+        # global protected by one restoration boundary.
         try:
+            executor.TARGET_FILE = target_file
+            executor.RESULT_DIR = result_dir
+            executor.ARTIFACT_LEDGER = artifact_ledger
+            record_search_arrivals.SEARCH_LEDGER = arrival_ledger
+
+            executor.ia_search = fake_ia
+            executor.loc_search = fake_loc
+            executor.record_event = fake_record_event
+
+            sys.argv = [
+                "execute_search_targets.py",
+                "--target",
+                "ST-EXEC-ARTIFACT",
+                "--targets-file",
+                str(target_file),
+                "--rows",
+                "5",
+                "--delay",
+                "0",
+            ]
+
             executor.main()
         finally:
-            sys.argv = original_argv
+            executor.TARGET_FILE = original_targets_file
+            executor.RESULT_DIR = original_result_dir
+            executor.ARTIFACT_LEDGER = original_artifact_ledger
             record_search_arrivals.SEARCH_LEDGER = original_arrival_ledger
+
+            executor.ia_search = original_ia
+            executor.loc_search = original_loc
+            executor.record_event = original_record_event
+
+            sys.argv = original_argv
+
+        # The production ledger must remain byte-for-byte unchanged.
+        current_production_bytes = (
+            production_artifact_ledger.read_bytes()
+            if production_artifact_ledger.exists()
+            else None
+        )
+        assert current_production_bytes == production_artifact_bytes, (
+            "Production Found Artifact ledger changed during isolated test"
+        )
+        print("PASS: production Found Artifact ledger remained byte-for-byte unchanged")
 
         result_files = list(result_dir.glob("ST-EXEC-ARTIFACT.*.json"))
         assert len(result_files) == 1, (
