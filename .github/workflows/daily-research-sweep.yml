@@ -1,8 +1,6 @@
 name: Daily multi-perspective research sweep
 
 on:
-  schedule:
-    - cron: "17 2 * * *"
   workflow_dispatch:
 
 permissions:
@@ -81,6 +79,121 @@ jobs:
         run: python tools/multi_agent_daily/orchestrate.py
         continue-on-error: true
 
+      - name: Diagnose deferred-lead artifact size
+        if: always()
+        continue-on-error: true
+        run: |
+          RUN_DATE="$(date -u +%Y-%m-%d)"
+          DEFERRED_FILE="research_queue/agent_runs/${RUN_DATE}/deferred_leads.json"
+
+          python - "$DEFERRED_FILE" <<'PYDIAG'
+          import json
+          import sys
+          from collections import defaultdict
+          from pathlib import Path
+
+          def safe_inline(value):
+              encoded = json.dumps(str(value), ensure_ascii=True)
+              encoded = encoded.replace("`", "\\u0060")
+              return f"`{encoded}`"
+
+          path = Path(sys.argv[1])
+          if not path.is_file():
+              message = f"Deferred diagnostic: file not found: {path}"
+              print(message)
+              with open(__import__("os").environ["GITHUB_STEP_SUMMARY"], "a") as out:
+                  out.write(
+                      "## Deferred-lead size diagnostic\n\n"
+                      f"Deferred diagnostic: file not found: {safe_inline(path)}\n"
+                  )
+              raise SystemExit(0)
+
+          raw = path.read_bytes()
+          leads = json.loads(raw)
+          if not isinstance(leads, list):
+              raise SystemExit("Deferred diagnostic: expected a JSON list")
+
+          def encoded_size(value):
+              return len(json.dumps(
+                  value, ensure_ascii=False, separators=(",", ":")
+              ).encode("utf-8"))
+
+          field_bytes = defaultdict(int)
+          largest = []
+          descriptions = 0
+          result_collections = 0
+
+          def contains_key(value, key):
+              if isinstance(value, dict):
+                  return key in value or any(
+                      contains_key(v, key) for v in value.values()
+                  )
+              if isinstance(value, list):
+                  return any(contains_key(v, key) for v in value)
+              return False
+
+          for index, lead in enumerate(leads):
+              if not isinstance(lead, dict):
+                  continue
+              lead_size = encoded_size(lead)
+              source_ref = lead.get("source_reference")
+              if not isinstance(source_ref, dict):
+                  source_ref = {}
+              result = lead.get("result")
+              if not isinstance(result, dict):
+                  result = {}
+              record_id = (
+                  lead.get("record_id")
+                  or result.get("record_id")
+                  or "UNAVAILABLE"
+              )
+              largest.append((
+                  lead_size,
+                  index,
+                  str(record_id)[:120],
+                  source_ref.get("source_line", "UNAVAILABLE"),
+                  source_ref.get("result_index", "UNAVAILABLE"),
+              ))
+              for key, value in lead.items():
+                  field_bytes[key] += encoded_size(value)
+              descriptions += contains_key(lead, "description")
+              result_collections += contains_key(lead, "results")
+
+          largest.sort(key=lambda item: item[0], reverse=True)
+          lines = [
+              "## Deferred-lead size diagnostic",
+              f"- File: {safe_inline(path)}",
+              f"- Total file size: **{len(raw):,} bytes**",
+              f"- Deferred leads: **{len(leads):,}**",
+              f"- Leads containing a description field: **{descriptions:,}**",
+              f"- Leads containing a parent results collection: **{result_collections:,}**",
+              "",
+              "### Serialized size by top-level field",
+          ]
+          lines += [
+              f"- {safe_inline(key)}: {size:,} bytes"
+              for key, size in sorted(
+                  field_bytes.items(), key=lambda item: item[1], reverse=True
+              )
+          ]
+          lines += ["", "### Ten largest individual leads"]
+          lines += [
+              (
+                  f"- Lead index {index}: {size:,} bytes; "
+                  f"record ID {safe_inline(record_id)}; "
+                  f"source line {safe_inline(source_line)}; "
+                  f"result index {safe_inline(result_index)}"
+              )
+              for size, index, record_id, source_line, result_index
+              in largest[:10]
+          ]
+
+          report = "\n".join(lines)
+          print(report)
+          with open(__import__("os").environ["GITHUB_STEP_SUMMARY"], "a") as out:
+              out.write(report + "\n")
+          PYDIAG
+
       - name: Build outward document-ecology search bundle
         id: document_ecology
         run: python tools/document_ecology/build_search_bundle.py
@@ -116,7 +229,210 @@ jobs:
             echo "- Findings routing: $FINDINGS_OUTCOME"
           } >> "$GITHUB_STEP_SUMMARY"
 
+      - name: Prepare exact publishing changes
+        id: prepare_outputs
+        if: always()
+        run: |
+          python - <<'PYPACK'
+          import json
+          import os
+          import subprocess
+          import tarfile
+          from pathlib import Path
+
+          roots = [
+              "research_queue/daily_sweep",
+              "research_queue/agent_runs",
+              "research_queue/finding_runs",
+              "research_queue/document_ecology",
+              "research_queue/SEARCH_TARGETS.yml",
+              "research_queue/research_events.jsonl",
+          ]
+
+          individual_limit = 90_000_000
+          total_limit = 200_000_000
+          archive_limit = 100_000_000
+          archive_path = Path("daily-research-output.tar.gz")
+
+          diff_output = subprocess.check_output([
+              "git", "diff", "--name-status", "--no-renames",
+              "-z", "HEAD", "--", *roots
+          ]).split(b"\0")
+
+          # Git -z output may be empty or end with a null separator.
+          if diff_output and diff_output[-1] == b"":
+              diff_output.pop()
+
+          if len(diff_output) % 2:
+              raise SystemExit("Invalid git diff name-status output")
+
+          changes = {}
+
+          for index in range(0, len(diff_output), 2):
+              status = os.fsdecode(diff_output[index])
+              name = os.fsdecode(diff_output[index + 1])
+              if name:
+                  changes[name] = (
+                      "deleted" if status == "D" else "tracked-change"
+                  )
+
+          untracked = subprocess.check_output([
+              "git", "ls-files", "--others", "--exclude-standard",
+              "-z", "--", *roots
+          ]).split(b"\0")
+
+          for name in untracked:
+              if name:
+                  changes.setdefault(os.fsdecode(name), "untracked")
+
+          entries = []
+          eligible_files = []
+          blocked_reasons = []
+          total_bytes = 0
+
+          for name, status in sorted(changes.items()):
+              item = {"status": status, "path": name}
+              candidate = Path(name)
+
+              if status == "deleted":
+                  item["contents_included"] = False
+                  item["reason"] = "tracked_file_deleted"
+              elif candidate.is_symlink():
+                  item["contents_included"] = False
+                  item["reason"] = "symlink_not_packaged"
+                  blocked_reasons.append(f"Unsupported symlink: {name}")
+              elif not candidate.exists():
+                  item["contents_included"] = False
+                  item["reason"] = "path_unavailable"
+                  blocked_reasons.append(f"Unavailable path: {name}")
+              elif candidate.is_file():
+                  size = candidate.stat().st_size
+                  item["size_bytes"] = size
+                  item["contents_included"] = False
+                  eligible_files.append((candidate, name, item))
+                  total_bytes += size
+
+                  if size > individual_limit:
+                      item["reason"] = "individual_file_limit_exceeded"
+                      blocked_reasons.append(
+                          f"Individual file exceeds limit: {name} ({size} bytes)"
+                      )
+              elif candidate.is_dir():
+                  item["contents_included"] = False
+                  item["reason"] = "unexpected_directory"
+                  blocked_reasons.append(f"Unexpected directory: {name}")
+              else:
+                  item["contents_included"] = False
+                  item["reason"] = "unsupported_file_type"
+                  blocked_reasons.append(f"Unsupported path type: {name}")
+
+              entries.append(item)
+
+          if total_bytes > total_limit:
+              blocked_reasons.append(
+                  f"Total uncompressed files exceed limit: "
+                  f"{total_bytes} bytes"
+              )
+
+          def write_archive(include_contents, fallback_reason=None):
+              for _, _, item in eligible_files:
+                  item["contents_included"] = include_contents
+                  if not include_contents and "reason" not in item:
+                      item["reason"] = (
+                          fallback_reason or "package_contents_not_included"
+                      )
+                  elif include_contents:
+                      item.pop("reason", None)
+
+              manifest = {
+                  "schema_version": 1,
+                  "archive_status": (
+                      "CONTENTS_INCLUDED" if include_contents else "MANIFEST_ONLY"
+                  ),
+                  "limits_bytes": {
+                      "individual_file": individual_limit,
+                      "total_uncompressed": total_limit,
+                      "compressed_archive": archive_limit,
+                  },
+                  "file_count": len(entries),
+                  "total_regular_file_bytes": total_bytes,
+                  "blocked_reasons": blocked_reasons,
+                  "files": entries,
+              }
+
+              with tarfile.open(archive_path, "w:gz") as archive:
+                  if include_contents:
+                      for candidate, name, _ in eligible_files:
+                          archive.add(
+                              candidate, arcname=name, recursive=False
+                          )
+
+                  payload = json.dumps(
+                      manifest, indent=2, ensure_ascii=False
+                  ).encode("utf-8")
+
+                  info = tarfile.TarInfo(
+                      "_daily_research_manifest.json"
+                  )
+                  info.size = len(payload)
+                  archive.addfile(info, __import__("io").BytesIO(payload))
+
+          include_contents = not blocked_reasons
+          write_archive(include_contents)
+
+          if include_contents and archive_path.stat().st_size > archive_limit:
+              blocked_reasons.append(
+                  "Compressed archive exceeds limit: "
+                  f"{archive_path.stat().st_size} bytes"
+              )
+              write_archive(
+                  False,
+                  fallback_reason="compressed_archive_limit_exceeded"
+              )
+              include_contents = False
+
+          final_size = archive_path.stat().st_size
+
+          if final_size > archive_limit:
+              raise SystemExit(
+                  "Manifest-only archive unexpectedly exceeds compressed limit"
+              )
+
+          publish_safe = not blocked_reasons
+
+          print(f"Publishing changes found: {len(changes)}")
+          print(f"Regular file bytes: {total_bytes:,}")
+          print(f"Final archive size: {final_size:,}")
+          print(f"Archive mode: {'full contents' if include_contents else 'manifest only'}")
+          print(f"Publishing safe: {publish_safe}")
+
+          if blocked_reasons:
+              print("::error::Research output packaging blocked; see manifest and log.")
+          for reason in blocked_reasons:
+              print("Packaging block detail (JSON): " + json.dumps(reason, ensure_ascii=True))
+
+          with open(os.environ["GITHUB_OUTPUT"], "a") as output:
+              output.write(
+                  f"publish_safe={str(publish_safe).lower()}\n"
+              )
+              output.write(
+                  f"archive_mode={'full' if include_contents and publish_safe else 'manifest-only'}\n"
+              )
+
+          PYPACK
+
+      - name: Preserve research outputs before publishing
+        id: preserve_outputs
+        if: always() && steps.prepare_outputs.outcome == 'success'
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-research-${{ github.run_id }}-${{ github.run_attempt }}
+          path: daily-research-output.tar.gz
+          if-no-files-found: error
+          retention-days: 14
+
       - name: Open pull request for automated research outputs
+        if: steps.prepare_outputs.outputs.publish_safe == 'true' && steps.preserve_outputs.outcome == 'success'
         uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
