@@ -14054,3 +14054,251 @@ targets:
     or treating it as evidence.
   source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp85b01152r000600780068-5
   status: READY_SHADOW
+- target_id: ST-aa44b32a197d
+  question: 'Investigate source record ''The revolution in New England justified,
+    : and the people there vindicated from the aspersions cast upon them by Mr. John
+    Palmer, in his pretended answer to the Declaration,'' [record ID: revolutioninnewe00raws_0]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Warwick (Major John
+    Greene / Deputy Governor). Originating research lens (unverified context only):
+    irish_scottish_migration. Original search query (discovery provenance only): "Sir
+    Edmund Andros" ("Irish" OR "Ireland" OR "Ulster" OR "Scotland" OR "Scottish" OR
+    "Donegal" OR "servant"). Source identifier: https://archive.org/details/revolutioninnewe00raws_0.'
+  origin_event: EVT-21c0f6165665
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/revolutioninnewe00raws_0
+  status: READY_SHADOW
+- target_id: ST-aded17313126
+  question: 'Investigate source record ''The memorial history of the City of New-York,
+    from its first settlement to the year 1892'' [record ID: memorialhistory03wilsgoog]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Warwick (Major John
+    Greene / Deputy Governor). Originating research lens (unverified context only):
+    enslavement_captivity_status. Original search query (discovery provenance only):
+    "Sir Edmund Andros" ("enslaved" OR "slave" OR "captive" OR "Negro" OR "Indian"
+    OR "mulatto" OR "redemption"). Source identifier: https://archive.org/details/memorialhistory03wilsgoog.'
+  origin_event: EVT-21c0f6165665
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/memorialhistory03wilsgoog
+  status: READY_SHADOW
+- target_id: ST-11a77506d167
+  question: 'Investigate source record ''The imperial executive in America : Sir Edmund
+    Andros, 1637-1714'' [record ID: imperialexecutiv0000lust]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Warwick (Major John
+    Greene / Deputy Governor). Originating research lens (unverified context only):
+    enslavement_captivity_status. Original search query (discovery provenance only):
+    "Sir Edmund Andros" ("enslaved" OR "slave" OR "captive" OR "Negro" OR "Indian"
+    OR "mulatto" OR "redemption"). Source identifier: https://archive.org/details/imperialexecutiv0000lust.'
+  origin_event: EVT-21c0f6165665
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/imperialexecutiv0000lust
+  status: READY_SHADOW
+- target_id: ST-605c8fec2b17
+  question: 'Investigate source record ''The memorial history of the City of New-York,
+    from its first settlement to the year 1892'' [record ID: memorialhistory02wilsgoog]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Warwick (Major John
+    Greene / Deputy Governor). Originating research lens (unverified context only):
+    enslavement_captivity_status. Original search query (discovery provenance only):
+    "Sir Edmund Andros" ("enslaved" OR "slave" OR "captive" OR "Negro" OR "Indian"
+    OR "mulatto" OR "redemption"). Source identifier: https://archive.org/details/memorialhistory02wilsgoog.'
+  origin_event: EVT-21c0f6165665
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/memorialhistory02wilsgoog
+  status: READY_SHADOW
+- target_id: ST-2ab23283dd7c
+  question: 'Investigate source record ''CIA Reading Room cia-rdp89-00244r000300160025-0:
+    LETTER TO DANIEL C. KING FROM H. M. SHAVER, JR.'' [record ID: cia-readingroom-document-cia-rdp89-00244r000300160025-0]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Edward² Greene. Originating research
+    lens (unverified context only): legal_property_records. Original search query
+    (discovery provenance only): "George Vaughan" ("deed" OR "land evidence" OR "probate"
+    OR "will" OR "court" OR "testimony" OR "dower"). Source identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000300160025-0.'
+  origin_event: EVT-21c0f6165665
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/cia-readingroom-document-cia-rdp89-00244r000300160025-0
+  status: READY_SHADOW
+- target_id: ST-6d317f72e2df
+  question: 'Investigate source record ''Winter Park City Commission Regular Meeting
+    - March 11, 2026'' [record ID: openpublica-winter_park-florida-civicclerk-winterparkfl-2640]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): Elizabeth (wife of James² Greene).
+    Originating research lens (unverified context only): servant_indentured_status.
+    Original search query (discovery provenance only): "James Greene" ("servant" OR
+    "indentured" OR "bond servant" OR "redemptioner" OR "apprentice" OR "master").
+    Source identifier: https://archive.org/details/openpublica-winter_park-florida-civicclerk-winterparkfl-2640.'
+  origin_event: EVT-21c0f6165665
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/openpublica-winter_park-florida-civicclerk-winterparkfl-2640
+  status: READY_SHADOW
+- target_id: ST-77dbf55c6f65
+  question: 'Investigate source record ''The memorial history of the City of New-York,
+    from its first settlement to the year 1892'' [record ID: memorialhistory04wilsgoog]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Warwick (Major John
+    Greene / Deputy Governor). Originating research lens (unverified context only):
+    enslavement_captivity_status. Original search query (discovery provenance only):
+    "Sir Edmund Andros" ("enslaved" OR "slave" OR "captive" OR "Negro" OR "Indian"
+    OR "mulatto" OR "redemption"). Source identifier: https://archive.org/details/memorialhistory04wilsgoog.'
+  origin_event: EVT-21c0f6165665
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/memorialhistory04wilsgoog
+  status: READY_SHADOW
+- target_id: ST-e3935a708b76
+  question: 'Investigate source record ''The memorial history of the City of New-York
+    , from its first settlement to the year 1892'' [record ID: 01661448.89496.emory.edu]'
+  reason: 'Originating search context is UNVERIFIED and does not establish that this
+    source concerns the searched person or belongs to the originating research lens.
+    Searched person (unverified context only): John Greene of Warwick (Major John
+    Greene / Deputy Governor). Originating research lens (unverified context only):
+    enslavement_captivity_status. Original search query (discovery provenance only):
+    "Sir Edmund Andros" ("enslaved" OR "slave" OR "captive" OR "Negro" OR "Indian"
+    OR "mulatto" OR "redemption"). Source identifier: https://archive.org/details/01661448.89496.emory.edu.'
+  origin_event: EVT-21c0f6165665
+  target_type: DOCUMENT
+  person_slots: []
+  jurisdictions: []
+  record_families: []
+  date_range: {}
+  name_variants: []
+  laws:
+  - No Narrative Smoothing
+  - La Mance Law / Follow the Rivers
+  - No Premature Elimination
+  - No Algorithmic Contamination
+  - No Jurisdictional Assumption
+  - No Centering
+  - No Trust Without Evidence
+  disproof_record: Do not attribute this source to the searched person or originating
+    research lens based on search context alone. Verify the underlying source's content,
+    author, date, place, record family, and identity before linking it to a person
+    or treating it as evidence.
+  source_identifier: https://archive.org/details/01661448.89496.emory.edu
+  status: READY_SHADOW
